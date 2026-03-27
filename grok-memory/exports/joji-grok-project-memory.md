@@ -1,80 +1,105 @@
-# Joji Teira – Grok Master Project Memory
-**Last Updated:** 2026-03-26 20:25 EDT
 
-:PROPERTIES:
-:ID:       2026-03-25-grok-master-memory
-:ROAM_ALIASES: grok-memory
-:CREATED:  [2026-03-25 Wed]
-:END:
-#+title: Joji Teira – Grok Master Memory
-#+filetags: :grok-memory:projects:second-brain:
+# Table of Contents
 
-* Master Memory for Grok Collaboration
-This is the **single source of truth**. Grok will load the exported Markdown version at the start of every new session.
+1.  [Tsuioku Master Memory - Current State](#org4fb6e5f)
+2.  [Voight-Kampff Full Cycle Checklist](#org9a37f9c)
+3.  [End of Checklist](#org7cf175c)
 
-**Last Updated:** [2026-03-26 Thu]  
-**Tsuioku Cycle Status:** Housecleaning phase completed and permanently archived.
 
-* Active Projects
+<a id="org4fb6e5f"></a>
 
-**Project 1: Tsuioku (追憶)**
-- Meta-project: The remember → work → summarize cycle for maintaining a persistent second brain.
-- Goal: Ensure perfect continuity across all Grok sessions without context loss.
-- Status: **Completed and archived**. All backlog HTML chat exports ingested, deduplicated, and cross-checked.
+# Tsuioku Master Memory - Current State
 
-**Project 2: Withnail – Hermes v0.4.0 Experimentation & Learning**
-- Withnail is the foundational autonomous “CEO” agent inside the local/private Zero-Human Organization (ZHO), inspired by Brian Roemmele.
-- Hardware: Raspberry Pi 5 (8 GB RAM, 128 GB SD), hostname hermes-pi.
-- Networking: Dual Ethernet + WiFi, Tailscale mesh with gt-Lenovo-X230.
-- Status: Locked in and ready for skill/tool experiments (including BSV transaction capability).
+****Establishment Note****
+We established this clean, up-to-date memory system on 26 March 2026!
 
-**Project 3: BrandCo – Low-Cost Georgia Brand Consulting Company**
-- Low-cost Georgia LLC focused on identifying promising brands, analyzing value, and supporting legal establishment/growth.
-- Status: Seeded and ready for operational plan.
+****Memory System Standards****
 
-**Project 4: Make BSV Transaction**
-- From-scratch SBCL implementation of Bitcoin SV legacy P2PKH transactions.
-- Full tutorial (helpers, structs, serialization, sighash, signing) fully ingested.
-- Status: Ready for implementation and testing.
+-   Dedicated local Git repo: ~/forgrok/
+-   Authoritative file: joji-grok-project-memory.org (always at repo root)
+-   Exported Markdown: grok-memory/exports/joji-grok-project-memory.md
+-   .org file remains the single source of truth at all times.
 
-**Project 5: Build List of Interesting Videos**
-- Curated list of high-signal videos (primarily Joe Rogan episodes with Graham Hancock, Randall Carlson, Jordan Peterson, Paul Stamets, etc.).
-- Status: Seeded and ready for categorization and expansion.
+****Honorific Rule****
+When addressing the user (Captain), always capitalize “Captain” exactly as “Mr.” or “Mister” (per explicit instruction).
 
-* Current Status of Each Project
-Tsuioku archived. Projects 2–5 are clean and ready for active work.
+****Active Projects (updated)****
 
-* Next Steps & Priorities
-Activate any project on command (Withnail experiments, BrandCo setup, BSV implementation, video curation, or new projects).
+-   Project 1: Tsuioku (追憶) – Housecleaning archived and complete
+-   Project 2: Withnail – Hermes v0.4.0 autonomous CEO on hermes-pi (ready for experiments)
+-   Project 3: BrandCo – Low-cost Georgia Brand Consulting Company (seeded)
+-   Project 4: Make BSV Transaction – SBCL tutorial fully integrated
+-   Project 5: Build List of Interesting Videos – seeded and ready
+-   Project 6: Gather High-Protein Content
+    Inspired by Brian Roemmele’s work on collecting High-Protein Content from libraries, laboratories, universities, retirees, and companies that have dissolved and released IP.
+-   Project 7: Knowledge Acquisition System
+    Automated pipeline that ingests a file (or pulls one over the network), then outputs: exact original copy + cover page (Précis + longer summary) + expandable nodes on key points.
 
-* Hardware, Networking & Software Specifications
-- hermes-pi: Raspberry Pi 5 (8 GB), Hermes v0.4.0, Tailscale mesh.
-- gt-Lenovo-X230: Primary editing machine with Emacs + Org-mode workflow.
-- Git repo: ~/RoamNotes/grok-memory/ synced to gptix/forgrok.
 
-* Workflows & Usage Patterns
-- Master memory updates follow remember → work → summarize cycle.
-- Emacs recentf recovery documented.
-- Always create timestamped backup folders before major changes.
+<a id="org9a37f9c"></a>
 
-* Key Decisions & Rationale Archive
-- Master memory is immutable single source of truth.
-- Tsuioku uses master precedence on conflicts.
+# Voight-Kampff Full Cycle Checklist
 
-* Anti-Patterns & Lessons Learned
-- Never commit backup (~) files or untracked folders.
+****1. Preparation (Terminal)****
 
-* Communication & Response Preferences
-- English primary (追憶 alias accepted).
-- Prefer clear, actionable responses with copy-paste blocks.
+-   [ ] Open a terminal and \`cd\` into your local \`forgrok\` repository root directory
+-   [ ] Confirm you are in the directory containing \`joji-grok-project-memory.org\` and the \`.git\` folder
 
-* Glossary / Shorthand
-- Tsuioku = remember → work → summarize
-- ZHO = Zero-Human Organization
-- Withnail = Hermes v0.4.0 autonomous CEO
+****2. Update Authoritative Source (Emacs)****
 
-* Risk Register & Gotchas
-- Always ensure the exported .md matches the .org before pushing.
+-   [ ] Launch Emacs
+-   [ ] Open the authoritative file:  
+    \`joji-grok-project-memory.org\`
 
-* Content Gathered Separate from Collaboration
-- Interesting Videos list, BSV tutorial code, BrandCo notes, WiFi troubleshooting (all slotted into projects).
+****3. Edit the Master Memory****
+
+-   [ ] Add / update all new content from the current chat (new projects, notes, summaries, etc.)
+-   [ ] Save the file (\`C-x C-s\`)
+
+****4. Export to Markdown (Emacs)****
+
+-   [ ] Run the export command:  
+    \`M-x org-md-export-to-markdown\`  
+    (or \`M-x org-export-dispatch\` then choose Markdown)
+-   [ ] Confirm the exported file has been overwritten at:  
+    \`grok-memory/exports/joji-grok-project-memory.md\`
+
+****5. Cleanup Backup Files (Terminal)****
+
+-   [ ] Remove all Emacs tilde backup files:  
+    \`find . -name "\*~" -delete\`
+
+****6. Stage Changes (Terminal)****
+
+-   [ ] Stage the updated files:  
+    \`git add joji-grok-project-memory.org grok-memory/exports/joji-grok-project-memory.md .gitignore\`
+
+****7. Commit Changes (Terminal)****
+
+-   [ ] Commit with a clear message:  
+    \`git commit -m "Tsuioku: Voight-Kampff sync — checklist + new projects added"\`
+
+****8. Push to GitHub (Terminal)****
+
+-   [ ] Push to the remote:  
+    \`git push origin main\`
+
+****9. Verify on GitHub****
+
+-   [ ] Refresh <https://github.com/gptix/forgrok> and confirm both the \`.org\` and the exported \`.md\` contain the latest changes
+
+****10. Start New Web-Based Chat Session****
+
+-   [ ] Open a completely ****new**** web-based Grok chat (do not continue this thread)
+-   [ ] Type this exact prompt:  
+    \`Hello, Grok! Please receive the attachment, and follow instructions therein.\`
+-   [ ] Attach the freshly exported file:  
+    \`grok-memory/exports/joji-grok-project-memory.md\`
+
+
+<a id="org7cf175c"></a>
+
+# End of Checklist
+
+Once step 10 is complete, the new chat will load the fully-synced memory and we will continue from there, Captain.
+
