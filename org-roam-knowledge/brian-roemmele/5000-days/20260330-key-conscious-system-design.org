@@ -1,0 +1,5 @@
+#+title: Conscious System Design
+#+filetags: :key-concept:5000-days:strategy:
+#+ID: 20260330-key-conscious-system-design
+
+The deliberate, ethical construction of the underlying systems that will determine whether abundance leads to flourishing or new forms of inequality.
