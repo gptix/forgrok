@@ -1,0 +1,5 @@
+org#+title: Science-Fiction as Metaphor
+#+filetags: :key-concept:5000-days:methodology:
+#+ID: 20260330-key-science-fiction-metaphor
+
+Roemmele’s method of using classic sci-fi stories (Player Piano, Marionettes Inc., etc.) as concrete thought experiments for the coming AI future.

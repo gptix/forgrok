@@ -1,0 +1,5 @@
+org#+title: Deskilling
+#+filetags: :key-concept:5000-days:risk:
+#+ID: 20260330-key-deskilling
+
+The gradual loss of human skills and capabilities as AI takes over cognitive and manual tasks.
