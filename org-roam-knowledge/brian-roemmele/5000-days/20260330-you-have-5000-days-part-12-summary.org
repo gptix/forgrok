@@ -1,0 +1,20 @@
+#+title: You Have 5000 Days – Part 12: The Gilded Age
+#+filetags: :brian-roemmele:5000-days:summary:ai-abundance:
+#+ID: 20260330-5000days-part12-summary
+#+roam_alias: 5000 Days Part 12
+
+* Precis
+Roemmele draws a parallel between the original Gilded Age of extreme inequality and the new Gilded Age that AI abundance could create unless we consciously design a more equitable outcome.
+
+* Summary
+In Part 12, Roemmele warns that the coming wave of AI-driven wealth creation risks repeating the worst features of the historical Gilded Age: massive concentration of riches in the hands of a tiny few while the majority are left deskilled and economically sidelined. He argues that the 5,000-day window is our last realistic chance to avoid a new Gilded Age and instead build a truly abundant society where the benefits of automation are broadly shared.
+
+* Backlinks
+- [[id:20260330-5000days-part12-precis][Precis]]
+- [[id:20260330-key-new-gilded-age][New Gilded Age]]
+- [[id:20260330-key-wealth-concentration][Wealth Concentration]]
+- [[id:20260330-key-equitable-abundance][Equitable Abundance]]
+- [[id:20260330-key-designing-equity][Designing Equity]]
+
+* Original Source
+[[file:20260329234720-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-13-the-guilded-age-8211-readmultiplex.org][Original Converted Essay]]
