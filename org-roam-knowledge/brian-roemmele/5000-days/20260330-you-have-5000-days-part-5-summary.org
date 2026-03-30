@@ -1,0 +1,20 @@
+#+title: You Have 5000 Days – Part 5: Your Deskilling
+#+filetags: :brian-roemmele:5000-days:summary:ai-abundance:
+#+ID: 20260330-5000days-part5-summary
+#+roam_alias: 5000 Days Part 5
+
+* Precis
+Roemmele examines the insidious process of deskilling — how AI automation quietly erodes human capabilities at both the individual and societal level, and why the next 5,000 days represent the final window to consciously counteract it.
+
+* Summary
+Part 5 focuses on the core mechanism of the coming transition: systematic deskilling. As AI takes over more cognitive and physical tasks, humans gradually lose the very skills that once defined their competence and identity. Roemmele warns that this is not a side effect but the central feature of rapid automation. He explores both the historical precedents and the unprecedented speed of AI-driven deskilling, arguing that without deliberate intervention the majority of the population risks becoming passive consumers rather than active creators. The essay calls for immediate personal and cultural strategies to preserve and transmit deep human skills and wisdom before they atrophy.
+
+* Backlinks
+- [[id:20260330-5000days-part5-precis][Precis]]
+- [[id:20260330-key-deskilling-acceleration][Deskilling Acceleration]]
+- [[id:20260330-key-tacit-knowledge-loss][Tacit Knowledge Loss]]
+- [[id:20260330-key-skill-atrophy][Skill Atrophy]]
+- [[id:20260330-key-preservation-strategies][Preservation Strategies]]
+
+* Original Source
+[[file:20260329234713-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-5-your-deskilling-8211-readmultiplex.org][Original Converted Essay]]

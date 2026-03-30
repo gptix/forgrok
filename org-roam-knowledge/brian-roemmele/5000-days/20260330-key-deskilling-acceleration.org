@@ -1,0 +1,5 @@
+#+title: Deskilling Acceleration
+#+filetags: :key-concept:5000-days:risk:
+#+ID: 20260330-key-deskilling-acceleration
+
+The rapid, compounding loss of human skills as AI automates ever more complex cognitive and manual tasks at an unprecedented pace.
