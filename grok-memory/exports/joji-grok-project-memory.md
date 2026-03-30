@@ -36,6 +36,13 @@ When addressing the user (Captain), always capitalize “Captain” exactly as �
     Automated pipeline that ingests a file (or pulls one over the network), then outputs: exact original copy + cover page (Précis + longer summary) + expandable nodes on key points.  
     Progress: Original workflow (weeks ago) recovered and compared side-by-side with Withnail’s live execution. Withnail has successfully run the first local test (Précis + 5–7 expandable nodes + concrete local ZHO suggestion). Ready for full reusable Python implementation.
 
+****2026-03-30 – Knowledge Ingestion Test #1****  
+Successfully downloaded and converted Brian Roemmele’s full 25-part “You Have 5000 Days” series.  
+
+-   Raw HTML preserved in \`org-roam-knowledge/brian-roemmele/5000-days/\`
+-   Org-roam .org files generated via \`convert-to-org-roam.sh\`
+-   First live test of the full HTML → org-roam pipeline completed.
+
 <a id="org9a37f9c"></a>
 
 ********1. Preparation (Terminal)********
