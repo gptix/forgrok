@@ -1,0 +1,20 @@
+#+title: You Have 5000 Days – Part 10: Everyone Is Doing It
+#+filetags: :brian-roemmele:5000-days:summary:ai-abundance:
+#+ID: 20260330-5000days-part10-summary
+#+roam_alias: 5000 Days Part 10
+
+* Precis
+Roemmele examines the universal nature of the coming transition — everyone, regardless of occupation or status, will be affected by AI automation, and collective preparation is now essential.
+
+* Summary
+Part 10 emphasizes that the end of work-as-we-know-it is not a niche event for certain professions; it is a universal shift that will touch every human being. Roemmele stresses that the 5,000-day window is a shared moment in history where societies must collectively reframe their relationship with labor, meaning, and abundance. The essay calls for widespread awareness and coordinated personal and cultural strategies so that the transition does not leave large segments of the population unprepared or despairing.
+
+* Backlinks
+- [[id:20260330-5000days-part10-precis][Precis]]
+- [[id:20260330-key-universal-transition][Universal Transition]]
+- [[id:20260330-key-collective-preparation][Collective Preparation]]
+- [[id:20260330-key-shared-5-000-day-window][Shared 5,000-Day Window]]
+- [[id:20260330-key-mass-awareness][Mass Awareness]]
+
+* Original Source
+[[file:20260329234718-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-10-everyone-is-doing-it-8211-readmultiplex.org][Original Converted Essay]]
