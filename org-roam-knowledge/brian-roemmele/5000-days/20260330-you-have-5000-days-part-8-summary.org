@@ -1,0 +1,20 @@
+#+title: You Have 5000 Days – Part 8: Saving Your Wisdom
+#+filetags: :brian-roemmele:5000-days:summary:ai-abundance:
+#+ID: 20260330-5000days-part8-summary
+#+roam_alias: 5000 Days Part 8
+
+* Precis
+Roemmele shifts to the practical imperative: how to actively capture, preserve, and transmit your own wisdom before AI-driven deskilling makes it far harder to recover.
+
+* Summary
+In Part 8, Roemmele moves from diagnosis of the problem to concrete action. He explains why the next 5,000 days are the last practical window in which humans can still deliberately save their wisdom — the deep, tacit, experience-based knowledge that cannot be easily reconstructed once lost. The essay gives specific strategies for personal wisdom preservation (journals, recordings, teaching, encoding) and cultural wisdom preservation (communities, institutions, artifacts) so that future generations can still access what makes us human even after automation has taken over most labor.
+
+* Backlinks
+- [[id:20260330-5000days-part8-precis][Precis]]
+- [[id:20260330-key-wisdom-preservation-action][Wisdom Preservation Action]]
+- [[id:20260330-key-tacit-knowledge-capture][Tacit Knowledge Capture]]
+- [[id:20260330-key-last-window-to-save][Last Window to Save]]
+- [[id:20260330-key-wisdom-transmission-methods][Wisdom Transmission Methods]]
+
+* Original Source
+[[file:20260329234716-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-8-saving-your-wisdom-8211-readmultiplex.org][Original Converted Essay]]

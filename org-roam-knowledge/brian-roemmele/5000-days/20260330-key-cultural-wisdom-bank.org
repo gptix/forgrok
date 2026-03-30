@@ -1,0 +1,5 @@
+#+title: Cultural Wisdom Bank
+#+filetags: :key-concept:5000-days:strategy:
+#+ID: 20260330-key-cultural-wisdom-bank
+
+Societal-scale repositories and institutions designed to collect, curate, and transmit collective human wisdom across the automation divide.
