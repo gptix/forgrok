@@ -1,0 +1,20 @@
+#+title: You Have 5000 Days – Part 6: The Dark Night of the Soul
+#+filetags: :brian-roemmele:5000-days:summary:ai-abundance:
+#+ID: 20260330-5000days-part6-summary
+#+roam_alias: 5000 Days Part 6
+
+* Precis
+Roemmele describes the profound psychological and existential crisis — the “Dark Night of the Soul” — that individuals and societies will face as AI automation strips away traditional sources of identity and purpose.
+
+* Summary
+In Part 6, Roemmele explores the inevitable period of disorientation, grief, and loss of meaning when work — long the primary source of identity, status, and purpose — is largely automated away. This collective “Dark Night of the Soul” is not a failure but a necessary passage. The essay offers guidance on how to navigate this dark night consciously, emerging with a new, more resilient sense of meaning and purpose in the age of abundance.
+
+* Backlinks
+- [[id:20260330-5000days-part6-precis][Precis]]
+- [[id:20260330-key-dark-night-of-the-soul][Dark Night of the Soul]]
+- [[id:20260330-key-loss-of-meaning][Loss of Meaning]]
+- [[id:20260330-key-conscious-passage][Conscious Passage]]
+- [[id:20260330-key-emergent-purpose][Emergent Purpose]]
+
+* Original Source
+[[file:20260329234714-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-6-the-dark-night-of-the-soul-8211-readmultiplex.org][Original Converted Essay]]
