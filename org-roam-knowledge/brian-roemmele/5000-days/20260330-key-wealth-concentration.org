@@ -1,0 +1,5 @@
+#+title: Wealth Concentration
+#+filetags: :key-concept:5000-days:economics:
+#+ID: 20260330-key-wealth-concentration
+
+The tendency for the economic gains of automation to flow disproportionately to a small number of owners and platform operators.
