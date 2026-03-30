@@ -1,0 +1,13 @@
+# Netscape HTTP Cookie File
+# https://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file! Do not edit.
+
+readmultiplex.com	FALSE	/	FALSE	0	PHPSESSID	fk5gu6f7n4v4rlq9k74vjhvov0
+readmultiplex.com	FALSE	/	TRUE	0	swpm_session	5fe1d567c6d23038c5d174f76e086900
+readmultiplex.com	FALSE	/	TRUE	0	ep_session_id	ep-sess-1774831341-2htgfn81
+readmultiplex.com	FALSE	/	FALSE	1790387379	wp-dark-mode-device	light
+.readmultiplex.com	TRUE	/	TRUE	1774837080	__cf_bm	5aBbEbcJAFRjEmr3DLx02LB9qoJieT4YqUlQkZcrAp4-1774835279-1.0.1.1-6kLbHuyJnQ4O98KFFdw0Ht7Dd_a686kYMsy8MD.aJdWGEB0Imw5SffJg_6pDCkvOFM_BIsxLSxentQG7LkKOuMlknEQ0JWV8IiTQmb08WfQ
+readmultiplex.com	FALSE	/	TRUE	1776088129	swpm_in_use	swpm_in_use
+readmultiplex.com	FALSE	/	TRUE	1776088129	wp_swpm_in_use	wp_swpm_in_use
+readmultiplex.com	FALSE	/	TRUE	1776088129	simple_wp_membership_sec_6a636d3d0c04f82a60c8653bcf21f456	GeorgeTaylor%7C1776044927%7C9d1c008d417fdde0de4c920b50dc00b2%7C1
+readmultiplex.com	FALSE	/	TRUE	1776088129	wordpress_logged_in_6a636d3d0c04f82a60c8653bcf21f456	GeorgeTaylor%7C1776044927%7C6QxkyvIWxLWwRvkOS4P3GakgZPk1sluPVaWQQFwM8MS%7C4787106da6ba16d5b8696bb0eea12d09024c1baa19dcb408d73245c75e9131cd

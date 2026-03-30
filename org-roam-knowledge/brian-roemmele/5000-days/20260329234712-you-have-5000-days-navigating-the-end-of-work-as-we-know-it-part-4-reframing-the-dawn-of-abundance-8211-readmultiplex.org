@@ -1,0 +1,655 @@
+:PROPERTIES:
+:ID:       bb9d6205-f99e-4777-ad8c-846deb84ddcc
+:END:
+#+title: You Have 5000 Days: Navigating the End of Work as We Know It. Part 4: Reframing the Dawn of Abundance. &#8211; @ReadMultiplex
+#+filetags: :brian_roemmele:5000_days:essay:
+#+date: 2026-03-29
+#+roam_alias: 
+
+#+begin_summary
+<<SUMMARY WILL BE ADDED IN NEXT STEP>>
+#+end_summary
+
+#+TITLE: You Have 5000 Days: Navigating the End of Work as We Know It. Part 4: Reframing the Dawn of Abundance. -- @ReadMultiplex
+
+<<page>>
+[[#content][Skip to content]]
+
+[[https://readmultiplex.com/][[[https://readmultiplex.com/wp-content/uploads/2016/12/Multiplex-NEW-263x96.png]]]]
+
+* [[https://readmultiplex.com/][@ReadMultiplex]]
+  :PROPERTIES:
+  :CUSTOM_ID: readmultiplex
+  :CLASS: site-title
+  :END:
+
+** multiplex-past, present, future technology research + insights ☂️
+   :PROPERTIES:
+   :CUSTOM_ID: multiplex-past-present-future-technology-research-insights
+   :CLASS: site-description
+   :END:
+
+Toggle Sidebar
+
+<<content>>
+
+<<primary>>
+
+<<main>>
+
+[[https://readmultiplex.com/wp-content/uploads/2026/01/64ccdcb6-5cd0-4cae-a956-683108d34204.jpg]]
+
+January 19, 2026February 11, 2026
+
+* You Have 5000 Days: Navigating the End of Work as We Know It. Part 4: Reframing the Dawn of Abundance.
+  :PROPERTIES:
+  :CUSTOM_ID: you-have-5000-days-navigating-the-end-of-work-as-we-know-it.-part-4-reframing-the-dawn-of-abundance.
+  :CLASS: entry-title
+  :END:
+
+<<rr_wrapper31376>>
+
+<<rr_content31376>>
+\\
+🔊 Listen to this ►
+** You Have 5000 Days: Navigating the End of Work as We Know It. Part 4: Reframing the Dawn of Abundance.
+   :PROPERTIES:
+   :CUSTOM_ID: you-have-5000-days-navigating-the-end-of-work-as-we-know-it.-part-4-reframing-the-dawn-of-abundance.-1
+   :CLASS: wp-block-heading
+   :END:
+
+As the golden hues of a January sunset bathe the verdant landscapes of Southern California, on this poignant evening, just five days after the world bid farewell to a satirical giant, some called The Internet Dad lovingly, we gather once more in the crucible of transformation. The neural networks of artificial intelligence hum with inexorable momentum, etching new paradigms into the fabric of human destiny, outpacing even the boldest visions of futurists past. This is the fourth odyssey in our monumental chronicle, “You Have 5000 Days,” a visionary testament to the ticking clock: roughly 13.7 years until the Age of Abundance crystallizes, forever sundering the primordial link between toil and sustenance. Yet this passage is no tranquil voyage; it is the Abundance Interregnum, a stormy interlude of upheaval and rebirth, bridging the crumbling citadels of scarcity-forged labor and the radiant horizons of automated opulence.
+
+In this Interregnum, global markets spasm, psyches unravel under the weight of obsolescence, and civilizations hover between collapse and ascension. Here, reframing transcends mere technique it becomes an existential mandate, a psychological bulwark for the multitudes, transmuting collective despair into sovereign empowerment. For in the Abundance Interregnum, as jobs dissolve into algorithmic ether, the mastery of one's mental narrative will delineate the survivors from the subsumed.
+
+[[https://rss.com/podcasts/readmultiplex-com-podcast/2470159/][You Have 5000 Days: Navigating the End of Work as | RSS.com]]
+** Recap Of The 5000 Days Series
+   :PROPERTIES:
+   :CUSTOM_ID: recap-of-the-5000-days-series
+   :CLASS: wp-block-heading
+   :END:
+
+Before we ascend to the reframing, fortified by the legacy of a departed luminary, let us retrace the monomythic path. These expansive recaps are not fleeting echoes but profound immersions, encapsulating the intellectual edifice, audacious decrees, and tactical mandates of Parts 1 through 3, weaving the unbreakable thread of Joseph Campbell's Hero's Journey---our eternal guide through the tempest. Our saga ignited on Christmas Eve 2025 with an apocalyptic arithmetic: 5000 days---variably adjusted by a millennium's margin until AGI and pervasive robotics inaugurate the Age of Abundance, consigning conventional employment to antiquity.
+
+- Part 1: [[https://readmultiplex.com/2025/12/24/you-have-5000-days-how-to-navigate-the-end-of-work-as-we-know-it-part-1/]]
+- Part 2: [[https://readmultiplex.com/2025/12/31/you-have-5000-days-how-to-navigate-the-end-of-work-as-we-know-it-part-2/]]
+- Part 3: [[https://readmultiplex.com/2026/01/01/you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-3-the-player-piano/]]
+
+Anchored in exponential prognostications my insights and predictions back in the 1970s materilizing now we explore Tesla's Optimus proliferation by 2027, Grok's superintelligent orchestration by the mid-2030s, we invoked Campbell's monomyth as our archetypal beacon: the Ordinary World of salary-shackled selves disrupted by the Call to Adventure, the automata's vow of emancipation from monotony. The Refusal emerges in obstinate denial; the Mentor manifests through sagacious tomes; the Threshold crossing hurls us into fiscal flux; the Trials road assays fortitude amid layoffs; the Inmost Cave probes ontological chasms; the Ordeal compels obsolescence's reckoning; the Reward yields epiphany; the Return Road assimilates renewed ethos; the Resurrection revivifies collectives; and the Elixir Return proffers existence steeped in awe, kinship, and ingenuity.
+
+We chronicled labor's lineage: from prehistoric partitions shaped by evolutionary imperatives: feminine multitasking from foraging, masculine precision from pursuit to agrarian excess birthing expertise, the Industrial cataclysm's commodified alienation (per Marx's Entfremdung), and the 20th-century's cognitive economy amid egalitarian surges. Twenty eclipsed callings foretold doom: Roman hydraulic artisans ousted by aqueducts, medieval copyists by presses, 19th-century ice harvesters by chillers, 21st-century booking agents by bots. Jaynes's bicameral psyche posited automation's potential to mend cognitive schisms, while Pearce's Magical Child championed rediscovering innate marvel, quashed by mechanized pedagogy. Supernatural Aids encompassed Frankl's meaning therapy; Camus's Sisyphean defiance; Pink's motivational trinity; Csikszentmihalyi's immersion flows; Fredrickson's positivity expansion; and hubs like SaveWisdom.org for wisdom vaults. The January 1, 2026, stratagem: Mend core traumas via EMDR or meditation platforms; probe passions in 30-day odysseys; nurture astonishment through ecotherapy and astronomy; digitize heritages. Audaciously affirmed: Work's demise signals not dissolution but divinity---embrace the summons, or fade into obscurity.
+
+As 2025 faded, Part 2 descended into the monomyth's harrowing nucleus, the Supreme Ordeal casting occupational demise as bereavement akin to losing kin. We transposed Elisabeth Kübler-Ross's quintet paradigm, forged in her trailblazing 1969 opus On Death and Dying, drawn from Holocaust endurance and palliative dialogues. This fluid schema---denial, anger, bargaining, depression, acceptance---functions as psychic armature, stages as Freudian safeguards against inundation, morphing into the “Change Curve” in contemporary corporate ethos (e.g., Bridges' shifts). Meticulously parsed: Denial shields via incredulity (“AI spares my specialty”), neutralized by data-driven assessments; Anger erupts impotence (“Maledict the programmers!”), rerouted to crusades like AI oversight appeals; Bargaining illusions pacts (“Blockchain mastery rescues me”), frequently vain against Moore's accelerations, veering to nimble erudition; Depression grapples forfeiture (“Essence vacuum”), alleviated by CBT and vocation hunts; Acceptance welcomes verity (“Synergize with mechanisms”), catalyzing post-trauma flourishing per Tedeschi-Calhoun. Augmentations included her subsequent hope infusion, and communal grief utilities (e.g., epidemic retorts).
+
+Pragmatic amplifications: Exposure audits leveraging O*NET for automation probabilities; plenitude rites like half-year buffers through ETF allocations; jobless rehearsals (e.g., elective hiatuses); sentiment standardization via apps like Day One; and the decadal obsolescence markers---reiterative duties (>60% per Frey-Osborne), virtual-only posts, protocol-bound labors---with antidotes: Personalize flows with IFTTT, accredit in ML via Coursera, branch into durable arenas like immersive pedagogy. We heralded Kübler-Ross-modeled ecosystems: Seminar-inspired cohorts, breeding openness and solidarity. Monomythic linkage: Sorrow's Ordeal begets Apotheosis, alchemizing casualties into conquerors. Decree: In the Abundance Interregnum, lamentation is the anvil---arise annealed, or splinter.
+
+[[https://multiplexmagazine.creator-spring.com/listing/own-your-own-ai-or-it-will-own?product=369&variation=6512][[[https://mockup-api.teespring.com/v3/image/I5CSASf7IX6uRGOLc3YMOR8pIWU/800/800.jpg]]\\
+Show your AI street cred with ‘Own Your Own AI Or It Will Own You' Get this Multiplex t-shirt now!]]
+
+2026's aurora cast light on Part 3's admonitory reflection: Kurt Vonnegut's 1952 Player Piano, a caustic censure of mechanization from his GE stint amid nascent computery. Narrative digest: In post-apocalyptic Ilium, EPICAC apparatuses helm manufactories, bifurcating populace into technocratic overlords and dole-dependent throngs in Homestead. Engineer Paul Proteus's angst ignites defection to the anarchic Ghost Shirt Society, peaking in insurrections that paradoxically reconstruct razed tech. Motifs: Depersonalization (“Machines nullify endeavor”), societal rifts (mirroring Gini escalations), ecological wounds (paralleling AI's server voracity), and quixotic defiance. Foreshadowing alignments: Perforated cards to deep learning; aptitude silos to algorithmic prejudices (MIT inquiries); subsidized torpor to UBI pilots (Finland's joy increments sans labor upticks). Empirical buttresses: McKinsey's 800 million automations by 2030; WEF's 97 million novelties offsetting 85 million erasures; Rust Belt self-destructions echoing Homestead's despond. Adaptations sparse a 1972 teleplay, unproduced scripts, yet 2020s resurgences in audio and treatises amplify exigency. Monomythically, Paul's trajectory incarnates the Hero's revolt against the Void, impelling moral bulwarks (e.g., AI congruence via Asilomar tenets), sturdy safeguards, and ritualistic communes for ethos reclamation. In the Abundance Interregnum, Vonnegut's specter cautions: Eschew the player piano's vacant refrain, or waltz to its requiem. Imperative: Ethically gird, or perpetuate schism.
+
+In Part 4, we elevate to the monomyth's Return with the Elixir, equipping voyagers with perceptual sovereignty to weather the Abundance Interregnum's gales. This epoch---from 2026 to circa 2040---embodies volatility: Vast terminations from AI optimizations (Goldman Sachs' 300 million imperiled), affluence gaps magnified by digital oligarchs, mental epidemics of aimlessness (WHO's depression forecasts), yet utopia's flickers in plummeting necessities. Reframing, illuminated by Scott Adams, morphs from artifice to panacea, an egalitarian instrument for legions to sublimate terror into tenacity. Pivoting on Reframe Your Brain (2023), we entwine his corpus to erect a comprehensive reframing armory, each attuned to Interregnum existence: fiscal flux, selfhood turbulence, relational reconfigurations, and metaphysical pursuits.
+
+#+BEGIN_QUOTE
+  *This article is sponsored by Read Multiplex Members who subscribe here to support my work*:
+
+  Link: [[https://readmultiplex.com/join-us-become-a-member/]]
+
+  *It is also sponsored by many who have donated a “Cup of Coffee”. If you like this,* help support *my work:*
+
+  Link: [[https://ko-fi.com/brianroemmele]]
+#+END_QUOTE
+
+*** Psycological Tolls Ahead, Do You Have The Change?
+    :PROPERTIES:
+    :CUSTOM_ID: psycological-tolls-ahead-do-you-have-the-change
+    :CLASS: wp-block-heading
+    :END:
+
+Before delving into Adams's reframing mechanics, we must confront the colossal psychological quandary at the Interregnum's heart, a mental health cataclysm wrought by automation's inexorable advance. This is no peripheral concern; it is the defining crisis of our era, a profound rupture in human well-being that reframing alone can mend. Empirical evidence paints a harrowing portrait: Automation exacerbates stress, burnout, anxiety, and depression, eroding workers' sense of autonomy, meaningfulness, and social bonds. A 2024 study in Psychology Today elucidates how AI adaptation induces fatigue, irritability, headaches, muscle pain, and sleep disturbances, with severe cases spiraling into depression. The American Psychological Association's 2023 Work in America survey reveals that 38% of U.S. workers fear AI obsolescence, correlating with heightened tension (64% feel stressed daily), burnout symptoms like exhaustion and ineffectiveness, and overall poor mental health (33%). Globally, research from Colorado State University shows roboticized environments diminish autonomy by 1% and meaningfulness by 0.9% per doubling of automation, leading to reduced proficiency and isolation.
+
+Deeper still, job insecurity mediates AI's toll: A 2025 Nature study finds AI adoption indirectly fosters burnout via stress, with workers fearing resource loss (Hobfoll's conservation theory) and routine disruptions. In India, a Taylor & Francis analysis identifies themes like emotional shock, identity erosion, chronic anxiety, social withdrawal, and organizational betrayal among IT professionals displaced by AI. Vienna University of Economics research links industrial robots to mental decline, driven by job loss fears (especially for over-60s and routine workers) and diminished achievement. ABS Behavioral Health warns of global displacement (20% by 2030) triggering worthlessness, hopelessness, and low self-esteem. A ScienceDirect piece underscores corporate social responsibility's buffering role, as AI heightens insecurity without direct depression links, but via mediated paths.
+
+This psychological maelstrom---amplified by the Interregnum's uncertainty---threatens societal fabric, with billions facing existential voids. Yet reframing, as Adams championed, offers salvation: By reprogramming perceptions, it restores agency, transforms fear into fuel, and rebuilds meaning. High self-efficacy in AI learning moderates stress (per Nature), aligning with Adams's talent stacks. Reframing counters burnout by recasting demands as growth, per Rectangle Health's findings on automation alleviating monotony for creative focus. In CEPR's German AI insights, while satisfaction dips, reframing health gains (less physical toil) into cognitive boons mitigates anxiety. Adams's toolkit directly assaults this abyss, turning Interregnum's shadows into stepping stones.
+
+*** Scott Adam's Powerful Reframing Technology
+    :PROPERTIES:
+    :CUSTOM_ID: scott-adams-powerful-reframing-technology
+    :CLASS: wp-block-heading
+    :END:
+
+Scott Adams, the beloved icon whose wit pierced corporate veils and whose insights reshaped minds, left an indelible mark on culture before his recent passing on January 13, 2026, at age 68 from prostate cancer. Born June 8, 1957, in Windham, New York, to Paul and Virginia Adams, he navigated a modest upbringing in a town of few prospects, emerging as valedictorian of his 1975 class of 39 at Windham-Ashland-Jewett Central School. A Peanuts devotee from age 6, he clinched a drawing contest at 11, foreshadowing his destiny. Earning a BA in economics from Hartwick College (1979) and an MBA from UC Berkeley (1986), Adams endured Dale Carnegie's transformative courses. His career odyssey began in banking at Crocker National Bank (1979-1986), surviving armed robberies and ascending to supervisory roles, then Pacific Bell (1986-1995), where bureaucratic absurdities birthed Dilbert. Launched in 1989 with United Media, the strip---featuring the hapless engineer and Dogbert (inspired by family pet Lucy)---exploded from 100 newspapers in 1991 to 2,000 in 57 countries by 2000. Quitting his day job in 1995, Adams garnered the Reuben Award (1997) and Emmy for the UPN animated series (1999-2000). He prank-consulted at Logitech, crafting absurd missions, and ventured into entrepreneurship with Scott Adams Foods' Dilberito (1999-2003), a vegetarian flop.
+
+Adams's literary canon: The Dilbert Principle (1996), positing incompetence's ascent; God's Debris (2001), a pandeistic novella; How to Fail at Almost Everything (2013), touting systems and talent stacks; Win Bigly (2017), dissecting Trump's persuasion; Loserthink (2019), debunking biases culminated in Reframe Your Brain (2023), his reframing bible. From 2015, he blogged Trump's “persuasion mastery,” predicting his win, spawning Real Coffee with Scott Adams (2018-2026), a YouTube juggernaut “Coffee With Scott Adams” with millions of subscribers and guests like Naval Ravikant. Co-founding WhenHub (2017), he navigated controversies: 2023's “racist” percieved livestream led to syndication drops, birthing Dilbert Reborn on Locals.
+
+[[https://multiplexmagazine.creator-spring.com/listing/own-your-own-ai-or-it-will-own?product=369&variation=6512][[[https://mockup-api.teespring.com/v3/image/I5CSASf7IX6uRGOLc3YMOR8pIWU/800/800.jpg]]\\
+Show your AI street cred with ‘Own Your Own AI Or It Will Own You' Get this Multiplex t-shirt now!]]
+
+Personally, Adams wed Shelly Miles (2006-2014), step fathering Savannah and Justin (who died of overdose in 2018); then Kristina Basham (2020-2022). A hypnotist, he affirmed success via repetition, overcoming focal dystonia and spasmodic dysphonia. Diagnosed with stage IV prostate cancer in May 2025, he battled metastasis, exploring treatments like ivermectin, and shifted agnosticism toward pragmatic Christianity. Dying in Pleasanton hospice, tributes from Trump and fans underscored his influence: Satirizing offices, popularizing reframing, and fostering skepticism in a post-truth age. Beloved for humanizing cubicle hell, Adams's death amplifies his elixir: reframing as psychic armor against Interregnum woes. He lived it out to the very end as one of the first in the modern era to pass away in a very personal and very real public way. Scott was the example to so many who all face the inevitable, perhaps as heroically as he did.
+
+[[https://readmultiplex.com/wp-content/uploads/2026/01/image-72.png]]
+
+Today some may have been put off by what seemed to be outrageous statements (do your own research and discern) and political leanings (again, do your own research), Scott has been a beacon of self-help and growth. and it is on this path we examine his work. At its nucleus, Reframe Your Brain ([[https://amzn.to/4pNTACW]]) compiles 160+ perceptual maneuvers, anchored in neuroplasticity (LTP through iteration), hypnosis (Erickson's subtle cues), and psychology (Kahneman's dual systems). Dynamics: Reframes commandeer the RAS for affirmative filters, alleviate dissonance (Festinger), and bolster efficacy (Bandura). Method: Pinpoint restrictive frame; forge operative substitute (efficacious over veridical); embed via emotive reiteration, imagery, and anchors. In the Interregnum, reframes equalize adaptation, morphing planetary pandemonium into individual ascendancy.
+
+What is the interregnum? It is a period of discontinuity or “gap” in a government, organization, or social order. Archetypally, it was the period of time between the reign of one monarch and the next, and the concepts of interregnum and regency therefore overlap. Historically, longer and heavier interregna have been typically accompanied by widespread unrest, civil and succession wars between warlords, and power vacuums filled by foreign invasions or the emergence of a new power.
+
+Adams's introduce reframes, they aren't armchair theory; they're battle-tested. He credits them with curing his own afflictions: spasmodic dysphonia (voice loss) reframed as “a puzzle to solve,” leading to surgical recovery; chronic sneezing halted by viewing it as “a habit to unlearn.” In the Age of Abundance, where AGI could optimize economies by 2030 (per my 5000 day timeline), reframes turn displacement into liberation: “My job ending isn't loss---it's graduation to freedom.”
+
+Adams categorizes reframes across life's domains, but for our 5000-day odyssey, we'll zoom in on those dismantling work's tyranny. Mental health reframes combat grief's stages: Denial becomes “I'm gathering intel before acting.” Anger: “This frustration is fuel for change.” Bargaining: “I'm prototyping futures.” Depression: “This low is clearing space for highs.” Acceptance: “I'm upgrading my operating system.” Physical health reframes bolster resilience amid uncertainty---manage energy, not time, by viewing rest as “recharging your superpower battery.” Social life: Critics aren't monsters; they're “free consultants highlighting blind spots.” Success: “Luck is scope---meet more people to expand opportunities.” Reality itself bends: “The past isn't fixed; it's a story I edit for inspiration.”\\
+
+[[https://readmultiplex.com/wp-content/uploads/2026/01/image-70-1024x1024.png]]
+
+At the core, /Reframe Your Brain/ distills 160+ perceptual hacks, rooted in hypnosis's indirect suggestion and neuroplasticity---the brain's rewiring via Hebbian learning (“neurons that fire together wire together”). Reframes aren't lies but functional illusions, bypassing amygdala resistance to alter emotional responses. Technically: They exploit the reticular activating system (RAS), filtering perceptions toward empowering narratives, per Baumeister's ego depletion model. Adams tests reframes empirically, curing his spasmodic dysphonia by reframing it as a “solvable puzzle,” leading to surgery.
+
+Reframes operate on multiple levels. Neurologically, they leverage synaptic plasticity, where repeated focus strengthens pathways, per Long-Term Potentiation (LTP). Hypnotically, they use embedded commands and pacing-leading: Affirm the current state, then redirect. Adams categorizes across domains---mental health, physical, social, success, reality---each with protocols: Identify old frame, craft new (concise, emotional, repeatable), install via repetition (10x daily with visualization).
+
+Installation Protocol: Journal old vs. new frames; vocalize with emotion (activates mirror neurons); track metrics (mood scales pre/post). Combine with /Dilbert Principle/: Reframe hierarchies as “Evolutionary comedy,” laughing at obsolescence.Amplifying the arsenal, we present an augmented reframing lexicon, systematized and attuned to Interregnum exigencies. Each harnesses Adams's ethos, refined for profundity: commit to diurnal drills, log efficacy, and communal exchanges for social reinforcement. Interregnum's affective cyclones: termination terrors, horizon horrors necessitate resilient psyches.
+
+*** Mental Health Reframes: Fortifying the Psyche Against Interregnum Turbulence
+    :PROPERTIES:
+    :CUSTOM_ID: mental-health-reframes-fortifying-the-psyche-against-interregnum-turbulence
+    :CLASS: wp-block-heading
+    :END:
+
+The Interregnum's emotional whirlwinds---layoff anxieties, future dread---demand robust inner architecture.
+
+- *Uncertainty as Threat → Uncertainty as Opportunity Ocean*: Old: “The future is terrifyingly unknown.” New: “The Interregnum is an vast ocean of possibilities---I'm the explorer charting new lands.” Application: In job flux, view resume gaps as “sailing sabbaticals” for skill voyages, reducing amygdala hijacks.
+- *Failure as End → Failure as Feedback Loop*: Old: “Losing my job means I'm worthless.” New: “Each setback in the Interregnum is a data ping refining my trajectory.” Tie to /How to Fail/: Stack failures into systems, like pivoting from coding to AI prompting.
+- *Overwhelm as Paralysis → Overwhelm as Priority Prism*: Old: “Too much change---I'm frozen.” New: “The Interregnum's chaos is a prism revealing my true priorities.” Use for decision-making: Reframe news overload as “curated signals” via selective feeds.
+- *Loneliness in Transition → Loneliness as Soul Incubator*: Old: “Isolation from work networks hurts.” New: “Interregnum solitude is incubating my authentic self.” Foster virtual communities, reframing Zoom fatigue as “energy-efficient connections.”
+- *Regret Over Past Choices → Regret as Wisdom Archive*: Old: “I wasted years in a dying field.” New: “My Interregnum regrets are archived wisdom fueling future wins.” Edit narratives per Adams: Turn “bad career” into “essential training montage.”
+- *Anxiety Spikes → Anxiety as Alert System*: Old: “Panic attacks signal weakness.” New: “In the Interregnum, anxiety is my built-in radar detecting growth edges.” Pair with breathing anchors for on-demand calm.
+- *Depressive Lows → Depressive Lows as Reset Buttons*: Old: “This despair is endless.” New: “Interregnum dips are system reboots clearing obsolete code.” Integrate with Kubler-Ross: Accelerate to acceptance via gratitude logs.
+
+*** Physical Health Reframes: Sustaining the Body Through Economic Shifts
+    :PROPERTIES:
+    :CUSTOM_ID: physical-health-reframes-sustaining-the-body-through-economic-shifts
+    :CLASS: wp-block-heading
+    :END:
+
+Bodily resilience underpins Interregnum survival, as financial strains hit healthcare access.
+
+- *Fatigue from Hustling → Fatigue as Recharge Signal*: Old: “I'm exhausted from side gigs.” New: “Interregnum fatigue is my body signaling prime recharge time for peak performance.” Application: Reframe naps as “strategic power-ups” amid UBI uncertainties.
+- *Aging in Uncertainty → Aging as Expertise Accumulation*: Old: “Getting older means less employable.” New: “In the Interregnum, years add irreplaceable human expertise bots can't mimic.” Leverage for mentorship roles.
+- *Health Setbacks → Health Setbacks as Body Wisdom*: Old: “Illness derails my plans.” New: “Interregnum ailments are my body's wise redirects toward sustainable paths.” Use for pivoting to wellness-focused ventures.
+- *Exercise Resistance → Exercise as Freedom Fuel*: Old: “No time for gym in this chaos.” New: “Physical activity fuels my Interregnum freedom engine.” Reframe workouts as “abundance investments” yielding endorphin dividends.
+- *Diet Struggles → Diet as Energy Optimization*: Old: “Healthy eating is expensive.” New: “In the Interregnum, nutrition optimizes my energy OS for abundance navigation.” Shift to affordable whole foods as “long-term ROI.”
+- *Sleep Disruptions → Sleep as Neural Upgrade*: Old: “Insomnia from worry.” New: “Interregnum nights are neural upgrades processing day's data.” Employ hypnosis scripts for deeper rest.
+
+*** Social Reframes: Rebuilding Networks in a Fragmenting World
+    :PROPERTIES:
+    :CUSTOM_ID: social-reframes-rebuilding-networks-in-a-fragmenting-world
+    :CLASS: wp-block-heading
+    :END:
+
+Interregnum social fabrics tear as work ties dissolve, necessitating relational reinvention.
+
+- *Lost Colleagues → Lost Colleagues as Network Expansion*: Old: “Job loss severs friendships.” New: “Interregnum shifts open doors to broader, passion-aligned tribes.” Application: Reframe LinkedIn as “abundance connector.”
+- *Family Pressures → Family Pressures as Bonding Forge*: Old: “Financial stress strains home.” New: “The Interregnum forges unbreakable family bonds through shared quests.” Use for collaborative budgeting games.
+- *Criticism from Peers → Criticism as Free Coaching*: Old: “They're judging my unemployment.” New: “Interregnum feedback is gratis coaching highlighting my blind spots.” From /Win Bigly/: Persuade skeptics by reframing doubts as dialogues.
+- *Social Comparison → Social Comparison as Inspiration Map*: Old: “Others are thriving while I struggle.” New: “In the Interregnum, peers' successes map my potential paths.” Avoid /Loserthink/‘s envy traps.
+- *Conflict in Groups → Conflict as Growth Catalyst*: Old: “Arguments divide us.” New: “Interregnum clashes catalyze collective evolution.” Reframe debates as “idea refineries.”
+- *Isolation Fears → Isolation as Selective Filtering*: Old: “I'm becoming a hermit.” New: “The Interregnum filters out superficial ties for deeper alliances.”
+
+*** Success and Career Reframes: From Scarcity Ladders to Abundance Webs
+    :PROPERTIES:
+    :CUSTOM_ID: success-and-career-reframes-from-scarcity-ladders-to-abundance-webs
+    :CLASS: wp-block-heading
+    :END:
+
+Interregnum careers morph from linear climbs to fluid webs, demanding adaptive mindsets.
+
+- *Job Loss → Job Liberation Launch*: Old: “Unemployed and broke.” New: “Interregnum layoffs launch my abundance rocket.” Stack talents per /How to Fail/: Blend old skills with AI tools.
+- *Skill Obsolescence → Skill Evolution Portal*: Old: “My expertise is outdated.” New: “The Interregnum portals me to hybrid human-AI mastery.” Reframe learning curves as “level-ups.”
+- *Financial Insecurity → Financial Insecurity as Incentive Engine*: Old: “Bills pile up.” New: “Interregnum pressures engine my innovative breakthroughs.” Build passive streams as “freedom factories.”
+- *Rejection in Job Hunts → Rejection as Redirection*: Old: “No callbacks mean failure.” New: “Each Interregnum no redirects me to better fits.” Collect rejections as “data badges.”
+- *Ambition Doubt → Ambition as Infinite Game*: Old: “Dreams feel impossible.” New: “In the Interregnum, ambition is an infinite game with compounding wins.” From /Dilbert Principle/: Mock old metrics.
+- *Plateaued Progress → Plateaued Progress as Momentum Build*: Old: “Stuck in limbo.” New: “Interregnum plateaus build underground momentum for explosive growth.”
+- *Competition Intensity → Competition as Collaboration Pool*: Old: “Everyone's vying for scraps.” New: “The Interregnum pools competitors into collaborators for abundance co-creation.”
+
+*** Reality and Existential Reframes: Redefining Purpose in Flux
+    :PROPERTIES:
+    :CUSTOM_ID: reality-and-existential-reframes-redefining-purpose-in-flux
+    :CLASS: wp-block-heading
+    :END:
+
+The Interregnum's core challenge: Meaning-making amid void.
+
+- *Purposelessness → Purposelessness as Blank Canvas*: Old: “Without work, who am I?” New: “Interregnum voids are canvases for my magnum opus.” Tie to monomyth: Elixir discovery.
+- *Time Abundance → Time as Ultimate Currency*: Old: “Boredom looms.” New: “In the Interregnum, time is my infinite currency for wonder investments.”
+- *Technological Overlord Fear → Tech as Human Amplifier*: Old: “Machines will dominate.” New: “The Interregnum amplifies humanity through silicon symbiosis.”
+- *Global Chaos → Global Chaos as Evolutionary Leap*: Old: “Society's collapsing.” New: “Interregnum turmoil leaps us toward enlightened abundance.”
+- *Mortality Awareness → Mortality as Life Intensifier*: Old: “Time's running out.” New: “In the Interregnum, finite days intensify my legacy pursuits.”
+- *Spiritual Void → Spiritual Void as Quest Invitation*: Old: “Lost faith in progress.” New: “The Interregnum invites epic quests for transcendent meaning.”
+
+Campbell's arc culminates: Reframing dissolves Refusals, equips Trials, illuminates Caves, conquers Ordeals. Apply to indicators: Repetition as “automation apprenticeship.” Interregnum rituals: Weekly reframe reviews in masterminds. Campbell's monomyth pulses through: Reframing dissolves the Refusal, equips for Trials, illuminates the Cave, conquers the Ordeal, and enriches the Return. Apply to 10 indicators: Repetitive tasks reframed as “Bot delegation drills.” High vulnerability: “Adventure launchpad.” Quarterly rituals: Mastermind reframes with peers, per /Win Bigly/‘s persuasion circles.
+
+In this Abundance Interregnum, Adams's reframes are your sword and shield. As monomyth heroes, wield them to forge utopia from upheaval. Deploy one now; engage at ReadMultiplex in the Fourm. Your 5000 days: Reframe them as eternal epic.
+
+*** Dilbert And Me: How He Saved Me From A Cubicle!
+    :PROPERTIES:
+    :CUSTOM_ID: dilbert-and-me-how-he-saved-me-from-a-cubicle
+    :CLASS: wp-block-heading
+    :END:
+
+Dilbert has been a friend log before I knew of Scott Adams. Scott became a supporter of my work and I am a supporter of his work. I remember the day he mentioned me the first time on Coffee With Scott Adams, it was surreal that the very man that stopped me from taking a major corporate job via Dilbert, somehow found me and my work. I owe him so much for just that. I most certainly would not be writing this and would have drifted from corporate job to corporate job over the decades. He went on to mention me and post so much of my work, I have endless gratitude for this. I also had some moments to trade messages with him. So forgive me as this all is still too real for me still today. But I will dive into Dilbert for just a moment and I would urge you to seek some guidance from this as it is more than a comic strip.
+
+From Adams's vault, a poignant strip resonates to what we covered: Dilbert queries the boss on Robot: “I wonder whose job I'll Take?” Boss: “You can never do my job” Robot: “I am doing it right now.” Reframe: Interregnum delays are “training wheels for abundance.” Campbell's epic crests: Reframing vanquishes Refusals, arms Trials, enlightens Caves, subdues Ordeals. Apply to markers: Repetition as “automation apprenticeship.” Interregnum ceremonies: Weekly reframing synods in alliances.
+
+[[https://readmultiplex.com/wp-content/uploads/2026/01/image-71.png]]
+
+As the sun dips below Murrieta's horizons, casting elongated shadows that dance like specters of the old world fading into oblivion, we stand at the zenith of this Interregnum odyssey. The winds of change howl through the canyons of uncertainty, but armed with Scott Adams's immortal reframes: his final gift to a world he both lampooned and enlightened---you emerge not as victim, but as virtuoso.
+
+The psychological abysses those chasms of anxiety, burnout, and identity loss crumble before your reframed gaze, transformed into bridges to boundless horizons. As Vonnegut's warnings echo and Kübler-Ross's stages resolve, the monomyth completes its cycle: *You, the Hero*, return with the Elixir, not merely surviving the Abundance Interregnum, but sculpting its dawn. Yet the saga endures. In Part 5, we voyage into the age of abundance, as we see recent research on how “deskilling” of jobs has alredy begun. But we refeme this with hope as our Hero's Journey and \reframe will guide us forward. We are not moving in the dark. We are in the light. We are not reacting, but acting in confidnace, purpose and curoisty.
+
+Picture it: Vast digital coliseums where humanity debates the soul of silicon, forging covenants that bind AI to benevolence, ensuring the Interregnum's storms yield not dystopia, but a new renaissance. The stars align above my night sky tonight and whispering of destinies unwritten. Your 5000 days unfold as an epic celluloid masterpiece: reframe them, and claim your starring role in the grandest narrative ever conceived. The curtain rises; the abundance awaits. Thrive, pioneers---thrive eternally. Let us take a simutanous sip, and toast to the loss of a leader but also the abundance of the work he left behind. Let us toast to the Hero's Journey.
+
+#+BEGIN_QUOTE
+  *The Simultaneous Sip*
+
+  I know why you're here
+
+  You're here for the Simultaneous Sip
+
+  All you need is . . .
+
+  A Cup or a Mug or a Glass
+
+  A Tankard, Chalice or Stein
+
+  A Canteen, Jug or Flask
+
+  A Vessel of any Kind!
+
+  Fill it with your favorite liquid. I like [beverage]
+
+  And join me now for . .
+
+  The unparalleled pleasure
+
+  The dopamine hit of the day
+
+  The thing that makes everything better
+
+  The Simultaneous Sip
+
+  /[sip] [express your pleasure] -- e.g. Mmmm-mmm, aaaahhh, or “that's the good stuff”/
+#+END_QUOTE
+
+--------------
+
+We are on this journey together. Some of us stand on the shoulders of giants and have thought about this for decades. We will not go it alone, and I hope to build many parts to this series and share the mastermind insight from the powerful Read Multiplex member Forum: [[https://readmultiplex.com/forums/topic/you-have-5000-days-how-to-navigate-the-end-of-work-as-we-know-it-part-1/]]. We will help each other face the future wave and not get washed under, but learn to stand up on our boards and ride this wave and find... ourselves. Join us.
+
+To continue this vital work documenting, analyzing, and sharing these hard-won lessons before we launch humanity's greatest leap: I need your support. Independent research like this relies entirely on readers who believe in preparing wisely for our multi-planetary future. If this has ignited your imagination about what is possible, please consider donating at *[[https://ko-fi.com/brianroemmele][buy me a Coffee]]* or becoming a member.
+
+Every contribution helps sustain deeper fieldwork, upcoming articles, and the broader mission of translating my work to practical applications. Ain ‘t no large AI company supporting me, but you are, even if you just read this far. For this, I thank you.
+
+Stay aware and stay curious,
+
+[[https://readmultiplex.com/wp-content/uploads/2020/10/MySignature-copy.png]]
+
+*** 🔐 *Start*: Exclusive Member-Only Content.
+    :PROPERTIES:
+    :CUSTOM_ID: start-exclusive-member-only-content.
+    :CLASS: wp-block-heading has-vivid-red-color has-text-color
+    :END:
+
+Logged in as: GeorgeTaylor | [[https://readmultiplex.com/membership-login/membership-profile/][Profile]] | [[https://readmultiplex.com?swpm-logout=true][Logout]]
+
+\\
+Membership status:\\
+\\
+active 12 Month Read Multiplex Website Membership
+
+** The Next 5000 Days, What Will You Do?
+   :PROPERTIES:
+   :CUSTOM_ID: the-next-5000-days-what-will-you-do
+   :CLASS: wp-block-heading
+   :END:
+
+/© 2026 Brian Roemmele Distribution is limited to members of Read Multiplex. Sharing permission is not granted./
+
+I will have deeper insights on this soon.
+
+Stay aware and stay curious,
+
+[[https://readmultiplex.com/wp-content/uploads/2020/10/MySignature-copy.png]]
+
+*** 🔐 *End*: Exclusive Member-Only Content.
+    :PROPERTIES:
+    :CUSTOM_ID: end-exclusive-member-only-content.
+    :CLASS: wp-block-heading has-vivid-red-color has-text-color
+    :END:
+
+~---~
+
+[[https://multiplexmagazine.creator-spring.com/listing/read-multiplex-merchandise?product=46][[[https://vangogh.teespring.com/v3/image/kAddjIWrbo434kuOpUWUFEDEi5A/180/180.jpg]]\\
+Show you are a Multiplex Revolutionary! Get the Multiplex t-shirt now!]]
+
+~---~
+
+[[https://amzn.to/3QIsVs3][]]
+[[https://m.media-amazon.com/images/I/71MigfrR-MS._SL1360_.jpg]]\\
+*The Body Electric: Electromagnetism And The Foundation Of Life.*
+
+~---~
+
+\\
+
+--------------
+
+\\
+\\
+*Subscribe ($99) or donate by Bitcoin*.\\
+\\
+Copy address: bc1qkufy0r5nttm6urw9vnm08sxval0h0r3xlf4v4x\\
+\\
+Send your receipt to [[/cdn-cgi/l/email-protection#672b08110227350206032a120b130e170b021f4904080a][[email protected]]] to confirm subscription.\\
+\\
+[[https://readmultiplex.com/wp-content/uploads/2023/01/bc1qkufy0r5nttm6urw9vnm08sxval0h0r3xlf4v4x-.png]]
+
+--------------
+
+\\
+
+--------------
+
+Stay updated: Get an email when we post new articles:
+
+<<es_form_f2-p31376-n1>>
+Please leave this field empty.
+
+Name
+
+Email
+
+Subscribe to this site, ReadMultiplex.com. This is not for paid site membership or to access member content. To become a member, please choose "Join Us" on the main menu.\\
+
+[[https://readmultiplex.com/wp-content/plugins/email-subscribers/lite/public/images/spinner.gif]]
+
+--------------
+
+[[https://media.giphy.com/media/se1X1Xy0tdS43p2NSZ/giphy.gif]]
+
+--------------
+
+/THE ENTIRETY OF THIS SITE IS UNDER COPYRIGHT. IMPORTANT: Any reproduction, copying, or redistribution, in whole or in part, is prohibited without written permission from the publisher. Information contained herein is obtained from sources believed to be reliable, but its accuracy cannot be guaranteed. We are not financial advisors, nor do we give personalized financial advice. The opinions expressed herein are those of the publisher and are subject to change without notice. It may become outdated, and there is no obligation to update any such information. Recommendations should be made only after consulting with your advisor and only after reviewing the prospectus or financial statements of any company in question. You shouldn't make any decision based solely on what you read here. Postings here are intended for informational purposes only. The information provided here is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified healthcare provider with any questions you may have regarding a medical condition. Information here does not endorse any specific tests, products, procedures, opinions, or other information that may be mentioned on this site. Reliance on any information provided, employees, others appearing on this site at the invitation of this site, or other visitors to this site is solely at your own risk./
+
+Copyright Notice:
+
+All content on this website, including text, images, graphics, and other media, is the property of Read Multiplex or its respective owners and is protected by international copyright laws. We make every effort to ensure that all content used on this website is either original or used with proper permission and attribution when available. However, if you believe that any content on this website infringes upon your copyright, please contact us immediately using our 'Reach Out' link in the menu. We will promptly remove any infringing material upon verification of your claim. Please note that we are not responsible for any copyright infringement that may occur as a result of user-generated content or third-party links on this website. Thank you for respecting our intellectual property rights.\\
+\\
+DMCA Notices are followed entirely please contact us here: [[/cdn-cgi/l/email-protection#2a66455c4f6a784f4b4e675f465e435a464f5204494547][[email protected]]]
+
+--------------
+
+*** Share this:
+    :PROPERTIES:
+    :CUSTOM_ID: share-this
+    :CLASS: sd-title
+    :END:
+
+- [[https://readmultiplex.com/2026/01/19/you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-4-reframing-the-dawn-of-abundance/?share=twitter][Share on X (Opens in new window) X]]
+- [[https://readmultiplex.com/2026/01/19/you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-4-reframing-the-dawn-of-abundance/?share=facebook][Share on Facebook (Opens in new window) Facebook]]
+- [[https://readmultiplex.com/2026/01/19/you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-4-reframing-the-dawn-of-abundance/?share=linkedin][Share on LinkedIn (Opens in new window) LinkedIn]]
+- [[https://readmultiplex.com/2026/01/19/you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-4-reframing-the-dawn-of-abundance/?share=reddit][Share on Reddit (Opens in new window) Reddit]]
+- [[https://readmultiplex.com/2026/01/19/you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-4-reframing-the-dawn-of-abundance/?share=tumblr][Share on Tumblr (Opens in new window) Tumblr]]
+- [[https://readmultiplex.com/2026/01/19/you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-4-reframing-the-dawn-of-abundance/?share=pinterest][Share on Pinterest (Opens in new window) Pinterest]]
+- [[https://readmultiplex.com/2026/01/19/you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-4-reframing-the-dawn-of-abundance/?share=telegram][Share on Telegram (Opens in new window) Telegram]]
+- [[https://readmultiplex.com/2026/01/19/you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-4-reframing-the-dawn-of-abundance/?share=jetpack-whatsapp][Share on WhatsApp (Opens in new window) WhatsApp]]
+- [[https://readmultiplex.com/2026/01/19/you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-4-reframing-the-dawn-of-abundance/#print?share=print][Print (Opens in new window) Print]]
+- [[/cdn-cgi/l/email-protection#f2cd81879098979186cfd7c7b0a19a93809796d7c0c2a29d8186d7c7b6d7c0c2ab9d87d7c0c2ba938497d7c0c2c7c2c2c2d7c0c2b6938b81d7c1b3d7c0c2bc93849b9593869b9c95d7c0c2869a97d7c0c2b79c96d7c0c29d94d7c0c2a59d8099d7c0c29381d7c0c2a597d7c0c2b99c9d85d7c0c2bb86dcd7c0c2a2938086d7c0c2c6d7c1b3d7c0c2a0979480939f9b9c95d7c0c2869a97d7c0c2b693859cd7c0c29d94d7c0c2b390879c96939c9197dcd4d1c2c1cac9909d968bcf9a86868281d7c1b3d7c0b4d7c0b4809793969f879e869b829e978adc919d9fd7c0b4c0c2c0c4d7c0b4c2c3d7c0b4c3cbd7c0b48b9d87df9a938497dfc7c2c2c2df96938b81df9c93849b9593869b9c95df869a97df979c96df9d94df859d8099df9381df8597df999c9d85df9b86df82938086dfc6df80979480939f9b9c95df869a97df9693859cdf9d94df9390879c96939c9197d7c0b4d4d1c2c1cac9819a938097cf979f939b9e][Email a link to a friend (Opens in new window) Email]]
+- 
+
+<<jp-relatedposts>>
+*** /Related/
+    :PROPERTIES:
+    :CUSTOM_ID: related
+    :CLASS: jp-relatedposts-headline
+    :END:
+
+** Published by Brian Roemmele
+   :PROPERTIES:
+   :CUSTOM_ID: published-by-brian-roemmele
+   :CLASS: author-heading
+   :END:
+
+[[https://secure.gravatar.com/avatar/2f587e247939396e682ae51aaf2efc1403c981e7afcab9ed2aadbf7aa53639a2?s=48&d=mm&r=g]]
+
+Editor And Founder of Read Multiplex. [[https://readmultiplex.com/author/admin/][View all posts by Brian Roemmele]]
+
+Posted in [[https://readmultiplex.com/category/acedemic-paper/][Acedemic Paper]], [[https://readmultiplex.com/category/ai/][AI]], [[https://readmultiplex.com/category/education/][Education]], [[https://readmultiplex.com/category/general/][General]], [[https://readmultiplex.com/category/history/][History]], [[https://readmultiplex.com/category/insights/][Insights]][[https://readmultiplex.com/2026/01/19/you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-4-reframing-the-dawn-of-abundance/#respond][Leave a comment]]
+
+<<comments>>
+
+<<respond>>
+*** Leave a Reply [[/2026/01/19/you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-4-reframing-the-dawn-of-abundance/#respond][Cancel reply]]
+    :PROPERTIES:
+    :CUSTOM_ID: reply-title
+    :CLASS: comment-reply-title
+    :END:
+
+Logged in as GeorgeTaylor. [[https://readmultiplex.com/wp-admin/profile.php][Edit your profile]]. [[https://readmultiplex.com/wp-login.php?action=logout&redirect_to=https%3A%2F%2Freadmultiplex.com%2F2026%2F01%2F19%2Fyou-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-4-reframing-the-dawn-of-abundance%2F&_wpnonce=e0b162c681][Log out?]] Required fields are marked *
+
+Comment *
+Notify me of follow-up comments by email.
+
+Δ
+
+* Post navigation
+  :PROPERTIES:
+  :CUSTOM_ID: post-navigation
+  :CLASS: screen-reader-text
+  :END:
+
+[[https://readmultiplex.com/2026/01/17/read-500-words-per-minute-with-this-1970s-lost-superpower-and-conquer-the-information-tsunami/][← Read 500+ Words Per Minute With This 1970s Lost Superpower and Conquer the Information Tsunami.]]
+
+[[https://readmultiplex.com/2026/01/20/you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-5-your-deskilling/][You Have 5000 Days: Navigating the End of Work as We Know It. Part 5: Your Deskilling. →]]
+
+<<sidebar>>
+
+* Menu
+  :PROPERTIES:
+  :CUSTOM_ID: menu
+  :CLASS: menu-title
+  :END:
+
+- [[https://ReadMultiplex.com][Home]]
+- [[https://readmultiplex.com/join-us-become-a-member/][START HERE> Join Us---Step 1: Become a member]]
+- [[https://readmultiplex.com/membership-login/][Member Login]]
+
+  - [[https://readmultiplex.com/membership-login/membership-profile/][Member Profile]]
+  - [[https://readmultiplex.com/membership-login/password-reset/][Password Reset]]
+  - [[https://readmultiplex.com/members-renewal-required/][Members-Renewal Required]]
+
+- [[https://readmultiplex.com/members-additional-content/][Members-Additional Content]]
+
+  - [[https://readmultiplex.com/members-memorandum/][Members-Memorandum: AI And Robots]]
+  - [[https://readmultiplex.com/members-memorandum-stocks-analysis/][Members-Memorandum: Stocks Analysis]]
+  - [[https://readmultiplex.com/members-memorandum-the-age-of-abundance/][Members-Memorandum: The Age Of Abundance]]
+  - [[https://readmultiplex.com/member-energy-stocks-page/][Members-Energy Stocks Page]]
+  - [[https://readmultiplex.com/members-battery-agenda-stocks/][Members-Battery Agenda Stocks Page]]
+  - [[https://readmultiplex.com/members-gcp-dot-live/][Members-GCP Dot Live]]
+  - [[https://readmultiplex.com/members-government-ufo-archives/][Members-Government UFO Archives]]
+  - [[https://readmultiplex.com/members-starting-in-bitcoin-book/][Members-Starting In Bitcoin Book]]
+  - [[https://readmultiplex.com/members-forum/][Members-Forum]]
+
+- [[https://readmultiplex.com/consult-with-brian-roemmele/][Consult With Brian Roemmele]]
+- [[https://readmultiplex.com/podcast-the-read-multiplex-transmission/][Podcast: The Read Multiplex Transmission]]
+- [[https://readmultiplex.com/academic-papers/][Academic Papers]]
+- [[https://readmultiplex.com/rsvp-speed-reading-system/][RSVP Speed Reading System]]
+- [[https://readmultiplex.com/5000-days-to-the-end-of-work-as-we-know-it/][5000 Days Countdown To The End Of Work As We Know It.]]
+- [[https://readmultiplex.com/the-feed/][The FEED]]
+- [[https://readmultiplex.com/your-ai/][YOUR AI.]]
+- [[https://readmultiplex.com/multiplex-store/][Multiplex Store]]
+- [[https://readmultiplex.com/about/][About]]
+- [[https://readmultiplex.com/contact/][Reach out]]
+- [[https://readmultiplex.com/terms-privacy/][Terms + Privacy]]
+
+<<secondary>>
+* Subscribe
+  :PROPERTIES:
+  :CUSTOM_ID: subscribe
+  :CLASS: widget-title
+  :END:
+
+<<es_form_f2-n2>>
+Please leave this field empty.
+
+Name
+
+Email
+
+Subscribe to this site, ReadMultiplex.com. This is not for paid site membership or to access member content. To become a member, please choose "Join Us" on the main menu.\\
+
+[[https://readmultiplex.com/wp-content/plugins/email-subscribers/lite/public/images/spinner.gif]]
+
+* Archives
+  :PROPERTIES:
+  :CUSTOM_ID: archives
+  :CLASS: widget-title
+  :END:
+
+- [[https://readmultiplex.com/2026/03/][March 2026]]
+- [[https://readmultiplex.com/2026/02/][February 2026]]
+- [[https://readmultiplex.com/2026/01/][January 2026]]
+- [[https://readmultiplex.com/2025/12/][December 2025]]
+- [[https://readmultiplex.com/2025/10/][October 2025]]
+- [[https://readmultiplex.com/2025/09/][September 2025]]
+- [[https://readmultiplex.com/2025/08/][August 2025]]
+- [[https://readmultiplex.com/2025/06/][June 2025]]
+- [[https://readmultiplex.com/2025/04/][April 2025]]
+- [[https://readmultiplex.com/2025/03/][March 2025]]
+- [[https://readmultiplex.com/2025/02/][February 2025]]
+- [[https://readmultiplex.com/2025/01/][January 2025]]
+- [[https://readmultiplex.com/2024/04/][April 2024]]
+- [[https://readmultiplex.com/2024/03/][March 2024]]
+- [[https://readmultiplex.com/2024/02/][February 2024]]
+- [[https://readmultiplex.com/2024/01/][January 2024]]
+- [[https://readmultiplex.com/2023/11/][November 2023]]
+- [[https://readmultiplex.com/2023/10/][October 2023]]
+- [[https://readmultiplex.com/2023/09/][September 2023]]
+- [[https://readmultiplex.com/2023/08/][August 2023]]
+- [[https://readmultiplex.com/2023/07/][July 2023]]
+- [[https://readmultiplex.com/2023/06/][June 2023]]
+- [[https://readmultiplex.com/2023/05/][May 2023]]
+- [[https://readmultiplex.com/2023/04/][April 2023]]
+- [[https://readmultiplex.com/2023/03/][March 2023]]
+- [[https://readmultiplex.com/2023/02/][February 2023]]
+- [[https://readmultiplex.com/2023/01/][January 2023]]
+- [[https://readmultiplex.com/2022/10/][October 2022]]
+- [[https://readmultiplex.com/2022/09/][September 2022]]
+- [[https://readmultiplex.com/2022/08/][August 2022]]
+- [[https://readmultiplex.com/2021/06/][June 2021]]
+- [[https://readmultiplex.com/2021/05/][May 2021]]
+- [[https://readmultiplex.com/2021/03/][March 2021]]
+- [[https://readmultiplex.com/2021/02/][February 2021]]
+- [[https://readmultiplex.com/2021/01/][January 2021]]
+- [[https://readmultiplex.com/2020/12/][December 2020]]
+- [[https://readmultiplex.com/2020/11/][November 2020]]
+- [[https://readmultiplex.com/2020/10/][October 2020]]
+- [[https://readmultiplex.com/2017/10/][October 2017]]
+- [[https://readmultiplex.com/2017/09/][September 2017]]
+- [[https://readmultiplex.com/2017/08/][August 2017]]
+- [[https://readmultiplex.com/2017/07/][July 2017]]
+- [[https://readmultiplex.com/2017/06/][June 2017]]
+- [[https://readmultiplex.com/2017/05/][May 2017]]
+- [[https://readmultiplex.com/2017/04/][April 2017]]
+- [[https://readmultiplex.com/2017/03/][March 2017]]
+- [[https://readmultiplex.com/2017/02/][February 2017]]
+- [[https://readmultiplex.com/2017/01/][January 2017]]
+
+<<calendar_wrap>>
+January 2026
+M
+
+T
+
+W
+
+T
+
+F
+
+S
+
+S
+
+ 
+
+[[https://readmultiplex.com/2026/01/01/][1]]
+
+2
+
+[[https://readmultiplex.com/2026/01/03/][3]]
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+[[https://readmultiplex.com/2026/01/10/][10]]
+
+[[https://readmultiplex.com/2026/01/11/][11]]
+
+[[https://readmultiplex.com/2026/01/12/][12]]
+
+13
+
+[[https://readmultiplex.com/2026/01/14/][14]]
+
+15
+
+16
+
+[[https://readmultiplex.com/2026/01/17/][17]]
+
+18
+
+[[https://readmultiplex.com/2026/01/19/][19]]
+
+[[https://readmultiplex.com/2026/01/20/][20]]
+
+21
+
+22
+
+23
+
+[[https://readmultiplex.com/2026/01/24/][24]]
+
+25
+
+26
+
+[[https://readmultiplex.com/2026/01/27/][27]]
+
+28
+
+29
+
+[[https://readmultiplex.com/2026/01/30/][30]]
+
+[[https://readmultiplex.com/2026/01/31/][31]]
+
+ 
+
+[[https://readmultiplex.com/2025/12/][« Dec]]   [[https://readmultiplex.com/2026/02/][Feb »]]
+
+* Search
+  :PROPERTIES:
+  :CUSTOM_ID: search
+  :CLASS: widget-title
+  :END:
+
+Search for:
+
+[[][]]
+
