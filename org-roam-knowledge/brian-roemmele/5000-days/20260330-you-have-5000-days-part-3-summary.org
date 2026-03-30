@@ -1,0 +1,20 @@
+#+title: You Have 5000 Days – Part 3: The Player Piano – Automation and the Erosion of Human Skill
+#+filetags: :brian-roemmele:5000-days:summary:ai-abundance:
+#+ID: 20260330-5000days-part3-summary
+#+roam_alias: 5000 Days Part 3
+
+* Precis
+Roemmele uses Kurt Vonnegut’s *Player Piano* as a powerful metaphor to illustrate how automation historically deskills entire populations, and warns that AI will accelerate this process at a civilizational scale within the 5,000-day window.
+
+* Summary
+In Part 3, Roemmele examines the historical and psychological effects of automation through the lens of Vonnegut’s dystopian novel *Player Piano*. He shows how technological progress repeatedly replaces human craftsmanship and judgment with machines, leading to widespread deskilling, loss of meaning, and social stratification. The essay argues that we are now entering the final and most dangerous phase of this pattern: AI will automate cognitive work itself. Roemmele urges readers to treat the next 5,000 days as the last opportunity to consciously preserve human wisdom, creativity, and agency before they become optional rather than essential.
+
+* Backlinks
+- [[id:20260330-5000days-part3-precis][Precis]]
+- [[id:20260330-key-player-piano-metaphor][Player Piano Metaphor]]
+- [[id:20260330-key-systematic-deskilling][Systematic Deskilling]]
+- [[id:20260330-key-wisdom-at-risk][Wisdom at Risk]]
+- [[id:20260330-key-last-chance-window][Last Chance Window]]
+
+* Original Source
+[[file:20260329234711-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-3-the-player-piano-8211-readmultiplex.org][Original Converted Essay]]

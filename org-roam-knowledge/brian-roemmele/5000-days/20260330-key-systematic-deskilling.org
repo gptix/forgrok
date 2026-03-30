@@ -1,0 +1,5 @@
+#+title: Systematic Deskilling
+#+filetags: :key-concept:5000-days:risk:
+#+ID: 20260330-key-systematic-deskilling
+
+The deliberate, progressive replacement of human capabilities (both manual and cognitive) by machines, leading to a permanent loss of skills at the individual and societal level.
