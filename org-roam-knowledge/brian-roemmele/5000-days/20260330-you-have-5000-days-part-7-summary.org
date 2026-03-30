@@ -1,0 +1,20 @@
+#+title: You Have 5000 Days – Part 7: Consider Phlebas
+#+filetags: :brian-roemmele:5000-days:summary:ai-abundance:
+#+ID: 20260330-5000days-part7-summary
+#+roam_alias: 5000 Days Part 7
+
+* Precis
+Roemmele invokes T.S. Eliot’s “Consider Phlebas” as a metaphor for the death of the old self and the necessary rebirth required to survive the coming AI-driven transformation.
+
+* Summary
+Part 7 explores the deep existential death-and-rebirth process that individuals and societies must undergo. Just as Phlebas the Phoenician drowns and is transformed by the sea, humanity must let the old identity built on labor and scarcity die so a new identity rooted in creation, wisdom, and abundance can emerge. Roemmele frames this as both a personal spiritual crisis and a collective civilizational rite of passage during the 5,000-day window.
+
+* Backlinks
+- [[id:20260330-5000days-part7-precis][Precis]]
+- [[id:20260330-key-phlebas-metaphor][Phlebas Metaphor]]
+- [[id:20260330-key-death-and-rebirth][Death and Rebirth]]
+- [[id:20260330-key-old-self-dissolution][Old Self Dissolution]]
+- [[id:20260330-key-emergent-new-identity][Emergent New Identity]]
+
+* Original Source
+[[file:20260329234715-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-7-consider-phlebas-8211-readmultiplex.org][Original Converted Essay]]
