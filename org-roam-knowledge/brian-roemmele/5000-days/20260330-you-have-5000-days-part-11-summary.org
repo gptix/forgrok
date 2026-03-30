@@ -1,0 +1,20 @@
+#+title: You Have 5000 Days – Part 11: The Profit and the Architect
+#+filetags: :brian-roemmele:5000-days:summary:ai-abundance:
+#+ID: 20260330-5000days-part11-summary
+#+roam_alias: 5000 Days Part 11
+
+* Precis
+Roemmele contrasts the old profit-driven economy with the new role of the “Architect” — those who consciously design the systems, incentives, and institutions of the post-labor world.
+
+* Summary
+In Part 11, Roemmele examines how profit motives have shaped the current automation wave and how the coming abundance requires a new kind of architect: individuals and groups who intentionally design the social, economic, and cultural scaffolding for a world where traditional profit-from-labor is no longer the dominant force. The essay urges readers to become active architects rather than passive beneficiaries or victims of the profit-driven transition.
+
+* Backlinks
+- [[id:20260330-5000days-part11-precis][Precis]]
+- [[id:20260330-key-profit-and-architect][Profit and Architect]]
+- [[id:20260330-key-designing-the-abundance-era][Designing the Abundance Era]]
+- [[id:20260330-key-new-incentives][New Incentives]]
+- [[id:20260330-key-architect-role][Architect Role]]
+
+* Original Source
+[[file:20260329234719-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-12-the-profit-and-the-arcitect-8211-readmultiplex.org][Original Converted Essay]]
