@@ -1,0 +1,5 @@
+#+title: Deskilling Mitigation
+#+filetags: :key-concept:5000-days:risk:
+#+ID: 20260330-key-deskilling-mitigation
+
+Deliberate strategies to slow or reverse the loss of human capabilities as AI automates cognitive and physical tasks.

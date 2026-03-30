@@ -1,0 +1,20 @@
+#+title: You Have 5000 Days – Part 2: How to Navigate the End of Work as We Know It
+#+filetags: :brian-roemmele:5000-days:summary:ai-abundance:
+#+ID: 20260330-5000days-part2-summary
+#+roam_alias: 5000 Days Part 2
+
+* Precis
+Part 2 moves from diagnosis to navigation. Roemmele argues that the coming AI abundance is not merely an economic event but a civilizational phase shift that demands a deliberate change in mindset—from scarcity thinking to abundance thinking—while preserving human wisdom and agency.
+
+* Summary
+Building on Part 1’s timeline, Roemmele explores how individuals and societies can actively prepare for the end of traditional work. He introduces the concept of “reframing the dawn of abundance” and stresses that the next 5,000 days are the critical window for building new personal and cultural operating systems. Key themes include moving beyond deskilling, actively preserving human wisdom, adopting a hero’s-journey mindset for the post-labor era, and treating science-fiction thought experiments as practical training tools. The essay shifts the tone from warning to empowerment, offering the first concrete navigational strategies for thriving in an age of material abundance.
+
+* Backlinks
+- [[id:20260330-5000days-part2-precis][Precis]]
+- [[id:20260330-key-abundance-mindset-shift][Abundance Mindset Shift]]
+- [[id:20260330-key-wisdom-preservation-imperative][Wisdom Preservation Imperative]]
+- [[id:20260330-key-hero-journey-in-abundance][Hero’s Journey in Abundance]]
+- [[id:20260330-key-reframing-dawn-of-abundance][Reframing the Dawn of Abundance]]
+
+* Original Source
+[[file:20260329234710-you-have-5000-days-how-to-navigate-the-end-of-work-as-we-know-it-part-2-8211-readmultiplex.org][Original Converted Essay]]
