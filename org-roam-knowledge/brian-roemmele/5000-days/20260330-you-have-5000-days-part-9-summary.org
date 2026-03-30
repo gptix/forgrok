@@ -1,0 +1,20 @@
+#+title: You Have 5000 Days – Part 9: The Artisan’s Awakening
+#+filetags: :brian-roemmele:5000-days:summary:ai-abundance:
+#+ID: 20260330-5000days-part9-summary
+#+roam_alias: 5000 Days Part 9
+
+* Precis
+Roemmele presents the hopeful counterpart to deskilling: the rebirth of the artisan — humans who create, craft, and innovate purely for the joy of creation once AI removes economic necessity.
+
+* Summary
+Part 9 describes the cultural and personal renaissance that becomes possible in the age of AI abundance. With material needs met by automation, humans can return to the artisan mindset — mastery for its own sake, creativity without the pressure of survival, and the deep satisfaction of making things with care and intention. Roemmele argues that this “Artisan’s Awakening” is not a luxury but the natural next stage of human development if we consciously prepare for it during the 5,000-day window.
+
+* Backlinks
+- [[id:20260330-5000days-part9-precis][Precis]]
+- [[id:20260330-key-artisan-awakening][Artisan’s Awakening]]
+- [[id:20260330-key-creation-for-its-own-sake][Creation for Its Own Sake]]
+- [[id:20260330-key-post-scarcity-craft][Post-Scarcity Craft]]
+- [[id:20260330-key-renaissance-of-making][Renaissance of Making]]
+
+* Original Source
+[[file:20260329234717-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-9-the-artisan-8217-s-awakening-8211-readmultiplex.org][Original Converted Essay]]
