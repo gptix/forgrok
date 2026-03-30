@@ -1,0 +1,5 @@
+org#+title: Wisdom Preservation Imperative
+#+filetags: :key-concept:5000-days:long-term:
+#+ID: 20260330-key-wisdom-preservation
+
+The urgent need to capture, encode, and transmit human wisdom before the deskilling effects of AI make it harder to maintain.
