@@ -1,0 +1,20 @@
+#+title: You Have 5000 Days – Part 20: 1949 Marionettes Inc Warning
+#+filetags: :brian-roemmele:5000-days:summary:ai-abundance:
+#+ID: 20260330-5000days-part20-summary
+#+roam_alias: 5000 Days Part 20
+
+* Precis
+Roemmele invokes Ray Bradbury’s 1949 story “Marionettes, Inc.” as a warning of what happens when humans delegate too much of their lives to perfect machines.
+
+* Summary
+In Part 20, Roemmele uses Bradbury’s chilling tale of lifelike marionettes that replace their owners in daily life as a direct parable for the coming AI era. When machines become so perfect that they can live our lives for us, humans risk becoming spectators in their own existence. The essay stresses that the 5,000-day window is the last practical period in which we can choose to keep our lives authentically human rather than handing them over to ever-more-capable marionettes.
+
+* Backlinks
+- [[id:20260330-5000days-part20-precis][Precis]]
+- [[id:20260330-key-marionettes-inc-warning][Marionettes Inc Warning]]
+- [[id:20260330-key-delegating-life][Delegating Life]]
+- [[id:20260330-key-loss-of-authenticity][Loss of Authenticity]]
+- [[id:20260330-key-choose-humanity][Choose Humanity]]
+
+* Original Source
+[[file:20260329234727-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-21-1949-marionettes-inc-warning-8211-readmultiplex.org][Original Converted Essay]]
