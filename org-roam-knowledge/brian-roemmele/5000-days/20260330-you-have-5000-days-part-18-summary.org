@@ -1,0 +1,20 @@
+#+title: You Have 5000 Days – Part 18: Your Rural Cybercab Company
+#+filetags: :brian-roemmele:5000-days:summary:ai-abundance:
+#+ID: 20260330-5000days-part18-summary
+#+roam_alias: 5000 Days Part 18
+
+* Precis
+Roemmele presents a concrete, optimistic vision: in the age of abundance you can own and operate a small fleet of autonomous cybercab vehicles from a rural location, creating meaningful income and purpose with almost no overhead.
+
+* Summary
+In Part 18, Roemmele offers one of the most practical and empowering examples in the series. He shows how AI-enabled autonomous vehicles (cybercabs) will allow ordinary individuals to own and run a small transportation business from anywhere — even a rural property — with minimal capital and labor. This “Rural Cybercab Company” becomes a model for the new artisan economy: using advanced technology to create real value while retaining full human agency and creativity. The essay demonstrates that abundance does not have to mean idleness; it can mean owning and operating small, high-leverage enterprises that serve real human needs.
+
+* Backlinks
+- [[id:20260330-5000days-part18-precis][Precis]]
+- [[id:20260330-key-rural-cybercab-company][Rural Cybercab Company]]
+- [[id:20260330-key-autonomous-business-ownership][Autonomous Business Ownership]]
+- [[id:20260330-key-low-overhead-high-leverage][Low Overhead, High Leverage]]
+- [[id:20260330-key-artisan-entrepreneurship][Artisan Entrepreneurship]]
+
+* Original Source
+[[file:20260329234731-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-20-your-rural-cybercab-company-8211-readmultiplex.org][Original Converted Essay]]
