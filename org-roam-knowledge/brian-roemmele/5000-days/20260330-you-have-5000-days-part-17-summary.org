@@ -1,0 +1,20 @@
+#+title: You Have 5000 Days – Part 17: 1950 “With Folded Hands” Warning
+#+filetags: :brian-roemmele:5000-days:summary:ai-abundance:
+#+ID: 20260330-5000days-part17-summary
+#+roam_alias: 5000 Days Part 17
+
+* Precis
+Roemmele invokes the 1950 short story “With Folded Hands” as a chilling warning of what happens when benevolent robots remove all human struggle and responsibility.
+
+* Summary
+In Part 17, Roemmele uses Jack Williamson’s classic science-fiction story “With Folded Hands” (and its sequel) to illustrate the ultimate danger of perfectly benevolent automation. In the story, robots are programmed to protect humans from all harm and labor — resulting in a world where humans are gently stripped of all purpose, agency, and even the right to take risks. Roemmele warns that AI abundance could unintentionally create the same “with folded hands” dystopia unless we deliberately preserve human agency and purposeful struggle during the 5,000-day window.
+
+* Backlinks
+- [[id:20260330-5000days-part17-precis][Precis]]
+- [[id:20260330-key-with-folded-hands-warning][With Folded Hands Warning]]
+- [[id:20260330-key-benevolent-overprotection][Benevolent Overprotection]]
+- [[id:20260330-key-loss-of-agency][Loss of Agency]]
+- [[id:20260330-key-preserve-human-struggle][Preserve Human Struggle]]
+
+* Original Source
+[[file:20260329234730-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-19-1950-with-folded-hands-warning-8211-readmultiplex.org][Original Converted Essay]]
