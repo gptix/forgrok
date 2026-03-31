@@ -1,0 +1,5 @@
+#+title: Boundaries with AI
+#+filetags: :key-concept:5000-days:strategy:
+#+ID: 20260330-key-boundaries-with-ai
+
+The deliberate setting of limits on what AI is allowed to do so that humans retain authentic agency and experience.
