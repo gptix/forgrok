@@ -1,0 +1,5 @@
+#+title: COBOL Shock Analogy
+#+filetags: :key-concept:5000-days:history:
+#+ID: 20260330-key-cobol-shock-analogy
+
+The historical precedent of rapid adoption followed by sudden obsolescence of a specialized skill set, used as a direct warning for AI’s impact.

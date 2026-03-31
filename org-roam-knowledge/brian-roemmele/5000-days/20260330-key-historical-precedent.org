@@ -1,0 +1,5 @@
+#+title: Historical Precedent
+#+filetags: :key-concept:5000-days:history:
+#+ID: 20260330-key-historical-precedent
+
+Using past technological shocks (COBOL, manufacturing automation, etc.) to predict and mitigate the scale of the coming AI disruption.

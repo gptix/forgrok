@@ -1,0 +1,5 @@
+#+title: Cognitive Job Obsolescence
+#+filetags: :key-concept:5000-days:risk:
+#+ID: 20260330-key-cognitive-job-obsolescence
+
+The imminent disappearance of millions of knowledge-work roles as AI surpasses human performance in routine cognitive tasks.

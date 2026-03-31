@@ -1,0 +1,20 @@
+#+title: You Have 5000 Days – Part 14: The IBM COBOL Shock
+#+filetags: :brian-roemmele:5000-days:summary:ai-abundance:
+#+ID: 20260330-5000days-part14-summary
+#+roam_alias: 5000 Days Part 14
+
+* Precis
+Roemmele uses the historical “IBM COBOL Shock” as a warning parable for the massive, sudden deskilling that AI will trigger on a far larger scale within the 5,000-day window.
+
+* Summary
+In Part 14, Roemmele draws a direct parallel between the rapid adoption of COBOL in the 1960s–70s (which created a generation of highly paid programmers) and the subsequent mass deskilling when those skills became obsolete. He warns that AI is about to trigger an even more dramatic “COBOL Shock” — millions of cognitive jobs will be automated almost overnight, leaving entire professions without transferable skills. The essay stresses that the next 5,000 days are the last realistic window in which we can prepare for and mitigate this shock through deliberate wisdom preservation and skill-building strategies.
+
+* Backlinks
+- [[id:20260330-5000days-part14-precis][Precis]]
+- [[id:20260330-key-cobol-shock-analogy][COBOL Shock Analogy]]
+- [[id:20260330-key-sudden-deskilling-event][Sudden Deskilling Event]]
+- [[id:20260330-key-cognitive-job-obsolescence][Cognitive Job Obsolescence]]
+- [[id:20260330-key-preparation-window][Preparation Window]]
+
+* Original Source
+[[file:20260329234723-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-15-the-ibm-cobol-shock-8211-readmultiplex.org][Original Converted Essay]]
