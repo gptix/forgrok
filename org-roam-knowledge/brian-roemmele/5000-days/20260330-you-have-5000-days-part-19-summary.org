@@ -1,0 +1,20 @@
+#+title: You Have 5000 Days – Part 19: The Dynamic Duo
+#+filetags: :brian-roemmele:5000-days:summary:ai-abundance:
+#+ID: 20260330-5000days-part19-summary
+#+roam_alias: 5000 Days Part 19
+
+* Precis
+Roemmele presents the ideal human-AI relationship as a “Dynamic Duo” — a powerful partnership in which the human provides creativity, wisdom, and direction while the AI provides speed, scale, and tireless execution.
+
+* Summary
+In Part 19, Roemmele shifts from warning to practical partnership. He envisions the optimal future not as humans being replaced by AI, but as humans and AI working together as a dynamic duo. The human brings irreplaceable qualities (judgment, purpose, ethics, creativity) while the AI handles the heavy computational and operational lifting. This partnership becomes the foundation of the artisan economy and the new post-labor civilization. The 5,000-day window is the time to consciously build and practice this duo relationship.
+
+* Backlinks
+- [[id:20260330-5000days-part19-precis][Precis]]
+- [[id:20260330-key-dynamic-duo][Dynamic Duo]]
+- [[id:20260330-key-human-ai-partnership][Human-AI Partnership]]
+- [[id:20260330-key-complementary-strengths][Complementary Strengths]]
+- [[id:20260330-key-artisan-ai-collaboration][Artisan-AI Collaboration]]
+
+* Original Source
+[[file:20260329234726-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-21-the-dynamic-duo-8211-readmultiplex.org][Original Converted Essay]]
