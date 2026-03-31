@@ -1,0 +1,5 @@
+#+title: No More Delay
+#+filetags: :key-concept:5000-days:imperative:
+#+ID: 20260330-key-no-more-delay
+
+The call to immediate, sustained action because the 5,000-day window is finite and closing.
