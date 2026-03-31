@@ -1,0 +1,5 @@
+#+title: Invisible Infrastructure
+#+filetags: :key-concept:5000-days:strategy:
+#+ID: 20260330-key-invisible-infrastructure
+
+The unseen systems, practices, and communities that will sustain human flourishing when AI handles most visible production.
