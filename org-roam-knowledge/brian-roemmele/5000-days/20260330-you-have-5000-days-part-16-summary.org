@@ -1,0 +1,20 @@
+#+title: You Have 5000 Days – Part 16: Universe 25 – Mouse Utopia
+#+filetags: :brian-roemmele:5000-days:summary:ai-abundance:
+#+ID: 20260330-5000days-part16-summary
+#+roam_alias: 5000 Days Part 16
+
+* Precis
+Roemmele uses John Calhoun’s famous “Universe 25” mouse utopia experiment as a stark warning of what happens when material abundance removes all struggle without a higher purpose.
+
+* Summary
+In Part 16, Roemmele presents the chilling results of Calhoun’s Universe 25 experiment: when mice were given unlimited food, space, and safety, their society rapidly collapsed into violence, withdrawal, and extinction. He draws a direct parallel to humanity’s coming AI-driven abundance: without deliberate new sources of meaning and purpose, material plenty can lead to the same behavioral sink. The 5,000-day window is our last chance to design a human “Universe 25” that avoids the mouse-utopia trap.
+
+* Backlinks
+- [[id:20260330-5000days-part16-precis][Precis]]
+- [[id:20260330-key-universe-25-analogy][Universe 25 Analogy]]
+- [[id:20260330-key-behavioral-sink][Behavioral Sink]]
+- [[id:20260330-key-abundance-without-purpose][Abundance Without Purpose]]
+- [[id:20260330-key-mouse-utopia-warning][Mouse Utopia Warning]]
+
+* Original Source
+[[file:20260329234729-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-17-universe-25-mouse-utopia-8211-readmultiplex.org][Original Converted Essay]]
