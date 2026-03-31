@@ -1,0 +1,5 @@
+#+title: Sudden Deskilling Event
+#+filetags: :key-concept:5000-days:risk:
+#+ID: 20260330-key-sudden-deskilling-event
+
+A rapid, economy-wide loss of human capabilities triggered when automation makes an entire class of cognitive work obsolete almost overnight.
