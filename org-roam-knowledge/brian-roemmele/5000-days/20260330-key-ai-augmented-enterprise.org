@@ -1,0 +1,5 @@
+#+title: AI-Augmented Enterprise
+#+filetags: :key-concept:5000-days:vision:
+#+ID: 20260330-key-ai-augmented-enterprise
+
+Businesses in which the human provides vision and creativity while AI handles execution, scaling, and operations.

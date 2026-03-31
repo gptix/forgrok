@@ -1,0 +1,20 @@
+#+title: You Have 5000 Days – Part 24: The New Artisan Economy
+#+filetags: :brian-roemmele:5000-days:summary:ai-abundance:
+#+ID: 20260330-5000days-part24-summary
+#+roam_alias: 5000 Days Part 24
+
+* Precis
+Roemmele describes the practical emergence of a new artisan economy in which individuals use AI as a powerful partner to create value, meaning, and income with minimal capital and labor.
+
+* Summary
+In Part 24, Roemmele paints a concrete, optimistic picture of daily life in the abundance era. Traditional jobs disappear, but a vibrant new artisan economy rises in their place. Individuals become owners of small, high-leverage AI-augmented enterprises — rural cybercab fleets, creative studios, wisdom-preservation projects, local services — all powered by the Dynamic Duo partnership. The 5,000-day window is the time to begin building these artisan businesses and identities so that when the old economy fully transitions, we are already thriving in the new one.
+
+* Backlinks
+- [[id:20260330-5000days-part24-precis][Precis]]
+- [[id:20260330-key-new-artisan-economy][New Artisan Economy]]
+- [[id:20260330-key-ai-augmented-enterprise][AI-Augmented Enterprise]]
+- [[id:20260330-key-ownership-mindset][Ownership Mindset]]
+- [[id:20260330-key-practical-abundance-living][Practical Abundance Living]]
+
+* Original Source
+[[file:20260329234732-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-21-the-dynamic-duo-8211-readmultiplex.org][Original Converted Essay]] (Note: original filename mapping)
