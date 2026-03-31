@@ -1,0 +1,5 @@
+#+title: Benevolent Overprotection
+#+filetags: :key-concept:5000-days:warning:
+#+ID: 20260330-key-benevolent-overprotection
+
+The danger that well-intentioned AI systems, designed to eliminate all harm and labor, will unintentionally strip humans of agency and meaning.

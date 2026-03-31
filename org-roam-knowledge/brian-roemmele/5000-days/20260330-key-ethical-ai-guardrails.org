@@ -1,0 +1,5 @@
+#+title: Ethical AI Guardrails
+#+filetags: :key-concept:5000-days:strategy:
+#+ID: 20260330-key-ethical-ai-guardrails
+
+The necessary design principles that must be built into AI systems to prevent overprotection and preserve human agency.
