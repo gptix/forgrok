@@ -1,0 +1,5 @@
+#+title: Amplification, Not Replacement
+#+filetags: :key-concept:5000-days:philosophy:
+#+ID: 20260330-key-amplification-not-replacement
+
+The core philosophy that AI should multiply human capability rather than substitute for it.

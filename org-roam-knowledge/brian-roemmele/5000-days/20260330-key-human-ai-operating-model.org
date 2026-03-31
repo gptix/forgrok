@@ -1,0 +1,5 @@
+#+title: Human-AI Operating Model
+#+filetags: :key-concept:5000-days:strategy:
+#+ID: 20260330-key-human-ai-operating-model
+
+The new daily workflow in which the human sets vision and ethics while AI handles execution at superhuman scale.

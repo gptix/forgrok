@@ -1,0 +1,20 @@
+#+title: You Have 5000 Days – Part 21: The Dynamic Duo (Revisited)
+#+filetags: :brian-roemmele:5000-days:summary:ai-abundance:
+#+ID: 20260330-5000days-part21-summary
+#+roam_alias: 5000 Days Part 21
+
+* Precis
+Roemmele returns to the “Dynamic Duo” concept with deeper practical guidance on how to build and maintain a powerful, lifelong human-AI partnership.
+
+* Summary
+In this final major installment, Roemmele revisits and expands the Dynamic Duo idea. He gives concrete practices for training yourself to work as the human half of a high-performance human-AI team: how to give clear direction, how to keep final ethical and creative authority, how to use AI as an amplifier rather than a replacement, and how to cultivate the new identity of “I am the human partner in a dynamic duo.” This partnership becomes the core operating model for thriving in the post-labor world.
+
+* Backlinks
+- [[id:20260330-5000days-part21-precis][Precis]]
+- [[id:20260330-key-dynamic-duo-revisited][Dynamic Duo Revisited]]
+- [[id:20260330-key-human-ai-operating-model][Human-AI Operating Model]]
+- [[id:20260330-key-training-the-duo][Training the Duo]]
+- [[id:20260330-key-lifelong-partnership][Lifelong Partnership]]
+
+* Original Source
+[[file:20260329234732-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-21-the-dynamic-duo-8211-readmultiplex.org][Original Converted Essay]]
