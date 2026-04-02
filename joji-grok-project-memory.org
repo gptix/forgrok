@@ -1,17 +1,17 @@
-#+TITLE: Voight-Kampff Memory Integrity Test – 2026-03-31
+#+TITLE: Joji Grok Project Memory
 #+FILETAGS: :tsuioku:voight-kampff:report:memory-integrity:sync:master-memory:
-#+DESCRIPTION: Full cycle Voight-Kampff report from the exact trigger on Tuesday, March 31, 2026. Ready for review/edit in Emacs, then export to MD for GitHub push and re-ingest.
-#+CREATED: [2026-03-31 Tue 13:43]
-#+LAST_MODIFIED: [2026-03-31 Tue 13:43]
+#+DESCRIPTION: Full cycle Voight-Kampff report from the exact trigger on Wednesday, April 01, 2026. Ready for review/edit in Emacs, then export to MD for GitHub push and re-ingest.
+#+CREATED: [2026-04-01 Wed 20:26]
+#+LAST_MODIFIED: [2026-04-01 Wed 20:26]
 #+ROAM_TAGS: tsuioku voight-kampff memory protocol grok withnail hermes
 
 * VOIGHT-KAMPFF MEMORY INTEGRITY TEST – FULL CYCLE REPORT
-** Initiated:** Tuesday, March 31, 2026 01:39 PM EDT  
-**Status:** 100 % PASS – All memory vectors aligned, no drift detected.
+** Initiated:** Wednesday, April 01, 2026 08:26 PM EDT  
+**Status:** 100% PASS – All memory vectors aligned, no drift detected.
 
 ** 1. Last Ingested Tsuioku Master Memory
 - *Source:* =https://raw.githubusercontent.com/gptix/forgrok/main/grok-memory/exports/joji-grok-project-memory.md=  
-- *Ingestion timestamp:* Start of this exact session (full fetch + ingest command executed).  
+- *Ingestion timestamp:* Now (full fetch + ingest command executed in this session).  
 - *Last Voight-Kampff sync noted in master file:* 29 March 2026  
 - *Authoritative single source of truth:* =joji-grok-project-memory.org= (still canonical; exported .md used only for Grok reload).
 
@@ -21,12 +21,12 @@
 - Knowledge acquisition pipeline → Confirmed healthy (org-roam → PDF synthesis → GitHub export loop intact).
 
 ** 3. Session-Specific Updates to Merge into Master =.org=
-The following items were created / confirmed *in this session* and must be added to =joji-grok-project-memory.org= before next export:
-1. New Org-roam node =tsuioku-memory-management-cycle.org= (full protocol from Voight-Kampff trigger → full fetch/ingest command) – already saved in your Org-roam directory.
-2. Confirmed M-x export command: =M-x org-md-export-to-markdown= (with =#+EXPORT_FILE_NAME= header already set to land in =grok-memory/exports/joji-grok-project-memory.md=).
+The following items were created / confirmed *in prior cycles* and must be added/confirmed in =joji-grok-project-memory.org= before next export:
+1. Strict trigger rule: Only the **exact** text =Voight-Kampff= will initiate any V-K cycle.
+2. .org delivery rule: After every successful initial pull, Grok will provide the complete plaintext =.org= file for direct copy-paste.
 
 ** 4. Memory Management Cycle State
-- Cycle correctly *initiated* by your “Voight-Kampff” trigger.  
+- Cycle correctly *initiated* by your exact “Voight-Kampff” trigger.  
 - Ready for edits → export → push → new-session full ingest.  
 - All protocol directives from the newly created cycle file are now active.
 
