@@ -4,3 +4,4 @@
 *.md~
 org-roam.db
 .DS_Store
+.#*
