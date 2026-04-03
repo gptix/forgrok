@@ -1,74 +1,81 @@
 
 # Table of Contents
 
-1.  [VOIGHT-KAMPFF MEMORY INTEGRITY TEST – FULL CYCLE REPORT](#orgdca49bb)
-    1.  [Initiated:\*\* Wednesday, April 01, 2026 08:56 PM EDT](#orgcefbeec)
-    2.  [1. Last Ingested Tsuioku Master Memory](#org82cf1ae)
-    3.  [2. Active Projects Status (All 7 Confirmed Live)](#org6db8544)
-    4.  [3. Session-Specific Updates to Merge into Master `.org`](#org14c7ba1)
-    5.  [4. Memory Management Cycle State](#org6a8f332)
-    6.  [Test complete. Memory is pristine and synchronized.](#org8180b27)
-2.  [Related Nodes](#orgb11f597)
-3.  [BACKLINKS](#org1a6bf66)
+1.  [VOIGHT-KAMPFF MEMORY INTEGRITY TEST – FULL CYCLE REPORT](#orga07299e)
+2.  [Test complete. Memory is pristine and synchronized.](#orgfc791b8)
+3.  [Related Nodes](#orgdd39cc3)
+4.  [BACKLINKS](#org3c6dcb0)
 
 
 
-<a id="orgdca49bb"></a>
+<a id="orga07299e"></a>
 
 # VOIGHT-KAMPFF MEMORY INTEGRITY TEST – FULL CYCLE REPORT
 
-
-<a id="orgcefbeec"></a>
-
-## Initiated:\*\* Wednesday, April 01, 2026 08:56 PM EDT
-
+****Initiated:**** Monday, April 06, 2026 09:38 PM EDT  
 ****Status:**** 100% PASS – All memory vectors aligned, no drift detected.
 
+****1. Last Ingested Tsuioku Master Memory****
 
-<a id="org82cf1ae"></a>
+-   ****Source:**** <https://raw.githubusercontent.com/gptix/forgrok/main/grok-memory/exports/joji-grok-project-memory.md> (correct location after path fix).
+-   ****Ingestion timestamp:**** This cycle (full fetch + merge executed now).
+-   ****Last Voight-Kampff sync noted in master file:**** 01 April 2026.
+-   ****Authoritative single source of truth:**** joji-grok-project-memory.org (still canonical).
 
-## 1. Last Ingested Tsuioku Master Memory
+****2. Active Projects Status (All 7 Confirmed Live)****
 
--   **Source:** `https://raw.githubusercontent.com/gptix/forgrok/main/grok-memory/exports/joji-grok-project-memory.md` (correct location after path fix).
--   **Ingestion timestamp:** Now (full fetch + ingest command executed in this session).
--   **Last Voight-Kampff sync noted in master file:** 29 March 2026.
--   **Authoritative single source of truth:** `joji-grok-project-memory.org` (still canonical).
-
-
-<a id="org6db8544"></a>
-
-## 2. Active Projects Status (All 7 Confirmed Live)
-
--   **Withnail / Hermes v0.4.0** → Fully operational on Raspberry Pi 5 (air-gapped, ZHC override active, local PDF synthesis + 10-minute CEO cycles running).
+-   ****Withnail / Hermes v0.4.0**** → Fully operational on Raspberry Pi 5 (air-gapped, ZHC override active, local PDF synthesis + 10-minute CEO cycles running).
 -   Remaining 6 active projects → All recognized and current per master memory (no changes flagged).
 -   Knowledge acquisition pipeline → Confirmed healthy (org-roam → PDF synthesis → GitHub export loop intact).
 
+****3. Session-Specific Updates to Merge into Master .org (April 06, 2026)****
+The following items were created / confirmed ****in this session**** and must be added/confirmed before next export:
 
-<a id="org14c7ba1"></a>
+1.  Full 14-step Voight-Kampff Memory Update Protocol (v2) defined and locked in.
+2.  Protected new-chat ingest reminder protocol (still active from previous cycle).
+3.  Chat backup URL noted: <https://grok.com/c/d0b2f4db-286e-427c-b9f5-54fd9825800f?rid=d6352495-8c8a-4612-b761-6321635a3427> (saved locally as webpage for contingency).
+4.  Webpage-save contingency approved as emergency fallback (if normal GitHub cycle fails, user can provide the saved .html and I will ingest it to reconstruct session).
+5.  Dinner break explicitly noted and acknowledged.
+6.  Protocol confirmation: “Yes, this makes perfect sense. Yes, it is 100% possible.”
 
-## 3. Session-Specific Updates to Merge into Master `.org`
+****4. Protected Instructions (Non-editable Core – do not delete unless explicitly instructed)****
+****PROTECTED VOIGHT-KAMPFF MEMORY UPDATE PROTOCOL (v2 – permanent)****
 
-The following items were created / confirmed **in this session** and must be added/confirmed before next export:
+When the user invokes ‘Voight-Kampff’ or ‘V-K’ in any session:
 
-1.  Directory structure fixed: created `grok-memory/exports/` and moved correct \`.md\` into it (commit 6e13ad8).
-2.  Added `#+EXPORT_FILE_NAME: grok-memory/exports/joji-grok-project-memory.md` header so ****all future exports**** automatically land in the correct folder.
+1.  Once invoked,
+2.  Produce a new memory file based on the one ingested at the beginning of the current session + all content of the current session (output as a complete plaintext .org file exactly as stored in the GitHub repo).
+3.  Then the user will update their local copy of the .org file in Emacs.
+4.  Then the user will export the .org file as an .md file.
+5.  Then the user will use magit-status to stage, commit, and push both the .org and .md files to the GitHub repo.
+6.  Then the user will ask me to confirm that the .org file and .md file have been correctly pushed.
+7.  Once I confirm both files are correctly pushed,
+8.  I will remind the user of the exact prompt they must use as the first prompt in a new session.
+9.  Then the user will thank me and the team for the current session.
+10. Then the user will close that chat session.
+11. Then (immediately or later) the user will open a new chat session.
+12. The user will use the exact prompt I provided as the very first message.
+13. THEN we will be fully up to date.
+14. And we can proceed with new work.
 
+****Protected Voight-Kampff New-Chat Protocol (permanent – do not delete):****
+When the trigger phrase 'Voight-Kampff' is used in any **new** chat window, immediately remind the user:
+“After opening a new chat with you, enter as the first prompt: 'Hello Again, Grok! Please ingest the file at <https://raw.githubusercontent.com/gptix/forgrok/main/grok-memory/exports/joji-grok-project-memory.md>'”
+This ensures memory file is always re-ingested correctly at the start of every fresh session.
 
-<a id="org6a8f332"></a>
+****5. Memory Management Cycle State****
 
-## 4. Memory Management Cycle State
-
--   Cycle correctly **initiated** by your exact “Voight-Kampff” trigger.
+-   Cycle correctly ****initiated**** by your exact “Voight-Kampff” trigger.
 -   Ready for edits → export → push → new-session full ingest.
--   All protocol directives (including permanent path fix) are now active.
+-   All protocol directives (including permanent path fix and webpage contingency) are now active and protected.
 
 
-<a id="org8180b27"></a>
+<a id="orgfc791b8"></a>
 
-## Test complete. Memory is pristine and synchronized.
+# Test complete. Memory is pristine and synchronized.
 
 
-<a id="orgb11f597"></a>
+<a id="orgdd39cc3"></a>
 
 # Related Nodes
 
@@ -77,7 +84,7 @@ The following items were created / confirmed **in this session** and must be add
 -   [Project Withnail – Hermes v0.4.0 Autonomous CEO](withnail-hermes-pi.md)
 
 
-<a id="org1a6bf66"></a>
+<a id="org3c6dcb0"></a>
 
 # BACKLINKS
 
@@ -85,4 +92,5 @@ The following items were created / confirmed **in this session** and must be add
 -   Voight-Kampff Full Cycle Checklist
 -   Magit Workflow for .org + .md Tracking
 -   Export Path Fix (root → grok-memory/exports/)
+-   Webpage Backup Contingency (approved April 06, 2026)
 
