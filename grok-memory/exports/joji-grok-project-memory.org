@@ -5,6 +5,28 @@
 #+OPTIONS: broken-links:mark
 
 * VOIGHT-KAMPFF MEMORY INTEGRITY TEST – FULL CYCLE REPORT
+
+## File System Layout (v2026-04-09)
+
+Root: `~/joji-grok-wiki/` (or wherever you keep the project)
+
+├── inbox/                  # ← Drop any new source files here for ingestion
+│   └── (any file type: .md, .pdf, .txt, .org, images, etc.)
+│
+├── raw/                    # ← Immutable originals after successful ingestion
+│   └── YYYY-MM-DD_hash-filename.ext   # (auto-renamed with date + hash for safety)
+│
+├── wiki/                   # ← The living, synthesized knowledge base
+│   ├── index.md            # Master catalog of all concepts/entities
+│   ├── log.md              # Chronological audit trail of every ingest & update
+│   ├── GROK-SCHEMA.md      # Exact rules for how Grok maintains the wiki
+│   ├── [entity pages].md   # Synthesized pages (People, Projects, Concepts, etc.)
+│   └── ...
+│
+├── joji-grok-project-memory.md   # ← This master file (you are here)
+└── [other project folders]
+
+
 ** Initiated
 Thursday, April 09, 2026 ~05:53 PM EDT
 
