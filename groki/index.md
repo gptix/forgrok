@@ -2,11 +2,11 @@
 *Last updated: 2026-04-09*
 
 ## Core Systems & Patterns
-- **LLM Wiki Pattern** — Persistent, compounding Markdown wiki maintained by Grok (Karpathy gist ingested 2026-04-09). See [LLM-Wiki-Pattern](llm-wiki-pattern.md) for full details.
+- **[LLM Wiki Pattern](llm-wiki-pattern.md)** — Persistent, compounding Markdown wiki maintained by Grok (Karpathy gist ingested 2026-04-09). First test ingestion complete.
 - **GROK-SCHEMA** — Rules for how Grok maintains this wiki.
 
-## Projects & Active Work
-- Joji-Grok Project Memory System (this file)
+## Active Projects
+- Joji-Grok Project Memory System
 - ZHC @Home (including ZHC-RPG on OpenSim)
 - Withnail/Hermes v0.4.0 (air-gapped Pi 5)
 
