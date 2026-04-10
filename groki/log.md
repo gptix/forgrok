@@ -21,3 +21,8 @@
 - **V-K 2.0 Run** | First live execution of wiki-native Voight-Kampff Protocol v2.0.  
   Health score: 100%. `voight-kampff-protocol.md` successfully integrated.  
   Protocol now fully operational as part of the living groki/ wiki.
+
+## 2026-04-10
+
+- **V-K 2.0 Run** | Executed via `M-x joji-run-vk-protocol` at 18:20.
+  Health score: 100% (wiki-native synthesis complete).
