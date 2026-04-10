@@ -3,7 +3,7 @@
 
 ## Core Systems & Patterns
 - **[LLM Wiki Pattern](llm-wiki-pattern.md)** — Persistent, compounding Markdown wiki maintained by Grok (Karpathy gist ingested 2026-04-09). First test ingestion complete.
-- **GROK-SCHEMA** — Rules for how Grok maintains this wiki.
+- **[GROK-SCHEMA v1.0](GROK-SCHEMA.md)** — Official rules for how Grok maintains this wiki (polished 2026-04-09).
 
 ## Active Projects
 - Joji-Grok Project Memory System
