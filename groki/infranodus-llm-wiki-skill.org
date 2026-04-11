@@ -1,0 +1,24 @@
+## other metadata for file made from chunk 3
+#+TITLE: Infranodus LLM Wiki Skill
+#+FILETAGS: :groki:llm-wiki:infranodus:
+#+ROAM_TAGS: groki llm-wiki infranodus skill
+
+**Ingested:** 2026-04-10 from Infranodus skills repository (HTML version)
+
+**Summary**  
+A guided, multi-phase workflow for designing and scaffolding a personal LLM-maintained wiki. Core idea: the LLM incrementally builds a persistent wiki instead of re-deriving everything via RAG on every query.
+
+**Key Components**  
+- Raw sources — immutable  
+- Wiki layer — LLM-generated Markdown pages  
+- Schema — instructions for the LLM  
+- Ontology / Knowledge Graph — stored flat  
+- Phased approach: Discover → Scope → Structure → Schema → Workflows → Tooling → Scaffold → First Run
+
+**Relevance to Our System**  
+Extremely close match to our inbox → raw → groki pipeline and GROK-SCHEMA. Provides useful ideas for ontology handling and phased scaffolding we can adopt.
+
+**Cross-references**  
+- [[llm-wiki-pattern]]  
+- [[GROK-SCHEMA]]  
+- [[voight-kampff-protocol]]
