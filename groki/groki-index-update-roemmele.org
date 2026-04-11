@@ -1,0 +1,9 @@
+## other metadata for file made from chunk 2
+#+TITLE: Groki Index - Core Systems & Patterns Update 2026-04-10
+#+FILETAGS: :groki:index:
+#+ROAM_TAGS: groki index roemmele
+
+## Core Systems & Patterns
+- [[llm-wiki-pattern]]
+- [[infranodus-llm-wiki-skill]]
+- **[[roemmele-hidden-refresh-tax-gpu-memory]]** — Brian Roemmele on the persistent “refresh tax” in AI GPU memory (1987 QFRESH parallel).

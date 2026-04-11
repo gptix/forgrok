@@ -1,0 +1,20 @@
+## other metadata for file made from chunk 3
+#+TITLE: Roemmele - The Hidden Refresh Tax in AI GPU Memory
+#+FILETAGS: :roemmele:ai-hardware:memory:performance:
+#+ROAM_TAGS: roemmele gpu memory refresh ai
+
+**Ingested:** 2026-04-10 from inbox/ (full webpage complete)
+
+**Summary**  
+Brian Roemmele draws a direct parallel between his 1987 discovery and optimization of DRAM refresh stalls on IBM PCs (QFRESH.COM, featured in PC Magazine) and the modern “hidden refresh tax” in AI GPUs (HBM3/GDDR). Refresh commands still steal bus cycles, but the cost is now catastrophic for real-time AI agents and voice interfaces where every microsecond matters.
+
+**Key Points**
+- 1987: DRAM refresh stole 10–25% of bus time on 8088/286 systems.
+- 2026: Same fundamental physics now affects thousands of GPU cores doing matrix multiplies.
+- Personal story: IBM initially threatened legal action, then tried to hire him.
+- Modern implication: Refresh stalls are a hidden bottleneck in real-time AI performance.
+
+**Cross-references**
+- [[llm-wiki-pattern]]
+- [[infranodus-llm-wiki-skill]]
+- [[voight-kampff-protocol]]

@@ -1,0 +1,8 @@
+## other metadata for file made from chunk 1
+#+TITLE: Groki Log - 2026-04-10 Roemmele Refresh Tax Ingest
+#+FILETAGS: :groki:ingest:roemmele:
+#+ROAM_TAGS: groki ingest roemmele refresh-tax
+
+- **Ingest** | Brian Roemmele — “The Hidden Refresh Tax in AI GPU Memory: A 60-Year-Old Flaw That Still Haunts Real-Time AI” (full webpage complete)  
+  Historical parallel between 1987 DRAM refresh optimization (QFRESH) and modern GPU/HBM memory refresh stalls in real-time AI.  
+  Synthesized into [[roemmele-hidden-refresh-tax-gpu-memory]].
