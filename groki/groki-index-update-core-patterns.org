@@ -1,0 +1,9 @@
+## other metadata for file made from chunk 2
+#+TITLE: Groki Index - Core Systems & Patterns Update 2026-04-10
+#+FILETAGS: :groki:index:
+#+ROAM_TAGS: groki index llm-wiki
+
+## Core Systems & Patterns
+- [[llm-wiki-pattern]] — Persistent, compounding Markdown wiki (Karpathy gist + Infranodus skill ingested 2026-04-10).
+- [[infranodus-llm-wiki-skill]] — Detailed multi-phase workflow for designing and scaffolding an LLM-maintained wiki.
+- [[GROK-SCHEMA]] — Official maintainer rules (v1.0).
