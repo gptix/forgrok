@@ -35,3 +35,9 @@
 
 - **Archive** | Original HTML + `_files` moved from `inbox/` → `raw/2026-04-10_infranodus-llm-wiki-skill.html` (and `_files` folder).  
   Pipeline cycle completed cleanly. Stray `infranodous` file removed. Wiki remains flat and lint-clean.
+
+## 2026-04-10 (continued)
+
+- **Schema Upgrade** | GROK-SCHEMA.md upgraded to **v2.0**  
+  Incorporated Infranodus insights: agent personality, ontology-first thinking, and phased scaffolding protocol.  
+  This brings our maintainer rules into closer alignment with best practices for living LLM wikis while preserving our existing pipeline and protected protocols.
