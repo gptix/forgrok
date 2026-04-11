@@ -26,3 +26,12 @@
 
 - **V-K 2.0 Run** | Executed via `M-x joji-run-vk-protocol` at 18:20.
   Health score: 100% (wiki-native synthesis complete).
+
+## 2026-04-10 (continued)
+
+- **Ingest** | Infranodus “LLM Wiki Setup Assistant” skill (full HTML page + companion `_files` directory)  
+  Highly relevant multi-phase guide for building persistent LLM-maintained wikis.  
+  Synthesized into `infranodus-llm-wiki-skill.org` with cross-references to existing LLM Wiki Pattern and GROK-SCHEMA.
+
+- **Archive** | Original HTML + `_files` moved from `inbox/` → `raw/2026-04-10_infranodus-llm-wiki-skill.html` (and `_files` folder).  
+  Pipeline cycle completed cleanly. Stray `infranodous` file removed. Wiki remains flat and lint-clean.
