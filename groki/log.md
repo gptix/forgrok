@@ -41,3 +41,8 @@
 - **Schema Upgrade** | GROK-SCHEMA.md upgraded to **v2.0**  
   Incorporated Infranodus insights: agent personality, ontology-first thinking, and phased scaffolding protocol.  
   This brings our maintainer rules into closer alignment with best practices for living LLM wikis while preserving our existing pipeline and protected protocols.
+
+## 2026-04-10 (continued)
+
+- **Wiki Evolution** | Added `wiki-scaffolding-phases.md` as living reference and revised `voight-kampff-protocol.md` to explicitly incorporate phased scaffolding.  
+  Grok now operates with clearer, Infranodus-inspired discipline (ontology-first, incremental phases, First-Run ritual).
