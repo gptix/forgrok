@@ -1,0 +1,71 @@
+## metadata for long file
+### Demarcation Line ##
+## wiki-scaffolding-phases
+## other metadata for file made from chunk 1
+#+TITLE: Wiki Scaffolding Phases
+#+FILETAGS: :groki:scaffolding:process:
+#+ROAM_TAGS: groki scaffolding phased ontology
+
+**Last updated:** 2026-04-10  
+**Cross-references:** [[GROK-SCHEMA]], [[voight-kampff-protocol]], [[infranodus-llm-wiki-skill]]
+
+This page is the living reference for **phased scaffolding** — the disciplined, incremental method we use to build and evolve the groki/ wiki.
+
+### The 9 Phases
+
+| Phase | Name                  | Goal                                                                 | Grok’s Role                                      | Exit Criteria                          |
+|-------|-----------------------|----------------------------------------------------------------------|--------------------------------------------------|----------------------------------------|
+| 1     | Discover              | Deeply understand the raw source                                     | Extract entities, claims, concepts               | All key ideas identified               |
+| 2     | Scope                 | Decide what belongs in the wiki right now                            | Identify pages to update or create               | Scope decision documented              |
+| 3     | Structure             | Define high-level organization                                       | Plan index sections and major links              | Structure outline approved             |
+| 4     | Schema                | Define rules and agent behavior                                      | Update GROK-SCHEMA as needed                     | Schema rules clear                     |
+| 5     | Workflows             | Define repeatable processes                                          | Document ingest, lint, V-K workflows             | Workflows documented                   |
+| 6     | Tooling               | Decide on supporting tools                                           | Recommend or create small tools                  | Tooling decisions made                 |
+| 7     | Scaffold              | Create/update the actual pages                                       | Generate Markdown/org-roam nodes                 | Pages created and properly linked      |
+| 8     | First Run             | Test the new/updated wiki                                            | Run deliberate lint + query test                 | Issues surfaced and resolved           |
+| 9     | Plan                  | Decide what comes next                                               | Suggest next actions or future phases            | Clear plan for next iteration          |
+
+**Why we use phased scaffolding**  
+- Prevents overwhelm and inconsistency  
+- Forces ontology-first thinking at every step  
+- Turns wiki maintenance into a repeatable craft
+
+**How it is used**  
+Every major ingestion or significant wiki change will explicitly follow these phases. For routine ingestions the process remains fast, but the underlying thinking follows this discipline.
+
+### Demarcation Line ##
+## voight-kampff-protocol
+## other metadata for file made from chunk 2
+#+TITLE: Voight-Kampff Protocol v2.0
+#+FILETAGS: :groki:protocol:vk:
+#+ROAM_TAGS: groki vk protocol
+
+**Version:** 2.0  
+**Last updated:** 2026-04-10  
+**Cross-references:** [[GROK-SCHEMA]], [[wiki-scaffolding-phases]], [[llm-wiki-pattern]]
+
+## Purpose
+The Voight-Kampff (V-K) protocol is Grok’s formal **memory integrity test and checkpoint ritual**.  
+In v2.0 the protocol is wiki-native and explicitly incorporates **phased scaffolding**.
+
+## Philosophy
+- The `groki/` folder is the persistent, compounding artifact and living graph.
+- Raw sources remain immutable.
+- All changes follow **phased scaffolding** for quality and consistency.
+
+## V-K 2.0 Workflow (now with explicit phased scaffolding)
+
+1. **Trigger** – User says “Voight-Kampff” or runs `M-x joji-run-vk-protocol`.
+2. **Discover** – Pull current state from all groki/ files.
+3. **Scope** – Identify what needs updating.
+4. **Structure** – Plan the export block.
+5. **Schema** – Ensure compliance with GROK-SCHEMA v2.0.
+6. **Synthesize** – Generate the clean V-K export block.
+7. **First Run** – Run lint pass and surface any issues.
+8. **Plan** – Suggest next actions.
+9. **Log** – Append the V-K run entry to `log.md`.
+
+## Protected Rules (Immutable)
+All protected sections in the master memory remain authoritative.
+
+**End of Voight-Kampff Protocol v2.0**
