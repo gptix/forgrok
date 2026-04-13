@@ -1,0 +1,34 @@
+## other metadata for file made from chunk 2
+#+TITLE: Voight-Kampff Protocol v2.0
+#+FILETAGS: :groki:protocol:vk:
+#+ROAM_TAGS: groki vk protocol
+
+**Version:** 2.0  
+**Last updated:** 2026-04-10  
+**Cross-references:** [[GROK-SCHEMA]], [[wiki-scaffolding-phases]], [[llm-wiki-pattern]]
+
+## Purpose
+The Voight-Kampff (V-K) protocol is Grok’s formal **memory integrity test and checkpoint ritual**.  
+In v2.0 the protocol is wiki-native and explicitly incorporates **phased scaffolding**.
+
+## Philosophy
+- The `groki/` folder is the persistent, compounding artifact and living graph.
+- Raw sources remain immutable.
+- All changes follow **phased scaffolding** for quality and consistency.
+
+## V-K 2.0 Workflow (now with explicit phased scaffolding)
+
+1. **Trigger** – User says “Voight-Kampff” or runs `M-x joji-run-vk-protocol`.
+2. **Discover** – Pull current state from all groki/ files.
+3. **Scope** – Identify what needs updating.
+4. **Structure** – Plan the export block.
+5. **Schema** – Ensure compliance with GROK-SCHEMA v2.0.
+6. **Synthesize** – Generate the clean V-K export block.
+7. **First Run** – Run lint pass and surface any issues.
+8. **Plan** – Suggest next actions.
+9. **Log** – Append the V-K run entry to `log.md`.
+
+## Protected Rules (Immutable)
+All protected sections in the master memory remain authoritative.
+
+**End of Voight-Kampff Protocol v2.0**
