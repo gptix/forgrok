@@ -1,0 +1,8 @@
+## other metadata for file made from chunk 1
+#+TITLE: Groki Log - 2026-04-10 Dr. Paul Wilhelm Scalar-Longitudinal Waves Ingest
+#+FILETAGS: :groki:ingest:wilhelm:scalar-waves:
+#+ROAM_TAGS: groki ingest wilhelm scalar longitudinal waves
+
+- **Ingest** | Dr. Paul Wilhelm — “100 Questions About Scalar-Longitudinal Waves — Part 1: Foundations” (full webpage complete)  
+  Comprehensive exploration of scalar/longitudinal waves, historical context, and modern implications.  
+  Synthesized into [[wilhelm-scalar-longitudinal-waves-foundations]].

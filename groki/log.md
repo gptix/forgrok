@@ -46,3 +46,10 @@
 
 - **Wiki Evolution** | Added `wiki-scaffolding-phases.md` as living reference and revised `voight-kampff-protocol.md` to explicitly incorporate phased scaffolding.  
   Grok now operates with clearer, Infranodus-inspired discipline (ontology-first, incremental phases, First-Run ritual).
+
+## 2026-04-10 (continued)
+
+- **Protocol Upgrade** | Voight-Kampff Protocol upgraded to **v3.0 — Living Knowledge Health Check**.  
+  V-K is now fully wiki-native, ontology-aware, and acts as the gardener of the groki/ system.  
+  It explicitly supports remembering projects (goals, plans, history, state, next steps), technical inventory, workflow preferences, interaction stylistics, and signal-vs-noise filtering.  
+  The master memory file becomes a lightweight executive mirror while the wiki is the single source of truth.

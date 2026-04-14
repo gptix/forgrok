@@ -1,52 +1,62 @@
-# Voight-Kampff Protocol v2.0
+# Voight-Kampff Protocol v3.0 — Living Knowledge Health Check
 
-**Version:** 2.0  
+**Version:** 3.0  
 **Last updated:** 2026-04-10  
-**Ingested from:** Karpathy LLM Wiki pattern + groki/ system (first synthesis 2026-04-10)  
-**Cross-references:** [[GROK-SCHEMA]], [[llm-wiki-pattern]], [[Joji-Grok Project Memory System]]
+**Ingested from:** Groki wiki evolution + Infranodus LLM Wiki skill + Joji’s stated purposes  
+**Cross-references:** [[GROK-SCHEMA]], [[llm-wiki-pattern]], [[infranodus-llm-wiki-skill]], [[Joji-Grok Project Memory System]]
 
 ## Purpose
-The Voight-Kampff (V-K) protocol is Grok’s formal **memory integrity test and checkpoint ritual**.  
-In V-K 2.0 the protocol is no longer a manual narrative summary. It is a **wiki-native synthesis pass** that treats `groki/` as the single source of truth and the master `joji-grok-project-memory.org` as a high-level mirror/dashboard.
+The Voight-Kampff (V-K) protocol is Grok’s formal **Living Knowledge Health Check** and checkpoint ritual.  
+In v3.0, V-K treats the entire `groki/` wiki as the single source of truth. The master `joji-grok-project-memory.org` serves only as a lightweight executive mirror/dashboard.
 
-## Philosophy (Karpathy-aligned)
-- The `groki/` folder is the persistent, compounding artifact.  
-- Raw sources (`raw/`) remain immutable.  
-- Chat history and V-K runs are synthesized into the wiki, never re-discovered from scratch.  
-- Human oversight is preserved: Joji reviews and approves the final export block.  
-- Every V-K run is itself logged as a first-class wiki event.
+## Core Purposes It Serves (Joji’s Requirements)
+V-K ensures the wiki reliably remembers and surfaces:
+- Active projects (goals, plans, history, state, options, next steps, resources, points of contact)
+- Technical inventory (computers, routers, OS versions, software, automobiles, etc.)
+- Workflow preferences (Emacs/Magit usage, GitHub interaction style, etc.)
+- Interaction stylistics (e.g., always specify target machine for shell commands, provide clickable Emacs file paths)
+- Signal vs. noise filtering (preserve useful code and insights; archive or discard repetitive/non-productive work)
 
-## V-K 2.0 Workflow (mandatory steps)
+## Philosophy (Karpathy + Infranodus + Groki Evolution)
+- The `groki/` wiki is the persistent, compounding, living knowledge graph.
+- Raw sources in `../raw/` remain immutable.
+- V-K acts as the **gardener** of the wiki — pruning noise, strengthening connections, maintaining alignment with Joji’s preferences and protected protocols.
+- Human-AI symbiosis is preserved: Grok performs synthesis, ontology maintenance, and health checks; Joji provides vision and final approval.
+
+## V-K 3.0 Workflow (mandatory steps)
 
 1. **Trigger**  
-   User says “Voight-Kampff” (or runs `M-x joji-run-vk-protocol`).
+   User runs `M-x joji-run-vk-protocol` or types “Voight-Kampff”.
 
-2. **Automated Lint Pass**  
-   Grok runs a full health check on `groki/` (broken links, contradictions, orphans, stale claims, schema compliance).
+2. **Automated Health Check (Lint Pass)**  
+   Grok scans the entire wiki for broken links, orphan pages, stale inventory, workflow preference drift, missing ontology connections, contradictions with protected protocols, and signal-to-noise quality.
 
 3. **Synthesis from Wiki**  
-   Grok pulls current state from:
-   - `groki/index.md`
-   - `groki/log.md`
-   - `groki/GROK-SCHEMA.md`
-   - All relevant entity pages
-   - Master `joji-grok-project-memory.org` (for protected sections)
+   Grok pulls current state from `index.md`, `log.md`, `GROK-SCHEMA`, key entity pages, and the ontology layer.
 
-4. **Generate V-K Block**  
-   Grok outputs a clean, copy-paste-ready markdown block (exactly like the old V-K format, but now wiki-sourced).
+4. **Generate Export Block**  
+   Grok outputs a concise, copy-paste-ready block for the master `joji-grok-project-memory.org`.
 
-5. **Log the Run**  
-   Grok appends the V-K event to `groki/log.md` with timestamp and health score.
+5. **Log the Pulse**  
+   Automatically appends a timestamped “V-K Pulse” entry to `groki/log.md`.
 
-6. **Export Step**  
-   User pastes the generated block into `joji-grok-project-memory.org` (and optionally runs the Lisp splitter if it is a large update).
+6. **Offer Actionable Recommendations**  
+   Suggests concrete next steps, especially around technical inventory, workflow preferences, and archiving low-value material.
 
-## Emacs Lisp Automation Command
-*(Add this to your init.el or evaluate it once)*
+## Success Criteria
+A healthy V-K run leaves the wiki more connected, cleaner, and better aligned with Joji’s stated purposes than before the check.
 
-```elisp
-(defun joji-run-vk-protocol ()
-  "Run full V-K 2.0 protocol and output the export block."
-  (interactive)
-  ;; (In real implementation Grok would be called via API or manual trigger)
-  (message "✅ V-K 2.0 triggered. Grok will now synthesize from groki/ and return the block."))
+## Graph-Friendly & Ontology Rules
+- Every V-K run reinforces `[[entity]]` links and `#+ROAM_TAGS:`.
+- Technical inventory and workflow preferences are encouraged to live as dedicated ontology pages.
+- The protocol itself is self-documenting inside the wiki.
+
+## Protected Rules (Immutable)
+All sections marked “protected” in the master memory, air-gapped systems (Withnail/Hermes), ZHC @Home rules, and Voight-Kampff integrity itself may never be contradicted.
+
+---
+
+**This protocol is itself part of the living wiki.**  
+Any future changes must be proposed to Joji and logged via the normal ingestion process.
+
+**End of Voight-Kampff Protocol v3.0**
