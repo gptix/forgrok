@@ -1,0 +1,20 @@
+## other metadata for file made from chunk 3
+#+TITLE: Wilhelm - 100 Questions About Scalar-Longitudinal Waves — Part 1: Foundations
+#+FILETAGS: :wilhelm:scalar-waves:foundations:physics:
+#+ROAM_TAGS: wilhelm scalar longitudinal waves foundations
+
+**Ingested:** 2026-04-10 from inbox/ (full webpage complete)
+
+**Summary**  
+Dr. Paul Wilhelm presents 100 foundational questions exploring scalar/longitudinal waves, their historical roots (Tesla and others), physical principles, and potential modern applications. The piece frames scalar waves as a misunderstood or suppressed aspect of electromagnetism with profound implications for energy, communication, and technology.
+
+**Key Themes**
+- Historical context and suppression narratives
+- Fundamental differences between transverse and longitudinal/scalar waves
+- Potential technological and scientific breakthroughs
+- Connections to existing physics and open questions
+
+**Cross-references**
+- [[llm-wiki-pattern]]
+- [[infranodus-llm-wiki-skill]]
+- [[voight-kampff-protocol]]
