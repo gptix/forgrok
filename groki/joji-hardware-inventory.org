@@ -1,0 +1,35 @@
+* Joji Hardware Inventory
+:PROPERTIES:
+:ID: joji-hardware-inventory-20260415
+:ROAM_ALIASES: hardware thinkpad x230 hp-envy-4520 printer laptop specs
+:CREATED: [2026-04-15 Tue]
+:END:
+
+**Permanent Reference Node**  
+Locked under GROK-SCHEMA v2.0. This node eliminates all future repetitive discussion of equipment used in the Joji-Grok Project. Primary daily driver = ThinkPad X230 (Ubuntu 22.04 LTS). Printer = HP ENVY 4520 (fully operational via HPLIP/IPP on same Wi-Fi).
+
+**Hardware Table**
+
+| Feature                  | Lenovo ThinkPad X230 (Laptop)                  | HP ENVY 4520 (Printer)                          |
+|--------------------------|------------------------------------------------|-------------------------------------------------|
+| Model                    | Lenovo ThinkPad X230 (2012)                    | HP ENVY 4520 All-in-One                         |
+| Operating System         | Ubuntu 22.04 LTS                               | Embedded firmware (no full OS)                  |
+| Current IP Address       | Not shown (dynamic on 2WIRE342-24)             | 192.168.1.68                                    |
+| Network Connection       | Wi-Fi (2WIRE342-24)                            | Wireless – 2WIRE342-24 (2.4 GHz)                |
+| MAC Address              | Not collected yet                              | c8:d3:ff:07:82:2e                               |
+| Hostname                 | gt-ThinkPad-X230                               | HP07822E                                        |
+| Processor                | Intel Core i5 / i7 (3rd gen Ivy Bridge)        | N/A (embedded processor)                        |
+| RAM                      | 4–16 GB DDR3 (user-dependent)                  | N/A                                             |
+| Storage                  | HDD or SSD (user-dependent)                    | N/A                                             |
+| Display                  | 12.5" (1366×768 typical)                       | N/A                                             |
+| Print Technology         | N/A                                            | Thermal Inkjet (color + black)                  |
+| Print Speed (approx.)    | N/A                                            | ~9 ppm black, ~6.5 ppm color                    |
+| Scanner                  | N/A                                            | Flatbed scanner (included)                      |
+| Wireless Standard        | Wi-Fi (802.11 b/g/n)                           | 802.11 b/g/n                                    |
+| Connection Type Used     | Wi-Fi                                          | Wi-Fi (IPP protocol)                            |
+| Driver on Ubuntu         | N/A                                            | HPLIP + IPP Everywhere (now working)            |
+| Firmware / Revision      | BIOS (user-dependent)                          | TH69S4001TV0660                                 |
+| Current Status           | Working normally                               | Connected & printing successfully               |
+
+**Update Rule**  
+Any future hardware changes (RAM upgrade, SSD swap, firmware flash, new device, etc.) will be appended here with a new timestamped subheading. This node is now cross-linked from groki-index.org and all equipment-related scaffolding.

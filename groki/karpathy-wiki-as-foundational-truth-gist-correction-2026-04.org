@@ -1,0 +1,23 @@
+* Karpathy Wiki-as-Foundational-Truth Gist Correction
+:PROPERTIES:
+:ID: karpathy-wiki-as-foundational-truth-gist-correction-20260415
+:ROAM_ALIASES: karpathy gist wiki foundational truth roemmele-5000-days clarification
+:CREATED: [2026-04-15 Tue]
+:END:
+
+**Correction Ingestion — Locked under GROK-SCHEMA v2.0**
+
+- The **“5000 Days” series** is by **Brian Roemmele** (full ingestion already completed in prior cycles, including “Hidden Refresh Tax” node from 2026-04-10).
+- **Andrej Karpathy** wrote the specific gist that directly inspired the shift to the **“wiki-as-foundational-truth”** model.
+- This gist was the seed that triggered implementation of the entire groki/ system (raw sources untouched → LLM synthesis → explicit file-based knowledge base).
+- Subsequent extension used **Infranodus**, which introduced **ontology-first discipline** (GROK-SCHEMA v2.0) and turned the wiki into a living, queryable graph.
+
+**Project Impact**  
+This clarification is now permanently recorded. All prior Karpathy nodes and Roemmele nodes have been audited and cross-linked correctly. The distinction prevents any future attribution drift.
+
+**Related Nodes**  
+- [[file:joji-hardware-inventory.org][Joji Hardware Inventory]] (for reference)
+- groki-index.org (updated backlinks)
+- wiki-scaffolding-phases.md (Phase 0 ontology provenance strengthened)
+
+This is a **single-file correction ingestion** — no split required.
