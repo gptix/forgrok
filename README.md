@@ -1,2 +1,2 @@
 # forgrok
-my work with grok - boring, work summaries, recollection prompts
+Work in progress - knowledge graph now based on A. Karpathy's gist and Infranodus.
