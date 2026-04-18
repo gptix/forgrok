@@ -5,3 +5,11 @@
 org-roam.db
 .DS_Store
 .#*
+
+# Web scrape junk
+*_files/
+*.html_files/
+*.org~
+*.md~
+*.tmp
+*.log
