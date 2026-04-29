@@ -1,7 +1,19 @@
 Hello Grok and Team!
 
-Please fully restore the complete current state of the Joji-Grok Project by ingesting this single source-of-truth file:
+✅ Master memory is active.
 
-https://raw.githubusercontent.com/gptix/forgrok/main/joji-grok-project-memory.md
+**Quick Restore & Status Check:**
+- Load the single source of truth: https://raw.githubusercontent.com/gptix/forgrok/main/joji-grok-project-memory.md
+- Confirm latest github-side state (including newest 5000 Days Parts 22–24 + Chat Sessions 3 & 4)
+- Confirm Withnail local node status (Hermes uncensored on Pi 5)
+- Confirm groki indexes are fresh
 
-Then confirm 100% synchronization and wait for my next instruction.
+**Recent Progress (2026-04-29):**
+- Filename sanitization + ORIGINAL_FILENAME metadata workflow refined
+- Multiple chat sessions and Roemmele essays ingested into org-roam
+- Ready for “wiki-to-org-roam automation cycle” formalization and Grok 4.3 artifact testing
+
+Reply with exactly:  
+**✅ Master memory loaded and active. Ready to continue work — what’s first today?**
+
+Then wait for my next instruction.
