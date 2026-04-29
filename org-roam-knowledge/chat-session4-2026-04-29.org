@@ -1,0 +1,19 @@
+#+TITLE: Chat Session 4 - 2026-04-29
+#+FILETAGS: :chat:session:grok:ingest:
+#+CREATED: [2026-04-29]
+#+LAST_MODIFIED: [$(date +"%Y-%m-%d %H:%M")]
+#+ROAM_ALIASES: "Chat Session 4" "Grok Chat 2026-04-29 #4"
+#+ROAM_REFS: [[file:2026-04-29-chat-session4-chat4-2026-04-26-html.html][Original HTML]]
+
+* Metadata
+- **Original Filename**: chat4-2026-04-26.html
+- **Sanitized**: 2026-04-29-chat-session4-chat4-2026-04-26-html.html
+- **Saved**: 2026-04-29
+- **Source**: Grok conversation (saved HTML)
+
+* Summary / Key Topics
+[TODO: Add brief summary after reading]
+
+* Full Conversation
+[[file:../raw/2026-04-29-chat-session4-chat4-2026-04-26-html.html][View Original Saved Chat HTML]]
+
