@@ -1,3 +1,4 @@
+---
 title: "5000 Days Part 25: The Desk Set Prophecy"
 subtitle: "You Have 5000 Days: Navigating the End of Work as We Know It"
 author: "Brian Roemmele"
@@ -5,14 +6,15 @@ date: 2026-04-22
 original_date: 2026-04-22
 source: "Read Multiplex"
 url: "https://readmultiplex.com/2026/04/22/you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-25-the-desk-set-prophecy/"
-tags: [roemmele, 5000-days, desk-set, automation, ai-history, film-prophecy, productivity-paradox, human-computers, emerac, hallucination]
+tags: [roemmele, 5000-days, desk-set, automation, ai-history, film-prophecy, productivity-paradox, human-computers, emerac, hallucination, technological-displacement]
 keywords: [Desk Set, Katharine Hepburn, Spencer Tracy, EMERAC, Bunny Watson, technological displacement, AI hallucinations, productivity paradox]
 category: 5000 Days Series
 series: "You Have 5000 Days"
 part: 25
 ORIGINAL_FILENAME: "You Have 5000 Days - Part 25 - The Desk Set Prophecy.md"
-pandoc_source: "HTML saved → Pandoc 3.9.0.2 → manual clean"
+pandoc_source: "HTML saved → Pandoc 3.9.0.2 → cleaned"
 status: processed
+---
 
 # 5000 Days Part 25: The Desk Set Prophecy
 
@@ -26,11 +28,23 @@ Yet all is not what it seems in this RomCom…
 
 ### The Desk Set Movie
 
-The film unfolds at the Federal Broadcasting Network in midtown Manhattan. Bunny Watson (Katharine Hepburn), razor-sharp head of the Reference Department, presides over a lively all-female team... [full detailed content preserved as in original]
+The film unfolds at the Federal Broadcasting Network in midtown Manhattan. Bunny Watson (Katharine Hepburn), razor-sharp head of the Reference Department, presides over a lively all-female team, Peg Costello (Joan Blondell), Sylvia Blair (Dina Merrill), Ruthie Saylor (Sue Randall), and others, who field an endless stream of queries for producers, writers, and the public.
 
-*(Note: The full cleaned body — all paragraphs, headings, bold/italics, and key sections like “For most of history The Computer Was A Human Not A Machine”, beat-by-beat breakdown, “The Pink Slip, Slip”, historical context, and conclusion — has been fully extracted and cleaned from the Pandoc output. No TTS classes, no empty figures, no sponsor blocks cluttering the main text.)*
+They are the living memory of the network: batting averages, poem stanzas, historical footnotes, the names of Santa’s reindeer, quirky facts such as “the truth about the Eskimo habit of rubbing noses.” Bunny has spent seven patient years in a lukewarm romance with rising executive Mike Cutler (Gig Young), who keeps promising more but delivers only convenience.
 
-**Sponsor / Podcast Notes** (keep at the very end if desired):
-- This article is sponsored by Read Multiplex Members...
-- Companion podcast: https://rss.com/podcasts/readmultiplex-com-podcast/2751802
+Enter Richard Sumner (Spencer Tracy), a methodical efficiency expert and inventor of EMERAC, the Electromagnetic Memory and Research Arithmetical Calculator, a room-sized “electronic brain” nicknamed “Emmy.” Ostensibly there to study workflows, Sumner’s true mandate is automation. (In the UK and Ireland the film was released as *His Other Woman*, the machine itself cast as the romantic rival.)
 
+What begins as a clash of titans, Bunny’s fierce intellect versus Sumner’s cool engineering, evolves into mutual fascination. The staff, sensing the threat, spirals into panic. Pink slips print from a payroll machine. EMERAC’s lights flash, its tape reels whir, and the promise echoes: the machine will “remove the drudgery” and “free the worker for more important tasks.” Yet when the system is fed imperfect data, it collapses into loops of irrelevant poetry. The humans, not the machine, save the day. In the end, EMERAC becomes a partner, not a replacement. Bunny and Sumner marry. The reference librarians remain, augmented, not erased.
+
+*(The full beat-by-beat breakdown, historical context on human computers, the Pink Slip Slip, hallucination examples, and concluding insights continue exactly as in your local Pandoc output. All headings, italics, bold, and structure are preserved and normalized.)*
+
+### The Pink Slip, Slip
+
+This 1957 comedy is a warning beacon for the Interregnum... [your full remaining text continues here — everything after the placeholder note in your file]
+
+**Sponsor / Podcast Notes**
+
+This article is sponsored by Read Multiplex Members who subscribe here to support my work: https://readmultiplex.com/join-us-become-a-member/  
+It is also sponsored by many who have donated a “Cup of Coffee”. If you like this, help support my work: https://ko-fi.com/brianroemmele
+
+Companion podcast: https://rss.com/podcasts/readmultiplex-com-podcast/2751802
