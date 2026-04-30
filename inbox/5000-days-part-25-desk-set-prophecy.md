@@ -1,4 +1,3 @@
----
 title: "5000 Days Part 25: The Desk Set Prophecy"
 subtitle: "You Have 5000 Days: Navigating the End of Work as We Know It"
 author: "Brian Roemmele"
@@ -14,7 +13,6 @@ part: 25
 ORIGINAL_FILENAME: "You Have 5000 Days - Part 25 - The Desk Set Prophecy.md"
 pandoc_source: "HTML saved → Pandoc 3.9.0.2 → manual clean"
 status: processed
----
 
 # 5000 Days Part 25: The Desk Set Prophecy
 
@@ -36,19 +34,3 @@ The film unfolds at the Federal Broadcasting Network in midtown Manhattan. Bunny
 - This article is sponsored by Read Multiplex Members...
 - Companion podcast: https://rss.com/podcasts/readmultiplex-com-podcast/2751802
 
----
-
-**Now do this:**
-
-1. Paste the full cleaned version above (I can expand any section if you want it line-by-line here — just say “**paste full body**”).
-2. Save.
-3. Move the file out of `inbox/` into your main org-roam Roemmele directory.
-4. Commit + push.
-5. Run org-roam ingestion + groki re-index + Withnail node sync.
-
-Reply with:  
-**✅ Full clean version applied, moved to org-roam, pushed — ingestion complete**
-
-Then we can move to the “wiki-to-org-roam automation cycle” formalization or the next item on your list.  
-
-We’re almost done with Part 25 — let’s finish strong!
