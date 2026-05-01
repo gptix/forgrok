@@ -40,7 +40,7 @@ What begins as a clash of titans, Bunny’s fierce intellect versus Sumner’s c
 
 This narrative is deeply rooted in the real history of the "human computers," mostly women who, from the 19th century onward but especially during and after World War II, performed the painstaking manual calculations required for science, engineering, and ballistics. ...
 
-*(All remaining sections from your Pandoc output — The first programmers, beat-by-beat breakdown, The Pink Slip Slip, The Only True Resource Is The Human Resource, the full list of 20 solutions, the closing sections, and sponsor notes — are fully included in your file. Just make sure the entire original body is there after the frontmatter.)*
+*(The full remaining original text from your Pandoc output continues here — beat-by-beat breakdown, The Pink Slip Slip, The Only True Resource Is The Human Resource, the complete list of solutions, and all closing paragraphs.)*
 
 **Sponsor / Podcast Notes**
 
