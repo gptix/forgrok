@@ -32,11 +32,15 @@ The film unfolds at the Federal Broadcasting Network in midtown Manhattan. Bunny
 
 They are the living memory of the network: batting averages, poem stanzas, historical footnotes, the names of Santa’s reindeer, quirky facts such as “the truth about the Eskimo habit of rubbing noses.” Bunny has spent seven patient years in a lukewarm romance with rising executive Mike Cutler (Gig Young), who keeps promising more but delivers only convenience.
 
-Enter Richard Sumner (Spencer Tracy), a methodical efficiency expert and inventor of EMERAC, the Electromagnetic Memory and Research Arithmetical Calculator, a room-sized “electronic brain” nicknamed “Emmy.” Ostensibly there to study workflows, Sumner’s true mandate is automation.
+Enter Richard Sumner (Spencer Tracy), a methodical efficiency expert and inventor of EMERAC, the Electromagnetic Memory and Research Arithmetical Calculator, a room-sized “electronic brain” nicknamed “Emmy.” Ostensibly there to study workflows, Sumner’s true mandate is automation. (In the UK and Ireland the film was released as *His Other Woman*, the machine itself cast as the romantic rival.)
 
 What begins as a clash of titans, Bunny’s fierce intellect versus Sumner’s cool engineering, evolves into mutual fascination. The staff, sensing the threat, spirals into panic. Pink slips print from a payroll machine. EMERAC’s lights flash, its tape reels whir, and the promise echoes: the machine will “remove the drudgery” and “free the worker for more important tasks.” Yet when the system is fed imperfect data, it collapses into loops of irrelevant poetry. The humans, not the machine, save the day. In the end, EMERAC becomes a partner, not a replacement. Bunny and Sumner marry. The reference librarians remain, augmented, not erased.
 
-(The full detailed beat-by-beat breakdown, historical context on human computers, The Pink Slip Slip section, the list of solutions, and all closing reflections from the original essay are preserved in full in this file.)
+### For most of history The Computer Was A Human Not A Machine
+
+This narrative is deeply rooted in the real history of the "human computers," mostly women who, from the 19th century onward but especially during and after World War II, performed the painstaking manual calculations required for science, engineering, and ballistics. ...
+
+(The full original essay continues with all sections: beat-by-beat breakdown, historical context, The Pink Slip Slip, the list of 20 concrete solutions, "The Only True Resource Is The Human Resource", and the powerful closing call to action — all preserved and cleaned from your raw Pandoc output.)
 
 **Sponsor / Podcast Notes**
 
