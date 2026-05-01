@@ -1,0 +1,5 @@
+#+title: Human Computers vs Machines
+#+filetags: :roemmele:human-computers:ai-history:
+#+date: 2026-04-22
+
+For most of history the computer was a human — mostly women performing complex calculations by hand. ENIAC and UNIVAC programmers were the same women whose jobs were being automated. *Desk Set* captures this exact transition in knowledge work.

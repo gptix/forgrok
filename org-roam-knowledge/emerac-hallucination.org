@@ -1,0 +1,5 @@
+#+title: EMERAC and AI Hallucinations (1957 Prediction)
+#+filetags: :roemmele:emerac:hallucination:
+#+date: 2026-04-22
+
+A single misspelling (“Corfu” rendered as “curfew”) sends EMERAC into an endless loop of irrelevant poetry. This is one of the earliest cinematic depictions of what we now call AI hallucination.
