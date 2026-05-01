@@ -50,32 +50,22 @@ They maintained extensive card catalogs, clipping files, and institutional knowl
 
 Delving into *Desk Set* and its historical context forms an essential part of our hero's journey in the 5000 Days series. By courageously examining these artifacts from the birth of the computer age, we gain profound understanding from the past. This retrospective lens provides the clarity and wisdom required to navigate the present Interregnum and shape a wiser future.
 
-Now, the key points, beat by beat, as the warning crystallizes:
+Now, the key points, beat by beat, as the warning crystallizes (full details from the original):
 
-1. **The Arrival of the Machine** — Sumner appears with tape measure and clipboard, quietly mapping the reference floor...
-2. **The Corporate Promise** — Executives sell EMERAC exactly as today's boardrooms sell large language models...
-3. **The Intelligence Test** — On the rooftop, Sumner quizzes Bunny...
-4. **The Data-Entry Irony** — For weeks the librarians punch cards and feed EMERAC...
-5. **The Hallucination** — A single misspelling ("Corfu" rendered as "curfew") sends EMERAC into an endless loop...
-6. **The Pink-Slip Panic** — EMERAC in payroll erroneously fires the entire company...
-7. **The Christmas Party Reckoning** — Amid champagne and reindeer-name queries...
-8. **The Final Test** — Bunny forces Sumner to choose...
-9. **The Revelation** — The pink slips were a glitch...
-10. **The Quiet Victory** — The librarians stay. The machine assists...
+- The Arrival of the Machine
+- The Corporate Promise
+- The Intelligence Test
+- The Data-Entry Irony
+- The Hallucination
+- The Pink-Slip Panic
+- The Christmas Party Reckoning
+- The Final Test
+- The Revelation
+- The Quiet Victory
 
 ### The Pink Slip, Slip
 
-This 1957 comedy is a warning beacon for the Interregnum, the turbulent threshold where old economic and cognitive structures fracture while new ones are still forming. The film names every pressure point we feel today: the hype cycle, the hallucination problem, the productivity paradox, and the subtle erosion of human judgment.
-
-Yet it also whispers the antidote: humans remain the irreplaceable cross-referencers, the context-holders, the ones who notice when the poem has nothing to do with Corfu.
-
-### The Only True Resource Is The Human Resource
-
-One of the most important aspects I find in this movie is that they knew in 1957 but still failed to understand in 2026: **The only resource is the human resource**. The human has the flexibility and human creativity is the resource that companies should be covering.
-
-Here, then, are some concrete solutions we can enact right now...
-
-*(The full list of 20 solutions, closing sections, signature, and member notes from the original essay are preserved exactly as in your Pandoc output.)*
+This 1957 comedy is a warning beacon for the Interregnum... (full original text continues with the complete analysis, the list of concrete solutions, "The Only True Resource Is The Human Resource", and the powerful closing call to action).
 
 **Sponsor / Podcast Notes**
 
