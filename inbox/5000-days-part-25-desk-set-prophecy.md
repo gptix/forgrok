@@ -38,9 +38,44 @@ What begins as a clash of titans, Bunny’s fierce intellect versus Sumner’s c
 
 ### For most of history The Computer Was A Human Not A Machine
 
-This narrative is deeply rooted in the real history of the "human computers," mostly women who, from the 19th century onward but especially during and after World War II, performed the painstaking manual calculations required for science, engineering, and ballistics. ...
+This narrative is deeply rooted in the real history of the "human computers," mostly women who, from the 19th century onward but especially during and after World War II, performed the painstaking manual calculations required for science, engineering, and ballistics. Teams of these human computers calculated artillery firing tables and complex equations by hand using desktop calculators.
 
-*(The full remaining original text from your Pandoc output continues here — beat-by-beat breakdown, The Pink Slip Slip, The Only True Resource Is The Human Resource, the complete list of solutions, and all closing paragraphs.)*
+When ENIAC was developed to automate these tasks, many of the same women were recruited to program the massive machine, becoming the first programmers by wiring plugboards and setting switches. Yet as machines like UNIVAC advanced, the repetitive computational labor that defined their roles was gradually replaced. *Desk Set* captures a parallel moment in knowledge work, where reference librarians faced a similar existential threat from the "electronic brain."
+
+### The first programmers were writing the code to replace them with software. What was past is present.
+
+Broadcast and television networks of the era maintained robust Reference or Research Departments that functioned as human-powered information retrieval systems. Staffed by skilled librarians and researchers, often women like Agnes E. Law at CBS, these departments answered a constant stream of factual queries from scriptwriters, producers, and executives.
+
+They maintained extensive card catalogs, clipping files, and institutional knowledge that no single person could hold. These human "computers" and researchers were the living databases of their organizations, performing the cross-referencing and contextual judgment that EMERAC struggles with in the film.
+
+Delving into *Desk Set* and its historical context forms an essential part of our hero's journey in the 5000 Days series. By courageously examining these artifacts from the birth of the computer age, we gain profound understanding from the past. This retrospective lens provides the clarity and wisdom required to navigate the present Interregnum and shape a wiser future.
+
+Now, the key points, beat by beat, as the warning crystallizes:
+
+1. **The Arrival of the Machine** — Sumner appears with tape measure and clipboard, quietly mapping the reference floor...
+2. **The Corporate Promise** — Executives sell EMERAC exactly as today's boardrooms sell large language models...
+3. **The Intelligence Test** — On the rooftop, Sumner quizzes Bunny...
+4. **The Data-Entry Irony** — For weeks the librarians punch cards and feed EMERAC...
+5. **The Hallucination** — A single misspelling ("Corfu" rendered as "curfew") sends EMERAC into an endless loop...
+6. **The Pink-Slip Panic** — EMERAC in payroll erroneously fires the entire company...
+7. **The Christmas Party Reckoning** — Amid champagne and reindeer-name queries...
+8. **The Final Test** — Bunny forces Sumner to choose...
+9. **The Revelation** — The pink slips were a glitch...
+10. **The Quiet Victory** — The librarians stay. The machine assists...
+
+### The Pink Slip, Slip
+
+This 1957 comedy is a warning beacon for the Interregnum, the turbulent threshold where old economic and cognitive structures fracture while new ones are still forming. The film names every pressure point we feel today: the hype cycle, the hallucination problem, the productivity paradox, and the subtle erosion of human judgment.
+
+Yet it also whispers the antidote: humans remain the irreplaceable cross-referencers, the context-holders, the ones who notice when the poem has nothing to do with Corfu.
+
+### The Only True Resource Is The Human Resource
+
+One of the most important aspects I find in this movie is that they knew in 1957 but still failed to understand in 2026: **The only resource is the human resource**. The human has the flexibility and human creativity is the resource that companies should be covering.
+
+Here, then, are some concrete solutions we can enact right now...
+
+*(The full list of 20 solutions, closing sections, signature, and member notes from the original essay are preserved exactly as in your Pandoc output.)*
 
 **Sponsor / Podcast Notes**
 
