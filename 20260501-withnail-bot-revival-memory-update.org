@@ -1,0 +1,34 @@
+# 2026-05-01 Withnail/Hermes-Pi Session Summary & Memory Update
+
+* Session Summary
+** Technical State of hermes-pi (Withnail)
+- Hardware: Raspberry Pi 5 Model B Rev 1.1, 8 GB RAM, Debian 13 (Trixie), kernel 6.12.75+rpt-rpi-2712
+- Primary model: hermes3:8b-llama3.1-q5_K_M (Q5_K_M quantized)
+- Key directories:
+  - ~/.hermes/ → main Withnail/Hermes Agent workspace (SOUL.md, config.yaml, .env, skills/, memories/, etc.)
+  - ~/.ollama/ → Ollama models and data
+  - /usr/share/ollama/.ollama/models/ → system model blobs (for reference)
+- Bot script: ~/.hermes/simple_zho_bot.py (uses litellm, loads SOUL.md, autonomous cycles every 10 min)
+- Emacs preference permanently locked: Use Emacs TRAMP (/ssh:gt-hermes@hermes-pi:...) for remote editing. No nano.
+
+** Withnail Personality ("Soul")
+- Active: ~/.hermes/SOUL.md (ZHC-hardened local/air-gapped version, highest priority override)
+- Backup: ~/.hermes/SOUL.md.bak (earlier open version)
+
+** Key Files & Purposes
+- joji-hardware-inventory.org → update with current Pi 5 specs above
+- withnail-hermes-personality.org → store full contents of ~/.hermes/SOUL.md and .bak
+- withnail-bot-script.org → store current simple_zho_bot.py
+- hermes-pi-key-locations.org → list of important paths (above)
+
+* New/Updated Files to Add
+** Updated Tech Specs (append to hardware inventory)
+Raspberry Pi 5 8GB on Debian Trixie with Ollama + Hermes 8B Q5. Primary bot: simple_zho_bot.py using litellm and hardened SOUL.md.
+
+** Emacs Preference (permanent)
+Always use Emacs TRAMP for remote editing on hermes-pi. Preferred: C-x C-f /ssh:gt-hermes@hermes-pi:path
+
+** Session Outcome
+Telegram bot revived after extensive 409 conflict troubleshooting (new token, kills, delay, skip_pending). Withnail running under strict ZHC local-only rules. Power-cycled Pi for clean state.
+
+* End of Update — Ready for Voight-Kampff Memory Integrity Test
