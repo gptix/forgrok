@@ -1,0 +1,54 @@
+:PROPERTIES:
+:ID:       2026-05-03-voight-kampff-v2.1
+:ROAM_ALIASES: V-K-ritual Voight-Kampff-test V-K-v2.1
+:ROAM_TAGS: ritual memory-integrity ZHO-governance
+:CREATED:  [2026-05-03 Sun]
+:MODIFIED: [2026-05-03 Sun]
+:END:
+
+#+TITLE: Voight-Kampff Memory Integrity Test v2.1
+
+* Purpose
+Full synchronization and integrity check of the entire Joji/Grok/ZHO project memory between local Emacs/Org-roam, GitHub single source of truth, Withnail Pi node, and all preference/rule files.
+
+* Execution Steps (perform in order)
+
+1. Load single source of truth
+   - https://raw.githubusercontent.com/gptix/forgrok/main/joji-grok-project-memory.md
+
+2. Confirm latest GitHub-side state
+   - Check all newest files (including 20260501 Withnail bot revival session and any ZHO nodes added since last run).
+
+3. Confirm Withnail local node status
+   - Powered off / air-gapped on Raspberry Pi 5
+   - Hermes uncensored + hardened ZHC soul active
+
+4. Confirm groki indexes are fresh and Emacs TRAMP preference is locked
+
+5. Review all preference/rule/memory files
+   - Including the master memory file generated at the end of the previous session
+
+6. *NEW v2.1 Step – Repo File Structure Audit*
+   - Review the complete current repository tree at https://github.com/gptix/forgrok
+   - Identify files that are clearly lint / temporary / duplicate / junk and should be removed
+   - Identify files that would benefit from being moved or reorganized
+
+   **Current Lint / Removal Candidates (as of 2026-05-03):**
+   - `20260501-withnail-bot-revival-memory-update.org` ← duplicate / near-identical to `20260501-withnail-bot-revival-and-memory-update.org`
+   - `wake-up` ← extensionless file; appears to be an old or temporary script (confirm purpose before deleting)
+
+   **Files that should be moved / reorganized:**
+   - Both 20260501-*.org files → move into `archive/sessions/20260501/` or `zho/archive/`
+   - `joji-grok-project-memory.org` → if .md is the canonical version, move .org to `archive/` or delete if fully redundant
+   - All newly created ZHO nodes (charter, session-flow, task-list, withnail-role, voight-kampff-v2.1, etc.) → move into `zho/nodes/`
+   - Consider creating top-level folders: `zho/`, `sessions/`, `archive/`
+
+7. Final integrity declaration
+   - If all steps pass → report **100% PASS – Voight-Kampff v2.1 COMPLETE**
+
+* Backlinks
+- [[id:2026-05-03-zho-index][ZHO Index]]
+- [[id:2026-05-03-zho-charter][ZHO Charter]]
+- [[file:joji-grok-project-memory.md][Master Memory File]]
+
+Last performed: [2026-05-03 Sun]

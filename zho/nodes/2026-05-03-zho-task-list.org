@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       2026-05-03-zho-task-list
+:ROAM_ALIASES: ZHO-todo ZHO-tasks
+:ROAM_TAGS: tasks backlog
+:CREATED:  [2026-05-03 Sun]
+:END:
+
+#+TITLE: ZHO Active Task List
+
+* Immediate
+- [X] Withnail Telegram bot stable with command queue
+- [ ] Finalize Withnail local task processor script
+- [ ] Draft full ZHO / Withnail security & airgap policy
+
+* Short-term (this week)
+- [ ] Offload first large data analysis task to Withnail
+- [ ] Implement Withnail → Grok structured reporting
+- [ ] Decide on repo sync & backup strategy (3-copy minimum)
+
+* Backlog
+- [ ] Local RAG / vector search on Pi for Withnail
+- [ ] Multi-node ZHO architecture (additional Pis?)
+- [ ] Integration with other ZHO tools
+
+* Backlinks
+- [[id:2026-05-03-zho-charter][ZHO Charter]]
+- [[id:2026-05-03-zho-session-flow][Session Flow]]

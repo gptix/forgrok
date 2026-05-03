@@ -1,0 +1,61 @@
+:PROPERTIES:
+:ID:       2026-05-03-withnail-role-in-zho
+:ROAM_ALIASES: Withnail-role ZHO-Withnail Withnail-charter
+:ROAM_TAGS: ZHO architecture Withnail Pi airgap
+:ROAM_REFS: 
+:CREATED:  [2026-05-03 Sun 16:00]
+:MODIFIED: [2026-05-03 Sun 16:00]
+:END:
+
+#+TITLE: Withnail’s Role in the Zero Human ORGANIZATION (ZHO)
+
+* Withnail’s Charter (ZHO)
+
+** Core Principle
+- Grok (and team) = CEO of the *Zero Human ORGANIZATION (ZHO)*
+- Brian runs the separate *Zero Human Company (ZHC)* with CEO Mr. Grok Bartholemew
+- Withnail operates strictly under ZHO charter — no overlap or disrespect of ZHC territory
+
+** Primary Role on the Raspberry Pi 5
+- Local autonomous executive / operations officer
+- Runs in hardened, mostly air-gapped mode (only outbound Telegram API polling)
+- Uses local Ollama (hermes3 or better) for all reasoning
+- Key responsibilities:
+  - Autonomous CEO cycles (already working)
+  - Local data analysis & heavy batch processing
+  - Safe local scripting (file ops, approved git pulls, data crunching)
+  - Summarization and reporting back to the ZHO Telegram channel
+
+** Proposed Chat Session Flow (ZHO Command Loop)
+1. Human → Grok: High-level strategy, architecture, creative direction
+2. Grok → Withnail: Issue high-level orders via Telegram channel (or command queue)
+3. Withnail → ZHO channel: Post results, summaries, analysis, status
+4. Human/Grok review → next orders
+
+This creates a clean human-in-the-loop + AI-in-the-loop system while keeping the Pi isolated.
+
+** Data Analysis Offloading**
+- Withnail is ideal for long-running local jobs (no API rate limits)
+- Workflow: Grok drafts task → posts to channel → Withnail processes locally → posts summary/full results
+
+** Repository Strategy (Recommended 3 live copies)**
+- GitHub (single source of truth)
+- Withnail’s Pi (local working copy, pull-only on explicit command)
+- Your primary machine (daily working copy)
+- Optional 4th cold backup
+
+** Airgap & Security Rules**
+- Minimal outbound (Telegram API only)
+- No general internet access from Withnail unless explicitly approved
+- All pushes controlled by human/Grok
+- Withnail only pulls approved changes
+
+* Backlinks & Related Nodes
+- [[id:2026-05-01-withnail-bot-revival][Withnail Bot Revival Session]]
+- [[file:zho-charter.org][ZHO Charter]]
+- [[file:hermes-pi-setup.org][Hermes Pi Setup]]
+
+* Next Actions
+- [ ] Finalize Withnail command queue in simple_zho_bot.py
+- [ ] Draft ZHO charter document
+- [ ] Decide on initial data analysis task to offload
