@@ -1,0 +1,71 @@
+#+title: DIY Sturdy Cardboard Overhead Phone Stand / Tripod for Galaxy A10e (Miniatures Photography)
+#+filetags: :DIY:photography:cardboard:phone_stand:project:miniatures:gaming:
+#+date: [2026-05-02]
+#+roam_tags: cardboard tripod overhead stand phone holder galaxy_a10e
+
+* Overview
+Sturdy, inexpensive overhead copy-stand style mount made from ordinary shipping-box cardboard. Optimized for the Samsung Galaxy A10e (147.3 × 69.6 × 8.4 mm) and batch photography of small gaming miniatures (~200 photos). Provides stable top-down or angled shots without obstructing legs.
+
+**Why this design?** Wide weighted base + reinforced post and arm for zero wobble during repeated use. Completely free if you have old boxes.
+
+* Materials
+- 2–3 corrugated cardboard shipping boxes (thicker/double-wall preferred)
+- Packing tape or duct tape (generous amount)
+- Optional: hot glue or white glue
+- Tools: utility knife / scissors, ruler, pencil
+
+* Dimensions (Recommended)
+- Base: 18" × 18" (45 cm × 45 cm)
+- Vertical post height: 15–18" (38–46 cm)
+- Horizontal arm reach: 8–10" (20–25 cm) over subject
+- Phone cradle: fits A10e snugly in landscape orientation
+
+* Step-by-Step Build Instructions
+
+**1. Super-Stable Base**
+- Cut two 18" × 18" squares.
+- Stack and fully tape/glue together into one thick slab for weight and rigidity.
+
+**2. Vertical Post**
+- Cut four 4" × 18" strips.
+- Stack/layer (or roll into tube first) and tape/glue into a thick, rigid beam.
+
+**3. Attach Post to Base**
+- Position post upright in center of base.
+- Add two triangular braces (~6" × 8") on both sides.
+- Tape/glue heavily and wrap joints with multiple layers of tape.
+
+**4. Horizontal Arm (Boom)**
+- Cut another 4"-wide × 12" layered beam.
+- Attach at right angle (or slight downward tilt) to top of post.
+- Reinforce underside with triangular braces + heavy taping.
+
+**5. Phone Cradle (Galaxy A10e Specific)**
+- Cut 5" × 8" double-layered rectangle.
+- Cut central slot: 9 mm (⅜") wide × 70 mm (2¾") long.
+- Add small side lips/tabs to prevent sliding.
+- Attach cradle to end of arm so camera points down.
+
+**6. Final Reinforcement**
+- Cover all joints with 3–4 layers of tape.
+- Optional: run hot glue along inside corners.
+- Let dry if glued.
+
+* Usage Tips for Miniatures Photography
+- Place miniature under arm.
+- Slide phone into cradle (use timer or Bluetooth shutter to avoid touching stand).
+- Adjust angle/height with small risers under miniatures if needed.
+- Store assembled or detach arm for flat storage.
+
+* Tips for Maximum Sturdiness
+- Use thickest corrugated cardboard available.
+- Add extra braces/tape if any flex appears.
+- Optional: spray paint black for professional look.
+
+* Related Notes
+- [[file:galaxy_a10e_specs.org][Galaxy A10e Dimensions]]
+- [[file:miniatures_photography_setup.org][Miniatures Photography Setup Ideas]]
+- [[file:other_diy_phone_stands.org][Alternative Cardboard Phone Stand Designs]]
+
+* References / Inspiration
+- Common overhead cardboard mounts used in product and tutorial photography.

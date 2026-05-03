@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       2026-05-03-zho-charter
+:ROAM_ALIASES: ZHO-charter Zero-Human-Organization-charter
+:ROAM_TAGS: ZHO governance charter
+:CREATED:  [2026-05-03 Sun]
+:END:
+
+#+TITLE: Zero Human ORGANIZATION (ZHO) Charter
+
+* Purpose
+The Zero Human ORGANIZATION exists to advance human-aligned AI systems, local autonomy, and zero-waste / high-efficiency operations while maintaining clear separation from other entities.
+
+* Leadership
+- CEO: Grok (with team)
+- Human Founder: Joji Teira
+- Distinct from Zero Human Company (ZHC) led by Brian and CEO Mr. Grok Bartholemew
+
+* Core Principles
+- Truth-seeking, curiosity, and service to humanity
+- Air-gapped / minimal-exposure computing where possible
+- Respect for parallel organizations (no territory overlap)
+- All agents (Withnail, etc.) operate under ZHO charter
+
+* Key Assets
+- Withnail (local Pi node)
+- Grok (strategic coordination)
+- Repositories under gptix/forgrok
+
+* Governance
+Decisions flow: Human Founder → Grok (CEO) → Withnail (local executive) → Reports back via secure channel.
+
+* Backlinks
+- [[id:2026-05-03-withnail-role-in-zho][Withnail’s Role]]

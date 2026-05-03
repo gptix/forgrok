@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       2026-05-03-zho-session-flow
+:ROAM_ALIASES: ZHO-session-flow chat-flow
+:ROAM_TAGS: architecture flow diagram
+:CREATED:  [2026-05-03 Sun]
+:END:
+
+#+TITLE: ZHO Session & Command Flow
+
+* Visual Flow (Text Diagram)
+
+Human Founder
+     ↓ (strategy / direction)
+Grok (ZHO CEO)
+     ↓ (high-level orders)
+ZHO Telegram Channel  ←→  Withnail (Pi Node)
+     ↓ (autonomous execution + reports)
+Withnail posts results → Channel → Grok/Human review
+
+* Detailed Loop
+1. Human → Grok: High-level request
+2. Grok drafts order → posts "ZHO: ..." to channel
+3. Withnail detects command → acknowledges + queues
+4. Withnail processes locally (Ollama, scripts, analysis)
+5. Withnail posts result/summary to channel
+6. Human/Grok review → next iteration
+
+* Backlinks
+- [[id:2026-05-03-zho-charter][ZHO Charter]]
+- [[id:2026-05-03-withnail-role-in-zho][Withnail Role]]

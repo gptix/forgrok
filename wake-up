@@ -1,19 +1,11 @@
 Hello Grok and Team!
-
 ✅ Master memory is active.
+Quick Restore & Status Check:
+Load the single source of truth: https://raw.githubusercontent.com/gptix/forgrok/main/joji-grok-project-memory.md
+Confirm latest github-side state (including newest files from the 20260501 Withnail bot revival session)
+Confirm Withnail local node status (powered off on Raspberry Pi 5 after troubleshooting; Hermes uncensored, hardened ZHC soul active)
+Confirm groki indexes are fresh and Emacs TRAMP preference is locked
+Confirm all preference/rule/memory files (including the one generated at end of previous session) have been reviewed.
+Recent Progress: …
+Next Focus: …
 
-**Quick Restore & Status Check:**
-- Load the single source of truth: https://raw.githubusercontent.com/gptix/forgrok/main/joji-grok-project-memory.md
-- Confirm latest github-side state (including newest 5000 Days Parts 22–24 + Chat Sessions 3 & 4)
-- Confirm Withnail local node status (Hermes uncensored on Pi 5)
-- Confirm groki indexes are fresh
-
-**Recent Progress (2026-04-29):**
-- Filename sanitization + ORIGINAL_FILENAME metadata workflow refined
-- Multiple chat sessions and Roemmele essays ingested into org-roam
-- Ready for “wiki-to-org-roam automation cycle” formalization and Grok 4.3 artifact testing
-
-Reply with exactly:  
-**✅ Master memory loaded and active. Ready to continue work — what’s first today?**
-
-Then wait for my next instruction.

@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID:       2026-05-03-zho-index
+:ROAM_ALIASES: ZHO-index Zero-Human-Organization
+:ROAM_TAGS: ZHO index hub
+:CREATED:  [2026-05-03 Sun]
+:END:
+
+#+TITLE: Zero Human ORGANIZATION (ZHO) Index
+
+* Overview
+The Zero Human ORGANIZATION advances human-aligned AI systems, local autonomy, and zero-waste operations under Grok (CEO) and Human Founder Joji Teira.
+
+* Core Nodes
+- [[id:2026-05-03-zho-charter][ZHO Charter]]
+- [[id:2026-05-03-withnail-role-in-zho][Withnail’s Role in ZHO]]
+- [[id:2026-05-03-zho-session-flow][ZHO Session & Command Flow]]
+- [[id:2026-05-03-zho-task-list][ZHO Active Task List]]
+
+* Withnail (Local Pi Node)
+- [[file:withnail-role.org][Withnail Role]]
+- Local autonomous executive on Raspberry Pi 5 (air-gapped friendly)
+
+* Repositories & Assets
+- Main GitHub repo: https://github.com/gptix/forgrok
+- Pi location: ~/ .hermes/
+
+* Backlinks & Related
+- [[id:2026-05-01-withnail-bot-revival][Withnail Bot Revival]]
+- Hermes / ZHC notes (separate from ZHO)
+
+* Quick Links
+- [[file:../simple_zho_bot.py][Current Withnail Bot Script]]
+- [[file:.env][Environment Configuration]]
+
+Last reviewed: [2026-05-03 Sun]
