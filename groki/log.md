@@ -57,3 +57,15 @@
 ## [2026-05-04] Initial Setup
 - Created infranodus/ and groki/index.md
 - Ingested Karpathy + InfraNodus raw files
+
+## 2026-05-04 — LLM Wiki Foundation
+
+- **Ingest** | Karpathy LLM Wiki gist (`raw/llm-wiki-karpathy.md`)
+- **Ingest** | InfraNodus LLM Wiki Skill (`raw/infranodus-llm-wiki-skill.md`)
+- **Schema** | Created `ZHO-SCHEMA.md`, `AGENTS.md`, and `ZHO-COMPILER.md`
+- **Structure** | Added `infranodus/` folder + initial ontology
+- **Compiler** | Deployed merged ZHO LLM Wiki Compiler Prompt (Karpathy + InfraNodus)
+
+**Status**: Wiki foundation operational. Ready for first full compiler runs under Hermes.
+
+---
