@@ -1,5 +1,17 @@
 # Groki Ingestion & Update Log
 
+## 2026-05-04 — LLM Wiki Foundation (Karpathy + InfraNodus)
+
+- **Ingest** | Karpathy LLM Wiki gist (`raw/llm-wiki-karpathy.md`)
+- **Ingest** | InfraNodus LLM Wiki Skill (`raw/infranodus-llm-wiki-skill.md`)
+- **Structure** | Created `infranodus/`, `wiki/`, and initial schema files
+- **Compiler** | Deployed merged ZHO LLM Wiki Compiler Prompt
+- **Status** | Wiki foundation operational. Ready for first full compiler test under Hermes.
+
+---
+
+*(All previous April entries preserved below)*
+
 ## 2026-04-09
 
 - **Ingest** | Karpathy LLM Wiki gist (via `inbox/llm-wiki-GitHub.html`)  

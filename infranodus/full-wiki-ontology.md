@@ -10,7 +10,7 @@
 [[Hermes]] [powers] [[Withnail]]
 [[Withnail]] [runs on] [[Raspberry Pi 5]]
 [[Hardened ZHC soul]] [constrains] [[Hermes]]
-[[Voight-Kampff]] [validates] [[Memory Integrity]]
+[[Voight-Kampff]] [validates] [[Memory Integrity v2.1]]
 
 [[raw/]] [is] [[Immutable Source Layer]]
 [[groki/]] [is] [[Living Compiled Wiki]]
@@ -18,8 +18,8 @@
 [[ZHO-SCHEMA.md]] [defines] [[All Rules]]
 
 ## Knowledge Gaps (to be filled)
-- First live compiler test on existing ZHO nodes
-- Integration between Org-roam and groki/
-- Dream-cycle / autonomous update routine
+- First live compiler test on existing ZHO + Org-roam nodes
+- Full integration between Org-roam and groki/
+- Autonomous dream-cycle / nightly consolidation routine
 
-*Append new relations here only. Never rewrite.*
+*Only append new relations. Never rewrite or delete lines.*
