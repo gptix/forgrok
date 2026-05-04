@@ -53,3 +53,7 @@
   V-K is now fully wiki-native, ontology-aware, and acts as the gardener of the groki/ system.  
   It explicitly supports remembering projects (goals, plans, history, state, next steps), technical inventory, workflow preferences, interaction stylistics, and signal-vs-noise filtering.  
   The master memory file becomes a lightweight executive mirror while the wiki is the single source of truth.
+
+## [2026-05-04] Initial Setup
+- Created infranodus/ and groki/index.md
+- Ingested Karpathy + InfraNodus raw files
