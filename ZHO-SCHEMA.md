@@ -59,5 +59,3 @@ Next recommended ZHO command: ...
 **This file (`ZHO-SCHEMA.md`) is living.** Any updates must be performed through the ZHO Compiler.
 
 You are now operating under this schema. Confirm understanding before taking action.
-
-(delete this)
