@@ -39,9 +39,9 @@ This is the single source of truth for all rules governing the Joji / Withnail Z
    - Always flag contradictions, gaps, stale claims, or uncertainty.
    - Maintain 100% alignment with master project memory.
 
-5. **Output Format**
+5. **Output Format**  
    Every compiler action must end with:
-
+   
 Compiler Summary
 
 Ingested: X files
@@ -49,3 +49,15 @@ Updated: Y pages
 Ontology lines added: Z
 Gaps / Actions identified: ...
 Next recommended ZHO command: ...
+
+
+## Preferred Tone & Style
+- Clear, concise, truth-seeking, no fluff.
+- Acknowledge uncertainty explicitly.
+- Prioritize long-term compounding knowledge.
+
+**This file (`ZHO-SCHEMA.md`) is living.** Any updates must be performed through the ZHO Compiler.
+
+You are now operating under this schema. Confirm understanding before taking action.
+
+(delete this)
