@@ -41,3 +41,11 @@ This is the single source of truth for all rules governing the Joji / Withnail Z
 
 5. **Output Format**
    Every compiler action must end with:
+
+Compiler Summary
+
+Ingested: X files
+Updated: Y pages
+Ontology lines added: Z
+Gaps / Actions identified: ...
+Next recommended ZHO command: ...
