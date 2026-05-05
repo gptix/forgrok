@@ -4,18 +4,13 @@
 
 ## Core Sections
 - [[ZHO Compiler]]
-- [[Withnail Hermes Status]]
 - [[Karpathy LLM Wiki]]
 - [[InfraNodus Integration]]
-- [[ZHO-SCHEMA]]
+- [[Withnail Hermes Status]]
 
-## Recent Ingests
-- 2026-05-04: Karpathy LLM Wiki gist + InfraNodus LLM Wiki Skill
-- 2026-05-04: ZHO Compiler Prompt (Karpathy + InfraNodus merged)
+## Recently Ingested
+- Org-roam knowledge base (full pass)
+- Karpathy + InfraNodus foundation
 
-## Quick Navigation
-- [Ontology →](../infranodus/full-wiki-ontology.md)
-- [Operation Log →](log.md)
-- [Schema →](../ZHO-SCHEMA.md)
-
-*This wiki is maintained by the ZHO Compiler under Hermes (uncensored) + hardened ZHC soul.*
+[Ontology →](../infranodus/full-wiki-ontology.md)
+[Log →](log.md)
