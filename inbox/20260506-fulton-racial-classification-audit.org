@@ -1,0 +1,68 @@
+:PROPERTIES:
+:ID:       20260506-fulton-racial-classification-audit
+:ROAM_ALIASES: "Fulton County Racial Classification Audit" "Atlanta Jail Booking Discrepancies" "Matt Van Swol Style Audit GA"
+:ROAM_TAGS: fulton-county atlanta criminal-justice data-audit racial-classification high-protein empirical zk-ritual
+:CREATED:  [2026-05-06 Wed]
+:END:
+
+#+TITLE: Fulton County (Atlanta) Racial Classification Discrepancies Audit - Starter Node
+#+AUTHOR: ZHO / Joji Teira
+#+DATE:    2026-05-06
+
+* Overview
+Mirrors the transparent, data-driven audit approach of Matt Van Swol in North Carolina. Systematic review of publicly available Fulton County Sheriff's Office inmate booking records, focusing on discrepancies between recorded race (often "White") and visual/surname/contextual indicators suggesting Hispanic/Latino or other classifications.
+
+**Core Empirical Question**: To what extent do official race classifications in Fulton County jail bookings diverge from observable identifiers (mugshots, surnames, ethnicity fields when present), and what patterns emerge?
+
+This project supports high-protein content preservation (Brian Roemmele style), knowledge-base coherence, and append-only ontology. All work uses only public records. No doxxing. Aggregate patterns only.
+
+* Project Status
+- Phase: Initiation / Pilot Planning (2026-05-06)
+- Linked to: [[id:roemmele-high-protein][High-Protein Data]] | ZK Ritual | Data Integrity Ontology
+- Goal: Reproducible, auditable dataset suitable for InfraNodus visualization and groki ingestion.
+
+* Primary Data Sources (Verified Public)
+- **Fulton County Sheriff Inmate Search**: https://fcsoga.org/inmate-search/ → Tyler Tech portal[](https://portal-gafulton.tylertech.cloud/PAJailManager/default.aspx) — includes mugshots, recorded race, ethnicity, booking details, charges.
+- **ShareFulton Open Data**: Fulton County Jail Bookings (Public) dataset (since Jan 2014) — https://sharefulton.fultoncountyga.gov/Public-Safety/Fulton-County-Jail-Bookings-Public-/ey9v-j62i
+- **Fulton County Courts / DA Public Records**: Case searches for cross-validation.
+- **Additional**: Georgia Bureau of Investigation offender queries where public; Atlanta PD arrest data.
+
+* Audit Methodology (Van Swol-Aligned)
+1. **Sampling**: Random or sequential recent bookings (last 30-90 days) or targeted by volume offense categories. Aim for 100-500 initial manual reviews.
+2. **Discrepancy Criteria**:
+   - Recorded Race = "White" or "Caucasian"
+   - But: Clearly Hispanic/Latino surname + mugshot appearance inconsistent with typical European White classification, or conflicting ethnicity field.
+   - Note secondary mismatches (e.g., Black vs. other).
+3. **Logging Fields** (use Org table or spreadsheet):
+   - Booking ID/Date
+   - Full Name
+   - Recorded Race / Ethnicity
+   - Surname Origin (Hispanic indicator)
+   - Mugshot Notes (visual assessment)
+   - Charges
+   - Source Link/Screenshot
+4. **Tools**: Manual first → Python scraper (Withnail/Ollama/Hermes) for scale. Respect rate limits and terms.
+5. **Validation**: Cross-check with court filings or other public sources. Prepare Open Records Act requests if needed for deeper data.
+6. **Output**: Aggregate statistics, charts (Mermaid/InfraNodus), discrepancy rate by category.
+
+* Initial Tasks & Next Steps (Prioritized)
+- [ ] Create local spreadsheet/Org table template in tempwork/
+- [ ] Manual pilot: Review 100 recent records via inmate search portal
+- [ ] Document findings log (append-only)
+- [ ] Build automation script skeleton on Withnail
+- [ ] Ingest pilot data into groki / Org-roam
+- [ ] Ontology append: Link to "Criminal Justice Data Integrity"
+- [ ] Schedule dream-cycle consolidation
+
+* Risks & Guardrails
+- Stay strictly within public data and Georgia Open Records law.
+- Focus on systemic patterns, not individuals.
+- Maintain full audit trail for reproducibility.
+
+* Related Nodes
+- [[file:20260506-5000-days-full-synthesis.org][5000 Days Synthesis]]
+- Brian Roemmele high-protein projects
+- Withnail automation improvements
+
+#+BEGIN: clocktable :scope subtree :maxlevel 2
+#+END:
