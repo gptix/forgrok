@@ -27,6 +27,8 @@ Brian Roemmele’s *5000 Days* series is a long-form exploration of the current 
 [[Brian Roemmele]] [contributes to] [[Historical Pattern Recognition]]
 [[Desk Set Prophecy]] [is part of] [[5000 Days Series]]
 
+## Org-roam Sources
+- [[../../org-roam-knowledge/20260505-5000-days-part-25-desk-set-prophecy.org][Part 25 Org-roam node]]
 ---
 
 **Compiler Summary**

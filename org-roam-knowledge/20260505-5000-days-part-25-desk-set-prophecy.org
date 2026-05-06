@@ -43,3 +43,7 @@ Ingested via ZHO Compiler on 2026-05-05.
 - [ ] Synthesize into a groki/ page
 - [ ] Add relevant ontology relations
 - [ ] Link to related 5000 Days nodes
+
+* groki/ Mirror
+[[file:../../groki/5000-days-part-25-desk-set-prophecy.md][groki/ synthesized page]]
+[[file:../../groki/5000-days-series-overview.md][5000 Days Series Overview]]
