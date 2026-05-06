@@ -1,0 +1,45 @@
+#+TITLE: 5000 Days — Part 25: The Desk Set Prophecy
+#+ID: 20260505-5000-days-part-25
+#+ROAM_ALIASES: "Desk Set Prophecy" "5000 Days Part 25"
+#+FILETAGS: :brian-roemmele:5000-days:prophecy:future-of-work:ai:
+#+CREATED: [2026-05-05 Tue]
+#+LAST_MODIFIED: [2026-05-05 Tue]
+
+* Summary
+Brian Roemmele uses the 1957 romantic comedy *Desk Set* (starring Katharine Hepburn, Spencer Tracy, and an early IBM “electronic brain”) as a prophetic mirror for our current AI-driven Interregnum. The film eerily foreshadows today’s hype cycles, mass automation fears, pink-slip panic, and the recurring debate about whether machines will replace human workers. Roemmele argues that, just as in 1957, humans remain essential — the real challenge is navigating the transition intelligently rather than succumbing to fear or naive utopianism. This part of the 5000 Days series turns an old Hollywood movie into a practical battle plan for the next decade of work and society.* Summary
+
+* Key Ideas / Claims
+- 
+- 
+- 
+
+* Notable Quotes
+#+BEGIN_QUOTE
+[Quote 1]
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+[Quote 2]
+#+END_QUOTE
+
+* Connections & Implications
+- **How this relates to current ZHO / LLM Wiki work:**  
+  The Desk Set Prophecy reinforces the value of historical pattern recognition and long-term memory systems. Our ZHO LLM Wiki (Karpathy + InfraNodus) is exactly the kind of tool needed to track these repeating historical cycles and avoid collective amnesia during technological shifts.
+
+- **Relevance to Withnail / Hermes:**  
+  Hermes (as the hardened, truth-seeking compiler) is well-positioned to ingest, synthesize, and maintain this kind of historical + forward-looking knowledge. Withnail can use this material to strengthen its “soul” constraints around human agency and long-term human flourishing in an AI-augmented world.
+
+
+* Raw Source
+[[file:../../inbox/You Have 5000 Days_ Navigating the End of Work as We Know It. Part 25_ The Desk Set Prophecy..html][Original HTML]]
+[[file:../../inbox/5000-days-part-25-desk-set-prophecy.md.bak][Backup .md]]
+
+* Compiler Notes
+Ingested via ZHO Compiler on 2026-05-05.
+
+---
+
+* Next Actions
+- [ ] Synthesize into a groki/ page
+- [ ] Add relevant ontology relations
+- [ ] Link to related 5000 Days nodes
