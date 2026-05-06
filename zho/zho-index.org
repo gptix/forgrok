@@ -38,12 +38,6 @@ Last reviewed: [2026-05-03 Sun]
 - Status: Complete. Links to org-roam-knowledge/20260506-5000-days-full-synthesis.org
 - Ontology extension: Dream-cycle automation node created.
 
-** 2026-05-06 | Fulton County Racial Classification Audit Launched  
-  - New Org-roam node: 20260506-fulton-racial-classification-audit.org
-- Links to data integrity and high-protein content pillars.
-- Status: Pilot phase active.
-org
-
 ** 2026-05-06 | Fulton County Racial Classification Audit Launched
 - New Org-roam node created: 20260506-fulton-racial-classification-audit.org
 - Links to data integrity and high-protein content pillars.
