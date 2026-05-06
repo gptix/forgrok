@@ -1,5 +1,16 @@
 # Groki Ingestion & Update Log
 
+# Groki Ingestion & Update Log
+
+## 2026-05-05 — 5000 Days Series Overview
+
+- **Synthesize** | Created `5000-days-series-overview.md`
+- **Ontology** | 5 new relations appended
+- **Theme** | Long-term civilizational navigation and historical pattern recognition
+- **Status** | Major thematic anchor added to the living wiki
+
+**Status:** Growing strength in historical + forward-looking knowledge layer.
+
 ## 2026-05-05 — 5000 Days Part 25 Ingest
 
 - **Ingest** | Org-roam node for "5000 Days — Part 25: The Desk Set Prophecy"

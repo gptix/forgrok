@@ -1,5 +1,13 @@
 # Full Wiki Ontology (append-only)
 
+**Last updated:** 2026-05-05
+
+[[5000 Days Series Overview]] [is] [[Civilizational Transition Analysis]]
+[[5000 Days Series]] [strengthens] [[ZHO Compiler]]
+[[5000 Days Series]] [provides] [[Historical Pattern Recognition]]
+[[Desk Set Prophecy]] [is part of] [[5000 Days Series]]
+[[Series Overview Page]] [created] [2026-05-05]
+
 **Last updated:** 2026-05-04
 
 [[Karpathy LLM Wiki]] [is foundation for] [[ZHO Compiler]]
