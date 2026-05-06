@@ -35,3 +35,6 @@ Brian Roemmele uses the 1957 romantic comedy *Desk Set* (Katharine Hepburn, Spen
 - Ontology lines added: 4
 - Gaps identified: Need to synthesize the full 5000 Days series arc
 - Next recommended ZHO command: “Ingest remaining 5000 Days parts and create series overview page”
+
+## Org-roam Source
+[[../../org-roam-knowledge/20260505-5000-days-part-25-desk-set-prophecy.org][Original Org-roam node]]
