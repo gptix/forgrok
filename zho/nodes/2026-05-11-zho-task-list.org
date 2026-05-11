@@ -1,0 +1,74 @@
+:PROPERTIES:
+:ID:       2026-05-11-zho-task-list
+:ROAM_ALIASES: "ZHO Active Task List" "ZHO-todo" "ZHO-tasks"
+:ROAM_TAGS: tasks backlog project-management zho-core
+:CREATED:  [2026-05-11 Mon]
+:END:
+
+#+TITLE: ZHO Active Task List
+
+* Status Overview (2026-05-11)
+Current State: Solid and healthy.  
+Master memory 100% restored.  
+5000 Days Part 25 + Series Overview ingested.  
+ZK Ritual structure active. Ontology append-only.  
+Karpathy + InfraNodus foundation established.  
+Bidirectional Org-roam ↔ groki active.
+
+* Immediate (Next 24-48h)
+- [X] Paste this node into Emacs → save to ~/local-side/tempwork/ → review → move to zho/nodes/ → commit & push
+- [ ] Review & confirm GitHub diff after push
+- [-] Withnail
+  - [X] Power on Withnail (Raspberry Pi 5) and
+  - [ ] verify Hermes uncensored +
+  - [ ] ZHC soul status
+- [ ] Run full Voight-Kampff v2.1 locally on Withnail
+- [ ] Output next batch: Full 5000 Days series synthesis starter node(s)
+
+* Short-term (This Week)
+** Knowledge Base Coherence & Ingestion
+- [ ] Complete full 5000 Days series synthesis + create overview node with bidirectional links
+- [ ] Ingest Brian Roemmele high-protein essays into org-roam-knowledge/ (focus on 1000 Questions + longitudinal waves)
+- [ ] Ingest Longitudinal Waves materials
+- [ ] Strengthen visualization layer (Mermaid diagrams + InfraNodus graph updates)
+
+** Withnail / Local Node Maintenance
+- [ ] Update OS, Hermes, and Ollama on Raspberry Pi 5
+- [ ] Implement basic dream-cycle / nightly consolidation automation on Withnail
+- [ ] Finalize Withnail local task processor script
+- [ ] Enable Withnail web research + email capabilities (via Hermes agent or scripts)
+- [ ] Draft full ZHO / Withnail security & airgap policy
+
+** Projects Tracking & Business Setup
+- [ ] Create dedicated Org-roam nodes for each major project (see Backlog)
+- [ ] High-protein content preservation system (Brian Roemmele)
+- [ ] Research Tesla Taxi availability timeline in Atlanta
+- [ ] Get best Rye-only pumpernickel recipe + store in knowledge base
+- [ ] Compile list of maintenance tasks for Mom's house
+
+* Medium-term (Next 2-4 Weeks)
+- [ ] Set up Brand Consultancy business
+- [ ] Set up AI Agent services business (Atlanta / Cobb County focus)
+- [ ] Set up business selling hardware + information around Brian Roemmele’s 1000 Questions
+- [ ] Investigate BSV + AI Agents + micropayments business models
+- [ ] Analyze discrepancies in racial classification of defendants/convicts in Atlanta / Fulton County (careful, truth-seeking approach)
+- [ ] Set up enough flexible businesses for non-fancy Cobb County lifestyle
+
+* Backlog
+- [ ] Local RAG / vector search on Pi for Withnail
+- [ ] Multi-node ZHO architecture
+- [ ] Improve repo sync & backup strategy (3-copy minimum)
+- [ ] Further bidirectional linking & groki automation refinements
+- [ ] Project-specific deep dives as needed
+
+* Backlinks & Related Nodes
+- [[id:2026-05-03-zho-charter][ZHO Charter]]
+- [[id:2026-05-03-withnail-role-in-zho][Withnail’s Role in ZHO]]
+- [[id:2026-05-03-zho-session-flow][ZHO Session Flow]]
+- [[id:2026-05-03-voight-kampff-v2.1][Voight-Kampff v2.1]]
+- 5000 Days Synthesis (upcoming)
+- Brian Roemmele High-Protein Preservation (upcoming)
+
+#+BEGIN_COMMENT
+Append-only: New tasks added below this line on future updates.
+#+END_COMMENT
