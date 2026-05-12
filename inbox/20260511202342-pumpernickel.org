@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       890c5d17-0e23-46f7-877d-0926d397ee46
+:END:
+#+title: pumpernickel
+Rye-only pumpernickel recipe recommendation (100% rye, no wheat):
+The best straightforward one I found is “Easy 100% Rye Loaf: 24 hour Bake Pumpernickel Style” from Ferment Pittsburgh. It uses scalding for proper gelatinization and long low-temp bake for authentic flavor. Full recipe ready for a dedicated org-roam node if you want one next.
+Dream Cycle explanation
+“Dream-cycle” = nightly Withnail automation that:
+
+Scans new/updated nodes and inbox material.
+Runs LLM synthesis / consolidation passes.
+Generates morning summary report + task roll-up.
+Updates groki wiki + InfraNodus graph.
+Archives low-value items.
+It mimics human sleep consolidation but for the knowledge base. Implementation is the next Withnail focus (already in the new project node).

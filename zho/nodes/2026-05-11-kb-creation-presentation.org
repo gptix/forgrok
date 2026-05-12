@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       2026-05-11-kb-creation-presentation
+:ROAM_ALIASES: "KB Creation Presentation" "Knowledge Base Origin Story Presentation"
+:ROAM_TAGS: project presentation knowledge-base zho-core brian-roemmele
+:CREATED:  [2026-05-11 Mon]
+:END:
+
+#+TITLE: Make Presentation Explaining Creation of This Knowledge Base
+
+* Status Overview
+Project to create a clear, compelling presentation (slides + script) that explains how this Org-roam + groki + InfraNodus + ZHO knowledge base was built and why it works.
+
+* Goals
+- Explain the hybrid system (Emacs TRAMP + GitHub + bidirectional linking + LLM synthesis).
+- Highlight ZHO principles, append-only ontology, high-protein content focus.
+- Include Brian Roemmele 5000 Days synthesis as a live example.
+- Prepare for business/consultancy use (e.g., Brand Consultancy or AI Agent services).
+
+* Current Tasks
+- [ ] Outline slide deck structure.
+- [ ] Gather good face shots of Brian Roemmele (see below for candidates).
+- [ ] Write script / speaker notes.
+- [ ] Create visual diagrams (Mermaid graphs of the system).
+- [ ] Record or prepare delivery version.
+
+* Resources & Backlinks
+- [[id:2026-05-11-kb-maintenance-synthesis][Keep KB Up-to-Date (Karpathy / Garry Tan / InfraNodus)]]
+- Brian Roemmele high-protein preservation (upcoming)
+
+#+BEGIN_COMMENT
+Append-only section.
+#+END_COMMENT

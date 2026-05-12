@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       2026-05-11-improve-withnail
+:ROAM_ALIASES: "Improve Withnail" "Withnail Maintenance" "ZHO Local Node Upgrade"
+:ROAM_TAGS: project withnail hermes ollama raspberry-pi zho-core infrastructure
+:CREATED:  [2026-05-11 Mon]
+:END:
+
+#+TITLE: Improve Withnail
+
+* Status Overview
+Dedicated ZHO project to keep the Raspberry Pi 5 node healthy, updated, and fully agentic.  
+Withnail = Hermes uncensored + hardened ZHC soul + local Ollama + task processor.
+
+* Goals
+- Maintain a fully synced local mirror of the knowledge-base repo.
+- Keep Hermes, Ollama, and OS current.
+- Enable web research + email capabilities.
+- Implement dream-cycle / nightly consolidation.
+- Draft airgap/security policy.
+
+* Current Tasks
+- [ ] Install synced copy of knowledge-base repo on Withnail (git clone or rsync from main).
+- [ ] Update versions of Hermes and Ollama on Raspberry Pi 5 (run official update scripts or `hermes update` + Ollama reinstall).
+- [ ] Power on Withnail and run full Voight-Kampff v2.1 locally.
+- [ ] Finalize Withnail local task processor script.
+- [ ] Enable Withnail web research + email capabilities (via Hermes agent or simple scripts).
+- [ ] Implement basic dream-cycle / nightly consolidation automation.
+- [ ] Draft full ZHO / Withnail security & airgap policy.
+- [ ] Update OS on Raspberry Pi 5 as needed.
+
+* Resources & Backlinks
+- [[id:2026-05-03-withnail-role-in-zho][Withnail’s Role in ZHO]]
+- [[id:2026-05-11-zho-task-list][ZHO Active Task List]]
+
+#+BEGIN_COMMENT
+Append-only section for future tasks.
+#+END_COMMENT

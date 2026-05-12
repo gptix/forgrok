@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       2026-05-11-emacs-obsidian-toggle
+:ROAM_ALIASES: "Emacs Obsidian Toggle" "init.el Obsidian Mode"
+:ROAM_TAGS: project emacs init.el obsidian ui ux
+:CREATED:  [2026-05-11 Mon]
+:END:
+
+#+TITLE: Change init.el so I can toggle Obsidian-like appearance, key-combos, and menus
+
+* Goals
+Independent toggles for:
+- Interface appearance (theme, fonts, layout)
+- Key combinations + menus (Obsidian-style)
+- Ability to mix: Obsidian look + normal keys, or full Obsidian behavior, or normal everything.
+
+* Tasks
+- [ ] Implement toggle functions in init.el (use minor modes or variables).
+- [ ] Test all three combinations.
+- [ ] Document the toggles.
+
+* Backlinks
+- [[id:2026-05-11-zho-task-list][ZHO Active Task List]]

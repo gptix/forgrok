@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       2026-05-11-kb-maintenance-synthesis
+:ROAM_ALIASES: "Keep KB Up-to-Date" "KB Maintenance Synthesis" "Karpathy Garry Tan InfraNodus Alignment"
+:ROAM_TAGS: project knowledge-base maintenance karpathy garry-tan infranodus zho-core
+:CREATED:  [2026-05-11 Mon]
+:END:
+
+#+TITLE: Keep This Knowledge Base Up-to-Date with Karpathy’s Gist, Garry Tan’s Work, and InfraNodus
+
+* Status Overview
+Ongoing project to keep the knowledge base aligned with the best current practices in LLM-powered wikis, agentic knowledge systems, and graph ontology tools.
+
+* Goals
+- Fully ingest and synthesize Karpathy’s LLM Wiki pattern.
+- Incorporate Garry Tan’s GBrain (open-sourced 10k+ file agentic KB).
+- Maintain strong bidirectional integration with InfraNodus for visualization and ontology.
+- Ensure coherence, compounding value, and high-protein content focus.
+
+* Current Tasks
+- [ ] Ingest Karpathy LLM Wiki gist[](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) into org-roam-knowledge/.<grok-card data-id="b5d5bc" data-type="citation_card" data-plain-type="render_inline_citation" ></grok-card>
+- [ ] Ingest Garry Tan GBrain repo and related agentic KB work[](https://github.com/garrytan/gbrain).<grok-card data-id="44eb2a" data-type="citation_card" data-plain-type="render_inline_citation" ></grok-card>
+- [ ] Update InfraNodus relations and visualization layer.
+- [ ] Create synthesis node linking all three to our ZHO system.
+- [ ] Schedule regular (weekly) maintenance passes.
+
+* Backlinks
+- [[id:2026-05-11-zho-task-list][ZHO Active Task List]]
+- [[id:2026-05-11-kb-creation-presentation][KB Creation Presentation]]
+
+#+BEGIN_COMMENT
+Append-only section.
+#+END_COMMENT
