@@ -1134,7 +1134,6 @@ These questions are open source and can be used freely for personal growth, comm
 gatherings, non-commercial workshops, or academic purposes. However, they may not be
 used in whole or part in any commercial publication or subscription-based product.
 
-
 * Notes on Ingestion & Future Use
 - Source: Cleaned text from raw/SaveWisdomQuestionsNEW.txt
 - This node forms the backbone for personal wisdom-graph and Wisdom Keeper development.
