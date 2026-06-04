@@ -1,0 +1,14 @@
+# 1. Create the script
+mkdir -p ~/bin
+cat > ~/bin/collect-pi-withnail-specs.sh << 'SCRIPT_EOF'
+[paste the entire script above here]
+SCRIPT_EOF
+
+# 2. Make it executable
+chmod +x ~/bin/collect-pi-withnail-specs.sh
+
+# 3. (Optional but recommended) Create the output directory
+mkdir -p ~/pi-specs
+
+# 4. Run it for the first time
+~/bin/collect-pi-withnail-specs.sh
