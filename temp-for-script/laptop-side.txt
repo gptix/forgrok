@@ -1,5 +1,0 @@
-# Retrieve the file (use the exact timestamp shown in the Pi output, or use the LATEST symlink)
-scp gt-hermes@hermes-pi:~/pi-specs/pi-withnail-specs-*.org ./
-
-# Or always get the most recent one
-scp gt-hermes@hermes-pi:~/pi-specs/pi-withnail-specs-latest.org ./
