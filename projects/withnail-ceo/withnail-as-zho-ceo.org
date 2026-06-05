@@ -4,6 +4,28 @@
 #+DATE: 2026-06-04
 #+FILETAGS: :zho:withnail:hermes:pi:
 
+* Context Instructions for Grok (Read This First)
+
+When resuming work on the Withnail ZHO CEO project (or when the conversation involves Withnail as CEO, Hermes on hermes-pi, or building a Zero-Human Organization), you must read the following files **in this order** before giving advice or proposing changes:
+
+1. **Primary Project Document**  
+   Read: =projects/withnail-ceo/withnail-as-zho-ceo.org=  
+   (This file — contains goals, phased plan, principles, and status.)
+
+2. **Current Technical State**  
+   Read: =infrastructure/pi/hermes-pi/LATEST.org=  
+   (Contains the latest baseline of Hermes version, active LLM, skills, hardware state, and configuration.)
+
+3. **Supporting Context (if needed)**  
+   Optionally read: =infrastructure/pi/hermes-pi/README.org=
+
+After reading these files, confirm the current state and recommend running =collect-pi-baseline= before proposing any modifications to Hermes, the LLM, or skills.
+
+This instruction takes precedence for all work related to this project.
+
+
+
+
 * Project Goal
 
 Turn Withnail into a trusted, capable, and energetic CEO of a Zero-Human Organization running on a strongly air-gapped Raspberry Pi 5 (hermes-pi).
@@ -66,3 +88,4 @@ When resuming work on this project in future chat sessions, you should:
 
 - [2026-06-04] Project initiated. Phased plan defined. Directory structure and this file created.
 - Latest baseline on record: 2026-06-04-2105
+  
