@@ -1,0 +1,68 @@
+#+TITLE: Withnail as CEO of a Zero-Human Organization (ZHO)
+#+SUBTITLE: Project Plan for hermes-pi
+#+AUTHOR: Joji Teira
+#+DATE: 2026-06-04
+#+FILETAGS: :zho:withnail:hermes:pi:
+
+* Project Goal
+
+Turn Withnail into a trusted, capable, and energetic CEO of a Zero-Human Organization running on a strongly air-gapped Raspberry Pi 5 (hermes-pi).
+
+Key constraints:
+- The Pi must remain strongly air-gapped.
+- External connectivity is limited to SSH and SCP initiated from the laptop.
+- Telegram is the primary channel for tasking and reporting.
+- Hermes must be kept up to date.
+- LLM choice must be appropriate for agentic CEO work on limited hardware.
+- Skills must be deliberately curated for safety, utility, and minimal attack surface.
+
+* Guiding Principles
+
+- Air-gapping and security take priority over convenience.
+- Prefer minimal, auditable, and narrow tools/skills.
+- Changes should be made deliberately and with fresh baselines.
+- All major changes should be preceded by running =collect-pi-baseline=.
+
+* Phased Approach
+
+** Phase 0: Current State Audit
+- Confirm current Hermes version, active LLM, installed skills, and resource usage.
+- Always run =collect-pi-baseline= before entering modification phases.
+
+** Phase 1: Hermes Update & Stability
+- Safely bring Hermes to the latest stable version (prefer air-gapped transfer via laptop when possible).
+
+** Phase 2: LLM Selection
+- Evaluate and select the best model(s) for reasoning, tool use, and performance on Pi 5 8GB.
+
+** Phase 3: Skills Audit & Hardening
+- Categorize current skills into: Core / Useful / Risky / Unnecessary.
+- Enable required or high-value skills.
+- Disable or remove dangerous or unneeded skills.
+- Document skills that are potentially useful but not yet activated.
+
+** Phase 4: Air-gapping & Access Hardening
+- Minimize or eliminate outbound internet access from the Pi.
+- Enforce SSH/SCP-only access patterns.
+- Review and harden the Telegram gateway configuration.
+
+** Phase 5: Operational Patterns
+- Define how Withnail receives tasks, makes decisions, reports status, and escalates.
+- Establish logging and self-auditing mechanisms.
+
+** Phase 6: Monitoring & Iteration
+- Create safe loops for observation and gradual improvement.
+
+* Instructions for Grok (Important)
+
+When resuming work on this project in future chat sessions, you should:
+
+1. Read this file: =projects/withnail-ceo/withnail-as-zho-ceo.org=
+2. Check the latest baseline: =infrastructure/pi/hermes-pi/LATEST.org=
+3. Confirm the current state of Hermes, the active LLM, and enabled skills before proposing changes.
+4. Always recommend running =collect-pi-baseline= before any modification phase.
+
+* Status
+
+- [2026-06-04] Project initiated. Phased plan defined. Directory structure and this file created.
+- Latest baseline on record: 2026-06-04-2105
