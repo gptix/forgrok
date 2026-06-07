@@ -49,6 +49,10 @@ from pathlib import Path
 # User-managed env files should override stale shell exports on restart.
 from hermes_cli.env_loader import load_hermes_dotenv
 
+# ====================== WITHNAIL PERMISSION LAYER ======================
+from hermes.tools.permissions import is_tool_allowed
+# =====================================================================
+
 _hermes_home = Path(os.getenv("HERMES_HOME", Path.home() / ".hermes"))
 _project_env = Path(__file__).parent / '.env'
 _loaded_env_paths = load_hermes_dotenv(hermes_home=_hermes_home, project_env=_project_env)
@@ -4443,45 +4447,61 @@ class AIAgent:
 
         # ── Parse args + pre-execution bookkeeping ───────────────────────
         parsed_calls = []  # list of (tool_call, function_name, function_args)
-        for tool_call in tool_calls:
-            function_name = tool_call.function.name
 
-            # Reset nudge counters
-            if function_name == "memory":
-                self._turns_since_memory = 0
-            elif function_name == "skill_manage":
-                self._iters_since_skill = 0
+  for tool_call in tool_calls:
+    function_name = tool_call.function.name
 
-            try:
-                function_args = json.loads(tool_call.function.arguments)
-            except json.JSONDecodeError:
-                function_args = {}
-            if not isinstance(function_args, dict):
-                function_args = {}
+    # ====================== WITHNAIL PERMISSION CHECK ======================
+    if not is_tool_allowed(function_name):
+        error_msg = f"[PERMISSION DENIED] Tool '{function_name}' is not in the Withnail whitelist."
+        print(f"  {error_msg}")
 
-            # Checkpoint for file-mutating tools
-            if function_name in ("write_file", "patch") and self._checkpoint_mgr.enabled:
-                try:
-                    file_path = function_args.get("path", "")
-                    if file_path:
-                        work_dir = self._checkpoint_mgr.get_working_dir_for_path(file_path)
-                        self._checkpoint_mgr.ensure_checkpoint(work_dir, f"before {function_name}")
-                except Exception:
-                    pass
+        messages.append({
+            "role": "tool",
+            "content": error_msg,
+            "tool_call_id": tool_call.id,
+        })
+        continue  # Skip this tool
+    # =====================================================================
 
-            # Checkpoint before destructive terminal commands
-            if function_name == "terminal" and self._checkpoint_mgr.enabled:
-                try:
-                    cmd = function_args.get("command", "")
-                    if _is_destructive_command(cmd):
-                        cwd = function_args.get("workdir") or os.getenv("TERMINAL_CWD", os.getcwd())
-                        self._checkpoint_mgr.ensure_checkpoint(
-                            cwd, f"before terminal: {cmd[:60]}"
-                        )
-                except Exception:
-                    pass
+    # Reset nudge counters
+    if function_name == "memory":
+        self._turns_since_memory = 0
+    elif function_name == "skill_manage":
+        self._iters_since_skill = 0
 
-            parsed_calls.append((tool_call, function_name, function_args))
+    # Parse arguments (this must run for ALL tools)
+    try:
+        function_args = json.loads(tool_call.function.arguments)
+    except json.JSONDecodeError:
+        function_args = {}
+    if not isinstance(function_args, dict):
+        function_args = {}
+
+    # Checkpoint for file-mutating tools
+    if function_name in ("write_file", "patch") and self._checkpoint_mgr.enabled:
+        try:
+            file_path = function_args.get("path", "")
+            if file_path:
+                work_dir = self._checkpoint_mgr.get_working_dir_for_path(file_path)
+                self._checkpoint_mgr.ensure_checkpoint(work_dir, f"before {function_name}")
+        except Exception:
+            pass
+
+    # Checkpoint before destructive terminal commands
+    if function_name == "terminal" and self._checkpoint_mgr.enabled:
+        try:
+            cmd = function_args.get("command", "")
+            if _is_destructive_command(cmd):
+                cwd = function_args.get("workdir") or os.getenv("TERMINAL_CWD", os.getcwd())
+                self._checkpoint_mgr.ensure_checkpoint(
+                    cwd, f"before terminal: {cmd[:60]}"
+                )
+        except Exception:
+            pass
+
+    parsed_calls.append((tool_call, function_name, function_args))
+    
 
         # ── Logging / callbacks ──────────────────────────────────────────
         tool_names_str = ", ".join(name for _, name, _ in parsed_calls)
