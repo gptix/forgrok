@@ -52,9 +52,6 @@ from hermes_cli.env_loader import load_hermes_dotenv
 # ====================== WITHNAIL PERMISSION LAYER ======================
 from hermes.tools.permissions import is_tool_allowed
 # =====================================================================
-# ====================== WITHNAIL PERMISSION LAYER ======================
-from hermes.tools.permissions import is_tool_allowed
-# =====================================================================
 
 # --- NEW: Early declarative whitelist for air-gapped Withnail COO ---
 import yaml
@@ -572,7 +569,21 @@ class AIAgent:
 
         # Store toolset filtering options
         self.enabled_toolsets = enabled_toolsets
-        self.disabled_toolsets = disabled_toolsets
+        self.disabled_toolsets = disabled_toolsets or []
+
+        # --- Merge with early Withnail whitelist (air-gapped COO mode) ---
+        # The whitelist loaded at module level takes precedence for safety.
+        if 'WITHNAIL_ALLOWED_TOOLSETS' in globals() and WITHNAIL_ALLOWED_TOOLSETS:
+            if self.enabled_toolsets:
+                self.enabled_toolsets = [
+                    ts for ts in self.enabled_toolsets 
+                    if ts in WITHNAIL_ALLOWED_TOOLSETS
+                ]
+            else:
+                self.enabled_toolsets = list(WITHNAIL_ALLOWED_TOOLSETS)
+            if not getattr(self, 'quiet_mode', False):
+                logger.info("Withnail whitelist applied to enabled_toolsets: %s", self.enabled_toolsets)
+        # -----------------------------------------------------------------
         
         # Model response configuration
         self.max_tokens = max_tokens  # None = use model default
