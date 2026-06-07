@@ -52,6 +52,36 @@ from hermes_cli.env_loader import load_hermes_dotenv
 # ====================== WITHNAIL PERMISSION LAYER ======================
 from hermes.tools.permissions import is_tool_allowed
 # =====================================================================
+# ====================== WITHNAIL PERMISSION LAYER ======================
+from hermes.tools.permissions import is_tool_allowed
+# =====================================================================
+
+# --- NEW: Early declarative whitelist for air-gapped Withnail COO ---
+import yaml
+from pathlib import Path
+
+_WHITELIST_PATH = Path(__file__).parent / "withnail_allowed_tools.yaml"   # or put in ~/.hermes/ if you prefer
+WITHNAIL_ALLOWED_TOOLS: set[str] = set()
+WITHNAIL_ALLOWED_TOOLSETS: list[str] = []
+
+def _load_withnail_whitelist() -> None:
+    """Load whitelist YAML as early as possible. Called at import time."""
+    global WITHNAIL_ALLOWED_TOOLS, WITHNAIL_ALLOWED_TOOLSETS
+    if _WHITELIST_PATH.exists():
+        try:
+            with open(_WHITELIST_PATH, "r", encoding="utf-8") as f:
+                data = yaml.safe_load(f) or {}
+            WITHNAIL_ALLOWED_TOOLS = set(data.get("allowed_tools", []))
+            WITHNAIL_ALLOWED_TOOLSETS = data.get("allowed_toolsets", []) or []
+            logger.info("Withnail whitelist loaded: %d tools, %d toolsets from %s",
+                        len(WITHNAIL_ALLOWED_TOOLS), len(WITHNAIL_ALLOWED_TOOLSETS), _WHITELIST_PATH)
+        except Exception as e:
+            logger.error("Failed to load Withnail whitelist %s: %s", _WHITELIST_PATH, e)
+    else:
+        logger.warning("No Withnail whitelist found at %s — falling back to explicit enabled_toolsets only", _WHITELIST_PATH)
+
+_load_withnail_whitelist()   # Execute immediately on import — before any agent or Hermes init
+# ---------------------------------------------------------------------
 
 _hermes_home = Path(os.getenv("HERMES_HOME", Path.home() / ".hermes"))
 _project_env = Path(__file__).parent / '.env'
