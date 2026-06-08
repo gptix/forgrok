@@ -1,0 +1,79 @@
+:PROPERTIES:
+:ID:       cb79e1f4-e2c8-432d-956a-b75c364cb7ea
+:END:
+#+TITLE: Hermes Gateway v0.14 Systemd Unit Stability on Raspberry Pi 5
+#+NODE-NAME: HermesGatewaySystemdUnitStabilityPi5
+#+DATE: [2026-06-08]
+#+TAGS: Hermes, Systemd, RaspberryPi, Pi5, ZHO, Troubleshooting
+#+ROAM_ALIASES: "Hermes Gateway systemd troubleshooting" "Hermes Pi5 unit file"
+
+* Summary
+
+The Hermes Gateway (v0.14) on a Raspberry Pi 5 (8GB) with Ubuntu Trixie exhibited repeated rapid restart loops when managed via systemd. The gateway process itself started and connected to Telegram successfully, but systemd frequently terminated it shortly after startup (often with exit code 1 or 75/TEMPFAIL). 
+
+The root causes were almost entirely in the systemd unit configuration rather than in Hermes or Ollama.
+
+* Key Findings
+
+**1. Hermes `install --force` regenerates the unit file**
+- Running `hermes gateway install --force --system --run-as-user gt-hermes` completely overwrites `/etc/systemd/system/hermes-gateway.service` with Hermes’ current template.
+- Any manual edits (including commented lines) are lost.
+- This command should be used when the unit is badly broken, but it is not suitable for fine-tuning.
+
+**2. WorkingDirectory was incorrect**
+- Hermes’ default template sets:
+  #+begin_src ini
+  WorkingDirectory=/home/gt-hermes/.local/lib/python3.13/site-packages
+  #+end_src
+- This caused the gateway to have difficulty locating `config.yaml`, sessions, and logs.
+- **Correct value**: `/home/gt-hermes/.hermes` (or remove the line entirely).
+
+**3. Timeout mismatch between systemd and Hermes**
+- Older units (especially the legacy `withnail.service`) had `TimeoutStopSec=90s`.
+- Hermes expects `TimeoutStopSec >= 210s` to match its internal `drain_timeout`.
+- This mismatch caused systemd to send `SIGTERM` during graceful shutdown, triggering rapid restart loops.
+- The current `hermes-gateway.service` correctly uses `TimeoutStopSec=210`.
+
+**4. Preferred management commands**
+- Use Hermes’ own CLI wrappers instead of raw `systemctl`:
+  #+begin_src bash
+  hermes gateway start --system
+  hermes gateway restart --system
+  hermes gateway stop --system
+  #+end_src
+- These commands ensure Hermes can update/validate the unit definition.
+- Raw `systemctl restart hermes-gateway.service` can leave the unit in an “outdated” state according to Hermes’ internal checks.
+
+**5. Exit code 75 (TEMPFAIL)**
+- Hermes uses exit code 75 during planned restarts and certain early failure conditions.
+- The unit correctly contains `RestartForceExitStatus=75`, so systemd treats it as a restartable condition rather than a permanent failure.
+
+* Recommended Unit Configuration (as of Hermes v0.14)
+
+```ini
+[Unit]
+Description=Hermes Agent Gateway - Messaging Platform Integration
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=gt-hermes
+Group=gt-hermes
+ExecStart=/usr/bin/python3 -m hermes_cli.main gateway run --replace
+WorkingDirectory=/home/gt-hermes/.hermes
+Environment="HERMES_HOME=/home/gt-hermes/.hermes"
+Restart=always
+RestartSec=5
+RestartMaxDelaySec=300
+RestartSteps=5
+RestartForceExitStatus=75
+KillMode=mixed
+KillSignal=SIGTERM
+TimeoutStopSec=210
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
