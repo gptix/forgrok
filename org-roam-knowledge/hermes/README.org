@@ -1,0 +1,26 @@
+#+TITLE: Hermes
+#+DATE: [2026-06-08]
+
+* Purpose
+
+This directory contains knowledge nodes related to **Hermes** (the agent framework from Nous Research), with a particular focus on running and stabilizing Hermes on Raspberry Pi hardware (especially the Pi 5).
+
+It includes troubleshooting notes, configuration recommendations, systemd unit best practices, and operational guidance for Hermes-based systems such as Withnail.
+
+* Key Nodes
+
+| Node | Description | Status |
+|------|-------------|--------|
+| [[file:HermesGatewaySystemdUnitStabilityPi5.org][Hermes Gateway Systemd Unit Stability on Pi 5]] | Detailed troubleshooting and fixes for rapid restart loops when running Hermes Gateway v0.14 under systemd on Raspberry Pi 5. Includes recommended unit configuration and management commands. | Active |
+
+* Related Areas
+
+- [[../projects/withnail-ceo/][Withnail CEO Bot]] — The primary Hermes-based autonomous agent running on hermes-pi.
+- [[../../infrastructure/pi/hermes-pi/][infrastructure/pi/hermes-pi]] — Hardware, baselines, and low-level configuration for the Hermes Pi.
+- [[../zho/][ZHO (Zero-Human Organization)]] — Broader context for autonomous agent systems.
+
+* Notes
+
+- Most Hermes knowledge is currently focused on stability, systemd integration, and resource-constrained deployment on the Raspberry Pi 5.
+- When adding new nodes, prefer clear, descriptive node names (e.g. =HermesXxxYyy=) and keep them in this folder when they are primarily about Hermes itself.
+- For Pi-specific infrastructure that is not Hermes-focused, prefer the =infrastructure/pi/hermes-pi/= directory.
