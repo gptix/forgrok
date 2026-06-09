@@ -1,6 +1,3 @@
-:PROPERTIES:
-:ID:       cb79e1f4-e2c8-432d-956a-b75c364cb7ea
-:END:
 #+TITLE: Hermes Gateway v0.14 Systemd Unit Stability on Raspberry Pi 5
 #+NODE-NAME: HermesGatewaySystemdUnitStabilityPi5
 #+DATE: [2026-06-08]
@@ -9,7 +6,7 @@
 
 * Summary
 
-The Hermes Gateway (v0.14) on a Raspberry Pi 5 (8GB) with Ubuntu Trixie exhibited repeated rapid restart loops when managed via systemd. The gateway process itself started and connected to Telegram successfully, but systemd frequently terminated it shortly after startup (often with exit code 1 or 75/TEMPFAIL). 
+The Hermes Gateway (v0.14) on a Raspberry Pi 5 (8GB) running Ubuntu Trixie exhibited repeated rapid restart loops when managed via systemd. The gateway process itself started and connected to Telegram successfully, but systemd frequently terminated it shortly after startup (often with exit code 1 or 75/TEMPFAIL).
 
 The root causes were almost entirely in the systemd unit configuration rather than in Hermes or Ollama.
 
@@ -41,14 +38,14 @@ The root causes were almost entirely in the systemd unit configuration rather th
   hermes gateway restart --system
   hermes gateway stop --system
   #+end_src
-- These commands ensure Hermes can update/validate the unit definition.
+- These commands ensure Hermes can update and validate the unit definition.
 - Raw `systemctl restart hermes-gateway.service` can leave the unit in an “outdated” state according to Hermes’ internal checks.
 
 **5. Exit code 75 (TEMPFAIL)**
 - Hermes uses exit code 75 during planned restarts and certain early failure conditions.
 - The unit correctly contains `RestartForceExitStatus=75`, so systemd treats it as a restartable condition rather than a permanent failure.
 
-* Recommended Unit Configuration (as of Hermes v0.14)
+* Recommended Unit Configuration (Hermes v0.14)
 
 ```ini
 [Unit]
