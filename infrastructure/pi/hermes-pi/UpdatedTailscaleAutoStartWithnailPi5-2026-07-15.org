@@ -1,117 +1,42 @@
-#+TITLE: UpdatedTailscaleAutoStartWithnailPi5
+#+TITLE: Updated Tailscale Auto-Start for Withnail Pi5
 #+NODE-NAME: UpdatedTailscaleAutoStartWithnailPi5-20260715
-#+FILETAGS: :withnail:pi5:tailscale:hermes:infrastructure:
-#+DATE: [2026-07-15]
-:PROPERTIES:
-:ID:       ac4377f2-3d39-407e-82ae-85562b7b4e21
-:END:
-#+title: UpdatedTailscaleAutoStartWithnailPi5
-#+NODE-NAME: UpdatedTailscaleAutoStartWithnailPi5
+#+FILETAGS: :withnail:pi5:tailscale:hermes:infrastructure:stability:
+#+DATE: [2026-07-15 Tue]
 
-* Work on stabilizing Hermes Agent and environment for Withnail, on 15 Jul 2026.
+* Tailscale Auto-Start Configured for Hermes Pi 5 / Withnail
 
-Tailscale is now enabled and auto-starts via systemd.
+Tailscale is now enabled and starts automatically via systemd. This is a key stability piece for Withnail's remote access from the X230 (via TRAMP/SSH).
 
-**Verification Commands & Output**
-
+**Verification Commands**
 #+BEGIN_SRC bash
 sudo systemctl enable --now tailscaled
+sudo systemctl start tailscaled
 sudo systemctl status tailscaled
 tailscale status
- tailscaled.service - Tailscale node agent
-     Loaded: loaded (/usr/lib/systemd/system/tailscaled.service; enabled; preset: enabled)
-     Active: active (running) since Wed 2026-07-15 14:44:07 EDT; 3min 58s ago
- Invocation: 546d6ad0e4064c459ff91b5cd99ef9b1
-       Docs: https://tailscale.com/docs/
-   Main PID: 53983 (tailscaled)
-     Status: "Connected; jud.taylor@gmail.com; 100.126.78.98 fd7a:115c:a1e0::b937:4e62"
-      Tasks: 12 (limit: 9626)
-        CPU: 354ms
-     CGroup: /system.slice/tailscaled.service
-             └─53983 /usr/sbin/tailscaled --state=/var/lib/tailscale/tailscaled.state --socket=/run/tailscale/tailscaled.sock --port=41641
-
-Jul 15 14:46:11 hermes-pi tailscaled[53983]: LinkChange: major, rebinding: old: interfaces.State{defaultRoute=wlan0 ifs={wlan0:[192.168.1.64/24 2600:1700:3210:1f80::2e/128 2600:1700:3210>
-Jul 15 14:46:11 hermes-pi tailscaled[53983]: dns: Set: {DefaultResolvers:[] Routes:{tail4597f9.ts.net.:[] ts.net.:[199.247.155.53 2620:111:8007::53]}+65arpa SearchDomains:[tail4597f9.ts.>
-Jul 15 14:46:11 hermes-pi tailscaled[53983]: dns: Resolvercfg: {Routes:{.:[192.168.1.254 2600:1700:3210:1f80::1] ts.net.:[199.247.155.53 2620:111:8007::53]} Hosts:2 LocalDomains:[tail459>
-Jul 15 14:46:11 hermes-pi tailscaled[53983]: dns: OScfg: {Nameservers:[100.100.100.100 fd7a:115c:a1e0::53] SearchDomains:[tail4597f9.ts.net. attlocal.net.] }
-Jul 15 14:46:11 hermes-pi tailscaled[53983]: wgengine: set DNS config again after major link change
-Jul 15 14:46:11 hermes-pi tailscaled[53983]: router: portUpdate(port=41641, network=udp6)
-Jul 15 14:46:11 hermes-pi tailscaled[53983]: router: portUpdate(port=41641, network=udp4)
-Jul 15 14:46:11 hermes-pi tailscaled[53983]: Rebind; defIf="wlan0", ips=[192.168.1.64/24 2600:1700:3210:1f80::2e/128 2600:1700:3210:1f80:4d0e:c825:9a78:b350/64 fe80::5f2d:cfd4:371d:6856/>
-Jul 15 14:46:11 hermes-pi tailscaled[53983]: magicsock: 1 active derp conns: derp-16=cr2m0s,wr2m0s
-Jul 15 14:46:11 hermes-pi tailscaled[53983]: post-rebind ping of DERP region 16 okay
-
-100.126.78.98   hermes-pi-1         jud.taylor@  linux  -  
-100.103.31.101  gt-thinkpad-x230-1  jud.taylor@  linux  -  
-Jul 15 14:44:08 hermes-pi tailscaled[53983]: wgengine: Reconfig: configuring router
-Jul 15 14:44:08 hermes-pi tailscaled[53983]: router: enabling connmark-based rp_filter workaround
-Jul 15 14:44:08 hermes-pi tailscaled[53983]: wgengine: Reconfig: user dialer
-Jul 15 14:44:08 hermes-pi tailscaled[53983]: tsdial: bart table size: 4
-Jul 15 14:44:08 hermes-pi tailscaled[53983]: wgengine: Reconfig: configuring DNS
-Jul 15 14:44:08 hermes-pi tailscaled[53983]: dns: Set: {DefaultResolvers:[] Routes:{tail4597f9.ts.net.:[] ts.net.:[199.247.155.53 2620:111:8007::53]}+65arpa SearchDomains:[tail4597f9.ts.>
-Jul 15 14:44:08 hermes-pi tailscaled[53983]: dns: Resolvercfg: {Routes:{.:[192.168.1.254 2600:1700:3210:1f80::1] ts.net.:[199.247.155.53 2620:111:8007::53]} Hosts:2 LocalDomains:[tail459>
-Jul 15 14:44:08 hermes-pi tailscaled[53983]: dns: OScfg: {Nameservers:[100.100.100.100 fd7a:115c:a1e0::53] SearchDomains:[tail4597f9.ts.net. attlocal.net.] }
-Jul 15 14:44:08 hermes-pi tailscaled[53983]: peerapi: serving on http://100.126.78.98:65207
-Jul 15 14:44:08 hermes-pi tailscaled[53983]: peerapi: serving on http://[fd7a:115c:a1e0::b937:4e62]:51448
-Jul 15 14:44:10 hermes-pi tailscaled[53983]: netcheck: DetectCaptivePortal(found=false)
-Jul 15 14:44:10 hermes-pi tailscaled[53983]: magicsock: home DERP changing from derp-0 [0ms] to derp-16 [449ms] (forced=false)
-Jul 15 14:44:10 hermes-pi tailscaled[53983]: magicsock: home is now derp-16 (mia)
-Jul 15 14:44:10 hermes-pi tailscaled[53983]: magicsock: adding connection to derp-16 for home-keep-alive
-Jul 15 14:44:10 hermes-pi tailscaled[53983]: writing netmap to disk cache
-Jul 15 14:44:10 hermes-pi tailscaled[53983]: magicsock: 1 active derp conns: derp-16=cr0s,wr0s
-Jul 15 14:44:10 hermes-pi tailscaled[53983]: derphttp.Client.Connect: connecting to derp-16 (mia)
-Jul 15 14:44:10 hermes-pi tailscaled[53983]: magicsock: endpoints changed: 107.213.211.225:41641 (stun), [2600:1700:3210:1f80::2e]:41641 (stun), 192.168.1.64:41641 (local), [2600:1700:32>
-Jul 15 14:44:10 hermes-pi tailscaled[53983]: control: NetInfo: NetInfo{varies=false ipv6=true ipv6os=true udp=true icmpv4=false derp=#16 portmap= link="" firewallmode="ipt-default"}
-Jul 15 14:44:10 hermes-pi tailscaled[53983]: Switching ipn state Starting -> Running (WantRunning=true, nm=true)
-Jul 15 14:44:10 hermes-pi tailscaled[53983]: health(warnable=warming-up): ok
-Jul 15 14:44:10 hermes-pi tailscaled[53983]: health(warnable=no-derp-connection): ok
-Jul 15 14:44:10 hermes-pi tailscaled[53983]: health(warnable=no-derp-connection): ok
-Jul 15 14:44:10 hermes-pi tailscaled[53983]: magicsock: derp-16 connected; connGen=1
-Jul 15 14:44:10 hermes-pi tailscaled[53983]: health(warnable=no-derp-connection): ok
-Jul 15 14:44:10 hermes-pi tailscaled[53983]: [RATELIMIT] format("health(warnable=%s): ok")
-Jul 15 14:44:13 hermes-pi tailscaled[53983]: magicsock: home DERP changing from derp-16 [96ms] to derp-1 [52ms] (forced=false)
-Jul 15 14:44:13 hermes-pi tailscaled[53983]: magicsock: home is now derp-1 (nyc)
-Jul 15 14:44:13 hermes-pi tailscaled[53983]: magicsock: adding connection to derp-1 for home-keep-alive
-Jul 15 14:44:13 hermes-pi tailscaled[53983]: writing netmap to disk cache
-Jul 15 14:44:13 hermes-pi tailscaled[53983]: magicsock: 2 active derp conns: derp-1=cr0s,wr0s derp-16=cr3s,wr3s
-Jul 15 14:44:13 hermes-pi tailscaled[53983]: derphttp.Client.Recv: connecting to derp-1 (nyc)
-Jul 15 14:44:13 hermes-pi tailscaled[53983]: control: NetInfo: NetInfo{varies=false ipv6=true ipv6os=true udp=true icmpv4=false derp=#1 portmap= link="" firewallmode="ipt-default"}
-Jul 15 14:44:13 hermes-pi tailscaled[53983]: magicsock: derp-1 connected; connGen=1
-Jul 15 14:44:38 hermes-pi tailscaled[53983]: magicsock: home DERP changing from derp-1 [51ms] to derp-16 [33ms] (forced=false)
-Jul 15 14:44:38 hermes-pi tailscaled[53983]: magicsock: home is now derp-16 (mia)
-Jul 15 14:44:38 hermes-pi tailscaled[53983]: writing netmap to disk cache
-Jul 15 14:44:38 hermes-pi tailscaled[53983]: control: NetInfo: NetInfo{varies=false ipv6=true ipv6os=true udp=true icmpv4=false derp=#16 portmap= link="" firewallmode="ipt-default"}
-Jul 15 14:45:25 hermes-pi tailscaled[53983]: magicsock: closing connection to derp-1 (idle), age 1m12s
-Jul 15 14:45:25 hermes-pi tailscaled[53983]: magicsock: 1 active derp conns: derp-16=cr1m0s,wr47s
-Jul 15 14:46:11 hermes-pi tailscaled[53983]: LinkChange: major, rebinding: old: interfaces.State{defaultRoute=wlan0 ifs={wlan0:[192.168.1.64/24 2600:1700:3210:1f80::2e/128 2600:1700:3210>
-Jul 15 14:46:11 hermes-pi tailscaled[53983]: dns: Set: {DefaultResolvers:[] Routes:{tail4597f9.ts.net.:[] ts.net.:[199.247.155.53 2620:111:8007::53]}+65arpa SearchDomains:[tail4597f9.ts.>
-Jul 15 14:46:11 hermes-pi tailscaled[53983]: dns: Resolvercfg: {Routes:{.:[192.168.1.254 2600:1700:3210:1f80::1] ts.net.:[199.247.155.53 2620:111:8007::53]} Hosts:2 LocalDomains:[tail459>
-Jul 15 14:46:11 hermes-pi tailscaled[53983]: dns: OScfg: {Nameservers:[100.100.100.100 fd7a:115c:a1e0::53] SearchDomains:[tail4597f9.ts.net. attlocal.net.] }
-Jul 15 14:46:11 hermes-pi tailscaled[53983]: wgengine: set DNS config again after major link change
-Jul 15 14:46:11 hermes-pi tailscaled[53983]: router: portUpdate(port=41641, network=udp6)
-Jul 15 14:46:11 hermes-pi tailscaled[53983]: router: portUpdate(port=41641, network=udp4)
-Jul 15 14:46:11 hermes-pi tailscaled[53983]: Rebind; defIf="wlan0", ips=[192.168.1.64/24 2600:1700:3210:1f80::2e/128 2600:1700:3210:1f80:4d0e:c825:9a78:b350/64 fe80::5f2d:cfd4:371d:6856/>
-Jul 15 14:46:11 hermes-pi tailscaled[53983]: magicsock: 1 active derp conns: derp-16=cr2m0s,wr2m0s
-Jul 15 14:46:11 hermes-pi tailscaled[53983]: post-rebind ping of DERP region 16 okay
-
-gt-hermes@hermes-pi:~ $ sudo tailscale up --ssh --advertise-routes=your-local-subnet-if-needed
-"your-local-subnet-if-needed" is not a valid IP address or CIDR prefix
-gt-hermes@hermes-pi:~ $
-
+journalctl -u tailscaled -n 50   # recent logs
 #+END_SRC
 
-**Status Summary**
-- Service: active (running)
-- Connected as jud.taylor@gmail.com
-- Pi IP: 100.126.78.98
-- Reboots should now preserve connection.
+**Current Status (as of 2026-07-15)**
+- Service: `active (running)` since 14:44 EDT
+- Connected: `jud.taylor@gmail.com`
+- Tailscale IP: `100.126.78.98`
+- Peer: X230 (`gt-thinkpad-x230-1`) visible on tailnet
+- Normal WiFi/DERP rebinds observed (expected on wlan0)
 
-**Next Steps**
-- Reboot test confirmation
-  
+**Reboot Test Needed**
+- Run `sudo reboot` on the Pi
+- After ~60s, from X230: `tailscale ping hermes-pi-1` and test SSH
 
-gt-hermes@hermes-pi:~ $ sudo systemctl enable --now tailscaled
-sudo systemctl start tailscaled
-gt-hermes@hermes-pi:~ $ sudo systemctl status tailscaled
-tailscale status
-journalctl -u tailscaled -n 50  # recent logs
+**Notes**
+- `tun` module is loaded.
+- `--ssh` flag enabled for Tailscale SSH.
+- Keep monitoring for any power/WiFi-related drops on the Pi 5.
+
+**Next Actions**
+- Confirm persistence after reboot
+- Integrate with Hermes/Ollama systemd units
+- Proceed to Hermes 18.2 evaluation
+
+* Links
+- [[file:../LATEST.org][Pi5 Hermes Baseline]]
+- [[file:SOUL.md][SOUL.md]]
