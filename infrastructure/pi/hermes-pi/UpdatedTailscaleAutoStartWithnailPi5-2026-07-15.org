@@ -1,17 +1,24 @@
+#+TITLE: UpdatedTailscaleAutoStartWithnailPi5
+#+NODE-NAME: UpdatedTailscaleAutoStartWithnailPi5-20260715
+#+FILETAGS: :withnail:pi5:tailscale:hermes:infrastructure:
+#+DATE: [2026-07-15]
 :PROPERTIES:
 :ID:       ac4377f2-3d39-407e-82ae-85562b7b4e21
 :END:
 #+title: UpdatedTailscaleAutoStartWithnailPi5
 #+NODE-NAME: UpdatedTailscaleAutoStartWithnailPi5
 
-** Work on stablocalilizing Hermes Agent and environment for Withnail, on 15 Jul 2026.
+* Work on stabilizing Hermes Agent and environment for Withnail, on 15 Jul 2026.
 
-gt-hermes@hermes-pi:~ $ sudo systemctl enable --now tailscaled
-sudo systemctl start tailscaled
-gt-hermes@hermes-pi:~ $ sudo systemctl status tailscaled
+Tailscale is now enabled and auto-starts via systemd.
+
+**Verification Commands & Output**
+
+#+BEGIN_SRC bash
+sudo systemctl enable --now tailscaled
+sudo systemctl status tailscaled
 tailscale status
-journalctl -u tailscaled -n 50  # recent logs
-● tailscaled.service - Tailscale node agent
+ tailscaled.service - Tailscale node agent
      Loaded: loaded (/usr/lib/systemd/system/tailscaled.service; enabled; preset: enabled)
      Active: active (running) since Wed 2026-07-15 14:44:07 EDT; 3min 58s ago
  Invocation: 546d6ad0e4064c459ff91b5cd99ef9b1
@@ -91,3 +98,20 @@ gt-hermes@hermes-pi:~ $ sudo tailscale up --ssh --advertise-routes=your-local-su
 "your-local-subnet-if-needed" is not a valid IP address or CIDR prefix
 gt-hermes@hermes-pi:~ $
 
+#+END_SRC
+
+**Status Summary**
+- Service: active (running)
+- Connected as jud.taylor@gmail.com
+- Pi IP: 100.126.78.98
+- Reboots should now preserve connection.
+
+**Next Steps**
+- Reboot test confirmation
+  
+
+gt-hermes@hermes-pi:~ $ sudo systemctl enable --now tailscaled
+sudo systemctl start tailscaled
+gt-hermes@hermes-pi:~ $ sudo systemctl status tailscaled
+tailscale status
+journalctl -u tailscaled -n 50  # recent logs
