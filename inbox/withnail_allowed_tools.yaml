@@ -1,0 +1,8 @@
+# withnail_allowed_tools.yaml
+# Minimal safe surface for Withnail (ZHO COO) — air-gapped first test
+allowed_toolsets:
+  - telegram
+
+allowed_tools:
+  - telegram_send_message
+  - telegram_get_updates
