@@ -1,0 +1,1021 @@
+
+* Collection Metadata & Quick Facts
+#+TITLE: Raspberry Pi + Withnail/Hermes/Ollama Specifications
+#+DATE: 2026-07-18 19:02:19 EDT
+#+AUTHOR: collect-pi-specs.sh 2026-06-04-v1.0
+#+PURPOSE: Baseline for configuration improvement and long-term knowledge-base tracking (org-roam / Tsuioku + GitHub)
+
+:PROPERTIES:
+:SCRIPT_VERSION: 2026-06-04-v1.0
+:COLLECTED_LOCAL: 2026-07-18 19:02:19 EDT
+:COLLECTED_UTC: 2026-07-18 23:02:19 UTC
+:HOSTNAME: hermes-pi
+:USERNAME: gt-hermes
+:OUTPUT_FILE: /home/gt-hermes/pi-specs/pi-withnail-specs-hermes-pi-20260718-1902.org
+:PI_MODEL: To be filled from hardware section
+:RAM_GB: To be filled
+:HERMES_VERSION: To be filled
+:OLLAMA_VERSION: To be filled
+:WITHNAIL_DETECTED: To be filled
+:END:
+
+*Purpose*: This file captures a point-in-time snapshot of the Raspberry Pi hardware, OS, and the full autonomous agent stack (Ollama + Hermes Agent + Withnail CEO bot). Use it for troubleshooting, upgrade planning, resource tuning, and maintaining a living history in the knowledge base. Re-run before and after changes.
+
+* Hardware Inventory & Pi-specific Details
+*** SoC / Processor
+#+begin_src sh :exports none
+Architecture:                            aarch64
+CPU op-mode(s):                          32-bit, 64-bit
+Byte Order:                              Little Endian
+CPU(s):                                  4
+On-line CPU(s) list:                     0-3
+Vendor ID:                               ARM
+Model name:                              Cortex-A76
+Model:                                   1
+Thread(s) per core:                      1
+Core(s) per cluster:                     4
+Socket(s):                               -
+Cluster(s):                              1
+Stepping:                                r4p1
+Frequency boost:                         disabled
+CPU(s) scaling MHz:                      100%
+CPU max MHz:                             2400.0000
+CPU min MHz:                             1500.0000
+BogoMIPS:                                108.00
+Flags:                                   fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+L1d cache:                               256 KiB (4 instances)
+L1i cache:                               256 KiB (4 instances)
+L2 cache:                                2 MiB (4 instances)
+L3 cache:                                2 MiB (1 instance)
+NUMA node(s):                            8
+NUMA node0 CPU(s):                       0-3
+NUMA node1 CPU(s):                       0-3
+NUMA node2 CPU(s):                       0-3
+NUMA node3 CPU(s):                       0-3
+NUMA node4 CPU(s):                       0-3
+NUMA node5 CPU(s):                       0-3
+#+end_src
+
+#+begin_src text
+processor	: 0
+BogoMIPS	: 108.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x4
+CPU part	: 0xd0b
+CPU revision	: 1
+
+processor	: 1
+BogoMIPS	: 108.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x4
+CPU part	: 0xd0b
+CPU revision	: 1
+
+processor	: 2
+BogoMIPS	: 108.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x4
+CPU part	: 0xd0b
+CPU revision	: 1
+
+processor	: 3
+BogoMIPS	: 108.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x4
+CPU part	: 0xd0b
+CPU revision	: 1
+
+Revision	: d04171
+Serial		: e150e9dddc5f4548
+Model		: Raspberry Pi 5 Model B Rev 1.1
+#+end_src
+
+# Note: CPU revision code = d04171 (see elinux.org/RPi_HardwareHistory for mapping)
+*** Pi-specific via vcgencmd (if available)
+#+begin_src sh
+=== vcgencmd get_config int (key settings) ===
+arm_64bit=1
+arm_boost=1
+arm_freq=2400
+arm_freq_min=1500
+arm_peri_high=1
+audio_pwm_mode=2
+auto_initramfs=1
+avs_temp=29586
+camera_auto_detect=1
+core_freq=910
+core_freq_min=500
+disable_commandline_tags=2
+disable_fw_kms_setup=1
+disable_l2cache=1
+disable_overscan=1
+display_auto_detect=1
+display_default_lcd=-1
+display_hdmi_rotate=-1
+display_lcd_rotate=-1
+dvfs=4
+
+=== Memory split ===
+arm=1020M
+gpu=4M
+
+=== Temperature ===
+temp=54.9'C
+
+=== Throttled status ===
+throttled=0x0
+
+=== Voltage (core) ===
+volt=0.8520V
+
+=== Bootloader / Firmware ===
+2025/06/13 10:39:26
+version 5855b10b2bd22b2a116dc91f6b5b1bc4b2ea849f (release)
+timestamp 1749807566
+update-time 0
+capabilities 0x0000007f
+
+2025/06/13 10:39:26 
+Copyright (c) 2012 Broadcom
+version 5855b10b (release) (embedded)
+#+end_src
+*** Memory (general)
+#+begin_src sh
+               total        used        free      shared  buff/cache   available
+Mem:           7.9Gi       880Mi       4.1Gi       115Mi       3.1Gi       7.0Gi
+Swap:            9Gi        96Mi       9.9Gi
+#+end_src
+#+begin_src text
+MemTotal:        8255872 kB
+MemFree:         4264768 kB
+MemAvailable:    7354576 kB
+Buffers:          175280 kB
+Cached:          3023344 kB
+SwapCached:          928 kB
+Active:           893808 kB
+Inactive:        2812816 kB
+Active(anon):     624208 kB
+Inactive(anon):     1936 kB
+Active(file):     269600 kB
+Inactive(file):  2810880 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:      10485712 kB
+#+end_src
+*** Storage & SD Card
+#+begin_src sh
+NAME          SIZE TYPE FSTYPE MOUNTPOINT     UUID
+loop0           2G loop swap                  
+mmcblk0     116.5G disk                       
+├─mmcblk0p1   512M part vfat   /boot/firmware EACA-13DA
+└─mmcblk0p2   116G part ext4   /              21724cc6-e5a3-48a1-8643-7917dba3a9fb
+zram0           2G disk swap   [SWAP]         7e6b9786-69e7-4b34-b93d-e9fdf0d085f9
+#+end_src
+#+begin_src sh
+Filesystem      Size  Used Avail Use% Mounted on
+udev            3.9G     0  3.9G   0% /dev
+tmpfs           1.6G  120M  1.5G   8% /run
+/dev/mmcblk0p2  115G   60G   50G  55% /
+tmpfs           4.0G     0  4.0G   0% /dev/shm
+tmpfs           5.0M   48K  5.0M   1% /run/lock
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           4.0G   32K  4.0G   1% /tmp
+/dev/mmcblk0p1  510M   66M  445M  13% /boot/firmware
+tmpfs           807M   48K  807M   1% /run/user/1000
+tmpfs           1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           1.0M     0  1.0M   0% /run/credentials/serial-getty@ttyAMA10.service
+#+end_src
+*** SD Card Device Info: mmcblk0
+name: 128GB
+manfid: 0x00009f
+oemid: 0x5449
+serial: 0x000002cd
+hwrev: 0x0
+fwrev: 0x0
+date: 01/2025
+type: SD
+*** USB Devices
+#+begin_src sh
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+#+end_src
+*** Boot Configuration
+
+#+begin_src conf :exports none
+# For more options and information see
+# http://rptl.io/configtxt
+# Some settings may impact device functionality. See link above for details
+
+# Uncomment some or all of these to enable the optional hardware interfaces
+#dtparam=i2c_arm=on
+#dtparam=i2s=on
+#dtparam=spi=on
+
+# Enable audio (loads snd_bcm2835)
+dtparam=audio=on
+
+# Additional overlays and parameters are documented
+# /boot/firmware/overlays/README
+
+# Automatically load overlays for detected cameras
+camera_auto_detect=1
+
+# Automatically load overlays for detected DSI displays
+display_auto_detect=1
+
+# Automatically load initramfs files, if found
+auto_initramfs=1
+
+# Enable DRM VC4 V3D driver
+dtoverlay=vc4-kms-v3d
+max_framebuffers=2
+
+# Don't have the firmware create an initial video= setting in cmdline.txt.
+# Use the kernel's default instead.
+disable_fw_kms_setup=1
+
+# Run in 64-bit mode
+arm_64bit=1
+
+# Disable compensation for displays with overscan
+disable_overscan=1
+
+# Run as fast as firmware / board allows
+arm_boost=1
+
+[cm4]
+# Enable host mode on the 2711 built-in XHCI USB controller.
+# This line should be removed if the legacy DWC2 controller is required
+# (e.g. for USB device mode) or if USB support is not required.
+otg_mode=1
+
+[cm5]
+dtoverlay=dwc2,dr_mode=host
+
+[all]
+#+end_src
+Path: /boot/firmware/config.txt
+
+* Operating System & Kernel
+#+begin_src conf
+PRETTY_NAME="Debian GNU/Linux 13 (trixie)"
+NAME="Debian GNU/Linux"
+VERSION_ID="13"
+VERSION="13 (trixie)"
+VERSION_CODENAME=trixie
+DEBIAN_VERSION_FULL=13.5
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+#+end_src
+#+begin_src sh
+Distributor ID:	Debian
+Description:	Debian GNU/Linux 13 (trixie)
+Release:	13
+Codename:	trixie
+#+end_src
+
+#+begin_src sh
+Linux hermes-pi 6.18.29+rpt-rpi-2712 #1 SMP PREEMPT Debian 1:6.18.29-1+rpt1 (2026-05-12) aarch64 GNU/Linux
+#+end_src
+*** Kernel Command Line
+#+begin_src text
+reboot=w coherent_pool=1M 8250.nr_uarts=1 pci=pcie_bus_safe cgroup_disable=memory numa_policy=interleave nvme.max_host_mem_size_mb=32  numa=fake=8 system_heap.max_order=0 smsc95xx.macaddr=88:A2:9E:70:15:13 vc_mem.mem_base=0x3fc00000 vc_mem.mem_size=0x40000000  console=ttyAMA10,115200 console=tty1 root=PARTUUID=704aece1-02 rootfstype=ext4 fsck.repair=yes rootwait cfg80211.ieee80211_regdom=US
+#+end_src
+*** Raspberry Pi Specific Packages (installed)
+#+begin_src sh
+ii  awb-nn                               0~git20251217.c7112b6-1              all          TensorFlow Lite models for Raspberry Pi camera auto white balance
+ii  libgpiolib0:arm64                    20260304+1-1                         arm64        GPIO library for Raspberry Pi devices
+ii  linux-base-6.18.29+rpt-rpi-2712      1:6.18.29-1+rpt1                     arm64        Linux for Raspberry Pi 2712 (dummy package)
+ii  linux-base-6.18.29+rpt-rpi-v8        1:6.18.29-1+rpt1                     arm64        Linux for Raspberry Pi v8 (dummy package)
+ii  linux-base-rpi-2712                  1:6.18.29-1+rpt1                     arm64        Linux for Raspberry Pi 2712 (dummy package)
+ii  linux-base-rpi-v8                    1:6.18.29-1+rpt1                     arm64        Linux for Raspberry Pi v8 (dummy package)
+rc  linux-image-6.12.47+rpt-rpi-2712     1:6.12.47-1+rpt1                     arm64        Linux 6.12 for Raspberry Pi 2712, Raspberry Pi
+rc  linux-image-6.12.47+rpt-rpi-v8       1:6.12.47-1+rpt1                     arm64        Linux 6.12 for Raspberry Pi v8, Raspberry Pi
+ii  linux-image-6.12.62+rpt-rpi-2712     1:6.12.62-1+rpt1                     arm64        Linux 6.12 for Raspberry Pi 2712, Raspberry Pi
+ii  linux-image-6.12.62+rpt-rpi-v8       1:6.12.62-1+rpt1                     arm64        Linux 6.12 for Raspberry Pi v8, Raspberry Pi
+ii  linux-image-6.12.75+rpt-rpi-2712     1:6.12.75-1+rpt1                     arm64        Linux 6.12 for Raspberry Pi 2712, Raspberry Pi
+ii  linux-image-6.12.75+rpt-rpi-v8       1:6.12.75-1+rpt1                     arm64        Linux 6.12 for Raspberry Pi v8, Raspberry Pi
+ii  linux-image-6.18.29+rpt-rpi-2712     1:6.18.29-1+rpt1                     arm64        Linux 6.18.29 for Raspberry Pi 2712, Raspberry Pi
+ii  linux-image-6.18.29+rpt-rpi-v8       1:6.18.29-1+rpt1                     arm64        Linux 6.18.29 for Raspberry Pi v8, Raspberry Pi
+ii  linux-image-rpi-2712                 1:6.18.29-1+rpt1                     arm64        Linux for Raspberry Pi 2712 (meta-package)
+ii  linux-image-rpi-v8                   1:6.18.29-1+rpt1                     arm64        Linux for Raspberry Pi v8 (meta-package)
+ii  raspberrypi-archive-keyring          2025.1+rpt1                          all          OpenPGP archive certificates of the Debian archive
+ii  raspberrypi-net-mods                 1.4.4                                all          Network configuration for the Raspberry Pi UI
+ii  raspberrypi-sys-mods                 1:20260315                           arm64        System tweaks for the Raspberry Pi
+ii  raspi-config                         20260303                             all          Raspberry Pi configuration tool
+#+end_src
+
+* Networking & Connectivity
+*** Network Interfaces & Addresses
+#+begin_src sh
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0             DOWN           
+wlan0            UP             192.168.1.64/24 2600:1700:3210:1f80::2e/128 2600:1700:3210:1f80:4d0e:c825:9a78:b350/64 fe80::5f2d:cfd4:371d:6856/64 
+tailscale0       UNKNOWN        100.126.78.98/32 fd7a:115c:a1e0::b937:4e62/128 fe80::b2fd:9941:23dd:2909/64 
+#+end_src
+*** Hostname & DNS
+Hostname: hermes-pi
+ Static hostname: hermes-pi
+       Icon name: computer
+      Machine ID: 208343df7d47444f909b7c2135f4480a
+         Boot ID: bfbfe0eb334b4380b83330e0086c5c3f
+Operating System: Debian GNU/Linux 13 (trixie)
+          Kernel: Linux 6.18.29+rpt-rpi-2712
+    Architecture: arm64
+*** Tailscale Status (if present)
+#+begin_src sh
+100.126.78.98   hermes-pi           jud.taylor@  linux  -  
+100.103.31.101  gt-thinkpad-x230-1  jud.taylor@  linux  -  
+#+end_src
+NOTE: Tailscale detected — review output for connection state
+*** WiFi / Regulatory (if applicable, no passwords shown)
+yes:2WIRE342-24
+*** Listening Services (agent-relevant ports)
+#+begin_src sh
+tcp   LISTEN 0      128                        0.0.0.0:22         0.0.0.0:*   
+tcp   LISTEN 0      4096                     127.0.0.1:11434      0.0.0.0:*   
+tcp   LISTEN 0      4096                 100.126.78.98:65207      0.0.0.0:*   
+tcp   LISTEN 0      128                           [::]:22            [::]:*   
+tcp   LISTEN 0      4096   [fd7a:115c:a1e0::b937:4e62]:51448         [::]:*   
+#+end_src
+
+* AI Software Stack - Ollama
+*** Ollama Version & Status
+#+begin_src sh
+ollama version is 0.17.7
+#+end_src
+*** Installed Models
+#+begin_src sh
+NAME                                                ID              SIZE      MODIFIED     
+llama3.2:1b                                         baf6a787fdff    1.3 GB    2 weeks ago     
+llama3.2:3b                                         a80c4f17acd5    2.0 GB    2 weeks ago     
+hermes3:latest                                      4f6b83f30b62    4.7 GB    2 weeks ago     
+hermes3:8b-llama3.1-q5_K_M                          836396825b44    5.7 GB    3 months ago    
+hermes3:8b                                          4f6b83f30b62    4.7 GB    3 months ago    
+dolphin-phi:latest                                  c5761fc77240    1.6 GB    4 months ago    
+rouge/phi-3-medium-4k-instruct-abliterated-v3:Q4    a72b1f39b7ea    8.6 GB    4 months ago    
+gurubot/phi3-mini-abliterated:latest                29ea469fde20    2.4 GB    4 months ago    
+phi3:mini                                           4f2222927938    2.2 GB    4 months ago    
+#+end_src
+*** Currently Loaded / Running Models
+#+begin_src sh
+NAME    ID    SIZE    PROCESSOR    CONTEXT    UNTIL 
+#+end_src
+*** Ollama Model Storage & Disk Usage
+NOTE: Could not confidently locate Ollama models directory
+*** Ollama Environment Variables
+#+begin_src sh
+No OLLAMA_* env vars found
+#+end_src
+*** Ollama Systemd Unit (if managed by systemd)
+NOTE: No ollama systemd unit found (may be running via user service or manually)
+
+* AI Software Stack - Hermes Agent + Withnail (CEO Bot)
+*** Hermes Agent Detection & Version
+NOTE: hermes command not found in PATH
+*** Hermes Configuration Files (sanitized)
+Hermes config directory exists: /home/gt-hermes/.hermes
+*** config.yaml (sensitive values redacted)
+#+begin_src yaml
+model:
+  provider: custom
+  model: ollama/hermes3:8b-llama3.1-q5_K_M
+  base_url: http://127.0.0.1:11434/v1
+  api_key: [REDACTED]
+  max_tokens: 2048
+  temperature: 0.78
+  context_length: 65536
+  default: llama3.2:3b
+providers: {}
+fallback_providers: []
+[REDACTED_TOKEN]: {}
+toolsets:
+  - all
+platform_toolsets:
+  telegram:
+    - memory
+    - todo
+    - send_message
+    - clarify
+    - session_search
+agent:
+  max_turns: 90
+  gateway_timeout: 1800
+  restart_drain_timeout: 60
+  api_max_retries: 3
+  service_tier: ''
+  tool_use_enforcement: auto
+  gateway_timeout_warning: 900
+  clarify_timeout: 600
+  gateway_notify_interval: 180
+  [REDACTED_TOKEN]: 3600
+  image_input_mode: auto
+  disabled_toolsets: []
+terminal:
+  backend: local
+  modal_mode: auto
+  cwd: .
+  timeout: 180
+  env_passthrough: []
+  shell_init_files: []
+  auto_source_bashrc: true
+  docker_image: nikolaik/python-nodejs:python3.11-nodejs20
+  docker_forward_env: []
+  docker_env: {}
+  singularity_image: docker://nikolaik/python-nodejs:python3.11-nodejs20
+  modal_image: nikolaik/python-nodejs:python3.11-nodejs20
+  daytona_image: nikolaik/python-nodejs:python3.11-nodejs20
+  vercel_runtime: node24
+  container_cpu: 1
+  container_memory: 5120
+  container_disk: 51200
+  container_persistent: true
+  docker_volumes: []
+  [REDACTED_TOKEN]: false
+  docker_extra_args: []
+  docker_run_as_host_user: false
+  persistent_shell: true
+web:
+  backend: ''
+  search_backend: ''
+  extract_backend: ''
+browser:
+  inactivity_timeout: 120
+  command_timeout: 30
+  record_sessions: false
+  allow_private_urls: false
+  engine: auto
+  [REDACTED_TOKEN]: true
+  cdp_url: ''
+  dialog_policy: must_respond
+  dialog_timeout_s: 300
+  camofox:
+    managed_persistence: false
+    user_id: ''
+    session_key: ''
+    adopt_existing_tab: false
+checkpoints:
+  enabled: false
+  max_snapshots: 20
+  max_total_size_mb: 500
+  max_file_size_mb: 10
+  auto_prune: true
+  retention_days: 7
+  delete_orphans: true
+  min_interval_hours: 24
+file_read_max_chars: 100000
+tool_output:
+  max_bytes: 50000
+  max_lines: 2000
+  max_line_length: 2000
+tool_loop_guardrails:
+  warnings_enabled: true
+  hard_stop_enabled: false
+  warn_after:
+    exact_failure: 2
+    same_tool_failure: 3
+    idempotent_no_progress: 2
+  hard_stop_after:
+    exact_failure: 5
+    same_tool_failure: 8
+    idempotent_no_progress: 5
+compression:
+  enabled: true
+  threshold: 0.5
+  target_ratio: 0.2
+  protect_last_n: 20
+  [REDACTED_TOKEN]: 400
+  protect_first_n: 3
+prompt_caching:
+  cache_ttl: 5m
+openrouter:
+  response_cache: true
+  response_cache_ttl: 300
+  min_coding_score: 0.65
+bedrock:
+  region: ''
+  discovery:
+    enabled: true
+    provider_filter: []
+    refresh_interval: 3600
+  guardrail:
+    guardrail_identifier: ''
+    guardrail_version: ''
+    stream_processing_mode: async
+    trace: disabled
+auxiliary:
+  vision:
+    provider: auto
+    model: ''
+    base_url: ''
+    api_key: [REDACTED]
+    timeout: 120
+    extra_body: {}
+    download_timeout: 30
+  web_extract:
+    provider: auto
+    model: ''
+    base_url: ''
+    api_key: [REDACTED]
+    timeout: 360
+    extra_body: {}
+  compression:
+    provider: auto
+    model: ''
+    base_url: ''
+    api_key: [REDACTED]
+    timeout: 120
+    extra_body: {}
+  session_search:
+    provider: auto
+    model: ''
+    base_url: ''
+    api_key: [REDACTED]
+    timeout: 30
+    extra_body: {}
+    max_concurrency: 3
+  skills_hub:
+    provider: auto
+    model: ''
+    base_url: ''
+    api_key: [REDACTED]
+    timeout: 30
+    extra_body: {}
+  approval:
+    provider: auto
+    model: ''
+    base_url: ''
+    api_key: [REDACTED]
+    timeout: 30
+    extra_body: {}
+  mcp:
+    provider: auto
+    model: ''
+    base_url: ''
+    api_key: [REDACTED]
+    timeout: 30
+    extra_body: {}
+  title_generation:
+    provider: auto
+    model: ''
+    base_url: ''
+    api_key: [REDACTED]
+    timeout: 30
+    extra_body: {}
+  triage_specifier:
+    provider: auto
+    model: ''
+    base_url: ''
+    api_key: [REDACTED]
+    timeout: 120
+    extra_body: {}
+  curator:
+    provider: auto
+    model: ''
+    base_url: ''
+    api_key: [REDACTED]
+    timeout: 600
+    extra_body: {}
+display:
+  compact: false
+  personality: ceo
+  resume_display: full
+  busy_input_mode: interrupt
+  tui_auto_resume_recent: false
+  bell_on_complete: false
+  show_reasoning: false
+  streaming: false
+  timestamps: false
+  final_response_markdown: strip
+  persistent_output: true
+  [REDACTED_TOKEN]: 200
+  inline_diffs: true
+  file_mutation_verifier: true
+  show_cost: false
+  skin: default
+  language: en
+  tui_status_indicator: kaomoji
+  user_message_preview:
+    first_lines: 2
+    last_lines: 2
+  [REDACTED_TOKEN]: true
+  tool_progress_command: false
+  tool_progress_overrides: {}
+  tool_preview_length: 0
+  ephemeral_system_ttl: 0
+  platforms: {}
+  runtime_footer:
+    enabled: false
+    fields:
+      - model
+      - context_pct
+      - cwd
+  copy_shortcut: auto
+  tool_progress: all
+dashboard:
+  theme: default
+  show_token_analytics: false
+privacy:
+  redact_pii: false
+tts:
+  provider: edge
+  edge:
+    voice: en-US-AriaNeural
+  elevenlabs:
+    voice_id: pNInz6obpgDQGcFmaJgB
+    model_id: eleven_multilingual_v2
+  openai:
+    model: gpt-4o-mini-tts
+    voice: alloy
+  xai:
+    voice_id: eve
+    language: en
+    sample_rate: 24000
+    bit_rate: 128000
+  mistral:
+    model: voxtral-mini-tts-2603
+    voice_id: [REDACTED_TOKEN]
+  neutts:
+    ref_audio: ''
+    ref_text: ''
+    model: neuphonic/neutts-air-q4-gguf
+    device: cpu
+  piper:
+    voice: en_US-lessac-medium
+stt:
+  enabled: true
+  provider: local
+  local:
+    model: base
+    language: ''
+  openai:
+    model: whisper-1
+  mistral:
+    model: voxtral-mini-latest
+voice:
+  record_key: ctrl+b
+  max_recording_seconds: 120
+  auto_tts: false
+  beep_enabled: true
+  silence_threshold: 200
+  silence_duration: 3.0
+human_delay:
+  mode: 'off'
+  min_ms: 800
+  max_ms: 2500
+context:
+  engine: compressor
+memory:
+  memory_enabled: true
+  user_profile_enabled: true
+  memory_char_limit: 2200
+  user_char_limit: 1375
+  provider: ''
+delegation:
+  model: ''
+  provider: ''
+  base_url: ''
+  api_key: [REDACTED]
+  api_mode: ''
+  inherit_mcp_toolsets: true
+  max_iterations: 50
+  child_timeout_seconds: 600
+  reasoning_effort: ''
+  max_concurrent_children: 3
+  max_spawn_depth: 1
+  orchestrator_enabled: true
+  subagent_auto_approve: false
+prefill_messages_file: ''
+goals:
+  max_turns: 20
+skills:
+  external_dirs: []
+  template_vars: true
+  inline_shell: false
+  inline_shell_timeout: 10
+  guard_agent_created: false
+curator:
+  enabled: true
+  interval_hours: 168
+  min_idle_hours: 2
+  stale_after_days: 30
+  archive_after_days: 90
+  backup:
+    enabled: true
+    keep: 5
+honcho: {}
+timezone: ''
+slack:
+  require_mention: true
+  free_response_channels: ''
+  allowed_channels: ''
+  channel_prompts: {}
+discord:
+  require_mention: true
+  free_response_channels: ''
+  allowed_channels: ''
+  auto_thread: true
+  thread_require_mention: false
+  history_backfill: true
+  history_backfill_limit: 50
+  reactions: true
+  channel_prompts: {}
+  dm_role_auth_guild: ''
+  server_actions: ''
+whatsapp: {}
+telegram:
+  reactions: false
+  channel_prompts: {}
+  extra:
+    allowed_chats: ''
+    group_allowed_chats: ''
+  allowed_users:
+    - 1994093559
+  require_mention: false
+  guest_mode: true
+mattermost:
+  require_mention: true
+  free_response_channels: ''
+  allowed_channels: ''
+  channel_prompts: {}
+matrix:
+  require_mention: true
+  free_response_rooms: ''
+  allowed_rooms: ''
+approvals:
+  mode: manual
+  timeout: 60
+  cron_mode: deny
+  mcp_reload_confirm: true
+  [REDACTED_TOKEN]: true
+command_allowlist: []
+quick_commands: {}
+hooks: {}
+hooks_auto_accept: false
+personalities: {}
+security:
+  allow_private_urls: false
+  redact_secrets: true
+  tirith_enabled: true
+  tirith_path: tirith
+  tirith_timeout: 5
+  tirith_fail_open: true
+  website_blocklist:
+    enabled: false
+    domains: []
+    shared_files: []
+  acked_advisories: []
+  allow_lazy_installs: true
+cron:
+  wrap_response: true
+  max_parallel_jobs: null
+kanban:
+  dispatch_in_gateway: true
+  [REDACTED_TOKEN]: 60
+  failure_limit: 2
+code_execution:
+  mode: project
+logging:
+  level: INFO
+  max_size_mb: 5
+  backup_count: 3
+model_catalog:
+  enabled: true
+  url: https://hermes-agent.nousresearch.com/docs/api/model-catalog.json
+  ttl_hours: 24
+  providers: {}
+network:
+  force_ipv4: false
+sessions:
+  auto_prune: false
+  retention_days: 90
+  vacuum_after_prune: true
+  min_interval_hours: 24
+onboarding:
+  seen:
+    busy_input_prompt: true
+updates:
+  pre_update_backup: false
+  backup_keep: 5
+lsp:
+  enabled: true
+  wait_mode: document
+  wait_timeout: 5.0
+  install_strategy: auto
+  servers: {}
+x_search:
+  model: grok-4.20-reasoning
+  timeout_seconds: 180
+  retries: 2
+_config_version: 23
+gateway:
+  platforms:
+    telegram:
+      enabled: true
+      bot_token: [REDACTED]
+      allowed_users:
+        - 1994093559
+custom_providers:
+  - name: Withnail (Local Ollama)
+    base_url: http://127.0.0.1:11434/v1
+    model: llama3.2:3b
+session_reset:
+  mode: both
+  idle_minutes: 1440
+  at_hour: 4
+#+end_src
+
+NOTE: ~/.hermes/.env exists (contents NOT dumped for security). Review manually if needed.
+-rw-rw-r-- 1 gt-hermes gt-hermes 138 Jun 30 19:03 /home/gt-hermes/.hermes/.env
+*** Hermes Skills / Tools Configuration
+
+#+begin_src text
+Potential skills-related files under ~ (limited depth):
+/home/gt-hermes/hermes/tools/withnail-tool-whitelist.yaml
+/home/gt-hermes/picoclaw/docs/tools_configuration.md
+/home/gt-hermes/picoclaw/pkg/providers/tool_call_extract.go
+/home/gt-hermes/picoclaw/pkg/providers/toolcall_utils.go
+/home/gt-hermes/picoclaw/pkg/tools/mcp_tool_test.go
+/home/gt-hermes/picoclaw/pkg/tools/skills_install_test.go
+/home/gt-hermes/picoclaw/pkg/tools/skills_install.go
+/home/gt-hermes/picoclaw/pkg/tools/skills_search_test.go
+/home/gt-hermes/picoclaw/pkg/tools/toolloop.go
+/home/gt-hermes/picoclaw/pkg/tools/subagent_tool_test.go
+/home/gt-hermes/picoclaw/pkg/tools/skills_search.go
+/home/gt-hermes/picoclaw/pkg/tools/mcp_tool.go
+/home/gt-hermes/picoclaw/pkg/utils/skills.go
+/home/gt-hermes/hermes-full-backup-20260628-1846/.hermes/hermes-agent/model_tools.py
+/home/gt-hermes/hermes-full-backup-20260628-1846/.hermes/hermes-agent/withnail_allowed_tools.yaml
+#+end_src
+*** Withnail (CEO Bot) Detection
+#+begin_src sh
+  hermes-gateway.service                                      loaded active running Hermes Agent Gateway - Messaging Platform Integration (Withnail)
+#+end_src
+
+#+begin_src text
+Files/directories potentially related to Withnail (limited depth & name match):
+/home/gt-hermes/pi-specs/pi-withnail-specs-latest.org
+/home/gt-hermes/pi-specs/pi-withnail-specs-hermes-pi-20260718-1902.org
+/home/gt-hermes/pi-specs/pi-withnail-specs-hermes-pi-20260604-2055.org
+/home/gt-hermes/pi-specs/pi-withnail-specs-hermes-pi-20260604-2105.org
+/home/gt-hermes/pi-specs/pi-withnail-specs-hermes-pi-20260604-2056.org
+/home/gt-hermes/pi-specs/pi-withnail-specs-hermes-pi-20260604-1649.org
+/home/gt-hermes/pi-specs/pi-withnail-specs-hermes-pi-20260604-1634.org
+/home/gt-hermes/pi-specs/pi-withnail-specs-hermes-pi-20260718-1743.org
+/home/gt-hermes/pi-specs/pi-withnail-specs-hermes-pi-20260604-1742.org
+/home/gt-hermes/hermes/tools/withnail-tool-whitelist.yaml
+/home/gt-hermes/hermes-full-backup-20260628-1846/.hermes/logs/withnail.log
+/home/gt-hermes/hermes-full-backup-20260628-1846/.hermes/hermes-agent/start-withnail.sh~
+/home/gt-hermes/hermes-full-backup-20260628-1846/.hermes/hermes-agent/start-withnail.sh
+/home/gt-hermes/hermes-full-backup-20260628-1846/.hermes/hermes-agent/withnail_allowed_tools.yaml
+/home/gt-hermes/.hermes-backup-20260628/logs/withnail.log
+/home/gt-hermes/.hermes-backup-20260628/hermes-agent/start-withnail.sh~
+/home/gt-hermes/.hermes-backup-20260628/hermes-agent/start-withnail.sh
+/home/gt-hermes/.hermes-backup-20260628/hermes-agent/withnail_allowed_tools.yaml
+/home/gt-hermes/.hermes/logs/withnail.log
+/home/gt-hermes/.hermes/hermes-agent/start-withnail.sh~
+#+end_src
+
+Withnail detection summary: yes (systemd unit)
+ACTION: Update top-level :WITHNAIL_DETECTED: property after review.
+*** Telegram Gateway / Integration (high-level only)
+
+* System Services, Automation & Runtime State (Snapshot)
+*** Relevant Systemd Units
+#+begin_src sh
+  hermes-gateway.service                                      loaded active running Hermes Agent Gateway - Messaging Platform Integration (Withnail)
+  ollama.service                                              loaded active running Ollama Service
+  tailscaled.service                                          loaded active running Tailscale node agent
+#+end_src
+*** User Crontab (filtered)
+#+begin_src sh
+No user crontab entries
+#+end_src
+*** System Cron Directories (relevant entries)
+#+begin_src sh
+e2scrub_all
+#+end_src
+#+begin_src sh
+#+end_src
+#+begin_src sh
+apt-compat
+dpkg
+logrotate
+man-db
+#+end_src
+*** Current Resource Usage Snapshot
+Load:  19:02:20 up 1 day,  4:44,  1 user,  load average: 0.24, 0.20, 0.18
+#+begin_src sh
+               total        used        free      shared  buff/cache   available
+Mem:           7.9Gi       901Mi       4.0Gi       115Mi       3.1Gi       7.0Gi
+Swap:            9Gi        96Mi       9.9Gi
+#+end_src
+#+begin_src sh
+Filesystem      Size  Used Avail Use% Mounted on
+udev            3.9G     0  3.9G   0% /dev
+tmpfs           1.6G  120M  1.5G   8% /run
+/dev/mmcblk0p2  115G   60G   50G  55% /
+tmpfs           4.0G     0  4.0G   0% /dev/shm
+tmpfs           5.0M   48K  5.0M   1% /run/lock
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           4.0G   32K  4.0G   1% /tmp
+/dev/mmcblk0p1  510M   66M  445M  13% /boot/firmware
+tmpfs           807M   48K  807M   1% /run/user/1000
+#+end_src
+*** Top Processes (filtered to agent-related)
+#+begin_src sh
+top - 19:02:20 up 1 day,  4:44,  1 user,  load average: 0.24, 0.20, 0.18
+Tasks: 158 total,   1 running, 157 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  2.4 us,  0.0 sy,  0.0 ni, 97.6 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   8062.4 total,   4141.0 free,    903.8 used,   3220.8 buff/cache     
+MiB Swap:  10240.0 total,  10143.8 free,     96.1 used.   7158.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0   25648  10464   6704 S   0.0   0.1   0:22.61 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.05 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+     13 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+     14 root      20   0       0      0      0 S   0.0   0.0   0:00.20 ksoftir+
+     15 root      20   0       0      0      0 I   0.0   0.0   0:04.33 rcu_pre+
+     16 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_exp+
+     17 root      20   0       0      0      0 S   0.0   0.0   0:00.04 rcu_exp+
+#+end_src
+#+begin_src sh
+avahi        639  0.0  0.0   6064  1968 ?        Ss   Jul17   0:01 avahi-daemon: running [hermes-pi.local]
+root       62944  0.8  0.1  21984 11856 ?        Ss   19:02   0:00  \_ sshd-session: gt-hermes [priv]
+gt-herm+   62952  0.0  0.1  22336  8368 ?        S    19:02   0:00      \_ sshd-session: gt-hermes@notty
+gt-herm+   62953  2.1  0.0   7632  3744 ?        Ss   19:02   0:00          \_ /bin/bash /home/gt-hermes/bin/collect-pi-specs.sh
+ollama       940  0.0  3.2 2072672 270448 ?      Ssl  Jul17   0:13 /usr/local/bin/ollama serve
+gt-herm+    5942  0.1  2.7 870656 227888 ?       Ssl  Jul17   1:56 /home/gt-hermes/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main gateway run
+#+end_src
+*** Throttling / Power / Thermal History (from earlier vcgencmd)
+See Hardware section for vcgencmd get_throttled and temperature output.
+
+* Key Configuration Files & Environment
+*** Shell Customizations (~/.bashrc relevant snippets)
+#+begin_src sh
+# If set, the pattern "**" used in a pathname expansion context will
+# set variable identifying the chroot you work in (used in the prompt below)
+# set a fancy prompt (non-color, unless we know we "want" color)
+    xterm-color|*-256color) color_prompt=yes;;
+# uncomment for a colored prompt, if the terminal has the capability; turned
+# should be on the output of commands, not on the prompt
+force_color_prompt=yes
+if [ -n "$force_color_prompt" ]; then
+	# We have color support; assume it's compliant with Ecma-48
+	color_prompt=yes
+	color_prompt=
+if [ "$color_prompt" = yes ]; then
+unset color_prompt force_color_prompt
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+    alias grep='grep --color=auto'
+#+end_src
+*** Environment Variables (filtered to stack)
+#+begin_src sh
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+HOME=/home/gt-hermes
+LOGNAME=gt-hermes
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/games
+PWD=/home/gt-hermes
+USER=gt-hermes
+#+end_src
+*** Python Environment (relevant packages)
+Python version: Python 3.13.5
+#+begin_src sh
+openai                       2.29.0
+#+end_src
+
+* Notes / Warnings / Next Steps
+- This collection was performed in a read-only manner. No system changes were made.
+- Sensitive values in Hermes config files were redacted where patterns were detected. Always manually review the output file before adding to any shared repository.
+- Commands that were unavailable were noted with 'NOTE:' entries. Install missing packages (e.g., raspberrypi-utils for vcgencmd) if deeper hardware data is required.
+- For best long-term value: Re-run this script before and after any significant changes (Hermes/Withnail upgrades, config edits, hardware additions, power supply changes, etc.). Commit the resulting .org files to your knowledge-base Git repository with clear messages.
+- Recommended next steps after retrieval:
+  1. scp the file(s) to your laptop.
+  2. Open in Emacs, review, and create/update org-roam nodes or Tsuioku entries from major sections.
+  3. Update the top-level :PROPERTIES: drawer with any discovered quick facts (PI_MODEL, RAM_GB, exact versions, etc.).
+  4. Link this snapshot to related project notes (e.g., Withnail improvements, power optimization, air-gapping checklist).
+
+Collection complete at 2026-07-18 19:02:21 EDT. File: /home/gt-hermes/pi-specs/pi-withnail-specs-hermes-pi-20260718-1902.org
