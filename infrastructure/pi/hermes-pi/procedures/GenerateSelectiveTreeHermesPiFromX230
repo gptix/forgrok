@@ -1,0 +1,63 @@
+#+TITLE: Script - Generate Selective Tree of hermes-pi for Backup Review
+#+AUTHOR: Joji Teira
+#+DATE: [2026-07-18]
+#+NODE-NAME: GenerateSelectiveTreeHermesPiFromX230
+#+ROAM_TAGS: hermes-pi script backup tree filesystem inventory review
+#+ROAM_ALIASES: pi-selective-tree-script
+
+* Purpose
+Generate a filesystem tree from hermes-pi (via SSH from X230) focused on valuable backup candidates. Supports custom starting directory and basic ignore patterns for review (e.g., exclude .bak, unwanted skills, noise).
+
+* Recommended One-liner (from X230)
+#+begin_src sh
+ssh hermes-pi 'tree -a -I ".git|node_modules|__pycache__|*.bak|*.log|unwanted-skills-dir" --dirsfirst -L 5 ~' > "hermes-pi-valuable-tree-$(date +%Y%m%d-%H%M).txt"
+#+end_src
+
+* Full Commented Script (Recommended)
+Save as =~/bin/pi-selective-tree.sh= (or in =infrastructure/pi/hermes-pi/scripts/= after review).
+
+#+begin_src sh
+#!/bin/bash
+# pi-selective-tree.sh - Generate tree for backup candidate review from X230
+# Usage: ./pi-selective-tree.sh [START_DIR] [OUTPUT_SUFFIX]
+
+set -e
+
+PI_HOST="hermes-pi"
+TIMESTAMP=$(date +%Y%m%d-%H%M)
+START_DIR="${1:-~}"                    # Default: remote home dir. Pass e.g. ~/.hermes
+SUFFIX="${2:-valuable}"
+OUTPUT_FILE="hermes-pi-tree-${SUFFIX}-${TIMESTAMP}.txt"
+
+echo "Generating selective tree on ${PI_HOST} starting from: ${START_DIR}"
+echo "Output → ${OUTPUT_FILE}"
+
+# Customize ignore patterns here (add paths/files you want excluded)
+IGNORE=" .git|node_modules|__pycache__|*.bak|*.log|*.tmp|unwanted-skills|skills-to-review|temp"
+
+ssh "${PI_HOST}" "tree -a -I \"${IGNORE}\" --dirsfirst -L 6 \"${START_DIR}\"" > "${OUTPUT_FILE}"
+
+if [ -f "${OUTPUT_FILE}" ]; then
+    echo "✅ Tree generated successfully!"
+    echo "   Review this file to identify valuable files for backup script."
+    ls -lh "${OUTPUT_FILE}"
+    # Open in Emacs
+    emacsclient -n "${OUTPUT_FILE}" 2>/dev/null || true
+else
+    echo "❌ Failed."
+    exit 1
+fi
+#+end_src
+
+* Usage Examples
+- Default (home dir): `./pi-selective-tree.sh`
+- Specific dir: `./pi-selective-tree.sh ~/.hermes "hermes-config"`
+- Deeper review: `./pi-selective-tree.sh /home/gt-hermes "full-review"`
+
+* Next Steps After Running
+1. Review the generated `.txt` file.
+2. Identify directories/files worth backing up (exclude unwanted skills, .bak, etc.).
+3. We will create a selective backup script based on your review.
+4. Save script + output files under **`infrastructure/pi/hermes-pi/inventory/`** or **`backups/planning/`** in the repo.
+
+This gives you full control — edit the `IGNORE` line in the script as needed before running.

@@ -1,0 +1,82 @@
+#+TITLE: Reinstall Ubuntu + Upgrade Hermes Agent 0.17 → 0.18.2+ on hermes-pi (Pi 5 8GB)
+#+AUTHOR: Joji Teira
+#+DATE: [2026-07-18]
+#+NODE-NAME: HermesPiReinstallUbuntu0182
+#+ROAM_TAGS: hermes-pi withnail zho infrastructure reinstall upgrade backup
+#+ROAM_ALIASES: hermes-pi-reinstall-plan
+
+* Purpose
+Clean re-install of Ubuntu on Raspberry Pi 5 (hermes-pi) with full credential/settings backup, followed by Hermes Agent upgrade to latest (v0.18.2+). Maintains air-gapped preferences, Telegram responsiveness, Withnail/CEO bot, Tailscale/SSH, and automated execution.
+
+* Phase 0: Full Backup (Critical — Do First)
+Run on ThinkPad X230 via SSH/TRAMP before any changes.
+
+- [X] Update local baseline
+  #+begin_src sh
+  collect-pi-baseline
+  #+end_src
+  Commit/push to =forgrok= repo.
+
+- [ ] Backup core directories & configs
+  - [ ] =~/.hermes/= (configs, profiles, skills, memory — highest priority)
+  - [ ] Ollama data: =~/.ollama/= (or =ollama list= output)
+  - [ ] Systemd units: =sudo cp -r /etc/systemd/system/*hermes* ~/backups/systemd/=
+  - [ ] Cron jobs
+    #+begin_src sh
+    crontab -l > ~/backups/crontab-user
+    sudo crontab -l > ~/backups/crontab-root
+    hermes cron list > ~/backups/hermes-cron.txt
+    #+end_src
+  - [ ] Tailscale (=tailscale status= + =/var/lib/tailscale/=)
+  - [ ] SSH keys, authorized_keys, host config
+  - [ ] Telegram bot token & chat IDs
+  - [ ] Python scripts, custom looping scripts, Ethernet/Netplan
+  - [ ] Full tarball of key paths
+
+- [ ] Create encrypted credentials inventory (SSH, Tailscale, Telegram, etc.)
+
+- [ ] Git commit & push everything to =gptix/forgrok=
+
+* Phase 1: Fresh Ubuntu Install on Pi 5
+- [ ] Flash latest Ubuntu Server 24.04 LTS 64-bit (Raspberry Pi Imager: enable SSH, set hostname =hermes-pi=, user/password)
+- [ ] Boot Pi and initial setup
+  - [ ] SSH in
+  - [ ] Update system
+    #+begin_src sh
+    sudo apt update && sudo apt full-upgrade -y
+    sudo apt install -y curl git tailscale openssh-server python3 python3-pip htop
+    #+end_src
+  - [ ] Reconnect Tailscale: =sudo tailscale up=
+
+* Phase 2: Hermes Agent Install & Upgrade
+- [ ] Install latest Hermes Agent
+  #+begin_src sh
+  curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+  #+end_src
+
+- [ ] Run setup wizard
+  - [ ] =hermes setup= (select local Ollama provider for airgap/uncensored models)
+  - [ ] Restore =~/.hermes/= from backup
+  - [ ] =hermes doctor= to validate
+
+- [ ] Reconfigure services & automation
+  - [ ] Re-install gateway as systemd service (=hermes gateway install --system=)
+  - [ ] Restore Hermes cron jobs
+  - [ ] Re-link Tailscale, Telegram gateway, Python scripts, custom loops
+  - [ ] Enable services: =sudo systemctl daemon-reload && sudo systemctl enable --now hermes-gateway.service= (adjust names)
+
+* Phase 3: Verification & Knowledge Sync
+- [ ] Run baseline collector again: =collect-pi-baseline=
+- [ ] Test key functionality
+  - [ ] Telegram responsiveness
+  - [ ] Withnail/CEO bot embodiment
+  - [ ] Local Ollama models (uncensored)
+  - [ ] Systemd services & cron: =systemctl status *hermes*= + =hermes cron list=
+- [ ] Update =LATEST.org= and commit full baseline to GitHub
+- [ ] Verify airgap (minimal external deps), performance on 8GB RAM, power/thermal
+
+* Notes & References
+- Prefer quantized local Ollama models for airgap.
+- All editing via Emacs/TRAMP.
+- Reference =infrastructure/pi/hermes-pi/= baselines and prior nodes.
+- Update this node with actual results after completion.
