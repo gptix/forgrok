@@ -1,0 +1,16 @@
+https://github.com/gptix/forgrok/blob/main/wake-up
+https://github.com/gptix/forgrok/blob/main/infrastructure/pi/hermes-pi/LATEST.org
+https://github.com/gptix/forgrok/blob/main/infrastructure/pi/hermes-pi/README.org
+
+update specifications report shell script
+remember high-level architecture description, including recommended next changes
+
+https://grok.com/c/7527febb-1160-46fc-88f6-9891904f4f0a?rid=644b9a50-4cc1-406d-8f1b-6b83b85d176f
+
+pandoc /home/gt/forpandoc.html \
+  -o ~/local-side/tempwork/2026-06-05-grok-session-clean.md \
+  --from html \
+  --to markdown \
+  --wrap=none \
+  --strip-comments \
+  --metadata title="Grok Session 2026-06-05 (cleaned)"

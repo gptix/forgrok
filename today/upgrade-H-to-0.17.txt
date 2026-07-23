@@ -1,0 +1,100 @@
+Taking the role of
+ 
+an incredibly detail-oriented nerd,
+ 
+think
+ 
+long and hard
+ 
+ about how to upgrade to Hermes 0.17, or how to completely reinstall, making sure that we can regain connectivity and, VERY CAREFULLY, retain connectivity via tailscale, Telegram, and maybe Wifi. Please think long and hard, and research online if possible, to find out problems others might have had upgrading to Hermes 0.17. We have spent hours going in circles (this is bad) and we should have a clean set of commands to collect configuration settings, and gather diagnostic logs.
+ 
+I really want to get this right, in an efficient manner.
+ 
+As output, please provide an overview of an upgrade procedure specifically to Hermes 0.17, and also provide a checklist of commands that we will need to give (noting which machine, laptop or Pi). Provide these as one org-roam text document, with a clear delimiter between the overview and the list of steps.
+ 
+The overall goal is to quickly get H 0.17 running, while protecting Withnail's identity and all credentials needed by Withnail to operate.Hermes 0.17 Upgrade / Clean Reinstall Plan for Withnail ZHO COO
+This document provides a careful, defensive procedure for upgrading or fully reinstalling Hermes Agent to v0.17.0 ("Reach Release") while preserving:
+
+Withnail’s identity and all credentials (Telegram token, config, SOUL.md, state, auth, gateway state).
+Tailscale connectivity (system-level, untouched).
+WiFi / network config (untouched).
+All existing skills, logs, and local state where possible.
+
+Research summary (from GitHub issues, Reddit r/hermesagent, release notes):
+v0.17 introduced significant gateway and platform changes. Common upgrade pain points include:
+
+Stale systemd units (mismatch between TimeoutStopSec and agent.restart_drain_timeout — exactly what appeared in your logs).
+Multiple gateway instances colliding ("Another gateway instance started during our startup").
+Config/state migration issues (especially state.db, pairing data, toolsets).
+Need to run hermes gateway service install --replace after source updates.
+Occasional crashes or double-running after power loss or partial upgrades.
+
+Core Strategy
+
+Full backup of everything critical.
+Stop all Hermes/Withnail processes cleanly.
+Git pull + reinstall from the existing source tree (~/.hermes/hermes-agent).
+Regenerate the systemd unit with the official Hermes command.
+Restart and verify single-instance operation.
+Test Telegram + Tailscale.
+
+All steps below assume you are comfortable with Emacs + TRAMP for editing on the Pi.
+
+CHECKLIST OF COMMANDS (run in order — note the machine for each)
+On the Pi (via SSH or TRAMP from laptop)
+Bash# === PHASE 1: BACKUP EVERYTHING CRITICAL (do this first) ===
+mkdir -p ~/hermes-full-backup-$(date +%Y%m%d-%H%M)
+cp -r ~/.hermes ~/hermes-full-backup-$(date +%Y%m%d-%H%M)/
+cp ~/.hermes/config.yaml ~/hermes-full-backup-$(date +%Y%m%d-%H%M)/
+cp ~/.hermes/SOUL.md ~/hermes-full-backup-$(date +%Y%m%d-%H%M)/
+cp ~/.hermes/auth.json ~/hermes-full-backup-$(date +%Y%m%d-%H%M)/ 2>/dev/null || true
+cp ~/.hermes/gateway_state.json ~/hermes-full-backup-$(date +%Y%m%d-%H%M)/ 2>/dev/null || true
+echo "=== BACKUP COMPLETE ==="
+ls ~/hermes-full-backup-*/ | head -10
+Bash# === PHASE 2: STOP EVERYTHING CLEANLY ===
+sudo systemctl stop withnail
+pkill -f "hermes_cli.main gateway" || true
+pkill -f "gateway run" || true
+pkill -f hermes || true
+sleep 3
+ps aux | grep -E 'hermes|withnail|gateway' | grep -v grep   # should be empty or only ssh
+rm -f ~/.hermes/gateway.lock ~/.hermes/gateway.pid ~/.hermes/gateway_state.json 2>/dev/null || true
+Bash# === PHASE 3: UPDATE FROM SOURCE (the real v0.17 path) ===
+cd ~/.hermes/hermes-agent
+git status
+git pull
+source venv_bot/bin/activate
+pip install -e .
+hermes --version   # must show v0.17.0
+Bash# === PHASE 4: REGENERATE SYSTEMD UNIT (fixes the stale unit warning) ===
+hermes gateway service install --replace --system --run-as-user gt-hermes
+sudo systemctl daemon-reload
+Bash# === PHASE 5: START CLEAN ===
+sudo systemctl start withnail
+sudo systemctl status withnail
+journalctl -u withnail -f
+On the Laptop (via TRAMP or separate SSH window)
+Bash# Monitor from laptop while the Pi is running the above
+ssh gt-hermes@hermes-pi.local 'journalctl -u withnail -f'
+Bash# Quick health check from laptop
+ssh gt-hermes@hermes-pi.local 'ps aux | grep -E "hermes|withnail" | grep -v grep'
+ssh gt-hermes@hermes-pi.local 'tail -n 30 ~/.hermes/logs/*.log | tail -n 20'
+Verification Commands (on Pi)
+Bashhermes --version
+hermes gateway status --system
+tail -n 50 ~/.hermes/logs/hermes-gateway-raw.log
+ps aux | grep -E 'hermes|withnail' | grep -v grep   # should show only ONE process
+If it still crashes after the above:
+
+Check the raw log for the exact error.
+Run hermes doctor --fix inside the venv.
+As last resort: delete venv_bot and re-run python3 -m venv venv_bot && source venv_bot/bin/activate && pip install -e .
+
+Important Notes
+
+Never delete ~/.hermes/config.yaml, SOUL.md, auth.json, or Telegram-related files.
+Tailscale and WiFi are untouched by these steps.
+The hermes gateway service install --replace command is the key fix for the "stale systemd unit" and double-running errors you saw.
+After successful start, test in Telegram with a simple message and an autonomous cycle prompt.
+
+This procedure is designed to be as safe and reversible as possible while getting you to a clean v0.17 state. Execute one phase at a time and verify before moving on.	

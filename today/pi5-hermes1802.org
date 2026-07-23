@@ -1,0 +1,4 @@
+
+
+- [ ] find USB stick
+- [ ] make sure Ubuntu is on it (64 bit lite)

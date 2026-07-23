@@ -1,0 +1,1235 @@
+gt-hermes@hermes-pi:~ $ # Check what log files exist
+ls -l ~/.hermes/logs/
+
+# Look at the most recent logs (especially anything from the last 10–15 minutes)
+tail -n 200 ~/.hermes/logs/*.log | cat
+total 24952
+-rw-rw-r-- 1 gt-hermes gt-hermes  474086 Jun  8 18:58 agent.log
+drwx------ 4 gt-hermes gt-hermes    4096 Jun  6 19:47 curator
+-rw-r--r-- 1 gt-hermes gt-hermes  210447 Jun  8 18:58 errors.log
+-rw-rw-r-- 1 gt-hermes gt-hermes 2095366 Mar 21 20:22 errors.log.1
+-rw-rw-r-- 1 gt-hermes gt-hermes  344908 Mar 19 15:26 errors.log.2
+-rw-rw-r-- 1 gt-hermes gt-hermes  145184 Jun  8 18:58 gateway-exit-diag.log
+-rw-rw-r-- 1 gt-hermes gt-hermes 1360337 Jun  8 18:58 gateway.log
+-rw-rw-r-- 1 gt-hermes gt-hermes 5240998 Mar 18 20:27 gateway.log.1
+-rw-rw-r-- 1 gt-hermes gt-hermes 5241468 Mar 15 03:09 gateway.log.2
+-rw-rw-r-- 1 gt-hermes gt-hermes 5241468 Mar 14 20:50 gateway.log.3
+-rw-r--r-- 1 gt-hermes gt-hermes  421684 Jun  8 18:58 gateway-shutdown-diag.log
+-rw-rw-r-- 1 gt-hermes gt-hermes 4705132 Jun  8 16:32 withnail.log
+==> /home/gt-hermes/.hermes/logs/agent.log <==
+2026-06-08 18:48:13,881 INFO telegram.ext.Application: Application started
+2026-06-08 18:48:14,515 INFO gateway.platforms.telegram: [Telegram] Telegram menu: 100 commands registered, 33 hidden (over 100 limit). Use /commands for full list.
+2026-06-08 18:48:14,523 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-06-08 18:48:14,532 INFO gateway.run: ✓ telegram connected
+2026-06-08 18:48:14,538 INFO gateway.run: Gateway running with 1 platform(s)
+2026-06-08 18:48:14,550 INFO gateway.run: Channel directory built: 1 target(s)
+2026-06-08 18:48:15,552 INFO gateway.run: Press Ctrl+C to stop
+2026-06-08 18:48:15,568 INFO gateway.run: Cron ticker started (interval=60s)
+2026-06-08 18:48:20,559 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-06-08 18:50:33,077 INFO gateway.run: Stopping gateway for restart...
+2026-06-08 18:50:33,663 INFO gateway.run: Sent shutdown notification to home channel telegram:-1003721049105
+2026-06-08 18:50:33,663 INFO gateway.run: Shutdown phase: notify_active_sessions done at +0.59s
+2026-06-08 18:50:33,669 INFO gateway.run: Shutdown phase: drain done at +0.59s (drain took 0.01s, timed_out=False, active_at_start=0, active_now=0)
+2026-06-08 18:50:34,055 INFO telegram.ext.Application: Application is stopping. This might take a moment.
+2026-06-08 18:50:34,055 INFO telegram.ext.Application: Application.stop() complete
+2026-06-08 18:50:34,062 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-06-08 18:50:34,063 INFO gateway.run: ✓ telegram disconnected (0.39s)
+2026-06-08 18:50:34,063 INFO gateway.run: Shutdown phase: all adapters disconnected at +0.99s
+2026-06-08 18:50:34,098 INFO gateway.run: Shutdown phase: final-cleanup tool kill done at +1.02s
+2026-06-08 18:50:34,098 INFO gateway.run: Shutdown phase: SessionDB close done at +1.02s
+2026-06-08 18:50:34,106 INFO gateway.run: Gateway stopped (total teardown 1.03s)
+2026-06-08 18:50:34,106 INFO gateway.run: Cron ticker stopped
+2026-06-08 18:50:35,445 INFO gateway.run: Starting Hermes Gateway...
+2026-06-08 18:50:35,445 INFO gateway.run: Session storage: /home/gt-hermes/.hermes/sessions
+2026-06-08 18:50:35,457 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-06-08 18:50:35,458 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-06-08 18:50:35,468 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-06-08 18:50:35,565 INFO gateway.run: Connecting to telegram...
+2026-06-08 18:50:35,795 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-06-08 18:50:35,795 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-06-08 18:50:36,269 INFO telegram.ext.Application: Application started
+2026-06-08 18:50:36,897 INFO gateway.platforms.telegram: [Telegram] Telegram menu: 100 commands registered, 33 hidden (over 100 limit). Use /commands for full list.
+2026-06-08 18:50:36,904 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-06-08 18:50:36,917 INFO gateway.run: ✓ telegram connected
+2026-06-08 18:50:36,923 INFO gateway.run: Gateway running with 1 platform(s)
+2026-06-08 18:50:36,932 INFO gateway.run: Channel directory built: 1 target(s)
+2026-06-08 18:50:37,934 INFO gateway.run: Press Ctrl+C to stop
+2026-06-08 18:50:37,955 INFO gateway.run: Cron ticker started (interval=60s)
+2026-06-08 18:50:42,941 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-06-08 18:52:26,726 INFO gateway.run: Received SIGTERM — initiating shutdown
+2026-06-08 18:52:26,726 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.05 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 18:52:26,727 INFO gateway.run: Stopping gateway...
+2026-06-08 18:52:27,559 INFO gateway.run: Sent shutdown notification to home channel telegram:-1003721049105
+2026-06-08 18:52:27,560 INFO gateway.run: Shutdown phase: notify_active_sessions done at +0.83s
+2026-06-08 18:52:27,567 INFO gateway.run: Shutdown phase: drain done at +0.84s (drain took 0.01s, timed_out=False, active_at_start=0, active_now=0)
+2026-06-08 18:52:27,954 INFO telegram.ext.Application: Application is stopping. This might take a moment.
+2026-06-08 18:52:27,955 INFO telegram.ext.Application: Application.stop() complete
+2026-06-08 18:52:27,965 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-06-08 18:52:27,965 INFO gateway.run: ✓ telegram disconnected (0.40s)
+2026-06-08 18:52:27,965 INFO gateway.run: Shutdown phase: all adapters disconnected at +1.24s
+2026-06-08 18:52:28,000 INFO gateway.run: Shutdown phase: final-cleanup tool kill done at +1.27s
+2026-06-08 18:52:28,000 INFO gateway.run: Shutdown phase: SessionDB close done at +1.27s
+2026-06-08 18:52:28,008 INFO gateway.run: Gateway stopped (total teardown 1.28s)
+2026-06-08 18:52:28,008 INFO gateway.run: Cron ticker stopped
+2026-06-08 18:52:28,008 INFO gateway.run: Exiting with code 1 (signal-initiated shutdown without restart request) so systemd Restart=on-failure can revive the gateway.
+2026-06-08 18:52:53,909 INFO gateway.run: Starting Hermes Gateway...
+2026-06-08 18:52:53,909 INFO gateway.run: Session storage: /home/gt-hermes/.hermes/sessions
+2026-06-08 18:52:53,920 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-06-08 18:52:53,920 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-06-08 18:52:53,930 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-06-08 18:52:54,027 INFO gateway.run: Connecting to telegram...
+2026-06-08 18:52:58,161 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-06-08 18:52:58,162 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-06-08 18:52:58,623 INFO telegram.ext.Application: Application started
+2026-06-08 18:52:59,279 INFO gateway.platforms.telegram: [Telegram] Telegram menu: 100 commands registered, 33 hidden (over 100 limit). Use /commands for full list.
+2026-06-08 18:52:59,286 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-06-08 18:52:59,295 INFO gateway.run: ✓ telegram connected
+2026-06-08 18:52:59,301 INFO gateway.run: Gateway running with 1 platform(s)
+2026-06-08 18:52:59,311 INFO gateway.run: Channel directory built: 1 target(s)
+2026-06-08 18:52:59,568 INFO gateway.run: Replacing existing gateway instance (PID 66578) with --replace.
+2026-06-08 18:52:59,576 INFO gateway.run: Received SIGTERM as a planned --replace takeover — exiting cleanly
+2026-06-08 18:52:59,576 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.03 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 18:52:59,577 INFO gateway.run: Stopping gateway...
+2026-06-08 18:52:59,872 INFO gateway.run: Sent shutdown notification to home channel telegram:-1003721049105
+2026-06-08 18:52:59,872 INFO gateway.run: Shutdown phase: notify_active_sessions done at +0.30s
+2026-06-08 18:52:59,879 INFO gateway.run: Shutdown phase: drain done at +0.30s (drain took 0.01s, timed_out=False, active_at_start=0, active_now=0)
+2026-06-08 18:53:00,313 INFO gateway.run: Press Ctrl+C to stop
+2026-06-08 18:53:00,328 INFO gateway.run: Cron ticker started (interval=60s)
+2026-06-08 18:53:03,264 INFO telegram.ext.Application: Application is stopping. This might take a moment.
+2026-06-08 18:53:03,264 INFO telegram.ext.Application: Application.stop() complete
+2026-06-08 18:53:03,274 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-06-08 18:53:03,275 INFO gateway.run: ✓ telegram disconnected (3.40s)
+2026-06-08 18:53:03,275 INFO gateway.run: Shutdown phase: all adapters disconnected at +3.70s
+2026-06-08 18:53:03,309 INFO gateway.run: Shutdown phase: final-cleanup tool kill done at +3.73s
+2026-06-08 18:53:03,309 INFO gateway.run: Shutdown phase: SessionDB close done at +3.73s
+2026-06-08 18:53:03,317 INFO gateway.run: Gateway stopped (total teardown 3.74s)
+2026-06-08 18:53:03,317 INFO gateway.run: Cron ticker stopped
+2026-06-08 18:53:03,889 INFO gateway.run: Starting Hermes Gateway...
+2026-06-08 18:53:03,889 INFO gateway.run: Session storage: /home/gt-hermes/.hermes/sessions
+2026-06-08 18:53:03,902 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-06-08 18:53:03,902 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-06-08 18:53:03,912 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-06-08 18:53:04,009 INFO gateway.run: Connecting to telegram...
+2026-06-08 18:53:04,165 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-06-08 18:53:04,165 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-06-08 18:53:04,852 INFO telegram.ext.Application: Application started
+2026-06-08 18:53:05,587 INFO gateway.platforms.telegram: [Telegram] Telegram menu: 100 commands registered, 33 hidden (over 100 limit). Use /commands for full list.
+2026-06-08 18:53:05,595 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-06-08 18:53:05,603 INFO gateway.run: ✓ telegram connected
+2026-06-08 18:53:05,611 INFO gateway.run: Gateway running with 1 platform(s)
+2026-06-08 18:53:05,618 INFO gateway.run: Channel directory built: 1 target(s)
+2026-06-08 18:53:06,620 INFO gateway.run: Press Ctrl+C to stop
+2026-06-08 18:53:06,636 INFO gateway.run: Cron ticker started (interval=60s)
+2026-06-08 18:53:11,626 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-06-08 18:57:32,293 INFO gateway.run: Stopping gateway for restart...
+2026-06-08 18:57:32,870 INFO gateway.run: Sent shutdown notification to home channel telegram:-1003721049105
+2026-06-08 18:57:32,871 INFO gateway.run: Shutdown phase: notify_active_sessions done at +0.58s
+2026-06-08 18:57:32,877 INFO gateway.run: Shutdown phase: drain done at +0.58s (drain took 0.01s, timed_out=False, active_at_start=0, active_now=0)
+2026-06-08 18:57:36,258 INFO telegram.ext.Application: Application is stopping. This might take a moment.
+2026-06-08 18:57:36,258 INFO telegram.ext.Application: Application.stop() complete
+2026-06-08 18:57:36,268 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-06-08 18:57:36,268 INFO gateway.run: ✓ telegram disconnected (3.39s)
+2026-06-08 18:57:36,268 INFO gateway.run: Shutdown phase: all adapters disconnected at +3.97s
+2026-06-08 18:57:36,303 INFO gateway.run: Shutdown phase: final-cleanup tool kill done at +4.01s
+2026-06-08 18:57:36,304 INFO gateway.run: Shutdown phase: SessionDB close done at +4.01s
+2026-06-08 18:57:36,311 INFO gateway.run: Gateway stopped (total teardown 4.02s)
+2026-06-08 18:57:36,312 INFO gateway.run: Cron ticker stopped
+2026-06-08 18:57:37,675 INFO gateway.run: Starting Hermes Gateway...
+2026-06-08 18:57:37,675 INFO gateway.run: Session storage: /home/gt-hermes/.hermes/sessions
+2026-06-08 18:57:37,687 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-06-08 18:57:37,688 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-06-08 18:57:37,701 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-06-08 18:57:37,799 INFO gateway.run: Connecting to telegram...
+2026-06-08 18:57:37,987 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-06-08 18:57:37,988 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-06-08 18:57:38,411 INFO telegram.ext.Application: Application started
+2026-06-08 18:57:39,024 INFO gateway.platforms.telegram: [Telegram] Telegram menu: 100 commands registered, 33 hidden (over 100 limit). Use /commands for full list.
+2026-06-08 18:57:39,032 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-06-08 18:57:39,040 INFO gateway.run: ✓ telegram connected
+2026-06-08 18:57:39,047 INFO gateway.run: Gateway running with 1 platform(s)
+2026-06-08 18:57:39,057 INFO gateway.run: Channel directory built: 1 target(s)
+2026-06-08 18:57:40,059 INFO gateway.run: Press Ctrl+C to stop
+2026-06-08 18:57:40,074 INFO gateway.run: Cron ticker started (interval=60s)
+2026-06-08 18:57:45,065 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-06-08 18:58:04,411 INFO gateway.run: Replacing existing gateway instance (PID 66868) with --replace.
+2026-06-08 18:58:04,420 INFO gateway.run: Received SIGTERM as a planned --replace takeover — exiting cleanly
+2026-06-08 18:58:04,420 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.06 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 18:58:04,421 INFO gateway.run: Stopping gateway...
+2026-06-08 18:58:05,007 INFO gateway.run: Sent shutdown notification to home channel telegram:-1003721049105
+2026-06-08 18:58:05,008 INFO gateway.run: Shutdown phase: notify_active_sessions done at +0.59s
+2026-06-08 18:58:05,015 INFO gateway.run: Shutdown phase: drain done at +0.59s (drain took 0.01s, timed_out=False, active_at_start=0, active_now=0)
+2026-06-08 18:58:05,638 INFO telegram.ext.Application: Application is stopping. This might take a moment.
+2026-06-08 18:58:05,638 INFO telegram.ext.Application: Application.stop() complete
+2026-06-08 18:58:05,648 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-06-08 18:58:05,648 INFO gateway.run: ✓ telegram disconnected (0.63s)
+2026-06-08 18:58:05,648 INFO gateway.run: Shutdown phase: all adapters disconnected at +1.23s
+2026-06-08 18:58:05,683 INFO gateway.run: Shutdown phase: final-cleanup tool kill done at +1.26s
+2026-06-08 18:58:05,683 INFO gateway.run: Shutdown phase: SessionDB close done at +1.26s
+2026-06-08 18:58:05,692 INFO gateway.run: Gateway stopped (total teardown 1.27s)
+2026-06-08 18:58:05,692 INFO gateway.run: Cron ticker stopped
+2026-06-08 18:58:06,677 INFO gateway.run: Starting Hermes Gateway...
+2026-06-08 18:58:06,677 INFO gateway.run: Session storage: /home/gt-hermes/.hermes/sessions
+2026-06-08 18:58:06,687 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-06-08 18:58:06,687 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-06-08 18:58:06,697 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-06-08 18:58:06,793 INFO gateway.run: Connecting to telegram...
+2026-06-08 18:58:06,949 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-06-08 18:58:06,949 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-06-08 18:58:07,645 INFO telegram.ext.Application: Application started
+2026-06-08 18:58:08,696 INFO gateway.platforms.telegram: [Telegram] Telegram menu: 100 commands registered, 33 hidden (over 100 limit). Use /commands for full list.
+2026-06-08 18:58:08,703 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-06-08 18:58:08,711 INFO gateway.run: ✓ telegram connected
+2026-06-08 18:58:08,719 INFO gateway.run: Gateway running with 1 platform(s)
+2026-06-08 18:58:08,726 INFO gateway.run: Channel directory built: 1 target(s)
+2026-06-08 18:58:09,728 INFO gateway.run: Press Ctrl+C to stop
+2026-06-08 18:58:09,749 INFO gateway.run: Cron ticker started (interval=60s)
+2026-06-08 18:58:11,659 INFO gateway.run: Replacing existing gateway instance (PID 66903) with --replace.
+2026-06-08 18:58:11,669 INFO gateway.run: Received SIGTERM as a planned --replace takeover — exiting cleanly
+2026-06-08 18:58:11,669 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.05 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 18:58:11,670 INFO gateway.run: Stopping gateway...
+2026-06-08 18:58:11,948 INFO gateway.run: Sent shutdown notification to home channel telegram:-1003721049105
+2026-06-08 18:58:11,948 INFO gateway.run: Shutdown phase: notify_active_sessions done at +0.28s
+2026-06-08 18:58:11,955 INFO gateway.run: Shutdown phase: drain done at +0.28s (drain took 0.01s, timed_out=False, active_at_start=0, active_now=0)
+2026-06-08 18:58:14,732 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-06-08 18:58:15,807 INFO telegram.ext.Application: Application is stopping. This might take a moment.
+2026-06-08 18:58:15,807 INFO telegram.ext.Application: Application.stop() complete
+2026-06-08 18:58:15,821 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-06-08 18:58:15,821 INFO gateway.run: ✓ telegram disconnected (3.87s)
+2026-06-08 18:58:15,822 INFO gateway.run: Shutdown phase: all adapters disconnected at +4.15s
+2026-06-08 18:58:15,856 INFO gateway.run: Shutdown phase: final-cleanup tool kill done at +4.19s
+2026-06-08 18:58:15,857 INFO gateway.run: Shutdown phase: SessionDB close done at +4.19s
+2026-06-08 18:58:15,865 INFO gateway.run: Gateway stopped (total teardown 4.19s)
+2026-06-08 18:58:15,865 INFO gateway.run: Cron ticker stopped
+2026-06-08 18:58:16,468 INFO gateway.run: Starting Hermes Gateway...
+2026-06-08 18:58:16,468 INFO gateway.run: Session storage: /home/gt-hermes/.hermes/sessions
+2026-06-08 18:58:16,481 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-06-08 18:58:16,481 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-06-08 18:58:16,490 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-06-08 18:58:16,587 INFO gateway.run: Connecting to telegram...
+2026-06-08 18:58:16,739 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-06-08 18:58:16,739 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-06-08 18:58:17,174 INFO telegram.ext.Application: Application started
+2026-06-08 18:58:17,793 INFO gateway.platforms.telegram: [Telegram] Telegram menu: 100 commands registered, 33 hidden (over 100 limit). Use /commands for full list.
+2026-06-08 18:58:17,800 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-06-08 18:58:17,813 INFO gateway.run: ✓ telegram connected
+2026-06-08 18:58:17,820 INFO gateway.run: Gateway running with 1 platform(s)
+2026-06-08 18:58:17,828 INFO gateway.run: Channel directory built: 1 target(s)
+2026-06-08 18:58:18,830 INFO gateway.run: Press Ctrl+C to stop
+2026-06-08 18:58:18,846 INFO gateway.run: Cron ticker started (interval=60s)
+2026-06-08 18:58:23,832 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+
+==> /home/gt-hermes/.hermes/logs/errors.log <==
+2026-06-07 21:44:00,565 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 21:49:02,055 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 21:49:02,062 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 21:49:02,070 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 21:49:02,078 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 21:54:03,544 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 21:54:03,552 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 21:54:03,559 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 21:54:03,567 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 21:59:05,032 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 21:59:05,040 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 21:59:05,047 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 21:59:05,055 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:04:06,542 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:04:06,550 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 22:04:06,557 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:04:06,564 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:09:08,044 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:09:08,051 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 22:09:08,059 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:09:08,066 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:14:09,535 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:14:09,543 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 22:14:09,553 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:14:09,561 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:19:11,047 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:19:11,055 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 22:19:11,063 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:19:11,069 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:24:12,556 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:24:12,563 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 22:24:12,572 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:24:12,579 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:29:14,055 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:29:14,063 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 22:29:14,071 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:29:14,077 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:34:15,539 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:34:15,547 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 22:34:15,554 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:34:15,561 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:39:17,054 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:39:17,061 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 22:39:17,070 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:39:17,077 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:44:18,533 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:44:18,546 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 22:44:18,554 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:44:18,562 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:49:20,037 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:49:20,045 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 22:49:20,053 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:49:20,061 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:54:21,544 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:54:21,550 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 22:54:21,558 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:54:21,566 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:59:23,049 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:59:23,058 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 22:59:23,067 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 22:59:23,072 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:04:24,546 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:04:24,551 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 23:04:24,557 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:04:24,563 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:09:26,038 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:09:26,043 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 23:09:26,049 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:09:26,055 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:14:27,618 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:14:27,626 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 23:14:27,634 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:14:27,645 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:19:29,077 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:19:29,085 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 23:19:29,092 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:19:29,100 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:24:30,563 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:24:30,570 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 23:24:30,579 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:24:30,587 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:29:32,049 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:29:32,057 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 23:29:32,065 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:29:32,072 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:34:33,554 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:34:33,561 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 23:34:33,569 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:34:33,577 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:39:35,049 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:39:35,057 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 23:39:35,064 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:39:35,072 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:44:36,541 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:44:36,548 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 23:44:36,559 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:44:36,567 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:49:38,053 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:49:38,061 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 23:49:38,069 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:49:38,076 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:54:39,585 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:54:39,593 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 23:54:39,601 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:54:39,609 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:59:41,101 ERROR gateway.platforms.base: [Telegram] Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:59:41,109 WARNING gateway.run: ✗ telegram failed to connect
+2026-06-07 23:59:41,117 ERROR gateway.run: Gateway hit a non-retryable startup conflict: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-07 23:59:41,124 ERROR gateway.run: Gateway exiting cleanly: telegram: Telegram bot token already in use (PID 59381). Stop the other gateway first.
+2026-06-08 15:33:41,186 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.01 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 15:38:43,422 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=no parent_pid=61380 parent_name=bash loadavg_1m=0.08 parent_cmdline='-bash'
+2026-06-08 16:07:23,358 ERROR gateway.run: Another gateway instance is already running (PID 61442, HERMES_HOME=/home/gt-hermes/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-06-08 16:07:34,602 ERROR gateway.run: Another gateway instance is already running (PID 61442, HERMES_HOME=/home/gt-hermes/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-06-08 16:07:45,866 ERROR gateway.run: Another gateway instance is already running (PID 61442, HERMES_HOME=/home/gt-hermes/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-06-08 16:07:57,107 ERROR gateway.run: Another gateway instance is already running (PID 61442, HERMES_HOME=/home/gt-hermes/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-06-08 16:08:08,360 ERROR gateway.run: Another gateway instance is already running (PID 61442, HERMES_HOME=/home/gt-hermes/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-06-08 16:08:19,593 ERROR gateway.run: Another gateway instance is already running (PID 61442, HERMES_HOME=/home/gt-hermes/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-06-08 16:08:30,835 ERROR gateway.run: Another gateway instance is already running (PID 61442, HERMES_HOME=/home/gt-hermes/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-06-08 16:08:42,084 ERROR gateway.run: Another gateway instance is already running (PID 61442, HERMES_HOME=/home/gt-hermes/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-06-08 16:08:53,351 ERROR gateway.run: Another gateway instance is already running (PID 61442, HERMES_HOME=/home/gt-hermes/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-06-08 16:09:04,606 ERROR gateway.run: Another gateway instance is already running (PID 61442, HERMES_HOME=/home/gt-hermes/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-06-08 16:09:15,887 ERROR gateway.run: Another gateway instance is already running (PID 61442, HERMES_HOME=/home/gt-hermes/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-06-08 16:09:27,086 ERROR gateway.run: Another gateway instance is already running (PID 61442, HERMES_HOME=/home/gt-hermes/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-06-08 16:09:38,348 ERROR gateway.run: Another gateway instance is already running (PID 61442, HERMES_HOME=/home/gt-hermes/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-06-08 16:09:49,612 ERROR gateway.run: Another gateway instance is already running (PID 61442, HERMES_HOME=/home/gt-hermes/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-06-08 16:10:00,878 ERROR gateway.run: Another gateway instance is already running (PID 61442, HERMES_HOME=/home/gt-hermes/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-06-08 16:10:12,076 ERROR gateway.run: Another gateway instance is already running (PID 61442, HERMES_HOME=/home/gt-hermes/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-06-08 16:10:23,349 ERROR gateway.run: Another gateway instance is already running (PID 61442, HERMES_HOME=/home/gt-hermes/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-06-08 16:10:34,607 ERROR gateway.run: Another gateway instance is already running (PID 61442, HERMES_HOME=/home/gt-hermes/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-06-08 16:10:45,823 ERROR gateway.run: Another gateway instance is already running (PID 61442, HERMES_HOME=/home/gt-hermes/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-06-08 16:10:57,099 ERROR gateway.run: Another gateway instance is already running (PID 61442, HERMES_HOME=/home/gt-hermes/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-06-08 16:10:58,529 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 16:10:58,543 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 16:11:08,711 WARNING gateway.run: Stale systemd unit detected: withnail.service has TimeoutStopSec=90s but drain_timeout=180s (expected >=210s). systemd may SIGKILL the gateway mid-drain. Run `hermes gateway service install --replace` to regenerate the unit, or shorten agent.restart_drain_timeout.
+2026-06-08 16:12:46,188 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.03 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 16:12:59,220 WARNING gateway.run: Stale systemd unit detected: withnail.service has TimeoutStopSec=90s but drain_timeout=180s (expected >=210s). systemd may SIGKILL the gateway mid-drain. Run `hermes gateway service install --replace` to regenerate the unit, or shorten agent.restart_drain_timeout.
+2026-06-08 16:14:00,278 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.10 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 16:16:01,868 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.01 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 16:16:04,720 WARNING gateway.run: Stale systemd unit detected: withnail.service has TimeoutStopSec=90s but drain_timeout=180s (expected >=210s). systemd may SIGKILL the gateway mid-drain. Run `hermes gateway service install --replace` to regenerate the unit, or shorten agent.restart_drain_timeout.
+2026-06-08 16:21:04,916 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 16:21:20,363 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 16:21:22,190 WARNING gateway.run: Stale systemd unit detected: withnail.service has TimeoutStopSec=90s but drain_timeout=180s (expected >=210s). systemd may SIGKILL the gateway mid-drain. Run `hermes gateway service install --replace` to regenerate the unit, or shorten agent.restart_drain_timeout.
+2026-06-08 16:26:22,456 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 16:26:34,875 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 16:26:37,193 WARNING gateway.run: Stale systemd unit detected: withnail.service has TimeoutStopSec=90s but drain_timeout=180s (expected >=210s). systemd may SIGKILL the gateway mid-drain. Run `hermes gateway service install --replace` to regenerate the unit, or shorten agent.restart_drain_timeout.
+2026-06-08 16:31:37,408 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 16:31:52,847 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 16:31:54,698 WARNING gateway.run: Stale systemd unit detected: withnail.service has TimeoutStopSec=90s but drain_timeout=180s (expected >=210s). systemd may SIGKILL the gateway mid-drain. Run `hermes gateway service install --replace` to regenerate the unit, or shorten agent.restart_drain_timeout.
+2026-06-08 16:32:16,950 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 16:36:54,917 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.03 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 16:37:01,914 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.17 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 16:42:03,671 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.02 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 16:42:20,675 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.09 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 16:45:31,818 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 16:47:25,940 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.01 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 16:47:33,165 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.01 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 16:52:34,959 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 16:52:51,424 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.07 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 16:57:18,416 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 16:57:56,662 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 16:58:03,666 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 17:00:03,573 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 17:03:05,410 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.01 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 17:03:14,889 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 17:05:08,066 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 17:08:19,922 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 17:08:26,959 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 17:12:58,400 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 17:16:10,345 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 17:21:12,413 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.01 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 17:21:22,669 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 17:26:03,859 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 17:26:24,672 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 17:26:31,659 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 17:31:33,410 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 17:31:49,918 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 17:36:55,413 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 17:37:23,174 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.07 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 17:42:25,197 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 17:43:25,667 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 17:48:27,686 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.02 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 17:50:42,160 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.01 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 17:55:44,460 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 18:00:49,919 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 18:05:54,912 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 18:11:00,157 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 18:16:05,409 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 18:21:09,675 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.01 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 18:26:14,671 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 18:31:20,161 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.04 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 18:36:24,682 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 18:41:26,677 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 18:46:31,917 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 18:46:59,852 WARNING gateway.platforms.telegram: [Telegram] Telegram network error, scheduling reconnect: httpx.ReadError: 
+2026-06-08 18:46:59,853 WARNING gateway.platforms.telegram: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ReadError: 
+2026-06-08 18:47:51,577 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 18:52:26,726 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.05 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 18:52:59,576 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.03 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 18:58:04,420 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.06 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 18:58:11,669 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.05 parent_cmdline='/usr/lib/systemd/systemd --user'
+
+==> /home/gt-hermes/.hermes/logs/gateway-exit-diag.log <==
+{"ts": "2026-06-08T20:36:55.939948+00:00", "tag": "gateway.exit_clean", "pid": 63155, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T20:36:55.940679+00:00", "tag": "atexit.hook", "pid": 63155, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T20:37:01.904060+00:00", "tag": "gateway.start", "pid": 63192, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T20:37:02.645380+00:00", "tag": "asyncio.run.returned", "pid": 63173, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T20:37:02.645518+00:00", "tag": "gateway.exit_clean", "pid": 63173, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T20:37:02.646225+00:00", "tag": "atexit.hook", "pid": 63173, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T20:42:03.663776+00:00", "tag": "gateway.start", "pid": 63215, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T20:42:08.239799+00:00", "tag": "asyncio.run.returned", "pid": 63192, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T20:42:08.239957+00:00", "tag": "gateway.exit_clean", "pid": 63192, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T20:42:08.240861+00:00", "tag": "atexit.hook", "pid": 63192, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T20:42:20.665663+00:00", "tag": "gateway.start", "pid": 63234, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T20:42:24.920133+00:00", "tag": "asyncio.run.returned", "pid": 63215, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T20:42:24.920267+00:00", "tag": "gateway.exit_clean", "pid": 63215, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T20:42:24.920999+00:00", "tag": "atexit.hook", "pid": 63215, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T20:45:36.127603+00:00", "tag": "asyncio.run.returned", "pid": 63234, "python": "3.13.5", "platform": "linux", "success": false}
+{"ts": "2026-06-08T20:45:36.127802+00:00", "tag": "gateway.exit_nonzero", "pid": 63234, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T20:45:36.128919+00:00", "tag": "atexit.hook", "pid": 63234, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T20:45:37.057375+00:00", "tag": "gateway.start", "pid": 63319, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T20:47:25.931335+00:00", "tag": "gateway.start", "pid": 63335, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T20:47:27.003255+00:00", "tag": "asyncio.run.returned", "pid": 63319, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T20:47:27.003394+00:00", "tag": "gateway.exit_clean", "pid": 63319, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T20:47:27.004134+00:00", "tag": "atexit.hook", "pid": 63319, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T20:47:33.157321+00:00", "tag": "gateway.start", "pid": 63355, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T20:47:33.899060+00:00", "tag": "asyncio.run.returned", "pid": 63335, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T20:47:33.899204+00:00", "tag": "gateway.exit_clean", "pid": 63335, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T20:47:33.899931+00:00", "tag": "atexit.hook", "pid": 63335, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T20:52:34.950143+00:00", "tag": "gateway.start", "pid": 63532, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T20:52:39.028955+00:00", "tag": "asyncio.run.returned", "pid": 63355, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T20:52:39.029097+00:00", "tag": "gateway.exit_clean", "pid": 63355, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T20:52:39.029832+00:00", "tag": "atexit.hook", "pid": 63355, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T20:52:51.416361+00:00", "tag": "gateway.start", "pid": 63555, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T20:52:55.510387+00:00", "tag": "asyncio.run.returned", "pid": 63532, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T20:52:55.510529+00:00", "tag": "gateway.exit_clean", "pid": 63532, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T20:52:55.511245+00:00", "tag": "atexit.hook", "pid": 63532, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T20:57:19.493468+00:00", "tag": "asyncio.run.returned", "pid": 63555, "python": "3.13.5", "platform": "linux", "success": false}
+{"ts": "2026-06-08T20:57:19.493611+00:00", "tag": "gateway.exit_nonzero", "pid": 63555, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T20:57:19.494343+00:00", "tag": "atexit.hook", "pid": 63555, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T20:57:20.380240+00:00", "tag": "gateway.start", "pid": 64029, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T20:57:56.652580+00:00", "tag": "gateway.start", "pid": 64044, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T20:57:57.689906+00:00", "tag": "asyncio.run.returned", "pid": 64029, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T20:57:57.690050+00:00", "tag": "gateway.exit_clean", "pid": 64029, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T20:57:57.690787+00:00", "tag": "atexit.hook", "pid": 64029, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T20:58:03.654606+00:00", "tag": "gateway.start", "pid": 64063, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T20:58:04.402650+00:00", "tag": "asyncio.run.returned", "pid": 64044, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T20:58:04.402786+00:00", "tag": "gateway.exit_clean", "pid": 64044, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T20:58:04.403491+00:00", "tag": "atexit.hook", "pid": 64044, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T21:00:04.651912+00:00", "tag": "asyncio.run.returned", "pid": 64063, "python": "3.13.5", "platform": "linux", "success": false}
+{"ts": "2026-06-08T21:00:04.652051+00:00", "tag": "gateway.exit_nonzero", "pid": 64063, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T21:00:04.652823+00:00", "tag": "atexit.hook", "pid": 64063, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T21:00:05.534046+00:00", "tag": "gateway.start", "pid": 64325, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T21:03:05.398244+00:00", "tag": "gateway.start", "pid": 64338, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T21:03:08.967289+00:00", "tag": "asyncio.run.returned", "pid": 64325, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T21:03:08.967427+00:00", "tag": "gateway.exit_clean", "pid": 64325, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T21:03:08.968158+00:00", "tag": "atexit.hook", "pid": 64325, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T21:03:14.880172+00:00", "tag": "gateway.start", "pid": 64356, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T21:03:18.972785+00:00", "tag": "asyncio.run.returned", "pid": 64338, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T21:03:18.972979+00:00", "tag": "gateway.exit_clean", "pid": 64338, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T21:03:18.974015+00:00", "tag": "atexit.hook", "pid": 64338, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T21:05:09.105624+00:00", "tag": "asyncio.run.returned", "pid": 64356, "python": "3.13.5", "platform": "linux", "success": false}
+{"ts": "2026-06-08T21:05:09.105765+00:00", "tag": "gateway.exit_nonzero", "pid": 64356, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T21:05:09.106502+00:00", "tag": "atexit.hook", "pid": 64356, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T21:05:09.989747+00:00", "tag": "gateway.start", "pid": 64722, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T21:08:19.911065+00:00", "tag": "gateway.start", "pid": 64734, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T21:08:20.962758+00:00", "tag": "asyncio.run.returned", "pid": 64722, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T21:08:20.962894+00:00", "tag": "gateway.exit_clean", "pid": 64722, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T21:08:20.963601+00:00", "tag": "atexit.hook", "pid": 64722, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T21:08:26.947058+00:00", "tag": "gateway.start", "pid": 64754, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T21:08:27.690652+00:00", "tag": "asyncio.run.returned", "pid": 64734, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T21:08:27.690791+00:00", "tag": "gateway.exit_clean", "pid": 64734, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T21:08:27.691492+00:00", "tag": "atexit.hook", "pid": 64734, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T21:12:59.573446+00:00", "tag": "asyncio.run.returned", "pid": 64754, "python": "3.13.5", "platform": "linux", "success": false}
+{"ts": "2026-06-08T21:12:59.573643+00:00", "tag": "gateway.exit_nonzero", "pid": 64754, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T21:12:59.574697+00:00", "tag": "atexit.hook", "pid": 64754, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T21:13:28.665852+00:00", "tag": "gateway.start", "pid": 65158, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T21:16:10.333713+00:00", "tag": "gateway.start", "pid": 65436, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T21:16:11.397418+00:00", "tag": "asyncio.run.returned", "pid": 65158, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T21:16:11.397563+00:00", "tag": "gateway.exit_clean", "pid": 65158, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T21:16:11.398325+00:00", "tag": "atexit.hook", "pid": 65158, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T21:21:12.404051+00:00", "tag": "gateway.start", "pid": 65469, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T21:21:16.723227+00:00", "tag": "asyncio.run.returned", "pid": 65436, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T21:21:16.723366+00:00", "tag": "gateway.exit_clean", "pid": 65436, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T21:21:16.724104+00:00", "tag": "atexit.hook", "pid": 65436, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T21:21:22.658219+00:00", "tag": "gateway.start", "pid": 65488, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T21:21:23.642906+00:00", "tag": "asyncio.run.returned", "pid": 65469, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T21:21:23.643043+00:00", "tag": "gateway.exit_clean", "pid": 65469, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T21:21:23.643747+00:00", "tag": "atexit.hook", "pid": 65469, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T21:26:05.148911+00:00", "tag": "asyncio.run.returned", "pid": 65488, "python": "3.13.5", "platform": "linux", "success": false}
+{"ts": "2026-06-08T21:26:05.149049+00:00", "tag": "gateway.exit_nonzero", "pid": 65488, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T21:26:05.149800+00:00", "tag": "atexit.hook", "pid": 65488, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T21:26:06.034376+00:00", "tag": "gateway.start", "pid": 65781, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T21:26:24.664870+00:00", "tag": "gateway.start", "pid": 65790, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T21:26:25.683952+00:00", "tag": "asyncio.run.returned", "pid": 65781, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T21:26:25.684088+00:00", "tag": "gateway.exit_clean", "pid": 65781, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T21:26:25.684828+00:00", "tag": "atexit.hook", "pid": 65781, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T21:26:31.652594+00:00", "tag": "gateway.start", "pid": 65809, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T21:26:32.435025+00:00", "tag": "asyncio.run.returned", "pid": 65790, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T21:26:32.435162+00:00", "tag": "gateway.exit_clean", "pid": 65790, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T21:26:32.435892+00:00", "tag": "atexit.hook", "pid": 65790, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T21:31:33.402855+00:00", "tag": "gateway.start", "pid": 65840, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T21:31:37.440644+00:00", "tag": "asyncio.run.returned", "pid": 65809, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T21:31:37.440786+00:00", "tag": "gateway.exit_clean", "pid": 65809, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T21:31:37.441519+00:00", "tag": "atexit.hook", "pid": 65809, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T21:31:49.911424+00:00", "tag": "gateway.start", "pid": 65859, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T21:31:54.273576+00:00", "tag": "asyncio.run.returned", "pid": 65840, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T21:31:54.273715+00:00", "tag": "gateway.exit_clean", "pid": 65840, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T21:31:54.274423+00:00", "tag": "atexit.hook", "pid": 65840, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T21:36:55.405770+00:00", "tag": "gateway.start", "pid": 65882, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T21:36:56.428270+00:00", "tag": "asyncio.run.returned", "pid": 65859, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T21:36:56.428407+00:00", "tag": "gateway.exit_clean", "pid": 65859, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T21:36:56.429135+00:00", "tag": "atexit.hook", "pid": 65859, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T21:37:23.167602+00:00", "tag": "gateway.start", "pid": 65902, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T21:37:24.205451+00:00", "tag": "asyncio.run.returned", "pid": 65882, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T21:37:24.205590+00:00", "tag": "gateway.exit_clean", "pid": 65882, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T21:37:24.206295+00:00", "tag": "atexit.hook", "pid": 65882, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T21:42:25.190329+00:00", "tag": "gateway.start", "pid": 65923, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T21:42:26.207705+00:00", "tag": "asyncio.run.returned", "pid": 65902, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T21:42:26.207846+00:00", "tag": "gateway.exit_clean", "pid": 65902, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T21:42:26.208548+00:00", "tag": "atexit.hook", "pid": 65902, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T21:43:25.659889+00:00", "tag": "gateway.start", "pid": 65948, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T21:43:26.727459+00:00", "tag": "asyncio.run.returned", "pid": 65923, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T21:43:26.727595+00:00", "tag": "gateway.exit_clean", "pid": 65923, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T21:43:26.728306+00:00", "tag": "atexit.hook", "pid": 65923, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T21:48:27.679354+00:00", "tag": "gateway.start", "pid": 65972, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T21:48:28.751593+00:00", "tag": "asyncio.run.returned", "pid": 65948, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T21:48:28.751730+00:00", "tag": "gateway.exit_clean", "pid": 65948, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T21:48:28.752434+00:00", "tag": "atexit.hook", "pid": 65948, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T21:50:42.153146+00:00", "tag": "gateway.start", "pid": 65993, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T21:50:43.272399+00:00", "tag": "asyncio.run.returned", "pid": 65972, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T21:50:43.272536+00:00", "tag": "gateway.exit_clean", "pid": 65972, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T21:50:43.273287+00:00", "tag": "atexit.hook", "pid": 65972, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T21:55:44.452685+00:00", "tag": "gateway.start", "pid": 66017, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T21:55:48.833674+00:00", "tag": "asyncio.run.returned", "pid": 65993, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T21:55:48.833813+00:00", "tag": "gateway.exit_clean", "pid": 65993, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T21:55:48.834548+00:00", "tag": "atexit.hook", "pid": 65993, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T22:00:49.909835+00:00", "tag": "gateway.start", "pid": 66042, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T22:00:53.978739+00:00", "tag": "asyncio.run.returned", "pid": 66017, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T22:00:53.978877+00:00", "tag": "gateway.exit_clean", "pid": 66017, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T22:00:53.979612+00:00", "tag": "atexit.hook", "pid": 66017, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T22:05:54.905468+00:00", "tag": "gateway.start", "pid": 66066, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T22:05:59.046420+00:00", "tag": "asyncio.run.returned", "pid": 66042, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T22:05:59.046555+00:00", "tag": "gateway.exit_clean", "pid": 66042, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T22:05:59.047287+00:00", "tag": "atexit.hook", "pid": 66042, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T22:11:00.149690+00:00", "tag": "gateway.start", "pid": 66094, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T22:11:04.307805+00:00", "tag": "asyncio.run.returned", "pid": 66066, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T22:11:04.307939+00:00", "tag": "gateway.exit_clean", "pid": 66066, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T22:11:04.308694+00:00", "tag": "atexit.hook", "pid": 66066, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T22:16:05.402546+00:00", "tag": "gateway.start", "pid": 66118, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T22:16:08.734712+00:00", "tag": "asyncio.run.returned", "pid": 66094, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T22:16:08.734852+00:00", "tag": "gateway.exit_clean", "pid": 66094, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T22:16:08.735591+00:00", "tag": "atexit.hook", "pid": 66094, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T22:21:09.668453+00:00", "tag": "gateway.start", "pid": 66146, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T22:21:13.676294+00:00", "tag": "asyncio.run.returned", "pid": 66118, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T22:21:13.676431+00:00", "tag": "gateway.exit_clean", "pid": 66118, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T22:21:13.677194+00:00", "tag": "atexit.hook", "pid": 66118, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T22:26:14.664169+00:00", "tag": "gateway.start", "pid": 66168, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T22:26:19.073607+00:00", "tag": "asyncio.run.returned", "pid": 66146, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T22:26:19.073752+00:00", "tag": "gateway.exit_clean", "pid": 66146, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T22:26:19.074509+00:00", "tag": "atexit.hook", "pid": 66146, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T22:31:20.151969+00:00", "tag": "gateway.start", "pid": 66190, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T22:31:23.578387+00:00", "tag": "asyncio.run.returned", "pid": 66168, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T22:31:23.578525+00:00", "tag": "gateway.exit_clean", "pid": 66168, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T22:31:23.579253+00:00", "tag": "atexit.hook", "pid": 66168, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T22:36:24.673685+00:00", "tag": "gateway.start", "pid": 66212, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T22:36:25.735500+00:00", "tag": "asyncio.run.returned", "pid": 66190, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T22:36:25.735638+00:00", "tag": "gateway.exit_clean", "pid": 66190, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T22:36:25.736339+00:00", "tag": "atexit.hook", "pid": 66190, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T22:41:26.668162+00:00", "tag": "gateway.start", "pid": 66272, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T22:41:30.762894+00:00", "tag": "asyncio.run.returned", "pid": 66212, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T22:41:30.763033+00:00", "tag": "gateway.exit_clean", "pid": 66212, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T22:41:30.763768+00:00", "tag": "atexit.hook", "pid": 66212, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T22:46:31.908238+00:00", "tag": "gateway.start", "pid": 66413, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T22:46:36.126406+00:00", "tag": "asyncio.run.returned", "pid": 66272, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T22:46:36.126542+00:00", "tag": "gateway.exit_clean", "pid": 66272, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T22:46:36.127275+00:00", "tag": "atexit.hook", "pid": 66272, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T22:47:52.660270+00:00", "tag": "asyncio.run.returned", "pid": 66413, "python": "3.13.5", "platform": "linux", "success": false}
+{"ts": "2026-06-08T22:47:52.660474+00:00", "tag": "gateway.exit_nonzero", "pid": 66413, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T22:47:52.661571+00:00", "tag": "atexit.hook", "pid": 66413, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T22:48:12.854674+00:00", "tag": "gateway.start", "pid": 66472, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T22:50:34.122195+00:00", "tag": "asyncio.run.SystemExit", "pid": 66472, "python": "3.13.5", "platform": "linux", "code": 75, "traceback": "Traceback (most recent call last):\n  File \"/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/gateway.py\", line 3255, in run_gateway\n    success = asyncio.run(start_gateway(replace=replace, verbosity=verbosity))\n  File \"/usr/lib/python3.13/asyncio/runners.py\", line 195, in run\n    return runner.run(main)\n           ~~~~~~~~~~^^^^^^\n  File \"/usr/lib/python3.13/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^\n  File \"/usr/lib/python3.13/asyncio/base_events.py\", line 712, in run_until_complete\n    self.run_forever()\n    ~~~~~~~~~~~~~~~~^^\n  File \"/usr/lib/python3.13/asyncio/base_events.py\", line 683, in run_forever\n    self._run_once()\n    ~~~~~~~~~~~~~~^^\n  File \"/usr/lib/python3.13/asyncio/base_events.py\", line 2042, in _run_once\n    handle._run()\n    ~~~~~~~~~~~^^\n  File \"/usr/lib/python3.13/asyncio/events.py\", line 89, in _run\n    self._context.run(self._callback, *self._args)\n    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gt-hermes/.local/lib/python3.13/site-packages/gateway/run.py\", line 17020, in start_gateway\n    raise SystemExit(runner.exit_code)\nSystemExit: 75\n"}
+{"ts": "2026-06-08T22:50:34.123027+00:00", "tag": "atexit.hook", "pid": 66472, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T22:50:35.190243+00:00", "tag": "gateway.start", "pid": 66516, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T22:52:28.009897+00:00", "tag": "asyncio.run.returned", "pid": 66516, "python": "3.13.5", "platform": "linux", "success": false}
+{"ts": "2026-06-08T22:52:28.010036+00:00", "tag": "gateway.exit_nonzero", "pid": 66516, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T22:52:28.010783+00:00", "tag": "atexit.hook", "pid": 66516, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T22:52:53.654966+00:00", "tag": "gateway.start", "pid": 66578, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T22:52:59.567171+00:00", "tag": "gateway.start", "pid": 66591, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T22:53:03.319141+00:00", "tag": "asyncio.run.returned", "pid": 66578, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T22:53:03.319283+00:00", "tag": "gateway.exit_clean", "pid": 66578, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T22:53:03.319984+00:00", "tag": "atexit.hook", "pid": 66578, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T22:57:36.320911+00:00", "tag": "asyncio.run.SystemExit", "pid": 66591, "python": "3.13.5", "platform": "linux", "code": 75, "traceback": "Traceback (most recent call last):\n  File \"/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/gateway.py\", line 3255, in run_gateway\n    success = asyncio.run(start_gateway(replace=replace, verbosity=verbosity))\n  File \"/usr/lib/python3.13/asyncio/runners.py\", line 195, in run\n    return runner.run(main)\n           ~~~~~~~~~~^^^^^^\n  File \"/usr/lib/python3.13/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^\n  File \"/usr/lib/python3.13/asyncio/base_events.py\", line 712, in run_until_complete\n    self.run_forever()\n    ~~~~~~~~~~~~~~~~^^\n  File \"/usr/lib/python3.13/asyncio/base_events.py\", line 683, in run_forever\n    self._run_once()\n    ~~~~~~~~~~~~~~^^\n  File \"/usr/lib/python3.13/asyncio/base_events.py\", line 2042, in _run_once\n    handle._run()\n    ~~~~~~~~~~~^^\n  File \"/usr/lib/python3.13/asyncio/events.py\", line 89, in _run\n    self._context.run(self._callback, *self._args)\n    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gt-hermes/.local/lib/python3.13/site-packages/gateway/run.py\", line 17020, in start_gateway\n    raise SystemExit(runner.exit_code)\nSystemExit: 75\n"}
+{"ts": "2026-06-08T22:57:36.321737+00:00", "tag": "atexit.hook", "pid": 66591, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T22:57:37.419315+00:00", "tag": "gateway.start", "pid": 66868, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T22:58:04.410895+00:00", "tag": "gateway.start", "pid": 66903, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T22:58:05.693635+00:00", "tag": "asyncio.run.returned", "pid": 66868, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T22:58:05.693770+00:00", "tag": "gateway.exit_clean", "pid": 66868, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T22:58:05.694475+00:00", "tag": "atexit.hook", "pid": 66868, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+{"ts": "2026-06-08T22:58:11.658831+00:00", "tag": "gateway.start", "pid": 66922, "python": "3.13.5", "platform": "linux", "replace": true, "argv": ["/home/gt-hermes/.local/lib/python3.13/site-packages/hermes_cli/main.py", "gateway", "run", "--replace"], "stdin_is_tty": false, "absorb_windows_console_controls": false}
+{"ts": "2026-06-08T22:58:15.866564+00:00", "tag": "asyncio.run.returned", "pid": 66903, "python": "3.13.5", "platform": "linux", "success": true}
+{"ts": "2026-06-08T22:58:15.866704+00:00", "tag": "gateway.exit_clean", "pid": 66903, "python": "3.13.5", "platform": "linux"}
+{"ts": "2026-06-08T22:58:15.867409+00:00", "tag": "atexit.hook", "pid": 66903, "python": "3.13.5", "platform": "linux", "sys_exc": "(None, None, None)"}
+
+==> /home/gt-hermes/.hermes/logs/gateway.log <==
+2026-06-08 18:47:51,576 INFO gateway.run: Received SIGTERM — initiating shutdown
+2026-06-08 18:47:51,577 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 18:47:51,579 INFO gateway.run: Stopping gateway...
+2026-06-08 18:47:52,177 INFO gateway.run: Sent shutdown notification to home channel telegram:-1003721049105
+2026-06-08 18:47:52,177 INFO gateway.run: Shutdown phase: notify_active_sessions done at +0.60s
+2026-06-08 18:47:52,185 INFO gateway.run: Shutdown phase: drain done at +0.61s (drain took 0.01s, timed_out=False, active_at_start=0, active_now=0)
+2026-06-08 18:47:52,595 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-06-08 18:47:52,595 INFO gateway.run: ✓ telegram disconnected (0.41s)
+2026-06-08 18:47:52,596 INFO gateway.run: Shutdown phase: all adapters disconnected at +1.02s
+2026-06-08 18:47:52,649 INFO gateway.run: Shutdown phase: final-cleanup tool kill done at +1.07s
+2026-06-08 18:47:52,649 INFO gateway.run: Shutdown phase: SessionDB close done at +1.07s
+2026-06-08 18:47:52,657 INFO gateway.run: Gateway stopped (total teardown 1.08s)
+2026-06-08 18:47:52,658 INFO gateway.run: Cron ticker stopped
+2026-06-08 18:47:52,658 INFO gateway.run: Exiting with code 1 (signal-initiated shutdown without restart request) so systemd Restart=on-failure can revive the gateway.
+2026-06-08 18:48:13,112 INFO gateway.run: Starting Hermes Gateway...
+2026-06-08 18:48:13,113 INFO gateway.run: Session storage: /home/gt-hermes/.hermes/sessions
+2026-06-08 18:48:13,126 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-06-08 18:48:13,127 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-06-08 18:48:13,138 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-06-08 18:48:13,234 INFO gateway.run: Connecting to telegram...
+2026-06-08 18:48:13,432 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-06-08 18:48:13,432 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-06-08 18:48:14,515 INFO gateway.platforms.telegram: [Telegram] Telegram menu: 100 commands registered, 33 hidden (over 100 limit). Use /commands for full list.
+2026-06-08 18:48:14,523 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-06-08 18:48:14,532 INFO gateway.run: ✓ telegram connected
+2026-06-08 18:48:14,538 INFO gateway.run: Gateway running with 1 platform(s)
+2026-06-08 18:48:14,550 INFO gateway.run: Channel directory built: 1 target(s)
+2026-06-08 18:48:15,552 INFO gateway.run: Press Ctrl+C to stop
+2026-06-08 18:48:15,568 INFO gateway.run: Cron ticker started (interval=60s)
+2026-06-08 18:48:20,559 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-06-08 18:50:33,077 INFO gateway.run: Stopping gateway for restart...
+2026-06-08 18:50:33,663 INFO gateway.run: Sent shutdown notification to home channel telegram:-1003721049105
+2026-06-08 18:50:33,663 INFO gateway.run: Shutdown phase: notify_active_sessions done at +0.59s
+2026-06-08 18:50:33,669 INFO gateway.run: Shutdown phase: drain done at +0.59s (drain took 0.01s, timed_out=False, active_at_start=0, active_now=0)
+2026-06-08 18:50:34,062 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-06-08 18:50:34,063 INFO gateway.run: ✓ telegram disconnected (0.39s)
+2026-06-08 18:50:34,063 INFO gateway.run: Shutdown phase: all adapters disconnected at +0.99s
+2026-06-08 18:50:34,098 INFO gateway.run: Shutdown phase: final-cleanup tool kill done at +1.02s
+2026-06-08 18:50:34,098 INFO gateway.run: Shutdown phase: SessionDB close done at +1.02s
+2026-06-08 18:50:34,106 INFO gateway.run: Gateway stopped (total teardown 1.03s)
+2026-06-08 18:50:34,106 INFO gateway.run: Cron ticker stopped
+2026-06-08 18:50:35,445 INFO gateway.run: Starting Hermes Gateway...
+2026-06-08 18:50:35,445 INFO gateway.run: Session storage: /home/gt-hermes/.hermes/sessions
+2026-06-08 18:50:35,457 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-06-08 18:50:35,458 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-06-08 18:50:35,468 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-06-08 18:50:35,565 INFO gateway.run: Connecting to telegram...
+2026-06-08 18:50:35,795 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-06-08 18:50:35,795 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-06-08 18:50:36,897 INFO gateway.platforms.telegram: [Telegram] Telegram menu: 100 commands registered, 33 hidden (over 100 limit). Use /commands for full list.
+2026-06-08 18:50:36,904 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-06-08 18:50:36,917 INFO gateway.run: ✓ telegram connected
+2026-06-08 18:50:36,923 INFO gateway.run: Gateway running with 1 platform(s)
+2026-06-08 18:50:36,932 INFO gateway.run: Channel directory built: 1 target(s)
+2026-06-08 18:50:37,934 INFO gateway.run: Press Ctrl+C to stop
+2026-06-08 18:50:37,955 INFO gateway.run: Cron ticker started (interval=60s)
+2026-06-08 18:50:42,941 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-06-08 18:52:26,726 INFO gateway.run: Received SIGTERM — initiating shutdown
+2026-06-08 18:52:26,726 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.05 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 18:52:26,727 INFO gateway.run: Stopping gateway...
+2026-06-08 18:52:27,559 INFO gateway.run: Sent shutdown notification to home channel telegram:-1003721049105
+2026-06-08 18:52:27,560 INFO gateway.run: Shutdown phase: notify_active_sessions done at +0.83s
+2026-06-08 18:52:27,567 INFO gateway.run: Shutdown phase: drain done at +0.84s (drain took 0.01s, timed_out=False, active_at_start=0, active_now=0)
+2026-06-08 18:52:27,965 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-06-08 18:52:27,965 INFO gateway.run: ✓ telegram disconnected (0.40s)
+2026-06-08 18:52:27,965 INFO gateway.run: Shutdown phase: all adapters disconnected at +1.24s
+2026-06-08 18:52:28,000 INFO gateway.run: Shutdown phase: final-cleanup tool kill done at +1.27s
+2026-06-08 18:52:28,000 INFO gateway.run: Shutdown phase: SessionDB close done at +1.27s
+2026-06-08 18:52:28,008 INFO gateway.run: Gateway stopped (total teardown 1.28s)
+2026-06-08 18:52:28,008 INFO gateway.run: Cron ticker stopped
+2026-06-08 18:52:28,008 INFO gateway.run: Exiting with code 1 (signal-initiated shutdown without restart request) so systemd Restart=on-failure can revive the gateway.
+2026-06-08 18:52:53,909 INFO gateway.run: Starting Hermes Gateway...
+2026-06-08 18:52:53,909 INFO gateway.run: Session storage: /home/gt-hermes/.hermes/sessions
+2026-06-08 18:52:53,920 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-06-08 18:52:53,920 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-06-08 18:52:53,930 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-06-08 18:52:54,027 INFO gateway.run: Connecting to telegram...
+2026-06-08 18:52:58,161 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-06-08 18:52:58,162 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-06-08 18:52:59,279 INFO gateway.platforms.telegram: [Telegram] Telegram menu: 100 commands registered, 33 hidden (over 100 limit). Use /commands for full list.
+2026-06-08 18:52:59,286 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-06-08 18:52:59,295 INFO gateway.run: ✓ telegram connected
+2026-06-08 18:52:59,301 INFO gateway.run: Gateway running with 1 platform(s)
+2026-06-08 18:52:59,311 INFO gateway.run: Channel directory built: 1 target(s)
+2026-06-08 18:52:59,576 INFO gateway.run: Received SIGTERM as a planned --replace takeover — exiting cleanly
+2026-06-08 18:52:59,576 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.03 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 18:52:59,577 INFO gateway.run: Stopping gateway...
+2026-06-08 18:52:59,872 INFO gateway.run: Sent shutdown notification to home channel telegram:-1003721049105
+2026-06-08 18:52:59,872 INFO gateway.run: Shutdown phase: notify_active_sessions done at +0.30s
+2026-06-08 18:52:59,879 INFO gateway.run: Shutdown phase: drain done at +0.30s (drain took 0.01s, timed_out=False, active_at_start=0, active_now=0)
+2026-06-08 18:53:00,313 INFO gateway.run: Press Ctrl+C to stop
+2026-06-08 18:53:00,328 INFO gateway.run: Cron ticker started (interval=60s)
+2026-06-08 18:53:03,274 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-06-08 18:53:03,275 INFO gateway.run: ✓ telegram disconnected (3.40s)
+2026-06-08 18:53:03,275 INFO gateway.run: Shutdown phase: all adapters disconnected at +3.70s
+2026-06-08 18:53:03,309 INFO gateway.run: Shutdown phase: final-cleanup tool kill done at +3.73s
+2026-06-08 18:53:03,309 INFO gateway.run: Shutdown phase: SessionDB close done at +3.73s
+2026-06-08 18:53:03,317 INFO gateway.run: Gateway stopped (total teardown 3.74s)
+2026-06-08 18:53:03,317 INFO gateway.run: Cron ticker stopped
+2026-06-08 18:53:03,889 INFO gateway.run: Starting Hermes Gateway...
+2026-06-08 18:53:03,889 INFO gateway.run: Session storage: /home/gt-hermes/.hermes/sessions
+2026-06-08 18:53:03,902 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-06-08 18:53:03,902 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-06-08 18:53:03,912 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-06-08 18:53:04,009 INFO gateway.run: Connecting to telegram...
+2026-06-08 18:53:04,165 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-06-08 18:53:04,165 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-06-08 18:53:05,587 INFO gateway.platforms.telegram: [Telegram] Telegram menu: 100 commands registered, 33 hidden (over 100 limit). Use /commands for full list.
+2026-06-08 18:53:05,595 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-06-08 18:53:05,603 INFO gateway.run: ✓ telegram connected
+2026-06-08 18:53:05,611 INFO gateway.run: Gateway running with 1 platform(s)
+2026-06-08 18:53:05,618 INFO gateway.run: Channel directory built: 1 target(s)
+2026-06-08 18:53:06,620 INFO gateway.run: Press Ctrl+C to stop
+2026-06-08 18:53:06,636 INFO gateway.run: Cron ticker started (interval=60s)
+2026-06-08 18:53:11,626 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-06-08 18:57:32,293 INFO gateway.run: Stopping gateway for restart...
+2026-06-08 18:57:32,870 INFO gateway.run: Sent shutdown notification to home channel telegram:-1003721049105
+2026-06-08 18:57:32,871 INFO gateway.run: Shutdown phase: notify_active_sessions done at +0.58s
+2026-06-08 18:57:32,877 INFO gateway.run: Shutdown phase: drain done at +0.58s (drain took 0.01s, timed_out=False, active_at_start=0, active_now=0)
+2026-06-08 18:57:36,268 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-06-08 18:57:36,268 INFO gateway.run: ✓ telegram disconnected (3.39s)
+2026-06-08 18:57:36,268 INFO gateway.run: Shutdown phase: all adapters disconnected at +3.97s
+2026-06-08 18:57:36,303 INFO gateway.run: Shutdown phase: final-cleanup tool kill done at +4.01s
+2026-06-08 18:57:36,304 INFO gateway.run: Shutdown phase: SessionDB close done at +4.01s
+2026-06-08 18:57:36,311 INFO gateway.run: Gateway stopped (total teardown 4.02s)
+2026-06-08 18:57:36,312 INFO gateway.run: Cron ticker stopped
+2026-06-08 18:57:37,675 INFO gateway.run: Starting Hermes Gateway...
+2026-06-08 18:57:37,675 INFO gateway.run: Session storage: /home/gt-hermes/.hermes/sessions
+2026-06-08 18:57:37,687 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-06-08 18:57:37,688 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-06-08 18:57:37,701 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-06-08 18:57:37,799 INFO gateway.run: Connecting to telegram...
+2026-06-08 18:57:37,987 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-06-08 18:57:37,988 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-06-08 18:57:39,024 INFO gateway.platforms.telegram: [Telegram] Telegram menu: 100 commands registered, 33 hidden (over 100 limit). Use /commands for full list.
+2026-06-08 18:57:39,032 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-06-08 18:57:39,040 INFO gateway.run: ✓ telegram connected
+2026-06-08 18:57:39,047 INFO gateway.run: Gateway running with 1 platform(s)
+2026-06-08 18:57:39,057 INFO gateway.run: Channel directory built: 1 target(s)
+2026-06-08 18:57:40,059 INFO gateway.run: Press Ctrl+C to stop
+2026-06-08 18:57:40,074 INFO gateway.run: Cron ticker started (interval=60s)
+2026-06-08 18:57:45,065 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-06-08 18:58:04,420 INFO gateway.run: Received SIGTERM as a planned --replace takeover — exiting cleanly
+2026-06-08 18:58:04,420 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.06 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+2026-06-08 18:58:04,421 INFO gateway.run: Stopping gateway...
+2026-06-08 18:58:05,007 INFO gateway.run: Sent shutdown notification to home channel telegram:-1003721049105
+2026-06-08 18:58:05,008 INFO gateway.run: Shutdown phase: notify_active_sessions done at +0.59s
+2026-06-08 18:58:05,015 INFO gateway.run: Shutdown phase: drain done at +0.59s (drain took 0.01s, timed_out=False, active_at_start=0, active_now=0)
+2026-06-08 18:58:05,648 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-06-08 18:58:05,648 INFO gateway.run: ✓ telegram disconnected (0.63s)
+2026-06-08 18:58:05,648 INFO gateway.run: Shutdown phase: all adapters disconnected at +1.23s
+2026-06-08 18:58:05,683 INFO gateway.run: Shutdown phase: final-cleanup tool kill done at +1.26s
+2026-06-08 18:58:05,683 INFO gateway.run: Shutdown phase: SessionDB close done at +1.26s
+2026-06-08 18:58:05,692 INFO gateway.run: Gateway stopped (total teardown 1.27s)
+2026-06-08 18:58:05,692 INFO gateway.run: Cron ticker stopped
+2026-06-08 18:58:06,677 INFO gateway.run: Starting Hermes Gateway...
+2026-06-08 18:58:06,677 INFO gateway.run: Session storage: /home/gt-hermes/.hermes/sessions
+2026-06-08 18:58:06,687 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-06-08 18:58:06,687 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-06-08 18:58:06,697 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-06-08 18:58:06,793 INFO gateway.run: Connecting to telegram...
+2026-06-08 18:58:06,949 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-06-08 18:58:06,949 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-06-08 18:58:08,696 INFO gateway.platforms.telegram: [Telegram] Telegram menu: 100 commands registered, 33 hidden (over 100 limit). Use /commands for full list.
+2026-06-08 18:58:08,703 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-06-08 18:58:08,711 INFO gateway.run: ✓ telegram connected
+2026-06-08 18:58:08,719 INFO gateway.run: Gateway running with 1 platform(s)
+2026-06-08 18:58:08,726 INFO gateway.run: Channel directory built: 1 target(s)
+2026-06-08 18:58:09,728 INFO gateway.run: Press Ctrl+C to stop
+2026-06-08 18:58:09,749 INFO gateway.run: Cron ticker started (interval=60s)
+2026-06-08 18:58:11,669 INFO gateway.run: Received SIGTERM as a planned --replace takeover — exiting cleanly
+2026-06-08 18:58:11,669 WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=2462082 parent_name=systemd loadavg_1m=0.05 parent_cmdline='/usr/lib/systemd/systemd --user'
+2026-06-08 18:58:11,670 INFO gateway.run: Stopping gateway...
+2026-06-08 18:58:11,948 INFO gateway.run: Sent shutdown notification to home channel telegram:-1003721049105
+2026-06-08 18:58:11,948 INFO gateway.run: Shutdown phase: notify_active_sessions done at +0.28s
+2026-06-08 18:58:11,955 INFO gateway.run: Shutdown phase: drain done at +0.28s (drain took 0.01s, timed_out=False, active_at_start=0, active_now=0)
+2026-06-08 18:58:14,732 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-06-08 18:58:15,821 INFO gateway.platforms.telegram: [Telegram] Disconnected from Telegram
+2026-06-08 18:58:15,821 INFO gateway.run: ✓ telegram disconnected (3.87s)
+2026-06-08 18:58:15,822 INFO gateway.run: Shutdown phase: all adapters disconnected at +4.15s
+2026-06-08 18:58:15,856 INFO gateway.run: Shutdown phase: final-cleanup tool kill done at +4.19s
+2026-06-08 18:58:15,857 INFO gateway.run: Shutdown phase: SessionDB close done at +4.19s
+2026-06-08 18:58:15,865 INFO gateway.run: Gateway stopped (total teardown 4.19s)
+2026-06-08 18:58:15,865 INFO gateway.run: Cron ticker stopped
+2026-06-08 18:58:16,468 INFO gateway.run: Starting Hermes Gateway...
+2026-06-08 18:58:16,468 INFO gateway.run: Session storage: /home/gt-hermes/.hermes/sessions
+2026-06-08 18:58:16,481 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-06-08 18:58:16,481 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-06-08 18:58:16,490 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-06-08 18:58:16,587 INFO gateway.run: Connecting to telegram...
+2026-06-08 18:58:16,739 INFO gateway.platforms.telegram: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-06-08 18:58:16,739 INFO gateway.platforms.telegram: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-06-08 18:58:17,793 INFO gateway.platforms.telegram: [Telegram] Telegram menu: 100 commands registered, 33 hidden (over 100 limit). Use /commands for full list.
+2026-06-08 18:58:17,800 INFO gateway.platforms.telegram: [Telegram] Connected to Telegram (polling mode)
+2026-06-08 18:58:17,813 INFO gateway.run: ✓ telegram connected
+2026-06-08 18:58:17,820 INFO gateway.run: Gateway running with 1 platform(s)
+2026-06-08 18:58:17,828 INFO gateway.run: Channel directory built: 1 target(s)
+2026-06-08 18:58:18,830 INFO gateway.run: Press Ctrl+C to stop
+2026-06-08 18:58:18,846 INFO gateway.run: Cron ticker started (interval=60s)
+2026-06-08 18:58:23,832 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+
+==> /home/gt-hermes/.hermes/logs/gateway-shutdown-diag.log <==
+[Sat May 23 13:34:32 2026] device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@lists.linux.dev
+[Sat May 23 13:34:42 2026] systemd-fstab-generator[2454499]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Sat May 23 13:34:42 2026] systemd-fstab-generator[2454597]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Sat May 23 13:34:43 2026] systemd-fstab-generator[2454702]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Sat May 23 13:34:43 2026] systemd-fstab-generator[2454800]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Sun Jun  7 17:11:40 2026] systemd-fstab-generator[59243]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:07:37 2026] systemd-fstab-generator[61883]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:07:38 2026] systemd-fstab-generator[61978]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:16:16 2026] systemd-fstab-generator[62398]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:31:05 2026] systemd-fstab-generator[62659]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:31:05 2026] systemd-fstab-generator[62746]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:31:19 2026] systemd-fstab-generator[62842]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:31:19 2026] systemd-fstab-generator[62932]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:32:37 2026] systemd-fstab-generator[63089]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:57:34 2026] systemd-fstab-generator[63951]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 17:00:19 2026] systemd-fstab-generator[64250]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 17:05:23 2026] systemd-fstab-generator[64645]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 17:16:25 2026] systemd-fstab-generator[65369]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 17:26:19 2026] systemd-fstab-generator[65702]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 18:43:13 2026] systemd-fstab-generator[66335]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-08T22:52:26Z
+--- ps auxf (top 60 by cpu) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    May02   0:01 [kthreadd]
+root       66445  0.0  0.0      0     0 ?        I    18:47   0:00  \_ [kworker/0:1-events_freezable_pwr_efficient]
+root           1  0.0  0.1  25456 15360 ?        Ss   May02  46:49 /usr/lib/systemd/systemd --system --deserialize=55
+gt-herm+   66516  1.2  1.0 394512 88176 ?        Ssl  18:50   0:01 /usr/bin/python3 -m hermes_cli.main gateway run --replace
+gt-herm+   66560  0.0  0.0   5424  1792 ?        Ss   18:52   0:00  \_ timeout 5 bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 66516 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+gt-herm+   66561  0.0  0.0   7056  3280 ?        S    18:52   0:00      \_ bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 66516 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+gt-herm+   66563  0.0  0.0   9312  4064 ?        R    18:52   0:00          \_ ps auxf --sort=-pcpu
+gt-herm+   66564  0.0  0.0   5424  1872 ?        S    18:52   0:00          \_ head -60
+--- pstree of self ---
+python3,66516,gt-hermes -m hermes_cli.main gateway run --replace
+  |-timeout,66560 5 bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 66516 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |   `-bash,66561 -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 66516 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |       |-head,66566 -40
+  |       `-pstree,66565 -plau 66516
+  |-{python3},66518
+  |-{python3},66521
+  |-{python3},66522
+  `-{python3},66524
+--- /proc/loadavg ---
+0.05 0.03 0.00 2/215 66567
+--- recent dmesg (oom/killed) ---
+[Sat May 23 13:34:32 2026] device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@lists.linux.dev
+[Sat May 23 13:34:42 2026] systemd-fstab-generator[2454499]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Sat May 23 13:34:42 2026] systemd-fstab-generator[2454597]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Sat May 23 13:34:43 2026] systemd-fstab-generator[2454702]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Sat May 23 13:34:43 2026] systemd-fstab-generator[2454800]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Sun Jun  7 17:11:40 2026] systemd-fstab-generator[59243]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:07:37 2026] systemd-fstab-generator[61883]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:07:38 2026] systemd-fstab-generator[61978]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:16:16 2026] systemd-fstab-generator[62398]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:31:05 2026] systemd-fstab-generator[62659]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:31:05 2026] systemd-fstab-generator[62746]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:31:19 2026] systemd-fstab-generator[62842]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:31:19 2026] systemd-fstab-generator[62932]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:32:37 2026] systemd-fstab-generator[63089]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:57:34 2026] systemd-fstab-generator[63951]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 17:00:19 2026] systemd-fstab-generator[64250]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 17:05:23 2026] systemd-fstab-generator[64645]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 17:16:25 2026] systemd-fstab-generator[65369]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 17:26:19 2026] systemd-fstab-generator[65702]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 18:43:13 2026] systemd-fstab-generator[66335]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-08T22:52:59Z
+--- ps auxf (top 60 by cpu) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    May02   0:01 [kthreadd]
+root       66445  0.0  0.0      0     0 ?        I    18:47   0:00  \_ [kworker/0:1-events]
+root           1  0.0  0.1  25456 15360 ?        Ss   May02  46:49 /usr/lib/systemd/systemd --system --deserialize=55
+gt-herm+   66591 94.3  0.6  68960 57024 ?        Ss   18:52   0:00 /usr/bin/python3 -m hermes_cli.main gateway run --replace
+--- pstree of self ---
+python3,66578,gt-hermes -m hermes_cli.main gateway run --replace
+  |-timeout,66592 5 bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 66578 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |   `-bash,66593 -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 66578 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |       |-head,66598 -40
+  |       `-pstree,66597 -plau 66578
+  |-{python3},66579
+  |-{python3},66581
+  `-{python3},66582
+--- /proc/loadavg ---
+0.03 0.03 0.00 1/209 66599
+--- recent dmesg (oom/killed) ---
+[Sat May 23 13:34:32 2026] device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@lists.linux.dev
+[Sat May 23 13:34:42 2026] systemd-fstab-generator[2454499]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Sat May 23 13:34:42 2026] systemd-fstab-generator[2454597]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Sat May 23 13:34:43 2026] systemd-fstab-generator[2454702]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Sat May 23 13:34:43 2026] systemd-fstab-generator[2454800]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Sun Jun  7 17:11:40 2026] systemd-fstab-generator[59243]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:07:37 2026] systemd-fstab-generator[61883]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:07:38 2026] systemd-fstab-generator[61978]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:16:16 2026] systemd-fstab-generator[62398]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:31:05 2026] systemd-fstab-generator[62659]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:31:05 2026] systemd-fstab-generator[62746]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:31:19 2026] systemd-fstab-generator[62842]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:31:19 2026] systemd-fstab-generator[62932]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:32:37 2026] systemd-fstab-generator[63089]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:57:34 2026] systemd-fstab-generator[63951]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 17:00:19 2026] systemd-fstab-generator[64250]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 17:05:23 2026] systemd-fstab-generator[64645]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 17:16:25 2026] systemd-fstab-generator[65369]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 17:26:19 2026] systemd-fstab-generator[65702]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 18:43:13 2026] systemd-fstab-generator[66335]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-08T22:58:04Z
+--- ps auxf (top 60 by cpu) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    May02   0:01 [kthreadd]
+root       66445  0.0  0.0      0     0 ?        I    18:47   0:00  \_ [kworker/0:1-events]
+root           1  0.0  0.1  25456 15360 ?        Ss   May02  46:49 /usr/lib/systemd/systemd --system --deserialize=55
+gt-herm+   66868  4.6  1.0 394512 88080 ?        Ssl  18:57   0:01 /usr/bin/python3 -m hermes_cli.main gateway run --replace
+gt-herm+   66904  0.0  0.0   5424  1792 ?        Ss   18:58   0:00  \_ timeout 5 bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 66868 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+gt-herm+   66905  0.0  0.0   7056  3280 ?        S    18:58   0:00      \_ bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 66868 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+gt-herm+   66907  0.0  0.0   9312  4048 ?        R    18:58   0:00          \_ ps auxf --sort=-pcpu
+gt-herm+   66908  0.0  0.0   5424  1872 ?        S    18:58   0:00          \_ head -60
+--- pstree of self ---
+python3,66868,gt-hermes -m hermes_cli.main gateway run --replace
+  |-timeout,66904 5 bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 66868 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |   `-bash,66905 -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 66868 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |       |-head,66910 -40
+  |       `-pstree,66909 -plau 66868
+  |-{python3},66870
+  |-{python3},66873
+  |-{python3},66874
+  `-{python3},66876
+--- /proc/loadavg ---
+0.06 0.03 0.00 1/213 66911
+--- recent dmesg (oom/killed) ---
+[Sat May 23 13:34:42 2026] systemd-fstab-generator[2454597]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Sat May 23 13:34:43 2026] systemd-fstab-generator[2454702]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Sat May 23 13:34:43 2026] systemd-fstab-generator[2454800]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Sun Jun  7 17:11:40 2026] systemd-fstab-generator[59243]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:07:37 2026] systemd-fstab-generator[61883]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:07:38 2026] systemd-fstab-generator[61978]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:16:16 2026] systemd-fstab-generator[62398]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:31:05 2026] systemd-fstab-generator[62659]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:31:05 2026] systemd-fstab-generator[62746]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:31:19 2026] systemd-fstab-generator[62842]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:31:19 2026] systemd-fstab-generator[62932]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:32:37 2026] systemd-fstab-generator[63089]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:57:34 2026] systemd-fstab-generator[63951]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 17:00:19 2026] systemd-fstab-generator[64250]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 17:05:23 2026] systemd-fstab-generator[64645]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 17:16:25 2026] systemd-fstab-generator[65369]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 17:26:19 2026] systemd-fstab-generator[65702]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 18:43:13 2026] systemd-fstab-generator[66335]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 18:55:13 2026] systemd-fstab-generator[66672]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 18:55:13 2026] systemd-fstab-generator[66763]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+=== end ===
+=== shutdown diagnostic @ SIGTERM ===
+--- date ---
+2026-06-08T22:58:11Z
+--- ps auxf (top 60 by cpu) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    May02   0:01 [kthreadd]
+root       66445  0.0  0.0      0     0 ?        I    18:47   0:00  \_ [kworker/0:1-events]
+root           1  0.0  0.1  25456 15360 ?        Ss   May02  46:49 /usr/lib/systemd/systemd --system --deserialize=55
+gt-herm+   66922 92.8  0.6  68960 57024 ?        Ss   18:58   0:00 /usr/bin/python3 -m hermes_cli.main gateway run --replace
+--- pstree of self ---
+python3,66903,gt-hermes -m hermes_cli.main gateway run --replace
+  |-timeout,66923 5 bash -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 66903 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |   `-bash,66924 -c echo '=== shutdown diagnostic @ SIGTERM ==='; echo '--- date ---'; date -u +%Y-%m-%dT%H:%M:%SZ; echo '--- ps auxf (top 60 by cpu) ---'; ps auxf --sort=-pcpu 2>/dev/null | head -60; echo '--- pstree of self ---'; pstree -plau 66903 2>/dev/null | head -40 || true; echo '--- /proc/loadavg ---'; cat /proc/loadavg 2>/dev/null || true; echo '--- recent dmesg (oom/killed) ---'; dmesg -T 2>/dev/null | tail -20 || journalctl --user -n 20 --no-pager 2>/dev/null | tail -20 || true; echo '=== end ==='
+  |       |-head,66929 -40
+  |       `-pstree,66928 -plau 66903
+  |-{python3},66916
+  |-{python3},66918
+  |-{python3},66919
+  `-{python3},66920
+--- /proc/loadavg ---
+0.05 0.03 0.00 2/213 66930
+--- recent dmesg (oom/killed) ---
+[Sat May 23 13:34:42 2026] systemd-fstab-generator[2454597]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Sat May 23 13:34:43 2026] systemd-fstab-generator[2454702]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Sat May 23 13:34:43 2026] systemd-fstab-generator[2454800]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Sun Jun  7 17:11:40 2026] systemd-fstab-generator[59243]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:07:37 2026] systemd-fstab-generator[61883]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:07:38 2026] systemd-fstab-generator[61978]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:16:16 2026] systemd-fstab-generator[62398]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:31:05 2026] systemd-fstab-generator[62659]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:31:05 2026] systemd-fstab-generator[62746]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:31:19 2026] systemd-fstab-generator[62842]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:31:19 2026] systemd-fstab-generator[62932]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:32:37 2026] systemd-fstab-generator[63089]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 16:57:34 2026] systemd-fstab-generator[63951]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 17:00:19 2026] systemd-fstab-generator[64250]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 17:05:23 2026] systemd-fstab-generator[64645]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 17:16:25 2026] systemd-fstab-generator[65369]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 17:26:19 2026] systemd-fstab-generator[65702]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 18:43:13 2026] systemd-fstab-generator[66335]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 18:55:13 2026] systemd-fstab-generator[66672]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+[Mon Jun  8 18:55:13 2026] systemd-fstab-generator[66763]: Failed to create unit file '/run/systemd/generator/swapfile.swap', as it already exists. Duplicate entry in '/etc/fstab'?
+=== end ===
+
+==> /home/gt-hermes/.hermes/logs/withnail.log <==
+   or 'hermes gateway stop' to kill it first.
+   Or use 'hermes gateway run --replace' to auto-replace.
+
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+
+❌ Gateway already running (PID 61442).
+   Use 'hermes gateway restart' to replace it,
+   or 'hermes gateway stop' to kill it first.
+   Or use 'hermes gateway run --replace' to auto-replace.
+
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+
+❌ Gateway already running (PID 61442).
+   Use 'hermes gateway restart' to replace it,
+   or 'hermes gateway stop' to kill it first.
+   Or use 'hermes gateway run --replace' to auto-replace.
+
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+
+❌ Gateway already running (PID 61442).
+   Use 'hermes gateway restart' to replace it,
+   or 'hermes gateway stop' to kill it first.
+   Or use 'hermes gateway run --replace' to auto-replace.
+
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+
+❌ Gateway already running (PID 61442).
+   Use 'hermes gateway restart' to replace it,
+   or 'hermes gateway stop' to kill it first.
+   Or use 'hermes gateway run --replace' to auto-replace.
+
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+
+❌ Gateway already running (PID 61442).
+   Use 'hermes gateway restart' to replace it,
+   or 'hermes gateway stop' to kill it first.
+   Or use 'hermes gateway run --replace' to auto-replace.
+
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+
+❌ Gateway already running (PID 61442).
+   Use 'hermes gateway restart' to replace it,
+   or 'hermes gateway stop' to kill it first.
+   Or use 'hermes gateway run --replace' to auto-replace.
+
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+
+❌ Gateway already running (PID 61442).
+   Use 'hermes gateway restart' to replace it,
+   or 'hermes gateway stop' to kill it first.
+   Or use 'hermes gateway run --replace' to auto-replace.
+
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+
+❌ Gateway already running (PID 61442).
+   Use 'hermes gateway restart' to replace it,
+   or 'hermes gateway stop' to kill it first.
+   Or use 'hermes gateway run --replace' to auto-replace.
+
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+
+❌ Gateway already running (PID 61442).
+   Use 'hermes gateway restart' to replace it,
+   or 'hermes gateway stop' to kill it first.
+   Or use 'hermes gateway run --replace' to auto-replace.
+
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+
+❌ Gateway already running (PID 61442).
+   Use 'hermes gateway restart' to replace it,
+   or 'hermes gateway stop' to kill it first.
+   Or use 'hermes gateway run --replace' to auto-replace.
+
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+
+❌ Gateway already running (PID 61442).
+   Use 'hermes gateway restart' to replace it,
+   or 'hermes gateway stop' to kill it first.
+   Or use 'hermes gateway run --replace' to auto-replace.
+
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+WARNING gateway.run: Stale systemd unit detected: withnail.service has TimeoutStopSec=90s but drain_timeout=180s (expected >=210s). systemd may SIGKILL the gateway mid-drain. Run `hermes gateway service install --replace` to regenerate the unit, or shorten agent.restart_drain_timeout.
+WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.03 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+WARNING gateway.run: Stale systemd unit detected: withnail.service has TimeoutStopSec=90s but drain_timeout=180s (expected >=210s). systemd may SIGKILL the gateway mid-drain. Run `hermes gateway service install --replace` to regenerate the unit, or shorten agent.restart_drain_timeout.
+WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.10 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+WARNING gateway.run: Stale systemd unit detected: withnail.service has TimeoutStopSec=90s but drain_timeout=180s (expected >=210s). systemd may SIGKILL the gateway mid-drain. Run `hermes gateway service install --replace` to regenerate the unit, or shorten agent.restart_drain_timeout.
+WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+WARNING gateway.run: Stale systemd unit detected: withnail.service has TimeoutStopSec=90s but drain_timeout=180s (expected >=210s). systemd may SIGKILL the gateway mid-drain. Run `hermes gateway service install --replace` to regenerate the unit, or shorten agent.restart_drain_timeout.
+WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+WARNING gateway.run: Stale systemd unit detected: withnail.service has TimeoutStopSec=90s but drain_timeout=180s (expected >=210s). systemd may SIGKILL the gateway mid-drain. Run `hermes gateway service install --replace` to regenerate the unit, or shorten agent.restart_drain_timeout.
+WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+┌─────────────────────────────────────────────────────────┐
+│           ⚕ Hermes Gateway Starting...                 │
+├─────────────────────────────────────────────────────────┤
+│  Messaging platforms + cron scheduler                    │
+│  Press Ctrl+C to stop                                   │
+└─────────────────────────────────────────────────────────┘
+
+WARNING gateway.run: Stale systemd unit detected: withnail.service has TimeoutStopSec=90s but drain_timeout=180s (expected >=210s). systemd may SIGKILL the gateway mid-drain. Run `hermes gateway service install --replace` to regenerate the unit, or shorten agent.restart_drain_timeout.
+WARNING gateway.run: Shutdown context: signal=SIGTERM under_systemd=yes parent_pid=1 parent_name=systemd loadavg_1m=0.00 parent_cmdline='/usr/lib/systemd/systemd --system --deserialize=55'
+gt-hermes@hermes-pi:~ $ # Check what log files exist
+ls -l ~/.hermes/logs/
+
+# Look at the most recent logs (especially anything from the last 10–15 minutes)
+tail -n 200 ~/.hermes/logs/*.log | cat
+

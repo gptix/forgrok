@@ -1,0 +1,88 @@
+;; This buffer is for text that is not saved, and for Lisp evaluation.
+;; To create a file, visit it with C-x C-f and enter text in its buffer.
+
+* Checklist: Enable Colorful Hermes TUI + Upgrade Hermes Agent to v0.14.0
+
+**Important Notes Before Starting**
+- You can keep your current SSH session open.
+- Open a second terminal window on your laptop for reference / copy-paste.
+- Run commands exactly as shown.
+- If a command fails, copy the full output and paste it back here.
+
+**Phase 1: Prepare Laptop Terminal (Ubuntu 22.04) for Proper Color Support**
+
+- [X] On **Laptop** — Set TERM environment for current session (safe, reversible)
+  #+begin_src bash
+  export TERM=xterm-256color
+  export LANG=en_US.UTF-8
+  export LC_ALL=en_US.UTF-8
+  #+end_src
+
+- [X] On **Laptop** — Test connection with improved settings
+  #+begin_src bash
+  ssh gt-hermes@hermes-pi.local
+  #+end_src
+  (Once logged in, immediately run the next block on the Pi)
+
+**Phase 2: Fix Terminal on the Pi Side**
+
+export TERM=xterm
+export NO_COLOR=1
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+echo $TERM
+
+- [X] On **Pi** — Apply temporary fixes inside the SSH session
+  #+begin_src bash
+  export TERM=xterm-256color
+  export LANG=en_US.UTF-8
+  export LC_ALL=en_US.UTF-8
+  echo $TERM
+  #+end_src
+
+- [ ] On **Pi** — Test Hermes colors (safe test command)
+  #+begin_src bash
+  hermes version
+  #+end_src
+  (If you now see colors instead of garbage, great. Continue.)
+
+**Phase 3: Upgrade Hermes Agent (0.3.0 → 0.14.0)**
+
+- [ ] On **Pi** — Backup before upgrade (recommended)
+  #+begin_src bash
+  hermes backup create --name pre-0.14.0 || echo "Backup command not available, continuing..."
+  #+end_src
+
+- [ ] On **Pi** — Upgrade using pip (most reliable method right now)
+  #+begin_src bash
+  pip install --upgrade hermes-agent
+  #+end_src
+
+  *Alternative if you use uv:*
+  #+begin_src bash
+  uv pip install --upgrade hermes-agent
+  #+end_src
+
+- [ ] On **Pi** — Verify successful upgrade
+  #+begin_src bash
+  hermes version
+  #+end_src
+
+- [ ] On **Pi** — Run post-upgrade checks
+  #+begin_src bash
+  hermes doctor
+  hermes config check
+  #+end_src
+
+**Phase 4: Make Color Support Persistent (Only do this after successful upgrade)**
+
+- [ ] On **Laptop** — Make SSH color settings permanent
+  #+begin_src bash
+  emacs ~/.bashrc
+  #+end_src
+  (Add the following lines at the very end, then save with Ctrl+X Ctrl+S, exit with Ctrl+X Ctrl+C)
+  ```bash
+  # Improved SSH terminal colors for Hermes
+  export TERM=xterm-256color
+  export LANG=en_US.UTF-8
+  export LC_ALL=en_US.UTF-8

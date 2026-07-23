@@ -1,0 +1,197 @@
+#+TITLE: Withnail Diagnostic Checklist – hermes-pi
+#+DATE: 2026-06-05
+#+AUTHOR: Joji Teira
+#+TODO: TODO(t) | DONE(d) | BLOCKED(b) | NOTE(n)
+#+PROPERTY: Effort_ALL 5min 10min 15min 30min
+
+* Context & Goals
+- [X] Confirm we are on the correct machine: ~gt-hermes@hermes-pi~
+- [n] Note current date/time and any recent changes since last known state (May 2026)
+  We ran a cript to report specifications of the Pi on 4 Jun 2026 - I hae made no changes since then.
+- [X] Purpose reminder: Gather exact data on LLM, Hermes 0.14.0 config, Withnail skills/gateway, processes, exposure, and memory handling before making changes.
+
+* 1. LLM Currently Loaded in Ollama + Resource Usage
+** 1.1 List installed and loaded models
+- [X] Run: ~ollama list~
+
+-- output
+gt-hermes@hermes-pi:~ $ ollama list
+NAME                                                ID              SIZE      MODIFIED     
+hermes3:8b-llama3.1-q5_K_M                          836396825b44    5.7 GB    2 months ago    
+hermes3:8b                                          4f6b83f30b62    4.7 GB    2 months ago    
+dolphin-phi:latest                                  c5761fc77240    1.6 GB    2 months ago    
+llama3.2:3b                                         a80c4f17acd5    2.0 GB    2 months ago    
+rouge/phi-3-medium-4k-instruct-abliterated-v3:Q4    a72b1f39b7ea    8.6 GB    2 months ago    
+gurubot/phi3-mini-abliterated:latest                29ea469fde20    2.4 GB    2 months ago    
+phi3:mini                                           4f2222927938    2.2 GB    2 months ago    
+llama3.2:1b                                         baf6a787fdff    1.3 GB    3 months ago    
+
+- [X] Capture output (model names, sizes, modified dates)
+- [n] Note which model appears to be the active/default one for Withnail/Hermes
+ !! How do I do this?
+
+
+* 1.5 Determine active/default model for Hermes/Withnail (NEW)
+** Quick check – currently loaded models
+- [ ] Run this command:
+  #+begin_src bash
+  ollama ps
+  #+end_src
+  This shows which models are currently loaded into memory.
+
+** Find what model Hermes/Withnail is configured to use
+- [ ] Check for environment variables that might set the model:
+  #+begin_src bash
+  env | grep -iE 'ollama|hermes|withnail|model' | sort
+  #+end_src
+
+- [ ] Search the filesystem for config files that reference model names (especially hermes3):
+  #+begin_src bash
+  grep -r --include="*.yaml" --include="*.yml" --include="*.json" --include="*.conf" --include="*.sh" \
+       -E 'hermes3|hermes3:8b|model.*hermes' ~ 2>/dev/null | head -30
+  #+end_src
+
+- [ ] Look for Hermes configuration directory and main config file:
+  #+begin_src bash
+  find ~ -type d -name "*hermes*" 2>/dev/null | head -10
+  ls -la ~/.hermes 2>/dev/null || echo "No ~/.hermes directory"
+  #+end_src
+
+- [ ] If you find a config file (common names: config.yaml, settings.json, hermes.yaml, etc.), display the relevant sections:
+  #+begin_src bash
+  # Example - adjust path once you find the real file
+  cat ~/.hermes/config.yaml 2>/dev/null | grep -A 20 -E 'model|llm|ollama' || true
+  #+end_src
+
+** Check how Hermes/Withnail is actually launched
+- [ ] Look for systemd service or launch script:
+  #+begin_src bash
+  systemctl status hermes* withnail* 2>/dev/null || true
+  cat /etc/systemd/system/hermes*.service 2>/dev/null || true
+  #+end_src
+
+- [ ] Search for launch scripts or entry points:
+  #+begin_src bash
+  grep -r --include="*.sh" -E 'ollama run|hermes3|withnail' ~ 2>/dev/null | grep -v ".git" | head -15
+  #+end_src
+
+** Check recent logs for model usage
+- [ ] Look in common log locations:
+  #+begin_src bash
+  journalctl -u ollama --no-pager | tail -30
+  # or
+  find ~ -name "*.log" -path "*hermes*" -o -name "*.log" -path "*withnail*" 2>/dev/null | head -5
+  #+end_src
+  
+
+
+
+** 1.2 Detailed model information
+- [ ] For the primary model in use, run: ~ollama show <model-name>~
+- [ ] Record: quantization level, parameter count, context length, template, system prompt, license, etc.
+- [ ] Note any custom Modelfile or parameters
+
+** 1.3 Real RAM usage under load
+- [ ] While the model is loaded (or fnorce a small prompt to wake it), capture:
+  #+begin_src bash
+  free -h
+  cat /proc/meminfo | head -20
+  ps aux --sort=-rss | head -15 | grep -E 'ollama|python|hermes'
+  #+end_src
+- [ ] Run a simple test prompt via ~ollama run <model>~ (or Hermes if it has a CLI) and re-capture ~free -h~ and ~ps~ during/after.
+- [ ] Note peak RAM usage and whether swapping occurred (swap should be 0).
+
+** 1.4 Ollama service status & configuration
+- [ ] ~systemctl status ollama~ (or however Ollama is started)
+- [ ] Locate and review Ollama config if present (~~/.ollama~ or /etc/ollama, environment variables)
+- [ ] Note any custom OLLAMA_* environment variables in ~/.bashrc, systemd unit, or launch scripts
+
+* 2. Current Hermes 0.14.0 Settings
+** 2.1 Hermes version and installation details
+- [ ] Confirm exact version: ~hermes --version~ or check installed package / binary
+- [ ] Locate main Hermes config directory and files (common locations: ~/.hermes, ~/hermes, /opt/hermes, or wherever LATEST.org points)
+- [ ] Review key config files for model selection, context length, temperature, etc.
+
+** 2.2 Context length and model parameters
+- [ ] Search config files and running processes for context window settings
+- [ ] Note any custom parameters passed to Ollama from Hermes
+
+** 2.3 Custom configuration or modifications
+- [ ] Check for any local patches, custom skill loaders, or environment-specific settings since the v0.14.0 upgrade
+- [ ] Review recent changes in LATEST.org on the Pi if present
+
+* 3. Withnail’s Current Gateway + Skill Surface
+** 3.1 Identify Withnail processes and entry points
+- [ ] ~ps aux | grep -E 'withnail|hermes'~
+- [ ] Look for launch scripts, systemd units, or cron entries that start Withnail
+- [ ] Note any gateway process or API listener
+
+** 3.2 Skill inventory
+- [ ] If Hermes has a CLI command, run the equivalent of ~hermes skills list~ or ~hermes list-skills~
+- [ ] Explore skill directories (usually under Hermes install or ~/.hermes/skills)
+- [ ] List all currently enabled/available skills for Withnail
+- [ ] Note which skills have network or external tool access
+
+** 3.3 Gateway implementation
+- [ ] Locate gateway code or configuration (Telegram bot, any HTTP server, message queue, etc.)
+- [ ] Review how Withnail currently sends/receives messages (especially Telegram)
+- [ ] Check for any exposed ports: ~ss -tuln~ or ~netstat -tuln~
+
+* 4. Running Processes, Cron Jobs, Telegram, and Outbound Exposure
+** 4.1 Full relevant process list
+- [ ] Capture clean snapshot:
+  #+begin_src bash
+  ps auxf | grep -E 'ollama|hermes|withnail|telegram|bot' | grep -v grep
+  #+end_src
+
+** 4.2 Cron jobs
+- [ ] ~crontab -l~ (for gt-hermes user)
+- [ ] Check system crontabs: ~ls /etc/cron.*~ and ~cat /etc/crontab~
+- [ ] Note any jobs that could trigger external actions
+
+** 4.3 Telegram integration
+- [ ] Locate Telegram bot token or configuration files
+- [ ] Review how messages are sent (direct API calls, library, wrapper?)
+- [ ] Check logs for recent Telegram activity
+
+** 4.4 Network exposure & outbound risk
+- [ ] Listening ports: ~ss -tuln~ or ~netstat -tuln~
+- [ ] Firewall status: ~sudo ufw status~ or ~iptables -L -v -n~
+- [ ] Recent outbound connections (if tools available): ~ss -tan~ or check logs
+- [ ] Any obvious unintended exposure (public ports, broad firewall rules, etc.)
+- [ ] Note Tailscale interface status and any other VPN/network overlays
+
+* 5. Persistent Memory / State Handling for Withnail
+** 5.1 Local state locations
+- [ ] Search for Withnail-specific state directories or files (org-mode, json, sqlite, etc.)
+  #+begin_src bash
+  find ~ -type d -name '*withnail*' -o -name '*state*' 2>/dev/null | head -20
+  #+end_src
+- [ ] Check common locations: ~/withnail, ~/.withnail, ~/hermes/withnail, org-roam directories, etc.
+
+** 5.2 Memory format and persistence
+- [ ] Identify how decisions, tasks, and history are stored
+- [ ] Check for any integration with the main Joji-Grok org-roam system or gptix/forgrok repo
+- [ ] Note backup/sync mechanisms currently in use (Git, rsync, manual, etc.)
+
+** 5.3 Logs and audit trail
+- [ ] Locate Withnail/Hermes logs
+- [ ] Review recent log entries for memory operations or external calls
+
+* Summary Capture & Notes
+** Capture this run's key findings
+- [ ] Create a dated subsection below with concise bullet points of the most important discoveries from each section above.
+- [ ] Note any surprises, resource pressure points, or immediate concerns.
+- [ ] Record file paths for all important configs, skills, and state locations discovered.
+
+* Next Steps (after diagnostics complete)
+- [ ] Review results together
+- [ ] Decide on target LLM + quantization
+- [ ] Design minimal approved skill set + gateway rules
+- [ ] Plan migration / testing approach
+- [ ] Create or update the reusable diagnostic shell script (as discussed)
+
+* Reusable Diagnostic Script Planning (future task)
+- [ ] Once this checklist is proven useful, extract the commands into a single executable script (e.g. ~diagnose-withnail.sh~)
+- [ ] Script should output a clean, timestamped report covering all 5 areas above
+- [ ] Store the script in ~infrastructure/pi/hermes-pi/~ and version it
