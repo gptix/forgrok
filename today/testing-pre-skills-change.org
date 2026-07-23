@@ -1,0 +1,67 @@
+* Safe Testing Plan: Restrict Withnail Toolsets via platform_toolsets
+
+** Pre-Change Preparation
+- [X] Backup current config.yaml
+  #+begin_src bash
+  cp ~/.hermes/config.yaml ~/.hermes/config.yaml.bak.$(date +%Y%m%d-%H%M%S)
+  #+end_src
+- [X] Backup gateway state (optional but recommended)
+  #+begin_src bash
+  cp ~/.hermes/gateway_state.json ~/.hermes/gateway_state.json.bak.$(date +%Y%m%d-%H%M%S) 2>/dev/null || true
+  #+end_src
+- [X] Note the current PID of the gateway (for reference)
+  #+begin_src bash
+  cat ~/.hermes/gateway.pid 2>/dev/null || ps aux | grep 'hermes gateway run' | grep -v grep
+  #+end_src
+
+** Apply the Change
+- [ ] Edit ~/.hermes/config.yaml and add the platform_toolsets section (we’ll provide the exact block next)
+- [ ] Verify the YAML is valid after editing
+  #+begin_src bash
+  python3 -c "import yaml; yaml.safe_load(open('~/.hermes/config.yaml'))" && echo "YAML is valid" || echo "YAML has errors"
+  #+end_src
+
+** Restart Withnail Cleanly
+- [ ] Stop the current gateway (use the --replace behavior or kill cleanly)
+  #+begin_src bash
+  # Preferred: Use the start script again (it uses --replace)
+  # Or manually:
+  pkill -f "hermes gateway run" || true
+  #+end_src
+- [ ] Restart using the existing start script
+  #+begin_src bash
+  bash ~/.hermes/hermes-agent/start-withnail.sh
+  #+end_src
+- [ ] Confirm the gateway is running again
+  #+begin_src bash
+  sleep 5
+  cat ~/.hermes/gateway_state.json
+  ps aux | grep 'hermes gateway run' | grep -v grep
+  #+end_src
+
+** Post-Restart Verification
+- [ ] Check that Telegram is still connected
+  #+begin_src bash
+  cat ~/.hermes/gateway_state.json | grep -A5 telegram
+  #+end_src
+- [ ] Send a test message via Telegram to Withnail and observe behavior
+- [ ] Check recent logs for any errors related to toolsets
+  #+begin_src bash
+  tail -50 ~/.hermes/logs/withnail.log 2>/dev/null || tail -50 ~/.hermes/logs/*.log 2>/dev/null | tail -30
+  #+end_src
+- [ ] Verify that Withnail can still use memory, todo, and send_message (basic functionality test)
+- [ ] Confirm it can no longer access high-risk tools (we can test this indirectly by asking it to do something it shouldn't be able to)
+
+** Rollback Plan (if something goes wrong)
+- [ ] Restore previous config
+  #+begin_src bash
+  cp ~/.hermes/config.yaml.bak.* ~/.hermes/config.yaml   # choose the right backup
+  #+end_src
+- [ ] Restart the gateway again using the start script
+- [ ] Verify everything is back to normal
+
+** Success Criteria
+- [ ] Gateway starts cleanly with no errors
+- [ ] Telegram remains connected
+- [ ] Withnail can still reason, remember, plan (todo), and send notifications
+- [ ] High-risk capabilities (web, terminal, browser, github, etc.) are no longer available

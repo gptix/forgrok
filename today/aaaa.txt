@@ -1,0 +1,83 @@
+;; This buffer is for text that is not saved, and for Lisp evaluation.
+;; To create a file, visit it with C-x C-f and enter text in its buffer.
+
+retart knwledge base
+integrate saved HTML pages
+macro to save HTML pages as clean text
+section of init.el for knowledge base fucntions
+- clean an HTML file for ingestion
+- eityher to org txt or roam node
+- split a text block into separate files
+- work path for ingesting
+-- HTML to text
+-- into inbox and raw
+-- push
+-- grok ingests, creates file to split annd pus
+-- delete used files from inbox
+
+
+save M-x calls between sessions
+how to make human-usable wiki
+video of using Obsidian for knolwedge base
+update on Garry Tan work
+read readmultiple
+move on business
+- x account
+- email address
+- domain
+- website
+
+get copy of Ram work
+ask Grok yto review Ram work
+
+update Withnail
+- Hermes
+- skills
+- script to capture specs in use
+- 
+
+
+Hello again, Grok,
+
+My current goal is to collect and store in long-term memory, specifications of the Raspberry Pi and software related to the Agent Withnail, currently resident on the Pi.
+
+My purpose is to store knolwedge that will be useful for improving the configuration of the Pi now and in future.
+
+Please, without executing the DRAFT REQUEST below, review the DRAFT REQUEST below, and provide any improvements I should make to that DRAFT REQUEST to ensure that we capture specification details that will be able to use.
+
+Once I have edited the DRAFT REQUEST based on your feedback, I will make the FORMAL REQUEST via this chat interface.
+
+DRAFT REQUEST:
+
+Please, think as a well-versed expert in small hardware and AI agents.
+
+Create a script usable from the shell on the Pi (I will access via SSH from my Laptop) to
+1) find and record technical specifications for the Raspberry Pi
+-- processor
+-- on-board memory
+-- SD memory
+-- Operating system
+-- Hermes version and configuration of skills
+-- Ollama details
+
+2) Output a text file that can be retrieved from the Pi to the laptop via scp, then processed for ingestion to the knolwedge base we are maintaining on my laptop and github
+
+END DRAFT REQUEST
+    
+Details of active agent, and other agents available on the Pi
+, and output a text block that can be saved as a text file that can then be ingested by the knowledge base, and stored in long-term knowledge.
+
+Questions
+
+Is it possible to use a free service to host a local instance of an LLM agent that I can communicate with via
+- telegram
+- terminal
+- web browser
+
+What are good LLM's to use with Hermes and Ollama on the Pi
+
+With the goal of updating the Hermes on the Pi to 0.14.0 to act as an airgapped Agent (Withnail), what SKILLS and other MD files are
+- needed
+- potentially useful
+- dangerous
+- harmless but not needed

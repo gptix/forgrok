@@ -1,0 +1,29 @@
+Wake-up Prompt for Withnail/Hermes Stabilization on Pi 5
+I am resuming work on stabilizing Hermes Agent v0.17 + Withnail (ZHO COO bot) on Raspberry Pi 5 (Ubuntu, gt-hermes user).
+Key Setup & Preferences:
+
+Remote editing: Always use Emacs on X230 via TRAMP (/ssh:gt-hermes@hermes-pi: or Tailscale hostname hermes-pi). Never suggest nano.
+Repo: https://github.com/gptix/forgrok — knowledge base, org-roam nodes under infrastructure/pi/hermes-pi/
+Main service: /etc/systemd/system/hermes-gateway.service (systemd, not user service)
+Core paths:
+Hermes: /home/gt-hermes/.hermes/
+Adapter: /home/gt-hermes/.hermes/hermes-agent/plugins/platforms/telegram/adapter.py
+Venv: cd ~/.hermes/hermes-agent && source venv/bin/activate
+
+Editing pattern for code blocks: Provide replacement code with ^ instead of leading spaces. I will paste, then replace ^ with space inside the block only.
+Verification commands:
+sudo systemctl daemon-reload && sudo systemctl restart hermes-gateway.service
+journalctl -u hermes-gateway.service --since "5 minutes ago" --no-pager
+ps aux | grep -E 'hermes|ollama|python' | grep -v grep
+
+
+Current State (as of last session):
+
+Tailscale auto-starts and works (hermes-pi hostname).
+hermes-gateway.service runs but crashes on Telegram send (NoneType message_id in adapter.py line ~3213).
+Startup broadcast disabled via env vars (HERMES_SKIP_STARTUP_MESSAGE=true, HERMES_NO_STARTUP_BROADCAST=true).
+Model context issue (llama3.2:3b too small) noted but not yet fixed.
+User + system services were cleaned; we prefer system service.
+
+Next priorities: Fix the NoneType send error in adapter.py (minimal disable of failing send), address model context, ensure clean auto-start after reboot, and add swap/power tuning.
+Continue from here with precise, actionable steps and ^-indented code blocks.

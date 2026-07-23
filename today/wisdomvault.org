@@ -1,0 +1,7 @@
+* WisdomVault Immediate Actions [0/6]
+** [ ] Approve direction, name (WisdomVault or LegacyVault Tech or under BrandCo), and pricing philosophy
+** [ ] Kick off v1 original prompt deck (I can help draft categories + first 50–80 prompts in org-mode format)
+** [ ] Order & test 2–3 offline voice recorder candidates for kit inclusion (create testing checklist)
+** [ ] Build first pre-configured Pi 5 Vault Node image (Whisper + basic RAG + simple UI) + org-mode installation checklist
+** [ ] Draft simple Terms of Service + Privacy Policy (strong user-ownership language)
+** [ ] Create minimal landing/waitlist page (Carrd or similar) to validate demand before buying inventory

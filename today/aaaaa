@@ -1,0 +1,18 @@
+;; This buffer is for text that is not saved, and for Lisp evaluation.
+;; To create a file, visit it with C-x C-f and enter text in its buffer.
+
+savewisdom.org
+bread
+arduino class
+How I made a Wiki Knowledge base
+
+
+To ingest HTML files
+move to a certain directory
+run a M-x that applies PANDOC to the +HTML file
+save it to an org-roam file
+
+
+
+
+How to have two Roam structures - general and Wiki

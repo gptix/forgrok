@@ -1,0 +1,33 @@
+* Hermes v0.17 Upgrade Session Review — 2026-06-28
+
+**Goal**
+Get Hermes Agent v0.17 running stably on the Raspberry Pi 5 as the foundation for Withnail (ZHO COO bot), while preserving Tailscale access, Telegram credentials, WiFi, and all local state/identity.
+
+**What Was Accomplished**
+- Full backup of ~/.hermes (config.yaml, SOUL.md, auth.json, gateway_state.json, entire tree).
+- Cleaned all stray Hermes/Withnail/gateway processes multiple times until only ssh/avahi remained.
+- Updated source: git pull on ~/.hermes/hermes-agent (stashed local changes to run_agent.py).
+- Fresh venv created and hermes-agent v0.17.0 installed via `pip install -e .`.
+- Service file updated to use venv Python explicitly.
+- User-level hermes-gateway.service stopped, disabled, and cleaned.
+- `hermes gateway install` run successfully (regenerated user service; system withnail.service still active).
+- Identified recurring issues: stale systemd unit warnings (TimeoutStopSec vs drain_timeout), multiple gateway instances, quick exit-code 1 crashes.
+
+**Current State (as of end of session)**
+- Hermes v0.17.0 is installed in the venv.
+- withnail.service starts but crashes after ~30s–2 minutes (exit code 1).
+- No stable gateway running.
+- Debug attempts showed the process starts but gets SIGTERM from systemd.
+- No fan noise observed → Pi not under heavy sustained load during crashes.
+
+**What Remains to Be Done**
+- Get a clean, stable startup of the v0.17 gateway.
+- Capture the exact failure point during initialization (model load, Telegram auth, tool registration, etc.).
+- Resolve any remaining user vs system service conflicts.
+- Verify Telegram connectivity and autonomous cycles once stable.
+
+**Key Lessons**
+- Broad pkill commands can kill the SSH session.
+- Always use the full venv path for `hermes` after source updates.
+- `hermes gateway install --force` (or equivalent) is required after major upgrades to fix stale units.
+- Two SSH sessions (or tmux/screen) are essential for monitoring while starting.

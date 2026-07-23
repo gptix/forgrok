@@ -1,0 +1,2579 @@
+base) gt@gt-ThinkPad-X230:~/local-side$ tree
+.
+├── directory_structure.txt
+├── diy-cardboard-phone-stand.org
+├── groki
+│   ├── 20260506-5000-days-full-synthesis.org
+│   ├── 5000-days-part-25-desk-set-prophecy.md
+│   ├── 5000-days-series-overview.md
+│   ├── groki-index-update-core-patterns.org
+│   ├── groki-index-update-roemmele.org
+│   ├── groki-index-update-scalar-waves.org
+│   ├── groki-log-2026-04-10-dr-paul-wilhelm-scalar-waves.org
+│   ├── groki-log-2026-04-10-infranodus-ingest.org
+│   ├── groki-log-2026-04-10-roemmele-ingest.org
+│   ├── GROK-SCHEMA.md
+│   ├── indexes
+│   ├── index.md
+│   ├── index.org
+│   ├── infranodus-llm-wiki-skill.org
+│   ├── joji-hardware-inventory.org
+│   ├── karpathy-llm-wiki.md
+│   ├── karpathy-wiki-as-foundational-truth-gist-correction-2026-04.org
+│   ├── llm-wiki-pattern.md
+│   ├── log.md
+│   ├── roemmele-hidden-refresh-tax-gpu-memory.org
+│   ├── voight-kampff-protocol.md
+│   ├── voight-kampff-protocol.org
+│   ├── wiki-scaffolding-phases.org
+│   └── wilhelm-scalar-longitudinal-waves-foundations.org
+├── grok-memory
+│   └── exports
+│       ├── joji-grok-project-memory.md
+│       └── joji-grok-project-memory.org
+├── hermes-pi-tree.txt
+├── inbox
+│   ├── ~
+│   │   └── local-side
+│   │       └── inbox
+│   │           └── 5000-days-part-25-desk-set-prophecy.md
+│   ├── 20260506-fulton-racial-classification-audit.org
+│   ├── 20260511202342-pumpernickel.org
+│   ├── 20260511202342-pumpernickel.org~
+│   ├── 2026-06-05-grok-session-clean.md
+│   ├── 5kD_Part_21_1949_Marionettes,_Inc_Warning_files
+│   │   ├── image-185-680x1024.png
+│   │   ├── image-186-672x1024.png
+│   │   ├── image-188-660x1024.png
+│   │   ├── image-189-644x1024.png
+│   │   ├── image-190-672x1024.png
+│   │   ├── image-191-683x1024.png
+│   │   ├── image-193-1024x569.png
+│   │   ├── image-196-1024x555.png
+│   │   ├── image-202-1024x544.png
+│   │   ├── image-204-1024x559.png
+│   │   ├── image-208-1024x558.png
+│   │   ├── image-210-1024x558.png
+│   │   ├── image-212-1024x579.png
+│   │   ├── image-215-1024x563.png
+│   │   ├── image-217-1024x552.png
+│   │   ├── image-219-1024x557.png
+│   │   ├── image-221-1024x541.png
+│   │   ├── image-222-1024x556.png
+│   │   ├── image-224-1024x555.png
+│   │   ├── image-226-1024x554.png
+│   │   ├── image-228-1024x553.png
+│   │   ├── image-230-1024x550.png
+│   │   ├── image-232-1024x552.png
+│   │   ├── image-234-1024x550.png
+│   │   └── MySignature-copy.png
+│   ├── 5kD_Part_21_1949_Marionettes,_Inc_Warning.html
+│   ├── 5kD_Part_22_After_Universal_High_Income._files
+│   │   ├── image-235-1024x564.png
+│   │   ├── image-236-1024x548.png
+│   │   ├── image-237-1024x559.png
+│   │   ├── image-240-1024x558.png
+│   │   ├── image-241-1024x552.png
+│   │   ├── image-242-1024x557.png
+│   │   ├── image-243-1024x540.png
+│   │   ├── image-244-1024x557.png
+│   │   ├── image-246-1024x558.png
+│   │   ├── image-248-1024x557.png
+│   │   ├── image-249-1024x553.png
+│   │   ├── image-250-1024x555.png
+│   │   ├── image-252-1024x556.png
+│   │   ├── image-253-1024x557.png
+│   │   ├── image-254-1024x547.png
+│   │   ├── image-255-1024x557.png
+│   │   ├── image-256-1024x561.png
+│   │   ├── image-257-1024x585.png
+│   │   ├── image-258-1024x555.png
+│   │   ├── image-259-1024x556.png
+│   │   └── MySignature-copy.png
+│   ├── 5kD_Part_22_After_Universal_High_Income.html
+│   ├── 5kD_Part_23_How_2,_1956_files
+│   │   ├── Galaxy_195902.jpg
+│   │   ├── image-1-1024x560.png
+│   │   ├── image-11-1024x558.png
+│   │   ├── image-13-1024x558.png
+│   │   ├── image-15-1024x553.png
+│   │   ├── image-17-1024x555.png
+│   │   ├── image-20-1024x554.png
+│   │   ├── image-22-1024x555.png
+│   │   ├── image-24-1024x553.png
+│   │   ├── image-26-1024x558.png
+│   │   ├── image-27-1024x553.png
+│   │   ├── image-28-1024x555.png
+│   │   ├── image-30-1024x557.png
+│   │   ├── image-3-1024x557.png
+│   │   ├── image-32-1024x555.png
+│   │   ├── image-33-1024x556.png
+│   │   ├── image-5-1024x562.png
+│   │   ├── image-8-1024x556.png
+│   │   ├── image-9-1024x556.png
+│   │   ├── MySignature-copy.png
+│   │   ├── Screenshot-2026-04-04-at-7.14.50-AM-1024x557.png
+│   │   └── Screenshot-2026-04-04-at-7.23.06-AM-1024x559.png
+│   ├── 5kD_Part_23_How_2,_1956.html
+│   ├── 5kD_Part_24_The_Doomslayer._files
+│   │   ├── image-102-1024x560.png
+│   │   ├── image-104-1024x554.png
+│   │   ├── image-106-1024x560.png
+│   │   ├── image-108-1024x554.png
+│   │   ├── image-110-1024x562.png
+│   │   ├── image-112-1024x560.png
+│   │   ├── image-114-1024x551.png
+│   │   ├── image-80.png
+│   │   ├── image-81-1024x683.png
+│   │   ├── image-82.png
+│   │   ├── image-84-1024x555.png
+│   │   ├── image-86-1024x558.png
+│   │   ├── image-88-1024x550.png
+│   │   ├── image-90-1024x562.png
+│   │   ├── image-92-1024x552.png
+│   │   ├── image-94-1024x558.png
+│   │   ├── image-96-1024x553.png
+│   │   ├── image-98-1024x556.png
+│   │   └── MySignature-copy.png
+│   ├── 5kD_Part_24_The_Doomslayer.html
+│   ├── Brian_Roemmele_Interview_5kD_so_far
+│   ├── Brian_Roemmele_Interview_5kD_so_far_files
+│   │   └── MySignature-copy.png
+│   ├── hermes-pi-tree.txt
+│   ├── mannerheim.mp4
+│   ├── master-grok-schema-and-vk-update.org
+│   ├── master-roemmele-ingest.org
+│   ├── #run_agent.py#
+│   ├── run_agent.py
+│   ├── run_agent.py~
+│   ├── simple_zho_bot.py
+│   ├── withnail_allowed_tools.yaml
+│   └── withnail-permission-sequential.patch
+├── infranodus
+│   ├── full-wiki-ontology.md
+│   ├── full-wiki-ontology.md~
+│   ├── zho-ontology.md
+│   └── zho-ontology.md~
+├── infrastructure
+│   └── pi
+│       └── hermes-pi
+│           ├── baselines
+│           │   └── pi
+│           │       └── hermes-pi
+│           │           ├── pi-withnail-specs-hermes-pi-20260604-1742.org
+│           │           └── pi-withnail-specs-hermes-pi-20260604-2105.org
+│           ├── LATEST.org -> baselines/pi-withnail-specs-hermes-pi-20260604-2105.org
+│           └── README.org
+├── joji-grok-project-memory.md
+├── joji-grok-project-memory.org
+├── org-roam-knowledge
+│   ├── 20260505-5000-days-part-25-desk-set-prophecy.org
+│   ├── 20260505-5000-days-part-25-desk-set-prophecy.org~
+│   ├── 20260506-fulton-racial-classification-audit.org
+│   ├── 5000-days-part-25-desk-set-prophecy.md
+│   ├── 5000-days-part-25-desk-set-prophecy.org
+│   ├── ai-tools
+│   │   └── real-estate-lawyers-ai-2026.md
+│   ├── brian-roemmele
+│   │   └── 5000-days
+│   │       ├── #20260329234709-you-have-5000-days-how-to-navigate-the-end-of-work-as-we-know-it-part-1-8211-readmultiplex.org#
+│   │       ├── 20260329234709-you-have-5000-days-how-to-navigate-the-end-of-work-as-we-know-it-part-1-8211-readmultiplex.org
+│   │       ├── 20260329234710-you-have-5000-days-how-to-navigate-the-end-of-work-as-we-know-it-part-2-8211-readmultiplex.org
+│   │       ├── 20260329234711-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-3-the-player-piano-8211-readmultiplex.org
+│   │       ├── 20260329234712-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-4-reframing-the-dawn-of-abundance-8211-readmultiplex.org
+│   │       ├── 20260329234713-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-5-your-deskilling-8211-readmultiplex.org
+│   │       ├── 20260329234714-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-6-the-dark-night-of-the-soul-8211-readmultiplex.org
+│   │       ├── 20260329234715-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-7-consider-phlebas-8211-readmultiplex.org
+│   │       ├── 20260329234716-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-8-saving-your-wisdom-8211-readmultiplex.org
+│   │       ├── 20260329234717-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-9-the-artisan-8217-s-awakening-8211-readmultiplex.org
+│   │       ├── 20260329234718-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-10-everyone-is-doing-it-8211-readmultiplex.org
+│   │       ├── 20260329234719-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-12-the-profit-and-the-arcitect-8211-readmultiplex.org
+│   │       ├── 20260329234720-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-13-the-guilded-age-8211-readmultiplex.org
+│   │       ├── 20260329234721-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-13-the-guilded-age-8211-readmultiplex.org
+│   │       ├── 20260329234722-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-14-the-interregnum-chaos-and-the-hero-8217-s-path-forward-8211-readmultiplex.org
+│   │       ├── 20260329234723-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-15-the-ibm-cobol-shock-8211-readmultiplex.org
+│   │       ├── 20260329234724-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-19-the-hidden-sacristy-architect-8211-readmultiplex.org
+│   │       ├── 20260329234725-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-20-your-rural-cybercab-company-8211-readmultiplex.org
+│   │       ├── 20260329234726-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-21-the-dynamic-duo-8211-readmultiplex.org
+│   │       ├── 20260329234727-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-21-1949-marionettes-inc-warning-8211-readmultiplex.org
+│   │       ├── 20260329234728-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-15-the-ibm-cobol-shock-8211-readmultiplex.org
+│   │       ├── 20260329234729-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-17-universe-25-mouse-utopia-8211-readmultiplex.org
+│   │       ├── 20260329234730-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-19-1950-with-folded-hands-warning-8211-readmultiplex.org
+│   │       ├── 20260329234731-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-20-your-rural-cybercab-company-8211-readmultiplex.org
+│   │       ├── 20260329234732-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-21-the-dynamic-duo-8211-readmultiplex.org
+│   │       ├── 20260329234733-you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-21-1949-marionettes-inc-warning-8211-readmultiplex.org
+│   │       ├── 20260330-key-1949-warning-still-relevant.org
+│   │       ├── 20260330-key-1950-warning-still-relevant.org
+│   │       ├── 20260330-key-5000-days-window.org
+│   │       ├── 20260330-key-abundance-as-opportunity.org
+│   │       ├── 20260330-key-abundance-era-livelihood.org
+│   │       ├── 20260330-key-abundance-mindset.org
+│   │       ├── 20260330-key-abundance-mindset-shift.org
+│   │       ├── 20260330-key-abundance-without-purpose.org
+│   │       ├── 20260330-key-active-abundance.org
+│   │       ├── 20260330-key-ai-abundance-phase-shift.org
+│   │       ├── 20260330-key-ai-augmented-enterprise.org
+│   │       ├── 20260330-key-amplification-not-replacement.org
+│   │       ├── 20260330-key-anti-deskilling-practice.org
+│   │       ├── 20260330-key-architect-role.org
+│   │       ├── 20260330-key-architect-vs-speculator.org
+│   │       ├── 20260330-key-artisan-age-dawn.org
+│   │       ├── 20260330-key-artisan-ai-collaboration.org
+│   │       ├── 20260330-key-artisan-awakening.org
+│   │       ├── 20260330-key-artisan-economy.org
+│   │       ├── 20260330-key-artisan-entrepreneurship.org
+│   │       ├── 20260330-key-artisan-lifestyle.org
+│   │       ├── 20260330-key-authentic-living.org
+│   │       ├── 20260330-key-automation-dystopia.org
+│   │       ├── 20260330-key-autonomous-business-ownership.org
+│   │       ├── 20260330-key-avoiding-behavioral-sink.org
+│   │       ├── 20260330-key-avoiding-cobol-repeat.org
+│   │       ├── 20260330-key-avoiding-mass-despair.org
+│   │       ├── 20260330-key-behavioral-sink.org
+│   │       ├── 20260330-key-benevolent-overprotection.org
+│   │       ├── 20260330-key-between-worlds.org
+│   │       ├── 20260330-key-beyond-profit.org
+│   │       ├── 20260330-key-boundaries-with-ai.org
+│   │       ├── 20260330-key-broad-based-prosperity.org
+│   │       ├── 20260330-key-building-while-breaking.org
+│   │       ├── 20260330-key-choose-creation.org
+│   │       ├── 20260330-key-choose-humanity.org
+│   │       ├── 20260330-key-civilizational-legacy.org
+│   │       ├── 20260330-key-civilizational-pivot.org
+│   │       ├── 20260330-key-cobol-shock-analogy.org
+│   │       ├── 20260330-key-cognitive-job-obsolescence.org
+│   │       ├── 20260330-key-collective-choice.org
+│   │       ├── 20260330-key-collective-preparation.org
+│   │       ├── 20260330-key-complementary-strengths.org
+│   │       ├── 20260330-key-conscious-counteraction.org
+│   │       ├── 20260330-key-conscious-navigation-chaos.org
+│   │       ├── 20260330-key-conscious-navigation.org
+│   │       ├── 20260330-key-conscious-passage.org
+│   │       ├── 20260330-key-conscious-shaping.org
+│   │       ├── 20260330-key-conscious-system-design.org
+│   │       ├── 20260330-key-coordinated-response.org
+│   │       ├── 20260330-key-courage-in-chaos.org
+│   │       ├── 20260330-key-craftsmanship-loss.org
+│   │       ├── 20260330-key-creation-for-its-own-sake.org
+│   │       ├── 20260330-key-creativity-over-consumption.org
+│   │       ├── 20260330-key-cultural-sacristy.org
+│   │       ├── 20260330-key-cultural-wisdom-bank.org
+│   │       ├── 20260330-key-cybercab-as-artisan-tool.org
+│   │       ├── 20260330-key-dark-night-of-the-soul.org
+│   │       ├── 20260330-key-dawn-of-abundance-reframing.org
+│   │       ├── 20260330-key-dawn-of-the-artisan-age.org
+│   │       ├── 20260330-key-death-and-rebirth.org
+│   │       ├── 20260330-key-decisive-window.org
+│   │       ├── 20260330-key-delegating-life.org
+│   │       ├── 20260330-key-designed-purpose.org
+│   │       ├── 20260330-key-designing-equity.org
+│   │       ├── 20260330-key-designing-the-abundance-era.org
+│   │       ├── 20260330-key-deskilling-acceleration.org
+│   │       ├── 20260330-key-deskilling-mitigation.org
+│   │       ├── 20260330-key-deskilling.org
+│   │       ├── 20260330-key-duo-as-new-identity.org
+│   │       ├── 20260330-key-duo-identity.org
+│   │       ├── 20260330-key-dynamic-duo.org
+│   │       ├── 20260330-key-dynamic-duo-revisited.org
+│   │       ├── 20260330-key-emergent-new-identity.org
+│   │       ├── 20260330-key-emergent-purpose.org
+│   │       ├── 20260330-key-end-of-work-as-identity.org
+│   │       ├── 20260330-key-equitable-abundance.org
+│   │       ├── 20260330-key-ethical-ai-guardrails.org
+│   │       ├── 20260330-key-final-5000-days-choice.org
+│   │       ├── 20260330-key-final-5000-days.org
+│   │       ├── 20260330-key-final-civilizational-choice.org
+│   │       ├── 20260330-key-gilded-age-lesson.org
+│   │       ├── 20260330-key-global-human-project.org
+│   │       ├── 20260330-key-heroic-agency.org
+│   │       ├── 20260330-key-hero-journey-abundance-era.org
+│   │       ├── 20260330-key-hero-journey-in-abundance.org
+│   │       ├── 20260330-key-hero-journey-reframing.org
+│   │       ├── 20260330-key-hero-path-forward.org
+│   │       ├── 20260330-key-hidden-sacristy-architect.org
+│   │       ├── 20260330-key-historical-precedent.org
+│   │       ├── 20260330-key-hopeful-urgency.org
+│   │       ├── 20260330-key-human-ai-operating-model.org
+│   │       ├── 20260330-key-human-ai-partnership.org
+│   │       ├── 20260330-key-human-centered-economy.org
+│   │       ├── 20260330-key-human-dignity-at-stake.org
+│   │       ├── 20260330-key-human-flourishing-post-work.org
+│   │       ├── 20260330-key-human-in-command.org
+│   │       ├── 20260330-key-human-in-the-lead.org
+│   │       ├── 20260330-key-human-in-the-loop-ownership.org
+│   │       ├── 20260330-key-humanity-choose.org
+│   │       ├── 20260330-key-identity-reconstruction.org
+│   │       ├── 20260330-key-inequality-risk.org
+│   │       ├── 20260330-key-institutional-breakdown.org
+│   │       ├── 20260330-key-interregnum-chaos.org
+│   │       ├── 20260330-key-intrinsic-mastery.org
+│   │       ├── 20260330-key-invisible-infrastructure.org
+│   │       ├── 20260330-key-joy-of-craft.org
+│   │       ├── 20260330-key-last-chance-civilization.org
+│   │       ├── 20260330-key-last-chance-to-design.org
+│   │       ├── 20260330-key-last-chance-window.org
+│   │       ├── 20260330-key-last-moment-of-agency.org
+│   │       ├── 20260330-key-last-window-to-save.org
+│   │       ├── 20260330-key-legacy-before-automation.org
+│   │       ├── 20260330-key-legacy-crafting.org
+│   │       ├── 20260330-key-legacy-decision.org
+│   │       ├── 20260330-key-legacy-we-leave.org
+│   │       ├── 20260330-key-letting-go.org
+│   │       ├── 20260330-key-leveraged-creativity.org
+│   │       ├── 20260330-key-lifelong-partnership.org
+│   │       ├── 20260330-key-location-independent-income.org
+│   │       ├── 20260330-key-loss-of-agency.org
+│   │       ├── 20260330-key-loss-of-authenticity.org
+│   │       ├── 20260330-key-loss-of-meaning.org
+│   │       ├── 20260330-key-low-capital-high-meaning.org
+│   │       ├── 20260330-key-low-overhead-high-leverage.org
+│   │       ├── 20260330-key-marionettes-inc-warning.org
+│   │       ├── 20260330-key-mass-awareness.org
+│   │       ├── 20260330-key-mass-cognitive-unemployment.org
+│   │       ├── 20260330-key-mitigation-through-wisdom.org
+│   │       ├── 20260330-key-mouse-utopia-warning.org
+│   │       ├── 20260330-key-navigational-operating-system.org
+│   │       ├── 20260330-key-new-artisan-economy.org
+│   │       ├── 20260330-key-new-civilization.org
+│   │       ├── 20260330-key-new-gilded-age.org
+│   │       ├── 20260330-key-new-incentives.org
+│   │       ├── 20260330-key-new-operating-system.org
+│   │       ├── 20260330-key-no-more-delay.org
+│   │       ├── 20260330-key-no-neutral-path.org
+│   │       ├── 20260330-key-no-one-is-exempt.org
+│   │       ├── 20260330-key-old-self-dissolution.org
+│   │       ├── 20260330-key-ownership-mindset.org
+│   │       ├── 20260330-key-passive-consumer-society.org
+│   │       ├── 20260330-key-passive-vs-active-future.org
+│   │       ├── 20260330-key-perfect-protection-dystopia.org
+│   │       ├── 20260330-key-perfect-substitute-dystopia.org
+│   │       ├── 20260330-key-personal-wisdom-archive.org
+│   │       ├── 20260330-key-phlebas-metaphor.org
+│   │       ├── 20260330-key-player-piano-metaphor.org
+│   │       ├── 20260330-key-post-labor-business-model.org
+│   │       ├── 20260330-key-post-labor-meaning.org
+│   │       ├── 20260330-key-post-labor-partnership.org
+│   │       ├── 20260330-key-post-scarcity-craft.org
+│   │       ├── 20260330-key-post-work-meaning-construction.org
+│   │       ├── 20260330-key-post-work-spiritual-growth.org
+│   │       ├── 20260330-key-practical-abundance-living.org
+│   │       ├── 20260330-key-practical-duo-practices.org
+│   │       ├── 20260330-key-preparation-window.org
+│   │       ├── 20260330-key-preservation-strategies.org
+│   │       ├── 20260330-key-preserve-human-agency.org
+│   │       ├── 20260330-key-preserve-human-struggle.org
+│   │       ├── 20260330-key-profit-and-architect.org
+│   │       ├── 20260330-key-purpose-after-abundance.org
+│   │       ├── 20260330-key-quiet-architects.org
+│   │       ├── 20260330-key-rebirth-into-abundance.org
+│   │       ├── 20260330-key-reframing-dawn-of-abundance.org
+│   │       ├── 20260330-key-renaissance-of-making.org
+│   │       ├── 20260330-key-resilient-meaning.org
+│   │       ├── 20260330-key-rite-of-passage.org
+│   │       ├── 20260330-key-rural-cybercab-company.org
+│   │       ├── 20260330-key-sacred-spaces-preservation.org
+│   │       ├── 20260330-key-science-fiction-as-training.org
+│   │       ├── 20260330-key-science-fiction-metaphor.org
+│   │       ├── 20260330-key-shared-5-000-day-window.org
+│   │       ├── 20260330-key-shared-prosperity-model.org
+│   │       ├── 20260330-key-silent-stewards.org
+│   │       ├── 20260330-key-skill-atrophy.org
+│   │       ├── 20260330-key-spiritual-crisis.org
+│   │       ├── 20260330-key-spiritual-transformation.org
+│   │       ├── 20260330-key-struggle-as-nutrient.org
+│   │       ├── 20260330-key-sudden-deskilling-event.org
+│   │       ├── 20260330-key-systematic-deskilling.org
+│   │       ├── 20260330-key-tacit-knowledge-capture.org
+│   │       ├── 20260330-key-tacit-knowledge-loss.org
+│   │       ├── 20260330-key-the-choice-is-ours.org
+│   │       ├── 20260330-key-training-the-duo.org
+│   │       ├── 20260330-key-transition-businesses.org
+│   │       ├── 20260330-key-universal-transition.org
+│   │       ├── 20260330-key-universe-25-analogy.org
+│   │       ├── 20260330-key-urgency-of-now.org
+│   │       ├── 20260330-key-urgency-of-the-choice.org
+│   │       ├── 20260330-key-wealth-concentration.org
+│   │       ├── 20260330-key-wisdom-at-risk.org
+│   │       ├── 20260330-key-wisdom-guardians.org
+│   │       ├── 20260330-key-wisdom-preservation-action.org
+│   │       ├── 20260330-key-wisdom-preservation-imperative.org
+│   │       ├── 20260330-key-wisdom-preservation.org
+│   │       ├── 20260330-key-wisdom-transmission-methods.org
+│   │       ├── 20260330-key-wisdom-transmission.org
+│   │       ├── 20260330-key-with-folded-hands-warning.org
+│   │       ├── 20260330-you-have-5000-days-part-10-summary.org
+│   │       ├── 20260330-you-have-5000-days-part-11-summary.org
+│   │       ├── 20260330-you-have-5000-days-part-12-summary.org
+│   │       ├── 20260330-you-have-5000-days-part-13-summary.org
+│   │       ├── 20260330-you-have-5000-days-part-14-summary.org
+│   │       ├── 20260330-you-have-5000-days-part-15-summary.org
+│   │       ├── 20260330-you-have-5000-days-part-16-summary.org
+│   │       ├── 20260330-you-have-5000-days-part-17-summary.org
+│   │       ├── 20260330-you-have-5000-days-part-18-summary.org
+│   │       ├── 20260330-you-have-5000-days-part-19-summary.org
+│   │       ├── 20260330-you-have-5000-days-part-20-summary.org
+│   │       ├── 20260330-you-have-5000-days-part-21-summary.org
+│   │       ├── 20260330-you-have-5000-days-part-22-summary.org
+│   │       ├── 20260330-you-have-5000-days-part-23-summary.org
+│   │       ├── 20260330-you-have-5000-days-part-24-summary.org
+│   │       ├── 20260330-you-have-5000-days-part-25-summary.org
+│   │       ├── 20260330-you-have-5000-days-part-2-summary.org
+│   │       ├── 20260330-you-have-5000-days-part-3-summary.org
+│   │       ├── 20260330-you-have-5000-days-part-4-summary.org
+│   │       ├── 20260330-you-have-5000-days-part-5-summary.org
+│   │       ├── 20260330-you-have-5000-days-part-6-summary.org
+│   │       ├── 20260330-you-have-5000-days-part-7-summary.org
+│   │       ├── 20260330-you-have-5000-days-part-8-summary.org
+│   │       ├── 20260330-you-have-5000-days-part-9-summary.org
+│   │       ├── 5000-days-part-01.html
+│   │       ├── 5000-days-part-02.html
+│   │       ├── 5000-days-part-03.html
+│   │       ├── 5000-days-part-04.html
+│   │       ├── 5000-days-part-05.html
+│   │       ├── 5000-days-part-06.html
+│   │       ├── 5000-days-part-07.html
+│   │       ├── 5000-days-part-08.html
+│   │       ├── 5000-days-part-09.html
+│   │       ├── 5000-days-part-10.html
+│   │       ├── 5000-days-part-11.html
+│   │       ├── 5000-days-part-12.html
+│   │       ├── 5000-days-part-13.html
+│   │       ├── 5000-days-part-14.html
+│   │       ├── 5000-days-part-15.html
+│   │       ├── 5000-days-part-16.html
+│   │       ├── 5000-days-part-17.html
+│   │       ├── 5000-days-part-18.html
+│   │       ├── 5000-days-part-19.html
+│   │       ├── 5000-days-part-20.html
+│   │       ├── 5000-days-part-21.html
+│   │       ├── 5000-days-part-22.html
+│   │       ├── 5000-days-part-23.html
+│   │       ├── 5000-days-part-24.html
+│   │       ├── 5000-days-part-25.html
+│   │       ├── 5000-days-urls.txt
+│   │       ├── 5000-days-urls.txt~
+│   │       ├── convert-to-org-roam.sh
+│   │       ├── cookies.txt
+│   │       └── download-5000-days.sh
+│   ├── chat-session3-2026-04-29.org
+│   ├── chat-session4-2026-04-29.org
+│   ├── chat-session5-2026-04-29.org
+│   ├── desk-set-movie.org
+│   ├── emerac-hallucination.org
+│   ├── grok-workflow
+│   │   └── 2026-04-26-chat-ingestion-summary.md
+│   ├── hermes
+│   │   ├── HermesGatewaySystemdUnitStabilityPi5.org
+│   │   └── README.org
+│   ├── human-computers.org
+│   ├── human-resource.org
+│   ├── interviews
+│   │   └── lawyer-interview-questions-local-ai-agent.md
+│   ├── pink-slip-slip.org
+│   ├── research
+│   │   └── atlanta-arrest-race-data.md
+│   └── session-summaries
+│       └── session-summary-2026-04-30-roemmele-part-25.org
+├── projects
+│   └── withnail-ceo
+│       ├── withnail-as-zho-ceo.org
+│       └── withnail-as-zho-ceo.org~
+├── raw
+│   ├── 100 Questions About Scalar-Longitudinal Waves — Part 1_ Foundations.html
+│   ├── 2026-04-09_karpathy-llm-wiki-gist.html
+│   ├── 2026-04-10_infranodus-llm-wiki-skill.html
+│   ├── 2026-04-10_roemmele-hidden-refresh-tax-gpu-memory.html
+│   ├── 2026-04-26_files
+│   │   ├── 010d5f10db12d783.js
+│   │   ├── 02a83b57cef4218d.js
+│   │   ├── 06a4fa67367d095e.js
+│   │   ├── 08c5f8442dbde8f4.js
+│   │   ├── 0c327661cfc50927.js
+│   │   ├── 117c6c9e49d3ca13.js
+│   │   ├── 1318c9548dd7fcc0.js
+│   │   ├── 156992e51d7af0aa.js
+│   │   ├── 15f8219b865bf876.js
+│   │   ├── 16b7eab97a4b17d6.js
+│   │   ├── 17b438028c23c1db.js
+│   │   ├── 18634a5498eeef52.js
+│   │   ├── 18bb1e905e5aebfa.js
+│   │   ├── 1927d712b6ecdab2.js
+│   │   ├── 19393e32766f9c84.js
+│   │   ├── 1b890ae83c92f2f7.js
+│   │   ├── 1dab517b52826866.js
+│   │   ├── 1dddd260988c32d1.js
+│   │   ├── 2122047419c8737f.js
+│   │   ├── 22d6350fa186f0cb.js
+│   │   ├── 22e719a3b0481054.js
+│   │   ├── 22e74881afa2c3a4.js
+│   │   ├── 263e9b977677eb6d.js
+│   │   ├── 2648fbc7a51a0b80.js
+│   │   ├── 28c606d338dc8922.js
+│   │   ├── 2c0c74f5c0738716.js
+│   │   ├── 2cb002cf1865fcf0.js
+│   │   ├── 3189155b9e72f163.js
+│   │   ├── 338045096b172712.js
+│   │   ├── 35e148a7885865d0.js
+│   │   ├── 38fbf7c6edf9c2a0.js
+│   │   ├── 39bf5d0e749af63e.js
+│   │   ├── 3b59d2d2db2dbb3f.js
+│   │   ├── 3b912e2cb4cb0077.js
+│   │   ├── 3d2190d3d098589e.js
+│   │   ├── 3ed2ac5d7f379ab9.css
+│   │   ├── 3f4632da90a97279.js
+│   │   ├── 40dd35e945106d9d.js
+│   │   ├── 4320a39ee374db2f.js
+│   │   ├── 449d8825965c58e3.js
+│   │   ├── 45ceb8b34d02a380.js
+│   │   ├── 464d5b8fe540b386.js
+│   │   ├── 4f951807db2bd531.js
+│   │   ├── 4fe2092e246bf56b.js
+│   │   ├── 50cf95f874e11c88.js
+│   │   ├── 591dd20abf35b56d.js
+│   │   ├── 5ec380daa1881c7f.css
+│   │   ├── 62ff35e984177cf8.js
+│   │   ├── 632bace4f45a6fa7.js
+│   │   ├── 650bdff5f2867572.js
+│   │   ├── 68f07a6a294902fb.js
+│   │   ├── 69eb003f1c0b5819.js
+│   │   ├── 6afee9727397239b.js
+│   │   ├── 6b1beaeb32df859c.js
+│   │   ├── 6e3b930db6a473d5.js
+│   │   ├── 6ece184870469e41.js
+│   │   ├── 6ef4e0617d989984.js
+│   │   ├── 6f2e0d05d2cb56cb.js
+│   │   ├── 72c87870216be159.js
+│   │   ├── 73d0ed326674152c.js
+│   │   ├── 73f0a229800b4a28.js
+│   │   ├── 781ede6e121ca383.js
+│   │   ├── 7842dc5ac5728f24.js
+│   │   ├── 7b15a69e9556e4cc.js
+│   │   ├── 7b19d4f5e73c5271.js
+│   │   ├── 837f5fd3c906cc82.js
+│   │   ├── 85f46cd4dec335ed.js
+│   │   ├── 8935f887a77410f3.js
+│   │   ├── 92ed7087c670880d.js
+│   │   ├── 94b6dc549e5cfc76.js
+│   │   ├── 97a30914ebad7aff.js
+│   │   ├── 9a202c33c12e6a04.js
+│   │   ├── 9b7ae45d52ed18e8.js
+│   │   ├── 9c35b429fe3a9186.js
+│   │   ├── 9d9542239c0af200.js
+│   │   ├── 9eaf43c4f5d61a1a.js
+│   │   ├── a53224671640c10e.js
+│   │   ├── a6dad97d9634a72d.js
+│   │   ├── a7ad33de23189ac4.js
+│   │   ├── a95c84c0735e129a.js
+│   │   ├── aa5c886c88afba30.js
+│   │   ├── aeea6b06d4c52ec5.js
+│   │   ├── api.js
+│   │   ├── b0fdd765eecc347d.js
+│   │   ├── ba87748be67b5659.js
+│   │   ├── baffdfacdefd5105.js
+│   │   ├── bec17a7d26e27936.js
+│   │   ├── bf7f50f0f76b6870.js
+│   │   ├── bfe285ec611196f7.js
+│   │   ├── c035b01a72cb7689.js
+│   │   ├── c433dc3d01b32d3f.js
+│   │   ├── c485df0b9170070f.js
+│   │   ├── c6c1e3f1f7acf0e3.js
+│   │   ├── c729d5b2cec9d23a.js
+│   │   ├── c7fddc0a89dc77d0.js
+│   │   ├── ca5caeeb11332eb3.js
+│   │   ├── cb=gapi.loaded_0
+│   │   ├── ceb3fc36c277af02.js
+│   │   ├── cf42fa19733bfff5.js
+│   │   ├── d064196eec3541e6.js
+│   │   ├── d48558f4041c1647.js
+│   │   ├── dc851ae96ee43080.js
+│   │   ├── de9cc3fa828c288a.js
+│   │   ├── df8ba0037385ebc7.js
+│   │   ├── dfbc68c7deadb780.css
+│   │   ├── e06607c2989d6b93.js
+│   │   ├── editor.main.css
+│   │   ├── editor.main.js
+│   │   ├── editor.main.nls.js
+│   │   ├── f4ac9550ed9db9e7.js
+│   │   ├── f613db248a641e40.js
+│   │   ├── f853b91b0d4ff991.js
+│   │   ├── favicons
+│   │   ├── favicons(1)
+│   │   ├── favicons(10)
+│   │   ├── favicons(11)
+│   │   ├── favicons(12)
+│   │   ├── favicons(13)
+│   │   ├── favicons(14)
+│   │   ├── favicons(15)
+│   │   ├── favicons(16)
+│   │   ├── favicons(17)
+│   │   ├── favicons(18)
+│   │   ├── favicons(19)
+│   │   ├── favicons(2)
+│   │   ├── favicons(20)
+│   │   ├── favicons(21)
+│   │   ├── favicons(22)
+│   │   ├── favicons(23)
+│   │   ├── favicons(24)
+│   │   ├── favicons(25)
+│   │   ├── favicons(26)
+│   │   ├── favicons(28)
+│   │   ├── favicons(29)
+│   │   ├── favicons(3)
+│   │   ├── favicons(30)
+│   │   ├── favicons(31)
+│   │   ├── favicons(32)
+│   │   ├── favicons(34)
+│   │   ├── favicons(35)
+│   │   ├── favicons(36)
+│   │   ├── favicons(37)
+│   │   ├── favicons(38)
+│   │   ├── favicons(39)
+│   │   ├── favicons(4)
+│   │   ├── favicons(40)
+│   │   ├── favicons(41)
+│   │   ├── favicons(42)
+│   │   ├── favicons(43)
+│   │   ├── favicons(44)
+│   │   ├── favicons(45)
+│   │   ├── favicons(46)
+│   │   ├── favicons(47)
+│   │   ├── favicons(48)
+│   │   ├── favicons(49)
+│   │   ├── favicons(5)
+│   │   ├── favicons(51)
+│   │   ├── favicons(52)
+│   │   ├── favicons(53)
+│   │   ├── favicons(54)
+│   │   ├── favicons(55)
+│   │   ├── favicons(56)
+│   │   ├── favicons(57)
+│   │   ├── favicons(58)
+│   │   ├── favicons(6)
+│   │   ├── favicons(60)
+│   │   ├── favicons(61)
+│   │   ├── favicons(7)
+│   │   ├── favicons(8)
+│   │   ├── favicons(9)
+│   │   ├── fb450cc0b3792625.js
+│   │   ├── fbc0b9d35ce3347a.js
+│   │   ├── fd6731c0a98fb5e0.js
+│   │   ├── gtm.js
+│   │   ├── js
+│   │   ├── loader.js
+│   │   ├── mjkmZC86DkGx97AF-profile-picture.webp
+│   │   ├── otBannerSdk.js
+│   │   ├── otSDKStub.js
+│   │   ├── powered_by_logo.svg
+│   │   ├── saved_resource.html
+│   │   ├── turbopack-0e90cbbbd4174f83.js
+│   │   ├── v8c78df7c7c0f484497ecbca7046644da1771523124516
+│   │   ├── xAI_Logomark_Light.png
+│   │   └── yrMXbXtF_normal.jpg
+│   ├── 2026-04-26.html
+│   ├── 2026-04-26-robocall_files
+│   │   ├── 010d5f10db12d783.js
+│   │   ├── 02a83b57cef4218d.js
+│   │   ├── 06a4fa67367d095e.js
+│   │   ├── 08c5f8442dbde8f4.js
+│   │   ├── 0c327661cfc50927.js
+│   │   ├── 117c6c9e49d3ca13.js
+│   │   ├── 1318c9548dd7fcc0.js
+│   │   ├── 156992e51d7af0aa.js
+│   │   ├── 15f8219b865bf876.js
+│   │   ├── 16b7eab97a4b17d6.js
+│   │   ├── 17b438028c23c1db.js
+│   │   ├── 18634a5498eeef52.js
+│   │   ├── 18bb1e905e5aebfa.js
+│   │   ├── 1927d712b6ecdab2.js
+│   │   ├── 19393e32766f9c84.js
+│   │   ├── 1b890ae83c92f2f7.js
+│   │   ├── 1dab517b52826866.js
+│   │   ├── 1dddd260988c32d1.js
+│   │   ├── 2122047419c8737f.js
+│   │   ├── 22d6350fa186f0cb.js
+│   │   ├── 22e719a3b0481054.js
+│   │   ├── 22e74881afa2c3a4.js
+│   │   ├── 263e9b977677eb6d.js
+│   │   ├── 2648fbc7a51a0b80.js
+│   │   ├── 28c606d338dc8922.js
+│   │   ├── 2c0c74f5c0738716.js
+│   │   ├── 2cb002cf1865fcf0.js
+│   │   ├── 3189155b9e72f163.js
+│   │   ├── 31ecdb3b797a7f02.js
+│   │   ├── 338045096b172712.js
+│   │   ├── 35e148a7885865d0.js
+│   │   ├── 38fbf7c6edf9c2a0.js
+│   │   ├── 39bf5d0e749af63e.js
+│   │   ├── 3b59d2d2db2dbb3f.js
+│   │   ├── 3b912e2cb4cb0077.js
+│   │   ├── 3d2190d3d098589e.js
+│   │   ├── 3ed2ac5d7f379ab9.css
+│   │   ├── 3f4632da90a97279.js
+│   │   ├── 40dd35e945106d9d.js
+│   │   ├── 4320a39ee374db2f.js
+│   │   ├── 449d8825965c58e3.js
+│   │   ├── 45ceb8b34d02a380.js
+│   │   ├── 464d5b8fe540b386.js
+│   │   ├── 4f951807db2bd531.js
+│   │   ├── 4fe2092e246bf56b.js
+│   │   ├── 50cf95f874e11c88.js
+│   │   ├── 591dd20abf35b56d.js
+│   │   ├── 5ec380daa1881c7f.css
+│   │   ├── 62ff35e984177cf8.js
+│   │   ├── 632bace4f45a6fa7.js
+│   │   ├── 650bdff5f2867572.js
+│   │   ├── 68f07a6a294902fb.js
+│   │   ├── 69eb003f1c0b5819.js
+│   │   ├── 6afee9727397239b.js
+│   │   ├── 6b1beaeb32df859c.js
+│   │   ├── 6e3b930db6a473d5.js
+│   │   ├── 6ece184870469e41.js
+│   │   ├── 6ef4e0617d989984.js
+│   │   ├── 6f2e0d05d2cb56cb.js
+│   │   ├── 72c87870216be159.js
+│   │   ├── 73d0ed326674152c.js
+│   │   ├── 73f0a229800b4a28.js
+│   │   ├── 781ede6e121ca383.js
+│   │   ├── 7842dc5ac5728f24.js
+│   │   ├── 7b15a69e9556e4cc.js
+│   │   ├── 7b19d4f5e73c5271.js
+│   │   ├── 837f5fd3c906cc82.js
+│   │   ├── 85f46cd4dec335ed.js
+│   │   ├── 8935f887a77410f3.js
+│   │   ├── 92ed7087c670880d.js
+│   │   ├── 94b6dc549e5cfc76.js
+│   │   ├── 97a30914ebad7aff.js
+│   │   ├── 9a202c33c12e6a04.js
+│   │   ├── 9b7ae45d52ed18e8.js
+│   │   ├── 9c35b429fe3a9186.js
+│   │   ├── 9d9542239c0af200.js
+│   │   ├── 9eaf43c4f5d61a1a.js
+│   │   ├── a53224671640c10e.js
+│   │   ├── a6dad97d9634a72d.js
+│   │   ├── a7ad33de23189ac4.js
+│   │   ├── a95c84c0735e129a.js
+│   │   ├── aa5c886c88afba30.js
+│   │   ├── aeea6b06d4c52ec5.js
+│   │   ├── api(1).js
+│   │   ├── api.js
+│   │   ├── b0fdd765eecc347d.js
+│   │   ├── b11774f71a8fbf12.js
+│   │   ├── ba87748be67b5659.js
+│   │   ├── baffdfacdefd5105.js
+│   │   ├── bec17a7d26e27936.js
+│   │   ├── bf7f50f0f76b6870.js
+│   │   ├── bfe285ec611196f7.js
+│   │   ├── c035b01a72cb7689.js
+│   │   ├── c433dc3d01b32d3f.js
+│   │   ├── c485df0b9170070f.js
+│   │   ├── c6c1e3f1f7acf0e3.js
+│   │   ├── c729d5b2cec9d23a.js
+│   │   ├── c7fddc0a89dc77d0.js
+│   │   ├── ca5caeeb11332eb3.js
+│   │   ├── cb=gapi.loaded_0
+│   │   ├── ceb3fc36c277af02.js
+│   │   ├── cf42fa19733bfff5.js
+│   │   ├── d064196eec3541e6.js
+│   │   ├── d48558f4041c1647.js
+│   │   ├── dc851ae96ee43080.js
+│   │   ├── de9cc3fa828c288a.js
+│   │   ├── df8ba0037385ebc7.js
+│   │   ├── dfbc68c7deadb780.css
+│   │   ├── e06607c2989d6b93.js
+│   │   ├── editor.main.css
+│   │   ├── editor.main.js
+│   │   ├── editor.main.nls.js
+│   │   ├── f4ac9550ed9db9e7.js
+│   │   ├── f613db248a641e40.js
+│   │   ├── f675e4cdc395be1c.js
+│   │   ├── f853b91b0d4ff991.js
+│   │   ├── favicons
+│   │   ├── favicons(1)
+│   │   ├── favicons(10)
+│   │   ├── favicons(11)
+│   │   ├── favicons(13)
+│   │   ├── favicons(15)
+│   │   ├── favicons(16)
+│   │   ├── favicons(17)
+│   │   ├── favicons(18)
+│   │   ├── favicons(19)
+│   │   ├── favicons(2)
+│   │   ├── favicons(20)
+│   │   ├── favicons(21)
+│   │   ├── favicons(22)
+│   │   ├── favicons(23)
+│   │   ├── favicons(24)
+│   │   ├── favicons(26)
+│   │   ├── favicons(27)
+│   │   ├── favicons(28)
+│   │   ├── favicons(29)
+│   │   ├── favicons(3)
+│   │   ├── favicons(30)
+│   │   ├── favicons(31)
+│   │   ├── favicons(32)
+│   │   ├── favicons(33)
+│   │   ├── favicons(34)
+│   │   ├── favicons(35)
+│   │   ├── favicons(36)
+│   │   ├── favicons(37)
+│   │   ├── favicons(38)
+│   │   ├── favicons(39)
+│   │   ├── favicons(4)
+│   │   ├── favicons(40)
+│   │   ├── favicons(41)
+│   │   ├── favicons(42)
+│   │   ├── favicons(5)
+│   │   ├── favicons(6)
+│   │   ├── favicons(7)
+│   │   ├── favicons(8)
+│   │   ├── favicons(9)
+│   │   ├── fb450cc0b3792625.js
+│   │   ├── fbc0b9d35ce3347a.js
+│   │   ├── fd6731c0a98fb5e0.js
+│   │   ├── gtm.js
+│   │   ├── js
+│   │   ├── loader.js
+│   │   ├── mjkmZC86DkGx97AF-profile-picture.webp
+│   │   ├── otBannerSdk.js
+│   │   ├── otSDKStub.js
+│   │   ├── powered_by_logo.svg
+│   │   ├── preview-image
+│   │   ├── preview-image(1)
+│   │   ├── preview-image(10)
+│   │   ├── preview-image(11)
+│   │   ├── preview-image(12)
+│   │   ├── preview-image(13)
+│   │   ├── preview-image(14)
+│   │   ├── preview-image(15)
+│   │   ├── preview-image(16)
+│   │   ├── preview-image(17)
+│   │   ├── preview-image(18)
+│   │   ├── preview-image(19)
+│   │   ├── preview-image(2)
+│   │   ├── preview-image(20)
+│   │   ├── preview-image(21)
+│   │   ├── preview-image(22)
+│   │   ├── preview-image(23)
+│   │   ├── preview-image(3)
+│   │   ├── preview-image(4)
+│   │   ├── preview-image(5)
+│   │   ├── preview-image(6)
+│   │   ├── preview-image(7)
+│   │   ├── preview-image(8)
+│   │   ├── preview-image(9)
+│   │   ├── saved_resource(1).html
+│   │   ├── saved_resource.html
+│   │   ├── turbopack-0e90cbbbd4174f83.js
+│   │   ├── v8c78df7c7c0f484497ecbca7046644da1771523124516
+│   │   └── xAI_Logomark_Light.png
+│   ├── 2026-04-26-robocall.html
+│   ├── 2026-04-29-chat-session3-Chat-session2-2026-04-26-html.html
+│   ├── 2026-04-29-chat-session4-chat4-2026-04-26-html.html
+│   ├── 20260504-zho-llm-wiki-compiler-prompt.org
+│   ├── 2026-05-13-1000-save-wisdom-questions.org~
+│   ├── 5000-days-part-25-desk-set-prophecy.md.bak
+│   ├── BrianRoemmelePortraitJPG.jpg
+│   ├── chat4-2026-04-26_files
+│   │   ├── 010d5f10db12d783.js
+│   │   ├── 08c5f8442dbde8f4.js
+│   │   ├── 096ae7afab2c543a.js
+│   │   ├── 1263ae1100bc8a56.js
+│   │   ├── 156992e51d7af0aa.js
+│   │   ├── 15f8219b865bf876.js
+│   │   ├── 17b438028c23c1db.js
+│   │   ├── 18634a5498eeef52.js
+│   │   ├── 18bb1e905e5aebfa.js
+│   │   ├── 1927d712b6ecdab2.js
+│   │   ├── 1b890ae83c92f2f7.js
+│   │   ├── 1dab517b52826866.js
+│   │   ├── 20b2f2f81b423ed9.js
+│   │   ├── 2122047419c8737f.js
+│   │   ├── 263e9b977677eb6d.js
+│   │   ├── 2648fbc7a51a0b80.js
+│   │   ├── 27bfa55d7bbe5fd4.js
+│   │   ├── 282ac0999b566d5b.js
+│   │   ├── 2c0c74f5c0738716.js
+│   │   ├── 2cb002cf1865fcf0.js
+│   │   ├── 3189155b9e72f163.js
+│   │   ├── 338045096b172712.js
+│   │   ├── 35e148a7885865d0.js
+│   │   ├── 388da8997fa46b6c.js
+│   │   ├── 3b59d2d2db2dbb3f.js
+│   │   ├── 3d2190d3d098589e.js
+│   │   ├── 3f1b1b997c66c802.js
+│   │   ├── 3f4632da90a97279.js
+│   │   ├── 40dd35e945106d9d.js
+│   │   ├── 4320a39ee374db2f.js
+│   │   ├── 449d8825965c58e3.js
+│   │   ├── 4f951807db2bd531.js
+│   │   ├── 4fe2092e246bf56b.js
+│   │   ├── 50cf95f874e11c88.js
+│   │   ├── 5689b37c7abe7544.js
+│   │   ├── 591dd20abf35b56d.js
+│   │   ├── 5ec380daa1881c7f.css
+│   │   ├── 62021edd09816f44.js
+│   │   ├── 62ff35e984177cf8.js
+│   │   ├── 632bace4f45a6fa7.js
+│   │   ├── 6331e0590b256fab.js
+│   │   ├── 650bdff5f2867572.js
+│   │   ├── 69eb003f1c0b5819.js
+│   │   ├── 6afee9727397239b.js
+│   │   ├── 6b1beaeb32df859c.js
+│   │   ├── 6e3b930db6a473d5.js
+│   │   ├── 6ece184870469e41.js
+│   │   ├── 70efb8c8d64ada1e.js
+│   │   ├── 7842dc5ac5728f24.js
+│   │   ├── 7b15a69e9556e4cc.js
+│   │   ├── 7b19d4f5e73c5271.js
+│   │   ├── 7d66aeb98bb178ca.js
+│   │   ├── 7f8d0b25697bd425.js
+│   │   ├── 85f46cd4dec335ed.js
+│   │   ├── 86ad5dafbd6909b8.js
+│   │   ├── 894abb1c167674a6.js
+│   │   ├── 8ff03e3f219cd388.js
+│   │   ├── 92ed7087c670880d.js
+│   │   ├── 97a30914ebad7aff.js
+│   │   ├── 9a202c33c12e6a04.js
+│   │   ├── a3b6205c523f0d3f.js
+│   │   ├── a49491c266304137.js
+│   │   ├── a53224671640c10e.js
+│   │   ├── a6dad97d9634a72d.js
+│   │   ├── a7ad33de23189ac4.js
+│   │   ├── a95c84c0735e129a.js
+│   │   ├── aa5c886c88afba30.js
+│   │   ├── ab732cb41b2c885c.js
+│   │   ├── api.js
+│   │   ├── ba87748be67b5659.js
+│   │   ├── baffdfacdefd5105.js
+│   │   ├── bd9fa590ef7a629a.js
+│   │   ├── bec17a7d26e27936.js
+│   │   ├── bf7f50f0f76b6870.js
+│   │   ├── bfe285ec611196f7.js
+│   │   ├── c035b01a72cb7689.js
+│   │   ├── c3441b75ee3d592b.js
+│   │   ├── c39589db71dadc5b.js
+│   │   ├── c433dc3d01b32d3f.js
+│   │   ├── c485df0b9170070f.js
+│   │   ├── c6d32d25158eb190.js
+│   │   ├── ca3f56c6be1507d0.css
+│   │   ├── cb=gapi.loaded_0
+│   │   ├── ccc94abe33cd4a86.js
+│   │   ├── ccef99ed763c56c0.js
+│   │   ├── ceb3fc36c277af02.js
+│   │   ├── cf42fa19733bfff5.js
+│   │   ├── cfabae69bc301b32.js
+│   │   ├── d92e8950ce55fd29.js
+│   │   ├── d944477dddf94175.js
+│   │   ├── dc851ae96ee43080.js
+│   │   ├── de9cc3fa828c288a.js
+│   │   ├── df8ba0037385ebc7.js
+│   │   ├── dfbc68c7deadb780.css
+│   │   ├── e1b652dcb4827426.js
+│   │   ├── editor.main.css
+│   │   ├── editor.main.js
+│   │   ├── editor.main.nls.js
+│   │   ├── f613db248a641e40.js
+│   │   ├── f6cc083ad1c21211.js
+│   │   ├── f853b91b0d4ff991.js
+│   │   ├── favicons
+│   │   ├── favicons(1)
+│   │   ├── favicons(2)
+│   │   ├── fbc0b9d35ce3347a.js
+│   │   ├── fbfe20e42244b68f.js
+│   │   ├── fd6731c0a98fb5e0.js
+│   │   ├── gtm.js
+│   │   ├── js
+│   │   ├── loader.js
+│   │   ├── mjkmZC86DkGx97AF-profile-picture.webp
+│   │   ├── otBannerSdk.js
+│   │   ├── otSDKStub.js
+│   │   ├── powered_by_logo.svg
+│   │   ├── saved_resource(1).html
+│   │   ├── saved_resource.html
+│   │   ├── turbopack-10640ca8c1171eaa.js
+│   │   ├── v8c78df7c7c0f484497ecbca7046644da1771523124516
+│   │   └── xAI_Logomark_Light.png
+│   ├── chat4-2026-04-26-final_files
+│   │   ├── 010d5f10db12d783.js
+│   │   ├── 02a83b57cef4218d.js
+│   │   ├── 08c5f8442dbde8f4.js
+│   │   ├── 0c327661cfc50927.js
+│   │   ├── 117c6c9e49d3ca13.js
+│   │   ├── 1318c9548dd7fcc0.js
+│   │   ├── 15393f5307bb97ce.js
+│   │   ├── 156992e51d7af0aa.js
+│   │   ├── 15f8219b865bf876.js
+│   │   ├── 17b438028c23c1db.js
+│   │   ├── 18634a5498eeef52.js
+│   │   ├── 18bb1e905e5aebfa.js
+│   │   ├── 1927d712b6ecdab2.js
+│   │   ├── 1b890ae83c92f2f7.js
+│   │   ├── 1bde1e7db1780306.js
+│   │   ├── 1dab517b52826866.js
+│   │   ├── 2122047419c8737f.js
+│   │   ├── 22e719a3b0481054.js
+│   │   ├── 247860c429dfde3e.js
+│   │   ├── 263e9b977677eb6d.js
+│   │   ├── 2648fbc7a51a0b80.js
+│   │   ├── 2737ee636f8687c0.js
+│   │   ├── 28c606d338dc8922.js
+│   │   ├── 2c0c74f5c0738716.js
+│   │   ├── 2cb002cf1865fcf0.js
+│   │   ├── 3189155b9e72f163.js
+│   │   ├── 331c63524d7ea6f7.js
+│   │   ├── 338045096b172712.js
+│   │   ├── 35e148a7885865d0.js
+│   │   ├── 38fbf7c6edf9c2a0.js
+│   │   ├── 3b59d2d2db2dbb3f.js
+│   │   ├── 3bcacd434f1d42ad.js
+│   │   ├── 3d2190d3d098589e.js
+│   │   ├── 3f4632da90a97279.js
+│   │   ├── 40dd35e945106d9d.js
+│   │   ├── 4320a39ee374db2f.js
+│   │   ├── 444dd03e69d02192.css
+│   │   ├── 449d8825965c58e3.js
+│   │   ├── 45ceb8b34d02a380.js
+│   │   ├── 464d5b8fe540b386.js
+│   │   ├── 4d92861c63208bc2.js
+│   │   ├── 4f951807db2bd531.js
+│   │   ├── 4fe2092e246bf56b.js
+│   │   ├── 50cf95f874e11c88.js
+│   │   ├── 591dd20abf35b56d.js
+│   │   ├── 5ec380daa1881c7f.css
+│   │   ├── 62ff35e984177cf8.js
+│   │   ├── 632bace4f45a6fa7.js
+│   │   ├── 63c1959319e6c84f.js
+│   │   ├── 650bdff5f2867572.js
+│   │   ├── 68f07a6a294902fb.js
+│   │   ├── 69eb003f1c0b5819.js
+│   │   ├── 6afee9727397239b.js
+│   │   ├── 6b1beaeb32df859c.js
+│   │   ├── 6e3b930db6a473d5.js
+│   │   ├── 6ece184870469e41.js
+│   │   ├── 6ef4e0617d989984.js
+│   │   ├── 6f2e0d05d2cb56cb.js
+│   │   ├── 73d0ed326674152c.js
+│   │   ├── 77fc6fe20944e610.js
+│   │   ├── 781ede6e121ca383.js
+│   │   ├── 7842dc5ac5728f24.js
+│   │   ├── 79d20c7326e073f8.js
+│   │   ├── 7b15a69e9556e4cc.js
+│   │   ├── 7b19d4f5e73c5271.js
+│   │   ├── 7d66aeb98bb178ca.js
+│   │   ├── 85f46cd4dec335ed.js
+│   │   ├── 8935f887a77410f3.js
+│   │   ├── 8ff03e3f219cd388.js
+│   │   ├── 92ed7087c670880d.js
+│   │   ├── 97a30914ebad7aff.js
+│   │   ├── 9a202c33c12e6a04.js
+│   │   ├── 9b7ae45d52ed18e8.js
+│   │   ├── a49491c266304137.js
+│   │   ├── a53224671640c10e.js
+│   │   ├── a6dad97d9634a72d.js
+│   │   ├── a7ad33de23189ac4.js
+│   │   ├── a7f9969f32c9b257.js
+│   │   ├── a95c84c0735e129a.js
+│   │   ├── aa5c886c88afba30.js
+│   │   ├── api.js
+│   │   ├── b0fdd765eecc347d.js
+│   │   ├── b11774f71a8fbf12.js
+│   │   ├── b8dc17a3f9d02fd5.js
+│   │   ├── ba87748be67b5659.js
+│   │   ├── baffdfacdefd5105.js
+│   │   ├── bec17a7d26e27936.js
+│   │   ├── bf7f50f0f76b6870.js
+│   │   ├── bfe285ec611196f7.js
+│   │   ├── c035b01a72cb7689.js
+│   │   ├── c39589db71dadc5b.js
+│   │   ├── c433dc3d01b32d3f.js
+│   │   ├── c485df0b9170070f.js
+│   │   ├── c6c1e3f1f7acf0e3.js
+│   │   ├── c729d5b2cec9d23a.js
+│   │   ├── c7fddc0a89dc77d0.js
+│   │   ├── cb=gapi.loaded_0
+│   │   ├── cd0f579a412262b0.js
+│   │   ├── ceb3fc36c277af02.js
+│   │   ├── cf42fa19733bfff5.js
+│   │   ├── dc851ae96ee43080.js
+│   │   ├── dd5ee21ce14ce237.js
+│   │   ├── de9cc3fa828c288a.js
+│   │   ├── df8ba0037385ebc7.js
+│   │   ├── dfbc68c7deadb780.css
+│   │   ├── editor.main.css
+│   │   ├── editor.main.js
+│   │   ├── editor.main.nls.js
+│   │   ├── f356971fd61a7a15.js
+│   │   ├── f4ac9550ed9db9e7.js
+│   │   ├── f5933c069c23da56.js
+│   │   ├── f613db248a641e40.js
+│   │   ├── f675e4cdc395be1c.js
+│   │   ├── f853b91b0d4ff991.js
+│   │   ├── favicons
+│   │   ├── favicons(1)
+│   │   ├── favicons(11)
+│   │   ├── favicons(12)
+│   │   ├── favicons(13)
+│   │   ├── favicons(14)
+│   │   ├── favicons(15)
+│   │   ├── favicons(16)
+│   │   ├── favicons(17)
+│   │   ├── favicons(18)
+│   │   ├── favicons(19)
+│   │   ├── favicons(2)
+│   │   ├── favicons(20)
+│   │   ├── favicons(21)
+│   │   ├── favicons(22)
+│   │   ├── favicons(3)
+│   │   ├── favicons(4)
+│   │   ├── favicons(5)
+│   │   ├── favicons(6)
+│   │   ├── favicons(7)
+│   │   ├── favicons(8)
+│   │   ├── favicons(9)
+│   │   ├── fbc0b9d35ce3347a.js
+│   │   ├── fd6731c0a98fb5e0.js
+│   │   ├── fdf52000-c16b-404b-ae01-6c84436985b9.html
+│   │   ├── fe9611369c048bdd.js
+│   │   ├── gtm.js
+│   │   ├── js
+│   │   ├── loader.js
+│   │   ├── mjkmZC86DkGx97AF-profile-picture.webp
+│   │   ├── otBannerSdk.js
+│   │   ├── otSDKStub.js
+│   │   ├── powered_by_logo.svg
+│   │   ├── preview-image
+│   │   ├── preview-image(1)
+│   │   ├── saved_resource(1).html
+│   │   ├── saved_resource.html
+│   │   ├── turbopack-bfdf3210b5e063a6.js
+│   │   ├── v8c78df7c7c0f484497ecbca7046644da1771523124516
+│   │   └── xAI_Logomark_Light.png
+│   ├── chat4-2026-04-26.html
+│   ├── chat5-2026-04-29_files
+│   │   ├── 010d5f10db12d783.js
+│   │   ├── 02a83b57cef4218d.js
+│   │   ├── 08c5f8442dbde8f4.js
+│   │   ├── 096ae7afab2c543a.js
+│   │   ├── 1263ae1100bc8a56.js
+│   │   ├── 1318c9548dd7fcc0.js
+│   │   ├── 156992e51d7af0aa.js
+│   │   ├── 15f8219b865bf876.js
+│   │   ├── 17b438028c23c1db.js
+│   │   ├── 18634a5498eeef52.js
+│   │   ├── 18bb1e905e5aebfa.js
+│   │   ├── 1927d712b6ecdab2.js
+│   │   ├── 1b890ae83c92f2f7.js
+│   │   ├── 1dab517b52826866.js
+│   │   ├── 20b2f2f81b423ed9.js
+│   │   ├── 2122047419c8737f.js
+│   │   ├── 22e719a3b0481054.js
+│   │   ├── 263e9b977677eb6d.js
+│   │   ├── 2648fbc7a51a0b80.js
+│   │   ├── 27bfa55d7bbe5fd4.js
+│   │   ├── 282ac0999b566d5b.js
+│   │   ├── 28c606d338dc8922.js
+│   │   ├── 2c0c74f5c0738716.js
+│   │   ├── 2cb002cf1865fcf0.js
+│   │   ├── 3189155b9e72f163.js
+│   │   ├── 338045096b172712.js
+│   │   ├── 35e148a7885865d0.js
+│   │   ├── 388da8997fa46b6c.js
+│   │   ├── 38fbf7c6edf9c2a0.js
+│   │   ├── 3b59d2d2db2dbb3f.js
+│   │   ├── 3d2190d3d098589e.js
+│   │   ├── 3f1b1b997c66c802.js
+│   │   ├── 3f4632da90a97279.js
+│   │   ├── 40dd35e945106d9d.js
+│   │   ├── 4320a39ee374db2f.js
+│   │   ├── 449d8825965c58e3.js
+│   │   ├── 4f951807db2bd531.js
+│   │   ├── 4fe2092e246bf56b.js
+│   │   ├── 50cf95f874e11c88.js
+│   │   ├── 5689b37c7abe7544.js
+│   │   ├── 591dd20abf35b56d.js
+│   │   ├── 5ec380daa1881c7f.css
+│   │   ├── 62021edd09816f44.js
+│   │   ├── 62ff35e984177cf8.js
+│   │   ├── 632bace4f45a6fa7.js
+│   │   ├── 6331e0590b256fab.js
+│   │   ├── 650bdff5f2867572.js
+│   │   ├── 68f07a6a294902fb.js
+│   │   ├── 69eb003f1c0b5819.js
+│   │   ├── 6afee9727397239b.js
+│   │   ├── 6b1beaeb32df859c.js
+│   │   ├── 6e3b930db6a473d5.js
+│   │   ├── 6ece184870469e41.js
+│   │   ├── 6ef4e0617d989984.js
+│   │   ├── 6f2e0d05d2cb56cb.js
+│   │   ├── 70efb8c8d64ada1e.js
+│   │   ├── 781ede6e121ca383.js
+│   │   ├── 7842dc5ac5728f24.js
+│   │   ├── 7b15a69e9556e4cc.js
+│   │   ├── 7b19d4f5e73c5271.js
+│   │   ├── 7d66aeb98bb178ca.js
+│   │   ├── 7f8d0b25697bd425.js
+│   │   ├── 85f46cd4dec335ed.js
+│   │   ├── 86ad5dafbd6909b8.js
+│   │   ├── 894abb1c167674a6.js
+│   │   ├── 8ff03e3f219cd388.js
+│   │   ├── 92ed7087c670880d.js
+│   │   ├── 97a30914ebad7aff.js
+│   │   ├── 9a202c33c12e6a04.js
+│   │   ├── 9b7ae45d52ed18e8.js
+│   │   ├── a3b6205c523f0d3f.js
+│   │   ├── a49491c266304137.js
+│   │   ├── a53224671640c10e.js
+│   │   ├── a6dad97d9634a72d.js
+│   │   ├── a7ad33de23189ac4.js
+│   │   ├── a95c84c0735e129a.js
+│   │   ├── aa5c886c88afba30.js
+│   │   ├── ab732cb41b2c885c.js
+│   │   ├── api.js
+│   │   ├── b0fdd765eecc347d.js
+│   │   ├── b11774f71a8fbf12.js
+│   │   ├── ba87748be67b5659.js
+│   │   ├── baffdfacdefd5105.js
+│   │   ├── bd9fa590ef7a629a.js
+│   │   ├── bec17a7d26e27936.js
+│   │   ├── bf7f50f0f76b6870.js
+│   │   ├── bfe285ec611196f7.js
+│   │   ├── c035b01a72cb7689.js
+│   │   ├── c3441b75ee3d592b.js
+│   │   ├── c39589db71dadc5b.js
+│   │   ├── c433dc3d01b32d3f.js
+│   │   ├── c485df0b9170070f.js
+│   │   ├── c6c1e3f1f7acf0e3.js
+│   │   ├── c6d32d25158eb190.js
+│   │   ├── ca3f56c6be1507d0.css
+│   │   ├── cb=gapi.loaded_0
+│   │   ├── ccc94abe33cd4a86.js
+│   │   ├── ccef99ed763c56c0.js
+│   │   ├── ceb3fc36c277af02.js
+│   │   ├── cf42fa19733bfff5.js
+│   │   ├── cfabae69bc301b32.js
+│   │   ├── d92e8950ce55fd29.js
+│   │   ├── d944477dddf94175.js
+│   │   ├── dc851ae96ee43080.js
+│   │   ├── de9cc3fa828c288a.js
+│   │   ├── df8ba0037385ebc7.js
+│   │   ├── dfbc68c7deadb780.css
+│   │   ├── e1b652dcb4827426.js
+│   │   ├── editor.main.css
+│   │   ├── editor.main.js
+│   │   ├── editor.main.nls.js
+│   │   ├── f4ac9550ed9db9e7.js
+│   │   ├── f613db248a641e40.js
+│   │   ├── f675e4cdc395be1c.js
+│   │   ├── f6cc083ad1c21211.js
+│   │   ├── f853b91b0d4ff991.js
+│   │   ├── favicons
+│   │   ├── favicons(1)
+│   │   ├── favicons(11)
+│   │   ├── favicons(12)
+│   │   ├── favicons(13)
+│   │   ├── favicons(14)
+│   │   ├── favicons(15)
+│   │   ├── favicons(16)
+│   │   ├── favicons(17)
+│   │   ├── favicons(18)
+│   │   ├── favicons(19)
+│   │   ├── favicons(2)
+│   │   ├── favicons(20)
+│   │   ├── favicons(21)
+│   │   ├── favicons(22)
+│   │   ├── favicons(3)
+│   │   ├── favicons(4)
+│   │   ├── favicons(5)
+│   │   ├── favicons(6)
+│   │   ├── favicons(7)
+│   │   ├── favicons(8)
+│   │   ├── favicons(9)
+│   │   ├── fbc0b9d35ce3347a.js
+│   │   ├── fbfe20e42244b68f.js
+│   │   ├── fd6731c0a98fb5e0.js
+│   │   ├── gtm.js
+│   │   ├── js
+│   │   ├── js(1)
+│   │   ├── loader.js
+│   │   ├── mjkmZC86DkGx97AF-profile-picture.webp
+│   │   ├── otBannerSdk.js
+│   │   ├── otSDKStub.js
+│   │   ├── powered_by_logo.svg
+│   │   ├── preview-image
+│   │   ├── preview-image(1)
+│   │   ├── preview-image(2)
+│   │   ├── preview-image(3)
+│   │   ├── saved_resource(1).html
+│   │   ├── saved_resource.html
+│   │   ├── turbopack-10640ca8c1171eaa.js
+│   │   ├── v8c78df7c7c0f484497ecbca7046644da1771523124516
+│   │   └── xAI_Logomark_Light.png
+│   ├── chat5-2026-04-29.html
+│   ├── Chat-session2-2026-04-26_files
+│   │   ├── 010d5f10db12d783.js
+│   │   ├── 02a83b57cef4218d.js
+│   │   ├── 08c5f8442dbde8f4.js
+│   │   ├── 0c327661cfc50927.js
+│   │   ├── 117c6c9e49d3ca13.js
+│   │   ├── 1318c9548dd7fcc0.js
+│   │   ├── 15393f5307bb97ce.js
+│   │   ├── 156992e51d7af0aa.js
+│   │   ├── 15f8219b865bf876.js
+│   │   ├── 17b438028c23c1db.js
+│   │   ├── 18634a5498eeef52.js
+│   │   ├── 18bb1e905e5aebfa.js
+│   │   ├── 1927d712b6ecdab2.js
+│   │   ├── 1b890ae83c92f2f7.js
+│   │   ├── 1bde1e7db1780306.js
+│   │   ├── 1dab517b52826866.js
+│   │   ├── 2122047419c8737f.js
+│   │   ├── 22e719a3b0481054.js
+│   │   ├── 247860c429dfde3e.js
+│   │   ├── 263e9b977677eb6d.js
+│   │   ├── 2648fbc7a51a0b80.js
+│   │   ├── 2737ee636f8687c0.js
+│   │   ├── 28c606d338dc8922.js
+│   │   ├── 2c0c74f5c0738716.js
+│   │   ├── 2cb002cf1865fcf0.js
+│   │   ├── 3189155b9e72f163.js
+│   │   ├── 331c63524d7ea6f7.js
+│   │   ├── 338045096b172712.js
+│   │   ├── 35e148a7885865d0.js
+│   │   ├── 38fbf7c6edf9c2a0.js
+│   │   ├── 3b59d2d2db2dbb3f.js
+│   │   ├── 3bcacd434f1d42ad.js
+│   │   ├── 3d2190d3d098589e.js
+│   │   ├── 3f4632da90a97279.js
+│   │   ├── 40dd35e945106d9d.js
+│   │   ├── 4320a39ee374db2f.js
+│   │   ├── 444dd03e69d02192.css
+│   │   ├── 449d8825965c58e3.js
+│   │   ├── 45ceb8b34d02a380.js
+│   │   ├── 464d5b8fe540b386.js
+│   │   ├── 4d92861c63208bc2.js
+│   │   ├── 4f951807db2bd531.js
+│   │   ├── 4fe2092e246bf56b.js
+│   │   ├── 50cf95f874e11c88.js
+│   │   ├── 591dd20abf35b56d.js
+│   │   ├── 5ec380daa1881c7f.css
+│   │   ├── 62ff35e984177cf8.js
+│   │   ├── 632bace4f45a6fa7.js
+│   │   ├── 63c1959319e6c84f.js
+│   │   ├── 650bdff5f2867572.js
+│   │   ├── 68f07a6a294902fb.js
+│   │   ├── 69eb003f1c0b5819.js
+│   │   ├── 6afee9727397239b.js
+│   │   ├── 6b1beaeb32df859c.js
+│   │   ├── 6e3b930db6a473d5.js
+│   │   ├── 6ece184870469e41.js
+│   │   ├── 6ef4e0617d989984.js
+│   │   ├── 6f2e0d05d2cb56cb.js
+│   │   ├── 73d0ed326674152c.js
+│   │   ├── 77fc6fe20944e610.js
+│   │   ├── 781ede6e121ca383.js
+│   │   ├── 7842dc5ac5728f24.js
+│   │   ├── 79d20c7326e073f8.js
+│   │   ├── 7b15a69e9556e4cc.js
+│   │   ├── 7b19d4f5e73c5271.js
+│   │   ├── 7d66aeb98bb178ca.js
+│   │   ├── 85f46cd4dec335ed.js
+│   │   ├── 8935f887a77410f3.js
+│   │   ├── 8ff03e3f219cd388.js
+│   │   ├── 92ed7087c670880d.js
+│   │   ├── 97a30914ebad7aff.js
+│   │   ├── 9a202c33c12e6a04.js
+│   │   ├── 9b7ae45d52ed18e8.js
+│   │   ├── a49491c266304137.js
+│   │   ├── a53224671640c10e.js
+│   │   ├── a6dad97d9634a72d.js
+│   │   ├── a7ad33de23189ac4.js
+│   │   ├── a7f9969f32c9b257.js
+│   │   ├── a95c84c0735e129a.js
+│   │   ├── aa5c886c88afba30.js
+│   │   ├── api.js
+│   │   ├── b0fdd765eecc347d.js
+│   │   ├── b8dc17a3f9d02fd5.js
+│   │   ├── ba87748be67b5659.js
+│   │   ├── baffdfacdefd5105.js
+│   │   ├── bec17a7d26e27936.js
+│   │   ├── bf7f50f0f76b6870.js
+│   │   ├── bfe285ec611196f7.js
+│   │   ├── c035b01a72cb7689.js
+│   │   ├── c39589db71dadc5b.js
+│   │   ├── c433dc3d01b32d3f.js
+│   │   ├── c485df0b9170070f.js
+│   │   ├── c6c1e3f1f7acf0e3.js
+│   │   ├── c729d5b2cec9d23a.js
+│   │   ├── c7fddc0a89dc77d0.js
+│   │   ├── cb=gapi.loaded_0
+│   │   ├── cd0f579a412262b0.js
+│   │   ├── ceb3fc36c277af02.js
+│   │   ├── cf42fa19733bfff5.js
+│   │   ├── dc851ae96ee43080.js
+│   │   ├── dd5ee21ce14ce237.js
+│   │   ├── de9cc3fa828c288a.js
+│   │   ├── df8ba0037385ebc7.js
+│   │   ├── dfbc68c7deadb780.css
+│   │   ├── editor.main.css
+│   │   ├── editor.main.js
+│   │   ├── editor.main.nls.js
+│   │   ├── f356971fd61a7a15.js
+│   │   ├── f4ac9550ed9db9e7.js
+│   │   ├── f5933c069c23da56.js
+│   │   ├── f613db248a641e40.js
+│   │   ├── f853b91b0d4ff991.js
+│   │   ├── favicons
+│   │   ├── favicons(1)
+│   │   ├── favicons(11)
+│   │   ├── favicons(12)
+│   │   ├── favicons(13)
+│   │   ├── favicons(14)
+│   │   ├── favicons(15)
+│   │   ├── favicons(16)
+│   │   ├── favicons(17)
+│   │   ├── favicons(18)
+│   │   ├── favicons(19)
+│   │   ├── favicons(2)
+│   │   ├── favicons(20)
+│   │   ├── favicons(21)
+│   │   ├── favicons(22)
+│   │   ├── favicons(3)
+│   │   ├── favicons(4)
+│   │   ├── favicons(5)
+│   │   ├── favicons(6)
+│   │   ├── favicons(7)
+│   │   ├── favicons(8)
+│   │   ├── favicons(9)
+│   │   ├── fbc0b9d35ce3347a.js
+│   │   ├── fd6731c0a98fb5e0.js
+│   │   ├── fe9611369c048bdd.js
+│   │   ├── gtm.js
+│   │   ├── js
+│   │   ├── loader.js
+│   │   ├── mjkmZC86DkGx97AF-profile-picture.webp
+│   │   ├── otBannerSdk.js
+│   │   ├── otSDKStub.js
+│   │   ├── powered_by_logo.svg
+│   │   ├── preview-image
+│   │   ├── saved_resource(1).html
+│   │   ├── saved_resource.html
+│   │   ├── turbopack-bfdf3210b5e063a6.js
+│   │   ├── v8c78df7c7c0f484497ecbca7046644da1771523124516
+│   │   └── xAI_Logomark_Light.png
+│   ├── Chat-session2-2026-04-26.html
+│   ├── convert-to-org-roam.sh
+│   ├── Fixing a Whistling Toilet_ Fill Valve Guide - Grok_files
+│   │   ├── 010d5f10db12d783.js
+│   │   ├── 02a83b57cef4218d.js
+│   │   ├── 06a4fa67367d095e.js
+│   │   ├── 08c5f8442dbde8f4.js
+│   │   ├── 0c327661cfc50927.js
+│   │   ├── 117c6c9e49d3ca13.js
+│   │   ├── 1318c9548dd7fcc0.js
+│   │   ├── 156992e51d7af0aa.js
+│   │   ├── 15f8219b865bf876.js
+│   │   ├── 16b7eab97a4b17d6.js
+│   │   ├── 17b438028c23c1db.js
+│   │   ├── 18634a5498eeef52.js
+│   │   ├── 18bb1e905e5aebfa.js
+│   │   ├── 1927d712b6ecdab2.js
+│   │   ├── 19393e32766f9c84.js
+│   │   ├── 1b890ae83c92f2f7.js
+│   │   ├── 1dab517b52826866.js
+│   │   ├── 1dddd260988c32d1.js
+│   │   ├── 2122047419c8737f.js
+│   │   ├── 22d6350fa186f0cb.js
+│   │   ├── 22e719a3b0481054.js
+│   │   ├── 22e74881afa2c3a4.js
+│   │   ├── 263e9b977677eb6d.js
+│   │   ├── 2648fbc7a51a0b80.js
+│   │   ├── 28c606d338dc8922.js
+│   │   ├── 2c0c74f5c0738716.js
+│   │   ├── 2cb002cf1865fcf0.js
+│   │   ├── 3189155b9e72f163.js
+│   │   ├── 338045096b172712.js
+│   │   ├── 35e148a7885865d0.js
+│   │   ├── 38fbf7c6edf9c2a0.js
+│   │   ├── 39bf5d0e749af63e.js
+│   │   ├── 3b59d2d2db2dbb3f.js
+│   │   ├── 3b912e2cb4cb0077.js
+│   │   ├── 3d2190d3d098589e.js
+│   │   ├── 3ed2ac5d7f379ab9.css
+│   │   ├── 3f4632da90a97279.js
+│   │   ├── 40dd35e945106d9d.js
+│   │   ├── 4320a39ee374db2f.js
+│   │   ├── 449d8825965c58e3.js
+│   │   ├── 45ceb8b34d02a380.js
+│   │   ├── 464d5b8fe540b386.js
+│   │   ├── 4f951807db2bd531.js
+│   │   ├── 4fe2092e246bf56b.js
+│   │   ├── 50cf95f874e11c88.js
+│   │   ├── 591dd20abf35b56d.js
+│   │   ├── 5ec380daa1881c7f.css
+│   │   ├── 62ff35e984177cf8.js
+│   │   ├── 632bace4f45a6fa7.js
+│   │   ├── 650bdff5f2867572.js
+│   │   ├── 68f07a6a294902fb.js
+│   │   ├── 69eb003f1c0b5819.js
+│   │   ├── 6afee9727397239b.js
+│   │   ├── 6b1beaeb32df859c.js
+│   │   ├── 6e3b930db6a473d5.js
+│   │   ├── 6ece184870469e41.js
+│   │   ├── 6ef4e0617d989984.js
+│   │   ├── 6f2e0d05d2cb56cb.js
+│   │   ├── 72c87870216be159.js
+│   │   ├── 73d0ed326674152c.js
+│   │   ├── 73f0a229800b4a28.js
+│   │   ├── 781ede6e121ca383.js
+│   │   ├── 7842dc5ac5728f24.js
+│   │   ├── 7b15a69e9556e4cc.js
+│   │   ├── 7b19d4f5e73c5271.js
+│   │   ├── 837f5fd3c906cc82.js
+│   │   ├── 85f46cd4dec335ed.js
+│   │   ├── 8935f887a77410f3.js
+│   │   ├── 92ed7087c670880d.js
+│   │   ├── 94b6dc549e5cfc76.js
+│   │   ├── 97a30914ebad7aff.js
+│   │   ├── 9a202c33c12e6a04.js
+│   │   ├── 9b7ae45d52ed18e8.js
+│   │   ├── 9c35b429fe3a9186.js
+│   │   ├── 9d9542239c0af200.js
+│   │   ├── 9eaf43c4f5d61a1a.js
+│   │   ├── a53224671640c10e.js
+│   │   ├── a6dad97d9634a72d.js
+│   │   ├── a7ad33de23189ac4.js
+│   │   ├── a95c84c0735e129a.js
+│   │   ├── aa5c886c88afba30.js
+│   │   ├── aeea6b06d4c52ec5.js
+│   │   ├── api.js
+│   │   ├── b0fdd765eecc347d.js
+│   │   ├── ba87748be67b5659.js
+│   │   ├── baffdfacdefd5105.js
+│   │   ├── bec17a7d26e27936.js
+│   │   ├── bf7f50f0f76b6870.js
+│   │   ├── bfe285ec611196f7.js
+│   │   ├── c035b01a72cb7689.js
+│   │   ├── c433dc3d01b32d3f.js
+│   │   ├── c485df0b9170070f.js
+│   │   ├── c6c1e3f1f7acf0e3.js
+│   │   ├── c729d5b2cec9d23a.js
+│   │   ├── c7fddc0a89dc77d0.js
+│   │   ├── ca5caeeb11332eb3.js
+│   │   ├── cb=gapi.loaded_0
+│   │   ├── ceb3fc36c277af02.js
+│   │   ├── cf42fa19733bfff5.js
+│   │   ├── d064196eec3541e6.js
+│   │   ├── d48558f4041c1647.js
+│   │   ├── dc851ae96ee43080.js
+│   │   ├── de9cc3fa828c288a.js
+│   │   ├── df8ba0037385ebc7.js
+│   │   ├── dfbc68c7deadb780.css
+│   │   ├── e06607c2989d6b93.js
+│   │   ├── editor.main.css
+│   │   ├── editor.main.js
+│   │   ├── editor.main.nls.js
+│   │   ├── f4ac9550ed9db9e7.js
+│   │   ├── f613db248a641e40.js
+│   │   ├── f853b91b0d4ff991.js
+│   │   ├── favicons
+│   │   ├── favicons(1)
+│   │   ├── favicons(10)
+│   │   ├── favicons(11)
+│   │   ├── favicons(12)
+│   │   ├── favicons(13)
+│   │   ├── favicons(14)
+│   │   ├── favicons(15)
+│   │   ├── favicons(16)
+│   │   ├── favicons(17)
+│   │   ├── favicons(18)
+│   │   ├── favicons(19)
+│   │   ├── favicons(2)
+│   │   ├── favicons(20)
+│   │   ├── favicons(21)
+│   │   ├── favicons(22)
+│   │   ├── favicons(23)
+│   │   ├── favicons(24)
+│   │   ├── favicons(25)
+│   │   ├── favicons(26)
+│   │   ├── favicons(28)
+│   │   ├── favicons(29)
+│   │   ├── favicons(3)
+│   │   ├── favicons(30)
+│   │   ├── favicons(31)
+│   │   ├── favicons(32)
+│   │   ├── favicons(34)
+│   │   ├── favicons(35)
+│   │   ├── favicons(36)
+│   │   ├── favicons(37)
+│   │   ├── favicons(38)
+│   │   ├── favicons(39)
+│   │   ├── favicons(4)
+│   │   ├── favicons(40)
+│   │   ├── favicons(41)
+│   │   ├── favicons(42)
+│   │   ├── favicons(43)
+│   │   ├── favicons(44)
+│   │   ├── favicons(45)
+│   │   ├── favicons(46)
+│   │   ├── favicons(47)
+│   │   ├── favicons(48)
+│   │   ├── favicons(49)
+│   │   ├── favicons(5)
+│   │   ├── favicons(51)
+│   │   ├── favicons(52)
+│   │   ├── favicons(53)
+│   │   ├── favicons(54)
+│   │   ├── favicons(55)
+│   │   ├── favicons(56)
+│   │   ├── favicons(57)
+│   │   ├── favicons(58)
+│   │   ├── favicons(6)
+│   │   ├── favicons(60)
+│   │   ├── favicons(61)
+│   │   ├── favicons(7)
+│   │   ├── favicons(8)
+│   │   ├── favicons(9)
+│   │   ├── fb450cc0b3792625.js
+│   │   ├── fbc0b9d35ce3347a.js
+│   │   ├── fd6731c0a98fb5e0.js
+│   │   ├── gtm.js
+│   │   ├── js
+│   │   ├── loader.js
+│   │   ├── mjkmZC86DkGx97AF-profile-picture.webp
+│   │   ├── otBannerSdk.js
+│   │   ├── otSDKStub.js
+│   │   ├── powered_by_logo.svg
+│   │   ├── saved_resource.html
+│   │   ├── turbopack-0e90cbbbd4174f83.js
+│   │   ├── v8c78df7c7c0f484497ecbca7046644da1771523124516
+│   │   ├── xAI_Logomark_Light.png
+│   │   └── yrMXbXtF_normal.jpg
+│   ├── Fixing a Whistling Toilet_ Fill Valve Guide - Grok.html
+│   ├── Grok Memory Restore & 5000 Days Synthesis - Grok_files
+│   │   ├── 0054998c06fd0e4a.js
+│   │   ├── 01d2e611adb662d8.css
+│   │   ├── 02e4ca714aa74ce7.js
+│   │   ├── 031d3266df3b9a76.js
+│   │   ├── 038e4c844714f6f7.js
+│   │   ├── 0537f790bf175092.js
+│   │   ├── 0622b92f9d2d3221.js
+│   │   ├── 063c4e021a67d27f.js
+│   │   ├── 07ef9117d90b9705.js
+│   │   ├── 0876975e1b9188bb.js
+│   │   ├── 0ae7b8d2a3a37207.js
+│   │   ├── 0d32c2f3aa068aca.js
+│   │   ├── 0e1bec7bc5bb0c87.js
+│   │   ├── 0f3285e73a6d14c0.js
+│   │   ├── 0fed5c6e73ffe4fa.js
+│   │   ├── 1684198434608
+│   │   ├── 184bae5b0440f877.js
+│   │   ├── 1b2ce709cdb44a11.js
+│   │   ├── 1d78f2a21a2323ec.css
+│   │   ├── 1f4666c54d29dae9.js
+│   │   ├── 249a367a70461334.css
+│   │   ├── 269460cc66f535f0.js
+│   │   ├── 2fd86cbc24564086.js
+│   │   ├── 31025ffaaff13519.js
+│   │   ├── 36101671a5c567c6.js
+│   │   ├── 37660bc2b85c95ff.js
+│   │   ├── 37b12f335234c334.js
+│   │   ├── 38f8a562b28a638b.js
+│   │   ├── 39373517372b2de1.js
+│   │   ├── 3a2ea30f86559705.js
+│   │   ├── 3b3ac94d874b77ff.js
+│   │   ├── 3c35d0603fdf2137.js
+│   │   ├── 437f557a70bbd81a.js
+│   │   ├── 462baabfa4cfe61c.js
+│   │   ├── 47d4df379eb55dfd.js
+│   │   ├── 4ddfc4516fe92348.js
+│   │   ├── 4ef2c6721f7a363c.js
+│   │   ├── 52c2d32cf8e2d2d5.js
+│   │   ├── 56d6a0770861fc4b.js
+│   │   ├── 5a533d04ac8afb2f.js
+│   │   ├── 5f56175329837c06.js
+│   │   ├── 61a105e0c0d4f11a.js
+│   │   ├── 6894fcede76a8b37.js
+│   │   ├── 6a3b42c8fcf290a8.js
+│   │   ├── 6a622fda8fe78fb1.js
+│   │   ├── 6cb2cced4121de89.js
+│   │   ├── 6ee693ee9991f477.js
+│   │   ├── 6f2cad6e0aab2c9a.js
+│   │   ├── 71aa4c10a1c0052d.js
+│   │   ├── 745accf819bdef12.js
+│   │   ├── 74f9e621dbc792ca.js
+│   │   ├── 76aede1692546623.js
+│   │   ├── 77c59df3caa0a33c.js
+│   │   ├── 7c907676b10ea42a.js
+│   │   ├── 7d556a3c369d29b3.js
+│   │   ├── 80a9326d2652083d.js
+│   │   ├── 81246c47eed0ff22.js
+│   │   ├── 81ca4481294bacb0.js
+│   │   ├── 85963834ac0c8abb.js
+│   │   ├── 890f344c96d9cd43.js
+│   │   ├── 8c3e80b6c67ac79e.js
+│   │   ├── 8cbc628d3dfc3293.js
+│   │   ├── 926043ccd3aeebf4.js
+│   │   ├── 940cd999c924e86e.js
+│   │   ├── 962bf416bc6557f8.js
+│   │   ├── 974d501f58a574d0.js
+│   │   ├── 978d0a4956443fbb.js
+│   │   ├── 9d2fa2eeca90cf70.js
+│   │   ├── 9e179a6a-d278-447d-a87b-15fed44db5ad_1311x837.jpg
+│   │   ├── 9f5abe0a09e9c117.js
+│   │   ├── a0c3fbdf620cb5cf.js
+│   │   ├── a20ad06242fa5cc2.js
+│   │   ├── a6dad97d9634a72d.js
+│   │   ├── aa3f44004ec11ac0.js
+│   │   ├── ac7abf2d62c756f3.js
+│   │   ├── adcd26a063105b35.js
+│   │   ├── api.js
+│   │   ├── b03a503860e91efe.js
+│   │   ├── b5c2d56c6db6e0a7.js
+│   │   ├── b7120c15e085deec.js
+│   │   ├── b9a9cf8ef952b6ac.js
+│   │   ├── bb646cd437b534d2.js
+│   │   ├── bde744a350b90816.js
+│   │   ├── BrianRoemmelePortraitJPG.jpg
+│   │   ├── c43b127ac2b6a87a.js
+│   │   ├── c46ebc38991f62da.js
+│   │   ├── c4b7b814a9ddd16e.js
+│   │   ├── c5d7f3ee7365125b.js
+│   │   ├── c79489542c6b7b82.js
+│   │   ├── c98bea28823d05f7.js
+│   │   ├── c9e9cd3a8f623d1b.js
+│   │   ├── cb=gapi.loaded_0
+│   │   ├── cc952712de124af9.js
+│   │   ├── cccea5b58dd98f8f.js
+│   │   ├── cf8463edc33f9231.js
+│   │   ├── d055cb11e39ac7d9.js
+│   │   ├── d7288aff719a9b49.js
+│   │   ├── da3b2f44ea879066.js
+│   │   ├── dac02d13739ff34d.js
+│   │   ├── db839b65bb36c2fc.js
+│   │   ├── e4c22b566816c5f6.js
+│   │   ├── e78d4195dba4e729.js
+│   │   ├── e7daf613e38f5e58.js
+│   │   ├── e9046739bd23e785.js
+│   │   ├── e98c4bd667d5b87f.js
+│   │   ├── ed41d758e9e12977.js
+│   │   ├── editor.main.css
+│   │   ├── editor.main.js
+│   │   ├── editor.main.nls.js
+│   │   ├── ef3883d382f2e9b8.js
+│   │   ├── f138082108ba156a.js
+│   │   ├── f5ab0404e389fba6.js
+│   │   ├── f617a71b36aab3a3.js
+│   │   ├── f97bfa22dd74e284.js
+│   │   ├── fad3f79e3f8db6c8.js
+│   │   ├── fadf5e5d0290449f.js
+│   │   ├── favicons
+│   │   ├── favicons(1)
+│   │   ├── favicons(2)
+│   │   ├── favicons(3)
+│   │   ├── favicons(4)
+│   │   ├── favicons(5)
+│   │   ├── fb40849e85b348cc.js
+│   │   ├── ffc25eca13a2fdbf.js
+│   │   ├── ffd703ceb7f02dae.js
+│   │   ├── gtm.js
+│   │   ├── inner.html
+│   │   ├── js
+│   │   ├── loader.js
+│   │   ├── mjkmZC86DkGx97AF-profile-picture.webp
+│   │   ├── m-outer-15a2b40a058ddff1cffdb63779fe3de1.js
+│   │   ├── m-outer-3437aaddcdf6922d623e172c2d6f9278.html
+│   │   ├── otBannerSdk.js
+│   │   ├── otSDKStub.js
+│   │   ├── out-4.5.45.js
+│   │   ├── powered_by_logo.svg
+│   │   ├── saved_resource.html
+│   │   ├── stripe.js
+│   │   ├── turbopack-641f321c8013049c.js
+│   │   ├── v8c78df7c7c0f484497ecbca7046644da1771523124516
+│   │   └── xAI_Logomark_Light.png
+│   ├── Hermes-3-Llama-3.1-8B Q4KM for Raspberry Pi 5 - Grok_files
+│   │   ├── 01d2e611adb662d8.css
+│   │   ├── 02e4ca714aa74ce7.js
+│   │   ├── 031d3266df3b9a76.js
+│   │   ├── 038e4c844714f6f7.js
+│   │   ├── 0622b92f9d2d3221.js
+│   │   ├── 063c4e021a67d27f.js
+│   │   ├── 0876975e1b9188bb.js
+│   │   ├── 0a4dd6514e504040.js
+│   │   ├── 0ae7b8d2a3a37207.js
+│   │   ├── 0e1bec7bc5bb0c87.js
+│   │   ├── 0f3285e73a6d14c0.js
+│   │   ├── 0f3e8bb04b6ee3b8.js
+│   │   ├── 1135a4f05ae299a6.js
+│   │   ├── 184bae5b0440f877.js
+│   │   ├── 18707e1c160fb0d6.js
+│   │   ├── 1a1c1b951ae8c2db.js
+│   │   ├── 1c9b849346f6db78.js
+│   │   ├── 1f016e8e87bf10c0.js
+│   │   ├── 1f4666c54d29dae9.js
+│   │   ├── 23d3aa4558f8f2de.js
+│   │   ├── 249a367a70461334.css
+│   │   ├── 25dee640ec053db6.js
+│   │   ├── 269460cc66f535f0.js
+│   │   ├── 27a6a1aeb6697818.js
+│   │   ├── 2b39667db852ce09.css
+│   │   ├── 2f2df2e6a08d457c.js
+│   │   ├── 31025ffaaff13519.js
+│   │   ├── 32adc7008d96a93f.js
+│   │   ├── 33d02a31abf33611.js
+│   │   ├── 37660bc2b85c95ff.js
+│   │   ├── 37b12f335234c334.js
+│   │   ├── 38dc07beee7a74ee.js
+│   │   ├── 39373517372b2de1.js
+│   │   ├── 3a2ea30f86559705.js
+│   │   ├── 3ae1031fe4cf5d31.js
+│   │   ├── 3b3ac94d874b77ff.js
+│   │   ├── 3c35d0603fdf2137.js
+│   │   ├── 437f557a70bbd81a.js
+│   │   ├── 47d4df379eb55dfd.js
+│   │   ├── 4e3c5e46c301def5.js
+│   │   ├── 4ef2c6721f7a363c.js
+│   │   ├── 52c2d32cf8e2d2d5.js
+│   │   ├── 56d6a0770861fc4b.js
+│   │   ├── 5a533d04ac8afb2f.js
+│   │   ├── 5af73d5abd545356.js
+│   │   ├── 5eb1e50c6c3d1b88.js
+│   │   ├── 6153c124ff72c6de.js
+│   │   ├── 68ef0fd584580ecd.js
+│   │   ├── 6912a07b98f22f5e.js
+│   │   ├── 6a2e1c2fc9348577.js
+│   │   ├── 6a622fda8fe78fb1.js
+│   │   ├── 6b8fd727460e8614.js
+│   │   ├── 6c1f372d7c43030b.js
+│   │   ├── 6e275b71723ae907.js
+│   │   ├── 6e4fec93c6e0db64.js
+│   │   ├── 6ee693ee9991f477.js
+│   │   ├── 72e032cb6c207a9c.js
+│   │   ├── 745accf819bdef12.js
+│   │   ├── 74f9cf3c86c202cc.js
+│   │   ├── 7814dd876a6a9aae.js
+│   │   ├── 7a08e8eaa964372f.js
+│   │   ├── 7c907676b10ea42a.js
+│   │   ├── 7d556a3c369d29b3.js
+│   │   ├── 818adb635a97ddff.js
+│   │   ├── 81ca4481294bacb0.js
+│   │   ├── 85963834ac0c8abb.js
+│   │   ├── 86baac84afc2dab0.js
+│   │   ├── 873669f8427f5410.js
+│   │   ├── 8876b4c8cf8a8911.js
+│   │   ├── 890f344c96d9cd43.js
+│   │   ├── 893050d8b8b3c57a.js
+│   │   ├── 8abf1bba1878d82c.js
+│   │   ├── 8cbc628d3dfc3293.js
+│   │   ├── 8d21c98fa137ad0e.js
+│   │   ├── 8d2e0cc0d26076a3.js
+│   │   ├── 8f6cb4ae489ff6e8.js
+│   │   ├── 940cd999c924e86e.js
+│   │   ├── 962bf416bc6557f8.js
+│   │   ├── 9cbabe61d512f6fb.js
+│   │   ├── 9d2fa2eeca90cf70.js
+│   │   ├── a0711170053c622a.js
+│   │   ├── a6dad97d9634a72d.js
+│   │   ├── api.js
+│   │   ├── b03a503860e91efe.js
+│   │   ├── b5c2d56c6db6e0a7.js
+│   │   ├── b7120c15e085deec.js
+│   │   ├── bb30f4b315ee55bf.js
+│   │   ├── bde744a350b90816.js
+│   │   ├── c43b127ac2b6a87a.js
+│   │   ├── c46ebc38991f62da.js
+│   │   ├── c527ebaa837626ba.js
+│   │   ├── c5d7f3ee7365125b.js
+│   │   ├── c91c52e49e64b697.js
+│   │   ├── cb=gapi.loaded_0
+│   │   ├── cccea5b58dd98f8f.js
+│   │   ├── cf8463edc33f9231.js
+│   │   ├── d6aa7e6ba7dbcc28.js
+│   │   ├── d9c8cd2c13fec0f7.js
+│   │   ├── db839b65bb36c2fc.js
+│   │   ├── ddb2fd02084960da.js
+│   │   ├── df45b4956af7de88.js
+│   │   ├── e083696d87e88991.js
+│   │   ├── e9046739bd23e785.js
+│   │   ├── e98c4bd667d5b87f.js
+│   │   ├── e9dc33b7d3e1c687.js
+│   │   ├── editor.main.css
+│   │   ├── editor.main.js
+│   │   ├── editor.main.nls.js
+│   │   ├── ef3883d382f2e9b8.js
+│   │   ├── f617a71b36aab3a3.js
+│   │   ├── f89a4ab250bed7d6.js
+│   │   ├── f8c545e3dbc1edee.js
+│   │   ├── f97bfa22dd74e284.js
+│   │   ├── fa8895daceba0bd3.js
+│   │   ├── fad3f79e3f8db6c8.js
+│   │   ├── favicons
+│   │   ├── favicons(1)
+│   │   ├── favicons(2)
+│   │   ├── fb40849e85b348cc.js
+│   │   ├── fcca451210f4e17a.js
+│   │   ├── fe0aa1ac9b44356a.js
+│   │   ├── fe28695edfc5a035.js
+│   │   ├── ffc25eca13a2fdbf.js
+│   │   ├── ffd703ceb7f02dae.js
+│   │   ├── gtm.js
+│   │   ├── inner.html
+│   │   ├── loader.js
+│   │   ├── mjkmZC86DkGx97AF-profile-picture.webp
+│   │   ├── m-outer-15a2b40a058ddff1cffdb63779fe3de1.js
+│   │   ├── m-outer-3437aaddcdf6922d623e172c2d6f9278.html
+│   │   ├── otBannerSdk.js
+│   │   ├── otSDKStub.js
+│   │   ├── out-4.5.45.js
+│   │   ├── powered_by_logo.svg
+│   │   ├── saved_resource(1).html
+│   │   ├── saved_resource.html
+│   │   ├── stripe.js
+│   │   ├── turbopack-462348e093f02879.js
+│   │   ├── v8c78df7c7c0f484497ecbca7046644da1771523124516
+│   │   └── xAI_Logomark_Light.png
+│   ├── Hermes-3-Llama-3.1-8B Q4KM for Raspberry Pi 5 - Grok.html
+│   ├── infranodus-llm-wiki-skill.md
+│   ├── llm-wiki.md
+│   ├── ls-output.txt
+│   ├── master-roemmele-ingest.org
+│   ├── roemmele1684198434608.jpeg
+│   ├── roemmele9e179a6a-d278-447d-a87b-15fed44db5ad_1311x837.jpg
+│   ├── SaveWisdomQuestions-CLEANED.txt
+│   ├── SaveWisdomQuestions-full.txt
+│   ├── SaveWisdomQuestions-NEW-1.pdf
+│   ├── SaveWisdomQuestions-NEW-FIN-1.xlsx
+│   ├── SaveWisdomQuestionsNEW.txt
+│   ├── SaveWisdomQuestionsNEW.txt~
+│   ├── skills_skill-llm-wiki_SKILL.md at master · infranodus_skills · GitHub_files
+│   │   ├── 1269781
+│   │   ├── 15272-0fca7ba11b03440f.js
+│   │   ├── 18222-8b85d637a2041072.js
+│   │   ├── 20999-9b5648501d55c42d.js
+│   │   ├── 2231-a650b30a5111ab12.js
+│   │   ├── 2498-f0375ed070e22e54.js
+│   │   ├── 26497-258c25915deeacde.js
+│   │   ├── 26533-f22c29ae5e9b1ed2.js
+│   │   ├── 28839-7adfdde5afeb1a03.js
+│   │   ├── 2887-91b9c645d570616a.js
+│   │   ├── 2966-d68f2b4558d86113.js
+│   │   ├── 32769-abc9916acf2cd4f1.js
+│   │   ├── 33684-bbaee6839ab84dd8.js
+│   │   ├── 34646-4c7883eb242d5210.js
+│   │   ├── 3624-da78db07a16ee09c.js
+│   │   ├── 36505-9798da05fe2143ec.js
+│   │   ├── 37103.0defbbf240b7b8d8.module.css
+│   │   ├── 37460-fcd4830a1194eace.js
+│   │   ├── 38184-1e8a3a630d385487.js
+│   │   ├── 38963.cb21c1afb12a325d.module.css
+│   │   ├── 39373-075d662e5ab13538.js
+│   │   ├── 41013-647932573fc130af.js
+│   │   ├── 41110-df3d2329c8277a27.js
+│   │   ├── 41371-cf8b083f97b1e3cd.js
+│   │   ├── 4244-97fb660009234136.js
+│   │   ├── 46148-264173ef30e2e838.js
+│   │   ├── 46740-5a373320e5ef9c01.js
+│   │   ├── 46752-7bd8967216f7ea42.js
+│   │   ├── 49029-42bd0899fca05960.js
+│   │   ├── 49135-83e58d929426d4a6.js
+│   │   ├── 4916-0bb8c44ba1b3d0f7.js
+│   │   ├── 51210-45dfb7dd106f6b96.js
+│   │   ├── 57712-0fe58add398109da.js
+│   │   ├── 58085-77d3143b51231967.js
+│   │   ├── 61025-5b1312da907b4074.js
+│   │   ├── 61110-073153e0413daf3a.js
+│   │   ├── 61545-6a3a31f92bb5e61a.js
+│   │   ├── 64247-73a9861fe185671f.js
+│   │   ├── 6597-eae895bee75bd650.js
+│   │   ├── 66231-1c23457f5bdc1770.js
+│   │   ├── 67466-79abcbf599986a00.js
+│   │   ├── 70168.9ca30da65f3cc553.module.css
+│   │   ├── 70234-1ee48b3a4eebdc7d.js
+│   │   ├── 71001-d6e92c16d157f7b0.js
+│   │   ├── 71849.9d4eee4838181735.module.css
+│   │   ├── 71920-723318c28b0f8f3a.js
+│   │   ├── 7463-30e02617b93e1c07.js
+│   │   ├── 75601-d9eafa1fbbb5172b.js
+│   │   ├── 75674-b899e4fd85f54463.js
+│   │   ├── 79039-69acf717ffc901a4.js
+│   │   ├── 79087-4f706db8aa2ec0fb.js
+│   │   ├── 81587-bc07bc51c3c473ba.js
+│   │   ├── 81683-382ccc88e034ea1d.js
+│   │   ├── 85924-ac5602ef611dc506.js
+│   │   ├── 86483-c3a819d46503a3da.js
+│   │   ├── 88041-84298a1fc336a8cb.js
+│   │   ├── 88466-de2082408a4d301e.js
+│   │   ├── 89627-40275597692dc855.js
+│   │   ├── 8987-366fbcea269300af.js
+│   │   ├── 90350-89ca7e5359af8f77.js
+│   │   ├── 9338-f6bee5a8d66d930f.js
+│   │   ├── 96232-540ff5f81016a9ca.js
+│   │   ├── 96755-770967b1236437cd.js
+│   │   ├── 98228-7a59d90d972526cc.js
+│   │   ├── 99328-a2c6b180d25cb160.js
+│   │   ├── appearance-settings.202aedbb190e067b.module.css
+│   │   ├── behaviors-05170beef7088f93.js
+│   │   ├── code-c22301b4e838281c.css
+│   │   ├── code-menu-ad3e18f5935a3ed8.js
+│   │   ├── code-view-b2a4b2a03f744378.js
+│   │   ├── code-view.cc58846a3054680e.module.css
+│   │   ├── dark-2d1fe43dbc9adf1f.css
+│   │   ├── dark_high_contrast-d530ee188d165539.css
+│   │   ├── element-registry-1a91d0063582882d.js
+│   │   ├── environment-a12df3cf35884818.js
+│   │   ├── fetch-utilities-3140609b5732710f.js
+│   │   ├── github-elements-61af8f0198be4afd.js
+│   │   ├── github-f825c0edd7ad57f8.css
+│   │   ├── global-81a5f61ff87ac6f0.css
+│   │   ├── high-contrast-cookie-218067197ba03c91.js
+│   │   ├── keyboard-shortcuts-dialog.4ec51dca433f1103.module.css
+│   │   ├── light-2ff56e1b36116ee2.css
+│   │   ├── light_high_contrast-f7f95d7633592089.css
+│   │   ├── marketing-navigation.09746fd4440cd1dd.module.css
+│   │   ├── notifications-global-442a23b66c306470.js
+│   │   ├── notifications-subscriptions-menu.1d4ba527bc20385c.module.css
+│   │   ├── notifications-subscriptions-menu-8099506844b1f494.js
+│   │   ├── primer-b48faa60c69660fa.css
+│   │   ├── primer-primitives-7f694b60439d06c0.css
+│   │   ├── primer-react-css.00ba154d21e54e53.module.css
+│   │   ├── react-core.58063f76e203853d.module.css
+│   │   ├── repository-0751f482f5210958.css
+│   │   ├── runtime-helpers-cb4dfbc9d23f30be.js
+│   │   ├── sessions-e0da6ce03532723c.js
+│   │   └── wp-runtime-c1f48cd4a295543e.js
+│   ├── twitter_esxclamation_400x400.jpg
+│   └── You Have 5000 Days_ Navigating the End of Work as We Know It. Part 25_ The Desk Set Prophecy..html
+├── README.md
+├── sessions
+│   └── 2026-06-05-grok-session-clean.md
+├── temp-for-script
+├── tempwork
+│   ├── 20260501-withnail-bot-revival-and-memory-update.org~
+│   ├── 20260506-fulton-racial-classification-audit.org
+│   ├── 5000-days-part-25-desk-set-prophecy.org
+│   ├── ArduinoClass.org
+│   ├── #confirmPi5Hermes017.org#
+│   ├── confirmPi5Hermes017.org
+│   ├── confirmPi5Hermes017.org~
+│   ├── desk-set-movie.org
+│   ├── emerac-hallucination.org
+│   ├── hermes-pi-tree.txt~
+│   ├── human-computers.org
+│   ├── human-resource.org
+│   ├── ingest25.txt
+│   ├── ingest25.txt~
+│   ├── jar.jpeg
+│   ├── pink-slip-slip.org
+│   ├── septic29Palms.org
+│   ├── session-summary-2026-04-30-roemmele-part-25.org
+│   ├── TarotAppDiscoveryChatSession.org
+│   ├── tempwork
+│   ├── tempwork~
+│   ├── WisdomVault_Business_Plan.pdf
+│   ├── wisdomvault-business-plan-summary.org
+│   ├── wisdomvault.org
+│   ├── wisdomvault.org~
+│   ├── withnail-ssd-upgrade-summary.org
+│   ├── x402_files
+│   │   ├── 3E407097-08E7-47CF-A29C-F3F4DC21C46F-1024x611.png
+│   │   ├── 4EE33548-5BF2-4799-BF7D-859CFDC2CEEB-626x1024.jpeg
+│   │   ├── F3FE961C-A219-45BA-B7F2-192FA72B8A88-654x1024.jpeg
+│   │   ├── image-71-1024x554.png
+│   │   ├── image-73-1024x554.png
+│   │   ├── image-75-1024x557.png
+│   │   ├── image-76-1024x556.png
+│   │   ├── image-78-1024x557.png
+│   │   ├── image-79-1024x557.png
+│   │   ├── image-81-1024x556.png
+│   │   ├── image-83-1024x556.png
+│   │   ├── image-85-1024x555.png
+│   │   ├── image-87-1024x559.png
+│   │   ├── image-89-1024x557.png
+│   │   ├── image-91-1024x557.png
+│   │   ├── IMG_8444-1024x633.jpeg
+│   │   ├── IMG_9598-1024x845.jpeg
+│   │   ├── MnvtO-687x1024.jpg
+│   │   ├── MySignature-copy.png
+│   │   ├── Screenshot-2026-07-10-at-5.15.03-PM-1-1024x554.png
+│   │   └── x402-778x1024.png
+│   ├── x402.html
+│   └── x402-payments-agentic-economy-summary.org
+├── wake-up
+├── #wake-up-latest#
+├── wake-up-latest
+├── wake-up-latest~
+├── web-archives
+│   ├── 100 Questions About Scalar-Longitudinal Waves — Part 1_ Foundations_files
+│   │   ├── 0d03d985-a6c0-4299-83b0-deb29f13cbf3_1376x768.jpg
+│   │   ├── 10ce19c2-8737-4cc8-bea7-028239bdf8e5_1000x428.png
+│   │   ├── 16656.a38eaadb.js
+│   │   ├── 16932.6e153888.js
+│   │   ├── 17391.675b2f53.js
+│   │   ├── 17507.e47719e2.js
+│   │   ├── 19249.2ac4dabf.js
+│   │   ├── 19971.f2cafcaf.js
+│   │   ├── 20711.f35455e2.js
+│   │   ├── 21255.f416e188.js
+│   │   ├── 21320.5f2149b2.js
+│   │   ├── 2317.5fc2a5f1.js
+│   │   ├── 2317.dc142865.css
+│   │   ├── 23358.130fc8f6.js
+│   │   ├── 23358.e2f10b08.css
+│   │   ├── 23553.38abda50.js
+│   │   ├── 25474.2bb6803a.js
+│   │   ├── 27650.7c26b5d0.js
+│   │   ├── 27994.a4a6997f.js
+│   │   ├── 28407.4f8f5093.js
+│   │   ├── 32307.313d3f7e.js
+│   │   ├── 33063.d9f1109b.js
+│   │   ├── 33357.8db3c09e.css
+│   │   ├── 34977.01b1a13f.js
+│   │   ├── 35824.5b06c4a5.js
+│   │   ├── 36181.d05e6a8b.js
+│   │   ├── 36667.f647518c.js
+│   │   ├── 36725.713729b6.js
+│   │   ├── 37334.261114a6.css
+│   │   ├── 37334.5032fb5f.js
+│   │   ├── 37709.85b3e3a8.css
+│   │   ├── 382.7133fe37.js
+│   │   ├── 382.b89e30f6.css
+│   │   ├── 39966.b52f0951.js
+│   │   ├── 3fff90f0-e169-4115-9441-7ec07965406d_1600x900.jpg
+│   │   ├── 40893.dc0e773b.js
+│   │   ├── 40941.6dcf80f9.js
+│   │   ├── 40983.59404e7b.js
+│   │   ├── 40983.f28b4e96.css
+│   │   ├── 41091.7e2411ab.js
+│   │   ├── 41129.6777fff5.js
+│   │   ├── 41324.a2c84e20.js
+│   │   ├── 42985.62ffc88a.js
+│   │   ├── 43036.a80b1716.js
+│   │   ├── 43876.d4d1708c.js
+│   │   ├── 44176.cf8ca1b4.js
+│   │   ├── 46840.f5a60930.js
+│   │   ├── 480.51770307.js
+│   │   ├── 49271.97750bfc.js
+│   │   ├── 4993.d4049287.js
+│   │   ├── 51111.f9cac17e.js
+│   │   ├── 51606.c4c8a861.js
+│   │   ├── 52144.b6b99a67.js
+│   │   ├── 5376.9d7492c4.js
+│   │   ├── 54479.21319344.js
+│   │   ├── 54636.1791a1b4.css
+│   │   ├── 54770.18c1bce1.js
+│   │   ├── 54900.e3ad9cf0.js
+│   │   ├── 55674.e683c215.js
+│   │   ├── 56938.5da3cb76.js
+│   │   ├── 56938.bc21f918.css
+│   │   ├── 57293.b9f736ed.js
+│   │   ├── 57328.1bc6a156.js
+│   │   ├── 57539.448d2bad.js
+│   │   ├── 57807.f6e1b122.js
+│   │   ├── 58416.d849092a.js
+│   │   ├── 58471.85b2ed51.js
+│   │   ├── 58911.2028d23f.css
+│   │   ├── 60446.330c3e3c.js
+│   │   ├── 60739.6eed838a.js
+│   │   ├── 60799.68da265d.js
+│   │   ├── 61325.1787c149.js
+│   │   ├── 61861.43a05daa.js
+│   │   ├── 65343.2ce4c343.js
+│   │   ├── 67562.b7173c17.js
+│   │   ├── 68628.1190c758.js
+│   │   ├── 68802.845cf036.js
+│   │   ├── 69081.905b0658.js
+│   │   ├── 69487.690ef573.js
+│   │   ├── 6c2ff3e3828e4017b7faf7b63e24cdf8.min.js
+│   │   ├── 7041.1fb0b38c.js
+│   │   ├── 70780.36c8158b.js
+│   │   ├── 71898.d43aa6b8.js
+│   │   ├── 73222.4e1313ef.js
+│   │   ├── 73305.2ad2737e.js
+│   │   ├── 73373.fe1e255c.js
+│   │   ├── 7429.e10faa16.js
+│   │   ├── 7470.53e96e6c.js
+│   │   ├── 74785.4fa6a3fd.js
+│   │   ├── 75058.245082b5.js
+│   │   ├── 75353.b47e8492.js
+│   │   ├── 75529.56156076.js
+│   │   ├── 76718.b74d5180.js
+│   │   ├── 79529.243baf3e.js
+│   │   ├── 80317.9e9b29cf.js
+│   │   ├── 81669.20bd0f0e.js
+│   │   ├── 8222.5dc14414.js
+│   │   ├── 82241.ac707a1c.js
+│   │   ├── 82434.3d08dbdb.css
+│   │   ├── 82481.86a21020.js
+│   │   ├── 83257.822d31f6.js
+│   │   ├── 85929.a554eef8.js
+│   │   ├── 86379.813be60f.css
+│   │   ├── 86379.fb1ac2db.js
+│   │   ├── 87721.262bbba1.js
+│   │   ├── 88491.d63af68e.js
+│   │   ├── 8858.085b00af.css
+│   │   ├── 8858.c88fcf9a.js
+│   │   ├── 89211.e15ecf93.js
+│   │   ├── 8e2fde95-c59e-4481-b58d-148baf907af0_830x830.jpg
+│   │   ├── 90358.e34c3bb5.js
+│   │   ├── 90643.43f92d56.js
+│   │   ├── 90883.7ff04c3f.js
+│   │   ├── 91525.54483296.js
+│   │   ├── 91906.723eadb5.js
+│   │   ├── 91d637f2-cfb5-4ff7-bc7f-b151e3359fdc_256x256.jpg
+│   │   ├── 92520.1606bf9f.js
+│   │   ├── 92792.f9bef3bc.js
+│   │   ├── 93975.6eb5c180.js
+│   │   ├── 94ce9fcf-4625-438d-ab9d-4f087710b911_525x525(1).jpg
+│   │   ├── 94ce9fcf-4625-438d-ab9d-4f087710b911_525x525.jpg
+│   │   ├── 95468.d70af69e.js
+│   │   ├── 96109.9d45c808.js
+│   │   ├── 96678.549f4c1d.js
+│   │   ├── 96869.ae6618c7.js
+│   │   ├── 97434.250a1145.js
+│   │   ├── 97610.8a2d833c.js
+│   │   ├── 97957.6458f337.js
+│   │   ├── 97993.6f9b29de.js
+│   │   ├── 97993.8c6bd337.css
+│   │   ├── 9933.35bcfbeb.js
+│   │   ├── 99758.405a0537.css
+│   │   ├── 99758.7c1292c6.js
+│   │   ├── 99795.51bce6b0.js
+│   │   ├── b0273708-abe6-48f6-af2a-41d38ec6b499_1376x768.jpg
+│   │   ├── beacon.min.js
+│   │   ├── channelFrame.d2d3d15e.js
+│   │   ├── channelFrame.d41d8cd98f00b204e980.css
+│   │   ├── channelFrame.e8cf2f19.css
+│   │   ├── channel-frame.html
+│   │   ├── color_links.c9908948e2f4e05476e6.css
+│   │   ├── datadog-rum.js
+│   │   ├── def5a387-f1a7-4cae-b003-9a475e3b00a2_1088x582.jpg
+│   │   ├── default-light.jpg
+│   │   ├── https___substack-post-media.s3.amazonaws.com_public_images_b02c5a1f-d4a5-400b-8756-a11a62b90c35_1344x256.png
+│   │   ├── js
+│   │   ├── js(1)
+│   │   ├── lib-router.13baeb00.js
+│   │   ├── main.3498d840.js
+│   │   ├── main.a326142593ae17372589.css
+│   │   ├── saved_resource(1).html
+│   │   ├── saved_resource.html
+│   │   ├── sessionAttributionFrame.d41d8cd98f00b204e980.css
+│   │   ├── sessionAttributionFrame.e8cf2f19.css
+│   │   ├── sessionAttributionFrame.f86823e4.js
+│   │   ├── session-attribution-frame.html
+│   │   └── vcd15cbe7772f49c399c6a5babf22c1241717689176015
+│   ├── 2026-04-10_infranodus-llm-wiki-skill_files
+│   │   ├── 1097-b805267515cb2087.js
+│   │   ├── 11714-a5229713ec29c1ea.js
+│   │   ├── 1269781
+│   │   ├── 13333-5998f5eddb353d65.js
+│   │   ├── 15272-00d6ef52b0f88c77.js
+│   │   ├── 17348-787e0b6b008adb94.js
+│   │   ├── 17894-e0128f369d75471b.js
+│   │   ├── 18222-498ac30c45b2263a.js
+│   │   ├── 22895-381c5e0210588619.js
+│   │   ├── 2498-7a413c8209222158.js
+│   │   ├── 26497-2607b26f886ae364.js
+│   │   ├── 26533-4df1172b25427069.js
+│   │   ├── 26881-52ac2633a69e46a0.js
+│   │   ├── 28839-734cb6d8a7150172.js
+│   │   ├── 2887-47ac9a4b8862e6bf.js
+│   │   ├── 2966-f6796bfd155feae1.js
+│   │   ├── 31721-17b28a26ab4c2e02.js
+│   │   ├── 32769-329cba91f224b6ee.js
+│   │   ├── 33073-19b499126dc11486.js
+│   │   ├── 33684-93c00536afad2a9e.js
+│   │   ├── 34140-bd56b738d77cb446.js
+│   │   ├── 34618-6f230fa18381d661.js
+│   │   ├── 34646-bea6b9a63337cd73.js
+│   │   ├── 3624-56a093387522b27f.js
+│   │   ├── 36505-d881e4fdaa1f52d2.js
+│   │   ├── 36600-918d1f0ebb5e0ce3.js
+│   │   ├── 38963.f70dfea92b138b01.module.css
+│   │   ├── 39130-334926c8365e947c.js
+│   │   ├── 41013-7a6deee6d6ff15eb.js
+│   │   ├── 41110-bf1fbe4fd0f79f3c.js
+│   │   ├── 4244-d5dcb589fae0ecbf.js
+│   │   ├── 42771-4ebf93dd4d342b28.js
+│   │   ├── 43947-18e23171752897a9.js
+│   │   ├── 46148-0e40187c0246d203.js
+│   │   ├── 46287-cd100bdce32a28f3.js
+│   │   ├── 46740-6606b1026a237412.js
+│   │   ├── 46752-46c707717fcbe6a9.js
+│   │   ├── 49029-32f138b26aa15ad8.js
+│   │   ├── 49135-78a4188b2e814f1c.js
+│   │   ├── 4929-bfb9b2911e3b2557.js
+│   │   ├── 51210-3abb7238871a5b29.js
+│   │   ├── 5289-a885c73579e79932.js
+│   │   ├── 58889-5fa21a6f16a85112.js
+│   │   ├── 60481-1a8127058c27e9af.js
+│   │   ├── 61025-07acdbf2975da96b.js
+│   │   ├── 61110-93cf7706e5dc8bfa.js
+│   │   ├── 61975.bf2bb705802183ac.module.css
+│   │   ├── 64247-7de91c52a8aca0eb.js
+│   │   ├── 64462-aace35a668bb9e54.js
+│   │   ├── 66231-e5fbc544a569ca6a.js
+│   │   ├── 70168.33bc32a1383dd256.module.css
+│   │   ├── 7053-fe40037405b8998b.js
+│   │   ├── 71849.56ce4fb99933ba04.module.css
+│   │   ├── 7463-f34e26efc84a7578.js
+│   │   ├── 75674-3bc5efc3b40f0f87.js
+│   │   ├── 79039-2565b539a6ebc09b.js
+│   │   ├── 79087-52380608de8b0939.js
+│   │   ├── 85146-fea216c19b0c7dee.js
+│   │   ├── 85924-e131bec5f99667e1.js
+│   │   ├── 86735-f3e914a229b8e278.js
+│   │   ├── 89627-fbbd31c43d83e10c.js
+│   │   ├── 90765-1fddbe80cb9767ad.js
+│   │   ├── 93226-11f1af91fa00da16.js
+│   │   ├── 93716-c0d708c7899c4298.js
+│   │   ├── 96232-69d46a31854353d4.js
+│   │   ├── 96755-8619cf5f811a4353.js
+│   │   ├── 99328-5e06da57c4622e21.js
+│   │   ├── appearance-settings.35f40c3a620f34f6.module.css
+│   │   ├── behaviors-d72208d523482ecc.js
+│   │   ├── code-2d31826944fd3be8.css
+│   │   ├── code-menu-34c67a8e6616ccae.js
+│   │   ├── code-view-5111b642414924d3.js
+│   │   ├── code-view.ea72cf068f5f1a4c.module.css
+│   │   ├── dark-fc6eec18532c3ae0.css
+│   │   ├── dark_high_contrast-96d7b2bab5a6ae4e.css
+│   │   ├── element-registry-04246c6cfcc7dcba.js
+│   │   ├── environment-51c0968cf21c176d.js
+│   │   ├── fetch-utilities-78a4114cfa572239.js
+│   │   ├── github-c94ab8d1f22049a8.css
+│   │   ├── github-elements-459d4cd7a0f718d7.js
+│   │   ├── global-c9ae636e7affabfe.css
+│   │   ├── high-contrast-cookie-26d6bae49dfd2c29.js
+│   │   ├── keyboard-shortcuts-dialog.226020b781ed6407.module.css
+│   │   ├── light-0c8222dcd7a4f9b7.css
+│   │   ├── light_high_contrast-51c0c6e0c085cc0f.css
+│   │   ├── marketing-navigation.0d7de310f74771c9.module.css
+│   │   ├── notifications-global-206312e9c9776c21.js
+│   │   ├── notifications-subscriptions-menu-1d4d7207cf52d7b4.js
+│   │   ├── notifications-subscriptions-menu.fef45f3faabe9e46.module.css
+│   │   ├── primer-0fcd9af82350aeda.css
+│   │   ├── primer-primitives-10bf9dd67e3d70bd.css
+│   │   ├── primer-react-css.5f6ed1f0fb5be97e.module.css
+│   │   ├── react-core.bd894c565a04e39a.module.css
+│   │   ├── react-core-e2e4dc7ec809e513.js
+│   │   ├── react-lib-a4cf89fce9a1300a.js
+│   │   ├── repository-6ec84ae2261fecf8.css
+│   │   ├── runtime-helpers-3bb6f7d6b7a2f531.js
+│   │   ├── sessions-376c4ed1ca5aceda.js
+│   │   └── wp-runtime-d43299552bfccc72.js
+│   ├── 2026-04-10_roemmele-hidden-refresh-tax-gpu-memory_files
+│   │   ├── image-53-1024x551.png
+│   │   ├── image-54-1024x555.png
+│   │   ├── image-55-1024x551.png
+│   │   ├── image-56-1024x549.png
+│   │   ├── image-57-1024x550.png
+│   │   ├── image-59-1024x555.png
+│   │   ├── image-60-1024x551.png
+│   │   ├── image-61-1024x544.png
+│   │   ├── image-63-1024x552.png
+│   │   ├── image-64-1024x554.png
+│   │   ├── image-65-1024x558.png
+│   │   ├── image-66-1024x553.png
+│   │   ├── image-68-1024x554.png
+│   │   ├── MySignature-copy.png
+│   │   └── Screenshot-2026-04-08-at-6.14.18-PM-1-1024x559.png
+│   └── Archive - Advanced Rediscovery_files
+│       ├── 0d03d985-a6c0-4299-83b0-deb29f13cbf3_1376x768.jpg
+│       ├── 10ce19c2-8737-4cc8-bea7-028239bdf8e5_1000x428.png
+│       ├── 15c5c03e-7711-419a-9cfe-ac878e3557e0_1600x900.jpg
+│       ├── 16656.935db7bc.js
+│       ├── 16932.76bba3cf.js
+│       ├── 17391.bed59ba0.js
+│       ├── 17507.84736b2a.js
+│       ├── 180161f8-75ef-4d77-8a88-e078b10739af_1376x768.jpg
+│       ├── 19249.752339b7.js
+│       ├── 19971.6a8fb66c.js
+│       ├── 20711.8cb5eb71.js
+│       ├── 21255.4c0017c0.js
+│       ├── 21320.35d7116b.js
+│       ├── 2317.0852ea04.js
+│       ├── 2317.dc142865.css
+│       ├── 23358.7eab2bba.js
+│       ├── 23358.e2f10b08.css
+│       ├── 23553.e25bda3e.js
+│       ├── 25474.71189713.js
+│       ├── 26e82018-2aed-4950-8190-097e359e2cbb_1600x900.jpg
+│       ├── 27650.2e8c621f.js
+│       ├── 27994.6be7d330.js
+│       ├── 28407.50217409.js
+│       ├── 32307.edc52270.js
+│       ├── 33063.34ae9d37.js
+│       ├── 33357.8db3c09e.css
+│       ├── 34977.e0945262.js
+│       ├── 35824.2651cf52.js
+│       ├── 36181.02ff7932.js
+│       ├── 36667.378ae3f6.js
+│       ├── 36725.1587e819.js
+│       ├── 37334.261114a6.css
+│       ├── 37334.c786c145.js
+│       ├── 37709.85b3e3a8.css
+│       ├── 382.413da5e1.js
+│       ├── 382.b89e30f6.css
+│       ├── 39966.ca48a4c8.js
+│       ├── 3c2f3aa4-640c-40e1-b219-c32dd04f3c20_1600x900.jpg
+│       ├── 3e667746-e67c-4bcb-afa0-837101f774bf_1600x900.jpg
+│       ├── 3fff90f0-e169-4115-9441-7ec07965406d_1600x900.jpg
+│       ├── 40893.d1cace50.js
+│       ├── 40941.ca2ae986.js
+│       ├── 40983.f28b4e96.css
+│       ├── 40983.f4f0b400.js
+│       ├── 41091.1f394253.js
+│       ├── 41129.dd7b9d0e.js
+│       ├── 41324.d25657d9.js
+│       ├── 42985.4cd20d9a.js
+│       ├── 43036.51cae5f7.js
+│       ├── 43876.d41b84fe.js
+│       ├── 44176.9ed73980.js
+│       ├── 46840.2725d54a.js
+│       ├── 480.b8ac69ba.js
+│       ├── 48ffa66e-b4a3-4705-9a47-6164ece6e34d_1600x900.jpg
+│       ├── 49271.48fec367.js
+│       ├── 4993.3863fa88.js
+│       ├── 51111.02d67214.js
+│       ├── 51606.e525c504.js
+│       ├── 52144.8254309c.js
+│       ├── 5376.e0cd6a22.js
+│       ├── 54479.bc9fa002.js
+│       ├── 54636.1791a1b4.css
+│       ├── 54770.dfa57def.js
+│       ├── 54900.bc276b2d.js
+│       ├── 55674.e03949ec.js
+│       ├── 56938.09283e5e.js
+│       ├── 56938.bc21f918.css
+│       ├── 57293.50152ef8.js
+│       ├── 57328.5cd8b9b2.js
+│       ├── 57539.b227141b.js
+│       ├── 57807.923a6b74.js
+│       ├── 58416.fc218f1b.js
+│       ├── 58471.0ecf6f10.js
+│       ├── 60446.4f0636b2.js
+│       ├── 60739.508fbee1.js
+│       ├── 60799.e9992ee1.js
+│       ├── 61325.790e16cd.js
+│       ├── 61861.b002a455.js
+│       ├── 65343.f35076ad.js
+│       ├── 65e07d4a-aca7-4208-8d78-7d06dc8ab3c2_1376x768.jpg
+│       ├── 67562.3a0ad267.js
+│       ├── 68628.5cc3a389.js
+│       ├── 68802.81ec2297.js
+│       ├── 69081.d30bc0d3.js
+│       ├── 69487.dd6f0756.js
+│       ├── 6c2ff3e3828e4017b7faf7b63e24cdf8.min.js
+│       ├── 7041.737b0fb9.js
+│       ├── 70780.50ce97b5.js
+│       ├── 71898.25c0ffe5.js
+│       ├── 73222.a504e784.js
+│       ├── 7326ea80-a137-4baf-bfbb-40e6a14a29d9_1312x736.jpg
+│       ├── 73305.4b086b6f.js
+│       ├── 73373.9b2da625.js
+│       ├── 7429.03b36a2a.js
+│       ├── 7470.9385eaba.js
+│       ├── 74785.79230a41.js
+│       ├── 75058.49619753.js
+│       ├── 75353.7274f658.js
+│       ├── 75529.894640cf.js
+│       ├── 757fd84a-c0ca-4f6e-aef6-40ea5fc0c3f3_1600x900.jpg
+│       ├── 76718.ce09edcd.js
+│       ├── 79529.cdb5bb43.js
+│       ├── 7f855298-453c-4a8d-8c4f-f1b24ac8bdbd_1376x768.jpg
+│       ├── 80317.a29ac2b2.js
+│       ├── 81669.259fab97.js
+│       ├── 8222.69c8f6ae.js
+│       ├── 82241.d38b7836.js
+│       ├── 82434.3d08dbdb.css
+│       ├── 82481.29cc23ac.js
+│       ├── 83257.7246443e.js
+│       ├── 85929.f89b49b3.js
+│       ├── 86379.813be60f.css
+│       ├── 86379.b923141e.js
+│       ├── 87721.1b43f133.js
+│       ├── 88491.8d837bbb.js
+│       ├── 8858.085b00af.css
+│       ├── 8858.ea99a563.js
+│       ├── 89211.27a82542.js
+│       ├── 90358.69424781.js
+│       ├── 90643.e5a54869.js
+│       ├── 90883.0dfbb1a0.js
+│       ├── 91525.8da113b8.js
+│       ├── 91906.174bdf59.js
+│       ├── 91d637f2-cfb5-4ff7-bc7f-b151e3359fdc_256x256.jpg
+│       ├── 92520.4ada73d6.js
+│       ├── 92792.c3121d86.js
+│       ├── 93975.e03e2031.js
+│       ├── 95468.5e5c9359.js
+│       ├── 95af9222-1aed-4ac4-89f3-e6a0c74b0ab1_1600x900.jpg
+│       ├── 96109.85591cd9.js
+│       ├── 96678.1afd6dea.js
+│       ├── 96869.41ccd5ea.js
+│       ├── 97434.6c760183.js
+│       ├── 97610.41be9956.js
+│       ├── 97957.49e5dc3e.js
+│       ├── 97993.8c6bd337.css
+│       ├── 97993.a3e0afe8.js
+│       ├── 9933.054262a9.js
+│       ├── 99758.405a0537.css
+│       ├── 99758.89b5ce21.js
+│       ├── 99795.af14c297.js
+│       ├── 99ad39f9-f08d-4073-af30-ba9864b81f44_3000x2000.jpg
+│       ├── 9d7259fa-602d-40b2-aabe-4c1a638cdd20_1600x900.jpg
+│       ├── b0273708-abe6-48f6-af2a-41d38ec6b499_1376x768.jpg
+│       ├── b3e129c1-7590-4ba9-8419-2639ca91e17a_1376x768.jpg
+│       ├── b9beaf70-010d-4e17-a56d-e9ccc3b18aa4_1280x720.jpg
+│       ├── beacon.min.js
+│       ├── channelFrame.6f21e091.js
+│       ├── channelFrame.d41d8cd98f00b204e980.css
+│       ├── channelFrame.e8cf2f19.css
+│       ├── channel-frame.html
+│       ├── color_links.c9908948e2f4e05476e6.css
+│       ├── da100387-cdc1-4031-8a0d-af023fe4a8a1_1600x900.jpg
+│       ├── datadog-rum.js
+│       ├── def5a387-f1a7-4cae-b003-9a475e3b00a2_1088x582.jpg
+│       ├── e36510cd-cc60-4a71-8011-5a1cb1d50655_1376x768.jpg
+│       ├── e3c59ea3-9ecf-4ac0-a443-7f2b4ae8a1e3_788x525.jpg
+│       ├── efd3e0d3-d381-45b9-9753-d2bf3a3016ed_1312x736.jpg
+│       ├── https___substack-post-media.s3.amazonaws.com_public_images_b02c5a1f-d4a5-400b-8756-a11a62b90c35_1344x256.png
+│       ├── js
+│       ├── lib-router.d3974ba6.js
+│       ├── main.7422c937.js
+│       ├── main.a326142593ae17372589.css
+│       ├── sessionAttributionFrame.d41d8cd98f00b204e980.css
+│       ├── sessionAttributionFrame.e2aa0c38.js
+│       ├── sessionAttributionFrame.e8cf2f19.css
+│       ├── session-attribution-frame.html
+│       └── vcd15cbe7772f49c399c6a5babf22c1241717689176015
+├── wiki
+│   ├── index.md
+│   └── log.md
+├── withnail-permission-resume.txt
+├── withnail-permission-resume.txt~
+├── zho
+│   ├── nodes
+│   │   ├── 2026-05-03-voight-kampff-v2.1.org
+│   │   ├── 2026-05-03-withnail-role-in-zho.org
+│   │   ├── 2026-05-03-zho-charter.org
+│   │   ├── 2026-05-03-zho-session-flow.org
+│   │   ├── 2026-05-03-zho-task-list.org
+│   │   ├── 20260504-ingest-org-roam-ingest-summary.md
+│   │   ├── 20260504-ingest-org-roam-results.md
+│   │   ├── 20260504-ingest-org-roam-results.md~
+│   │   ├── 20260504-test-compiler-ingest.md
+│   │   ├── 20260504-test-compiler-ingest.md~
+│   │   ├── 2026-05-11-emacs-obsidian-toggle.org
+│   │   ├── 2026-05-11-improve-withnail.org
+│   │   ├── 2026-05-11-kb-creation-presentation.org
+│   │   ├── 2026-05-11-kb-maintenance-synthesis.org
+│   │   ├── 2026-05-11-zho-task-list.org
+│   │   ├── 2026-05-11-zho-task-list.org~
+│   │   └── 2026-05-13-1000-save-wisdom-questions.org
+│   ├── zho-index.org
+│   └── zho-index.org~
+└── ZHO-SCHEMA.md
+
+55 directories, 2519 files
+(base) gt@gt-ThinkPad-X230:~/local-side$ 
+

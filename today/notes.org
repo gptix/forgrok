@@ -1,0 +1,14 @@
+2. Watching the Startup Process (Normal Advice)
+Yes — the best way is to use two separate SSH sessions (or tmux/screen inside one).
+Recommended Workflow
+
+Session 1 (control): Run the start commands (sudo systemctl restart withnail or the manual hermes gateway run --replace).
+Session 2 (watch): Immediately run one or more of these in parallel:
+journalctl -u withnail -f
+tail -f /tmp/hermes-debug.log (if you started with the debug command)
+tail -f ~/.hermes/logs/hermes-gateway-raw.log
+ps aux | grep hermes (in a loop with watch -n 1)
+
+
+You can also open a third window for htop or journalctl --user -u hermes-gateway -f to watch both system and user services.
+This lets you see exactly where it dies (e.g., during Telegram connection, model loading, or tool initialization) without the output being lost when the process crashes.

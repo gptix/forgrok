@@ -1,0 +1,169 @@
+Please review the shell interaction below.
+
+I have located no specific notes on the last update.
+
+I am free for the next couple of hours for the upgrade.
+
+
+gt-hermes@hermes-pi:~ $ 
+Hermes Agent v0.14.0 (2026.5.16)
+Project: /home/gt-hermes/.local/lib/python3.13/site-packages
+Python: 3.13.5
+OpenAI SDK: 2.29.0
+Up to date
+
+gt-hermes@hermes-pi:~ $ hermes doctor
+┌─────────────────────────────────────────────────────────┐
+│                 🩺 Hermes Doctor                        │
+└─────────────────────────────────────────────────────────┘
+
+◆ Security Advisories
+  ✓ No active security advisories
+
+◆ Python Environment
+  ✓ Python 3.13.5
+  ⚠ Not in virtual environment (recommended)
+
+◆ Required Packages
+  ✓ OpenAI SDK
+  ✓ Rich (terminal UI)
+  ✓ python-dotenv
+  ✓ PyYAML
+  ✓ HTTPX
+  ✓ Croniter (cron expressions) (optional)
+  ✓ python-telegram-bot (optional)
+  ✓ discord.py (optional)
+
+◆ Configuration Files
+  ✓ ~/.hermes/.env file exists
+  ⚠ No API key found in ~/.hermes/.env
+  ✓ ~/.hermes/config.yaml exists
+  ✓ Config version up to date (v23)
+
+◆ Auth Providers
+  ⚠ Nous Portal auth (not logged in)
+  ⚠ OpenAI Codex auth (not logged in)
+    → No Codex credentials stored. Run `hermes auth` to authenticate.
+  ⚠ Google Gemini OAuth (not logged in)
+  ⚠ MiniMax OAuth (not logged in)
+    → codex CLI not installed (optional — only required to import tokens from an existing Codex CLI login)
+
+◆ Directory Structure
+  ✓ ~/.hermes directory exists
+  ✓ ~/.hermes/cron/ exists
+  ✓ ~/.hermes/sessions/ exists
+  ✓ ~/.hermes/logs/ exists
+  ✓ ~/.hermes/skills/ exists
+  ✓ ~/.hermes/memories/ exists
+  ✓ ~/.hermes/SOUL.md exists (persona configured)
+  ✓ ~/.hermes/memories/ directory exists
+  ✓ MEMORY.md exists (34 chars)
+  ✓ USER.md exists (68 chars)
+  ✓ ~/.hermes/state.db exists (11 sessions)
+
+◆ Gateway Service
+  ✓ Systemd linger enabled (gateway service survives logout)
+
+◆ Command Installation
+  ⚠ Venv entry point not found (hermes not in venv/bin/ or .venv/bin/ — reinstall with pip install -e '.[all]')
+
+◆ External Tools
+  ✓ git
+  ✓ ripgrep (rg) (faster file search)
+  ⚠ docker not found (optional)
+  ✓ Node.js
+  ⚠ agent-browser not installed (run: npm install)
+
+◆ API Connectivity
+  ⚠ OpenRouter API (not configured)                                   
+
+◆ Tool Availability
+  ✓ browser
+  ✓ clarify
+  ✓ code_execution
+  ✓ cronjob
+  ✓ terminal
+  ✓ delegation
+  ✓ file
+  ✓ memory
+  ✓ messaging
+  ✓ session_search
+  ✓ skills
+  ✓ todo
+  ✓ tts
+  ✓ vision
+  ✓ video
+  ✓ kanban (runtime-gated; loaded only for dispatcher-spawned workers)
+  ⚠ browser-cdp (system dependency not met)
+  ⚠ computer_use (system dependency not met)
+  ⚠ discord (missing DISCORD_BOT_TOKEN)
+  ⚠ discord_admin (missing DISCORD_BOT_TOKEN)
+  ⚠ feishu_doc (system dependency not met)
+  ⚠ feishu_drive (system dependency not met)
+  ⚠ homeassistant (system dependency not met)
+  ⚠ image_gen (system dependency not met)
+  ⚠ moa (missing OPENROUTER_API_KEY)
+  ⚠ video_gen (system dependency not met)
+  ⚠ web (missing EXA_API_KEY, PARALLEL_API_KEY, TAVILY_API_KEY, FIRECRAWL_API_KEY, FIRECRAWL_API_URL, FIRECRAWL_GATEWAY_URL, TOOL_GATEWAY_DOMAIN, TOOL_GATEWAY_SCHEME, TOOL_GATEWAY_USER_TOKEN)
+  ⚠ x_search (missing XAI_API_KEY)
+  ⚠ hermes-yuanbao (system dependency not met)
+
+◆ Skills Hub
+  ✓ Skills Hub directory exists
+  ✓ Lock file OK (0 hub-installed skill(s))
+  ⚠ No GITHUB_TOKEN (60 req/hr rate limit — set in ~/.hermes/.env for better rates)
+
+◆ Memory Provider
+  ✓ Built-in memory active (no external provider configured — this is fine)
+
+────────────────────────────────────────────────────────────
+  Found 3 issue(s) to address:
+
+  1. Run 'hermes setup' to configure API keys
+  2. Run 'hermes setup' to configure missing API keys for full tool access
+  3. Reinstall entry point: cd /home/gt-hermes/.local/lib/python3.13/site-packages && source venv/bin/activate && pip install -e '.[all]'
+
+  Tip: run 'hermes doctor --fix' to auto-fix what's possible.
+
+gt-hermes@hermes-pi:~ $ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            3.9G     0  3.9G   0% /dev
+tmpfs           1.6G   22M  1.6G   2% /run
+/dev/mmcblk0p2  115G   51G   59G  47% /
+tmpfs           4.0G     0  4.0G   0% /dev/shm
+tmpfs           5.0M   48K  5.0M   1% /run/lock
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           4.0G     0  4.0G   0% /tmp
+/dev/mmcblk0p1  510M   66M  445M  13% /boot/firmware
+tmpfs           807M   48K  807M   1% /run/user/1000
+tmpfs           1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           1.0M     0  1.0M   0% /run/credentials/serial-getty@ttyAMA10.service
+gt-hermes@hermes-pi:~ $ 
+gt-hermes@hermes-pi:~ $ free -h
+               total        used        free      shared  buff/cache   available
+Mem:           7.9Gi       388Mi       7.0Gi        21Mi       563Mi       7.5Gi
+Swap:          6.0Gi          0B       6.0Gi
+gt-hermes@hermes-pi:~ $ 
+gt-hermes@hermes-pi:~ $ vcgencmd measure_temp
+temp=46.1'C
+
+gt-hermes@hermes-pi:~ $ uptime
+ 19:22:37 up 6 days,  3:54,  1 user,  load average: 0.00, 0.02, 0.00
+gt-hermes@hermes-pi:~ $ 
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+gt-hermes@hermes-pi:~ $ ls -lh ~/backups/hermes/hermes-full-backup-${DATE}.tar.gz
+-rw-rw-r-- 1 gt-hermes gt-hermes 498M Jun 21 19:30 /home/gt-hermes/backups/hermes/hermes-full-backup-20260621-1928.tar.gz
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+gt-hermes@hermes-pi:~ $ hermes --version
+Hermes Agent v0.14.0 (2026.5.16)
+Project: /home/gt-hermes/.local/lib/python3.13/site-packages
+Python: 3.13.5
+OpenAI SDK: 2.29.0
+Up to date
+

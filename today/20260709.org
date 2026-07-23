@@ -1,0 +1,87 @@
+;; This buffer is for text that is not saved, and for Lisp evaluation.
+;; To create a file, visit it with C-x C-f and enter text in its buffer.
+
+set background color
+
+Common tasks
+
+Make new daily note note Emacs C-c n d n
+
+Keyboard macros F3 to start, F4 to end, then F4 to execute
+
+Re-awaken Grok ~/local-side/wake-up or ~/local-side/wake-up-latest
+
+
+
+
+
+
+use keyboard macros
+
+Create a note file for today
+download wake-up file for grok
+synchronize github repos
+
+
+
+investigate tlon
+- [X] push house issue
+- [X] push savedwisdom
+- [X] push Arduino class
+push bread business
+Tarot
+- [X]  initial chat with Gtrok
+- [X] set up repo on github
+- [X] sent link to Jenn
+- [X] Jenn to send email address
+- [ ] Jenn to comment on interview with Grok
+	  
+- [X] push tarot card reader app
+figure out how to handle multiple roam brains
+bring Tsuioku up to speed
+sources for Creatine
+- [X] invetigate using SSD for stronger Withnail
+distribute clothes at Triangle
+
+
+** Make an app
+*** Define goal of app - first cut
+- [ ] action, users, interface, output
+  - [ ] ask Grok to interview me for app
+    
+  
+** Frank
+- [X] responded to email
+
+** Mike
+- [ ] how to get into gym
+
+  
+mike exercise method
+VA
+cal taxes
+real estate Grok
+pictures of coins
+- [ ] make camera holder
+- [ ] make black background stand
+
+- [ ] see if I have rust remover
+- [ ] see if we have primer
+  
+
+
+
+store tools
+
+** paint plan
+- [ ] kitchen
+- [ ] bedroom
+- [ ] bathroom
+
+** fix patio
+- [ ] at Home Depot, ask for best type of concrete
+  
+sausage grinder
+- [-] fix sink
+  - [X] order tool
+  - [ ] do
