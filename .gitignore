@@ -14,3 +14,7 @@ org-roam.db
 *.tmp
 *.log
 tempwork/
+
+# Large backup archives – do not commit to GitHub
+infrastructure/pi/hermes-pi/backups/*.tar.gz
+*.tar.gz
