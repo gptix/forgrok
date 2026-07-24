@@ -1,0 +1,45 @@
+#+TITLE: Selective Backup Script for hermes-pi Pre-Reinstall
+#+AUTHOR: Joji Teira
+#+DATE: [2026-07-20]
+#+NODE-NAME: HermesPiSelectiveBackup
+#+ROAM_TAGS: hermes-pi backup script reinstall
+
+* Script
+Save as =~/local-side/infrastructure/pi/hermes-pi/scripts/pi-selective-backup.sh=
+
+#+begin_src sh
+#!/bin/bash
+# pi-selective-backup.sh - Backup only important files before Hermes reinstall
+# Run from X230
+
+set -e
+
+PI_HOST="hermes-pi"
+TIMESTAMP=$(date +%Y%m%d-%H%M)
+BACKUP_DIR="/home/gt-hermes/backups/hermes-pre-reinstall-${TIMESTAMP}"
+LOCAL_BACKUP="~/local-side/infrastructure/pi/hermes-pi/backups/hermes-pre-reinstall-${TIMESTAMP}"
+
+echo "Creating selective backup on ${PI_HOST} → ${BACKUP_DIR}"
+
+ssh "${PI_HOST}" "
+  mkdir -p ${BACKUP_DIR}
+  cp -a ~/.hermes ${BACKUP_DIR}/ 2>/dev/null || true
+  cp -a ~/bin ${BACKUP_DIR}/ 2>/dev/null || true
+  cp -a ~/.config/systemd ${BACKUP_DIR}/ 2>/dev/null || true
+  cp -a ~/hermes ${BACKUP_DIR}/ 2>/dev/null || true
+  # Add more paths as needed from tree
+  tar -czf ${BACKUP_DIR}.tar.gz -C /home/gt-hermes backups/hermes-pre-reinstall-${TIMESTAMP}
+  echo 'Backup completed on Pi.'
+"
+
+# Pull to laptop
+mkdir -p ~/local-side/infrastructure/pi/hermes-pi/backups/
+scp "${PI_HOST}:${BACKUP_DIR}.tar.gz" ~/local-side/infrastructure/pi/hermes-pi/backups/
+
+echo "✅ Backup pulled to laptop: ${LOCAL_BACKUP}.tar.gz"
+#+end_src
+
+* Usage
+```bash
+chmod +x script-path
+pi-selective-backup.sh
