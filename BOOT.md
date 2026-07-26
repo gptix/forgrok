@@ -5,6 +5,8 @@ This file is the single entry point for a new chat session.
 
 When the operator says “Hello Grok! Please visit https://github.com/gptix/forgrok/blob/main/BOOT.md”, Grok should read this file and the files it points to before doing substantial work.
 
+
+
 **Last updated**: 2026-07-26
 
 ---
