@@ -1,0 +1,305 @@
+#+TITLE: Clean Remove + Reinstall Hermes Agent + Ollama on hermes-pi (Lighter Path)
+#+AUTHOR: Joji Teira
+#+DATE: [2026-07-24]
+#+NODE-NAME: CleanRemoveReinstallHermesOllamaWithnail
+#+ROAM_TAGS: hermes-pi withnail ollama reinstall telegram systemd airgap backup
+#+ROAM_ALIASES: lighter-hermes-reset
+
+* Purpose
+Completely remove Hermes Agent and Ollama while safely preserving all credentials and critical state, then perform a clean install of the latest stable Hermes Agent + Ollama. Goal is a peppy, almost-airgapped Withnail that auto-starts on power restore and talks reliably over Telegram.
+
+* Goals Checklist
+- [ ] Installation completes without error
+- [ ] SSH, RCP, WiFi, Tailscale continue to work
+- [ ] Withnail wakes automatically after power loss + restore
+- [ ] Withnail can receive and send via Telegram (no “restart before previous session flushed” problem)
+- [ ] Lightweight model selected for responsive replies (easy to swap later for a heavier model)
+- [ ] Carefully chosen skill set for power while remaining almost entirely airgapped
+- [ ] (Later) Knowledge base cleaned of cruft, structure smoothed, raw/wiki/ontology usage optimized
+
+* Phase 0: Preserve Credentials & Critical State (Do This First)
+Run from X230 via SSH/TRAMP or on the Pi.
+
+- [X] Confirm recent selective backup exists and is readable
+  - [X] =~/local-side/infrastructure/pi/hermes-pi/backups/hermes-pre-reinstall-20260723-2131.tar.gz=
+  - [X] Optional: extract a copy somewhere safe and inspect key files
+
+- [X] Explicitly save credentials outside the Pi (encrypted org node or password manager)
+  - [X] Telegram BotFather token
+  - [X] Telegram allowed chat / user IDs
+  - [X] Any API keys (OpenRouter, etc. — prefer local only) -- We will not need initially, since we will run Ollama locally
+  - [X] Tailscale auth / machine details  -- Note: Tailscale not touched, since the OS is not replaced.
+  - [X] SSH keys / authorized_keys notes -- -- Note: SSH creds not touched, since the OS is not replaced.
+  - [X] SOUL.md / Withnail persona content -- We will create a new one after getting Hermes Agent 18.2 running
+  - [X] List of currently desired skills
+
+- [X] Snapshot current systemd units (for reference)
+  #+begin_src sh
+  systemctl --user list-unit-files | grep -E 'hermes|ollama'
+  ls -l ~/.config/systemd/user/
+  #+end_src
+
+Output
+```
+base) gt@gt-ThinkPad-X230:~/local-side/infrastructure/pi/hermes-pi/backups/hermes-pre-reinstall-20260723-2131/backups/hermes-pre-reinstall-20260723-2131/.hermes$ # Make sure you are in the .hermes directory of the backup
+cd ~/local-side/infrastructure/pi/hermes-pi/backups/hermes-pre-reinstall-20260723-2131/backups/hermes-pre-reinstall-20260723-2131/.hermes
+
+# 1. Look for any file with "soul", "withnail", or "persona" in the name
+find . -iname "*soul*" -o -iname "*withnail*" -o -iname "*persona*" 2>/dev/null
+
+# 2. Search inside all text/markdown/yaml files for the word "Withnail"
+grep -r -i "withnail" . --include="*.md" --include="*.yaml" --include="*.yml" --include="*.txt" 2>/dev/null
+
+# 3. Check the profiles directory (common place for custom identities)
+ls -la profiles/ 2>/dev/null
+find profiles/ -type f 2>/dev/null
+./hermes-agent/hermes_cli/__pycache__/default_soul.cpython-311.pyc
+./hermes-agent/hermes_cli/default_soul.py
+./hermes-agent/venv/lib/python3.11/site-packages/google/auth/impersonated_credentials.py
+./hermes-agent/venv/lib/python3.11/site-packages/botocore/data/personalize
+./hermes-agent/venv/lib/python3.11/site-packages/botocore/data/personalize-events
+./hermes-agent/venv/lib/python3.11/site-packages/botocore/data/personalize-runtime
+./hermes-agent/optional-skills/creative/kanban-video-orchestrator/assets/soul.md.tmpl
+./hermes-agent/tests/cli/test_personality_none.py
+./hermes-agent/website/docs/guides/use-soul-with-hermes.md
+./hermes-agent/website/docs/user-guide/features/personality.md
+./hermes-agent/website/i18n/zh-Hans/docusaurus-plugin-content-docs/current/guides/use-soul-with-hermes.md
+./hermes-agent/website/i18n/zh-Hans/docusaurus-plugin-content-docs/current/user-guide/features/personality.md
+./hermes-agent/docker/SOUL.md
+./SOUL.md
+./config.yaml:  - name: Ollama on Withnail Pi5
+```
+
+- [ ] Note current Hermes version and Ollama models
+  #+begin_src sh
+  hermes --version || true
+  ollama list || true
+  #+end_src
+
+
+Output:
+Hermes Agent v0.19.0 (2026.7.20) · upstream 477c08b4
+Install directory: /home/gt-hermes/.hermes/hermes-agent
+Install method: git
+Python: 3.11.15
+OpenAI SDK: 2.24.0
+Up to date
+NAME                                                ID              SIZE      MODIFIED     
+llama3.2:1b                                         baf6a787fdff    1.3 GB    3 weeks ago     
+llama3.2:3b                                         a80c4f17acd5    2.0 GB    3 weeks ago     
+hermes3:latest                                      4f6b83f30b62    4.7 GB    3 weeks ago     
+hermes3:8b-llama3.1-q5_K_M                          836396825b44    5.7 GB    4 months ago    
+hermes3:8b                                          4f6b83f30b62    4.7 GB    4 months ago    
+dolphin-phi:latest                                  c5761fc77240    1.6 GB    4 months ago    
+rouge/phi-3-medium-4k-instruct-abliterated-v3:Q4    a72b1f39b7ea    8.6 GB    4 months ago    
+gurubot/phi3-mini-abliterated:latest                29ea469fde20    2.4 GB    4 months ago    
+phi3:mini                                           4f2222927938    2.2 GB    4 months ago    
+gt-hermes@hermes-pi:~ $
+
+* Phase 1: Stop Everything Cleanly
+- [ ] Stop Hermes gateway and related services
+  #+begin_src sh
+  hermes gateway stop || true
+  systemctl --user stop hermes-gateway.service hermes-bot.service 2>/dev/null || true
+  sudo systemctl stop hermes-gateway.service 2>/dev/null || true
+  #+end_src
+
+  Output:
+  
+✓ User service stopped
+✓ Stopped hermes-gateway service
+gt-hermes@hermes-pi:~ $ 
+
+
+- [ ] Stop Ollama
+  #+begin_src sh
+  sudo systemctl stop ollama 2>/dev/null || true
+  pkill -f ollama || true
+  #+end_src
+
+  Output:
+  sudo systemctl stop ollama 2>/dev/null || true
+pkill -f ollama || true
+
+
+- [ ] Verify no processes remain
+  #+begin_src sh
+  ps aux | grep -E 'hermes|ollama' | grep -v grep
+  #+end_src
+
+Output:
+gt-hermes@hermes-pi:~ $ ps aux | grep -E 'hermes|ollama' | grep -v grep
+avahi        648  0.0  0.0   6208  3808 ?        Ss   Jul20   0:16 avahi-daemon: running [hermes-pi.local]
+root      113534  0.0  0.1  22128 12976 ?        Ss   Jul24   0:00 sshd-session: gt-hermes [priv]
+gt-herm+  113543  0.0  0.1  22336  8448 ?        S    Jul24   0:00 sshd-session: gt-hermes@pts/0
+gt-hermes@hermes-pi:~ $ 
+
+
+
+
+* Phase 2: Complete Removal of Hermes Agent
+- [X] Remove Hermes binary / package if present
+  #+begin_src sh
+  # Common locations
+  rm -f ~/.local/bin/hermes
+  sudo rm -f /usr/local/bin/hermes
+  pip uninstall -y hermes-agent 2>/dev/null || true
+  uv pip uninstall hermes-agent 2>/dev/null || true
+  #+end_src
+
+- [X] Remove Hermes data and config (AFTER confirming backup)
+  #+begin_src sh
+  # Move rather than delete if you want an extra safety net
+  mv ~/.hermes ~/.hermes.REMOVED-$(date +%Y%m%d) 2>/dev/null || true
+  # or fully remove after double-checking backup:
+  # rm -rf ~/.hermes
+  #+end_src
+
+- [X] Remove systemd units
+  #+begin_src sh
+  systemctl --user disable --now hermes-gateway.service hermes-bot.service 2>/dev/null || true
+  rm -f ~/.config/systemd/user/hermes-*.service
+  sudo systemctl disable --now hermes-gateway.service 2>/dev/null || true
+  sudo rm -f /etc/systemd/system/hermes*.service
+  systemctl --user daemon-reload
+  sudo systemctl daemon-reload
+  #+end_src
+
+- [X] Clean any leftover cron / scripts that call Hermes
+  #+begin_src sh
+  crontab -l | grep -i hermes || true
+  # Edit crontab if needed: crontab -e
+  #+end_src
+
+* Phase 3: Complete Removal of Ollama
+- [X] Uninstall Ollama
+  #+begin_src sh
+  sudo systemctl stop ollama 2>/dev/null || true
+  sudo systemctl disable ollama 2>/dev/null || true
+  sudo rm -f /etc/systemd/system/ollama.service
+  sudo rm -rf /usr/local/bin/ollama /usr/bin/ollama
+  # Official-style cleanup if present
+  sudo rm -rf /usr/share/ollama /var/lib/ollama 2>/dev/null || true
+  rm -rf ~/.ollama   # models will be re-pulled; keep a note of which ones you liked
+  sudo systemctl daemon-reload
+  #+end_src
+
+- [X] Confirm removal
+  #+begin_src sh
+  which ollama || echo "ollama gone"
+  which hermes || echo "hermes gone"
+  #+end_src
+
+* Phase 4: Verify Core Connectivity Still Works
+- [X] SSH from X230 still works
+- [X] Tailscale status is healthy (=tailscale status=)
+- [X] WiFi / Ethernet is up
+- [X] (Optional) RCP / rsync test
+
+* Phase 5: Fresh Install of Ollama
+- [ ] Install latest Ollama
+  #+begin_src sh
+  curl -fsSL https://ollama.com/install.sh | sh
+  #+end_src
+
+- [ ] Enable and start Ollama service
+  #+begin_src sh
+  sudo systemctl enable --now ollama
+  ollama --version
+  #+end_src
+
+- [ ] Pull a lightweight, peppy model suitable for Pi 5 8GB
+  Recommended starting points (choose one or two):
+  #+begin_src sh
+  ollama pull gemma3:1b          # very fast, good for responsive chat
+  # or
+  ollama pull phi4-mini          # strong quality/speed balance
+  # or
+  ollama pull llama3.2:3b        # solid all-rounder
+  # or
+  ollama pull qwen2.5:3b         # good reasoning in small size
+  #+end_src
+  - [ ] Test the model briefly: =ollama run <model> “hello”=
+
+* Phase 6: Fresh Install of Latest Hermes Agent
+- [ ] Install latest Hermes
+  #+begin_src sh
+  curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+  # alternative if needed:
+  # curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash
+  #+end_src
+
+- [ ] Verify install
+  #+begin_src sh
+  hermes --version
+  hermes doctor
+  #+end_src
+
+- [ ] Run setup wizard
+  #+begin_src sh
+  hermes setup
+  #+end_src
+  - [ ] Choose **local Ollama** as provider
+  - [ ] Point to the lightweight model you just pulled
+  - [ ] Configure Telegram gateway (use the preserved BotFather token)
+  - [ ] Prefer local / airgapped options wherever offered
+
+* Phase 7: Systemd & Auto-Start (Power Failure Resilience)
+- [ ] Install gateway as a proper service that survives reboot / power restore
+  #+begin_src sh
+  # Preferred modern way
+  hermes gateway install
+  # For system-wide (survives better on some Pi setups):
+  # sudo hermes gateway install --system --run-as-user $USER
+  #+end_src
+
+- [ ] Enable and start
+  #+begin_src sh
+  hermes gateway start
+  # or
+  systemctl --user enable --now hermes-gateway.service
+  #+end_src
+
+- [ ] Verify service status and logs
+  #+begin_src sh
+  hermes gateway status
+  systemctl --user status hermes-gateway.service
+  journalctl --user -u hermes-gateway.service -f   # watch for clean start
+  #+end_src
+
+- [ ] Test power-loss resilience later (or simulate with =sudo reboot= after everything else works)
+
+* Phase 8: Telegram Reliability (Avoid Old Flush/Restart Bug)
+- [ ] Ensure only **one** gateway process is running
+- [ ] Prefer the official =hermes gateway= service over any old custom Python looping scripts
+- [ ] After any change, fully stop the gateway, wait 5–10 seconds, then start it again
+- [ ] Test send + receive from Telegram
+- [ ] Monitor logs for “session already exists”, “conflict”, or multiple polling instances
+- [ ] Document the exact start/stop sequence that works cleanly
+
+* Phase 9: Skills & Airgapped Power
+- [ ] Restore only the carefully selected skills from backup (do **not** restore everything blindly)
+- [ ] Prefer skills that work fully offline or with minimal external calls
+- [ ] Explicitly disable or remove skills that require cloud tools you do not want
+- [ ] Test a few core Withnail workflows
+- [ ] Keep a short whitelist of approved skills in an org node
+
+* Phase 10: Final Verification
+- [ ] =hermes doctor= is clean
+- [ ] Lightweight model responds quickly via Telegram
+- [ ] Withnail persona (SOUL.md) is loaded and behaves correctly
+- [ ] Gateway survives =sudo reboot=
+- [ ] SSH + Tailscale still healthy after reboot
+- [ ] No leftover old Hermes/Ollama processes or broken units
+
+* Phase 11: Post-Reinstall Knowledge Base Work (Later)
+- [ ] Review and remove cruft from forgrok / org-roam
+- [ ] Smooth directory and node structure
+- [ ] Clarify separation of raw data vs wikified knowledge vs ontologized wisdom
+- [ ] Update baselines and LATEST.org
+
+* Notes
+- Always prefer the official =hermes gateway install= path over hand-rolled systemd units when possible.
+- Keep the large backup tarballs **out** of Git (already handled by .gitignore).
+- Lightweight model first → swap to a heavier one later with a simple =hermes model= or config change.
+- Emacs only — never suggest nano/vi.

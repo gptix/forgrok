@@ -1,0 +1,144 @@
+#+TITLE: Selective Backup Script for hermes-pi (Pre-Reinstall)
+#+AUTHOR: Joji Teira
+#+DATE: [2026-07-23]
+#+NODE-NAME: SelectiveBackupHermesPi
+#+ROAM_TAGS: hermes-pi backup script withnail reinstall inventory
+#+ROAM_ALIASES: pi-selective-backup
+
+* Purpose
+Create a clean, selective backup of critical files from hermes-pi before Ubuntu reinstall + Hermes Agent upgrade to 0.18.2+.
+
+Focuses only on high-value items identified from the tree inventory:
+- ~/.hermes/ (full agent state, skills, memory, cron, SOUL.md, Telegram config)
+- Systemd user units for hermes-bot / hermes-gateway
+- ~/bin/ scripts
+- Existing backups directory
+
+Excludes caches, Go module trees, temporary files, and unused skills.
+
+* Recommended Locations
+- Org-roam node → =infrastructure/pi/hermes-pi/procedures/SelectiveBackupHermesPi.org=
+- Script file   → =infrastructure/pi/hermes-pi/scripts/pi-selective-backup.sh=
+
+* Script (copy this block into a .sh file)
+#+begin_src sh
+#!/bin/bash
+# pi-selective-backup.sh
+# Selective backup of critical hermes-pi files before reinstall
+# Run FROM the X230 (or any machine that can SSH to hermes-pi)
+# Author: Joji Teira  |  2026-07-23
+
+set -euo pipefail
+
+### Configuration ##########################################################
+PI_HOST="hermes-pi"                          # Tailscale name or IP
+REMOTE_USER="gt-hermes"                      # Adjust if different
+TIMESTAMP=$(date +%Y%m%d-%H%M)
+DEFAULT_DEST="./hermes-pi-selective-backup-${TIMESTAMP}"
+DEST="${1:-$DEFAULT_DEST}"                   # Optional argument: destination directory
+DRY_RUN="${DRY_RUN:-0}"                      # Set DRY_RUN=1 for dry-run mode
+
+# Directories / files to back up (relative to remote home)
+BACKUP_TARGETS=(
+  ".hermes"
+  ".config/systemd/user/hermes-bot.service"
+  ".config/systemd/user/hermes-gateway.service"
+  "bin"
+  "backups"
+)
+
+# Patterns to exclude (rsync --exclude)
+EXCLUDES=(
+  ".cache"
+  "go/pkg"
+  "*.bak"
+  "*~"
+  "*.tmp"
+  "*.log"
+  "node_modules"
+  "__pycache__"
+  ".git"
+)
+############################################################################
+
+echo "=== hermes-pi Selective Backup ==="
+echo "Host:      ${PI_HOST}"
+echo "User:      ${REMOTE_USER}"
+echo "Destination: ${DEST}"
+echo "Dry-run:   ${DRY_RUN}"
+echo
+
+# Create destination
+mkdir -p "${DEST}"
+
+# Build rsync exclude arguments
+EXCLUDE_ARGS=()
+for pat in "${EXCLUDES[@]}"; do
+  EXCLUDE_ARGS+=(--exclude="${pat}")
+done
+
+# Build remote source list
+REMOTE_SOURCES=()
+for target in "${BACKUP_TARGETS[@]}"; do
+  REMOTE_SOURCES+=("${REMOTE_USER}@${PI_HOST}:~/${target}")
+done
+
+# Rsync options
+RSYNC_OPTS=(-a --progress --human-readable --partial)
+if [[ "${DRY_RUN}" == "1" ]]; then
+  RSYNC_OPTS+=(--dry-run)
+  echo ">>> DRY-RUN MODE — no files will be copied <<<"
+fi
+
+echo "Starting rsync..."
+rsync "${RSYNC_OPTS[@]}" "${EXCLUDE_ARGS[@]}" \
+  "${REMOTE_SOURCES[@]}" \
+  "${DEST}/"
+
+# Also capture a quick inventory of what was backed up
+echo
+echo "Creating local inventory..."
+find "${DEST}" -type f | sort > "${DEST}/BACKUP-INVENTORY.txt"
+echo "Inventory written to ${DEST}/BACKUP-INVENTORY.txt"
+
+# Optional: create a compressed tarball of the whole backup
+TAR_NAME="hermes-pi-selective-${TIMESTAMP}.tar.gz"
+echo
+echo "Creating compressed archive: ${TAR_NAME}"
+tar -czf "${TAR_NAME}" -C "$(dirname "${DEST}")" "$(basename "${DEST}")"
+echo "Archive ready: ${TAR_NAME}"
+
+echo
+echo "✅ Selective backup complete."
+echo "   Directory : ${DEST}"
+echo "   Archive   : ${TAR_NAME}"
+echo
+echo "Next steps:"
+echo "  1. Review BACKUP-INVENTORY.txt"
+echo "  2. Move the .tar.gz somewhere safe (external drive / another machine)"
+echo "  3. Proceed with Ubuntu reinstall when ready"
+#+end_src
+
+* Usage
+1. Extract the script block above and save as:
+   =infrastructure/pi/hermes-pi/scripts/pi-selective-backup.sh=
+2. Make executable:
+   #+begin_src sh
+   chmod +x infrastructure/pi/hermes-pi/scripts/pi-selective-backup.sh
+   #+end_src
+3. Run from X230 (in any convenient directory):
+   #+begin_src sh
+   ./pi-selective-backup.sh                  # uses default timestamped dir
+   # or
+   ./pi-selective-backup.sh /path/to/my-backup
+   # Dry-run first (recommended):
+   DRY_RUN=1 ./pi-selective-backup.sh
+   #+end_src
+
+* Checklist
+- [ ] Script saved and made executable
+- [ ] Dry-run performed and reviewed
+- [ ] Real backup executed
+- [ ] BACKUP-INVENTORY.txt checked
+- [ ] .tar.gz moved to safe location
+- [ ] Node + script committed & pushed to forgrok
