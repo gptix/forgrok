@@ -1,0 +1,34 @@
+Grok, please provide a simple table with current prices for the assets specified at the end of this prompt.
+The table must have exactly these columns:
+| symbol | price (USD) | info source | Date-Time |
+Use the most reliable live or near-live sources available. Format the Date-Time in ISO 8601 (YYYY-MM-DD HH:MM UTC) or clear local time with timezone. Keep the table clean and minimal — no extra commentary unless a price cannot be found.
+Symbols of interest: BTC, BSV, ETH, GTII
+
+
+
+Grok, please provide a clear summary of companies currently active in the modular small reactor (SMR) and molten-salt fission reactor spaces.
+Structure your response as follows:
+
+Overview — A short paragraph describing the current state of the SMR and molten-salt reactor sectors (key trends, technology maturity, and regulatory/commercial progress as of the latest available data).
+Key Companies — A concise list of the most relevant companies in these spaces. For each company include:
+Company name
+Primary technology focus (e.g., light-water SMR, molten-salt reactor, high-temperature gas-cooled, etc.)
+Current status (design stage, licensing, construction, deployment plans, or partnerships)
+
+Particularly Interesting Companies — Highlight 4–7 companies that stand out for technical innovation, commercial progress, funding, regulatory milestones, or strategic positioning. Use short bullet points for each, focusing on what makes them noteworthy.
+
+Keep the entire response factual, up-to-date, and free of hype. Prefer primary sources and recent developments where possible. Note any significant gaps or uncertainties in publicly available information..
+
+
+Grok, please provide a structured summary covering the following three topics:
+
+Garry Tan and Andrej Karpathy
+Summarize recent news about, and public commentary by, Garry Tan and Andrej Karpathy. Focus on statements, posts, interviews, or announcements from the last 30–60 days that are substantive (AI, technology, startups, policy, or industry trends). Keep it concise and factual.
+Karpathy Gist Comment Thread
+Review the GitHub Gist comment thread at:
+https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+Specifically examine the comment at #gistcomment-6269698 and summarize notable commentary from the last 14 days in that same thread (or closely related replies). Highlight the most interesting or insightful points.
+Ontology-based Knowledge Bases
+Summarize any interesting new discussions, papers, projects, or commentary from the last 30 days about ontology-based knowledge bases (including knowledge graphs, formal ontologies, semantic knowledge systems, or related LLM + ontology approaches).
+
+Structure the response with clear headings for each of the three sections. Prefer primary sources and recent material. Keep the overall summary focused and readable.

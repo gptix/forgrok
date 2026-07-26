@@ -1,0 +1,29 @@
+=== RESUME SESSION: Withnail Permission Layer ===
+
+We are currently implementing a permission/boundary layer for Withnail (the autonomous ZHO CEO agent running on hermes-pi) so that it can only invoke tools that are explicitly whitelisted.
+
+### Current State
+
+- Created two files and placed them on the Pi via TRAMP:
+  - `hermes/tools/withnail-tool-whitelist.yaml`
+  - `hermes/tools/permissions.py` (contains `is_tool_allowed()` and related functions)
+
+- Modified `run_agent.py` (currently in GitHub inbox/) to integrate a basic permission check using `is_tool_allowed(function_name)` inside `_execute_tool_calls_concurrent`.
+
+- The permission check is working in the concurrent execution path, but the integration is incomplete.
+
+### What Still Needs to Be Done
+
+1. Add the same permission check to the **sequential** tool execution path (if a separate method exists).
+2. Consider adding early filtering inside `_should_parallelize_tool_batch()` as defense-in-depth.
+3. Improve the current permission check with proper logging.
+4. Review and clean up the overall integration for robustness.
+
+### Important Context & Preferences
+
+- We prefer **minimal, targeted edits** to existing files rather than large rewrites.
+- Files under active development are usually pushed to `inbox/` on GitHub for review before being applied to the Pi via TRAMP.
+- The user works primarily from the Lenovo ThinkPad X230 using Emacs + TRAMP to edit files on hermes-pi.
+- There are multiple copies of key files across the system (`.hermes/`, `hermes/`, backups, site-packages). We focus on the active ones under `/home/gt-hermes/.hermes/` and `/home/gt-hermes/hermes/`.
+
+Please continue from this point. Start by summarizing the current state of the permission layer integration in `run_agent.py` and propose the next logical step.
