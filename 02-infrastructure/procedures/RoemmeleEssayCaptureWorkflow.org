@@ -1,0 +1,105 @@
+#+TITLE: Roemmele Essay Capture & Cleaning Workflow
+#+AUTHOR: Joji Teira + Grok
+#+DATE: 2026-07-27
+#+FILETAGS: :roemmele:workflow:sources:procedure:
+#+STARTUP: showall indent
+#+OPTIONS: toc:2 num:nil
+
+* Purpose
+
+Document the repeatable workflow for capturing, cleaning, and archiving essays from [[https://readmultiplex.com][readmultiplex.com]] (Brian Roemmele) into the knowledge base.
+
+This process was developed and validated on 2026-07-27 using essay ID 001.
+
+* Directory Structure
+
+#+begin_example
+04-sources/roemmele/
+├── raw/                          ← SingleFile HTML archives (large)
+├── cleaned/                      ← Clean Markdown + Org + hero images
+└── roemmele-essays-inventory.org ← Master tracking table
+#+end_example
+
+* Status Values (Inventory)
+
+| Status     | Meaning                                                                 |
+|------------|-------------------------------------------------------------------------|
+| listed     | Entry exists in the inventory table                                     |
+| downloaded | Raw HTML captured in =raw/=                                             |
+| cleaned    | Clean Markdown + Org version exist in =cleaned/=                        |
+| pushed     | All related files committed and pushed to GitHub                        |
+| ingested   | Summarized, key concepts turned into org-roam nodes, cross-linked, etc. |
+
+* Full Workflow
+
+** 1. Capture the full essay (while logged in)
+
+- Open the essay URL in Brave while authenticated.
+- Scroll to the bottom so all content loads.
+- Use the *SingleFile* extension to save a complete page.
+- Save as:
+  #+begin_example
+  04-sources/roemmele/raw/YYYY-MM-DD_Short-Title.html
+  #+end_example
+  (Use the =reasonable_filename= from the inventory.)
+
+** 2. Create cleaned Markdown
+
+#+begin_src bash
+cd 04-sources/roemmele/raw
+
+pandoc YYYY-MM-DD_Short-Title.html -t plain 2>/dev/null \
+  | sed -E '/ROCKET READER|Listen to this|YOUR PERSONAL DATA|DELETE ME ACCOUNT|jp-relatedposts|Click to access|attachment-boardwalk|entry-thumbnail|rr_|sf-hidden|posted-on/Id' \
+  | sed '/^[[:space:]]*$/N;/^\n$/D' \
+  > ../cleaned/YYYY-MM-DD_Short-Title.md
+#+end_src
+
+** 3. Create Org-mode version (for later ingestion)
+
+#+begin_src bash
+cat > ../cleaned/YYYY-MM-DD_Short-Title.org << 'EOF'
+#+TITLE: Full Essay Title Here
+#+DATE: YYYY-MM-DD
+#+AUTHOR: Brian Roemmele
+#+SOURCE: https://readmultiplex.com/...
+#+FILETAGS: :roemmele:essay:sources:
+#+STARTUP: showall indent
+
+* Essay
+
+EOF
+
+tail -n +5 ../cleaned/YYYY-MM-DD_Short-Title.md >> ../cleaned/YYYY-MM-DD_Short-Title.org
+#+end_src
+
+** 4. Save the hero image
+
+- On the live page, Inspect the hero image and copy the full =src= URL.
+- Download it:
+  #+begin_src bash
+  curl -L -o ../cleaned/YYYY-MM-DD_Short-Title-hero.png "URL"
+  #+end_src
+
+** 5. Update the inventory
+
+Replace the corresponding row in =roemmele-essays-inventory.org= with status =pushed= and a short note, for example:
+
+#+begin_example
+| 001 | Title... | 2026-07-25 | URL... | 2026-07-25_Soviet-Brain-Energy-Part1 | pushed | ? | Full essay captured via SingleFile; cleaned MD + Org created; hero image saved. Ready for later ingestion. |
+#+end_example
+
+** 6. Commit and push
+
+Stage the new/changed files (raw HTML optional if very large, cleaned files, hero image, inventory) and commit with a clear message, then push.
+
+* Notes & Lessons Learned
+
+- SingleFile is currently the most reliable way to capture member-only content.
+- The resulting HTML can be very large (10–15 MB) because many images are embedded as base64. This is normal.
+- =htmlq= often hangs on these large files; prefer =pandoc= for extraction.
+- Keep large =raw/*.html= files out of day-to-day Magit interaction when possible (or use Git LFS / .gitignore later if needed).
+- The =ingested= status is reserved for the later knowledge-work phase (summaries, concept nodes, cross-links).
+
+* Change Log
+
+- 2026-07-27: Initial workflow documented from processing of essay 001.
