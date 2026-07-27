@@ -31,7 +31,10 @@
 
 ## 4. Recent V-K / Session Notes
 
-- 2026-07-26: First V-K under new STRUCTURE.md; designed and proposed CURRENT.md
+* 2026-07-26: First V-K under new STRUCTURE.md.
+  - Designed and landed CURRENT.md as the living operational dashboard.
+  - Updated BOOT.md Section 3 to point at CURRENT.md and keep the high-level summary short.
+  - Withnail/Hermes remains operational via Telegram + OpenRouter SOUL; local Ollama SOUL still broken.
 
 ## 5. Next Actions (suggested)
 
