@@ -42,33 +42,24 @@ Working copy lives on the X230. All structural changes are made there, committed
 
 ---
 
-## 3. Current project state (high level, 2026-07-26)
+## 3. Current project state
 
-**Withnail / Hermes on hermes-pi**
-- Hermes Agent restored and running
-- SOUL.md (Withnail identity) works via OpenRouter free model
-- Local Ollama SOUL.md injection is broken (bug reported to Nous Research)
-- Telegram bot `@WithnailRobot` is live and responding as Withnail
-- Systemd user service `hermes-gateway.service` is enabled (survives reboot)
-- Skills heavily reduced for air-gapped operation
+**Detailed living snapshot:** **CURRENT.md** (last updated 2026-07-26)
 
-**Knowledge base**
-- Major reorganization completed (old `groki/` dissolved)
-- `STRUCTURE.md` + new `README.md` written
-- Light cleanup of `06-raw/` and start of `99-archive/` pass done
+High-level summary (kept deliberately short):
 
-**Open / parked items**
-- Local Ollama SOUL.md loading bug (reported)
-- Further cleanup of remaining raw / archive material
-- Controlled access of selected knowledge-base material to Withnail
-- Brian Roemmele essay collection & ingestion pipeline (ethical, local-only)
+- Withnail / Hermes on hermes-pi is operational via Telegram + OpenRouter SOUL.md
+- Local Ollama SOUL.md injection remains broken (reported)
+- Knowledge base reorganization complete; STRUCTURE.md is authoritative
+- Transitional top-level directories still present (triage pending)
 
----
+See **CURRENT.md** for the full operational dashboard, open items, and suggested next actions.
 
 ## 4. Key files to load when deeper context is needed
 
 | Need | File |
 |------|------|
+| Living operational snapshot | CURRENT.md |
 | Full structure | `STRUCTURE.md` |
 | Voight-Kampff protocol | `01-core/memory/voight-kampff-protocol.org` (or `.md`) |
 | Master memory mirror | `01-core/memory/joji-grok-project-memory.org` |
@@ -107,7 +98,9 @@ The living knowledge base is the source of truth; this BOOT file is only the on-
 
 ## 7. How to update this file
 
-Keep `BOOT.md` short.  
-When major project status changes, update section 3.  
-When the top-level structure changes, update `STRUCTURE.md` and point here.  
-Do not put secrets or long logs in this file.
+Keep `BOOT.md` short.
+
+- For day-to-day or session-level status changes → update **CURRENT.md**
+- Only update Section 3 of this file when the high-level summary itself needs to change, or when pointing to a new CURRENT.md date
+- When the top-level structure changes, update `STRUCTURE.md` and point here
+- Do not put secrets or long logs in this file
