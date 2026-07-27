@@ -38,12 +38,10 @@
 ## 4. Recent V-K / Session Notes
 
 * 2026-07-26: First V-K under new STRUCTURE.md; designed and landed CURRENT.md
-* 2026-07-27 (morning): Finished residual org-roam-knowledge/ triage
-  - Desk Set / Part 25 nodes → 05-wiki/concepts/
-  - Arrest demographics research → 03-projects/arrest-demographics/
-  - Lawyer AI notes → 03-projects/local-ai-agents/
-  - Empty org-roam-knowledge/ directory removed
-* 2026-07-27 (midday): Finished 06-raw/ triage and removed last transitional directories. Knowledge-base reorganization now complete.
+* 2026-07-26 (evening): Cleared majority of transitional top-level directories
+* 2026-07-27: Completed final triage of 06-raw/ and removed last transitional directories. Numbered structure is now fully clean.
+  - Created 03-projects/arrest-demographics/, 03-projects/local-ai-agents/, 04-sources/savewisdom/
+  - BOOT.md + CURRENT.md updated
 
 ## 5. Next Actions (suggested)
 
