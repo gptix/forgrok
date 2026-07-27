@@ -7,7 +7,7 @@ When the operator says “Hello Grok! Please visit https://github.com/gptix/forg
 
 
 
-**Last updated**: 2026-07-26
+**Last updated**: 2026-07-27
 
 ---
 
@@ -44,14 +44,14 @@ Working copy lives on the X230. All structural changes are made there, committed
 
 ## 3. Current project state
 
-**Detailed living snapshot:** **CURRENT.md** (last updated 2026-07-26)
+**Detailed living snapshot:** **CURRENT.md** (last updated 2026-07-27)
 
 High-level summary (kept deliberately short):
 
-- Withnail / Hermes on hermes-pi is operational via Telegram + OpenRouter SOUL.md
-- Local Ollama SOUL.md injection remains broken (reported)
-- Knowledge base reorganization complete; STRUCTURE.md is authoritative
-- Transitional top-level directories still present (triage pending)
+* Withnail / Hermes on hermes-pi is operational via Telegram + OpenRouter SOUL.md
+* Local Ollama SOUL.md injection remains broken (reported)
+* Knowledge base reorganization complete; STRUCTURE.md is authoritative
+* All transitional top-level directories have been cleared
 
 See **CURRENT.md** for the full operational dashboard, open items, and suggested next actions.
 
