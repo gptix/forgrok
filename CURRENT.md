@@ -1,7 +1,7 @@
 # CURRENT.md — Living Operational Snapshot
 
-**Last updated:** 2026-07-26  
-**Maintainer:** Joji Teira + Grok  
+**Last updated:** 2026-07-27
+**Maintainer:** Joji Teira + Grok
 **Companion files:** BOOT.md (session on-ramp), STRUCTURE.md (map), 01-core/memory/joji-grok-project-memory.org (executive mirror)
 
 ---
@@ -17,32 +17,36 @@
 
 ## 2. Knowledge Base
 
-* Major reorganization complete (old groki/ dissolved)
-* STRUCTURE.md + README.md are authoritative
-* Transitional directories largely cleared:
-  - `inbox/` → renamed `00-inbox/` (now empty)
-  - `org-roam-knowledge/brian-roemmele/` → `04-sources/roemmele/`
-  - Hermes notes → `02-infrastructure/hermes-pi/hermes/`
-  - Session / chat material → `07-sessions/`
-  - Desk Set / Part 25 concept nodes → `05-wiki/concepts/`
-* Remaining in `org-roam-knowledge/`: `ai-tools/`, `interviews/`, `research/`, and the Fulton audit note
-* `grok-memory/` still present (exports only)
+* Major reorganization complete; STRUCTURE.md + README.md are authoritative
+* All transitional top-level directories cleared:
+  - org-roam-knowledge/ fully dissolved (content moved to 03-projects/, 05-wiki/, etc.)
+  - inbox/ → 00-inbox/ (empty)
+* New project homes created this session:
+  - 03-projects/arrest-demographics/
+  - 03-projects/local-ai-agents/
+* Remaining residual: grok-memory/exports/ (master memory files still need final placement into 01-core/memory/)
 
 ## 3. Open / Parked Items
 
 1. Local Ollama SOUL.md loading bug (reported)
-2. Finish residual triage of `org-roam-knowledge/` leftovers + `grok-memory/`
-3. Controlled, selective access of KB material to Withnail
-4. Brian Roemmele essay collection & ethical local-only ingestion pipeline
+2. Final placement of grok-memory/exports/ into 01-core/memory/ and removal of grok-memory/
+3. Further triage of 06-raw/ (SaveWisdomQuestions files, remaining HTML/images)
+4. Controlled, selective access of KB material to Withnail
+5. Brian Roemmele essay collection & ethical local-only ingestion pipeline
 
 ## 4. Recent V-K / Session Notes
 
 * 2026-07-26: First V-K under new STRUCTURE.md; designed and landed CURRENT.md
-* 2026-07-26 (evening): Cleared majority of transitional top-level directories; knowledge base now largely follows the numbered structure
+* 2026-07-27 (morning): Finished residual org-roam-knowledge/ triage
+  - Desk Set / Part 25 nodes → 05-wiki/concepts/
+  - Arrest demographics research → 03-projects/arrest-demographics/
+  - Lawyer AI notes → 03-projects/local-ai-agents/
+  - Empty org-roam-knowledge/ directory removed
 
 ## 5. Next Actions (suggested)
 
-* Finish residual triage of `org-roam-knowledge/` leftovers and `grok-memory/`
+* Move grok-memory/exports/ into 01-core/memory/ and delete top-level grok-memory/
+* Light additional pass on 06-raw/
 * Draft Voight-Kampff protocol v4.0 adapted to numbered structure
 * (Later) Selective KB exposure plan for Withnail
 
