@@ -29,7 +29,12 @@
   
 ## 3. Open / Parked Items
 
-1. Local Ollama SOUL.md loading bug (reported)
+1. Local Ollama SOUL.md injection still broken (confirmed 2026-07-27)
+   - Multiple open Hermes issues (#26596, #29871, #66118)
+   - Works reliably via OpenRouter; fails or is ignored with local Ollama
+   - Possible partial fixes on main, but not confirmed for gateway + custom Ollama providers
+   - Workaround reports: force Ollama num_ctx ≥ 64k
+   - Continue using OpenRouter path for Withnail until resolved
 2. Final placement of grok-memory/exports/ into 01-core/memory/ and removal of grok-memory/
 3. Further triage of 06-raw/ (SaveWisdomQuestions files, remaining HTML/images)
 4. Controlled, selective access of KB material to Withnail
