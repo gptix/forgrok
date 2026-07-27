@@ -24,8 +24,9 @@
 * New project homes created this session:
   - 03-projects/arrest-demographics/
   - 03-projects/local-ai-agents/
-* Remaining residual: grok-memory/exports/ (master memory files still need final placement into 01-core/memory/)
-
+* Knowledge-base reorganization complete. All transitional top-level directories cleared.
+* 06-raw/ now empty (SaveWisdom material moved to 04-sources/savewisdom/; remaining nodes redistributed).
+  
 ## 3. Open / Parked Items
 
 1. Local Ollama SOUL.md loading bug (reported)
@@ -42,11 +43,10 @@
   - Arrest demographics research → 03-projects/arrest-demographics/
   - Lawyer AI notes → 03-projects/local-ai-agents/
   - Empty org-roam-knowledge/ directory removed
+* 2026-07-27 (midday): Finished 06-raw/ triage and removed last transitional directories. Knowledge-base reorganization now complete.
 
 ## 5. Next Actions (suggested)
 
-* Move grok-memory/exports/ into 01-core/memory/ and delete top-level grok-memory/
-* Light additional pass on 06-raw/
 * Draft Voight-Kampff protocol v4.0 adapted to numbered structure
 * (Later) Selective KB exposure plan for Withnail
 
