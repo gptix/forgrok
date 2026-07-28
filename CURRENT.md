@@ -40,6 +40,11 @@
 4. Controlled, selective access of KB material to Withnail
 5. Brian Roemmele essay collection & ethical local-only ingestion pipeline
 
+### Test Grok Build (2026-07-27)
+- New local project to verify Grok CLI / Grok Build authentication and a minimal hello-world workflow.
+- Location: `03-projects/test-grok-build/`
+- Status: CLI installed (0.2.112). Login currently failing on token exchange.
+
 ## 4. Recent V-K / Session Notes
 
 * 2026-07-26: First V-K under new STRUCTURE.md; designed and landed CURRENT.md

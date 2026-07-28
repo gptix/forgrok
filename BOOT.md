@@ -53,6 +53,8 @@ High-level summary (kept deliberately short):
 * Knowledge base reorganization complete; STRUCTURE.md is authoritative
 * All transitional top-level directories have been cleared
 
+- Test Grok Build → `03-projects/test-grok-build/` (CLI verification + first hello-world)
+
 See **CURRENT.md** for the full operational dashboard, open items, and suggested next actions.
 
 ## 4. Key files to load when deeper context is needed
