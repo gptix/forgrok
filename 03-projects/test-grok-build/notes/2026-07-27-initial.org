@@ -1,0 +1,23 @@
+#+TITLE: Test Grok Build – Initial Session
+#+DATE: 2026-07-27
+#+FILETAGS: :notes:grok:
+
+* Installation
+
+#+begin_src bash
+curl -fsSL https://x.ai/cli/install.sh | bash
+#+end_src
+
+Result: Grok 0.2.112 installed successfully. Binaries linked to =~/.local/bin/grok= and =~/.local/bin/agent=.
+
+* Authentication Attempt
+
+- Ran =grok login= / =agent login=.
+- Browser opened to accounts.x.ai.
+- Received "Could not log in – Something went wrong when logging in" (exchange-token-error).
+
+* Next Steps
+
+1. Try private/incognito window + clean login to accounts.x.ai
+2. Confirm the correct X/xAI account that holds promotional Grok Build access
+3. Re-run =grok login=

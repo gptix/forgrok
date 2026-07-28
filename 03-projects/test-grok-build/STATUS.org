@@ -1,0 +1,19 @@
+#+TITLE: Test Grok Build – Status
+#+DATE: 2026-07-27
+#+FILETAGS: :project:status:
+#+STARTUP: showall indent
+
+* Checklist
+
+- [ ] Successfully log in to Grok Build
+- [ ] Create a simple hello-world style project
+
+* Current State
+
+- Grok CLI 0.2.112 is installed and responds to =grok --version= and =agent --help=.
+- Login attempt via =grok login= reached the xAI accounts page but failed with =exchange-token-error=.
+- Next action: resolve authentication (private window / correct account / clear cookies).
+
+* Log
+
+- 2026-07-27 :: Project created. CLI confirmed working. Auth currently blocked on token exchange.

@@ -1,0 +1,23 @@
+#+TITLE: Test Grok Build
+#+DATE: 2026-07-27
+#+AUTHOR: Joji Teira
+#+FILETAGS: :project:grok:cli:test:
+#+STARTUP: showall indent
+
+* Purpose
+
+Small, low-stakes project to verify and document the Grok Build (Grok CLI / =agent=) workflow on the local X230.
+
+* Goals
+
+1. Successfully log in to Grok Build
+2. Create a simple "hello world"-style project using the =agent= / =grok= CLI
+
+* Status
+
+See [[file:STATUS.org][STATUS.org]]
+
+* Related
+
+- Grok CLI version currently installed: 0.2.112
+- Binary location: =~/.local/bin/grok= and =~/.local/bin/agent=
