@@ -1,0 +1,123 @@
+:PROPERTIES:
+:ID:       20260729-roemmele-essay-ingest-workflow
+:END:
+#+TITLE: Roemmele Essay Ingest Workflow (SingleFile → Cleaned → Inventory)
+#+NODE-NAME: RoemmeleEssayIngestWorkflow
+#+FILETAGS: :roemmele:workflow:ingest:procedure:high-protein:
+#+DATE: 2026-07-29
+#+STATUS: active
+
+* Purpose
+
+Repeatable workflow for turning a full Brian Roemmele essay from readmultiplex.com into durable knowledge-base artifacts.
+
+Refined during successful processing of Essay 002 (2026-07-22).
+
+* Status Progression
+
+| Status     | Meaning                                      |
+|------------|----------------------------------------------|
+| listed     | URL + metadata recorded                      |
+| downloaded | SingleFile HTML present in =html/=           |
+| cleaned    | Clean Markdown + org-roam node exist         |
+| pushed     | Everything committed and on remote           |
+| ingested   | Summary + cross-links + Infranodus material  |
+
+* Workflow
+
+** 1. Select the essay
+
+Open =roemmele-essays-inventory.org= and choose the next =listed= essay.
+Note its =reasonable_filename=.
+
+** 2. Capture while logged in (SingleFile)
+
+1. Browser + SingleFile extension
+2. Log in to https://readmultiplex.com
+3. Open the essay URL and wait for full load
+4. Run SingleFile
+5. Rename to =<reasonable_filename>.html=
+6. Place in:
+
+   #+begin_example
+   04-sources/roemmele/html/<reasonable_filename>.html
+   #+end_example
+
+** 3. Extract media + raw Markdown
+
+#+begin_src bash
+cd ~/local-side/04-sources/roemmele
+
+pandoc html/<reasonable_filename>.html \
+  -f html \
+  -t markdown \
+  --wrap=none \
+  --extract-media=images/<reasonable_filename> \
+  -o cleaned/<reasonable_filename>.raw.md
+#+end_src
+
+** 4. Automated cleanup
+
+#+begin_src bash
+cd ~/local-side/04-sources/roemmele
+./scripts/clean-roemmele-essay.sh <reasonable_filename>
+#+end_src
+
+This produces =cleaned/<reasonable_filename>.md=.
+
+Open the cleaned file in Emacs for a short visual pass (remove any remaining empty wrappers or duplicate headings).
+
+** 5. Create org-roam node
+
+Create =cleaned/<reasonable_filename>.org= with at least:
+
+#+begin_example
+:PROPERTIES:
+:ID:       YYYYMMDD-<short-slug>
+:END:
+#+TITLE: <Clean Title>
+#+NODE-NAME: <CamelCaseNoSpaces>
+#+FILETAGS: :roemmele:essay:
+#+DATE: <YYYY-MM-DD>
+#+SOURCE: <original URL>
+#+CAPTURE_METHOD: SingleFile (member login)
+#+STATUS: cleaned
+#+end_example
+
+Add a short summary, key claims, and links.
+
+** 6. Update inventory
+
+In =roemmele-essays-inventory.org=:
+- Set status to =cleaned= (or =pushed= after commit)
+- Add a short note with the date
+
+** 7. Commit & push
+
+#+begin_src bash
+cd ~/local-side
+git add 04-sources/roemmele/
+git commit -m "processed Roemmele essay <id> (<short title>)"
+git push github-side main
+#+end_src
+
+** 8. SUCCESS
+
+- [ ] HTML in =html/=
+- [ ] Cleaned =.md= in =cleaned/=
+- [ ] Org-roam node with valid =#+NODE-NAME:= (no spaces)
+- [ ] Images under =images/<reasonable_filename>/=
+- [ ] Inventory updated
+- [ ] Commit visible on =github-side/main=
+
+→ **SUCCESS**
+
+* Script Location
+
+=04-sources/roemmele/scripts/clean-roemmele-essay.sh=
+
+* Related
+
+- [[roemmele-essays-inventory]]
+- [[master-roemmele-ingest]]
+- [[high-protein-data]]
