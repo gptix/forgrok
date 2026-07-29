@@ -5,9 +5,7 @@ This file is the single entry point for a new chat session.
 
 When the operator says “Hello Grok! Please visit https://github.com/gptix/forgrok/blob/main/BOOT.md”, Grok should read this file and the files it points to before doing substantial work.
 
-
-
-**Last updated**: 2026-07-27
+**Last updated**: 2026-07-28
 
 ---
 
@@ -44,16 +42,15 @@ Working copy lives on the X230. All structural changes are made there, committed
 
 ## 3. Current project state
 
-**Detailed living snapshot:** **CURRENT.md** (last updated 2026-07-27)
+**Detailed living snapshot:** **CURRENT.md** (last updated 2026-07-28)
 
 High-level summary (kept deliberately short):
 
-* Withnail / Hermes on hermes-pi is operational via Telegram + OpenRouter SOUL.md
-* Local Ollama SOUL.md injection remains broken (reported)
-* Knowledge base reorganization complete; STRUCTURE.md is authoritative
-* All transitional top-level directories have been cleared
-
-- Test Grok Build → `03-projects/test-grok-build/` (CLI verification + first hello-world)
+- Withnail / Hermes on hermes-pi operational via Telegram + OpenRouter
+- Hermes 0.19.0 / Ollama 0.32.3
+- Improved baseline collector (`collect-pi-specs.sh`) now in production
+- Knowledge base reorganization complete; STRUCTURE.md is authoritative
+- **Tomorrow’s focus:** Automate as much of the Voight-Kampff Protocol as possible
 
 See **CURRENT.md** for the full operational dashboard, open items, and suggested next actions.
 
@@ -62,12 +59,13 @@ See **CURRENT.md** for the full operational dashboard, open items, and suggested
 | Need | File |
 |------|------|
 | Living operational snapshot | CURRENT.md |
-| Full structure | `STRUCTURE.md` |
+| Full structure | STRUCTURE.md |
 | Voight-Kampff protocol | `01-core/memory/voight-kampff-protocol.org` (or `.md`) |
 | Master memory mirror | `01-core/memory/joji-grok-project-memory.org` |
 | ZHO index | `01-core/zho/zho-index.org` |
 | Hermes-pi procedures | `02-infrastructure/hermes-pi/procedures/` |
 | Withnail project | `03-projects/withnail/` |
+| Baseline collector | `02-infrastructure/hermes-pi/scripts/collect-pi-specs.sh` |
 
 ---
 
@@ -104,5 +102,5 @@ Keep `BOOT.md` short.
 
 - For day-to-day or session-level status changes → update **CURRENT.md**
 - Only update Section 3 of this file when the high-level summary itself needs to change, or when pointing to a new CURRENT.md date
-- When the top-level structure changes, update `STRUCTURE.md` and point here
+- When the top-level structure changes, update STRUCTURE.md and point here
 - Do not put secrets or long logs in this file

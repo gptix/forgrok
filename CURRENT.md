@@ -1,64 +1,46 @@
 # CURRENT.md — Living Operational Snapshot
 
-**Last updated:** 2026-07-27
-**Maintainer:** Joji Teira + Grok
+**Last updated:** 2026-07-28  
+**Maintainer:** Joji Teira + Grok  
 **Companion files:** BOOT.md (session on-ramp), STRUCTURE.md (map), 01-core/memory/joji-grok-project-memory.org (executive mirror)
 
 ---
 
 ## 1. Withnail / Hermes (hermes-pi)
 
-* Current Hermes 0.19.0
-* Current Ollama 0.32.3
-* Hermes Agent restored and running
-* SOUL.md identity: works via OpenRouter free model
-* Local Ollama SOUL.md injection: broken (bug reported to Nous Research)
-* Telegram: @WithnailRobot live and responding as Withnail
-* systemd: hermes-gateway.service (user) enabled, survives reboot
-* Skills: heavily reduced for near-airgapped operation
+- Hermes Agent **0.19.0**
+- Ollama **0.32.3**
+- SOUL.md identity: works via OpenRouter free model
+- Local Ollama SOUL.md injection: still broken
+- Telegram: @WithnailRobot live and responding as Withnail
+- systemd: hermes-gateway.service (user) enabled, survives reboot
+- Skills: heavily reduced for near-airgapped operation
+- New baseline collector (`collect-pi-specs.sh`) deployed and tested successfully
 
 ## 2. Knowledge Base
 
-* Major reorganization complete; STRUCTURE.md + README.md are authoritative
-* All transitional top-level directories cleared:
-  - org-roam-knowledge/ fully dissolved (content moved to 03-projects/, 05-wiki/, etc.)
-  - inbox/ → 00-inbox/ (empty)
-* New project homes created this session:
-  - 03-projects/arrest-demographics/
-  - 03-projects/local-ai-agents/
-* Knowledge-base reorganization complete. All transitional top-level directories cleared.
-* 06-raw/ now empty (SaveWisdom material moved to 04-sources/savewisdom/; remaining nodes redistributed).
-  
+- Numbered structure remains authoritative
+- New permanent script: `02-infrastructure/hermes-pi/scripts/collect-pi-specs.sh`
+- Latest baseline: `pi-withnail-specs-hermes-pi-20260728-2133.org` (+ `.sexp`)
+- `LATEST.org` points to the 2026-07-28 baseline
+
 ## 3. Open / Parked Items
 
-1. Local Ollama SOUL.md injection still broken (confirmed 2026-07-27)
-   - Multiple open Hermes issues (#26596, #29871, #66118)
-   - Works reliably via OpenRouter; fails or is ignored with local Ollama
-   - Possible partial fixes on main, but not confirmed for gateway + custom Ollama providers
-   - Workaround reports: force Ollama num_ctx ≥ 64k
-   - Continue using OpenRouter path for Withnail until resolved
-2. Final placement of grok-memory/exports/ into 01-core/memory/ and removal of grok-memory/
-3. Further triage of 06-raw/ (SaveWisdomQuestions files, remaining HTML/images)
-4. Controlled, selective access of KB material to Withnail
-5. Brian Roemmele essay collection & ethical local-only ingestion pipeline
-
-### Test Grok Build (2026-07-27)
-- New local project to verify Grok CLI / Grok Build authentication and a minimal hello-world workflow.
-- Location: `03-projects/test-grok-build/`
-- Status: CLI installed (0.2.112). Login currently failing on token exchange.
+1. Local Ollama SOUL.md injection still broken
+2. Final placement of remaining grok-memory/exports/ material
+3. Controlled, selective access of KB material to Withnail
+4. Brian Roemmele essay collection & ethical local-only ingestion pipeline
+5. **Test Grok Build** (`03-projects/test-grok-build/`) — CLI installed, login still failing on token exchange
 
 ## 4. Recent V-K / Session Notes
 
-* 2026-07-26: First V-K under new STRUCTURE.md; designed and landed CURRENT.md
-* 2026-07-26 (evening): Cleared majority of transitional top-level directories
-* 2026-07-27: Completed final triage of 06-raw/ and removed last transitional directories. Numbered structure is now fully clean.
-  - Created 03-projects/arrest-demographics/, 03-projects/local-ai-agents/, 04-sources/savewisdom/
-  - BOOT.md + CURRENT.md updated
+- 2026-07-28 (evening): Designed, tested, and deployed improved baseline collector. Captured Hermes 0.19.0 + Ollama 0.32.3. Promoted script to permanent name in KB. Updated CURRENT.md.
 
 ## 5. Next Actions (suggested)
 
-* Draft Voight-Kampff protocol v4.0 adapted to numbered structure
-* (Later) Selective KB exposure plan for Withnail
+- **Tomorrow focus:** Test and apply as much automation as possible to the Voight-Kampff Protocol
+- Draft / refine Voight-Kampff protocol v4.0 adapted to the numbered structure
+- (Later) Selective KB exposure plan for Withnail
 
 ---
 
