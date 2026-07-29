@@ -1,0 +1,59 @@
+:PROPERTIES:
+:ID:       20260729-how-to-install-roemmele-git-hooks
+:END:
+#+TITLE: How to Install Roemmele Essay Ingest Git Hooks on a Fresh Clone
+#+NODE-NAME: HowToInstallRoemmeleGitHooks
+#+FILETAGS: :roemmele:workflow:git:hooks:procedure:
+#+DATE: 2026-07-29
+
+* Purpose
+
+Install the version-controlled pre-commit and pre-push hooks that support the Roemmele essay ingest workflow after cloning or on a new machine.
+
+* Prerequisites
+
+- Repository cloned to the normal working location (=~/local-side= or equivalent)
+- The hooks already exist in the repo at:
+
+  #+begin_example
+  04-sources/roemmele/scripts/git-hooks/pre-commit
+  04-sources/roemmele/scripts/git-hooks/pre-push
+  #+end_example
+
+* Installation Steps
+
+** 1. Make sure the scripts are executable
+
+#+begin_src bash
+cd ~/local-side
+chmod +x 04-sources/roemmele/scripts/git-hooks/pre-commit
+chmod +x 04-sources/roemmele/scripts/git-hooks/pre-push
+chmod +x 04-sources/roemmele/scripts/clean-roemmele-essay.sh
+#+end_src
+
+** 2. Symlink the hooks into .git/hooks/
+
+#+begin_src bash
+cd ~/local-side
+
+ln -sf ../../04-sources/roemmele/scripts/git-hooks/pre-commit .git/hooks/pre-commit
+ln -sf ../../04-sources/roemmele/scripts/git-hooks/pre-push   .git/hooks/pre-push
+#+end_src
+
+** 3. Verify
+
+#+begin_src bash
+ls -l .git/hooks/pre-commit .git/hooks/pre-push
+git hooks   # or just try a status / small commit to confirm they run
+#+end_src
+
+* Notes
+
+- The symlinks are relative so they continue to work as long as the repository structure is preserved.
+- These hooks are intentionally lightweight. Future improvements (stricter inventory parsing, size checks, auto-status updates) are recorded as a later task.
+- If you use multiple worktrees or bare clones, repeat the symlink step in each worktree’s =.git/hooks/=.
+
+* Related
+
+- [[RoemmeleEssayIngestWorkflow]]
+- [[roemmele-essays-inventory]]
