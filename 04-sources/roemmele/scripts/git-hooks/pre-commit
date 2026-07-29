@@ -1,0 +1,53 @@
+#!/usr/bin/env bash
+# 04-sources/roemmele/scripts/git-hooks/pre-commit
+
+set -euo pipefail
+
+REPO_ROOT=$(git rev-parse --show-toplevel)
+INVENTORY="$REPO_ROOT/04-sources/roemmele/roemmele-essays-inventory.org"
+CLEANED_DIR="$REPO_ROOT/04-sources/roemmele/cleaned"
+HTML_DIR="$REPO_ROOT/04-sources/roemmele/html"
+
+echo "→ Roemmele pre-commit checks..."
+
+# --------------------------------------------------
+# 1. Check that new/changed HTML files appear in inventory
+# --------------------------------------------------
+new_htmls=$(git diff --cached --name-only --diff-filter=A | grep -E '04-sources/roemmele/html/.*\.html$' || true)
+
+for html in $new_htmls; do
+  base=$(basename "$html" .html)
+  if ! grep -q "$base" "$INVENTORY"; then
+    echo "WARNING: New HTML '$base' is not mentioned in the inventory."
+    echo "         Add it to roemmele-essays-inventory.org before committing."
+    # Uncomment the next line if you want to block the commit:
+    # exit 1
+  fi
+done
+
+# --------------------------------------------------
+# 2. Warn if .raw.md exists but cleaned .md is missing
+# --------------------------------------------------
+for raw in "$CLEANED_DIR"/*.raw.md; do
+  [[ -f "$raw" ]] || continue
+  clean="${raw%.raw.md}.md"
+  if [[ ! -f "$clean" ]]; then
+    echo "WARNING: Found $(basename "$raw") but no corresponding cleaned .md"
+  fi
+done
+
+# --------------------------------------------------
+# 3. Enforce #+NODE-NAME: has no spaces
+# --------------------------------------------------
+new_orgs=$(git diff --cached --name-only --diff-filter=AM | grep -E '04-sources/roemmele/cleaned/.*\.org$' || true)
+
+for org in $new_orgs; do
+  if grep -q '^#+NODE-NAME:.*[[:space:]]' "$org"; then
+    echo "ERROR: $org has a #+NODE-NAME: that contains spaces."
+    echo "       Org-roam on this machine requires no spaces."
+    exit 1
+  fi
+done
+
+echo "→ Roemmele pre-commit checks passed."
+exit 0

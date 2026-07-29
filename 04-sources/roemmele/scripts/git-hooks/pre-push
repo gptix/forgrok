@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# 04-sources/roemmele/scripts/git-hooks/pre-push
+
+set -euo pipefail
+
+REPO_ROOT=$(git rev-parse --show-toplevel)
+INVENTORY="$REPO_ROOT/04-sources/roemmele/roemmele-essays-inventory.org"
+CLEANED_DIR="$REPO_ROOT/04-sources/roemmele/cleaned"
+
+echo "→ Roemmele pre-push checks..."
+
+# Extract filenames that are marked cleaned or pushed
+# (simple grep; can be made more robust later)
+mapfile -t entries < <(grep -E '\| (cleaned|pushed) \|' "$INVENTORY" | awk -F'|' '{print $3}' | tr -d ' ')
+
+for name in "${entries[@]}"; do
+  [[ -z "$name" || "$name" == "reasonable_filename" ]] && continue
+
+  md="$CLEANED_DIR/${name}.md"
+  org="$CLEANED_DIR/${name}.org"
+
+  if [[ ! -f "$md" ]]; then
+    echo "WARNING: Inventory marks '$name' as cleaned/pushed but $md is missing."
+  fi
+  if [[ ! -f "$org" ]]; then
+    echo "WARNING: Inventory marks '$name' as cleaned/pushed but $org is missing."
+  fi
+done
+
+echo "→ Roemmele pre-push checks finished."
+exit 0
