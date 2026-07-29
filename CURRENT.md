@@ -8,6 +8,8 @@
 
 ## 1. Withnail / Hermes (hermes-pi)
 
+* Current Hermes 0.19.0
+* Current Ollama 0.32.3
 * Hermes Agent restored and running
 * SOUL.md identity: works via OpenRouter free model
 * Local Ollama SOUL.md injection: broken (bug reported to Nous Research)
