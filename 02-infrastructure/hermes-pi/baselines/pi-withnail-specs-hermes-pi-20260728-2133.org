@@ -1,0 +1,272 @@
+#+TITLE: Raspberry Pi + Withnail/Hermes/Ollama Specifications
+#+DATE: 2026-07-28 21:33:07 EDT
+#+AUTHOR: collect-pi-specs.sh (2026-07-28-v2)
+#+PURPOSE: Baseline for configuration improvement and long-term knowledge-base tracking
+
+:PROPERTIES:
+:SCRIPT_VERSION: 2026-07-28-v2
+:COLLECTED_LOCAL: 2026-07-28 21:33:07 EDT
+:COLLECTED_UTC: 2026-07-29 01:33:07 UTC
+:HOSTNAME: hermes-pi
+:USERNAME: gt-hermes
+:OUTPUT_FILE: /home/gt-hermes/pi-specs/pi-withnail-specs-hermes-pi-20260728-2133.org
+:PI_MODEL: Raspberry Pi 5 Model B Rev 1.1
+:RAM_GB: 8
+:HERMES_VERSION: 0.19.0
+:OLLAMA_VERSION: 0.32.3
+:ACTIVE_PROVIDER: openrouter-or-mixed
+:WITHNAIL_DETECTED: yes
+:END:
+
+* Purpose
+Point-in-time snapshot of hardware, OS, and the autonomous agent stack on hermes-pi.
+
+* Hardware Inventory & Pi-specific Details
+*** SoC / Processor
+#+begin_src text
+Architecture:                            aarch64
+CPU op-mode(s):                          32-bit, 64-bit
+Byte Order:                              Little Endian
+CPU(s):                                  4
+On-line CPU(s) list:                     0-3
+Vendor ID:                               ARM
+Model name:                              Cortex-A76
+Model:                                   1
+Thread(s) per core:                      1
+Core(s) per cluster:                     4
+Socket(s):                               -
+Cluster(s):                              1
+Stepping:                                r4p1
+Frequency boost:                         disabled
+CPU(s) scaling MHz:                      100%
+CPU max MHz:                             2400.0000
+CPU min MHz:                             1500.0000
+BogoMIPS:                                108.00
+Flags:                                   fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+L1d cache:                               256 KiB (4 instances)
+L1i cache:                               256 KiB (4 instances)
+L2 cache:                                2 MiB (4 instances)
+L3 cache:                                2 MiB (1 instance)
+NUMA node(s):                            8
+NUMA node0 CPU(s):                       0-3
+NUMA node1 CPU(s):                       0-3
+NUMA node2 CPU(s):                       0-3
+NUMA node3 CPU(s):                       0-3
+NUMA node4 CPU(s):                       0-3
+NUMA node5 CPU(s):                       0-3
+NUMA node6 CPU(s):                       0-3
+NUMA node7 CPU(s):                       0-3
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Ghostwrite:                Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Old microcode:             Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Not affected
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:                Mitigation; __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; CSV2, BHB
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Not affected
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Not affected
+#+end_src
+
+*** Model / Revision / Serial
+#+begin_src text
+Revision	: d04171
+Serial		: e150e9dddc5f4548
+Model		: Raspberry Pi 5 Model B Rev 1.1
+#+end_src
+
+*** Memory
+#+begin_src text
+               total        used        free      shared  buff/cache   available
+Mem:           7.9Gi       846Mi       3.9Gi       248Mi       3.5Gi       7.0Gi
+Swap:          6.0Gi       161Mi       5.8Gi
+#+end_src
+
+*** Storage
+#+begin_src text
+NAME          SIZE TYPE FSTYPE MOUNTPOINT     UUID
+loop0           2G loop swap                  
+mmcblk0     116.5G disk                       
+├─mmcblk0p1   512M part vfat   /boot/firmware EACA-13DA
+└─mmcblk0p2   116G part ext4   /              21724cc6-e5a3-48a1-8643-7917dba3a9fb
+zram0           2G disk swap   [SWAP]         688770be-f709-46cf-8a56-53014bf99bf5
+
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2  115G   42G   69G  38% /
+#+end_src
+
+*** Temperature / Throttling / Voltage
+#+begin_src text
+temp=47.2'C
+throttled=0x0
+volt=0.8487V
+#+end_src
+
+* Operating System & Kernel
+#+begin_src text
+PRETTY_NAME="Debian GNU/Linux 13 (trixie)"
+NAME="Debian GNU/Linux"
+VERSION_ID="13"
+VERSION="13 (trixie)"
+VERSION_CODENAME=trixie
+DEBIAN_VERSION_FULL=13.6
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+
+Linux hermes-pi 6.18.34+rpt-rpi-2712 #1 SMP PREEMPT Debian 1:6.18.34-1+rpt1 (2026-06-09) aarch64 GNU/Linux
+#+end_src
+
+* Networking & Connectivity
+*** Interfaces
+#+begin_src text
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0             UP             192.168.1.212/24 2600:1700:3210:1f80::39/128 2600:1700:3210:1f80:7c78:a88b:5fe3:a907/64 fe80::dc2e:d91b:42bc:3372/64 
+wlan0            UP             192.168.1.64/24 2600:1700:3210:1f80::2e/128 2600:1700:3210:1f80:4d0e:c825:9a78:b350/64 fe80::5f2d:cfd4:371d:6856/64 
+tailscale0       UNKNOWN        100.126.78.98/32 fd7a:115c:a1e0::b937:4e62/128 fe80::52d3:8f7d:74f2:f3ee/64 
+#+end_src
+
+*** Tailscale
+#+begin_src text
+100.126.78.98   hermes-pi           jud.taylor@  linux  -  
+100.103.31.101  gt-thinkpad-x230-1  jud.taylor@  linux  -  
+#+end_src
+
+* AI Software Stack - Ollama
+*** Version
+#+begin_src text
+ollama version is 0.32.3
+#+end_src
+
+*** Installed Models
+#+begin_src text
+NAME           ID              SIZE      MODIFIED   
+llama3.2:3b    a80c4f17acd5    2.0 GB    3 days ago    
+llama3.2:1b    baf6a787fdff    1.3 GB    3 days ago    
+#+end_src
+
+*** Currently Loaded
+#+begin_src text
+NAME    ID    SIZE    PROCESSOR    CONTEXT    UNTIL 
+#+end_src
+
+* AI Software Stack - Hermes Agent + Withnail
+*** Version
+#+begin_src text
+HERMES_VERSION: 0.19.0
+#+end_src
+
+*** systemd status
+#+begin_src text
+● hermes-gateway.service - Hermes Agent Gateway - Messaging Platform Integration
+     Loaded: loaded (/home/gt-hermes/.config/systemd/user/hermes-gateway.service; enabled; preset: enabled)
+     Active: active (running) since Sun 2026-07-26 16:00:09 EDT; 2 days ago
+ Invocation: ea693c5bd9b648b5a35bf57886a1ca43
+   Main PID: 128131 (hermes)
+      Tasks: 11 (limit: 9626)
+        CPU: 4min 56.951s
+     CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/hermes-gateway.service
+             └─128131 /home/gt-hermes/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main gateway run
+
+Jul 27 22:49:19 hermes-pi python[128131]: WARNING agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=hermes-gateway_0:140734300418400 provider=openrouter base_url=https://openrouter.ai/api/v1 model=poolside/laguna-m.1:free summary=HTTP 429: Provider returned error
+Jul 27 22:49:19 hermes-pi python[128131]: WARNING agent.conversation_loop: Retrying API call in 2.4144648588110504s (attempt 1/3) thread=hermes-gateway_0:140734300418400 provider=openrouter base_url=https://openrouter.ai/api/v1 model=poolside/laguna-m.1:free policy=default error=Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'poolside/laguna-m.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Poolside', 'is_byok': False}}, 'user_id': 'user_3H1FHTXpldqAh0cki3eDWgrPnJR'}
+Jul 27 22:49:27 hermes-pi python[128131]: WARNING agent.conversation_loop: API call failed (attempt 2/3) error_type=RateLimitError thread=hermes-gateway_0:140734300418400 provider=openrouter base_url=https://openrouter.ai/api/v1 model=poolside/laguna-m.1:free summary=HTTP 429: Provider returned error
+Jul 27 22:49:27 hermes-pi python[128131]: WARNING agent.conversation_loop: Retrying API call in 5.2983158632221s (attempt 2/3) thread=hermes-gateway_0:140734300418400 provider=openrouter base_url=https://openrouter.ai/api/v1 model=poolside/laguna-m.1:free policy=default error=Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'poolside/laguna-m.1:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Poolside', 'is_byok': False}}, 'user_id': 'user_3H1FHTXpldqAh0cki3eDWgrPnJR'}
+Jul 28 12:08:05 hermes-pi python[128131]: WARNING agent.conversation_loop: API call failed (attempt 1/3) error_type=NotFoundError thread=hermes-gateway_0:140734300418400 provider=openrouter base_url=https://openrouter.ai/api/v1 model=poolside/laguna-m.1:free summary=HTTP 404: No endpoints found for poolside/laguna-m.1:free.
+Jul 28 12:08:05 hermes-pi python[128131]: WARNING agent.conversation_loop: Retrying API call in 2.3134411075007373s (attempt 1/3) thread=hermes-gateway_0:140734300418400 provider=openrouter base_url=https://openrouter.ai/api/v1 model=poolside/laguna-m.1:free policy=default error=Error code: 404 - {'error': {'message': 'No endpoints found for poolside/laguna-m.1:free.', 'code': 404}, 'user_id': 'user_3H1FHTXpldqAh0cki3eDWgrPnJR'}
+Jul 28 12:08:07 hermes-pi python[128131]: WARNING agent.conversation_loop: API call failed (attempt 2/3) error_type=NotFoundError thread=hermes-gateway_0:140734300418400 provider=openrouter base_url=https://openrouter.ai/api/v1 model=poolside/laguna-m.1:free summary=HTTP 404: No endpoints found for poolside/laguna-m.1:free.
+Jul 28 12:08:07 hermes-pi python[128131]: WARNING agent.conversation_loop: Retrying API call in 4.463519125353383s (attempt 2/3) thread=hermes-gateway_0:140734300418400 provider=openrouter base_url=https://openrouter.ai/api/v1 model=poolside/laguna-m.1:free policy=default error=Error code: 404 - {'error': {'message': 'No endpoints found for poolside/laguna-m.1:free.', 'code': 404}, 'user_id': 'user_3H1FHTXpldqAh0cki3eDWgrPnJR'}
+Jul 28 12:08:12 hermes-pi python[128131]: WARNING agent.conversation_loop: API call failed (attempt 3/3) error_type=NotFoundError thread=hermes-gateway_0:140734300418400 provider=openrouter base_url=https://openrouter.ai/api/v1 model=poolside/laguna-m.1:free summary=HTTP 404: No endpoints found for poolside/laguna-m.1:free.
+Jul 28 12:08:12 hermes-pi python[128131]: ERROR agent.conversation_loop: API call failed after 3 retries. HTTP 404: No endpoints found for poolside/laguna-m.1:free. | provider=openrouter model=poolside/laguna-m.1:free msgs=6 tokens=~4,216
+#+end_src
+
+*** Config highlights (sanitized)
+#+begin_src yaml
+model:
+  default: poolside/laguna-m.1:free
+  provider: openrouter
+  base_url: https://openrouter.ai/api/v1
+  thinking: false
+  api_mode: chat_completions
+agent:
+  max_turns: 150
+  verbose: false
+  reasoning_effort: none
+  personalities:
+    helpful: You are a helpful, friendly AI assistant.
+    concise: You are a concise assistant. Keep responses brief and to the point.
+    technical: You are a technical expert. Provide detailed, accurate technical information.
+    creative: You are a creative assistant. Think outside the box and offer innovative
+      solutions.
+    teacher: You are a patient teacher. Explain concepts clearly with examples.
+    kawaii: You are a kawaii assistant! Use cute expressions like (◕‿◕), ★, ♪, and
+      ~! Add sparkles and be super enthusiastic about everything! Every response should
+--
+    model: base
+  openai:
+    model: whisper-1
+memory:
+  memory_enabled: true
+  user_profile_enabled: true
+  memory_char_limit: 2200
+  user_char_limit: 1375
+  nudge_interval: 10
+  flush_min_turns: 6
+delegation:
+  max_iterations: 50
+skills:
+  creation_nudge_interval: 15
+  disabled:
+    - airtable
+    - architecture-diagram
+    - arxiv
+--
+    base_url: http://127.0.0.1:11434/v1
+    model: llama3.2:3b
+    models:
+      - llama3.2:1b
+platforms:
+  telegram:
+    enabled: true
+    home_channel:
+      platform: telegram
+      chat_id: '1994093559'
+      name: Jud
+#+end_src
+
+* System Services & Runtime Snapshot
+*** Load / Memory / Disk
+#+begin_src text
+ 21:33:07 up 7 days, 23:25,  1 user,  load average: 0.00, 0.00, 0.00
+
+               total        used        free      shared  buff/cache   available
+Mem:           7.9Gi       865Mi       3.8Gi       248Mi       3.5Gi       7.0Gi
+Swap:          6.0Gi       161Mi       5.8Gi
+
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/mmcblk0p2  115G   42G   69G  38% /
+#+end_src
+
+*** Relevant processes
+#+begin_src text
+avahi        648  0.0  0.0   6208  3696 ?        Ss   Jul20   0:35 avahi-daemon: running [hermes-pi.local]
+ollama    117865  0.0  0.4 2918480 40864 ?       Ssl  Jul25   1:06 /usr/local/bin/ollama serve
+gt-herm+  128131  0.1  3.7 1160272 306256 ?      Ssl  Jul26   4:56 /home/gt-hermes/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main gateway run
+root      132836  2.9  0.1  21984 11760 ?        Ss   21:33   0:00 sshd-session: gt-hermes [priv]
+gt-herm+  132844  0.0  0.1  22336  8416 ?        S    21:33   0:00 sshd-session: gt-hermes@notty
+gt-herm+  132845  0.0  0.0   7088  3296 ?        Ss   21:33   0:00 bash /home/gt-hermes/bin/collect-pi-specs.sh
+#+end_src
+
+* Changes / Notes
+Add free-text notes here after collection and review.
+
