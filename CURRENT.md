@@ -23,7 +23,13 @@
   - Preferred flow: mechanical files (HTML + md + images) pushed first → Grok writes full org-roam node → human reviews → push org + inventory
   - Workflow documentation and driver final instructions updated to C-x C-f style
   - Pre-commit NODE-NAME space check fixed
+* **New project: Tarot Reading App** (2026-07-30)
+  - Computer vision + interpretation pipeline
+  - Staged deliverables from single-card recognition → full mobile app
+  - Classic decks only for now; custom faces deferred
+  - Project node: `03-projects/tarot-app/tarot-reading-app.org`
 * Essays fully processed and marked `pushed`: **001, 002, 003, 004, 005**
+
 
 ## 3. Open / Parked Items
 
@@ -36,6 +42,7 @@
 ## 4. Recent Session Notes
 
 * 2026-07-30: Major refinement of Roemmele ingest. Created higher-level driver, moved org-node authorship to Grok, fixed git-hook false positive, standardized on C-x C-f instructions. Successfully ran the complete new loop on essays 003, 004, and 005 in one session.
+* 2026-07-30 (later): Started Tarot Reading App project. Defined staged deliverables and created project structure under `03-projects/tarot-app/`.
 
 ## 5. Next Actions (suggested)
 
