@@ -1,0 +1,73 @@
+:PROPERTIES:
+:ID:       20260730-tarot-reading-app
+:END:
+#+TITLE: Tarot Reading App — Computer Vision + Interpretation Project
+#+NODE-NAME: TarotReadingApp
+#+FILETAGS: :project:tarot:computer-vision:mobile:mvp:active:
+#+DATE: 2026-07-30
+#+STATUS: active
+#+AUTHOR: Joji Teira + Grok
+
+* Summary
+
+Project to build a mobile application that accepts a photograph of tarot cards and progressively:
+
+1. Detects whether the photo contains tarot cards
+2. Identifies the individual cards (starting with classic decks)
+3. Determines whether the cards form a valid standard reading layout
+4. Parses the positions of a recognized spread
+5. Generates an interpretation according to a standard school
+6. Delivers the experience via a phone app (Android + iOS)
+
+Custom / non-standard deck faces are explicitly deferred to a later phase. Initial work will use physical classic decks (Rider-Waite-Smith and similar) loaned by a friend.
+
+* Core Design Principles
+
+- Start narrow and increase capability only after the previous stage is reliable.
+- Prefer real photographs of physical cards over synthetic data in the early stages.
+- Keep the first versions server-assisted (hybrid) for faster iteration; move components on-device later if desired.
+- Separate mechanical recognition from interpretive generation.
+
+* Staged Deliverables
+
+| # | Deliverable                              | Description                                                                 | Status     |
+|---|------------------------------------------|-----------------------------------------------------------------------------|------------|
+| 1 | Single-card identifier                   | Photo → best guess of one card (or “Not a Tarot Card”) + orientation       | Next       |
+| 2 | Multi-card detector                      | Photo → list of cards present with approximate locations                    | Planned    |
+| 3 | Layout validator                         | Determines whether a photo contains a valid layout for one standard reading | Planned    |
+| 4 | Full spread parser                       | Identifies reading type + cards in each named position                      | Planned    |
+| 5 | Reading generator                        | Produces an interpretation according to one standard school                 | Planned    |
+| 6 | Phone-based app                          | Camera capture → upload → interpretation returned to user                   | Planned    |
+
+* Data Collection Strategy (Early Phase)
+
+- Friend will loan classic decks for photographing.
+- Initial photo submission method: dedicated email address or simple cloud bucket / shared folder (lowest friction).
+- Later: lightweight web upload form once a backend exists.
+- Goal: real-world variation in lighting, angle, background, and hand positioning.
+
+* Technical Direction (Current)
+
+- MVP 1 focus: reliable single-card recognition on classic decks.
+- Preferred early interface: simple tool or endpoint that accepts an image path or URL and returns structured JSON.
+- Vision + classification first; layout geometry and LLM interpretation come later.
+- Mobile client later (React Native / Expo preferred for cross-platform).
+
+* Open Questions / Decisions Still Needed
+
+- Exact classic decks to prioritize first (RWS confirmed as primary).
+- Choice of vision model / fine-tuning approach for Deliverable 1.
+- Backend hosting preference for early experiments.
+- Whether to support reversed cards from the very first version (recommended: yes).
+
+* Next Actions
+
+1. Create project directory structure under =03-projects/tarot-app/=
+2. Decide on initial photo collection method and set it up
+3. Define concrete acceptance criteria for Deliverable 1
+4. Begin technical design + prototype for single-card recognition
+
+* Related
+
+- [[RoemmeleEssayIngestWorkflow]] (example of staged, low-friction pipeline thinking)
+- Future: custom deck support, specialized reading schools, on-device inference

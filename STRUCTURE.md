@@ -21,6 +21,7 @@ forgrok/
 │   └── tools/                 # Supporting tools (e.g. Infranodus process)
 ├── 03-projects/               # Active or significant projects
 │   ├── withnail/              # Current CEO/COO agent work
+│   ├── tarot-app/             # Tarot card recognition + reading app (vision + interpretation)
 │   └── ...
 ├── 04-sources/                # Curated external high-protein content
 │   ├── roemmele/              # Brian Roemmele / 5000 Days material
