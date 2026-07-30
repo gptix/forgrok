@@ -1,0 +1,50 @@
+:PROPERTIES:
+:ID:       20260730-x402-payments-agentic-economy
+:END:
+#+TITLE: x402 Payments: How To Get Paid For Your Data By Selling It To AI Agents. The New Agentic Economy
+#+NODE-NAME: x402PaymentsAgenticEconomy
+#+FILETAGS: :roemmele:essay:x402:payments:agentic-economy:micropayments:high-protein:
+#+DATE: 2026-07-11
+#+SOURCE: https://readmultiplex.com/2026/07/11/x402-payments-how-to-get-paid-for-your-data-by-selling-it-to-ai-agents-the-new-agentic-economy/
+#+CAPTURE_METHOD: SingleFile (member login)
+#+STATUS: cleaned
+#+AUTHOR: Brian Roemmele
+
+* Summary
+
+Brian Roemmele introduces x402, an open internet-native payment protocol that revives the long-dormant HTTP 402 “Payment Required” status code. It enables instant, near-zero-fee micropayments (primarily in USDC) between AI agents and servers with no accounts, API keys, or human approval required. The essay argues that x402 is the practical payment rail for the emerging agentic economy, where autonomous agents can discover, pay for, and consume data, APIs, and services at high frequency. Roemmele provides current market statistics, deployment examples, a simple WordPress setup path, and guidance for ordinary individuals to begin selling content and data to agents.
+
+* Key Claims & Concepts
+
+- x402 turns the unused HTTP 402 status code into a production payment rail for agents and humans.
+- Payments are settled on-chain with stablecoins (mainly USDC on Base and other networks) via a facilitator (e.g. Coinbase); fees are extremely low.
+- Current market imbalance is extreme: roughly 5× more buyers (agents) than sellers, with tens of millions of dollars in recent volume.
+- Superior to alternatives (Google AP2, ACP, Lightning/L402, traditional processors) for true agent autonomy, simplicity, and cost.
+- Discovery happens through marketplaces (Agent.market), the x402 Bazaar (auto-indexing after payment), MCP servers, and semantic search.
+- Ordinary people can monetize existing content (WordPress blogs, data feeds, APIs) with minimal setup and earn from sub-cent transactions.
+- Supports both pure agent-to-agent commerce and human micropayments via browser wallet extensions.
+
+* Major Sections
+
+- Current scale (buyers vs sellers, transaction volume)
+- What is x402 and how the 402 flow works
+- History: from dormant status code to production rail
+- Why x402 over competing systems
+- Cloudflare’s role and production deployments
+- What is actually being sold
+- How agents discover paid resources
+- Practical setup (WordPress plugin, Coinbase wallet, end-to-end test)
+- Realistic expectations and tips for individuals
+- Top 30 things already being sold
+- Why this matters for the agentic economy right now
+
+* Notes / Follow-ups
+
+- Strong relevance to Zero-Human / Withnail-style autonomous systems (agents paying for tools and data).
+- Roemmele reports personal earnings of a few thousand dollars at extremely low per-transaction prices.
+- Watch the buyer/seller ratio and Bazaar growth as leading indicators of agentic commerce maturity.
+
+* Related
+
+- [[roemmele-essays-inventory]]
+- [[RoemmeleEssayIngestWorkflow]]
