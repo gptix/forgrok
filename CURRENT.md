@@ -29,6 +29,10 @@
   - Classic decks only for now; custom faces deferred
   - Project node: `03-projects/tarot-app/tarot-reading-app.org`
 * Essays fully processed and marked `pushed`: **001, 002, 003, 004, 005**
+* **Zero-Human Organization Intent articulated (2026-07-30)**
+  - Three pillars: HPC collection, Save-Your-Wisdom, automated public arrestee data (Georgia open records only)
+  - Strong emphasis on primary sources and bias-resistant methods
+  - Node: `01-core/zho/zero-human-organization-intent.org`
 
 
 ## 3. Open / Parked Items
