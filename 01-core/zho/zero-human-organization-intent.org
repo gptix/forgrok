@@ -1,0 +1,67 @@
+:PROPERTIES:
+:ID:       20260730-zero-human-organization-intent
+:END:
+#+TITLE: Zero-Human Organization Intent — HPC, Save-Your-Wisdom, and Public Arrestee Data
+#+NODE-NAME: ZeroHumanOrganizationIntent
+#+FILETAGS: :zho:zhc:high-protein:open-records:georgia:strategy:active:
+#+DATE: 2026-07-30
+#+STATUS: active
+#+AUTHOR: Joji Teira + Grok
+
+* Summary
+
+Intent to establish one or more Zero-Human Organizations (ZHOs) modeled on Brian Roemmele’s Zero-Human Company concept. Day-to-day operations are to be driven by autonomous AI agents with minimal ongoing human staffing. Three explicit mission pillars have been defined.
+
+* Three Mission Pillars
+
+** 1. High-Protein Content (HPC) Collection
+- Prioritize dense, high-signal material over high-volume low-density internet content.
+- Examples: older technical literature, primary historical documents, court opinions, engineering handbooks, careful empirical work, pre-internet sources.
+- Aligns directly with Roemmele’s high-protein vs low-protein distinction.
+- Existing local AI + org-roam pipelines are already well-suited; agents handle discovery, filtering, chunking, and embedding under human-defined inclusion criteria.
+
+** 2. “Save-Your-Wisdom” Strategy
+- Enable and politely promote practical tools and workflows that help individuals capture personal knowledge, family history, professional judgment, and hard-won experience.
+- Framing remains non-coercive and service-oriented.
+- Agents can generate personalized capture templates, conduct guided interviews, and produce clean structured outputs.
+
+** 3. Automated Public Arrestee Data Pipeline
+- Scope limited strictly to data that is already publicly available under open-records laws.
+- Geographic focus: Georgia (especially Fulton County and related city police/court systems) under the Georgia Open Records Act.
+- Reference model: work similar in spirit to Matt Van Swol’s public-records efforts.
+- Explicit concern: political or ideological beliefs of individual academics may interfere with neutral methodology. Therefore prefer primary-source and practitioner-driven approaches.
+
+* Legal & Operational Guardrails (Arrestee Data)
+
+- Only collect and republish what is already public.
+- Respect published access methods, rate limits, robots.txt, and formal request channels.
+- Recommended bias-resistant process:
+  1. Inventory every relevant agency and its current public-access methods.
+  2. Use agents to generate and track formal Open Records requests where portals are incomplete.
+  3. Cross-check names, dates, charges, and dispositions against multiple public sources.
+  4. Store raw public data + full provenance (request, response date, agency) for auditability.
+  5. Release only what is already public, with clear documentation of sources and known gaps.
+- Preferred advisors: experienced open-records officers, data journalists with multi-jurisdiction experience, FOIA/open-records specialists, and public-interest technologists who treat primary documents as ground truth.
+
+* Architectural Fit
+
+- Builds directly on existing Hermes Agent / Withnail local-first, largely air-gapped infrastructure.
+- Suggested agent roles:
+  - Source discovery & formal request drafting
+  - Ingestion & normalization of public records
+  - Quality / completeness / provenance checking
+  - HPC filtering and knowledge-graph integration
+  - Public-facing release pipelines
+- Human layer remains thin: purpose-setting, quality criteria, legal guardrails, and occasional high-stakes decisions.
+
+* Open Next Steps (from discussion)
+
+- Sketch concrete agent role definitions and skill/tool boundaries for the arrestee-data pipeline.
+- Produce templates for Georgia Open Records requests.
+- Structure a jurisdiction inventory (starting with Fulton County and surrounding cities).
+
+* Related
+
+- [[ZHO-SCHEMA]]
+- [[Withnail]]
+- Existing Roemmele / high-protein work under =04-sources/roemmele/=
