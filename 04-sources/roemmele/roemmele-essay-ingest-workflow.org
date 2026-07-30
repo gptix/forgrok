@@ -6,12 +6,14 @@
 #+FILETAGS: :roemmele:workflow:ingest:procedure:high-protein:
 #+DATE: 2026-07-29
 #+STATUS: active
+#+LAST_UPDATED: 2026-07-30
 
 * Purpose
 
-Repeatable workflow for turning a full Brian Roemmele essay from readmultiplex.com into durable knowledge-base artifacts.
+Repeatable, low-friction workflow for turning a full Brian Roemmele essay from readmultiplex.com into durable knowledge-base artifacts.
 
-Refined during successful processing of Essay 002 (2026-07-22).
+Refined during processing of Essay 002 (2026-07-29) and Essay 003 (2026-07-30).  
+Higher-level driver script introduced 2026-07-30 to collapse the mechanical steps.
 
 * Status Progression
 
@@ -23,14 +25,14 @@ Refined during successful processing of Essay 002 (2026-07-22).
 | pushed     | Everything committed and on remote           |
 | ingested   | Summary + cross-links + Infranodus material  |
 
-* Workflow
+* Preferred Workflow (2026-07-30 onward)
 
 ** 1. Select the essay
 
-Open =roemmele-essays-inventory.org= and choose the next =listed= essay.
+Open =roemmele-essays-inventory.org= and choose the next =listed= essay.  
 Note its =reasonable_filename=.
 
-** 2. Capture while logged in (SingleFile)
+** 2. Capture while logged in (SingleFile) — still human
 
 1. Browser + SingleFile extension
 2. Log in to https://readmultiplex.com
@@ -43,65 +45,50 @@ Note its =reasonable_filename=.
    04-sources/roemmele/html/<reasonable_filename>.html
    #+end_example
 
-** 3. Extract media + raw Markdown
+** 3. Run the driver script (one command)
 
 #+begin_src bash
 cd ~/local-side/04-sources/roemmele
-
-pandoc html/<reasonable_filename>.html \
-  -f html \
-  -t markdown \
-  --wrap=none \
-  --extract-media=images/<reasonable_filename> \
-  -o cleaned/<reasonable_filename>.raw.md
+./scripts/ingest-roemmele-essay.sh <reasonable_filename>
 #+end_src
 
-** 4. Automated cleanup
+This single command performs:
+- pandoc extraction + media download
+- automated cleaning via =clean-roemmele-essay.sh=
+- generation of a skeleton org-roam node with correct no-space =#+NODE-NAME:=
 
-#+begin_src bash
-cd ~/local-side/04-sources/roemmele
-./scripts/clean-roemmele-essay.sh <reasonable_filename>
-#+end_src
+** 4. Human polish (two focused edits)
 
-This produces =cleaned/<reasonable_filename>.md=.
+1. Visual pass on the cleaned Markdown:
 
-Open the cleaned file in Emacs for a short visual pass (remove any remaining empty wrappers or duplicate headings).
+   In Emacs, open (C-x C-f)
 
-** 5. Create org-roam node
+   #+begin_example
+   cleaned/<reasonable_filename>.md
+   #+end_example
 
-Create =cleaned/<reasonable_filename>.org= with at least:
+2. Edit the org-roam node (fill Summary, Key Claims, SOURCE URL, DATE, improve TITLE if needed):
 
-#+begin_example
-:PROPERTIES:
-:ID:       YYYYMMDD-<short-slug>
-:END:
-#+TITLE: <Clean Title>
-#+NODE-NAME: <CamelCaseNoSpaces>
-#+FILETAGS: :roemmele:essay:
-#+DATE: <YYYY-MM-DD>
-#+SOURCE: <original URL>
-#+CAPTURE_METHOD: SingleFile (member login)
-#+STATUS: cleaned
-#+end_example
+   In Emacs, open (C-x C-f)
 
-Add a short summary, key claims, and links.
+   #+begin_example
+   cleaned/<reasonable_filename>.org
+   #+end_example
 
-** 6. Update inventory
+** 5. Update inventory
 
-In =roemmele-essays-inventory.org=:
-- Set status to =cleaned= (or =pushed= after commit)
-- Add a short note with the date
+In =roemmele-essays-inventory.org= set status to =cleaned= (or =pushed= after the commit) and add a short dated note.
 
-** 7. Commit & push
+** 6. Commit & push
 
 #+begin_src bash
 cd ~/local-side
 git add 04-sources/roemmele/
 git commit -m "processed Roemmele essay <id> (<short title>)"
-git push github-side main
+git push
 #+end_src
 
-** 8. SUCCESS
+** SUCCESS checklist
 
 - [ ] HTML in =html/=
 - [ ] Cleaned =.md= in =cleaned/=
@@ -110,11 +97,17 @@ git push github-side main
 - [ ] Inventory updated
 - [ ] Commit visible on =github-side/main=
 
-→ **SUCCESS**
+* Script Locations
 
-* Script Location
+- Driver (preferred): =04-sources/roemmele/scripts/ingest-roemmele-essay.sh=
+- Cleaner (called by driver): =04-sources/roemmele/scripts/clean-roemmele-essay.sh=
+- Git hooks: =04-sources/roemmele/scripts/git-hooks/=
 
-=04-sources/roemmele/scripts/clean-roemmele-essay.sh=
+* Notes on the driver script
+
+- Derives a clean CamelCase =#+NODE-NAME:= automatically from the filename (date prefix stripped, hyphens removed).
+- Will not overwrite an existing =.org= file (safe to re-run).
+- Prints the exact remaining human steps at the end.
 
 * Related
 
