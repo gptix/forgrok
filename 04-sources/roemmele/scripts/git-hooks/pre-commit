@@ -37,17 +37,17 @@ for raw in "$CLEANED_DIR"/*.raw.md; do
 done
 
 # --------------------------------------------------
-# 3. Enforce #+NODE-NAME: has no spaces
+# 3. Enforce #+NODE-NAME: value has no spaces
 # --------------------------------------------------
 new_orgs=$(git diff --cached --name-only --diff-filter=AM | grep -E '04-sources/roemmele/cleaned/.*\.org$' || true)
 
 for org in $new_orgs; do
-  if grep -q '^#+NODE-NAME:.*[[:space:]]' "$org"; then
+  # Extract only the value after #+NODE-NAME:
+  node_name=$(grep -E '^#\+NODE-NAME:' "$org" | head -1 | sed -E 's/^#\+NODE-NAME:[[:space:]]*//')
+  if [[ -n "$node_name" && "$node_name" =~ [[:space:]] ]]; then
     echo "ERROR: $org has a #+NODE-NAME: that contains spaces."
     echo "       Org-roam on this machine requires no spaces."
+    echo "       Found value: '$node_name'"
     exit 1
   fi
 done
-
-echo "→ Roemmele pre-commit checks passed."
-exit 0
