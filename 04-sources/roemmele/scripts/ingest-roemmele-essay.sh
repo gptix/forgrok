@@ -126,7 +126,6 @@ EOF
   echo "  Created: $ORG"
   echo "  NODE-NAME used: $NODE_NAME"
 fi
-
 # --------------------------------------------------
 # Final instructions
 # --------------------------------------------------
@@ -135,19 +134,21 @@ echo "════════════════════════�
 echo "  Ingest complete for: $NAME"
 echo "════════════════════════════════════════════════════"
 echo
-echo "Remaining human steps:"
+echo "Remaining human steps (new preferred workflow):"
 echo
-echo "  1. Visual pass on the cleaned Markdown:"
-echo "       emacsclient -n -c $CLEAN_MD"
+echo "  1. Visual pass on the cleaned Markdown"
+echo "     In Emacs, open (C-x C-f)"
+echo "     $CLEAN_MD"
 echo
-echo "  2. Edit the org-roam node (fill summary, key claims, SOURCE, DATE, improve TITLE if needed):"
-echo "       emacsclient -n -c $ORG"
+echo "  2. Push the mechanical files only (HTML + cleaned.md + images)"
+echo "     Do NOT push the .org file yet."
 echo
-echo "  3. Update inventory status → cleaned (or pushed after commit)"
+echo "  3. Tell Grok the mechanical files are pushed."
+echo "     Grok will then produce a fully populated org-roam node."
 echo
-echo "  4. Commit when ready:"
-echo "       cd ~/local-side"
-echo "       git add 04-sources/roemmele/"
-echo "       git commit -m \"processed Roemmele essay <id> (<short title>)\""
-echo "       git push"
+echo "  4. After Grok provides the org content:"
+echo "     In Emacs, open (C-x C-f)"
+echo "     $ORG"
+echo "     Review, edit if needed, save, then commit + push the .org"
+echo "     and update the inventory status to pushed."
 echo
