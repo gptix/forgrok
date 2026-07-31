@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # ingest-roemmele-essay.sh
-# Higher-level driver: HTML → pandoc → clean → skeleton.org
+# Higher-level driver: HTML → pandoc → clean
+# (No longer creates a skeleton .org file — Grok produces the full org node later)
 #
 # Usage:
 #   ./ingest-roemmele-essay.sh <reasonable_filename>
@@ -27,7 +28,6 @@ BASE_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"   # 04-sources/roemmele
 HTML="$BASE_DIR/html/${NAME}.html"
 RAW="$BASE_DIR/cleaned/${NAME}.raw.md"
 CLEAN_MD="$BASE_DIR/cleaned/${NAME}.md"
-ORG="$BASE_DIR/cleaned/${NAME}.org"
 CLEANER="$SCRIPT_DIR/clean-roemmele-essay.sh"
 
 # --------------------------------------------------
@@ -67,88 +67,23 @@ echo "→ Running cleaner..."
 "$CLEANER" "$NAME"
 
 # --------------------------------------------------
-# 3. Generate skeleton .org (only if it does not already exist)
-# --------------------------------------------------
-if [[ -f "$ORG" ]]; then
-  echo "→ Org node already exists: $ORG"
-  echo "  (Skipping skeleton generation — edit it manually if needed)"
-else
-  echo "→ Generating skeleton org-roam node..."
-
-  # Derive a clean NODE-NAME (no spaces) from the filename
-  # Strip leading date_ and turn remaining hyphens into CamelCase
-  SLUG="${NAME#*_}"                          # remove YYYY-MM-DD_
-  NODE_NAME=$(echo "$SLUG" | sed -E 's/-([a-z])/\U\1/g' | sed -E 's/[^A-Za-z0-9]//g')
-
-  # Simple title guess (replace hyphens with spaces)
-  TITLE_GUESS=$(echo "$SLUG" | tr '-' ' ')
-
-  # Today's date for the ID
-  TODAY=$(date +%Y%m%d)
-
-  cat > "$ORG" <<EOF
-:PROPERTIES:
-:ID:       ${TODAY}-${SLUG,,}
-:END:
-#+TITLE: ${TITLE_GUESS}
-#+NODE-NAME: ${NODE_NAME}
-#+FILETAGS: :roemmele:essay:high-protein:
-#+DATE: 
-#+SOURCE: 
-#+CAPTURE_METHOD: SingleFile (member login)
-#+STATUS: cleaned
-#+AUTHOR: Brian Roemmele
-
-* Summary
-
-(Write a 3–6 sentence summary here.)
-
-* Key Claims & Concepts
-
-- 
-- 
-- 
-
-* Major Sections
-
-- 
-
-* Notes / Follow-ups
-
-- 
-
-* Related
-
-- [[roemmele-essays-inventory]]
-- [[RoemmeleEssayIngestWorkflow]]
-EOF
-
-  echo "  Created: $ORG"
-  echo "  NODE-NAME used: $NODE_NAME"
-fi
-# --------------------------------------------------
 # Final instructions
 # --------------------------------------------------
 echo
 echo "════════════════════════════════════════════════════"
-echo "  Ingest complete for: $NAME"
+echo "  Ingest complete: $NAME"
 echo "════════════════════════════════════════════════════"
 echo
-echo "Remaining human steps (new preferred workflow):"
+echo "Mechanical files produced:"
+echo "  • $HTML"
+echo "  • $CLEAN_MD"
+echo "  • images/${NAME}/"
 echo
-echo "  1. Visual pass on the cleaned Markdown"
-echo "     In Emacs, open (C-x C-f)"
-echo "     $CLEAN_MD"
-echo
-echo "  2. Push the mechanical files only (HTML + cleaned.md + images)"
-echo "     Do NOT push the .org file yet."
-echo
-echo "  3. Tell Grok the mechanical files are pushed."
-echo "     Grok will then produce a fully populated org-roam node."
-echo
-echo "  4. After Grok provides the org content:"
-echo "     In Emacs, open (C-x C-f)"
-echo "     $ORG"
-echo "     Review, edit if needed, save, then commit + push the .org"
-echo "     and update the inventory status to pushed."
+echo "Next steps:"
+echo "  1. (Optional) Quick visual check of the cleaned Markdown"
+echo "  2. Push only the mechanical files (html + md + images)"
+echo "  3. Tell Grok the mechanical files are pushed"
+echo "  4. Grok will supply the full org-roam node"
+echo "  5. Create the .org, review it, update inventory → pushed,"
+echo "     then commit org + inventory together"
 echo
