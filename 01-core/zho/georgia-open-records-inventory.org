@@ -1,0 +1,133 @@
+#+TITLE: Georgia Open Records Inventory — Fulton County & Surrounding Agencies
+#+NODE-NAME: GeorgiaOpenRecordsInventory
+#+FILETAGS: :zho:open-records:georgia:fulton:inventory:
+#+DATE: 2026-07-30
+#+STATUS: draft
+
+* Purpose
+
+Living inventory of agencies that hold public arrest, booking, incident, and related court records in and around Fulton County, Georgia.  
+Used to support systematic, provenance-tracked Open Records requests under the Georgia Open Records Act.
+
+* Core Fulton County Agencies
+
+| Agency                          | Primary Records of Interest                                   | Public Portal / Request Method                       | Known Friction / Notes   | Last Checked | Status |
+|---------------------------------+---------------------------------------------------------------+------------------------------------------------------+--------------------------+--------------+--------|
+| Fulton County Sheriff’s Office  | Jail bookings, current inmates, warrants, some arrest records | Fulton County Open Records Center (select “Sheriff”) | Mugshot conditions apply |              |        |
+| Fulton County Police Department | Incident reports, arrest reports (unincorporated areas)       | Fulton County Open Records Center                    |                          |              |        |
+| Fulton County Superior Court    | Court case records, dispositions                              |                                                      |                          |              |        |
+| Fulton County State Court       |                                                               |                                                      |                          |              |        |
+| Fulton County Magistrate Court  |                                                               |                                                      |                          |              |        |
+| Atlanta Police Department       | Incident & arrest reports, some booking data                  | Online form + email                                  | Active Open Records Unit |              |        |
+| Atlanta City Detention Center   | Local detention / booking                                     |                                                      |                          |              |        |
+
+* Major Municipal Police Departments inside / bordering Fulton
+
+
+| Agency                  | Portal / Primary Request Method        | Contact / Notes                                                           | Last Checked | Status |
+|-------------------------+----------------------------------------+---------------------------------------------------------------------------+--------------+--------|
+| City of South Fulton PD | City website / Records request process | Check official city site for current Open Records or Records Unit contact |              |        |
+| East Point PD           | City / PD Records Division             | Often handled by Records Division; confirm on city site                   |              |        |
+| College Park PD         | City / PD Records request              | Confirm current method on city website                                    |              |        |
+| Fairburn PD             | City / PD Records request              | Confirm on city website                                                   |              |        |
+| Union City PD           | City / PD Records request              | Confirm on city website                                                   |              |        |
+| Hapeville PD            | City / PD Records request              | Confirm on city website                                                   |              |        |
+| Alpharetta PD           | City Open Records / PD Records         | Larger city — usually has a clearer online process                        |              |        |
+| Roswell PD              | City Open Records / PD Records         | Larger city — usually has a clearer online process                        |              |        |
+| Sandy Springs PD        | City Open Records process              | Larger city — usually has a clearer online process                        |              |        |
+| Johns Creek PD          | City Open Records / PD Records         | Confirm current portal                                                    |              |        |
+| Milton PD               | City / PD Records request              | Confirm on city website                                                   |              |        |
+| Chattahoochee Hills PD  | City / PD Records request              | Smaller agency — often email, mail, or in-person                          |              |        |
+
+
+* Neighboring County Agencies (High Priority for Later Expansion)
+
+| Agency                       | County   | Primary Records                              | Notes |
+|------------------------------+----------+----------------------------------------------+-------|
+| DeKalb County PD / Sheriff   | DeKalb   |                                              |       |
+| Cobb County PD / Sheriff     | Cobb     | Cobb County centralized Open Records process |       |
+| Gwinnett County PD / Sheriff | Gwinnett |                                              |       |
+| Clayton County PD / Sheriff  | Clayton  |                                              |       |
+| Henry County PD / Sheriff    | Henry    |                                              |       |
+
+* Statewide / Supporting Sources
+
+| Source                             | Records                                   | Access Method                        | Notes |
+|------------------------------------+-------------------------------------------+--------------------------------------+-k-----|
+| Georgia Department of Corrections  | Current & former inmate records           | Public offender query + Open Records |       |
+| Georgia Bureau of Investigation    | Certain investigative & sex offender data |                                      |       |
+| Georgia Courts (statewide portals) | Case search / dispositions                |                                      |       |
+
+* Inventory Fields (for each agency — expand as data is gathered)
+
+- Official Open Records contact / portal URL
+- Preferred request method (portal, email, mail)
+- Typical response time observed
+- Fee practices
+- Format of records produced (PDF, Excel, paper, etc.)
+- Whether bulk / date-range requests are accepted
+- Known exemptions or resistance points (especially around initial incident/arrest reports and mugshots)
+- Sample successful request language
+- Date of last successful request + provenance notes
+
+* Next Actions
+
+1. Populate portal URLs and contact methods for the core Fulton + Atlanta agencies.
+2. File a small set of test requests (single incident / short date range) to measure real-world response.
+3. Document mugshot affirmation language required by each agency.
+4. Expand to the full list of municipalities inside Fulton County.
+
+
+------------------------------------------------------------------------------------------------------
+* Fulton County Open Records Center — Contact Points & Key Roles
+
+** Primary Submission Method
+Most Fulton County departments (including Sheriff and Police) direct Open Records requests to the centralized Fulton County Open Records Center / Open Records Requests system.
+
+** Confirmed Contact Points
+
+| Type                       | Details                                                                                                                                                                                                         |
+|----------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Website / Portal           | Fulton County Open Records Requests page (Office of the County Attorney) <br> https://www.fultoncountyga.gov/inside-fulton-county/fulton-county-departments/office-of-the-county-attorney/open-records-requests |
+| Email                      | orr@fultoncountyga.gov                                                                                                                                                                                          |
+| Phone                      | 404-612-0281                                                                                                                                                                                                    |
+| Mailing / Physical Address | Office of the County Attorney <br> 141 Pryor Street, S.W., Suite 4038 <br> Atlanta, Georgia 30303                                                                                                               |
+| Fax                        | No public fax number clearly published on the main Open Records page                                                                                                                                            |
+
+** Key Roles & Named Individuals
+
+| Role / Title                                                 | Name                                         | Notes                                                                                                                                                                                  |
+|--------------------------------------------------------------+----------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Official Custodian of Records, Office of the County Attorney | Shalanda M.J. Miller (Deputy County Counsel) | Explicitly listed in connection with Open Records. Note: She is described as not the official custodian of *all* county records (individual departments still hold their own records). |
+|                                                              |                                              |                                                                                                                                                                                        |
+
+** Additional Related Contacts (for context)
+
+- Fulton County Sheriff’s Office (when routing through the central system): 404-612-5100  
+  Address often listed as 185 Central Avenue, SW / 185 Shirley C. Franklin Blvd. SW, Atlanta, GA 30303
+
+- Fulton County Police Department Records: 404-613-5700  
+  141 Pryor Street, SW, Atlanta, GA 30303
+
+** Practical recommendation
+Use the central portal + email =orr@fultoncountyga.gov= as the primary channel. Always keep a local copy of the submission and any confirmation. For booking photos, be prepared to complete any required affirmation/release form.
+
+recordsrequesttracker@gmail.com
+hello7890
+
+
+Pursuant to the Georgia Open Records Act (O.C.G.A. § 50-18-70 et seq.), I request the following:
+
+1. All arrest records, initial arrest reports, booking records, and related public documents for individuals arrested or booked on July 25, 2026.
+
+2. A list or description of all specific types of arrest, booking, incident, and related records maintained by the Fulton County Sheriff’s Office (or other relevant Fulton County agencies) that are available to the public under the Georgia Open Records Act.
+
+3. The preferred or best email address to use for communicating directly with the Fulton County Sheriff’s Office regarding future Open Records requests.
+
+I request that the records be provided in electronic format if available. 
+
+If any portion of the requested records is claimed to be exempt, please cite the specific statutory exemption and release all reasonably segregable non-exempt portions.
+
+If fees will apply, please provide an estimate before proceeding if the total is expected to exceed $5.
+
+Thank you for your assistance.
