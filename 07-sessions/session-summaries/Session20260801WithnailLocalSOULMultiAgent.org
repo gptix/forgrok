@@ -1,0 +1,82 @@
+#+TITLE: Session 2026-08-01 — Withnail Local SOUL Achievement & Multi-Agent Logistics
+#+NODE-NAME: Session20260801WithnailLocalSOULMultiAgent
+#+DATE: 2026-08-01
+#+FILETAGS: :session:withnail:zho:hermes:hardware:voight-kampff:
+#+CATEGORY: 07-sessions
+
+* Context
+
+Operator: Joji Teira
+Session start: via BOOT.md (2026-07-28) + CURRENT.md (2026-07-30) + STRUCTURE.md
+Primary focus: Logistical considerations for expanding beyond a single agent (Withnail) on constrained local hardware, in the style of Brian Roemmele’s Zero-Human Company / Organization.
+
+* Major Achievement (High Priority — Do Not Lose)
+
+Withnail is now successfully running on a **local model** with persistent SOUL (SOUL.md is not being forgotten). 
+
+This is a significant operational milestone. Previous sessions had local Ollama SOUL injection as a known broken item. The fact that it is now working must be treated as durable high-value state and explicitly protected in future Voight-Kampff cycles and status snapshots.
+
+* Key Technical Discussions
+
+**1. Agent density on a single Raspberry Pi 5 8GB**
+
+- Remote LLM approach (OpenRouter-style): 2–3 agents comfortable, 4 possible but tight.
+- Local Ollama approach: effectively 1 strong agent (or 1 shared model serving multiple thin agents).
+- Hybrid is currently the most practical path.
+
+Primary constraints: RAM (model loading), inference speed (single-digit tokens/sec on useful 3–4B models), thermal throttling, and process overhead from multiple Hermes instances.
+
+**2. Model sharing across agents**
+
+Multiple agents *can and should* share one loaded model. This is the standard scaling pattern.
+
+- Ollama supports concurrent / parallel requests to a single loaded model (`OLLAMA_NUM_PARALLEL`).
+- Hermes profiles are designed for this: each profile gets isolated SOUL.md, skills, memory, and config, but can point at the same Ollama endpoint.
+- This is how systems reach higher agent counts without multiplying model RAM cost.
+- Limit then becomes queuing latency and CPU contention rather than model copies.
+
+This aligns with how larger Zero-Human systems achieve dozens or hundreds of agents (shared or distributed inference + specialized light agents).
+
+**3. Multi-machine expansion plan**
+
+Available hardware and suggested roles:
+
+| Machine              | Recommended Role                                      | Notes |
+|----------------------|-------------------------------------------------------|-------|
+| Pi 5 8GB (hermes-pi) | Primary heavy agent (Withnail) + local model          | Keep as core |
+| Pi 5 4GB             | Secondary specialist agent(s) or light services       | Prefer remote models or very small local models |
+| Pi 4                 | Supporting services (baselines, inventory, scripts, file serving) | Solid non-LLM workhorse |
+| Pi Zero(s)           | Thin nodes only (status, simple bridges, sensors)     | Too constrained for real agents |
+| Old laptops          | Heavier secondary agents or development               | Best candidates if they have decent RAM |
+
+**Tailscale** is strongly recommended for connectivity between machines. It provides a private encrypted mesh with stable hostnames, works across NAT, and fits the local-first / near-airgapped preference. Hermes agents on different boxes can reach a shared Ollama instance or each other cleanly.
+
+**Ethernet splitter note**: Common passive RJ45 splitters do *not* require power. They are limited to 100 Mbps and are generally a poor solution. A small powered Ethernet switch is preferable.
+
+* Decisions & Direction
+
+- Capture the local-model + persistent SOUL achievement with higher density in status records going forward.
+- Improve end-of-session / Voight-Kampff routines so significant state changes are forced into cross-linked, properly named org-roam nodes.
+- Prefer shared-model architecture over one-model-per-agent on the Pi 5 8GB.
+- Expand via additional machines (especially the 4GB Pi 5 and any capable old laptops) rather than overloading the primary Pi.
+- Use Hermes profiles for agent isolation even when sharing a model backend.
+
+* Open / Next Actions
+
+1. Tomorrow: Restart / refine the Voight-Kampff protocol with explicit attention to:
+   - Earnest crosslinking of information files
+   - Ensuring the Roam vault hangs together cleanly
+   - Optimal node-names (no spaces) and metadata
+2. Produce a high-density status block that permanently records the local SOUL success (for CURRENT.md and/or a dedicated pulse node).
+3. When ready, design the minimal architecture for Agent #2 (profile layout, skill whitelist philosophy, systemd pattern, monitoring).
+4. Evaluate Tailscale deployment across the available machines as the connectivity backbone.
+
+* Notes for Vault Integration
+
+- Suggested location: `07-sessions/`
+- This node should be backlinked from CURRENT.md and from any future Voight-Kampff or Withnail status nodes.
+- Explicitly preserve the local-model + SOUL achievement as a durable fact rather than letting it remain only in conversational memory.
+
+* Session Close Note
+
+High-fidelity summary produced at operator request for local Emacs capture and subsequent incorporation into the knowledge base. Raw conversational texture is compressed in favor of durable, cross-linkable operational knowledge.
