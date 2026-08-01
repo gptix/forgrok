@@ -53,3 +53,4 @@ forgrok/
 - Secrets and large binary backups must never be committed.
 - Prefer small, focused commits when moving material.
 - Update this file when the top-level structure changes.
+- 04-sources/roemmele/ now uses a clean mechanical-first ingest loop (HTML → md + images → Grok org node). Skeleton .org generation was removed 2026-07-31.

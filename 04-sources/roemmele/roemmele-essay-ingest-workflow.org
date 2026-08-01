@@ -1,40 +1,43 @@
-:PROPERTIES:
-:ID:       20260729-roemmele-essay-ingest-workflow
-:END:
-#+TITLE: Roemmele Essay Ingest Workflow (SingleFile → Cleaned → Inventory)
 #+NODE-NAME: RoemmeleEssayIngestWorkflow
-#+FILETAGS: :roemmele:workflow:ingest:procedure:high-protein:
-#+DATE: 2026-07-29
-#+STATUS: active
-#+LAST_UPDATED: 2026-07-30
+#+TITLE: Roemmele Essay Ingest Workflow
 
 * Purpose
 
 Repeatable, low-friction workflow for turning a full Brian Roemmele essay from readmultiplex.com into durable knowledge-base artifacts.
 
-Refined during processing of Essay 002–004 (2026-07-29/30).  
-Higher-level driver script introduced 2026-07-30.  
-Org-roam node population moved to Grok (after mechanical files are pushed) on 2026-07-30.
+Refined during processing of Essays 002–007 (2026-07-29 → 2026-07-31).
+Higher-level driver script introduced 2026-07-30.
+Org-roam node population moved entirely to Grok (after mechanical files are pushed) on 2026-07-30.
+Skeleton .org generation removed from the driver script on 2026-07-31.
 
 * Status Progression
 
-| Status     | Meaning                                      |
-|------------|----------------------------------------------|
-| listed     | URL + metadata recorded                      |
-| downloaded | SingleFile HTML present in =html/=           |
-| cleaned    | Clean Markdown exists (org node may still be pending) |
-| pushed     | HTML + md + images + org node all committed  |
-| ingested   | Summary + cross-links + Infranodus material  |
+| Status     | Meaning                                              |
+|------------|------------------------------------------------------|
+| listed     | URL + metadata recorded                              |
+| downloaded | SingleFile HTML present in html/                     |
+| cleaned    | Clean Markdown + images exist                        |
+| pushed     | HTML + md + images + fully populated org node committed |
+| ingested   | Summary + cross-links + further processing complete  |
 
-* Preferred Workflow (2026-07-30 onward)
+* Naming Rule (permanent)
+
+All essays use the pattern:
+
+YYYY-MM-DD_Short-Hyphenated-Slug
+
+- Date = publication date of the essay
+- Slug = concise, hyphenated form of the title (no spaces, no special characters)
+
+This name is used for the HTML, Markdown, images directory, and the final .org file.
+
+* Preferred Workflow (2026-07-31 onward)
 
 ** 1. Select the essay
-
-Open =roemmele-essays-inventory.org= and choose the next =listed= essay.  
+Open =roemmele-essays-inventory.org= and choose the next =listed= essay.
 Note its =reasonable_filename=.
 
-** 2. Capture while logged in (SingleFile) — still human
-
+** 2. Capture while logged in (SingleFile) — human
 1. Browser + SingleFile extension
 2. Log in to https://readmultiplex.com
 3. Open the essay URL and wait for full load
@@ -43,39 +46,36 @@ Note its =reasonable_filename=.
 6. Place in =html/=
 
 ** 3. Run the driver script
-
 #+begin_src bash
 cd ~/local-side/04-sources/roemmele
 ./scripts/ingest-roemmele-essay.sh <reasonable_filename>
 #+end_src
 
-This produces the cleaned Markdown, extracts images, and creates a minimal skeleton .org (which we ignore for now).
+This produces:
+- cleaned Markdown
+- images directory and extracted images
+
+It does *not* create any .org file.
 
 ** 4. Push the mechanical files only
-
 Stage and push:
 - the HTML
 - the cleaned .md
 - the images directory
 
-Do **not** push the .org file yet.
+Do *not* create or push any .org file yet.
+Update the inventory status if desired at this stage.
 
 ** 5. Grok populates the org-roam node
-
-Grok reads the cleaned .md and produces a complete, high-quality org-roam node (Summary, Key Claims, Major Sections, etc.).
+After the mechanical files are on GitHub, Grok reads the cleaned .md and produces a complete, high-quality org-roam node (Summary, Key Claims, Major Sections, Relevance, etc.).
 
 ** 6. Human review of the org node
+In Emacs:
+=C-x C-f cleaned/<reasonable_filename>.org=
 
-In Emacs, open (`C-x C-f`)
+Paste Grok’s content, review, edit as needed, then save.
 
-#+begin_example
-cleaned/<reasonable_filename>.org
-#+end_example
-
-Review the content Grok provided, make any desired edits, then save.
-
-** 7. Commit the org node + update inventory
-
+** 7. Commit the org node + final inventory update
 #+begin_src bash
 cd ~/local-side
 git add 04-sources/roemmele/cleaned/<reasonable_filename>.org
@@ -84,13 +84,13 @@ git commit -m "org node + inventory: essay <id> (<short title>)"
 git push
 #+end_src
 
-** SUCCESS checklist
+* Success Checklist
 
 - [ ] HTML in =html/=
-- [ ] Cleaned =.md= in =cleaned/=
+- [ ] Cleaned .md in =cleaned/=
 - [ ] Images under =images/<reasonable_filename>/=
 - [ ] Fully populated org-roam node with valid =#+NODE-NAME:= (no spaces)
-- [ ] Inventory status = pushed
+- [ ] Inventory status = =pushed=
 - [ ] Everything on =github-side/main=
 
 * Script Locations
@@ -103,4 +103,4 @@ git push
 
 - [[roemmele-essays-inventory]]
 - [[master-roemmele-ingest]]
-- [[high-protein-data]]
+- high-protein-data
