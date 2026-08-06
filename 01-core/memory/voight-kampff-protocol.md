@@ -1,62 +1,135 @@
-# Voight-Kampff Protocol v3.0 — Living Knowledge Health Check
+e#+TITLE: Voight-Kampff Protocol v4.0
 
-**Version:** 3.0  
-**Last updated:** 2026-04-10  
-**Ingested from:** Groki wiki evolution + Infranodus LLM Wiki skill + Joji’s stated purposes  
-**Cross-references:** [[GROK-SCHEMA]], [[llm-wiki-pattern]], [[infranodus-llm-wiki-skill]], [[Joji-Grok Project Memory System]]
+```{=org}
+#+NODE-NAME: VoightKampffProtocolV4
+```
+```{=org}
+#+FILETAGS: :core:protocol:vk:memory:
+```
+```{=org}
+#+ROAM_TAGS: voight-kampff protocol memory-integrity
+```
+# Purpose
 
-## Purpose
-The Voight-Kampff (V-K) protocol is Grok’s formal **Living Knowledge Health Check** and checkpoint ritual.  
-In v3.0, V-K treats the entire `groki/` wiki as the single source of truth. The master `joji-grok-project-memory.org` serves only as a lightweight executive mirror/dashboard.
+The Voight-Kampff (V-K) protocol is Grok's formal living-knowledge
+health check and checkpoint ritual.
 
-## Core Purposes It Serves (Joji’s Requirements)
-V-K ensures the wiki reliably remembers and surfaces:
-- Active projects (goals, plans, history, state, options, next steps, resources, points of contact)
-- Technical inventory (computers, routers, OS versions, software, automobiles, etc.)
-- Workflow preferences (Emacs/Magit usage, GitHub interaction style, etc.)
-- Interaction stylistics (e.g., always specify target machine for shell commands, provide clickable Emacs file paths)
-- Signal vs. noise filtering (preserve useful code and insights; archive or discard repetitive/non-productive work)
+It ensures the knowledge base remains coherent, well-linked,
+metadata-consistent, and aligned with the operator's preferences after
+structural changes and ongoing work.
 
-## Philosophy (Karpathy + Infranodus + Groki Evolution)
-- The `groki/` wiki is the persistent, compounding, living knowledge graph.
-- Raw sources in `../raw/` remain immutable.
-- V-K acts as the **gardener** of the wiki — pruning noise, strengthening connections, maintaining alignment with Joji’s preferences and protected protocols.
-- Human-AI symbiosis is preserved: Grok performs synthesis, ontology maintenance, and health checks; Joji provides vision and final approval.
+# Core Principles
 
-## V-K 3.0 Workflow (mandatory steps)
+- `STRUCTURE.md`{.verbatim} is the authoritative description of the
+  layout.
+- `STATUS.md`{.verbatim} is the primary living operational snapshot.
+- `BOOT.md`{.verbatim} is the session on-ramp and permanent preference
+  reference.
+- Org-roam nodes and plain Markdown files must be richly cross-linked.
+- Every org-mode / org-roam file should carry consistent, useful
+  metadata at the head.
+- Durable high-value facts (especially agent state and architectural
+  decisions) must be explicitly protected.
 
-1. **Trigger**  
-   User runs `M-x joji-run-vk-protocol` or types “Voight-Kampff”.
+# Metadata Standard (required for new or updated nodes)
 
-2. **Automated Health Check (Lint Pass)**  
-   Grok scans the entire wiki for broken links, orphan pages, stale inventory, workflow preference drift, missing ontology connections, contradictions with protected protocols, and signal-to-noise quality.
+Every org-roam node should begin with at least:
 
-3. **Synthesis from Wiki**  
-   Grok pulls current state from `index.md`, `log.md`, `GROK-SCHEMA`, key entity pages, and the ontology layer.
+    #+TITLE: Human-readable title
+    #+NODE-NAME: CleanNodeNameWithoutSpaces
+    #+FILETAGS: :relevant:tags:
+    #+ROAM_TAGS: space separated tags
+    #+DATE: YYYY-MM-DD
+    #+AUTHOR: George Taylor + Grok   ; or appropriate attribution
 
-4. **Generate Export Block**  
-   Grok outputs a concise, copy-paste-ready block for the master `joji-grok-project-memory.org`.
+Additional useful fields when applicable:
 
-5. **Log the Pulse**  
-   Automatically appends a timestamped “V-K Pulse” entry to `groki/log.md`.
+- `#+CATEGORY:`{.verbatim}
+- `#+STARTUP:`{.verbatim}
+- `#+PROPERTY:`{.verbatim} drawers for custom data
 
-6. **Offer Actionable Recommendations**  
-   Suggests concrete next steps, especially around technical inventory, workflow preferences, and archiving low-value material.
+# V-K 4.0 Checklist
 
-## Success Criteria
-A healthy V-K run leaves the wiki more connected, cleaner, and better aligned with Joji’s stated purposes than before the check.
+## 1. Discover Current State
 
-## Graph-Friendly & Ontology Rules
-- Every V-K run reinforces `[[entity]]` links and `#+ROAM_TAGS:`.
-- Technical inventory and workflow preferences are encouraged to live as dedicated ontology pages.
-- The protocol itself is self-documenting inside the wiki.
+- Read `STATUS.md`{.verbatim}
+- Read `STRUCTURE.md`{.verbatim}
+- Read `BOOT.md`{.verbatim}
+- Scan recent material in `07-sessions/`{.verbatim}
+- Check key areas under `01-core/`{.verbatim} (especially
+  `memory/`{.verbatim}, `zho/`{.verbatim}, and any soul-related
+  material)
+- Note current selective knowledge exposure to Withnail
+  (\~/withnail-kb/)
 
-## Protected Rules (Immutable)
-All sections marked “protected” in the master memory, air-gapped systems (Withnail/Hermes), ZHC @Home rules, and Voight-Kampff integrity itself may never be contradicted.
+## 2. Integrity & Drift Scan
 
----
+- Confirm durable facts are still correctly recorded and protected
+- Detect stale references (old paths, outdated version numbers, broken
+  links)
+- Check for preference drift (Emacs-only, target-machine clarity,
+  air-gapped posture, etc.)
+- Identify weak or missing cross-links between related files and nodes
+- Flag org files that lack proper `#+NODE-NAME:`{.verbatim}, tags, or
+  other standard metadata
 
-**This protocol is itself part of the living wiki.**  
-Any future changes must be proposed to Joji and logged via the normal ingestion process.
+## 3. Cross-Linking & Metadata Pass
 
-**End of Voight-Kampff Protocol v3.0**
+- Strengthen bidirectional links where concepts or projects are related
+- Ensure session summaries, status pulses, and project nodes point to
+  one another
+- Standardize or populate missing metadata on touched org-roam nodes
+- Prefer clean `#+NODE-NAME:`{.verbatim} values (no spaces) for reliable
+  org-roam findability
+
+## 4. Synthesize
+
+- Produce a short, high-density status pulse that captures:
+  - What is newly true or newly durable
+  - What remains open or parked
+  - Any structural or linking improvements made during this run
+
+## 5. Update Living Records
+
+- Draft precise updates for `STATUS.md`{.verbatim}
+- Propose any needed adjustments to `BOOT.md`{.verbatim} (especially
+  key-file table and high-level summary)
+- Create or update org-roam nodes as required, with full metadata
+
+## 6. Recommendations
+
+- Offer 3--5 concrete, prioritized next actions
+- Explicitly call out any remaining metadata or cross-linking debt
+- Note any scripts, Emacs commands, or automation that appear drifted
+
+## 7. Protected Rules Check
+
+Confirm no contradiction with:
+
+- Near-airgapped posture for Withnail / Hermes
+- Emacs-only editing preference
+- Local-first operating style
+- Named durable achievements (local SOUL persistence, numbered
+  structure, etc.)
+
+## 8. Hand-off
+
+- Deliver clean, copy-paste-ready blocks for Emacs
+- Leave the knowledge base in a known-good, well-linked state
+
+# Success Criteria
+
+A completed V-K run leaves the knowledge base:
+
+- More accurately reflective of current reality
+- Better cross-linked
+- More consistent in metadata
+- Clearer about what is durable versus open
+
+# Location
+
+This protocol itself lives at:
+`01-core/memory/voight-kampff-protocol.org`{.verbatim}
+
+(The older v2.0 .org and v3.0 .md versions should be archived or clearly
+superseded once this version is accepted.)
