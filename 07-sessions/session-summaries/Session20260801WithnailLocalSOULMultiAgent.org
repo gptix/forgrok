@@ -1,18 +1,20 @@
 #+TITLE: Session 2026-08-01 — Withnail Local SOUL Achievement & Multi-Agent Logistics
 #+NODE-NAME: Session20260801WithnailLocalSOULMultiAgent
-#+DATE: 2026-08-01
 #+FILETAGS: :session:withnail:zho:hermes:hardware:voight-kampff:
+#+ROAM_TAGS: session withnail soul multi-agent
+#+DATE: 2026-08-01
+#+AUTHOR: George Taylor + Grok
 #+CATEGORY: 07-sessions
 
 * Context
 
-Operator: Joji Teira
-Session start: via BOOT.md (2026-07-28) + CURRENT.md (2026-07-30) + STRUCTURE.md
+Operator: George Taylor
+Session start: via BOOT.md + STATUS.md + STRUCTURE.md
 Primary focus: Logistical considerations for expanding beyond a single agent (Withnail) on constrained local hardware, in the style of Brian Roemmele’s Zero-Human Company / Organization.
 
 * Major Achievement (High Priority — Do Not Lose)
 
-Withnail is now successfully running on a **local model** with persistent SOUL (SOUL.md is not being forgotten). 
+Withnail is now successfully running on a **local model** with persistent SOUL (SOUL.md is not being forgotten).
 
 This is a significant operational milestone. Previous sessions had local Ollama SOUL injection as a known broken item. The fact that it is now working must be treated as durable high-value state and explicitly protected in future Voight-Kampff cycles and status snapshots.
 
@@ -63,19 +65,25 @@ Available hardware and suggested roles:
 
 * Open / Next Actions
 
-1. Tomorrow: Restart / refine the Voight-Kampff protocol with explicit attention to:
+1. Restart / refine the Voight-Kampff protocol with explicit attention to:
    - Earnest crosslinking of information files
    - Ensuring the Roam vault hangs together cleanly
    - Optimal node-names (no spaces) and metadata
-2. Produce a high-density status block that permanently records the local SOUL success (for CURRENT.md and/or a dedicated pulse node).
+2. Produce a high-density status block that permanently records the local SOUL success (for STATUS.md and/or a dedicated pulse node).
 3. When ready, design the minimal architecture for Agent #2 (profile layout, skill whitelist philosophy, systemd pattern, monitoring).
 4. Evaluate Tailscale deployment across the available machines as the connectivity backbone.
 
 * Notes for Vault Integration
 
 - Suggested location: `07-sessions/`
-- This node should be backlinked from CURRENT.md and from any future Voight-Kampff or Withnail status nodes.
+- This node should be backlinked from STATUS.md and from any future Voight-Kampff or Withnail status nodes.
 - Explicitly preserve the local-model + SOUL achievement as a durable fact rather than letting it remain only in conversational memory.
+
+* See also
+
+- [[file:../../STATUS.md][STATUS.md]] — Living operational snapshot
+- [[file:../../01-core/memory/voight-kampff-protocol.org][Voight-Kampff Protocol v4.0]]
+- [[file:../../BOOT.md][BOOT.md]] — Session on-ramp
 
 * Session Close Note
 
