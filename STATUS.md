@@ -56,3 +56,25 @@
 - Give Withnail grounded planning tasks against the current knowledge slice
 - Expand arrestee-records and HPC material in the Withnail knowledge slice
 - Strengthen cross-links between STATUS, BOOT, V-K protocol, and recent session nodes
+
+
+## 2026-08-06 Evening – Org-roam Dual Vault + Concept Node Work (Voight-Kampff)
+
+### Completed tonight
+- Dual-vault org-roam configuration is working (single SQLite database covering both `~/RoamNotes/` and selected trees under `~/local-side/`).
+- Priority knowledge-base nodes cleaned: proper `#+NODE-NAME:` (no spaces) + standard metadata applied.
+- Duplicate “ZHO Active Task List” resolved (living 2026-05-11 version kept; 2026-05-03 version marked as historical snapshot).
+- Core cross-linking strengthened between Withnail’s Role, ZHO Active Task List, and Voight-Kampff Protocol v4.0.
+- Two new high-value concept nodes created, committed, and cross-linked:
+  - **Air-gapped / Near-Airgapped CEO Pattern** (`AirgappedCEOPattern`)
+  - **Selective Knowledge Exposure** (`SelectiveKnowledgeExposure`)
+
+### Open for next session
+- Create **LocalSOULPersistence** concept node (first item).
+- Continue remaining concept nodes (Roemmele Essay Ingest Pipeline, Numbered Structure, etc.).
+- Broader metadata sweep on remaining knowledge-base nodes that still lack clean `#+NODE-NAME:`.
+- Expand the selective knowledge exposure slice available to Withnail.
+
+### Notes
+- Org-roam now reliably finds nodes from both the personal vault and the structured knowledge base.
+- Temporary file corruption (`#<buffer ...>` artifacts) that appeared during editing was cleaned.
