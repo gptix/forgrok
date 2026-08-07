@@ -15,6 +15,7 @@ Intent to establish one or more Zero-Human Organizations (ZHOs) modeled on Brian
 * Three Mission Pillars
 
 ** 1. High-Protein Content (HPC) Collection
+[[id:b622af12-faaa-4b6f-95bc-aa909d0cfc8f][HighProteinContent]]
 - Prioritize dense, high-signal material over high-volume low-density internet content.
 - Examples: older technical literature, primary historical documents, court opinions, engineering handbooks, careful empirical work, pre-internet sources.
 - Aligns directly with Roemmele’s high-protein vs low-protein distinction.
@@ -62,6 +63,10 @@ Intent to establish one or more Zero-Human Organizations (ZHOs) modeled on Brian
 
 * Related
 
+- [[id:b622af12-faaa-4b6f-95bc-aa909d0cfc8f][HighProteinContent]]
+- [[OrgRoamNodeNameConvention]]
+- [[SelectiveKnowledgeExposure]]
+- [[AirgappedCEOPattern]]
 - [[ZHO-SCHEMA]]
 - [[Withnail]]
 - Existing Roemmele / high-protein work under =04-sources/roemmele/=
