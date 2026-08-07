@@ -1,6 +1,6 @@
 # STATUS.md — Living Operational Snapshot
 
-**Last updated:** 2026-08-06  
+**Last updated:** 2026-08-07  
 **Maintainer:** George Taylor + Grok  
 **Companion files:** BOOT.md, STRUCTURE.md, 01-core/memory/joji-grok-project-memory.org, 01-core/memory/voight-kampff-protocol.org
 
@@ -26,6 +26,7 @@
 - Zero-Human Organization Intent node exists (three pillars: HPC, Save-Your-Wisdom, public arrestee data)
 - **Selective knowledge exposure to Withnail started** (`~/withnail-kb/` on the Pi)
 - **Voight-Kampff Protocol v4.0** now in place under `01-core/memory/`
+- **Org-roam NODE-NAME convention** formalized (`OrgRoamNodeNameConvention`) — PascalCase, no separators; now referenced from BOOT.md
 
 ## 3. Open / Parked Items
 
@@ -49,6 +50,10 @@
 - Local Ollama + SOUL.md problem solved via Qwen2.5-3b at 64k context
 - Selective KB exposure directory created
 - Essays 006 and 007 fully ingested
+
+**2026-08-07**
+- Org-roam NODE-NAME convention formalized and recorded as call-out node `OrgRoamNodeNameConvention`
+- BOOT.md updated so future sessions automatically load and apply the convention
 
 ## 5. Next Actions (suggested)
 
