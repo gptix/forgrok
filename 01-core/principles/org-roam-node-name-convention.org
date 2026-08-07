@@ -1,5 +1,5 @@
 :PROPERTIES:
-:ID:       REPLACE-WITH-ORG-ID
+:ID:       e59fd16d-43f7-470a-9a3f-a509b8955bdb
 :END:
 #+TITLE: Org-roam NODE-NAME Convention
 #+NODE-NAME: OrgRoamNodeNameConvention
@@ -14,15 +14,13 @@
 Canonical convention for the =#+NODE-NAME:= metadata line used in all org-roam nodes in this knowledge base.
 
 * Rule
-:PROPERTIES:
-:ID:       e59fd16d-43f7-470a-9a3f-a509b8955bdb
-:END:
 
 Use **PascalCase** (UpperCamelCase):
 
 - No spaces
 - No hyphens
 - No underscores
+
 - Concatenate significant words; capitalize the first letter of each
 
 Correct examples:
