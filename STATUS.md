@@ -24,6 +24,7 @@
   - Preferred flow: mechanical files (HTML + md + images) pushed first → Grok writes full org-roam node → human reviews → push org + inventory
 - Essays fully processed and marked **pushed**: **001–007**
 - Zero-Human Organization Intent node exists (three pillars: HPC, Save-Your-Wisdom, public arrestee data)
+- **HighProteinContent** call-out node created (`01-core/zho/nodes/high-protein-content.org`) — first of the three ZHO pillars now has a dedicated, linkable node
 - **Selective knowledge exposure to Withnail started** (`~/withnail-kb/` on the Pi)
 - **Voight-Kampff Protocol v4.0** now in place under `01-core/memory/`
 - **Org-roam NODE-NAME convention** formalized (`OrgRoamNodeNameConvention`) — PascalCase, no separators; now referenced from BOOT.md
@@ -54,6 +55,7 @@
 **2026-08-07**
 - Org-roam NODE-NAME convention formalized and recorded as call-out node `OrgRoamNodeNameConvention`
 - BOOT.md updated so future sessions automatically load and apply the convention
+- First Tier-1 call-out node created: `HighProteinContent` (HPC pillar)
 
 ## 5. Next Actions (suggested)
 
