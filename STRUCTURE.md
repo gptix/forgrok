@@ -8,7 +8,7 @@ forgrok/
 ├── 00-inbox/                  # Temporary staging only (keep empty)
 ├── 01-core/                   # Stable, high-value knowledge
 │   ├── memory/                # Master memory, Voight-Kampff, protocols
-│   ├── principles/            # Enduring schemas and operating principles
+│   ├── principles/            # Enduring schemas and operating principles (includes OrgRoamNodeNameConvention)
 │   ├── soul/                  # Agent identity (Withnail, etc.)
 │   └── zho/                   # Zero-Human Organization doctrine & nodes
 ├── 02-infrastructure/         # How the machines and agents run
@@ -47,6 +47,7 @@ forgrok/
 - **Archive is explicit** — we move material out of the active path rather than deleting history.
 - Numbered prefixes make ordering and navigation easier.
 - Compatible with org-roam (nodes live under the appropriate branch).
+- **Org-roam NODE-NAME convention**: All nodes use PascalCase with no spaces, hyphens, or underscores (`#+NODE-NAME: OrgRoamNodeNameConvention`). See `01-core/principles/org-roam-node-name-convention.org`.
 
 ## Notes
 
