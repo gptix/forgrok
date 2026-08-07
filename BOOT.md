@@ -66,12 +66,14 @@ See **STATUS.md** for the full operational dashboard, open items, and suggested 
 | Hermes-pi procedures | `02-infrastructure/hermes-pi/procedures/` |
 | Withnail project | `03-projects/withnail/` |
 | Baseline collector | `02-infrastructure/hermes-pi/scripts/collect-pi-specs.sh` |
+| Org-roam NODE-NAME convention | 01-core/principles/org-roam-node-name-convention.org |
 
 ---
 
 ## 5. Operator preferences (permanent)
 
 - Always use **Emacs** (TRAMP for remote). Never suggest nano, vi, or other editors.
+- **Org-roam NODE-NAME convention**: Always use PascalCase with no spaces, hyphens, or underscores (e.g. `OrgRoamNodeNameConvention`, `HighProteinContent`). Canonical definition lives at `01-core/principles/org-roam-node-name-convention.org`. Mandatory for all new nodes.
 - Prefer precise, actionable commands and org-mode checklists.
 - Prefer small, focused git commits.
 - Never commit secrets, API keys, or large binary backups.
