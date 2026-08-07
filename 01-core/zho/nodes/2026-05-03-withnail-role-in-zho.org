@@ -6,8 +6,13 @@
 :CREATED:  [2026-05-03 Sun 16:00]
 :MODIFIED: [2026-05-03 Sun 16:00]
 :END:
-
 #+TITLE: Withnail’s Role in the Zero Human ORGANIZATION (ZHO)
+#+NODE-NAME: WithnailRoleInZHO
+#+FILETAGS: :zho:withnail:core:
+#+ROAM_TAGS: withnail zho role charter airgapped
+#+DATE: 2026-05-03
+#+AUTHOR: George Taylor + Grok
+
 
 * Withnail’s Charter (ZHO)
 
@@ -50,11 +55,12 @@ This creates a clean human-in-the-loop + AI-in-the-loop system while keeping the
 - All pushes controlled by human/Grok
 - Withnail only pulls approved changes
 
-* Backlinks & Related Nodes
-- [[id:2026-05-01-withnail-bot-revival][Withnail Bot Revival Session]]
-- [[file:zho-charter.org][ZHO Charter]]
-- [[file:hermes-pi-setup.org][Hermes Pi Setup]]
-
+* Related Nodes
+- [[id:2026-05-11-zho-task-list][ZHO Active Task List]]
+- [[id:954d11c1-b28c-45ba-a976-8fb89bd73daa][Voight-Kampff Protocol v4.0]]
+- [[id:2006fc22-e5cd-4b80-a02c-0dce2b0be11b][Air-gapped / Near-Airgapped CEO Pattern]]
+- [[id:selective-knowledge-exposure][Selective Knowledge Exposure]]
+    
 * Next Actions
 - [ ] Finalize Withnail command queue in simple_zho_bot.py
 - [ ] Draft ZHO charter document

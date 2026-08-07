@@ -4,10 +4,12 @@
 :ROAM_TAGS: fulton-county atlanta criminal-justice data-audit racial-classification high-protein empirical zk-ritual
 :CREATED:  [2026-05-06 Wed]
 :END:
-
 #+TITLE: Fulton County (Atlanta) Racial Classification Discrepancies Audit - Starter Node
-#+AUTHOR: ZHO / Joji Teira
-#+DATE:    2026-05-06
+#+NODE-NAME: FultonRacialClassificationAudit
+#+FILETAGS: :project:audit:fulton:criminal-justice:hpc:
+#+ROAM_TAGS: fulton-county racial-classification audit data high-protein
+#+DATE: 2026-05-06
+#+AUTHOR: George Taylor + Grok
 
 * Overview
 Mirrors the transparent, data-driven audit approach of Matt Van Swol in North Carolina. Systematic review of publicly available Fulton County Sheriff's Office inmate booking records, focusing on discrepancies between recorded race (often "White") and visual/surname/contextual indicators suggesting Hispanic/Latino or other classifications.

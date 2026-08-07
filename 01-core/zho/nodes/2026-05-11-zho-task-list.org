@@ -4,8 +4,12 @@
 :ROAM_TAGS: tasks backlog project-management zho-core
 :CREATED:  [2026-05-11 Mon]
 :END:
-
 #+TITLE: ZHO Active Task List
+#+NODE-NAME: ZHOActiveTaskList
+#+FILETAGS: :zho:tasks:backlog:core:
+#+ROAM_TAGS: zho task-list backlog withnail living
+#+DATE: 2026-05-11
+#+AUTHOR: George Taylor + Grok
 
 * Status Overview (2026-05-11)
 Current State: Solid and healthy.  
@@ -62,10 +66,13 @@ Bidirectional Org-roam ↔ groki active.
 - [ ] Project-specific deep dives as needed
 
 * Backlinks & Related Nodes
+- [[id:2026-05-03-withnail-role-in-zho][Withnail’s Role in the Zero Human ORGANIZATION (ZHO)]]
+- [[id:954d11c1-b28c-45ba-a976-8fb89bd73daa][Voight-Kampff Protocol v4.0]]
 - [[id:2026-05-03-zho-charter][ZHO Charter]]
-- [[id:2026-05-03-withnail-role-in-zho][Withnail’s Role in ZHO]]
-- [[id:2026-05-03-zho-session-flow][ZHO Session Flow]]
-- [[id:2026-05-03-voight-kampff-v2.1][Voight-Kampff v2.1]]
+- [[id:2026-05-03-zho-session-flow][ZHO Session & Command Flow]]
+- [[id:2006fc22-e5cd-4b80-a02c-0dce2b0be11b][Air-gapped / Near-Airgapped CEO Pattern]]
+- [[id:selective-knowledge-exposure][Selective Knowledge Exposure]]
+  
 - 5000 Days Synthesis (upcoming)
 - Brian Roemmele High-Protein Preservation (upcoming)
 

@@ -1,4 +1,7 @@
-e#+TITLE: Voight-Kampff Protocol v4.0
+:PROPERTIES:
+:ID:       954d11c1-b28c-45ba-a976-8fb89bd73daa
+:END:
+#+TITLE: Voight-Kampff Protocol v4.0
 #+NODE-NAME: VoightKampffProtocolV4
 #+FILETAGS: :core:protocol:vk:memory:
 #+ROAM_TAGS: voight-kampff protocol memory-integrity
@@ -102,3 +105,9 @@ This protocol itself lives at:
 =01-core/memory/voight-kampff-protocol.org=
 
 (The older v2.0 .org and v3.0 .md versions should be archived or clearly superseded once this version is accepted.)
+
+* Related Nodes
+- [[id:2026-05-03-withnail-role-in-zho][Withnail’s Role in the Zero Human ORGANIZATION (ZHO)]]
+- [[id:2026-05-11-zho-task-list][ZHO Active Task List]]
+- [[id:selective-knowledge-exposure][Selective Knowledge Exposure]]
+- [[id:2006fc22-e5cd-4b80-a02c-0dce2b0be11b][Air-gapped / Near-Airgapped CEO Pattern]]
