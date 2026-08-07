@@ -1,0 +1,73 @@
+:PROPERTIES:
+:ID:       REPLACE-WITH-ORG-ID
+:END:
+#+TITLE: Org-roam NODE-NAME Convention
+#+NODE-NAME: OrgRoamNodeNameConvention
+#+FILETAGS: :core:org-roam:convention:principles:zho:
+#+ROAM_TAGS: node-name naming-convention org-roam call-out pascalcase
+#+DATE: 2026-08-07
+#+AUTHOR: George Taylor + Grok
+#+STATUS: active
+
+* Definition
+
+Canonical convention for the =#+NODE-NAME:= metadata line used in all org-roam nodes in this knowledge base.
+
+* Rule
+:PROPERTIES:
+:ID:       e59fd16d-43f7-470a-9a3f-a509b8955bdb
+:END:
+
+Use **PascalCase** (UpperCamelCase):
+
+- No spaces
+- No hyphens
+- No underscores
+- Concatenate significant words; capitalize the first letter of each
+
+Correct examples:
+- =OrgRoamNodeNameConvention=
+- =ZeroHumanOrganizationIntent=
+- =AirgappedCEOPattern=
+- =SelectiveKnowledgeExposure=
+- =HighProteinContent=
+- =PublicArresteeData=
+- =VoightKampffProtocol=
+- =WithnailRole=
+
+* Rationale
+
+The current Emacs + org-roam configuration on the X230 causes =C-c n f= (=org-roam-node-find=) to reject node names that contain spaces. An explicit =#+NODE-NAME:= line that obeys the PascalCase rule guarantees every node remains findable and reliably linkable.
+
+The human-readable title stays free-form via =#+TITLE:= (spaces, punctuation, and natural language are allowed and encouraged there).
+
+* Relationship to other naming rules
+
+| Element              | Convention                          | Notes                                      |
+|----------------------+-------------------------------------+--------------------------------------------|
+| =#+NODE-NAME:=       | PascalCase, no separators           | This document                              |
+| Filename             | kebab-case                          | See GROK-SCHEMA                            |
+| =#+TITLE:=           | Free-form human language            | May contain spaces and punctuation         |
+| =#+FILETAGS:= / =#+ROAM_TAGS:= | kebab-case or simple keywords | Prefer consistency with existing tags      |
+| Call-out nodes       | Always receive a clean =#+NODE-NAME:= | Required for graph hygiene and selective exposure |
+
+* How to apply when creating a new node
+
+1. Decide the human title first (=#+TITLE:=).
+2. Derive the =#+NODE-NAME:= by removing spaces/punctuation and converting to PascalCase.
+3. Place the =#+NODE-NAME:= line near the top of the file (immediately after =#+TITLE:= is conventional).
+4. After saving, run =org-roam-db-sync= (or the equivalent in your workflow) so the SQLite database on the X230 stays current.
+
+* Related Nodes / Files
+
+- [[AirgappedCEOPattern]]
+- [[SelectiveKnowledgeExposure]]
+- [[ZeroHumanOrganizationIntent]]
+- [[file:../zho/zho-index.org][ZHO Index]]
+- [[file:../../BOOT.md][BOOT.md]]
+- [[file:../../STRUCTURE.md][STRUCTURE.md]]
+- [[file:GROK-SCHEMA.md][GROK-SCHEMA]]
+
+* Change Log
+
+- 2026-08-07: Initial formalization of the de-facto standard observed in existing call-out nodes.
