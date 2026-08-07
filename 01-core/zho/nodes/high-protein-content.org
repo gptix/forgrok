@@ -1,0 +1,60 @@
+:PROPERTIES:
+:ID:       b622af12-faaa-4b6f-95bc-aa909d0cfc8f
+:END:
+#+TITLE: High-Protein Content (HPC)
+#+NODE-NAME: HighProteinContent
+#+FILETAGS: :zho:hpc:high-protein:core:pillar:
+#+ROAM_TAGS: high-protein hpc roemmele content-quality knowledge-base zho
+#+DATE: 2026-08-07
+#+AUTHOR: George Taylor + Grok
+#+STATUS: active
+
+* Definition
+
+High-Protein Content (HPC) is dense, high-signal material that carries lasting intellectual or practical value. It is deliberately contrasted with high-volume, low-density internet content.
+
+This is the first of the three explicit mission pillars of the Zero-Human Organization Intent.
+
+* Core distinction
+
+| High-Protein                                      | Low-Protein                                      |
+|---------------------------------------------------|--------------------------------------------------|
+| Primary sources, careful empirical work           | Aggregated commentary, secondary summaries       |
+| Older technical literature & engineering handbooks| Ephemeral social media and news cycles           |
+| Court opinions, statutes, original research       | SEO-driven listicles and recycled takes          |
+| Pre-internet or carefully curated long-form work  | High-volume, low-signal web content              |
+
+The distinction originates in Brian Roemmele’s writing and is treated as an operational filter for this knowledge base and for any future autonomous collection agents.
+
+* Why it matters
+
+- Maximizes the long-term value of the knowledge graph.
+- Reduces noise that would otherwise dilute Withnail’s reasoning and the operator’s attention.
+- Provides a clear, auditable inclusion criterion for both human and agent-driven ingest.
+- Aligns the entire system (org-roam, selective exposure, Roemmele ingest pipeline) around signal rather than volume.
+
+* Current practice (as of 2026-08)
+
+- Roemmele essay ingest pipeline is the primary working example of systematic HPC collection.
+- Mechanical-first flow: HTML → cleaned markdown + images → full org-roam node written by Grok → human review → push.
+- Essays 001–007 fully processed and marked pushed.
+- Broader HPC sources live under =04-sources/= (roemmele/, wilhelm/, hpc/).
+
+* Relationship to the other two pillars
+
+- **Save-Your-Wisdom**: HPC principles also guide what personal and professional knowledge is worth capturing and structuring.
+- **Public Arrestee Data**: Primary public records (court dockets, arrest records already released under open-records law) are treated as high-protein source material when properly provenance-tracked.
+
+* Related Nodes / Files
+
+- [[ZeroHumanOrganizationIntent]]
+- [[OrgRoamNodeNameConvention]]
+- [[SelectiveKnowledgeExposure]]
+- [[AirgappedCEOPattern]]
+- [[file:../../04-sources/roemmele/][04-sources/roemmele/]]
+- [[file:../../STATUS.md][STATUS.md]]
+- [[file:../../BOOT.md][BOOT.md]]
+
+* Change Log
+
+- 2026-08-07: Initial call-out node created as part of systematic graph improvement.
