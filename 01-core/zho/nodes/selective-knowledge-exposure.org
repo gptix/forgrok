@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       selective-knowledge-exposure
+:END:
+#+TITLE: Selective Knowledge Exposure
+#+NODE-NAME: SelectiveKnowledgeExposure
+#+FILETAGS: :zho:withnail:knowledge:security:core:
+#+ROAM_TAGS: selective-exposure withnail-kb knowledge-gating airgapped zho
+#+DATE: 2026-08-06
+#+AUTHOR: George Taylor + Grok
+
+* Definition
+
+Selective Knowledge Exposure is the deliberate practice of giving the autonomous CEO agent (Withnail / Hermes) access only to a carefully chosen subset of the full knowledge base.
+
+Instead of mounting the entire ~/local-side/ (or the full forgrok repository), a restricted view — typically ~/withnail-kb/ or an equivalent curated export — is provided to the agent.
+
+This is a core operational complement to the Air-gapped / Near-Airgapped CEO Pattern.
+
+* Design Intent
+
+- Reduce the chance of the agent acting on stale, sensitive, or out-of-scope material.
+- Keep the agent’s context window and reasoning focused on high-value, current, and approved knowledge.
+- Maintain a clear boundary between the full operator knowledge base and what the autonomous executive is allowed to see and reason over.
+- Support the long-term goal of a trustworthy, mostly self-contained local CEO.
+
+* Current Practice (as of 2026-08)
+
+- Primary restricted view: ~/withnail-kb/ (or equivalent selective export)
+- Full knowledge base remains on the operator side (X230 + GitHub gptix/forgrok)
+- Changes to what Withnail can see are intentional and reviewed
+
+* Related Nodes
+
+- [[id:2006fc22-e5cd-4b80-a02c-0dce2b0be11b][Air-gapped / Near-Airgapped CEO Pattern]]
+- [[id:2026-05-03-withnail-role-in-zho][Withnail’s Role in the Zero Human ORGANIZATION (ZHO)]]
+- [[id:2026-05-11-zho-task-list][ZHO Active Task List]]
+- [[id:954d11c1-b28c-45ba-a976-8fb89bd73daa][Voight-Kampff Protocol v4.0]]

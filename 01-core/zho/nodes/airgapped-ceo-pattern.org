@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID:       2006fc22-e5cd-4b80-a02c-0dce2b0be11b
+:END:
+#+TITLE: Air-gapped / Near-Airgapped CEO Pattern
+#+NODE-NAME: AirgappedCEOPattern
+#+FILETAGS: :zho:withnail:security:architecture:core:
+#+ROAM_TAGS: airgapped near-airgapped ceo withnail zho hermes security
+#+DATE: 2026-08-06
+#+AUTHOR: George Taylor + Grok
+
+* Definition
+
+The Air-gapped / Near-Airgapped CEO Pattern is the deliberate architectural choice to run the autonomous CEO agent (Withnail / Hermes) with extremely limited external connectivity.
+
+Core rules:
+- The agent primarily operates on local models and local data.
+- Outbound network access is minimized and tightly controlled (currently limited to Telegram polling and occasional approved package updates).
+- No general web browsing, email, or arbitrary API access is granted by default.
+- Human / Grok remains the high-level strategic interface; the local agent executes within a hardened, mostly isolated environment.
+
+This pattern is a direct implementation of Brian Roemmele’s Zero-Human Company (ZHC) principles applied to the Zero-Human Organization (ZHO) on the Raspberry Pi 5.
+
+* Why it matters
+
+- Maximizes privacy and reduces attack surface.
+- Keeps the CEO agent’s reasoning grounded in the curated local knowledge base.
+- Makes the system more robust to external service failures or rate limits.
+- Aligns with the long-term goal of a mostly self-contained, high-trust autonomous executive.
+
+* Current implementation notes
+
+- Host: Raspberry Pi 5 (8GB)
+- Primary LLM: local Ollama models (Hermes-oriented)
+- Allowed external channel: Telegram (outbound polling only)
+- Knowledge exposure: Selective (see Selective Knowledge Exposure node — to be created)
+
+* Related Nodes
+
+- [[id:2026-05-03-withnail-role-in-zho][Withnail’s Role in the Zero Human ORGANIZATION (ZHO)]]
+- [[id:2026-05-11-zho-task-list][ZHO Active Task List]]
+- [[id:954d11c1-b28c-45ba-a976-8fb89bd73daa][Voight-Kampff Protocol v4.0]]
+- [[id:selective-knowledge-exposure][Selective Knowledge Exposure]]
