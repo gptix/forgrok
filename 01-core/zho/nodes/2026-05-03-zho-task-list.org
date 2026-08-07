@@ -4,8 +4,12 @@
 :ROAM_TAGS: tasks backlog
 :CREATED:  [2026-05-03 Sun]
 :END:
-
-#+TITLE: ZHO Active Task List
+#+TITLE: ZHO Active Task List (2026-05-03 snapshot)
+#+NODE-NAME: ZHOActiveTaskList-20260503
+#+FILETAGS: :zho:tasks:backlog:
+#+ROAM_TAGS: zho task-list backlog withnail
+#+DATE: 2026-05-03
+#+AUTHOR: George Taylor + Grok
 
 * Immediate
 - [X] Withnail Telegram bot stable with command queue

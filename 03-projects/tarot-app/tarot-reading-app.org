@@ -4,9 +4,10 @@
 #+TITLE: Tarot Reading App — Computer Vision + Interpretation Project
 #+NODE-NAME: TarotReadingApp
 #+FILETAGS: :project:tarot:computer-vision:mobile:mvp:active:
+#+ROAM_TAGS: tarot computer-vision mobile mvp
 #+DATE: 2026-07-30
 #+STATUS: active
-#+AUTHOR: Joji Teira + Grok
+#+AUTHOR: George Taylor + Grok
 
 * Summary
 
