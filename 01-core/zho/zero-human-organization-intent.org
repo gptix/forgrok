@@ -27,6 +27,7 @@ Intent to establish one or more Zero-Human Organizations (ZHOs) modeled on Brian
 - Agents can generate personalized capture templates, conduct guided interviews, and produce clean structured outputs.
 
 ** 3. Automated Public Arrestee Data Pipeline
+[[id:fdfd59a0-a2e1-4eea-aefc-983544ebaa90][PublicArresteeData]]
 - Scope limited strictly to data that is already publicly available under open-records laws.
 - Geographic focus: Georgia (especially Fulton County and related city police/court systems) under the Georgia Open Records Act.
 - Reference model: work similar in spirit to Matt Van Swol’s public-records efforts.
@@ -64,6 +65,7 @@ Intent to establish one or more Zero-Human Organizations (ZHOs) modeled on Brian
 * Related
 
 - [[id:b622af12-faaa-4b6f-95bc-aa909d0cfc8f][HighProteinContent]]
+- [[id:fdfd59a0-a2e1-4eea-aefc-983544ebaa90][PublicArresteeData]]
 - [[OrgRoamNodeNameConvention]]
 - [[SelectiveKnowledgeExposure]]
 - [[AirgappedCEOPattern]]
