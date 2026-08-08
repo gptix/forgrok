@@ -22,6 +22,7 @@ Intent to establish one or more Zero-Human Organizations (ZHOs) modeled on Brian
 - Existing local AI + org-roam pipelines are already well-suited; agents handle discovery, filtering, chunking, and embedding under human-defined inclusion criteria.
 
 ** 2. “Save-Your-Wisdom” Strategy
+[[id:b72a8d1b-04b8-4783-9c56-96b9a17f57f3][SaveYourWisdom]]
 - Enable and politely promote practical tools and workflows that help individuals capture personal knowledge, family history, professional judgment, and hard-won experience.
 - Framing remains non-coercive and service-oriented.
 - Agents can generate personalized capture templates, conduct guided interviews, and produce clean structured outputs.
@@ -65,10 +66,10 @@ Intent to establish one or more Zero-Human Organizations (ZHOs) modeled on Brian
 * Related
 
 - [[id:b622af12-faaa-4b6f-95bc-aa909d0cfc8f][HighProteinContent]]
+- [[id:b72a8d1b-04b8-4783-9c56-96b9a17f57f3][SaveYourWisdom]]
 - [[id:fdfd59a0-a2e1-4eea-aefc-983544ebaa90][PublicArresteeData]]
 - [[OrgRoamNodeNameConvention]]
 - [[SelectiveKnowledgeExposure]]
 - [[AirgappedCEOPattern]]
 - [[ZHO-SCHEMA]]
 - [[Withnail]]
-- Existing Roemmele / high-protein work under =04-sources/roemmele/=

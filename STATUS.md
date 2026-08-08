@@ -29,6 +29,7 @@
 - **Selective knowledge exposure to Withnail started** (`~/withnail-kb/` on the Pi)
 - **Voight-Kampff Protocol v4.0** now in place under `01-core/memory/`
 - **Org-roam NODE-NAME convention** formalized (`OrgRoamNodeNameConvention`) — PascalCase, no separators; now referenced from BOOT.md
+- **SaveYourWisdom** call-out node created (`01-core/zho/nodes/save-your-wisdom.org`) — second ZHO pillar now has a dedicated, linkable node
 
 ## 3. Open / Parked Items
 
@@ -54,11 +55,13 @@
 - Essays 006 and 007 fully ingested
 
 **2026-08-07**
-- Org-roam NODE-NAME convention formalized and recorded as call-out node `OrgRoamNodeNameConvention`
-- BOOT.md updated so future sessions automatically load and apply the convention
-- First Tier-1 call-out node created: `HighProteinContent` (HPC pillar)
-- Second Tier-1 call-out node created: `PublicArresteeData` (public arrestee data pillar)
-
+- Org-roam NODE-NAME convention formalized (`OrgRoamNodeNameConvention`)
+- BOOT.md updated so future sessions automatically apply the convention
+- All three ZHO pillar call-out nodes created and linked:
+  - `HighProteinContent`
+  - `SaveYourWisdom`
+  - `PublicArresteeData`
+  
 ## 5. Next Actions (suggested)
 
 - Continue sequential Roemmele essays (008+)
