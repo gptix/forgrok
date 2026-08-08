@@ -1,0 +1,57 @@
+:PROPERTIES:
+:ID:       fdfd59a0-a2e1-4eea-aefc-983544ebaa90
+:END:
+#+TITLE: Public Arrestee Data
+#+NODE-NAME: PublicArresteeData
+#+FILETAGS: :zho:open-records:georgia:fulton:arrestee:pillar:core:
+#+ROAM_TAGS: public-arrestee-data open-records georgia fulton zho high-protein
+#+DATE: 2026-08-07
+#+AUTHOR: George Taylor + Grok
+#+STATUS: active
+
+* Definition
+
+Public Arrestee Data is the third explicit mission pillar of the Zero-Human Organization Intent.
+
+It refers to the systematic collection, normalization, provenance-tracking, and (where appropriate) republication of arrest and related court records that are already publicly available under open-records law — primarily the Georgia Open Records Act — with a geographic focus on Fulton County and surrounding jurisdictions.
+
+* Scope and hard limits
+
+- Only data that is already public.
+- No private, sealed, juvenile, or non-public records.
+- Strict respect for published access methods, rate limits, robots.txt, and formal request channels.
+- Full provenance required (agency, request/response dates, source URL or request ID).
+
+* Why it matters
+
+- Primary public records are high-protein source material.
+- Creates a durable, auditable, bias-resistant dataset for later analysis.
+- Demonstrates a concrete Zero-Human Organization capability (agent-driven discovery, formal requests, ingestion, and quality control).
+- Aligns with the broader goal of recovering and preserving high-value public information that is otherwise fragmented or ephemeral.
+
+* Current practice and assets (as of 2026-08)
+
+- Georgia Open Records Request Template exists.
+- Jurisdiction inventory work has begun (Fulton County + related cities).
+- Explicit methodological preference for primary-source / practitioner-driven approaches over academic intermediaries.
+- Intended to feed both the knowledge graph and the selective knowledge exposure slice available to Withnail.
+
+* Relationship to the other two pillars
+
+- **HighProteinContent**: Public arrest and court records, when properly provenance-tracked, are treated as high-protein material.
+- **SaveYourWisdom**: Complementary — one pillar preserves institutional/public memory; the other helps individuals preserve personal and professional knowledge.
+
+* Related Nodes / Files
+
+- [[ZeroHumanOrganizationIntent]]
+- [[HighProteinContent]]
+- [[OrgRoamNodeNameConvention]]
+- [[SelectiveKnowledgeExposure]]
+- [[AirgappedCEOPattern]]
+- [[file:../Georgia-Open-Records-Request-Template.org][Georgia Open Records Request Template]]
+- [[file:../georgia-open-records-inventory.org][Georgia Open Records Inventory]]
+- [[file:../../STATUS.md][STATUS.md]]
+
+* Change Log
+
+- 2026-08-07: Initial call-out node created as part of systematic graph improvement.
