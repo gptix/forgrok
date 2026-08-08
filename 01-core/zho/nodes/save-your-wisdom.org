@@ -1,0 +1,58 @@
+:PROPERTIES:
+:ID:       b72a8d1b-04b8-4783-9c56-96b9a17f57f3
+:END:
+#+TITLE: Save-Your-Wisdom
+#+NODE-NAME: SaveYourWisdom
+#+FILETAGS: :zho:save-wisdom:pillar:core:personal-knowledge:
+#+ROAM_TAGS: save-your-wisdom savewisdom personal-knowledge capture zho
+#+DATE: 2026-08-07
+#+AUTHOR: George Taylor + Grok
+#+STATUS: active
+
+* Definition
+
+Save-Your-Wisdom is the second explicit mission pillar of the Zero-Human Organization Intent.
+
+It is the deliberate effort to enable and politely promote practical tools and workflows that help individuals capture personal knowledge, family history, professional judgment, and hard-won experience before it is lost.
+
+The framing remains non-coercive and service-oriented.
+
+* Core idea
+
+Most high-value human knowledge lives in people’s heads and private notes. It is rarely written down in durable, structured, or shareable form. Save-Your-Wisdom treats the capture and structuring of that knowledge as a first-class activity — one that autonomous agents can assist with at scale while remaining under human direction.
+
+* Why it matters
+
+- Complements High-Protein Content (public / institutional knowledge) with private / personal knowledge.
+- Creates long-term compounding value for individuals and families.
+- Provides a natural domain for local-first, privacy-respecting agents (Withnail / Hermes).
+- Aligns with the broader Roemmele-inspired emphasis on preserving what is actually worth keeping.
+
+* Current practice and assets (as of 2026-08)
+
+- Related material exists under =04-sources/savewisdom/=.
+- Earlier work on the “1000 Save Wisdom Questions” has been ingested into the knowledge base.
+- Agents can already generate personalized capture templates and structured outputs; this pillar formalizes the intent.
+
+* Relationship to the other two pillars
+
+- **HighProteinContent**: Public and institutional high-signal material.
+- **PublicArresteeData**: Public records that are already legally available.
+- **SaveYourWisdom**: Personal and professional knowledge that only the individual possesses.
+
+Together the three pillars cover institutional, public-record, and personal knowledge.
+
+* Related Nodes / Files
+
+- [[ZeroHumanOrganizationIntent]]
+- [[HighProteinContent]]
+- [[PublicArresteeData]]
+- [[OrgRoamNodeNameConvention]]
+- [[SelectiveKnowledgeExposure]]
+- [[AirgappedCEOPattern]]
+- [[file:../../04-sources/savewisdom/][04-sources/savewisdom/]]
+- [[file:../../STATUS.md][STATUS.md]]
+
+* Change Log
+
+- 2026-08-07: Initial call-out node created as part of systematic graph improvement.
