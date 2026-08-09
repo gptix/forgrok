@@ -1,0 +1,66 @@
+:PROPERTIES:
+:ID:       be562634-5c65-495f-893a-a79f1dd8c612
+:END:
+
+#+TITLE: Org-roam Node Creation & Update Workflow
+#+NODE-NAME: OrgRoamNodeCreationWorkflow
+#+DATE: 2026-08-08
+#+FILETAGS: :core:org-roam:workflow:principles:
+#+AUTHOR: George Taylor + Grok
+#+STATUS: active
+
+* Purpose
+
+Canonical procedure for creating a *new* org-roam node or updating an existing one in this knowledge base. Follow this every time so nodes remain findable, linkable, and consistent with the dual-vault setup.
+
+* Creating a brand-new node
+
+1. Decide the human-readable title (=#+TITLE:=). Spaces and punctuation are allowed and encouraged.
+2. Derive the =#+NODE-NAME:= by converting the title to **PascalCase with no spaces, hyphens, or underscores**.  
+   See [[id:e59fd16d-43f7-470a-9a3f-a509b8955bdb][OrgRoamNodeNameConvention]] for the full rule and examples.
+3. Create the file in the correct location under the numbered structure (usually under =01-core/=, =02-infrastructure/=, =03-projects/=, etc.). Prefer kebab-case for the filename.
+4. Insert the standard header block:
+
+   #+begin_src org
+   :PROPERTIES:
+   :ID:       
+   :END:
+   #+TITLE: Human Readable Title Here
+   #+NODE-NAME: PascalCaseNameHere
+   #+DATE: YYYY-MM-DD
+   #+FILETAGS: :tag1:tag2:
+   #+AUTHOR: George Taylor + Grok
+   #+end_src
+
+5. **Immediately run** =M-x org-id-get-create= (or your preferred binding).  
+   This populates the empty =:ID:= line with a real UUID. Do *not* leave it blank and do *not* invent an ID by hand.
+6. Write the body content.
+7. Save the file.
+8. Run =org-roam-db-sync= (or let your normal save hooks handle it) so the SQLite database sees the new node.
+9. If other nodes should link to this one, replace any temporary =[[id:TODO][...]]= placeholders with the real ID that was just created.
+
+* Updating an existing node
+
+1. Open the file.
+2. Update the content as needed.
+3. **Always** set or refresh the =#+DATE-UPDATED:= (or =#+LAST-UPDATED:=) line to today’s date:
+   #+begin_src org
+   #+DATE-UPDATED: 2026-08-08
+   #+end_src
+4. If the human title or the =#+NODE-NAME:= changes, re-run =M-x org-id-get-create= only if the ID is missing; otherwise leave the existing ID alone.
+5. Save and let the database sync.
+
+* Quick checklist (copy-paste into daily notes if useful)
+
+- [ ] =#+NODE-NAME:= is pure PascalCase (no spaces/hyphens/underscores)
+- [ ] =M-x org-id-get-create= has been run (ID is a real UUID)
+- [ ] Filename is kebab-case and lives in the correct numbered directory
+- [ ] Cross-links use real IDs, not =TODO=
+- [ ] On updates: =#+DATE-UPDATED:= set to today
+- [ ] Database synced
+
+* Related
+
+- [[id:e59fd16d-43f7-470a-9a3f-a509b8955bdb][OrgRoamNodeNameConvention]]
+- [[file:../../BOOT.md][BOOT.md]]
+- [[file:../../STRUCTURE.md][STRUCTURE.md]]
