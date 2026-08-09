@@ -42,7 +42,7 @@ Working copy lives on the X230. All structural changes are made there, committed
 
 ## 3. Current project state
 
-**Detailed living snapshot:** **STATUS.md** (last updated 2026-08-06)
+**Detailed living snapshot:** **STATUS.md** (last updated 2026-08-08)
 
 High-level summary (kept deliberately short):
 
