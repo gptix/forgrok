@@ -1,6 +1,7 @@
 :PROPERTIES:
-:ID:       20260730-tarot-reading-app
+:ID:       c5e878f1-59c6-4731-ba1f-bbaf4baf52ec
 :END:
+
 #+TITLE: Tarot Reading App — Computer Vision + Interpretation Project
 #+NODE-NAME: TarotReadingApp
 #+FILETAGS: :project:tarot:computer-vision:mobile:mvp:active:
@@ -8,6 +9,10 @@
 #+DATE: 2026-07-30
 #+STATUS: active
 #+AUTHOR: George Taylor + Grok
+
+* Current Live Prototype
+
+See [[id:TODO][TarotTodayCurrentState]] for the accurate frozen description of the working Hugging Face Space as of 2026-08-08.
 
 * Summary
 
