@@ -87,6 +87,15 @@
 - Broader metadata sweep on remaining knowledge-base nodes that still lack clean `#+NODE-NAME:`.
 - Expand the selective knowledge exposure slice available to Withnail.
 
+2026-08-08 Evening – Tarot Today documentation freeze
+
+- Renamed 03-projects/tarot-app → tarot-today
+- Created TarotTodayCurrentState + TarotTodayProjectOverview
+- Linked TarotReadingApp to the accurate Current State
+- STRUCTURE.md updated
+- One residual [[id:TODO]] remains in ProjectOverview (to be fixed next)
+
+The identification MVP on the Hugging Face Space is now properly documented as the living baseline.
 ### Notes
 - Org-roam now reliably finds nodes from both the personal vault and the structured knowledge base.
 - Temporary file corruption (`#<buffer ...>` artifacts) that appeared during editing was cleaned.
