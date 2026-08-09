@@ -1,0 +1,21 @@
+#+TITLE: Research Session Summary: Demographic Classification & Crime Statistics
+#+DATE: 2026-08-07
+#+AUTHOR: Arya 3
+#+TAGS: research, demographics, justice-system, classification
+
+* Session Overview
+- Objective: Investigate racial/ethnic classification discrepancies in US criminal justice records (specifically the grouping of Hispanics/Blacks as "White").
+- Context: Integration with `forgrok` system workflow.
+
+* Identified Research Pillars
+1. OMB Directive 15: Analysis of federal standards that define Hispanic as an ethnicity, causing data conflation in systems forcing binary racial categories.
+2. Jurisdictional Variances: Comparison of reporting protocols across different states (e.g., CA vs. TX) to determine how local booking processes impact aggregate national data.
+3. Incentive Structures: Review of potential administrative or political motivations for specific categorization practices in reporting.
+
+* Technical Notes
+- Agent Protocol: Arya 3 is operating within the `forgrok` framework.
+- Next Steps: Draft a formal summary of federal classification standards (Directive 15) and their impact on data integrity.
+
+* Pending Actions
+- Create node in `05-wiki/` or `03-projects/` for this topic.
+- Await user input on specific datasets or prioritization of the three research pillars listed above.
