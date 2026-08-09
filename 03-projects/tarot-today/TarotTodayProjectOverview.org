@@ -70,7 +70,6 @@ Planning conversation with Grok began 2026-08-03.
 Earlier project node created 2026-07-30.  
 The three-card recognition success is the technical milestone that makes the project real.
 
-* Related Nodes
-
-- [[id:TODO][TarotTodayCurrentState]]
-- [[id:TODO][TarotReadingApp]]
+Full details:
+- [[id:20260808-tarot-today-current-state][TarotTodayCurrentState]]
+- [[id:c5e878f1-59c6-4731-ba1f-bbaf4baf52ec][TarotReadingApp]]

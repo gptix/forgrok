@@ -97,5 +97,5 @@ Highest-value next moves (see Project Overview for ordered list):
 
 * Related
 
-- [[id:TODO][TarotTodayProjectOverview]]
-- [[id:TODO][TarotReadingApp]]
+- [[id:20260808-tarot-today-project-overview][TarotTodayProjectOverview]]
+- [[id:c5e878f1-59c6-4731-ba1f-bbaf4baf52ec][TarotReadingApp]]
