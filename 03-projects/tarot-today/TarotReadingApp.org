@@ -12,7 +12,7 @@
 
 * Current Live Prototype
 
-See [[id:TODO][TarotTodayCurrentState]] for the accurate frozen description of the working Hugging Face Space as of 2026-08-08.
+See [[id:20260808-tarot-today-current-state][TarotTodayCurrentState]] for the accurate frozen description of the working Hugging Face Space as of 2026-08-08.
 
 * Summary
 
@@ -77,4 +77,3 @@ Custom / non-standard deck faces are explicitly deferred to a later phase. Initi
 
 - [[RoemmeleEssayIngestWorkflow]] (example of staged, low-friction pipeline thinking)
 - Future: custom deck support, specialized reading schools, on-device inference
-See [[id:20260808-tarot-today-current-state][TarotTodayCurrentState]] for the accurate frozen description of the working Hugging Face Space as of 2026-08-08.
