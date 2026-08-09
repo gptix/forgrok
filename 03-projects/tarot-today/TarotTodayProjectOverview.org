@@ -1,0 +1,76 @@
+:PROPERTIES:
+:ID:       ffd62779-7b3b-445c-9ff5-6d2660874690
+:END:
+#+TITLE: Tarot Today — Project Overview and Roadmap
+#+NODE-NAME: TarotTodayProjectOverview
+#+DATE: 2026-08-08
+#+FILETAGS: :project:tarot:roadmap:
+#+AUTHOR: George Taylor + Grok
+
+* Accurate Current State (Summary)
+
+- Static Hugging Face Space
+- Uses OpenRouter (="openrouter/free"=) with a user-supplied API key
+- Prompt deliberately limited to *card identification only* (Rider-Waite names + upright/reversed)
+- Successfully identified Ace of Swords, Wheel of Fortune, and King of Wands from a photo
+- No full reading generation yet, no structured JSON, no question field, no storage
+
+Full details: [[id:TODO][TarotTodayCurrentState]]
+
+* Long-term Vision
+
+An application that lets a user photograph (or upload) a physical Tarot spread, has AI reliably identify the cards + orientation + layout, and returns a coherent, high-quality written interpretation.
+
+Target platforms: Web, iOS, and Android.
+
+Longer-term alignment with local-first / privacy values: support offline or self-hosted vision models where feasible.
+
+* Documentation Discipline
+
+We maintain high-quality documentation so progress is grounded in reality rather than memory:
+
+| File / Node                        | Purpose                                      |
+|------------------------------------|----------------------------------------------|
+| TarotTodayCurrentState             | Frozen, accurate description of the live system |
+| TarotTodayProjectOverview (this)   | Project overview + roadmap                   |
+| TarotReadingApp                    | Main living project node                     |
+| Live =index.html= on HF            | Source of truth for the current app code     |
+
+When the live Space changes meaningfully, update the Current State node first.
+
+* Recommended Next Steps (Ordered)
+
+**1. Strengthen identification + add reading generation**
+- Keep the strong identification instruction
+- Raise =max_tokens=
+- Ask for a short coherent interpretation after listing the cards
+- Optionally request structured JSON for the cards
+
+**2. Add a “question / intention” field**
+- Even a simple optional text input dramatically improves reading quality
+
+**3. Reduce key friction** (optional but valuable)
+- Clearer instructions for obtaining an OpenRouter key
+- Or explore temporary free-credit paths
+
+**4. Structured output**
+- Move from free-text list → JSON so later UI, history, and correction features become easy
+
+**5. Decide production path**
+- Stay with static + OpenRouter for rapid iteration, or
+- Move to a small backend when more control / privacy / multi-step pipelines are needed
+
+**6. Multi-platform**
+- PWA first (already works on phone browsers)
+- Then Flutter / Expo / Capacitor for store distribution
+
+* Origin
+
+Planning conversation with Grok began 2026-08-03.  
+Earlier project node created 2026-07-30.  
+The three-card recognition success is the technical milestone that makes the project real.
+
+* Related Nodes
+
+- [[id:TODO][TarotTodayCurrentState]]
+- [[id:TODO][TarotReadingApp]]

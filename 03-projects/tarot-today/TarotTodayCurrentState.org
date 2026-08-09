@@ -1,0 +1,101 @@
+:PROPERTIES:
+:ID:       41f7ae4a-9168-4520-8db0-74abe37a5ce7
+:END:
+#+TITLE: Tarot Today — Current State (Frozen 2026-08-08)
+#+NODE-NAME: TarotTodayCurrentState
+#+DATE: 2026-08-08
+#+FILETAGS: :project:tarot:documentation:state:
+#+AUTHOR: George Taylor + Grok
+
+* Overview
+
+This node freezes the *actual* live behavior of the Tarot Today application as observed on 2026-08-08.
+
+Live URL: https://huggingface.co/spaces/gptix/tarot-today
+
+Treat this as the baseline. When the live Space changes meaningfully, update this node *first*.
+
+* Space Metadata
+
+- Space type :: Static (=sdk: static=)
+- Status :: Running
+- Files present :: =index.html= (~6 kB), =style.css=, =README.md= (minimal), =.gitattributes=
+- Last meaningful code change :: Prompt tightened for card identification only
+
+* What the App Actually Does Today
+
+A minimal, dark-themed single-page web app that:
+
+1. Asks the user for an OpenRouter API key (stored in =localStorage=).
+2. Lets the user upload an image of Tarot cards (with live preview).
+3. On “Analyze Image”, converts the image to base64 and sends it to OpenRouter.
+4. Uses the model ="openrouter/free"=.
+5. Returns a short text response focused *only on card identification*.
+
+There is *no full interpretation / reading* yet. The current prompt deliberately limits the model to listing the cards.
+
+* Exact Current Prompt
+
+#+begin_src text
+You are analyzing a photograph of tarot cards.
+
+Instructions:
+1. Identify every visible tarot card using standard Rider-Waite names.
+2. For each card, note whether it appears upright or reversed (if you can tell).
+3. List the cards clearly, one per line.
+4. If no tarot cards are visible, just say: "No tarot cards detected."
+
+Respond only with the list of cards or the "No tarot cards detected" message. Do not add extra explanation.
+#+end_src
+
+Model parameters:
+- =max_tokens: 50=
+- =temperature: 0.1=
+
+* Proven Capability
+
+The system has successfully identified three cards from a real photo:
+
+- Ace of Swords
+- Wheel of Fortune
+- King of Wands
+
+This identification success is the technical foundation of the project.
+
+* Technical Architecture (Current)
+
+#+begin_src text
+Browser (static HTML/JS)
+    ↓ (user provides OpenRouter key)
+OpenRouter API  (model = "openrouter/free")
+    ↓
+Short text list of identified cards
+#+end_src
+
+- No server-side code on Hugging Face beyond serving the static files.
+- No authentication beyond the user’s own OpenRouter key.
+- No storage of images or results.
+- No structured JSON output yet (plain text list only).
+- No question/intention field.
+- No layout analysis beyond simple listing.
+
+* Source of Truth for Code
+
+The entire application logic lives in a single file:
+
+https://huggingface.co/spaces/gptix/tarot-today/blob/main/index.html
+
+* Implications for Next Steps
+
+We have a clean, working identification MVP.
+
+Highest-value next moves (see Project Overview for ordered list):
+
+1. Improve the prompt + raise =max_tokens= so the model can also produce a short coherent reading after identifying the cards.
+2. Optionally request structured JSON for the cards.
+3. Add a simple optional “question / intention” field.
+
+* Related
+
+- [[id:TODO][TarotTodayProjectOverview]]
+- [[id:TODO][TarotReadingApp]]
