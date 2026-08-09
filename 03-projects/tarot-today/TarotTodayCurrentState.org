@@ -1,5 +1,5 @@
 :PROPERTIES:
-:ID:       41f7ae4a-9168-4520-8db0-74abe37a5ce7
+:ID:       20260808-tarot-today-current-state
 :END:
 #+TITLE: Tarot Today — Current State (Frozen 2026-08-08)
 #+NODE-NAME: TarotTodayCurrentState

@@ -1,5 +1,5 @@
 :PROPERTIES:
-:ID:       ffd62779-7b3b-445c-9ff5-6d2660874690
+:ID:       20260808-tarot-today-project-overview
 :END:
 #+TITLE: Tarot Today — Project Overview and Roadmap
 #+NODE-NAME: TarotTodayProjectOverview
