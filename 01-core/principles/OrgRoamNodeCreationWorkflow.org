@@ -1,66 +1,65 @@
 :PROPERTIES:
 :ID:       be562634-5c65-495f-893a-a79f1dd8c612
 :END:
-
-#+TITLE: Org-roam Node Creation & Update Workflow
+#+TITLE: Org-roam Node Creation Workflow
 #+NODE-NAME: OrgRoamNodeCreationWorkflow
-#+DATE: 2026-08-08
-#+FILETAGS: :core:org-roam:workflow:principles:
+#+FILETAGS: :principle:org-roam:workflow:
+#+ROAM_TAGS: org-roam workflow node-creation
+#+DATE: 2026-08-09
 #+AUTHOR: George Taylor + Grok
-#+STATUS: active
 
 * Purpose
 
-Canonical procedure for creating a *new* org-roam node or updating an existing one in this knowledge base. Follow this every time so nodes remain findable, linkable, and consistent with the dual-vault setup.
+Reliable, low-friction process for creating new org-roam nodes that avoids the common header and mode problems.
 
-* Creating a brand-new node
+* Standard procedure for a new node
 
-1. Decide the human-readable title (=#+TITLE:=). Spaces and punctuation are allowed and encouraged.
-2. Derive the =#+NODE-NAME:= by converting the title to **PascalCase with no spaces, hyphens, or underscores**.  
-   See [[id:e59fd16d-43f7-470a-9a3f-a509b8955bdb][OrgRoamNodeNameConvention]] for the full rule and examples.
-3. Create the file in the correct location under the numbered structure (usually under =01-core/=, =02-infrastructure/=, =03-projects/=, etc.). Prefer kebab-case for the filename.
-4. Insert the standard header block:
+1. Create the file in the correct location under the numbered structure.
+2. Open the file in Emacs.
+3. *Immediately* ensure the buffer is in Org mode:
+   - Check the mode line.
+   - If it says Fundamental (or anything else), run =M-x org-mode= or =M-x normal-mode=.
+4. Insert the standard metadata block at the top of the file:
 
-   #+begin_src org
-   :PROPERTIES:
-   :ID:       
-   :END:
-   #+TITLE: Human Readable Title Here
-   #+NODE-NAME: PascalCaseNameHere
+   #+begin_example
+   #+TITLE: Human Readable Title
+   #+NODE-NAME: CleanPascalCaseName
+   #+FILETAGS: :relevant:tags:
+   #+ROAM_TAGS: space separated tags
    #+DATE: YYYY-MM-DD
-   #+FILETAGS: :tag1:tag2:
    #+AUTHOR: George Taylor + Grok
-   #+end_src
+   #+end_example
 
-5. **Immediately run** =M-x org-id-get-create= (or your preferred binding).  
-   This populates the empty =:ID:= line with a real UUID. Do *not* leave it blank and do *not* invent an ID by hand.
-6. Write the body content.
-7. Save the file.
-8. Run =org-roam-db-sync= (or let your normal save hooks handle it) so the SQLite database sees the new node.
-9. If other nodes should link to this one, replace any temporary =[[id:TODO][...]]= placeholders with the real ID that was just created.
+5. Leave exactly one blank line after the metadata block, then start the first heading (=* Overview= or similar).
 
-* Updating an existing node
+6. Save the file (=C-x C-s=).
 
-1. Open the file.
-2. Update the content as needed.
-3. **Always** set or refresh the =#+DATE-UPDATED:= (or =#+LAST-UPDATED:=) line to today’s date:
-   #+begin_src org
-   #+DATE-UPDATED: 2026-08-08
-   #+end_src
-4. If the human title or the =#+NODE-NAME:= changes, re-run =M-x org-id-get-create= only if the ID is missing; otherwise leave the existing ID alone.
-5. Save and let the database sync.
+7. Run =M-x org-id-get-create=.
+   - This will insert a =:PROPERTIES:= drawer with an =:ID:= under the first heading (the preferred style).
 
-* Quick checklist (copy-paste into daily notes if useful)
+8. Save again.
 
-- [ ] =#+NODE-NAME:= is pure PascalCase (no spaces/hyphens/underscores)
-- [ ] =M-x org-id-get-create= has been run (ID is a real UUID)
-- [ ] Filename is kebab-case and lives in the correct numbered directory
-- [ ] Cross-links use real IDs, not =TODO=
-- [ ] On updates: =#+DATE-UPDATED:= set to today
-- [ ] Database synced
+* Important rules (learned the hard way)
 
-* Related
+- The buffer *must* be in Org mode before running any org-id or org-roam commands. Otherwise you get =org-element-at-point= errors.
+- Do *not* put a file-level =:PROPERTIES:= drawer at the very top of the file unless you have a specific reason. Prefer the ID under the first heading.
+- If a file-level properties drawer already exists:
+  - Place point at the beginning of the file.
+  - Delete any existing =:ID:= line inside it (or delete the whole drawer if it is empty/broken).
+  - Make sure =#+TITLE:= and the other metadata lines start on their own lines *after* the =:END:= of any properties drawer.
+- Never let =:END:= and =#+TITLE:= end up on the same line.
 
-- [[id:e59fd16d-43f7-470a-9a3f-a509b8955bdb][OrgRoamNodeNameConvention]]
-- [[file:../../BOOT.md][BOOT.md]]
-- [[file:../../STRUCTURE.md][STRUCTURE.md]]
+* After creating one or more nodes
+
+- You may run =M-x org-roam-db-sync= at any convenient time.
+- It is not required after every single node, but it *should* be run before the final git push at the end of a session so the database is consistent with what is being committed.
+
+* Validation (Voight-Kampff)
+
+During the end-of-session Voight-Kampff cycle, confirm that:
+
+- New nodes follow the NODE-NAME convention (PascalCase, no spaces/hyphens/underscores).
+- Headers are clean (no concatenated =:END:#+TITLE:= lines).
+- The buffer was in Org mode when the ID was created.
+- =org-roam-db-sync= has been run if any new nodes were added.
+- The updated instructions in this node itself have been committed.
