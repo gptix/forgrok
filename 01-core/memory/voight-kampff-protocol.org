@@ -55,8 +55,10 @@ Additional useful fields when applicable:
 - Confirm durable facts are still correctly recorded and protected
 - Detect stale references (old paths, outdated version numbers, broken links)
 - Check for preference drift (Emacs-only, target-machine clarity, air-gapped posture, etc.)
+- Verify that no files from =private/= (especially open-records correspondence under =private/open-records/=) have been indexed by org-roam or committed to the public repository. Confirm =private/= remains outside =my/org-roam-extra-roots= and is present in =.gitignore=.
 - Identify weak or missing cross-links between related files and nodes
 - Flag org files that lack proper =#+NODE-NAME:=, tags, or other standard metadata
+
 
 ** 3. Cross-Linking & Metadata Pass
 - Strengthen bidirectional links where concepts or projects are related
