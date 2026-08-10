@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       18108438-81dd-4bfe-9b7d-0c904f1fdd98
+:END:
+#+TITLE: Government Contracting Business Overview
+#+NODE-NAME: GovContractingOverview
+#+FILETAGS: :project:gov-contracting:
+#+CREATED: [2026-08-09 Sun]
+
+* Purpose
+
+A small business focused on winning government contracts (federal, state, and local) for the provision of services, with deliberate emphasis on:
+
+- Very low day-to-day operational work
+- Preference for multi-year contracts
+- Subcontracting the actual performance of work
+- Capturing the margin between the government payment and the subcontractor cost
+
+The model prioritizes leverage, paperwork, and relationship management over performing the service itself.
+
+* Core Model (High Level)
+
+1. Form a generic-named LLC
+2. Register on SAM.gov (free)
+3. Identify suitable solicitations (especially those with low or no past-performance requirements)
+4. Use AI + historical pricing data (USAspending.gov) to evaluate and price
+5. Obtain subcontractor quotes → mark up → submit bid
+6. If awarded: manage invoicing and payment flow (government pays prime → prime pays sub)
+7. Ongoing effort target: roughly one hour per month per active contract once established
+
+* Relationship to Other Projects
+
+- Strong practical overlap with AI-agent consulting (AI is used heavily for solicitation analysis and proposal drafting)
+- Complements the low-intervention / high-leverage orientation of the broader ZHO work
+- Distinct from the SaveYourWisdom nonprofit (commercial vs mission-driven)
+
+* Status
+
+See [[id:TODO][GovContractingCurrentState]]
