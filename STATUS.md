@@ -1,6 +1,6 @@
 # STATUS.md — Living Operational Snapshot
 
-**Last updated:** 2026-08-07  
+**Last updated:** 2026-08-09  
 **Maintainer:** George Taylor + Grok  
 **Companion files:** BOOT.md, STRUCTURE.md, 01-core/memory/joji-grok-project-memory.org, 01-core/memory/voight-kampff-protocol.org
 
@@ -30,6 +30,7 @@
 - **Voight-Kampff Protocol v4.0** now in place under `01-core/memory/`
 - **Org-roam NODE-NAME convention** formalized (`OrgRoamNodeNameConvention`) — PascalCase, no separators; now referenced from BOOT.md
 - **SaveYourWisdom** call-out node created (`01-core/zho/nodes/save-your-wisdom.org`) — second ZHO pillar now has a dedicated, linkable node
+- **OrgRoamNodeCreationWorkflow** hardened (2026-08-09) with explicit Org-mode requirement, clean header rules, and pre-push `org-roam-db-sync` reminder
 
 ## 3. Open / Parked Items
 
@@ -41,9 +42,33 @@
 
 ## 4. Recent Session Notes
 
+**2026-08-09**
+- Tarot Today advanced: improved prompt deployed to the live Hugging Face Space; single-card and medium spreads (up to ~7 cards) now reliable; Celtic Cross still fails with empty response on the free model.
+- Created and pushed `TarotTodayStatus` and `TarotTodayUserInstructions` nodes.
+- Synthetic multi-card spread test images generated and evaluated.
+- Hardened `OrgRoamNodeCreationWorkflow` after header/mode failures encountered while creating the new Tarot nodes.
+
+**2026-08-08**
+- Tarot Today documentation freeze: renamed `03-projects/tarot-app` → `tarot-today`.
+- Created `TarotTodayCurrentState` + `TarotTodayProjectOverview`.
+- Linked TarotReadingApp to the accurate Current State.
+- STRUCTURE.md updated.
+- Identification MVP on the Hugging Face Space documented as the living baseline.
+
+**2026-08-07**
+- Org-roam NODE-NAME convention formalized (`OrgRoamNodeNameConvention`)
+- BOOT.md updated so future sessions automatically apply the convention
+- All three ZHO pillar call-out nodes created and linked:
+  - `HighProteinContent`
+  - `SaveYourWisdom`
+  - `PublicArresteeData`
+
 **2026-08-06**
 - Voight-Kampff Protocol updated to v4.0 and placed under canonical names
 - Name references standardized to George Taylor in living status files
+- Dual-vault org-roam configuration completed
+- Priority knowledge-base nodes cleaned; core cross-linking strengthened
+- Concept nodes created: `AirgappedCEOPattern`, `SelectiveKnowledgeExposure`
 
 **2026-08-01**
 - Local SOUL + multi-agent logistics session captured
@@ -54,48 +79,10 @@
 - Selective KB exposure directory created
 - Essays 006 and 007 fully ingested
 
-**2026-08-07**
-- Org-roam NODE-NAME convention formalized (`OrgRoamNodeNameConvention`)
-- BOOT.md updated so future sessions automatically apply the convention
-- All three ZHO pillar call-out nodes created and linked:
-  - `HighProteinContent`
-  - `SaveYourWisdom`
-  - `PublicArresteeData`
-  
 ## 5. Next Actions (suggested)
 
 - Continue sequential Roemmele essays (008+)
 - Give Withnail grounded planning tasks against the current knowledge slice
 - Expand arrestee-records and HPC material in the Withnail knowledge slice
 - Strengthen cross-links between STATUS, BOOT, V-K protocol, and recent session nodes
-
-
-## 2026-08-06 Evening – Org-roam Dual Vault + Concept Node Work (Voight-Kampff)
-
-### Completed tonight
-- Dual-vault org-roam configuration is working (single SQLite database covering both `~/RoamNotes/` and selected trees under `~/local-side/`).
-- Priority knowledge-base nodes cleaned: proper `#+NODE-NAME:` (no spaces) + standard metadata applied.
-- Duplicate “ZHO Active Task List” resolved (living 2026-05-11 version kept; 2026-05-03 version marked as historical snapshot).
-- Core cross-linking strengthened between Withnail’s Role, ZHO Active Task List, and Voight-Kampff Protocol v4.0.
-- Two new high-value concept nodes created, committed, and cross-linked:
-  - **Air-gapped / Near-Airgapped CEO Pattern** (`AirgappedCEOPattern`)
-  - **Selective Knowledge Exposure** (`SelectiveKnowledgeExposure`)
-
-### Open for next session
-- Create **LocalSOULPersistence** concept node (first item).
-- Continue remaining concept nodes (Roemmele Essay Ingest Pipeline, Numbered Structure, etc.).
-- Broader metadata sweep on remaining knowledge-base nodes that still lack clean `#+NODE-NAME:`.
-- Expand the selective knowledge exposure slice available to Withnail.
-
-2026-08-08 Evening – Tarot Today documentation freeze
-
-- Renamed 03-projects/tarot-app → tarot-today
-- Created TarotTodayCurrentState + TarotTodayProjectOverview
-- Linked TarotReadingApp to the accurate Current State
-- STRUCTURE.md updated
-- One residual [[id:TODO]] remains in ProjectOverview (to be fixed next)
-
-The identification MVP on the Hugging Face Space is now properly documented as the living baseline.
-### Notes
-- Org-roam now reliably finds nodes from both the personal vault and the structured knowledge base.
-- Temporary file corruption (`#<buffer ...>` artifacts) that appeared during editing was cleaned.
+- (Tarot) Decide next focus: interpretation layer, mobile UX, or further model robustness
