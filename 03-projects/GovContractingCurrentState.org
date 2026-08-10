@@ -1,0 +1,36 @@
+:PROPERTIES:
+:ID:       ab43d634-d627-4f7b-8602-ea667beed5a5
+:END:
+#+TITLE: Government Contracting Business — Current State
+#+NODE-NAME: GovContractingCurrentState
+#+FILETAGS: :project:gov-contracting:status:
+#+CREATED: [2026-08-09 Sun]
+
+* Status as of 2026-08-09
+
+Conceptual / pre-formation.
+
+- Project formally added to the knowledge base
+- High-value case study ingested (Natalie Rosario / Koerner Office Podcast)
+- No LLC formed yet
+- No SAM.gov registration yet
+- No active bids or contracts
+
+* Immediate Next Actions
+
+- [ ] Decide on generic LLC name
+- [ ] Form Georgia LLC (or evaluate other state options)
+- [ ] Complete SAM.gov registration
+- [ ] Create initial opportunity-search criteria and AI prompt library
+- [ ] Explore APEX Accelerator (formerly PTAC) resources for Georgia
+
+* Key Reference Material
+
+- [[id:TODO][NatalieRosarioGovContractingCase]] (source node)
+- Extracted files in artifacts/:
+  - natalie-transcript.md
+  - natalie-steps-outline.md
+
+* Notes
+
+The Natalie Rosario model is currently the primary real-world reference for the low-touch, multi-year, subcontracted approach.

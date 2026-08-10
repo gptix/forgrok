@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       9a0ffc73-544a-4549-b29b-3060047e4ad7
+:END:
+#+TITLE: Low-Touch Government Contracting Model
+#+NODE-NAME: LowTouchGovContractingModel
+#+FILETAGS: :concept:gov-contracting:zho:
+#+CREATED: [2026-08-09 Sun]
+
+* Definition
+
+A business model in which a small prime contractor wins multi-year (or multi-year renewable) government service contracts, subcontracts virtually all performance work, and retains a margin while keeping ongoing operational effort extremely low (target ≈ 1 hour/month per active contract after award).
+
+* Core Principles
+
+1. **Prime, don’t perform** — Own the contract relationship with the government; outsource execution.
+2. **Generic capacity** — Use a broad LLC name so the same entity can bid across many service categories.
+3. **Data over experience** — Historical pricing (USAspending.gov) + AI analysis substitutes for domain expertise in early bids.
+4. **Low past-performance threshold** — Prefer solicitations that do not require extensive prior performance records.
+5. **Payment flow advantage** — Government pays the prime first; prime then pays the subcontractor.
+6. **Time leverage** — Once awarded, the work shifts almost entirely to invoicing and light oversight.
+
+* Enabling Stack (Current Reference)
+
+- SAM.gov registration (free, mandatory)
+- sam.gov/opportunities for discovery
+- USAspending.gov for pricing intelligence
+- Claude / ChatGPT for solicitation digestion and proposal support
+- APEX Accelerators for free technical assistance
+- Subcontractor network (local to the place of performance)
+
+* Primary Case Study
+
+[[id:TODO][NatalieRosarioGovContractingCase]]
+
+* Relation to Broader Goals
+
+Aligns with the preference for high-leverage, low day-to-day intervention activities and can serve as one practical commercial vehicle alongside AI-agent consulting and other low-touch ventures.
