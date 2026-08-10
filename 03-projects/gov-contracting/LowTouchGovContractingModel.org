@@ -29,8 +29,7 @@ A business model in which a small prime contractor wins multi-year (or multi-yea
 - Subcontractor network (local to the place of performance)
 
 * Primary Case Study
-
-[[id:TODO][NatalieRosarioGovContractingCase]]
+[[id:a26f33dd-9b5a-4fb2-812b-08e046b79e89][NatalieRosarioGovContractingCase]]
 
 * Relation to Broader Goals
 

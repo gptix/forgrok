@@ -1,0 +1,45 @@
+#+TITLE: Natalie Rosario Government Contracting Case Study
+#+NODE-NAME: NatalieRosarioGovContractingCase
+#+FILETAGS: :source:gov-contracting:case-study:
+#+CREATED: [2026-08-09 Sun]
+
+* Source
+
+- Video: https://youtu.be/xrU6tVo-qME
+- Title: How Anyone Can Make $10K+/Month From the Government
+- Interviewer: Chris Koerner (The Koerner Office Podcast)
+- Guest: Natalie Rosario
+- Captured & transcribed via Grok conversation on 2026-08-09
+
+* Extracted Artifacts
+
+- ~/local-side/.../artifacts/natalie-transcript.md  (cleaned transcription)
+- ~/local-side/.../artifacts/natalie-steps-outline.md  (structured steps + tools + agencies)
+
+* Key Takeaways (Summary)
+
+Natalie operates as a prime contractor with essentially no operational staff. She:
+
+- Wins contracts in domains she has no prior experience in (hazardous waste, landscaping, catering, etc.)
+- Subcontracts 100% of the performance work
+- Uses Claude (preferred) and ChatGPT to analyze long solicitations and draft responses
+- Uses USAspending.gov for historical pricing to set markups
+- Reports roughly one hour per month of ongoing work once contracts are active
+- First contract she bid on was the first she won
+- Emphasizes generic LLC naming and free SAM.gov registration as the critical starting points
+
+* Tools & Agencies Mentioned
+
+| Resource              | Role                                      |
+|-----------------------|-------------------------------------------|
+| SAM.gov               | Mandatory registration + opportunity search |
+| USAspending.gov       | Historical pricing research               |
+| Claude / ChatGPT      | Solicitation analysis & proposal drafting |
+| APEX Accelerators     | Free counseling (formerly PTACs)          |
+| sam.gov/opportunities | Primary marketplace                       |
+
+* Links
+
+- Project overview: [[id:18108438-81dd-4bfe-9b7d-0c904f1fdd98][GovContractingOverview]]
+- Current state: [[id:ab43d634-d627-4f7b-8602-ea667beed5a5][GovContractingCurrentState]]
+  
