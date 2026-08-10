@@ -79,6 +79,18 @@
 - Selective KB exposure directory created
 - Essays 006 and 007 fully ingested
 
+2026-08-09 Evening – New commercial projects + Natalie case study
+
+- Added three projects under 03-projects/:
+  ai-agent-consulting, gov-contracting, save-your-wisdom-nonprofit
+- Ingested Natalie Rosario government-contracting case study
+  (transcript + structured steps). Created LowTouchGovContractingModel
+  and supporting Overview/CurrentState nodes.
+- Reorganized flat files into proper project directories, removed typo
+  file, committed and pushed (c4809d0).
+- Confirmed permanent X230 working-copy location: ~/local-side/
+- Unrelated Ammo Can Keith material received and discarded from project scope.
+
 ## 5. Next Actions (suggested)
 
 - Continue sequential Roemmele essays (008+)
