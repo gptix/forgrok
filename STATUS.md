@@ -1,6 +1,6 @@
 # STATUS.md — Living Operational Snapshot
 
-**Last updated:** 2026-08-09  
+**Last updated:** 2026-08-11  
 **Maintainer:** George Taylor + Grok  
 **Companion files:** BOOT.md, STRUCTURE.md, 01-core/memory/joji-grok-project-memory.org, 01-core/memory/voight-kampff-protocol.org
 
@@ -90,6 +90,28 @@
   file, committed and pushed (c4809d0).
 - Confirmed permanent X230 working-copy location: ~/local-side/
 - Unrelated Ammo Can Keith material received and discarded from project scope.
+
+### 2026-08-10 / 2026-08-11 — Tarot test corpus + file-transfer skill + LLC guidance
+
+**Infrastructure / Tools**
+- Proven end-to-end method for moving photos from Galaxy A10e (Termux + Tailscale + sshd) to X230 documented as org-roam node `A10eTermuxTailscaleSshFileTransfer` under `02-infrastructure/tools/`.
+- Method preferred over USB MTP, KDE Connect, and Nautilus SFTP after extensive troubleshooting.
+
+**Tarot Today**
+- 51 real-world test photographs collected on 2026-08-10 (after 15:00) covering the full scenario roster (valid layouts, invalid counts, foreign cards, orientation stress, lighting/clutter, etc.).
+- Images sorted into 33 numbered category directories under `~/Pictures/tarot-test-images/`.
+- Batch-testing script (`~/bin/tarot-batch-test.py`) written; calls OpenRouter with the exact prompt used by the static HF Space.
+- First full batch run completed with `openrouter/free`. Results show frequent long chain-of-thought and occasional refusals; free vision models subsequently rate-limited.
+- Paid models (Gemini Flash, etc.) currently unavailable (OpenRouter account has no credits; replacement credit card pending after fraud cancellation).
+
+**Business / Entity Formation**
+- High-quality guidance node `LlcFormationWhyWhenHow` created from Mark J. Kohler material + IRS / SBA / Georgia Secretary of State primary sources. Ready for use when forming the operational LLC for gov-contracting / AI-agent services.
+
+**Open items**
+- Wait for new credit card → add small OpenRouter credit → re-run single-card tests with a stronger vision model (Gemini 2.5 Flash recommended).
+- Once recognition is stable, add automatic descriptive renaming and the progressive validation rules (count, foreign cards, layout, lighting, etc.).
+
+
 
 ## 5. Next Actions (suggested)
 
