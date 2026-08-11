@@ -1,0 +1,118 @@
+:PROPERTIES:
+:ID: 20260810-LlcFormationWhyWhenHow
+:END:
+#+TITLE: LLC Formation — Why, When, and How (Best Practices)
+#+NODE-NAME: LlcFormationWhyWhenHow
+#+FILETAGS: :business:llc:formation:georgia:tax:asset-protection:principle:
+#+DATE: 2026-08-10
+
+* Purpose of this node
+
+Canonical reference for deciding whether, when, and how to form an LLC for the business projects under consideration (gov-contracting, AI-agent services / local-first agents, BrandCo, Tarot Today, SaveWisdom-related activity, etc.).
+
+Synthesizes:
+- Official IRS and SBA guidance
+- Georgia Secretary of State requirements
+- Mark J. Kohler’s practical framework (from the 2025 video “I’ve Set Up Over 50,000 LLCs. Here’s What NOT To Do!” and related writings)
+- Consensus from reputable practitioner sources
+
+* Why form an LLC
+
+** Primary reasons (liability + separation)
+- Creates a separate legal entity so that, in most cases, business debts and lawsuits do not reach personal assets (home, personal bank accounts, etc.).
+- Provides clearer separation between personal and business finances, which supports clean bookkeeping, banking, and future tax elections.
+- Increases credibility with clients, partners, banks, and government contracting officers (especially useful for SAM.gov / Team Georgia Marketplace registration).
+
+** Tax reality (important)
+- An LLC by itself does **not** automatically save income tax.
+- Default federal tax treatment:
+  - Single-member LLC → disregarded entity (reported on owner’s Schedule C / personal return).
+  - Multi-member LLC → partnership (Form 1065) unless it elects otherwise.
+- The LLC *can* later elect to be taxed as an S corporation (Form 2553) once net profits justify the extra formalities and reasonable-salary requirement. Common rule-of-thumb threshold cited by practitioners: roughly $40k–$60k+ net profit.
+- Self-employment tax still applies to pass-through income until an S-Corp election is properly made and a reasonable salary is paid.
+
+** Secondary benefits
+- Easier path to a dedicated business bank account and EIN.
+- Cleaner branding and contracts (sign as the LLC, not personally).
+- Foundation for later complexity (multiple members, investment holdings, trust ownership).
+
+* When to form an LLC
+
+** Strong triggers
+- You are about to sign contracts, leases, or service agreements in a business capacity.
+- You are taking on any meaningful liability exposure (clients, employees, physical products/services, driving for business, etc.).
+- You are generating (or about to generate) revenue and want clean separation.
+- You plan to pursue government contracting, vendor registration, or professional services where an entity is expected or advantageous.
+- You have (or expect) personal assets worth protecting.
+
+** Weaker / premature triggers
+- Pure idea-testing or hobby-level activity with negligible revenue and almost no liability.
+- Forming “just because” or because an online service marketed Wyoming/Nevada privacy benefits.
+
+** Timing guidance (Kohler + consensus)
+- Form the operational LLC in the home state as soon as the activity is real enough to need liability protection or a bank account/EIN.
+- Do **not** form too early if the only result is extra annual fees and paperwork with no corresponding activity.
+- Plan for a possible S-Corp election later in the same tax year or the following year once profits are clear; the LLC can be the vehicle that later elects S status.
+
+* How to form an LLC (practical sequence)
+
+** 1. Decide purpose and type
+- **Operational LLC** — active business / services / side hustle / contracting vehicle. Form in the state where you live and primarily operate (Georgia).
+- **Investment / holding LLC** — owns assets (real estate, equipment, etc.). Form where the asset is located or where protection is needed.
+- Avoid the common marketing trap of forming the *operational* company in Wyoming, Nevada, or Delaware “for privacy or asset protection.” For most small operators this creates extra cost, foreign qualification requirements, and later cleanup. (Wyoming-style entities have niche uses in advanced multi-layer planning for higher-net-worth situations.)
+
+** 2. Georgia-specific formation (home-state operational entity)
+- File Articles of Organization with the Georgia Secretary of State (online preferred).
+- Required elements typically include: LLC name (must contain LLC or equivalent), principal office address, registered agent (Georgia street address), organizer(s).
+- Filing fee ≈ $100 + service charge (confirm current amount on sos.ga.gov). Expedited options available.
+- Annual registration required (currently $60, due Jan 1–Apr 1).
+- Official sources: Georgia Secretary of State Corporations Division forms and online portal.
+
+** 3. Core supporting documents and steps
+- **Operating Agreement** — strongly recommended even when not legally required by the state. Defines ownership, management, distributions, decision-making, and what happens on death/exit. Critical for single-member LLCs as well (proves separateness).
+- **Registered Agent** — required; can be yourself (with a physical Georgia address) or a commercial service (better for privacy).
+- **EIN** — apply free at IRS.gov (Form SS-4). Needed for banking, employees, and most multi-member or electing entities. Many single-member disregarded LLCs still obtain one for practical reasons.
+- **Manager-managed vs Member-managed** — Manager-managed is generally preferred for privacy (owners are not listed as publicly on formation documents in the same way).
+- Do **not** list spouse or children as members unless you intentionally want partnership tax treatment and are prepared for Form 1065 complexity.
+- Open a dedicated business bank account in the LLC’s name.
+- Keep basic records / minutes to maintain the liability shield (avoid “alter ego” piercing arguments).
+
+** 4. Longer-term structure (Kohler “Trifecta” framework)
+- Foundation: Revocable Living Trust (owns the LLCs over time; handles legacy and privacy).
+- Left side: Operational LLC (Georgia, home-state, path to S-Corp).
+- Right side: Investment LLC(s) as assets accumulate.
+- The trust does not have to exist on day one, but the design should point toward it.
+
+* Sources (top-notch / primary)
+
+** Official
+- IRS — Limited Liability Company (LLC) overview, single-member LLC rules, entity classification (Form 8832), Publication 3402 (Taxation of LLCs), Publication 583 (Starting a Business and Keeping Records).
+- U.S. Small Business Administration — Choose a business structure, Register your business, operating agreement guidance.
+- Georgia Secretary of State — Articles of Organization (CD 030), online filing portal, annual registration requirements, registered agent rules.
+
+** Practitioner (high-volume experience)
+- Mark J. Kohler, CPA & Attorney — “I’ve Set Up Over 50,000 LLCs. Here’s What NOT To Do!” (YouTube, 2025) and related Trifecta writings on markjkohler.com / KKOS Lawyers. Emphasizes home-state operational LLCs, avoidance of unnecessary Wyoming entities for ordinary businesses, proper ownership, and operating agreements.
+
+** Supporting consensus sources
+- Investopedia, Forbes Advisor, and major CPA firm guidance that align with the IRS/SBA position: form in the state of operations, prioritize liability protection, treat the operating agreement as essential, and time S-Corp election to actual profits.
+
+* Decision checklist for current projects
+
+- [ ] Confirm primary activity is operational (services, contracting, software/app) rather than pure asset holding.
+- [ ] Form Georgia domestic LLC for the main operating entity.
+- [ ] Use manager-managed structure and keep ownership simple (single member or trust).
+- [ ] Draft / obtain a real operating agreement.
+- [ ] Obtain EIN and open business bank account.
+- [ ] Plan (but do not force) future S-Corp election once net profits support it.
+- [ ] Defer or carefully scope any Wyoming / multi-state entities until clear advanced need exists.
+- [ ] Align eventual ownership with a revocable living trust.
+
+* Related nodes / next actions
+
+- Link from gov-contracting, ai-agent-consulting, and BrandCo project nodes.
+- When ready to file: gather name options, registered agent decision, and principal address; then use the Georgia SOS online portal.
+- After formation: update STATUS.md and any capability statements with the new entity name and UEI/SAM readiness path.
+
+* Change log
+
+- 2026-08-10 — Initial node created from Kohler video transcript + IRS/SBA/Georgia SOS research.
