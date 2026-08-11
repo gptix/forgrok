@@ -1,0 +1,44 @@
+:PROPERTIES:
+:ID: 20260810-TarotTestImageScenarioRoster
+:END:
+#+TITLE: Tarot Today — Test Image Scenario Roster
+#+NODE-NAME: TarotTestImageScenarioRoster
+#+FILETAGS: :tarot:testing:images:checklist:project:
+#+DATE: 2026-08-10
+
+* Purpose
+
+Printable + machine-readable tracking list for systematic vision testing of the Tarot Today app.
+
+* Physical collection status (2026-08-10 / 11)
+
+- 51 real photographs taken with Galaxy A10e after 15:00 on 2026-08-10.
+- Transferred via the proven A10eTermuxTailscaleSshFileTransfer method.
+- Sorted into numbered category directories under =~/Pictures/tarot-test-images/=.
+- Some manual descriptive renaming already performed (e.g. =major_arcana_1.jpg=, =5_pentacles_upright.jpg=).
+
+* Batch testing status
+
+- Python script =~/bin/tarot-batch-test.py= created.
+- Calls OpenRouter with the identical prompt used by the static Hugging Face Space.
+- Full 52-image run completed with =openrouter/free= (results noisy / long reasoning / occasional safety refusals).
+- Paid models currently blocked (account has no credits; new credit card pending after fraud cancellation).
+- Free vision models hit rate limits after the large batch.
+
+* Next testing priorities
+
+1. Single-card upright / reversed reliability (folders 01 and 02).
+2. Clean rejection of non-Tarot cards and wrong counts.
+3. Orientation detection accuracy.
+4. Once a reliable model is available, generate descriptive filenames automatically.
+
+* Related nodes
+
+- [[id:][A10eTermuxTailscaleSshFileTransfer]]
+- [[id:][TarotTodayCurrentState]]
+- [[id:][TarotTodayProjectOverview]]
+
+* Change log
+
+- 2026-08-10 — Roster created; 51 real images collected and sorted.
+- 2026-08-11 — Batch script written and first full run completed; rate-limit / credit issues documented.
