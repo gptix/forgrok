@@ -1,0 +1,65 @@
+:PROPERTIES:
+:ID: 20260810-A10eTermuxTailscaleSshFileTransfer
+:END:
+#+TITLE: A10e Termux + Tailscale + SSH File Transfer
+#+NODE-NAME: A10eTermuxTailscaleSshFileTransfer
+#+FILETAGS: :infrastructure:tools:android:termux:tailscale:ssh:file-transfer:
+#+DATE: 2026-08-10
+
+* Purpose
+
+Proven, repeatable method to pull files (especially camera photos) from Samsung Galaxy A10e running Termux + Tailscale + sshd into the X230.
+
+This is the preferred method after USB MTP, KDE Connect, and Nautilus SFTP proved unreliable.
+
+* Prerequisites
+
+- A10e has Termux installed
+- Termux: =pkg install openssh=
+- sshd running in Termux (port 8022 by default)
+- Both devices on the same Tailscale network
+- =termux-setup-storage= has been run and storage permission granted
+
+* One-time setup on A10e (Termux)
+
+#+begin_src bash
+pkg update
+pkg install openssh rsync
+termux-setup-storage   # answer y; grant permission when prompted
+sshd
+#+end_src
+
+Note the Tailscale IP of the A10e (e.g. =100.127.244.86=) and the Termux username (usually =u0_a122= or similar).
+
+* Transfer from X230 (preferred)
+
+#+begin_src bash
+# Ensure target exists
+mkdir -p ~/Pictures/tarot-test-images
+cd ~/Pictures/tarot-test-images
+
+# Pull specific date/time range with rsync (after rsync is installed on phone)
+rsync -avz --progress -e "ssh -p 8022" \
+  u0_a122@100.127.244.86:/storage/emulated/0/DCIM/Camera/20260810_15*.jpg \
+  u0_a122@100.127.244.86:/storage/emulated/0/DCIM/Camera/20260810_16*.jpg \
+  .
+
+# Or with scp if rsync is not yet installed on the phone
+scp -P 8022 u0_a122@100.x.x.x:/storage/emulated/0/DCIM/Camera/FILENAME.jpg .
+#+end_src
+
+* Important notes
+
+- Always use the full Android path =/storage/emulated/0/DCIM/Camera/= from the X230 side.
+- Termux-side =ls= / =cp= / =tar= often produce “Function not implemented” on scoped storage; pull from the host instead.
+- Password is the one set with =passwd= inside Termux.
+- After successful transfer, this method is considered the standard for A10e ↔ X230 photo movement.
+
+* Related
+
+- Used extensively for Tarot Today test-image collection on 2026-08-10.
+- See also [[id:][TarotTestImageScenarioRoster]]
+
+* Change log
+
+- 2026-08-10 — Method proven with 51 Tarot test images transferred successfully.
