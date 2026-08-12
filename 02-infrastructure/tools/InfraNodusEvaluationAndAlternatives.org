@@ -1,0 +1,74 @@
+:PROPERTIES:
+:ID:       0167195e-bf7c-46ca-a1d2-f6b655ae0266
+:END:
+#+TITLE: InfraNodus Evaluation and Alternatives
+#+NODE-NAME: InfraNodusEvaluationAndAlternatives
+#+FILETAGS: :tools:knowledge-management:graphs:evaluation:
+#+DATE: 2026-08-12
+#+AUTHOR: George Taylor + Grok
+
+* Overview
+Summary of research (2026-08-12) into InfraNodus as a semantic / text-network graphing system for the forgrok knowledge base, its benefits, limitations, and alternatives. Intended for later consideration when deciding whether (and how) to incorporate structural-gap analysis or GraphRAG-style tooling.
+
+* What InfraNodus Is
+InfraNodus is a text-network analysis tool that converts any text (notes, PDFs, search results, transcripts, etc.) into an interactive knowledge graph:
+- Nodes = concepts / lemmas
+- Edges = co-occurrences (typically within a 4-gram window, weighted by proximity)
+- Algorithms: betweenness centrality (influential concepts), community detection / modularity (topical clusters), structural-gap detection
+- Built-in AI (GPT-family) for interpretation, cluster summaries, and generating research questions or idea bridges across gaps
+- Peer-reviewed methodology (Paranyushkin, WWW’19 and earlier work on pathways of meaning circulation)
+
+Key modern capabilities: Obsidian plugin, API, n8n node, MCP server for GraphRAG / LLM augmentation, multi-source import, EU-hosted private-by-default processing.
+
+* Potential Benefits for This Knowledge Base
+- Automatic thematic mapping and detection of under-connected clusters across high-protein material (Roemmele essays, ZHO pillars, session notes, project corpora).
+- Systematic ideation via structural gaps rather than free-form prompting.
+- Betweenness centrality highlights influential or bridging concepts that pure backlink or hierarchical views often miss.
+- GraphRAG / MCP path for improving selective knowledge exposure and local-agent (Withnail / Hermes) reasoning without pure vector similarity.
+- Useful periodic analysis layer on curated exports rather than a primary store.
+
+* Pros of InfraNodus
+- Distinctive structural-gap + network-science insight generation.
+- Relatively low friction from raw text → interactive graph → AI-assisted bridges.
+- Strong LLM integration surface (MCP, API, GraphRAG).
+- Multilingual support and broad import options.
+- Better privacy defaults than many pure cloud AI tools.
+
+* Cons of InfraNodus
+- Cloud-centric (conflicts with near-airgapped / local-first preference). Older open-source Neo4j version exists but lacks current AI polish.
+- Paid subscription (Basic ≈ €9–12/mo, Advanced ≈ €29–32/mo with commercial/API rights; higher Premium tiers; 14-day trial).
+- Practical graph-size limits and per-plan quotas (file size, AI credits, API requests).
+- Learning curve and occasionally cluttered interface.
+- Analysis layer only — not a primary PKM or note-taking system.
+
+* Relevant Alternatives (with high-level trade-offs)
+| Approach | Strengths | Weaknesses | Fit for local-first / Emacs / Withnail |
+|----------|-----------|------------|---------------------------------------|
+| InfraNodus | Gaps, betweenness, easy AI ideation, MCP | Cloud, paid, size limits | Strong occasional analysis layer |
+| Gephi (open-source) | Powerful algorithms, large graphs, free, offline | Steep learning curve, no native text-to-network or AI | Good for deep offline analysis of exported graphs |
+| Voyant Tools | Free, simple academic text analysis | Weaker network/gap features | Light exploratory use only |
+| Obsidian Graph View + plugins (or Logseq) | Local, free, bidirectional links | Primarily page-link focused; limited analytics | Viable if dual-vaulting; InfraNodus plugin improves it |
+| Custom local pipeline (NetworkX/igraph + spaCy/Ollama + Neo4j or SQLite) | Fully airgapped, programmable, unlimited | Development effort | Best long-term alignment with hermes-pi / Emacs |
+| Academic literature graphs (Connected Papers, ResearchRabbit, Open Knowledge Maps) | Excellent paper discovery | Narrow domain | Useful for sourcing HPC material |
+| Spatial / canvas PKM (Heptabase, Scrintal, TheBrain, Obsidian Canvas) | Spatial thinking | Less automatic network science | Complementary for project boards |
+| Full KG platforms / GraphRAG frameworks (Neo4j, LlamaIndex KG, Graphify, etc.) | Typed relations, queryable, local options | Ontology + setup cost | Foundation if selective exposure grows sophisticated |
+
+* Recommendation (for later decision)
+Treat InfraNodus as a high-value *periodic* analysis and ideation layer: export curated slices → run gap / centrality analysis → fold insights back into org-roam nodes and the Withnail knowledge slice.  
+
+Longer-term preference remains a lightweight local pipeline that can run on the X230 or hermes-pi, preserving the airgapped / Emacs-centric workflow while retaining the structural-gap insight style.
+
+Small experiments on existing material (ZHO pillar nodes or a Roemmele essay cluster) would quickly clarify value versus cost/effort.
+
+* Related Nodes / Files
+- [[STRUCTURE]] (tools section already references Infranodus process)
+- [[STATUS]]
+- [[OrgRoamNodeNameConvention]]
+- [[OrgRoamNodeCreationWorkflow]]
+- [[HighProteinContent]]
+- [[SelectiveKnowledgeExposure]]
+- [[AirgappedCEOPattern]]
+- Future: any local GraphRAG or text-network procedure nodes under 02-infrastructure/
+
+* Source Session
+2026-08-12 discussion with Grok: web research into InfraNodus capabilities, pricing, scientific basis, Obsidian integration, GraphRAG use, and comparison to Gephi, Voyant, native PKM graphs, and custom local alternatives.
