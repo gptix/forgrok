@@ -1,0 +1,58 @@
+#+TITLE: Org-roam Finalize Place ID Commit
+#+NODE-NAME: OrgRoamFinalizePlaceIdCommit
+#+FILETAGS: :emacs:org-roam:automation:infrastructure:
+#+DATE: 2026-08-12
+#+AUTHOR: George Taylor + Grok
+
+* Purpose
+Custom Emacs command that turns a finished Org buffer into a properly placed, ID-bearing, database-synced, staged-and-committed node in the forgrok knowledge base (~/local-side/), while leaving the final =git push= to the human.
+
+This is the automation layer that sits on top of the manual OrgRoamNodeCreationWorkflow.
+
+* Temporary Keywords
+The command expects (and later removes) two top-level keywords:
+
+#+begin_example
+#+PROPOSED_PATH: 02-infrastructure/tools/SomeNodeName.org
+#+COMMIT_MSG: Short descriptive commit message
+#+end_example
+
+These lines are never left in the committed file.
+
+* Command
+- Interactive name: =my/org-roam-finalize-place-id-commit=
+- Dry-run: =C-u M-x my/org-roam-finalize-place-id-commit=
+- Normal run: confirmation dialog → place file → create/update file-level ID → save → =org-roam-db-update-file= (or full sync) → =git add= + =git commit= (no push)
+
+* Source Location
+The definitive Elisp lives at:
+
+=02-infrastructure/emacs/forgrok-org-helpers.el=
+
+Loaded from =init.el= via:
+
+#+begin_src emacs-lisp
+(add-to-list 'load-path (expand-file-name "~/local-side/02-infrastructure/emacs/"))
+(require 'forgrok-org-helpers)
+#+end_src
+
+* Design Decisions
+- Temporary keywords are the lightest-weight way to pass path + message without inventing a new minor mode or capture property.
+- Confirmation + dry-run protect against accidental placement or commits.
+- Magit is preferred when available; plain =git= is the fallback.
+- Push remains manual so the operator can still review the commit with Magit before it leaves the machine.
+- The function deliberately does *not* enforce NODE-NAME PascalCase (yet). That check can be added later if desired.
+
+* Related Nodes
+- [[OrgRoamNodeCreationWorkflow]]
+- [[OrgRoamNodeNameConvention]]
+- [[STRUCTURE]] (tools / emacs section)
+
+* Future Extensions (parking lot)
+- Optional NODE-NAME validation
+- Prefix-arg variants (e.g. stage only, or also push)
+- Integration with a more advanced capture template that already knows the target directory
+- Logging a one-line entry into a session / Voight-Kampff pulse
+
+* Changelog
+- 2026-08-12: Initial version with dry-run, confirmation, keyword extraction, ID creation, single-file DB update, and non-pushing commit.
