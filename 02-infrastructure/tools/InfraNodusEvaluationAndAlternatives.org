@@ -1,6 +1,5 @@
-:PROPERTIES:
-:ID:       0167195e-bf7c-46ca-a1d2-f6b655ae0266
-:END:
+#+PROPOSED_PATH: 02-infrastructure/tools/InfraNodusEvaluationAndAlternatives.org
+#+COMMIT_MSG: Add evaluation of InfraNodus text-network analysis and alternatives
 #+TITLE: InfraNodus Evaluation and Alternatives
 #+NODE-NAME: InfraNodusEvaluationAndAlternatives
 #+FILETAGS: :tools:knowledge-management:graphs:evaluation:
