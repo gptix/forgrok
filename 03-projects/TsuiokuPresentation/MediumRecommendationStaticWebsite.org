@@ -1,5 +1,5 @@
 :PROPERTIES:
-:ID:       f9ff1cc9-e848-4321-8d8f-5c70e2232362
+:ID:       c26b0f27-4f27-48b9-96a7-3277b7232ba8
 :END:
 #+TITLE: Tsuioku Presentation Medium Recommendation — Static Website
 #+NODE-NAME: TsuiokuPresentationMediumRecommendation

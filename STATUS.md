@@ -1,6 +1,6 @@
 # STATUS.md — Living Operational Snapshot
 
-**Last updated:** 2026-08-11  
+**Last updated:** 2026-08-13  
 **Maintainer:** George Taylor + Grok  
 **Companion files:** BOOT.md, STRUCTURE.md, 01-core/memory/joji-grok-project-memory.org, 01-core/memory/voight-kampff-protocol.org
 
@@ -31,6 +31,14 @@
 - **Org-roam NODE-NAME convention** formalized (`OrgRoamNodeNameConvention`) — PascalCase, no separators; now referenced from BOOT.md
 - **SaveYourWisdom** call-out node created (`01-core/zho/nodes/save-your-wisdom.org`) — second ZHO pillar now has a dedicated, linkable node
 - **OrgRoamNodeCreationWorkflow** hardened (2026-08-09) with explicit Org-mode requirement, clean header rules, and pre-push `org-roam-db-sync` reminder
+### 2026-08-12 / 2026-08-13 — Org-roam finalize automation
+
+- Implemented and tested `my/org-roam-finalize-place-id-commit` (`C-c n F`).
+- Full cycle: temporary keywords → dry-run / confirmation → place file under `~/local-side/` → file-level `:ID:` at buffer top → org-roam DB update → stage + commit (no push).
+- Helper: `02-infrastructure/emacs/forgrok-org-helpers.el`
+- Documentation node: `OrgRoamFinalizePlaceIdCommit`
+- Dual-vault roots now include `02-infrastructure`
+- init.el updated (load-path + require + key binding)
 
 ## 3. Open / Parked Items
 

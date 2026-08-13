@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       a51424e9-5982-4d42-80bb-d22443b0e5bb
+:END:
 #+TITLE: Org-roam Finalize Place ID Commit
 #+NODE-NAME: OrgRoamFinalizePlaceIdCommit
 #+FILETAGS: :emacs:org-roam:automation:infrastructure:
