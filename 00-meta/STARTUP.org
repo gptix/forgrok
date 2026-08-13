@@ -1,0 +1,94 @@
+:PROPERTIES:
+:ID:       3fe80cd9-2074-4734-af17-c06b2244c35c
+:END:
+#+TITLE: Tsuioku Startup and Infrastructure Conventions
+#+NODE-NAME: TsuiokuStartup
+#+FILETAGS: :tsuioku:infrastructure:workflow:org-roam:automation:meta:
+#+DATE-CREATED: 2026-08-13
+#+LATEST-UPDATE: 2026-08-13
+#+AUTHOR: George Taylor + Grok
+
+* Purpose of This File
+
+This is the living startup / conventions document for the Tsuioku knowledge base (追憶 — recollection).
+
+It records naming decisions, preferred file metadata, the automated Grok → file → git workflow, and high-level structure guidance.
+
+* Formal Name
+
+- Primary name: **Tsuioku** (ついおく / 追憶)
+- Meaning: recollection, reminiscence
+- Previous aliases (kept for historical reference only): Tsuioku/groki, Joji-Grok, forgrok, groki
+- Canonical local working copy: =~/local-side/= on the X230
+- Remote: GitHub gptix/forgrok
+
+* Required Metadata for New Files Entering via Automated Workflow
+
+Every new file intended for the automated push workflow **must** begin with at least these lines (in this approximate order):
+
+#+begin_example
+#+PROPOSED_PATH: <path/relative/to/knowledge-base/root/SomeNodeName.org>
+#+COMMIT_MSG: <short git commit message>
+#+TITLE: <Normal English Title With Spaces And Capitalization>
+#+NODE-NAME: <PascalCaseNoSpacesCloselyRelatedToTitle>
+#+FILETAGS: <:tag1:tag2:tag3:>
+#+DATE-CREATED: YYYY-MM-DD
+#+LATEST-UPDATE: YYYY-MM-DD
+#+AUTHOR: George Taylor + Grok
+#+end_example
+
+**Notes on fields**
+
+- =PROPOSED_PATH=: Relative path where the file should live after processing (e.g. =03-projects/TsuiokuPresentation/MediumRecommendationStaticWebsite.org= or =02-infrastructure/tools/SomeTool.org=).
+- =COMMIT_MSG=: Concise message that will be used for the git commit.
+- =TITLE=: Human-readable title with normal spacing and capitalization.
+- =NODE-NAME=: Clean string for org-roam, **no spaces**, PascalCase preferred. Used by =C-c n f= and related commands.
+- =FILETAGS=: Colon-separated tags as recommended for the content.
+- Dates in strict =YYYY-MM-DD=.
+- Author line is standardized as shown.
+
+* Automated Workflow Behavior (Non-Dry-Run)
+
+When the defined =M-x= command or key-binding chord is invoked on a buffer that contains the metadata above:
+
+1. Values of =PROPOSED_PATH= and =COMMIT_MSG= are temporarily stored.
+2. =M-x org-id-get-create= runs and inserts (or updates) a =:PROPERTIES:= drawer with a unique =:ID:= at the very top of the file.
+3. The =PROPOSED_PATH= and =COMMIT_MSG= lines are removed from the buffer.
+4. The buffer is saved to the location given by =PROPOSED_PATH=.
+5. The file is staged in git.
+6. The file is committed using the stored =COMMIT_MSG=.
+
+If the result is satisfactory, the human pushes the commit to the GitHub repository for Tsuioku.
+
+Dry-run mode (if implemented) should perform all steps except the actual git commit / push.
+
+* High-Level Directory Guidance (Living)
+
+Suggested top-level areas (adjust as the knowledge base evolves):
+
+- =00-meta/= — startup, conventions, STATUS, Voight-Kampff, this file
+- =01-concepts/= or equivalent for core ideas (Roemmele, Karpathy, memory systems, etc.)
+- =02-infrastructure/= — tools, Emacs config notes, workflows, automation
+- =03-projects/= — active projects (including =TsuiokuPresentation/=)
+- =04-agents/= or similar for Hermes / Withnail related material
+- =raw/= or source-ingest areas if following a Karpathy-style split
+- =wiki/= or derived views if maintaining a compiled layer
+
+Exact layout should be kept consistent with existing practice; this list is advisory.
+
+* Presentation Project
+
+A dedicated project exists under the Tsuioku umbrella whose goal is to produce portable presentation materials explaining the knowledge base itself (Brian Roemmele ideas, AI memory systems, Karpathy LLM Wiki pattern, and the current state of Tsuioku).
+
+Preferred delivery medium for that presentation: self-contained static website or Reveal.js HTML generated from Org.
+
+* Related Nodes / Files
+
+- TsuiokuPresentationProject
+- TsuiokuPresentationMediumRecommendation
+- Session summaries under docs/
+- Main STATUS and Voight-Kampff tracking files
+
+* Change Log
+
+- 2026-08-13: Initial version of this STARTUP.md created. Formalized metadata requirements for the automated workflow and the name Tsuioku.
