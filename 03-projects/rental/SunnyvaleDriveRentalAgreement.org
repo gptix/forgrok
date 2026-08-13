@@ -39,9 +39,10 @@ This is a month-to-month tenancy commencing on _______________ (“Start Date”
 * 4. Rent
 Monthly rent is $800.00, due in advance on the 1st day of each calendar month.  
 Accepted payment methods only:  
-- Bank transfer to Landlord’s Bank of America checking account, or  
+- (preferred) Bank transfer to Landlord’s Bank of America checking account, or  
 - Zelle to the account/email designated in writing by Landlord.  
-
+- check made payable to "George P. Taylor IX" with memo "72122 Sunnyvale Rent"
+  
 Rent is considered paid only when received by Landlord. Landlord may charge a reasonable late fee consistent with California law for rent not received by the 5th of the month (amount to be confirmed).
 
 * 5. Security Deposit
@@ -84,14 +85,19 @@ Upon termination, Tenant shall vacate, remove all personal property, return all 
 This property is not subject to the rent limits imposed by Section 1947.12 of the Civil Code and is not subject to the just cause requirements of Section 1946.2 of the Civil Code. This property meets the requirements of Sections 1947.12 (d)(5) and 1946.2 (e)(8) of the Civil Code and the owner is not any of the following: (1) a real estate investment trust, as defined by Section 856 of the Internal Revenue Code; (2) a corporation; or (3) a limited liability company in which at least one member is a corporation.
 
 * 15. Required Disclosures (Summary — Attach Official Forms)
-- Lead-Based Paint (pre-1978 property): Landlord has no knowledge of lead-based paint hazards except as may be disclosed in the separate federal disclosure form. Tenant acknowledges receipt of the EPA pamphlet “Protect Your Family From Lead in Your Home” and the required disclosure form.
-- Bed Bugs: Tenant acknowledges receipt of the written bed-bug information notice required by Civil Code § 1954.603 (to be attached or provided separately in at least 10-point type).
+- Lead-Based Paint (pre-1978 property): Landlord has no knowledge of lead-based paint hazards except as may be disclosed in the separate federal disclosure form.
 - Megan’s Law: Notice: Pursuant to Section 290.46 of the Penal Code, information about specified registered sex offenders is made available to the public via an Internet Web site maintained by the Department of Justice at www.meganslaw.ca.gov. Depending on an offender’s criminal history, this information will include either the address at which the offender resides or the community of residence and ZIP Code in which he or she resides.
-- Mold: Landlord has no actual knowledge of mold that exceeds permissible exposure limits or poses a health threat. Tenant is provided (or will be provided) the state consumer information on dampness and mold.
+- Mold: Landlord has no actual knowledge of mold that exceeds permissible exposure limits or poses a health threat.
 - Flood Hazard: Landlord has no actual knowledge that the Premises is located in a special flood hazard area or area of potential flooding. Tenant is advised that information about hazards is available from the California Office of Emergency Services MyHazards tool and that Landlord’s insurance does not cover Tenant’s personal property; Tenant is encouraged to obtain renter’s insurance.
 
 (Official lead-paint disclosure form + EPA pamphlet, bed-bug notice, and mold booklet must be provided and signed separately before occupancy.)
 
+Landlord will provide, or have provided, copies of the following:
+- EPA pamphlet “Protect Your Family From Lead in Your Home” and the required disclosure form.
+- The written bed-bug information notice required by Civil Code § 1954.603 (in at least 10-point type).
+- The state consumer information on dampness and mold.
+Landlord will send by mail, or otherwise deliver to Tenant, the three documents above, within 14 business days after the Start Date o this Agreement. If these documents have not been received by Tenant within that period, Tenant will inform Landlord, and Landlord will send documents not received by Tenant, within 14 business days, via certified mail.  
+  
 * 16. Default and Remedies
 Failure to pay rent when due, violation of any material term after notice to cure (where required), abandonment, or other material breach constitutes default. Landlord’s remedies include those available under California law (three-day notices, unlawful detainer, damages, etc.). All remedies are cumulative.
 
@@ -102,14 +108,20 @@ Governing law: State of California. Venue for any action shall be San Bernardino
 Notices shall be in writing and delivered by personal delivery, certified mail, or email with read receipt (or other method agreed in writing) to the addresses set forth above (or as updated in writing).
 
 * 18. Signatures
-Landlord:  
+Landlord:
+
 _________________________________  
 George P. Taylor IX  
+
 Date: _______________
 
-Tenant:  
+
+
+Tenant:
+
 _________________________________  
 Shelly Coelho  
+
 Date: _______________
 
 (Attach: Lead-Based Paint Disclosure & EPA pamphlet; Bed Bug Notice; any other required forms; keys receipt; move-in condition checklist.)
@@ -128,3 +140,28 @@ Date: _______________
 - This is Draft 1. Subsequent drafts should update the #+LAST_MODIFIED: line and the “Draft:” line under * Status.
 - Maximize landlord protection while remaining simple and under ~4 printed pages.
 - All official California disclosures (lead paint, bed bugs, Megan’s Law, mold handbook, etc.) must still be provided as separate signed forms.rg-
+
+
+---------------- Notes, not part of Agreement text
+
+Please confirm spelling of Shelly's names, and, if it OK, get her middle name.
+
+If she has a current address, what is that address?
+
+Does she have any pets? If so, how many, and for each, what kind / breed?
+
+can Shelly provide names for the Neighbors she used to live with?
+
+
+Is there a refrigerator in the house?
+Is there a dishwasher in the house?
+Are there other appliances in the house?
+
+I am willing to start immediately,
+
+Get plat number for lot
+Confirm late payment penaly
+Security deposit - one month's rent (initially $800)
+
+Mike's Address
+The Neighbors' address
