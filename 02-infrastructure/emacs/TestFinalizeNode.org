@@ -1,0 +1,11 @@
+
+#+TITLE: Test Finalize Node
+#+NODE-NAME: TestFinalizeNode
+#+FILETAGS: :test:
+#+DATE: 2026-08-12
+
+* Purpose
+:PROPERTIES:
+:ID:       06f4ef8f-72e9-4657-98c0-da581a4a96c0
+:END:
+Temporary node to test the finalize / place / ID / commit automation.
