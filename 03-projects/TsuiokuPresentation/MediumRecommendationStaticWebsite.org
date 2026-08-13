@@ -1,0 +1,67 @@
+:PROPERTIES:
+:ID:       f9ff1cc9-e848-4321-8d8f-5c70e2232362
+:END:
+#+TITLE: Tsuioku Presentation Medium Recommendation — Static Website
+#+NODE-NAME: TsuiokuPresentationMediumRecommendation
+#+FILETAGS: :tsuioku:presentation:medium:static-website:org-roam:karpathy:roemmele:
+#+DATE-CREATED: 2026-08-13
+#+LATEST-UPDATE: 2026-08-13
+#+AUTHOR: George Taylor + Grok
+
+* Recommendation
+
+For a presentation about the development of Tsuioku, a self-contained static website (or a Reveal.js-style single-file web presentation generated from Org) is the strongest medium.
+
+It beats a pure PowerPoint deck, a raw Emacs buffer, or a plain PDF for explaining these interconnected ideas to Mike.
+
+* Comparison Table
+
+| Criterion                          | PPTX / traditional deck | Raw Emacs / Org          | Static portable website (or Reveal.js HTML) | Winner for this use case |
+|------------------------------------|-------------------------|--------------------------|---------------------------------------------|--------------------------|
+| Portability for Mike               | Good (.pptx file)      | Poor (needs Emacs)      | Excellent (zip → open index.html in any browser) | Website                 |
+| Explaining deep concepts + relationships | Linear slides only     | Excellent for you       | Excellent (sections, expandable details, diagrams, internal links) | Website                 |
+| Live talk + self-paced later       | Strong for talk        | Awkward for non-Emacs user | Strong for both                             | Website                 |
+| Alignment with the content itself  | Low                    | High                    | Very high (wiki-like structure mirrors Karpathy + org-roam) | Website                 |
+| Ease of future updates             | Medium                 | Highest                 | High (regenerate from Org source)           | Org → Website           |
+| Visual diagrams of architectures   | Good                   | Possible                | Excellent                                   | Website                 |
+
+* Why the Material Favors a Navigable Site
+
+The material is conceptual and relational:
+
+- Brian Roemmele’s ideas (high-protein / dense pre-digital knowledge, persistent agent memory, Zero-Human / ZHC patterns, the “5000 Days” framing).
+- Why memory systems matter for AIs (compounding vs. amnesiac sessions).
+- Karpathy’s LLM Wiki pattern (raw/ immutable sources + LLM-maintained interlinked markdown wiki/ + schema file; compile once, query the compiled knowledge instead of re-discovering via RAG every time).
+- The current state of the knowledge base (Tsuioku / org-roam / forgrok system, how it relates to the above, Hermes/Withnail agents, local-first emphasis, etc.).
+
+A navigable site lets Mike explore at his own pace, jump between related ideas, and come back later. A pure linear deck forces everything into a single pass.
+
+* Recommended Practical Approach (Emacs-native)
+
+1. Author in Org-mode (source of truth). Create a clean top-level Org file or a small set of linked org-roam nodes that cover the four topics. Use =#+NODE-NAME:= without spaces.
+2. Export options (best first):
+   - Reveal.js via ox-reveal (or similar) → single self-contained HTML presentation. Modern, supports speaker notes, opens offline, still feels like a “deck.”
+   - Full small static site (Hugo + ox-hugo, or simple org-export to HTML with clean CSS). Sections for each major topic + architecture diagram page + “Current State of the Knowledge Base.”
+   - Dual export: one Reveal.js for live talk with Mike + fuller static site he can keep.
+3. PPTX only if a conventional linear slide deck is specifically preferred by the audience. It remains second-best for this content.
+
+* Why Not the Other Options as Primary Delivery
+
+- Pure Emacs / org-roam: Perfect for the author. Terrible as the artifact handed to Mike unless he already lives in Emacs.
+- Plain PDF: Universal but static and hard to navigate for interconnected ideas.
+- Live shared screen only: Fine for one conversation; does not leave a portable artifact.
+
+* Suggested Content Structure
+
+1. Who is Brian Roemmele and why his framing of memory / high-protein knowledge / agentic systems matters.
+2. The general problem of AI memory (stateless sessions vs. compounding external memory).
+3. Karpathy’s LLM Wiki pattern in plain language + simple diagram of the three layers (raw → wiki → schema) and the ingest/query/lint loop.
+4. How the current knowledge base (org-roam + agents + local-first practices) relates to both Roemmele’s and Karpathy’s approaches — high-level current state, not a full dump.
+5. Optional short “why this matters for the next few years” closer.
+
+* Next Steps Offered in Original Discussion
+
+- Sketch a detailed outline for the Org source / site structure.
+- Help draft the content sections.
+- Set up a minimal Reveal.js or static-site export workflow from Org.
+- Generate a first-pass PowerPoint if that remains preferable.
