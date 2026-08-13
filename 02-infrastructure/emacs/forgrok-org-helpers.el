@@ -59,55 +59,58 @@ Signals an error if the keywords are missing or the buffer is not Org."
     (unless (string-suffix-p ".org" proposed-path t)
       (user-error "PROPOSED_PATH must end in .org"))
 
-    ;; Dry-run path
-    (when dry-run
-      (message "DRY-RUN\n  Would place at: %s\n  Commit msg: %s\n  (buffer left unchanged)"
-               full-path commit-msg)
-      (return-from my/org-roam-finalize-place-id-commit))
+;; Cleaner dry-run restructure ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-    ;; Confirmation
-    (unless (yes-or-no-p
-             (format "Finalize and commit?\n  Path: %s\n  Msg:  %s\n"
-                     full-path commit-msg))
-      (user-error "Aborted by user"))
+    ;; Dry-run path – just report and stop
+    (if dry-run
+        (message "DRY-RUN\n  Would place at: %s\n  Commit msg: %s\n  (buffer left unchanged)"
+                 full-path commit-msg)
 
-    ;; Now remove the temporary keywords
-    (my/--extract-keyword "PROPOSED_PATH" t)
-    (my/--extract-keyword "COMMIT_MSG" t)
+      ;; ── Real run ────────────────────────────────────────────────────────
+      ;; Confirmation
+      (unless (yes-or-no-p
+               (format "Finalize and commit?\n  Path: %s\n  Msg:  %s\n"
+                       full-path commit-msg))
+        (user-error "Aborted by user"))
 
-    ;; Ensure parent directory
-    (make-directory (file-name-directory full-path) t)
+      ;; Now remove the temporary keywords
+      (my/--extract-keyword "PROPOSED_PATH" t)
+      (my/--extract-keyword "COMMIT_MSG" t)
 
-    ;; Write / move
-    (let ((current (buffer-file-name)))
-      (cond
-       ((null current)
-        (write-file full-path))
-       ((not (string-equal (expand-file-name current) full-path))
-        (write-file full-path))
-       (t
-        (save-buffer))))
+      ;; Ensure parent directory
+      (make-directory (file-name-directory full-path) t)
 
-    ;; Guarantee file-level ID
-    (org-id-get-create)
-    (save-buffer)
+      ;; Write / move
+      (let ((current (buffer-file-name)))
+        (cond
+         ((null current)
+          (write-file full-path))
+         ((not (string-equal (expand-file-name current) full-path))
+          (write-file full-path))
+         (t
+          (save-buffer))))
 
-    ;; Update roam DB
-    (if (fboundp 'org-roam-db-update-file)
-        (org-roam-db-update-file)
-      (org-roam-db-sync))
+      ;; Guarantee file-level ID
+      (org-id-get-create)
+      (save-buffer)
 
-    ;; Stage + commit
-    (let ((default-directory my/forgrok-repo-root))
-      (cond
-       ((fboundp 'magit-run-git)
-        (magit-run-git "add" rel-path)
-        (magit-run-git "commit" "-m" commit-msg))
-       (t
-        (call-process "git" nil nil nil "add" rel-path)
-        (call-process "git" nil nil nil "commit" "-m" commit-msg))))
+      ;; Update roam DB
+      (if (fboundp 'org-roam-db-update-file)
+          (org-roam-db-update-file)
+        (org-roam-db-sync))
 
-    (message "Finalized → %s | ID ready | DB updated | committed (push manually)"
-             proposed-path)))
+      ;; Stage + commit
+      (let ((default-directory my/forgrok-repo-root))
+        (cond
+         ((fboundp 'magit-run-git)
+          (magit-run-git "add" rel-path)
+          (magit-run-git "commit" "-m" commit-msg))
+         (t
+          (call-process "git" nil nil nil "add" rel-path)
+          (call-process "git" nil nil nil "commit" "-m" commit-msg))))
 
+      (message "Finalized → %s | ID ready | DB updated | committed (push manually)"
+               proposed-path))))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (provide 'forgrok-org-helpers)
