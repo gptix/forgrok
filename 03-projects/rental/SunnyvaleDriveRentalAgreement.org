@@ -1,0 +1,130 @@
+:PROPERTIES:
+:ID:       d58b2b7e-50c1-4907-a022-a2ea7330511f
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-projects
+#+CREATED: [2026-08-13 Thu 17:00]
+#+LAST_MODIFIED: [2026-08-13 Thu 18:06]
+#+TITLE: Rental Agreement — 72122 Sunnyvale Drive, Twentynine Palms
+#+NODE-NAME: SunnyvaleDriveRentalAgreement
+#+FILETAGS: :project:rental:california:twentyninepalms:lease:draft:
+#+DESCRIPTION: Draft 1 of month-to-month residential rental agreement for 72122 Sunnyvale Drive, Twentynine Palms, CA 92277 to tenant Shelly Coelho. Prepared for Tsuioku ingestion and iterative revision.
+
+* Status
+- Draft: 1
+- Date of this version: 2026-08-13
+- Status: First complete draft for review and revision
+- Next: Confirm tenant legal name spelling, start date, late-fee amount, final pet policy, and any known property conditions requiring disclosure
+
+* 1. Parties
+Landlord: George P. Taylor IX  
+3500 Vinings Ridge Court  
+Atlanta, GA 30339  
+(“Landlord” or “Mr. Taylor” / “George Taylor” / “Jud Taylor”)
+
+Tenant: Shelly Coelho  
+(current address unknown / to be confirmed)  
+(“Tenant”)
+
+* 2. Premises
+The single-family residence located at:  
+72122 Sunnyvale Drive  
+Twentynine Palms, CA 92277  
+APN approximately 0618-062-37-0-000 (confirm)  
+(“Premises”). Built 1952. Rented unfurnished; no appliances or personal property are included.
+
+* 3. Term
+This is a month-to-month tenancy commencing on _______________ (“Start Date”) and continuing until terminated by either party in accordance with California law and this Agreement.
+
+* 4. Rent
+Monthly rent is $800.00, due in advance on the 1st day of each calendar month.  
+Accepted payment methods only:  
+- Bank transfer to Landlord’s Bank of America checking account, or  
+- Zelle to the account/email designated in writing by Landlord.  
+
+Rent is considered paid only when received by Landlord. Landlord may charge a reasonable late fee consistent with California law for rent not received by the 5th of the month (amount to be confirmed).
+
+* 5. Security Deposit
+Tenant shall pay a security deposit of $800.00 (one month’s rent) upon signing.  
+The deposit is held as security for performance of Tenant’s obligations. Landlord may apply it to unpaid rent, cleaning beyond ordinary wear and tear, and repair of damage beyond ordinary wear and tear, in accordance with Civil Code § 1950.5.  
+Within 21 calendar days after Tenant vacates and returns all keys, Landlord shall return any remaining balance together with an itemized statement of deductions.
+
+* 6. Occupancy and Guests
+The Premises may be occupied only by Tenant. No cohabitation or additional permanent occupants are permitted without Landlord’s prior written consent.  
+Tenant may have at most two overnight guests at any time. No guest may stay more than seven (7) consecutive days (or more than fourteen (14) days in any calendar month) without Landlord’s prior written consent.  
+
+Tenant agrees not to permit entry or visits by the specific individuals associated with the nearby residence of whom Tenant has actual knowledge and has been informed by Landlord, without Landlord’s prior written consent.
+
+* 7. Pets
+No animals or pets of any kind are permitted on the Premises without Landlord’s prior written consent. Any consent may be conditioned on additional deposit, rent, or rules.
+
+* 8. Smoking / Vaping
+Smoking and vaping are permitted on the Premises.
+
+* 9. Utilities and Services
+Tenant is solely responsible for all utilities and services serving the Premises, including but not limited to water, gas, electricity, trash/recycling, sewer (if separately metered or billed), internet, and any other services. Tenant shall place all accounts in Tenant’s name as of the Start Date and keep them current.
+
+* 10. Use, Care, and Maintenance
+Tenant shall use the Premises only as a private residence and shall keep the Premises (including yard, if any) clean, sanitary, and in good functional order and repair. Tenant shall promptly notify Landlord in writing of any needed repairs or conditions that may affect habitability or safety.  
+Tenant is responsible for damage caused by Tenant, guests, or invitees beyond ordinary wear and tear. Landlord retains responsibility for major structural elements, roof, foundation, and systems necessary for habitability, subject to Tenant’s duty to report.
+
+Tenant shall not make alterations, additions, or improvements without Landlord’s prior written consent.
+
+* 11. Entry by Landlord
+Landlord or Landlord’s agents may enter the Premises for inspection, repairs, improvements, to show to prospective tenants or purchasers, or other lawful purposes, upon reasonable notice (normally 24 hours) and at reasonable times, consistent with Civil Code § 1954. Emergency entry is permitted without notice.
+
+* 12. Assignment and Subletting
+Tenant shall not assign this Agreement or sublet all or any part of the Premises without Landlord’s prior written consent. Any attempted assignment or subletting without consent is void and is a material breach.
+
+* 13. Termination
+Either party may terminate this month-to-month tenancy by giving written notice as required by Civil Code § 1946.1 (generally 30 days if tenancy has lasted less than one year; 60 days if one year or more). Landlord may also terminate for cause (nonpayment of rent, material breach after notice to cure, nuisance, illegal use, etc.) in accordance with California law.  
+Upon termination, Tenant shall vacate, remove all personal property, return all keys, and leave the Premises in clean condition, ordinary wear and tear excepted.
+
+* 14. AB 1482 Exemption Notice (Required Statutory Language)
+This property is not subject to the rent limits imposed by Section 1947.12 of the Civil Code and is not subject to the just cause requirements of Section 1946.2 of the Civil Code. This property meets the requirements of Sections 1947.12 (d)(5) and 1946.2 (e)(8) of the Civil Code and the owner is not any of the following: (1) a real estate investment trust, as defined by Section 856 of the Internal Revenue Code; (2) a corporation; or (3) a limited liability company in which at least one member is a corporation.
+
+* 15. Required Disclosures (Summary — Attach Official Forms)
+- Lead-Based Paint (pre-1978 property): Landlord has no knowledge of lead-based paint hazards except as may be disclosed in the separate federal disclosure form. Tenant acknowledges receipt of the EPA pamphlet “Protect Your Family From Lead in Your Home” and the required disclosure form.
+- Bed Bugs: Tenant acknowledges receipt of the written bed-bug information notice required by Civil Code § 1954.603 (to be attached or provided separately in at least 10-point type).
+- Megan’s Law: Notice: Pursuant to Section 290.46 of the Penal Code, information about specified registered sex offenders is made available to the public via an Internet Web site maintained by the Department of Justice at www.meganslaw.ca.gov. Depending on an offender’s criminal history, this information will include either the address at which the offender resides or the community of residence and ZIP Code in which he or she resides.
+- Mold: Landlord has no actual knowledge of mold that exceeds permissible exposure limits or poses a health threat. Tenant is provided (or will be provided) the state consumer information on dampness and mold.
+- Flood Hazard: Landlord has no actual knowledge that the Premises is located in a special flood hazard area or area of potential flooding. Tenant is advised that information about hazards is available from the California Office of Emergency Services MyHazards tool and that Landlord’s insurance does not cover Tenant’s personal property; Tenant is encouraged to obtain renter’s insurance.
+
+(Official lead-paint disclosure form + EPA pamphlet, bed-bug notice, and mold booklet must be provided and signed separately before occupancy.)
+
+* 16. Default and Remedies
+Failure to pay rent when due, violation of any material term after notice to cure (where required), abandonment, or other material breach constitutes default. Landlord’s remedies include those available under California law (three-day notices, unlawful detainer, damages, etc.). All remedies are cumulative.
+
+* 17. Miscellaneous
+This Agreement constitutes the entire agreement between the parties and supersedes all prior discussions. It may be modified only by a writing signed by both parties.  
+If any provision is held unenforceable, the remainder remains in effect.  
+Governing law: State of California. Venue for any action shall be San Bernardino County.  
+Notices shall be in writing and delivered by personal delivery, certified mail, or email with read receipt (or other method agreed in writing) to the addresses set forth above (or as updated in writing).
+
+* 18. Signatures
+Landlord:  
+_________________________________  
+George P. Taylor IX  
+Date: _______________
+
+Tenant:  
+_________________________________  
+Shelly Coelho  
+Date: _______________
+
+(Attach: Lead-Based Paint Disclosure & EPA pamphlet; Bed Bug Notice; any other required forms; keys receipt; move-in condition checklist.)
+
+* Open Items / Decisions Still Needed
+1. Exact legal name and spelling for Tenant (and any middle name).
+2. Confirmed Start Date.
+3. Late-fee amount (if any) and exact due/grace details.
+4. Pets final policy.
+5. Any known mold, lead, flood, or other conditions that must be disclosed.
+6. Precise description or names (if obtainable) for the “nearby house” individuals, or confirmation that the current language is sufficient.
+7. Preferred method for providing the official lead-paint pamphlet, bed-bug notice, and mold booklet.
+8. Whether a short separate “House Rules” addendum is desired.
+
+* Notes for Future Revision
+- This is Draft 1. Subsequent drafts should update the #+LAST_MODIFIED: line and the “Draft:” line under * Status.
+- Maximize landlord protection while remaining simple and under ~4 printed pages.
+- All official California disclosures (lead paint, bed bugs, Megan’s Law, mold handbook, etc.) must still be provided as separate signed forms.rg-
