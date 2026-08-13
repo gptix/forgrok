@@ -90,10 +90,13 @@ Signals an error if the keywords are missing or the buffer is not Org."
          (t
           (save-buffer))))
 
-      ;; Guarantee file-level ID
+      ;; Guarantee file-level ID (must be at the very top of the file)
+      (goto-char (point-min))
       (org-id-get-create)
       (save-buffer)
 
+
+      
       ;; Update roam DB
       (if (fboundp 'org-roam-db-update-file)
           (org-roam-db-update-file)
