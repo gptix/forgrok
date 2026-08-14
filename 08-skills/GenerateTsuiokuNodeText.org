@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       9607f564-a170-42f4-8d6e-cb2b074c1079
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 08-skills
+#+CREATED: [2026-08-13 Thu 20:48]
+#+LAST_MODIFIED: [2026-08-13 Thu 20:48]
+#+TITLE: Generate Tsuioku Node Text
+#+NODE-NAME: GenerateTsuiokuNodeText
+#+FILETAGS: :skill:tsuioku:org-roam:ingestion:process:
+#+DESCRIPTION: Complete, concise process for generating text that is ready to be pasted into Emacs, finalized with C-c n F (or C-u C-c n F), and pushed to the forgrok knowledge base (Tsuioku).
+
+* Purpose / When to use
+Use this skill whenever the operator asks for (or you decide to provide) text for a **new** Tsuioku / org-roam node.
+
+Typical trigger phrases:
+- “Please provide text for a new Tsuioku node about …”
+- “Make a new node for …”
+- Any request that should result in a durable knowledge-base entry.
+
+The output must be immediately usable: paste into a new buffer → ensure org-mode → run the finalize command.
+
+* Preconditions
+- You know (or can reasonably choose) a good PascalCase =NODE-NAME=.
+- You know the correct relative path under the knowledge-base root (consult =STRUCTURE.md=).
+- The content itself has been drafted or is ready to be written.
+- For brand-new top-level directories (e.g. the first time =08-skills/= is used), note that =STRUCTURE.md= and possibly =BOOT.md= will also need updating.
+
+* Steps
+1. Determine the relative path (example: =08-skills/GenerateTsuiokuNodeText.org= or =03-projects/rental/SomeNode.org=).
+2. Choose a pure PascalCase =NODE-NAME= (no spaces, hyphens, or underscores).
+3. Write a short, accurate =COMMIT_MSG=.
+4. Produce the complete text block with **exactly** this structure and order:
