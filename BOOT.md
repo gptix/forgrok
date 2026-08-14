@@ -34,6 +34,7 @@ High-level map:
 | `05-wiki/` | Wikified concepts, graphs, indexes |
 | `06-raw/` | Unprocessed material |
 | `07-sessions/` | Selected session exports |
+| 08-skills/ | Reusable skill nodes (how-to processes for KB management and projects) |
 | `99-archive/` | Superseded material |
 
 Working copy lives on the X230. All structural changes are made there, committed in small logical units, and pushed to GitHub.
@@ -67,6 +68,7 @@ See **STATUS.md** for the full operational dashboard, open items, and suggested 
 | Withnail project | `03-projects/withnail/` |
 | Baseline collector | `02-infrastructure/hermes-pi/scripts/collect-pi-specs.sh` |
 | Org-roam NODE-NAME convention | 01-core/principles/org-roam-node-name-convention.org |
+| Skills index / processes | 08-skills/ |
 
 ---
 
@@ -79,7 +81,7 @@ See **STATUS.md** for the full operational dashboard, open items, and suggested 
 - Never commit secrets, API keys, or large binary backups.
 - Prefer local / air-gapped solutions; treat external calls as exceptional.
 - When giving shell commands, clearly state which machine they are for (X230 vs hermes-pi).
-
+- Skills for knowledge-base and project tasks live under 08-skills/ and should be preferred over re-deriving processes from scratch.
 ---
 
 ## 6. Session close — Voight-Kampff (summary)
