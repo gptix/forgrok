@@ -1,0 +1,62 @@
+:PROPERTIES:
+:ID:       16f156a0-2de4-4473-961b-b149f0fa8a5f
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 08-skills
+#+CREATED: [2026-08-13 Thu 20:48]
+#+LAST_MODIFIED: [2026-08-13 Thu 20:48]
+#+TITLE: Create New Skill
+#+NODE-NAME: CreateNewSkill
+#+FILETAGS: :skill:meta:knowledge-base:process:
+#+DESCRIPTION: Canonical process for creating a new reusable skill node that documents a concrete, repeatable task related to knowledge-base management or project work. Skills live under 08-skills/.
+
+* Purpose / When to use
+Use this skill whenever a repeatable process (especially one involving the knowledge base, agents, or project work) has been refined enough that it should be captured as a first-class, durable, agent-readable node.
+
+The goal is to turn tacit or session-specific know-how into an explicit, versioned skill that both the operator and agents (Hermes / Withnail) can later invoke by name or path.
+
+* Preconditions
+- The process has been performed at least once successfully.
+- The steps are clear, concrete, and preferably copy-paste ready.
+- A good PascalCase NODE-NAME has been chosen (no spaces, hyphens, or underscores).
+- Decision has been made that the skill belongs under =08-skills/= (or a suitable sub-directory).
+
+* Steps
+1. Choose a clear, descriptive PascalCase NODE-NAME (example: =FinalizeOrgRoamNode=, =GenerateTsuiokuNodeText=).
+2. Decide the relative path under =08-skills/= (usually =08-skills/NodeName.org=).
+3. Write the skill content using the standard skill template:
+   - Purpose / When to use
+   - Preconditions
+   - Steps (numbered, precise, actionable)
+   - Inputs / Outputs
+   - Related scripts or files
+   - Failure modes / Notes
+   - Last verified date
+4. Wrap the entire text with the standard Tsuioku new-node metadata (see skill =GenerateTsuiokuNodeText=):
+   - First two lines must be exactly:
+     =#+PROPOSED_PATH: 08-skills/YourNodeName.org=
+     =#+COMMIT_MSG: short descriptive commit message=
+   - Followed by the normal keywords (=#+AUTHOR=, =#+CATEGORY=, =#+CREATED=, =#+LAST_MODIFIED=, =#+TITLE=, =#+NODE-NAME=, =#+FILETAGS=, =#+DESCRIPTION=, etc.).
+   - Do **not** include a leading =:PROPERTIES:= drawer.
+5. Provide the complete text block to the operator.
+6. Operator pastes into a new Emacs buffer, ensures org-mode, runs the finalize command (normally =C-c n F= or the dry-run variant), reviews, and pushes if desired.
+7. After successful ingestion, optionally update =STRUCTURE.md= and =BOOT.md= if the new skill (or the =08-skills/= directory itself) changes the high-level map.
+
+* Inputs / Outputs
+- **Input**: A refined process + chosen NODE-NAME + short description of purpose.
+- **Output**: A complete, ready-to-paste org-roam node text block that follows the Tsuioku ingestion format and the skill template.
+
+* Related scripts or files
+- =02-infrastructure/emacs/forgrok-org-helpers.el= (contains =my/org-roam-finalize-place-id-commit=)
+- =STRUCTURE.md= (must list =08-skills/= once it exists)
+- =BOOT.md= (should mention the skills location)
+- Skill =GenerateTsuiokuNodeText= (the lower-level skill this meta-skill uses for formatting)
+
+* Failure modes / Notes
+- Forgetting the exact first-two-lines rule (=PROPOSED_PATH= + =COMMIT_MSG=) will cause the finalize function to error.
+- NODE-NAME must be pure PascalCase; the org-roam find command on the current setup rejects spaces.
+- Keep skills concise and focused on one coherent capability.
+- Prefer small, focused commits when adding skills.
+
+* Last verified
+2026-08-13 — process used to create both this meta-skill and the first concrete skill (=GenerateTsuiokuNodeText=).
