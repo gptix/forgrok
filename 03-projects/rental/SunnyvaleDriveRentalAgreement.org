@@ -4,37 +4,54 @@
 #+AUTHOR: George P. Taylor IX
 #+CATEGORY: 03-projects
 #+CREATED: [2026-08-13 Thu 17:00]
-#+LAST_MODIFIED: [2026-08-13 Thu 18:06]
+#+LAST_MODIFIED: [2026-08-13 Thu 22:22]
 #+TITLE: Rental Agreement — 72122 Sunnyvale Drive, Twentynine Palms
 #+NODE-NAME: SunnyvaleDriveRentalAgreement
 #+FILETAGS: :project:rental:california:twentyninepalms:lease:draft:
-#+DESCRIPTION: Draft 1 of month-to-month residential rental agreement for 72122 Sunnyvale Drive, Twentynine Palms, CA 92277 to tenant Shelly Coelho. Prepared for Tsuioku ingestion and iterative revision.
+#+DESCRIPTION: Draft 1 of month-to-month residential rental agreement for 72122 Sunnyvale Drive, Twentynine Palms, CA 92277 to tenant Shannon Coelho. Prepared for Tsuioku ingestion and iterative revision.
 
 * Status
-- Draft: 1
+- Draft: 2
 - Date of this version: 2026-08-13
-- Status: First complete draft for review and revision
-- Next: Confirm tenant legal name spelling, start date, late-fee amount, final pet policy, and any known property conditions requiring disclosure
-
+- Status: Sewcond draft for review and revision
+- Done:
+- [X] Please confirm spelling of Shannon's names, and, if it OK, get her middle name.
+- [X] If she has a current address, what is that address?
+- [X] Is there a refrigerator in the house? yes, small
+- [X] Is there a dishwasher in the house?
+- [X] Are there other appliances in the house? - Yes, stove.
+- [X] I am willing to start immediately,
+- [X] Security deposit - one month's rent (initially $800)
+- [X] Mike's Address 72155 Sunnyvale Drive
+- [X] Set start date
+- [X] APN for 72122 Sunnyvale Drive: 061806237
+- To Do:
+- [ ] Does she have any pets? If so, how many, and for each, what kind / breed?
+- [ ] can Shannon provide names for the Neighbors she used to live with?
+- [ ] Confirm late payment penalty
+- [ ] The Neighbors' address - 72165??
+- [ ] I would like Shannon to buy the refrigerator, stove, and dishwasher from me for $1 each. I do not want to own them and be responsible for their repair.
+- [ ] Grok to confirm maximum penalty I can charge for late payment (I hope never to charge this)
+ 
 * 1. Parties
 Landlord: George P. Taylor IX  
 3500 Vinings Ridge Court  
 Atlanta, GA 30339  
 (“Landlord” or “Mr. Taylor” / “George Taylor” / “Jud Taylor”)
 
-Tenant: Shelly Coelho  
-(current address unknown / to be confirmed)  
+Tenant: Shannon Coelho
+- no current address
 (“Tenant”)
 
 * 2. Premises
 The single-family residence located at:  
 72122 Sunnyvale Drive  
 Twentynine Palms, CA 92277  
-APN approximately 0618-062-37-0-000 (confirm)  
+APN approximately 061806237 (per https://twentyninepalms.geoviewer.io/)  
 (“Premises”). Built 1952. Rented unfurnished; no appliances or personal property are included.
 
 * 3. Term
-This is a month-to-month tenancy commencing on _______________ (“Start Date”) and continuing until terminated by either party in accordance with California law and this Agreement.
+This is a month-to-month tenancy commencing on 14 August 2026 (“Start Date”) and continuing until terminated by either party in accordance with California law and this Agreement.
 
 * 4. Rent
 Monthly rent is $800.00, due in advance on the 1st day of each calendar month.  
@@ -82,7 +99,7 @@ Either party may terminate this month-to-month tenancy by giving written notice 
 Upon termination, Tenant shall vacate, remove all personal property, return all keys, and leave the Premises in clean condition, ordinary wear and tear excepted.
 
 * 14. AB 1482 Exemption Notice (Required Statutory Language)
-This property is not subject to the rent limits imposed by Section 1947.12 of the Civil Code and is not subject to the just cause requirements of Section 1946.2 of the Civil Code. This property meets the requirements of Sections 1947.12 (d)(5) and 1946.2 (e)(8) of the Civil Code and the owner is not any of the following: (1) a real estate investment trust, as defined by Section 856 of the Internal Revenue Code; (2) a corporation; or (3) a limited liability company in which at least one member is a corporation.
+This property is NOT subject to the rent limits imposed by Section 1947.12 of the Civil Code and is NOT subject to the just cause requirements of Section 1946.2 of the Civil Code. This property meets the requirements of Sections 1947.12 (d)(5) and 1946.2 (e)(8) of the Civil Code and the owner is not any of the following: (1) a real estate investment trust, as defined by Section 856 of the Internal Revenue Code; (2) a corporation; or (3) a limited liability company in which at least one member is a corporation.
 
 * 15. Required Disclosures (Summary — Attach Official Forms)
 - Lead-Based Paint (pre-1978 property): Landlord has no knowledge of lead-based paint hazards except as may be disclosed in the separate federal disclosure form.
@@ -96,7 +113,7 @@ Landlord will provide, or have provided, copies of the following:
 - EPA pamphlet “Protect Your Family From Lead in Your Home” and the required disclosure form.
 - The written bed-bug information notice required by Civil Code § 1954.603 (in at least 10-point type).
 - The state consumer information on dampness and mold.
-Landlord will send by mail, or otherwise deliver to Tenant, the three documents above, within 14 business days after the Start Date o this Agreement. If these documents have not been received by Tenant within that period, Tenant will inform Landlord, and Landlord will send documents not received by Tenant, within 14 business days, via certified mail.  
+Landlord will send by mail, or otherwise deliver to Tenant, the three documents above, within 14 business days after the Start Date of this Agreement. If these documents have not been received by Tenant within that period, Tenant will inform Landlord, and Landlord will send documents not received by Tenant, within 14 business days, via certified mail.  
   
 * 16. Default and Remedies
 Failure to pay rent when due, violation of any material term after notice to cure (where required), abandonment, or other material breach constitutes default. Landlord’s remedies include those available under California law (three-day notices, unlawful detainer, damages, etc.). All remedies are cumulative.
@@ -120,48 +137,32 @@ Date: _______________
 Tenant:
 
 _________________________________  
-Shelly Coelho  
+Shannon Coelho  
 
 Date: _______________
 
 (Attach: Lead-Based Paint Disclosure & EPA pamphlet; Bed Bug Notice; any other required forms; keys receipt; move-in condition checklist.)
 
 * Open Items / Decisions Still Needed
-1. Exact legal name and spelling for Tenant (and any middle name).
-2. Confirmed Start Date.
-3. Late-fee amount (if any) and exact due/grace details.
-4. Pets final policy.
-5. Any known mold, lead, flood, or other conditions that must be disclosed.
-6. Precise description or names (if obtainable) for the “nearby house” individuals, or confirmation that the current language is sufficient.
 7. Preferred method for providing the official lead-paint pamphlet, bed-bug notice, and mold booklet.
 8. Whether a short separate “House Rules” addendum is desired.
 
 * Notes for Future Revision
-- This is Draft 1. Subsequent drafts should update the #+LAST_MODIFIED: line and the “Draft:” line under * Status.
+- This is Draft 2. Subsequent drafts should update the #+LAST_MODIFIED: line and the “Draft:” line under * Status.
 - Maximize landlord protection while remaining simple and under ~4 printed pages.
 - All official California disclosures (lead paint, bed bugs, Megan’s Law, mold handbook, etc.) must still be provided as separate signed forms.rg-
 
 
 ---------------- Notes, not part of Agreement text
 
-Please confirm spelling of Shelly's names, and, if it OK, get her middle name.
-
-If she has a current address, what is that address?
-
-Does she have any pets? If so, how many, and for each, what kind / breed?
-
-can Shelly provide names for the Neighbors she used to live with?
 
 
-Is there a refrigerator in the house?
-Is there a dishwasher in the house?
-Are there other appliances in the house?
+- [X] Please confirm spelling of Shannon's names, and, if it OK, get her middle name.
+- [X] If she has a current address, what is that address?
+- [X] Is there a refrigerator in the house? yes, small
+- [X] Is there a dishwasher in the house?
+- [X] Are there other appliances in the house? - Yes, stove.
+- [X] I am willing to start immediately,
+- [X] Security deposit - one month's rent (initially $800)
+- [X] Mike's Address 72155 Sunnyvale Drive
 
-I am willing to start immediately,
-
-Get plat number for lot
-Confirm late payment penaly
-Security deposit - one month's rent (initially $800)
-
-Mike's Address
-The Neighbors' address
