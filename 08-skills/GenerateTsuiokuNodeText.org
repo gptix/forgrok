@@ -31,3 +31,51 @@ The output must be immediately usable: paste into a new buffer → ensure org-mo
 2. Choose a pure PascalCase =NODE-NAME= (no spaces, hyphens, or underscores).
 3. Write a short, accurate =COMMIT_MSG=.
 4. Produce the complete text block with **exactly** this structure and order:
+
+```
+#+PROPOSED_PATH: <relative-path-from-repo-root>
+#+COMMIT_MSG: <short commit message>
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: <appropriate category, e.g. 08-skills or 03-projects>
+#+CREATED: [YYYY-MM-DD Day HH:MM]
+#+LAST_MODIFIED: [YYYY-MM-DD Day HH:MM]
+#+TITLE: Human-readable title
+#+NODE-NAME: PascalCaseNodeName
+#+FILETAGS: :tag1:tag2:tag3:
+#+DESCRIPTION: One- or two-sentence summary of the node’s purpose.
+```
+
+5. **Critical rules** (enforced by =my/org-roam-finalize-place-id-commit=):
+- The very first line of the text block must be =#+PROPOSED_PATH:= (no blank line or other text before it).
+- The second line must be =#+COMMIT_MSG:=.
+- Do **not** include a leading =:PROPERTIES:= drawer. The finalize function itself calls =org-id-get-create= and places the ID at the top.
+- =NODE-NAME= must be PascalCase with no spaces/hyphens/underscores.
+- Path must end in =.org=.
+
+6. Hand the complete block to the operator.
+7. Operator workflow (for reference):
+- Paste into a brand-new Emacs buffer.
+- =M-x org-mode= (if the buffer is not already in org-mode).
+- Optionally =C-u C-c n F= for a dry-run.
+- =C-c n F= (or the bound command that calls =my/org-roam-finalize-place-id-commit=) to place, ID, update DB, stage and commit.
+- Review and =git push= if desired.
+
+* Inputs / Outputs
+- **Input**: Topic / content description + (optional) suggested path or NODE-NAME.
+- **Output**: A single, self-contained text block that is ready to paste and finalize.
+
+* Related scripts or files
+- =02-infrastructure/emacs/forgrok-org-helpers.el= — defines =my/org-roam-finalize-place-id-commit= and the keyword extraction logic.
+- =STRUCTURE.md= — authoritative map of where nodes should live.
+- =01-core/principles/org-roam-node-name-convention.org= — NODE-NAME rules.
+- Skill =CreateNewSkill= — the meta-process used to create this skill.
+
+* Failure modes / Notes
+- Missing or incorrectly named =#+PROPOSED_PATH:= or =#+COMMIT_MSG:= → finalize function signals an error.
+- Leading =:PROPERTIES:= drawer supplied by Grok → conflicts with the function’s ID placement.
+- NODE-NAME containing spaces or hyphens → org-roam find / capture problems on the current Emacs setup.
+- Forgetting to update =STRUCTURE.md= when introducing a new top-level directory (such as =08-skills/=).
+- Always prefer the exact keyword names =PROPOSED_PATH= and =COMMIT_MSG= (case as shown).
+
+* Last verified
+2026-08-13 — process refined and tested end-to-end during the SunnyvaleDriveRentalAgreement ingestion and the creation of the skills system itself.

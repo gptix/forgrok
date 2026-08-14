@@ -34,6 +34,7 @@ forgrok/
 │   └── topics/
 ├── 06-raw/                    # Unprocessed or semi-processed material
 ├── 07-sessions/               # Selected conversation / session exports
+├── 08-skills/                 # Reusable, agent-readable skill nodes (processes for KB & project work)
 └── 99-archive/                # Old, superseded, or low-value material
 
 
@@ -48,6 +49,7 @@ forgrok/
 - Numbered prefixes make ordering and navigation easier.
 - Compatible with org-roam (nodes live under the appropriate branch).
 - **Org-roam NODE-NAME convention**: All nodes use PascalCase with no spaces, hyphens, or underscores (`#+NODE-NAME: OrgRoamNodeNameConvention`). See `01-core/principles/org-roam-node-name-convention.org`.
+- **Skills are first-class** — concrete, repeatable processes live under `08-skills/` as org-roam nodes so both the operator and agents can invoke them by name or path.
 
 ## Notes
 
