@@ -1,6 +1,6 @@
 ;;; forgrok-org-helpers.el --- Org-roam finalize + place + ID + DB + git helpers -*- lexical-binding: t; -*-
 
-\(require 'org)
+(require 'org)
 (require 'org-id)
 (require 'org-roam)
 (require 'magit nil t)
