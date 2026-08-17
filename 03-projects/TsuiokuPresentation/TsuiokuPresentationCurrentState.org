@@ -1,0 +1,39 @@
+:PROPERTIES:
+:ID:       4d784a27-c00b-4300-863b-ea99e4661ed5
+:END:
+#+AUTHOR: George Taylor + Grok
+#+CATEGORY: project
+#+CREATED: [2026-08-17 Mon]
+#+LAST_MODIFIED: [2026-08-17 Mon]
+#+TITLE: Tsuioku Presentation Current State
+#+NODE-NAME: TsuiokuPresentationCurrentState
+#+FILETAGS: :project:presentation:tsuioku:status:
+#+DESCRIPTION: Living status of the Tsuioku presentation artifacts (PPTX + sitelet).
+
+* Status (2026-08-17)
+
+- PPTX created and saved locally (not yet pushed)
+- Sitelet created (HTML + CSS, dark technical theme, side navigation)
+- Both artifacts tell the same 12-section narrative
+- Sitelet is the preferred long-term, git-friendly form
+
+* File Locations (once placed)
+
+| Artifact              | Path                                      |
+|-----------------------+-------------------------------------------|
+| Overview node         | 03-projects/TsuiokuPresentation/TsuiokuPresentationOverview.org |
+| Current State node    | 03-projects/TsuiokuPresentation/TsuiokuPresentationCurrentState.org |
+| PowerPoint            | 03-projects/TsuiokuPresentation/Tsuioku-Knowledge-Base.pptx |
+| Sitelet root          | 03-projects/TsuiokuPresentation/sitelet/ |
+| Sitelet HTML          | 03-projects/TsuiokuPresentation/sitelet/index.html |
+| Sitelet CSS           | 03-projects/TsuiokuPresentation/sitelet/css/style.css |
+
+* Open Items
+
+- Move files from Grok artifacts into the tree above
+- Decide whether to keep the PPTX long-term or treat the sitelet as canonical
+- Optional future: Org source that exports to the sitelet; keyboard navigation; print stylesheet
+
+* Related
+
+- [[file:TsuiokuPresentationOverview.org][TsuiokuPresentationOverview]]
