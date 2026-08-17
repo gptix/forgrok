@@ -1,28 +1,27 @@
 #+PROPOSED_PATH: 03-projects/rental/SunnyvaleDriveRentalAgreement.org
-#+COMMIT_MSG: Update rental agreement to Draft 3 — incorporate confirmed terms, set late fee at practical CA maximum ($40), note appliance sale intent
+#+COMMIT_MSG: Update rental agreement to Draft 4
 #+AUTHOR: George P. Taylor IX
 #+CATEGORY: 03-projects
 #+CREATED: [2026-08-13 Thu 17:00]
-#+LAST_MODIFIED: [2026-08-13 Thu 23:10]
+#+LAST_MODIFIED: [2026-08-17 Mon 13:50]
 #+TITLE: Rental Agreement — 72122 Sunnyvale Drive, Twentynine Palms
 #+NODE-NAME: SunnyvaleDriveRentalAgreement
 #+FILETAGS: :project:rental:california:twentyninepalms:lease:draft:
-#+DESCRIPTION: Draft 3 of month-to-month residential rental agreement for 72122 Sunnyvale Drive, Twentynine Palms, CA 92277 to tenant Shannon Coelho.
+#+DESCRIPTION: Draft 3 of month-to-month residential rental agreement for 72122 Sunnyvale Drive, Twentynine Palms, CA 92277 to tenant Shannon Marie Coelho.
 
 * Status
 - Draft: 3
-- Date of this version: 2026-08-13
-- Status: Third draft — incorporates confirmed facts from Draft 2 and sets late-fee amount at the practical California maximum
-- Remaining open items listed at the end
+- Date of this version: 2026-08-17
+- Status: Fourth draft — Corrects Tenant's name to 'Shannon Marie Coelho' - identifies The Neighbors In Question - 'No pets' clarified' - existence of stove and washing machine noted.
 
+This retal agreement ('Agreement') is between Landlord and Tenant, for the rental of the property and house at 72122 Sunnyvale Drive, CA 92277
 * 1. Parties
 Landlord: George P. Taylor IX  
 3500 Vinings Ridge Court  
-Atlanta, GA 30339  
-(“Landlord” or “Mr. Taylor” / “George Taylor” / “Jud Taylor”)
+Atlanta, GA 30339
+("Landlord")
 
-Tenant: Shannon Coelho  
-(no current address on file)  
+Tenant: Shannon Marie Coelho 
 (“Tenant”)
 
 * 2. Premises
@@ -32,10 +31,10 @@ Twentynine Palms, CA 92277
 APN 061806237  
 (“Premises”). Built 1952.  
 
-The Premises is rented primarily unfurnished. A small refrigerator and a stove are currently present. Landlord intends that Tenant purchase the refrigerator, stove, and any dishwasher for $1.00 each so that ownership and repair responsibility transfer to Tenant.
+The Premises is rented primarily unfurnished. A small refrigerator, a stove, a washing machine, and a dishwasher are currently present. Landlord intends that Tenant purchase the refrigerator, stove, and washing machine, and dishwasher for $1.00 each so that ownership and repair responsibility transfer to Tenant.
 
 * 3. Term
-This is a month-to-month tenancy commencing on 14 August 2026 (“Start Date”) and continuing until terminated by either party in accordance with California law and this Agreement.
+This is a month-to-month tenancy commencing on 17 August 2026 (“Start Date”) and continuing until terminated by either party in accordance with California law and this Agreement.
 
 * 4. Rent
 Monthly rent is $800.00, due in advance on the 1st day of each calendar month.  
@@ -58,11 +57,10 @@ Within 21 calendar days after Tenant vacates and returns all keys, Landlord shal
 The Premises may be occupied only by Tenant. No cohabitation or additional permanent occupants are permitted without Landlord’s prior written consent.  
 Tenant may have at most two overnight guests at any time. No guest may stay more than seven (7) consecutive days (or more than fourteen (14) days in any calendar month) without Landlord’s prior written consent.  
 
-Tenant agrees not to permit entry or visits by the specific individuals associated with the nearby residence (currently understood to be in the 72155–72165 Sunnyvale Drive area) of whom Tenant has actual knowledge and has been informed by Landlord, without Landlord’s prior written consent.
+Tenant agrees not to permit entry or visits by the specific individuals associated with the nearby residence ('The Neighbors In Question', currently understood to be residing in, or frequenting, 72165 Sunnyvale Drive) of whom Tenant has actual knowledge and has been informed by Landlord, without Landlord’s prior written consent. Tenant understands and agrees that allowing entry or visits by any of The Neighbors In Question will constitute a material breach of this agreement.  The Neighbors In Question are listed in an annex to this Agreement.
 
 * 7. Pets
 No animals or pets of any kind are permitted on the Premises without Landlord’s prior written consent. Any consent may be conditioned on additional deposit, rent, or rules.  
-(Status of any existing pets still to be confirmed.)
 
 * 8. Smoking / Vaping
 Smoking and vaping are permitted on the Premises.
@@ -108,26 +106,50 @@ Governing law: State of California. Venue for any action shall be San Bernardino
 Notices shall be in writing and delivered by personal delivery, certified mail, or email with read receipt (or other method agreed in writing) to the addresses set forth above (or as updated in writing).
 
 * 18. Signatures
-Landlord:  
+Landlord:
+
 _________________________________  
 George P. Taylor IX  
 Date: _______________
 
-Tenant:  
+
+
+Tenant:
+
 _________________________________  
 Shannon Coelho  
 Date: _______________
 
-(Attach: Lead-Based Paint Disclosure & EPA pamphlet; Bed Bug Notice; any other required forms; keys receipt; move-in condition checklist; bill of sale for appliances if executed.)
+- New Page
+
+Annex A
+
+This Annex relates to a Rental Agreement regarding 72122 Sunnyvale Drive, Twentynine Palms, CA 72122 executed on or about 17 August 2026, between Landlord and Tenant, as identified in that Agreement.
+
+The Neighbors In Question are:
+
+- Alex
+- Boy Nikki
+- Bronte
+- Christine
+- Crystal
+- Dustin
+- Gilbert
+- Matty
+- Nikki
+- Oi
+
+No family names for these persons have been provided.
+
+-- End of Agreement and Annex
+
 
 * Remaining Open Items
-1. Exact legal spelling of Tenant’s full name (and any middle name).
-2. Confirmation of any pets (number, kind/breed).
-3. Names of the specific neighbors Tenant is not to allow on the property, and their exact address (currently believed to be in the 72155–72165 range).
-4. Final decision on whether Tenant will purchase the refrigerator, stove, and dishwasher for $1 each (recommended to document with a simple bill of sale).
-5. Preferred delivery method for the official disclosure documents.
-6. Whether a short separate House Rules addendum is desired.
+- [ ] Final decision on whether Tenant will purchase the refrigerator, stove, and dishwasher for $1 each (recommended to document with a simple bill of sale).
+- [ ] Preferred delivery method for the official disclosure documents.
 
-* Notes
-- Late fee set at $40 (5 % of $800) — the practical maximum that California courts consistently treat as a reasonable estimate of damages under Civil Code § 1671. Landlord may choose never to enforce it.
-- This is Draft 3. Update #+LAST_MODIFIED and the Draft number on any subsequent revision.
+
+(Attach: Lead-Based Paint Disclosure & EPA pamphlet; Bed Bug Notice; any other required forms; keys receipt; move-in condition checklist; bill of sale for appliances if executed.)
+
+
+-
