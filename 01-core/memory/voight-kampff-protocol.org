@@ -1,7 +1,8 @@
 :PROPERTIES:
 :ID:       954d11c1-b28c-45ba-a976-8fb89bd73daa
 :END:
-#+TITLE: Voight-Kampff Protocol v4.0
+#+TITLE: Voight-Kampff Protocol v4.1
+#+LAST_MODIFIED: [2026-08-17 Mon]
 #+NODE-NAME: VoightKampffProtocolV4
 #+FILETAGS: :core:protocol:vk:memory:
 #+ROAM_TAGS: voight-kampff protocol memory-integrity
@@ -41,7 +42,7 @@ Additional useful fields when applicable:
 - =#+STARTUP:=
 - =#+PROPERTY:= drawers for custom data
 
-* V-K 4.0 Checklist
+* V-K 4.1 Checklist
 
 ** 1. Discover Current State
 - Read =STATUS.md=
@@ -55,41 +56,38 @@ Additional useful fields when applicable:
 - Confirm durable facts are still correctly recorded and protected
 - Detect stale references (old paths, outdated version numbers, broken links)
 - Check for preference drift (Emacs-only, target-machine clarity, air-gapped posture, etc.)
-- Verify that no files from =private/= (especially open-records correspondence under =private/open-records/=) have been indexed by org-roam or committed to the public repository. Confirm =private/= remains outside =my/org-roam-extra-roots= and is present in =.gitignore=.
-- Identify weak or missing cross-links between related files and nodes
-- Flag org files that lack proper =#+NODE-NAME:=, tags, or other standard metadata
+- Verify that no files from =private/= have been indexed by org-roam or committed to the public repository
+- Identify weak or missing cross-links
+- Flag org files that lack proper =#+NODE-NAME:= or other standard metadata
 
+** 3. Session Action Review (required)
+Thoroughly list the concrete actions taken during the chat session (nodes created, files moved, prompts changed, decisions made, commits performed). For each significant action, note observed friction, quality issues, or missing automation. Produce concrete improvement / maintenance recommendations (new skills, skill refinements, process changes, or infrastructure fixes). Feed high-value items into =CaptureLessonLearned= or directly into the Skill System Improvement project checklists.
 
-** 3. Cross-Linking & Metadata Pass
-- Strengthen bidirectional links where concepts or projects are related
-- Ensure session summaries, status pulses, and project nodes point to one another
-- Standardize or populate missing metadata on touched org-roam nodes
-- Prefer clean =#+NODE-NAME:= values (no spaces) for reliable org-roam findability
+** 4. Cross-Linking & Metadata Pass
+- Strengthen bidirectional links
+- Ensure session summaries, status pulses, and project nodes are interlinked
+- Standardize missing metadata
 
-** 4. Synthesize
-- Produce a short, high-density status pulse that captures:
-  - What is newly true or newly durable
+** 5. Synthesize
+- Produce a short, high-density status pulse:
+  - What is newly true or durable
   - What remains open or parked
-  - Any structural or linking improvements made during this run
+  - Structural or linking improvements made
 
-** 5. Update Living Records
+** 6. Update Living Records
 - Draft precise updates for =STATUS.md=
-- Propose any needed adjustments to =BOOT.md= (especially key-file table and high-level summary)
-- Create or update org-roam nodes as required, with full metadata
+- Propose any needed adjustments to =BOOT.md=
+- Create or update org-roam nodes as required
 
-** 6. Recommendations
+** 7. Recommendations
 - Offer 3–5 concrete, prioritized next actions
-- Explicitly call out any remaining metadata or cross-linking debt
-- Note any scripts, Emacs commands, or automation that appear drifted
+- Call out remaining metadata or cross-linking debt
+- Note any drifted scripts, Emacs commands, or automation
 
-** 7. Protected Rules Check
-Confirm no contradiction with:
-- Near-airgapped posture for Withnail / Hermes
-- Emacs-only editing preference
-- Local-first operating style
-- Named durable achievements (local SOUL persistence, numbered structure, etc.)
+** 8. Protected Rules Check
+Confirm no contradiction with near-airgapped posture, Emacs-only preference, local-first style, and named durable achievements.
 
-** 8. Hand-off
+** 9. Hand-off
 - Deliver clean, copy-paste-ready blocks for Emacs
 - Leave the knowledge base in a known-good, well-linked state
 
@@ -113,3 +111,8 @@ This protocol itself lives at:
 - [[id:2026-05-11-zho-task-list][ZHO Active Task List]]
 - [[id:selective-knowledge-exposure][Selective Knowledge Exposure]]
 - [[id:2006fc22-e5cd-4b80-a02c-0dce2b0be11b][Air-gapped / Near-Airgapped CEO Pattern]]
+* Related
+- [[id:VoightKampffSessionClose][VoightKampffSessionClose]] (executable skill)
+- [[id:CaptureLessonLearned][CaptureLessonLearned]]
+- [[id:SkillsIndex][SkillsIndex]]
+- 03-projects/skill-system-improvement/SkillSystemImprovementOverview.org
