@@ -40,6 +40,22 @@
 - Dual-vault roots now include `02-infrastructure`
 - init.el updated (load-path + require + key binding)
 
+### Skill System (2026-08-17)
+
+- New project: Skill System Improvement
+- Live skills:
+  - CaptureLessonLearned
+  - CreateNewSkill
+  - GenerateTsuiokuNodeText
+  - SkillsIndex
+  - UpdateProjectStatus
+  - VoightKampffSessionClose
+- Finalize helper (`my/org-roam-finalize-place-id-commit`) hardened:
+  - Forces `org-mode` when needed
+  - Stray backslash that broke `(require 'org)` fixed
+- Voight-Kampff Protocol updated to v4.1 (Session Action Review now mandatory)
+- Learning cycle entry points are executable
+
 ## 3. Open / Parked Items
 
 1. Continue Roemmele essay processing (008+) with the new low-friction loop
