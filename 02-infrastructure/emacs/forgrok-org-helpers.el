@@ -1,6 +1,6 @@
 ;;; forgrok-org-helpers.el --- Org-roam finalize + place + ID + DB + git helpers -*- lexical-binding: t; -*-
 
-(require 'org)
+\(require 'org)
 (require 'org-id)
 (require 'org-roam)
 (require 'magit nil t)
@@ -42,9 +42,9 @@ On a normal call:
 6. Stage and commit (does NOT push).
 
 Signals an error if the keywords are missing or the buffer is not Org."
-  (interactive "P")
-  (unless (derived-mode-p 'org-mode)
-    (org-mode"))
+(interactive "P")
+(unless (derived-mode-p 'org-mode)
+  (org-mode))
 
   (let* ((proposed-path (my/--extract-keyword "PROPOSED_PATH"))
          (commit-msg    (my/--extract-keyword "COMMIT_MSG"))
