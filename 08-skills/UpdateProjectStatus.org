@@ -1,0 +1,92 @@
+:PROPERTIES:
+:ID:       662cdf73-be5c-4aa8-bffc-806f5a765e2b
+:END:
+#+AUTHOR: George Taylor + Grok
+#+CATEGORY: skill
+#+CREATED: [2026-08-17 Mon]
+#+LAST_MODIFIED: [2026-08-17 Mon]
+#+TITLE: Update Project Status
+#+NODE-NAME: UpdateProjectStatus
+#+FILETAGS: :skill:status:tsuioku:maintenance:quality:
+#+DESCRIPTION: Skill that produces precise, ready-to-apply updates for STATUS.md and related project overview / current-state nodes after significant work or a Voight-Kampff run.
+
+* Purpose / When to use
+
+Use this skill after a significant session, after creating or substantially changing skills/projects, or whenever STATUS.md (or a project’s CurrentState / Overview node) has become stale.
+
+Its job is to turn the concrete outcomes of recent work into accurate, high-density living status records with minimal friction.
+
+* Preconditions
+
+- A Voight-Kampff Session Close or CaptureLessonLearned has preferably just been run (or the operator can supply a short list of what changed).
+- STATUS.md and any relevant project nodes are readable.
+- The operator is ready to review and approve the proposed patches.
+
+* Steps
+
+1. **Gather Delta**
+   Collect what is newly true since the last STATUS.md update:
+   - New or changed skills
+   - New or advanced projects
+   - Infrastructure / helper changes
+   - Open items that were closed or newly created
+   - Any durable decisions or state changes
+
+2. **Identify Affected Records**
+   Determine which living records need updating:
+   - STATUS.md (almost always)
+   - Project Overview / CurrentState nodes (when a specific project moved)
+   - BOOT.md key-files table or high-level summary (only when structural)
+   - Skills Index (when new skills were added)
+
+3. **Draft Precise Updates**
+   Produce ready-to-apply content:
+   - For STATUS.md: short, dated subsection or bullet updates (prefer additive, high-signal style)
+   - For project nodes: updated “Current State” or checklist progress
+   - Keep language consistent with existing STATUS.md voice
+
+4. **Propose Cross-links**
+   Suggest any new bidirectional links that should be added as part of the status update.
+
+5. **Hand-off**
+   Deliver clean, copy-paste-ready blocks (or unified diffs) that the operator can apply with minimal editing, then commit.
+
+* Inputs / Outputs
+
+- **Input**: Recent session outcomes / V-K status pulse / list of changes
+- **Output**:
+  - Precise STATUS.md update block
+  - Optional project-node update blocks
+  - Suggested commit message(s)
+  - Any recommended cross-links
+
+* Related
+
+- 08-skills/VoightKampffSessionClose.org
+- 08-skills/CaptureLessonLearned.org
+- STATUS.md
+- BOOT.md
+- 03-projects/skill-system-improvement/SkillSystemImprovementOverview.org
+- 08-skills/GenerateTsuiokuNodeText.org
+
+* Failure modes / Notes
+
+- Do not rewrite large sections of STATUS.md unnecessarily. Prefer small, dated, additive updates.
+- Avoid vague language (“progress was made”). State concrete facts.
+- This skill should itself be improved via CaptureLessonLearned when status-updating friction is noticed.
+- After applying the updates, a quick local `org-roam-db-sync` is recommended if project nodes were touched.
+
+* Example Output Shape
+
+#+begin_example
+STATUS.md addition (under Knowledge Base or new Skill System heading):
+
+### Skill System (2026-08-17)
+- New project: Skill System Improvement
+- Live skills now: CaptureLessonLearned, CreateNewSkill, GenerateTsuiokuNodeText, UpdateProjectStatus, VoightKampffSessionClose
+- Finalize helper hardened (forces org-mode)
+- Learning cycle entry points are executable
+
+Suggested commit message:
+Update STATUS.md with Skill System progress (2026-08-17)
+#+end_example
