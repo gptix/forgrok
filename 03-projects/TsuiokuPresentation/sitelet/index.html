@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tsuioku — Building a Living Knowledge Base</title>
+  <meta name="description" content="From Raspberry Pi friction to a structured, agent-ready knowledge system." />
+  <link rel="stylesheet" href="css/style.css" />
+  <!--
+    Tsuioku Sitelet — narrative presentation of the knowledge base origin story
+    Project: 03-projects/TsuiokuPresentation
+    Created: 2026-08-17
+    Author:  George Taylor + Grok
+    Canonical companion nodes:
+      TsuiokuPresentationOverview.org
+      TsuiokuPresentationCurrentState.org
+  -->
+</head>
+<body>
+  <div class="layout">
+
+    <nav>
+      <div class="brand">Tsuioku</div>
+      <ul>
+        <li><a href="#spark"><span class="num">01</span> The Spark</a></li>
+        <li><a href="#hard-reality"><span class="num">02</span> Hard Reality</a></li>
+        <li><a href="#core-problem"><span class="num">03</span> Core Problem</a></li>
+        <li><a href="#early-strategies"><span class="num">04</span> Early Strategies</a></li>
+        <li><a href="#shoulders"><span class="num">05</span> Standing on Shoulders</a></li>
+        <li><a href="#construction"><span class="num">06</span> Construction</a></li>
+        <li><a href="#structure"><span class="num">07</span> Current Structure</a></li>
+        <li><a href="#metadata"><span class="num">08</span> Metadata &amp; Automation</a></li>
+        <li><a href="#emacs"><span class="num">09</span> Emacs over Obsidian</a></li>
+        <li><a href="#compounded"><span class="num">10</span> What Compounded</a></li>
+        <li><a href="#closing"><span class="num">·</span> Closing</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <!-- Hero -->
+      <header class="hero" id="top">
+        <h1>Tsuioku</h1>
+        <p class="tagline">Building a Living Knowledge Base</p>
+        <hr class="divider" />
+        <p class="lead" style="margin-top:1rem">
+          From Raspberry Pi friction → persistent memory → a structured system
+        </p>
+        <p class="meta">George Taylor · Marietta, GA · 2026</p>
+      </header>
+
+      <!-- 01 The Spark -->
+      <section id="spark">
+        <div class="section-label">01 · The Spark</div>
+        <h2>How the interest was piqued</h2>
+
+        <div class="card-grid">
+          <div class="card">
+            <h3>Brian Roemmele</h3>
+            <p>High-protein content, 5000 Days essays, and the philosophy of dense, durable knowledge over low-value noise.</p>
+          </div>
+          <div class="card">
+            <h3>Zero Human Company</h3>
+            <p>The ZHC / ZHO model: air-gapped agents, local regulators, 15-minute workdays, and machines that can run without constant human babysitting.</p>
+          </div>
+          <div class="card">
+            <h3>Raspberry Pi</h3>
+            <p>A concrete, affordable host. The desire to put a real autonomous agent (Withnail) on a physical machine under local control.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 Hard Reality -->
+      <section id="hard-reality">
+        <div class="section-label">02 · The Hard Reality</div>
+        <h2>Setting up Withnail on the Pi</h2>
+        <p class="lead">What looked like a weekend project turned into weeks of friction.</p>
+
+        <div class="point">
+          <div class="bar"></div>
+          <div class="content">
+            <h3>Extensive debugging</h3>
+            <p>Power, WiFi, hostname resolution, systemd, Ollama model paths, Telegram gateway, Tailscale, SOUL persistence — each layer had its own failure modes.</p>
+          </div>
+        </div>
+
+        <div class="point">
+          <div class="bar"></div>
+          <div class="content">
+            <h3>Context evaporated between sessions</h3>
+            <p>Technical specifications, failed attempts, partial successes, and hard-won learnings lived only in chat history or scattered notes.</p>
+          </div>
+        </div>
+
+        <div class="point">
+          <div class="bar"></div>
+          <div class="content">
+            <h3>Progress required portable memory</h3>
+            <p>Without a durable external record, every new session started with expensive re-discovery instead of compounding knowledge.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 Core Problem -->
+      <section id="core-problem">
+        <div class="section-label">03 · The Core Problem</div>
+        <h2>Knowledge that cannot travel is knowledge that dies</h2>
+
+        <div class="two-col">
+          <div class="card">
+            <h3>What was needed</h3>
+            <p>Portable record of specs, attempts, and lessons</p>
+            <p>Survives across chat sessions and machines</p>
+            <p>Readable by both human and future agents</p>
+            <p>Structured enough to compound rather than scatter</p>
+          </div>
+          <div class="card">
+            <h3>What was missing</h3>
+            <p>Chat history is ephemeral and hard to search</p>
+            <p>Scattered notes lose causal chain of decisions</p>
+            <p>No single source of truth for agent state</p>
+            <p>Re-debugging the same issues across weeks</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 Early Strategies -->
+      <section id="early-strategies">
+        <div class="section-label">04 · Early Strategies</div>
+        <h2>Increasingly powerful tactics</h2>
+
+        <div class="step">
+          <div class="n">01</div>
+          <div class="body">
+            <h3>Specs as text files</h3>
+            <p>Copy technical specifications into plain text and feed them as prompts. Crude but effective memory injection.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="n">02</div>
+          <div class="body">
+            <h3>memory.org / memory.md</h3>
+            <p>Codify durable facts into structured files that could be reloaded at the start of a session.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="n">03</div>
+          <div class="body">
+            <h3>Multiple project files</h3>
+            <p>Separate concerns. Different projects needed different context; one giant memory file became unwieldy.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 Standing on Shoulders -->
+      <section id="shoulders">
+        <div class="section-label">05 · Standing on Shoulders</div>
+        <h2>Smart people had already attacked the same problem</h2>
+
+        <div class="card" style="margin-bottom:1rem">
+          <h3>Andrej Karpathy</h3>
+          <p>Wiki + repository as a living knowledge store. Simple, git-backed, human-readable, agent-readable.</p>
+        </div>
+        <div class="card" style="margin-bottom:1rem">
+          <h3>Roam Research approach</h3>
+          <p>Bidirectional linking, atomic notes, and a graph of ideas rather than a hierarchical dump of files.</p>
+        </div>
+        <div class="card">
+          <h3>InfraNodus</h3>
+          <p>A brief exploration of graph visualization and text-network analysis. Useful for seeing structure; ultimately too external for the local-first posture.</p>
+        </div>
+      </section>
+
+      <!-- 06 Construction -->
+      <section id="construction">
+        <div class="section-label">06 · Construction of Tsuioku</div>
+        <h2>The three control surfaces</h2>
+
+        <div class="card-grid">
+          <div class="card">
+            <h3 class="mono">BOOT.md</h3>
+            <p style="color:var(--ink);font-weight:600;margin-bottom:0.5rem">Session on-ramp</p>
+            <p>Single entry point. Preferences, key files, high-level state. Read first every time.</p>
+          </div>
+          <div class="card">
+            <h3 class="mono">STRUCTURE.md</h3>
+            <p style="color:var(--ink);font-weight:600;margin-bottom:0.5rem">Authoritative layout</p>
+            <p>The map of the knowledge base. Numbered directories, design principles, where things live.</p>
+          </div>
+          <div class="card">
+            <h3 class="mono">STATUS.md</h3>
+            <p style="color:var(--ink);font-weight:600;margin-bottom:0.5rem">Living operational snapshot</p>
+            <p>What is currently true, what is open, recent pulses, next actions. Updated frequently.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07 Structure -->
+      <section id="structure">
+        <div class="section-label">07 · Current Structure</div>
+        <h2>The numbered knowledge base</h2>
+
+        <div class="path-list">
+          <div class="path-item">
+            <div class="path">01-core/</div>
+            <p>Stable knowledge, memory protocols, ZHO doctrine, agent identity</p>
+          </div>
+          <div class="path-item">
+            <div class="path">02-infrastructure/</div>
+            <p>Hermes-pi, hardware, tools, procedures, scripts</p>
+          </div>
+          <div class="path-item">
+            <div class="path">03-projects/</div>
+            <p>Active projects (Withnail, Tarot Today, Skill System…)</p>
+          </div>
+          <div class="path-item">
+            <div class="path">04-sources/</div>
+            <p>Curated high-protein external content (Roemmele, …)</p>
+          </div>
+          <div class="path-item">
+            <div class="path">05-wiki/</div>
+            <p>Wikified concepts, graphs, indexes</p>
+          </div>
+          <div class="path-item">
+            <div class="path">08-skills/</div>
+            <p>Reusable, executable skill nodes</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 08 Metadata -->
+      <section id="metadata">
+        <div class="section-label">08 · Metadata &amp; Automation</div>
+        <h2>Reducing the tax of maintenance</h2>
+
+        <div class="two-col">
+          <div>
+            <h3 style="margin-bottom:0.75rem">Standardization</h3>
+            <p>Consistent <span class="mono">#+TITLE</span>, <span class="mono">#+NODE-NAME</span>, <span class="mono">#+FILETAGS</span></p>
+            <p>PascalCase NODE-NAME convention (no spaces)</p>
+            <p>Author / Created / Last-Modified discipline</p>
+            <p>Cross-linking as first-class practice</p>
+          </div>
+          <div>
+            <h3 style="margin-bottom:0.75rem">Automation</h3>
+            <p><span class="mono">my/org-roam-finalize-place-id-commit</span></p>
+            <p>Temporary keywords → place → ID → commit</p>
+            <p>Skill System (Capture → Refine → Promote)</p>
+            <p>Voight-Kampff as mandatory session close</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 09 Emacs -->
+      <section id="emacs">
+        <div class="section-label">09 · Emacs over Obsidian</div>
+        <h2>Why the integration matters</h2>
+
+        <div class="list-row">
+          <div class="label">Local-first &amp; programmable</div>
+          <div class="desc">Emacs is a Lisp machine. Everything can be scripted, extended, and kept under local control.</div>
+        </div>
+        <div class="list-row">
+          <div class="label">TRAMP + remote machines</div>
+          <div class="desc">Seamless editing of files on hermes-pi over SSH/Tailscale without leaving the same environment.</div>
+        </div>
+        <div class="list-row">
+          <div class="label">Org-roam as native graph</div>
+          <div class="desc">Atomic notes, backlinks, and a real database of nodes that both human and agents can query.</div>
+        </div>
+        <div class="list-row">
+          <div class="label">No external cloud dependency</div>
+          <div class="desc">Obsidian Sync and plugins introduce surfaces that conflict with the near-airgapped posture.</div>
+        </div>
+        <div class="list-row">
+          <div class="label">Unified workflow</div>
+          <div class="desc">Magit, org-mode, org-roam, SLY, TRAMP — one environment for code, notes, agents, and memory.</div>
+        </div>
+      </section>
+
+      <!-- 10 What Compounded -->
+      <section id="compounded">
+        <div class="section-label">10 · What Compounded</div>
+        <h2>The real product is the process</h2>
+
+        <div class="step">
+          <div class="n">01</div>
+          <div class="body">
+            <h3>Friction is data</h3>
+            <p>Every debugging session that is recorded becomes training material for better process.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">02</div>
+          <div class="body">
+            <h3>Structure enables agents</h3>
+            <p>A chaotic dump of notes is useless to Withnail. A numbered, metadata-rich system can be selectively exposed.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">03</div>
+          <div class="body">
+            <h3>Skills close the loop</h3>
+            <p>Voight-Kampff + CaptureLessonLearned turn one-off work into durable, reusable capability.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="n">04</div>
+          <div class="body">
+            <h3>Local control is non-negotiable</h3>
+            <p>The knowledge base lives on the X230 and is mirrored to GitHub. The Pi stays near-airgapped.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Closing -->
+      <section id="closing" class="closing">
+        <h1>Tsuioku</h1>
+        <p class="tagline">
+          A living knowledge base that remembers<br />
+          so the agents (and the human) can compound.
+        </p>
+        <hr class="divider" />
+        <p style="color:var(--dim);font-size:0.95rem;margin-top:1.25rem">
+          From scattered debugging notes → structured, queryable, agent-ready memory.
+        </p>
+        <p class="meta">George Taylor · @joji_teira · gptix/forgrok</p>
+      </section>
+
+    </main>
+  </div>
+
+  <script>
+    // Simple active-section highlighting
+    const links = document.querySelectorAll('nav a');
+    const sections = [...links].map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+
+    function updateActive() {
+      const scrollY = window.scrollY + 120;
+      let current = sections[0];
+      for (const sec of sections) {
+        if (sec.offsetTop <= scrollY) current = sec;
+      }
+      links.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current.id);
+      });
+    }
+
+    window.addEventListener('scroll', updateActive, { passive: true });
+    updateActive();
+  </script>
+</body>
+</html>
