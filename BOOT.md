@@ -40,35 +40,35 @@ High-level map:
 Working copy lives on the X230. All structural changes are made there, committed in small logical units, and pushed to GitHub.
 
 ---
-
 ## 3. Current project state
 
-**Detailed living snapshot:** **STATUS.md** (last updated 2026-08-08)
+**Detailed living snapshot:** **STATUS.md**
 
-High-level summary (kept deliberately short):
+High-level summary (2026-08-17):
 
 - Withnail / Hermes on hermes-pi operational (local model + persistent SOUL working)
-- Hermes 0.19.0 / Ollama with qwen2.5-3b-64k
 - Knowledge base reorganization complete; STRUCTURE.md is authoritative
-- Voight-Kampff Protocol v4.0 now in place
-- Selective knowledge exposure to Withnail has begun
+- **Skill System** now active under `08-skills/`
+  - Live skills: CaptureLessonLearned, CreateNewSkill, GenerateTsuiokuNodeText, SkillsIndex, UpdateProjectStatus, VoightKampffSessionClose
+  - Learning cycle (Capture → Refine → Promote) has executable entry points
+- Voight-Kampff Protocol updated to **v4.1** (Session Action Review is now mandatory)
+- Selective knowledge exposure to Withnail continues
 
-See **STATUS.md** for the full operational dashboard, open items, and suggested next actions.
+See **STATUS.md** for the full operational dashboard and open items.
 
 ## 4. Key files to load when deeper context is needed
 
-| Need | File |
-|------|------|
-| Living operational snapshot | STATUS.md |
-| Full structure | STRUCTURE.md |
-| Voight-Kampff protocol | `01-core/memory/voight-kampff-protocol.org` (or `.md`) |
-| Master memory mirror | `01-core/memory/joji-grok-project-memory.org` |
-| ZHO index | `01-core/zho/zho-index.org` |
-| Hermes-pi procedures | `02-infrastructure/hermes-pi/procedures/` |
-| Withnail project | `03-projects/withnail/` |
-| Baseline collector | `02-infrastructure/hermes-pi/scripts/collect-pi-specs.sh` |
-| Org-roam NODE-NAME convention | 01-core/principles/org-roam-node-name-convention.org |
-| Skills index / processes | 08-skills/ |
+| Need                              | File                                      |
+|-----------------------------------|-------------------------------------------|
+| Living operational snapshot       | STATUS.md                                 |
+| Full structure                    | STRUCTURE.md                              |
+| Voight-Kampff protocol (v4.1)     | `01-core/memory/voight-kampff-protocol.org` |
+| Executable V-K skill              | `08-skills/VoightKampffSessionClose.org`  |
+| Skills index                      | `08-skills/SkillsIndex.org`               |
+| Skill System project              | `03-projects/skill-system-improvement/`   |
+| Master memory mirror              | `01-core/memory/joji-grok-project-memory.org` |
+| Org-roam NODE-NAME convention     | `01-core/principles/org-roam-node-name-convention.org` |
+| Finalize helper                   | `02-infrastructure/emacs/forgrok-org-helpers.el` |
 
 ---
 
