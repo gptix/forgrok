@@ -1,0 +1,97 @@
+:PROPERTIES:
+:ID:       a1af7576-14fa-4c5e-af75-d760bf5aa982
+:END:
+#+AUTHOR: George Taylor + Grok
+#+CATEGORY: skill
+#+CREATED: [2026-08-17 Mon]
+#+LAST_MODIFIED: [2026-08-17 Mon]
+#+TITLE: Capture Lesson Learned
+#+NODE-NAME: CaptureLessonLearned
+#+FILETAGS: :skill:learning:quality:tsuioku:improvement:
+#+DESCRIPTION: Lightweight skill that turns concrete session experience (successes, friction, failures, missing automation) into durable, actionable lessons that feed the Skill System Improvement project and future skill refinements.
+
+* Purpose / When to use
+
+Use this skill after any significant chat session, after a clear failure or friction point, or when the operator says “capture lesson”, “lesson learned”, or “what should we remember from this”.
+
+Its job is to convert ephemeral session experience into high-signal, reusable knowledge that improves future skills and processes.
+
+* Preconditions
+
+- The session (or specific incident) has just occurred or is still fresh.
+- Enough concrete actions were taken that patterns or friction can be identified.
+- Prefer running this *before* or as part of a Voight-Kampff Session Close.
+
+* Steps
+
+1. **List Concrete Actions**
+   Briefly enumerate the significant actions that occurred in the session
+   (nodes created, files moved, prompts changed, decisions made, commits,
+   function edits, etc.).
+
+2. **Identify Signal**
+   For each significant action or cluster of actions, ask:
+   - What worked smoothly?
+   - Where was there friction, repeated correction, or missing automation?
+   - What quality issue or process gap appeared?
+   - What would make the next occurrence faster, more reliable, or higher quality?
+
+3. **Extract the Lesson**
+   Distill one or more clear, actionable lessons. Prefer the form:
+   - “When X happens, do Y instead of Z”
+   - “Missing automation: …”
+   - “New skill needed: …”
+   - “Existing skill should be refined: … because …”
+
+4. **Classify & Route**
+   Decide the best destination for each lesson:
+   - New skill (propose name + short purpose)
+   - Refinement of an existing skill (name the skill + specific change)
+   - Process / checklist update
+   - Infrastructure fix (Emacs function, script, etc.)
+   - Direct addition to Skill System Improvement project checklists
+   - Simple durable fact to record in an existing node
+
+5. **Produce Output**
+   Emit a clean, copy-paste-ready block containing:
+   - Short session context (1–3 lines)
+   - The extracted lesson(s)
+   - Recommended next action for each lesson (with suggested NODE-NAME or checklist item if applicable)
+
+6. **Hand-off**
+   Offer to immediately create a new skill node, update an existing skill,
+   or append items to the Skill System Improvement checklists.
+
+* Inputs / Outputs
+
+- **Input**: Recent session actions + observed friction / successes
+- **Output**: Structured lesson(s) + concrete routing recommendations
+
+* Related
+
+- 08-skills/VoightKampffSessionClose.org (Session Action Review feeds this skill)
+- 03-projects/skill-system-improvement/SkillSystemImprovementOverview.org
+- 08-skills/SkillRefinementLoop.org (to be created)
+- 08-skills/SkillHealthAudit.org (to be created)
+- 08-skills/CreateNewSkill.org
+
+* Failure modes / Notes
+
+- Do not turn every minor observation into a skill. Prefer high-signal, repeated, or high-cost friction.
+- Keep lessons short and actionable. Long essays reduce the chance they will be acted on.
+- Always prefer feeding the Skill System Improvement project over creating one-off notes that will be forgotten.
+- This skill itself should be improved via the same learning cycle it supports.
+
+* Example Output Shape
+
+#+begin_example
+Session context: Created VoightKampffSessionClose skill and discussed finalize-function robustness.
+
+Lesson 1:
+When pasting a new node into a fresh buffer, the buffer is often still in fundamental-mode.
+→ Refinement needed in my/org-roam-finalize-place-id-commit: force (org-mode) at the start.
+
+Lesson 2:
+Session Action Review is high-value but easy to skip.
+→ Ensure VoightKampffSessionClose always runs the review step and routes items here.
+#+end_example
