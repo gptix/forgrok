@@ -13,7 +13,7 @@
 * Purpose
 
 Document and present the origin story of Tsuioku: the motivations (Roemmele, ZHO, Raspberry Pi), the debugging friction that made portable memory necessary, the successive strategies that were tried, the influences (Karpathy, Roam, InfraNodus), the construction of the three control surfaces, and the deliberate choice of Emacs over Obsidian.
-
+    
 * Artifacts
 
 - PowerPoint version: =Tsuioku-Knowledge-Base.pptx= (same directory)
