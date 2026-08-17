@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       807ead8c-8425-4906-ab46-834082802627
+:END:
+#+AUTHOR: Grok (research synthesis for Joji Teira)
+#+CATEGORY: People
+#+CREATED: [2026-08-17 Mon]
+#+LAST_MODIFIED: [2026-08-17 Mon]
+#+TITLE: Brian Roemmele
+#+NODE-NAME: BrianRoemmele
+#+FILETAGS: :person:ai:zhc:voicefirst:promptengineering:biography:
+#+DESCRIPTION: Biography of Brian Roemmele covering childhood in New Jersey, early technology work, VoiceFirst, prompt engineering, and the Zero Human Company experiment.
+
+* Brian Roemmele
+
+Brian Roemmele is an American technologist, researcher, entrepreneur, and writer best known for his work on voice AI, prompt engineering, local large language models, and autonomous AI systems. He grew up in central New Jersey—born in Newark and raised on a farm near Princeton and Flemington—during the peak years of Bell Laboratories and the pre-divestiture AT&T era. The region’s dense ecosystem of research institutions (Bell Labs, the Institute for Advanced Study, RCA, Princeton University) shaped him early. As a child and teenager he gained access through family friends and neighbors to early speech-recognition and speech-synthesis prototypes, met scientists connected to the Institute, and taught himself electronics by soldering circuits and scavenging chip samples. He built voice-synthesis cartridges for Commodore computers, worked at a ComputerLand store in Somerville when the IBM PC launched, and developed early barcode readers and point-of-sale systems that helped lift him out of poverty. He has described himself as having no formal university degree, learning instead through patents, research libraries, and direct experimentation.
+
+Across decades he built and ran payments and technology companies (some landing on the Inc. 500 list of fastest-growing firms), worked in media promoting musicians, and became a prolific analyst. He coined and popularized the term “VoiceFirst,” established himself as an authority on conversational interfaces, and later pivoted deeply into prompt engineering and local/offline AI after the rise of large language models. He founded ReadMultiplex (readmultiplex.com), a research-driven platform covering technology, payments, AI, and historical context, and has been a frequent guest on podcasts including The Jordan Peterson Podcast, Coast to Coast AM, Infinite Loops, and others. He has written for or been quoted in Forbes, Business Insider, Newsweek, and similar outlets, and in 2024 was named an AI advisor to El Salvador’s President Nayib Bukele.
+
+Since January 2026 Roemmele has led the public experiment known as the Zero-Human Company (ZHC)—an attempt to operate a fully autonomous enterprise run by AI agents with minimal ongoing human labor. In this framework, specialized models (often with Grok designated as CEO) handle strategy, research, product development, sales, and continuous improvement, supported by distributed “@Home” compute nodes, university partnerships, high-protein archival data curation, and transparent visitor interfaces (ZHC-RPG). The project emphasizes local, privacy-preserving, air-gapped systems and treats human insight as a scarce, high-value resource rather than a routine operational input. Roemmele continues to frame the work as both a practical business experiment and a broader inquiry into how AI can amplify rather than replace human capability.
