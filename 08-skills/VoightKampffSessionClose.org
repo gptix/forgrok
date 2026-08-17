@@ -1,0 +1,95 @@
+:PROPERTIES:
+:ID:       e8503363-c27a-44d3-82db-a44d80202602
+:END:
+#+AUTHOR: George Taylor + Grok
+#+CATEGORY: skill
+#+CREATED: [2026-08-17 Mon]
+#+LAST_MODIFIED: [2026-08-17 Mon]
+#+TITLE: Voight-Kampff Session Close
+#+NODE-NAME: VoightKampffSessionClose
+#+FILETAGS: :skill:protocol:vk:session:quality:tsuioku:
+#+DESCRIPTION: Executable skill that runs the Voight-Kampff Protocol (v4.0+) at session end, including a thorough Session Action Review that feeds the Skill System Improvement project.
+
+* Purpose / When to use
+
+Run this skill at the end of a significant chat session (or whenever the operator says “Voight-Kampff”, “V-K”, or “session close”).
+
+It performs a living-knowledge health check and turns the session’s concrete work into durable improvements.
+
+* Preconditions
+
+- Current STATUS.md, STRUCTURE.md, and BOOT.md are readable.
+- The operator is ready to review or approve proposed updates.
+- (Optional but recommended) CaptureLessonLearned skill exists for high-value friction items.
+
+* Steps
+
+1. **Discover Current State**
+   - Read STATUS.md, STRUCTURE.md, BOOT.md
+   - Scan recent material in 07-sessions/
+   - Check key areas under 01-core/ (memory/, zho/, soul/)
+   - Note current selective knowledge exposure to Withnail
+
+2. **Integrity & Drift Scan**
+   - Confirm durable facts are still correctly recorded
+   - Detect stale references, broken links, preference drift
+   - Verify private/ remains outside org-roam and in .gitignore
+   - Flag missing or non-standard metadata
+
+3. **Session Action Review** (new, required)
+   Thoroughly list the concrete actions taken during the chat session (nodes created, files moved, prompts changed, decisions made, commits performed). For each significant action, note observed friction, quality issues, or missing automation. Produce concrete improvement / maintenance recommendations (new skills, skill refinements, process changes, or infrastructure fixes). Feed high-value items into =CaptureLessonLearned= or directly into the Skill System Improvement project checklists.
+
+4. **Cross-Linking & Metadata Pass**
+   - Strengthen bidirectional links
+   - Ensure session summaries, status pulses, and project nodes are interlinked
+   - Standardize missing metadata (especially #+NODE-NAME)
+
+5. **Synthesize**
+   - Produce a short, high-density status pulse:
+     - What is newly true / durable
+     - What remains open or parked
+     - Structural or linking improvements made
+
+6. **Update Living Records**
+   - Draft precise updates for STATUS.md
+   - Propose any needed adjustments to BOOT.md
+   - Create or update org-roam nodes with full metadata
+
+7. **Recommendations**
+   - Offer 3–5 concrete, prioritized next actions
+   - Call out remaining metadata / cross-linking debt
+   - Note any drifted scripts, Emacs commands, or automation
+
+8. **Protected Rules Check**
+   Confirm no contradiction with:
+   - Near-airgapped posture for Withnail / Hermes
+   - Emacs-only editing preference
+   - Local-first operating style
+   - Named durable achievements
+
+9. **Hand-off**
+   - Deliver clean, copy-paste-ready blocks for Emacs
+   - Leave the knowledge base in a known-good, well-linked state
+
+* Inputs / Outputs
+
+- **Input**: Current session context + living knowledge base
+- **Output**:
+  - Status pulse
+  - Proposed STATUS.md / BOOT.md updates
+  - Concrete improvement recommendations (especially for the Skill System Improvement project)
+  - Clean hand-off blocks
+
+* Related
+
+- 01-core/memory/voight-kampff-protocol.org (canonical protocol text)
+- 03-projects/skill-system-improvement/SkillSystemImprovementOverview.org
+- 08-skills/GenerateTsuiokuNodeText.org
+- 08-skills/CreateNewSkill.org
+- CaptureLessonLearned (to be created)
+
+* Failure modes / Notes
+
+- Skipping the Session Action Review reduces the value of the protocol for continuous skill improvement.
+- Always prefer small, focused commits when applying the resulting updates.
+- The skill itself should be refined via the Skill System Improvement learning cycle.
