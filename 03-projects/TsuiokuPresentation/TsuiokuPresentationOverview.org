@@ -1,0 +1,46 @@
+:PROPERTIES:
+:ID:       59bfaa26-a040-4e61-9868-573ddcd6d0df
+:END:
+#+AUTHOR: George Taylor + Grok
+#+CATEGORY: project
+#+CREATED: [2026-08-17 Mon]
+#+LAST_MODIFIED: [2026-08-17 Mon]
+#+TITLE: Tsuioku Presentation Overview
+#+NODE-NAME: TsuiokuPresentationOverview
+#+FILETAGS: :project:presentation:tsuioku:sitelet:
+#+DESCRIPTION: Narrative presentation of how the Tsuioku knowledge base was built, from Pi friction to structured memory and Emacs integration.
+
+* Purpose
+
+Document and present the origin story of Tsuioku: the motivations (Roemmele, ZHO, Raspberry Pi), the debugging friction that made portable memory necessary, the successive strategies that were tried, the influences (Karpathy, Roam, InfraNodus), the construction of the three control surfaces, and the deliberate choice of Emacs over Obsidian.
+
+* Artifacts
+
+- PowerPoint version: =Tsuioku-Knowledge-Base.pptx= (same directory)
+- Sitelet (preferred long-term form): =sitelet/= (self-contained HTML + CSS)
+
+* Narrative Arc (12 sections)
+
+1. The Spark — Roemmele, Zero Human Company, Raspberry Pi
+2. The Hard Reality — setting up Withnail on the Pi
+3. The Core Problem — knowledge that cannot travel dies
+4. Early Strategies — specs as prompts → memory files → multiple projects
+5. Standing on Shoulders — Karpathy, Roam approach, InfraNodus
+6. Construction of Tsuioku — BOOT / STRUCTURE / STATUS
+7. Current Structure — the numbered layout
+8. Metadata & Automation — standardization + reducing drudgery
+9. Emacs over Obsidian — why the integration matters
+10. What Compounded — friction as data, structure enables agents, skills close the loop
+11–12. Closing
+
+* Design Choices
+
+- Dark technical aesthetic
+- Local-first (sitelet has zero external dependencies)
+- Sitelet preferred over PPTX for version control and future agent readability
+
+* Related
+
+- [[file:TsuiokuPresentationCurrentState.org][TsuiokuPresentationCurrentState]]
+- [[file:~/local-side/STATUS.md][STATUS.md]]
+- [[file:~/local-side/STRUCTURE.md][STRUCTURE.md]]
