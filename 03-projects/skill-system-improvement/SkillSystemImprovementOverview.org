@@ -1,0 +1,73 @@
+:PROPERTIES:
+:ID:       eacd1732-d1b6-476e-8bff-3c4e59a43a95
+:END:
+#+AUTHOR: George Taylor + Grok
+#+CATEGORY: project
+#+CREATED: [2026-08-16 Sun]
+#+LAST_MODIFIED: [2026-08-16 Sun]
+#+TITLE: Skill System Improvement — Project Overview
+#+NODE-NAME: SkillSystemImprovementOverview
+#+FILETAGS: :project:skills:tsuioku:automation:quality:
+#+DESCRIPTION: Project to design, implement, audit, and continuously improve the Tsuioku skill library (08-skills/) so that repeated work becomes reliable, high-quality, and low-friction.
+
+* Purpose
+
+Build and maintain a focused, high-signal skill library under =08-skills/= that automates, ensures quality, and simplifies recurring work across Tsuioku, Withnail/Hermes, Tarot Today, ZHO/HPC ingest, and document projects.
+
+Skills follow current best practices: modular, single-purpose, explicit triggers + “NOT FOR” boundaries, progressive disclosure, human-expertise-first, and lifecycle management (create → use → measure → refine → promote/deprecate).
+
+* Current State (2026-08-16)
+
+- Only two skills exist: =CreateNewSkill= and =GenerateTsuiokuNodeText=.
+- =GenerateTsuiokuNodeText= is the reference implementation for paste-ready nodes.
+- No formal audit, usage tracking, or refinement loop yet.
+- Voight-Kampff Protocol v4.0 does not yet include a thorough session-action review step.
+
+* Initial Action Checklists
+
+** Tier 1 — Core Tsuioku Skills
+- [ ] Draft and finalize =IngestHighProteinSource=
+- [ ] Draft and finalize =UpdateProjectStatus=
+- [ ] Draft and finalize =VoightKampffSessionClose= (enhanced)
+- [ ] Draft and finalize =OrgRoamCrossLinkAudit=
+- [ ] Draft and finalize =SelectiveKnowledgeExposure=
+
+** Tier 2 — Agent / Withnail Skills
+- [ ] Draft and finalize =WithnailTaskBrief=
+- [ ] Draft and finalize =HermesHealthPulse=
+- [ ] Draft and finalize =AirgappedSkillInvocation=
+
+** Tier 3 — Project-Specific Skills
+- [ ] Draft and finalize =TarotTodayImageValidation=
+- [ ] Draft and finalize =TarotTodayReadingGeneration=
+- [ ] Draft and finalize =RentalAgreementDraftReview=
+- [ ] Draft and finalize =CustomDeckPrintPrep=
+
+** Tier 4 — Meta / Learning Cycle Skills
+- [ ] Draft and finalize =SkillHealthAudit=
+- [ ] Draft and finalize =CaptureLessonLearned=
+- [ ] Draft and finalize =SkillRefinementLoop=
+- [ ] Draft and finalize =SkillsIndexMaintainer=
+
+** Infrastructure & Process
+- [ ] Harden =my/org-roam-finalize-place-id-commit= (force org-mode + reliable db-sync)
+- [ ] Enhance Voight-Kampff Protocol with thorough chat-session action review + improvement recommendations
+- [ ] Create living Skills Index node under =08-skills/=
+- [ ] Establish quarterly SkillHealthAudit cadence
+- [ ] Document the learning cycle (Capture → Extract → Critique/Score → Human Gate → Promote → Measure)
+
+* Learning Cycle (to be encoded in skills)
+
+1. After significant sessions or failures → run =CaptureLessonLearned=
+2. When patterns repeat → propose skill edit via =SkillRefinementLoop= (produce → critique with score + gaps → refine)
+3. Human (or explicit Withnail approval) gate before promotion
+4. Measure usage / success; run =SkillHealthAudit= periodically
+5. Deprecate or rewrite skills that no longer improve outcomes
+
+* Related
+
+- [[id:GenerateTsuiokuNodeText][GenerateTsuiokuNodeText]]
+- [[id:CreateNewSkill][CreateNewSkill]]
+- 01-core/memory/voight-kampff-protocol.org
+- 02-infrastructure/emacs/forgrok-org-helpers.el
+- STRUCTURE.md / BOOT.md (will need updates once the project directory is live)
