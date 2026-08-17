@@ -135,7 +135,28 @@
 - Wait for new credit card → add small OpenRouter credit → re-run single-card tests with a stronger vision model (Gemini 2.5 Flash recommended).
 - Once recognition is stable, add automatic descriptive renaming and the progressive validation rules (count, foreign cards, layout, lighting, etc.).
 
+Final Status Pulse — 2026-08-17 01:28 AM
+What is now durable
 
+Skill System is live and indexed:
+6 skills under 08-skills/
+SkillsIndex present
+Learning cycle entry points executable (CaptureLessonLearned, VoightKampffSessionClose, UpdateProjectStatus)
+
+Voight-Kampff Protocol at v4.1 (Session Action Review mandatory)
+Finalize helper hardened and the stray-backslash bug fixed
+BOOT.md and STATUS.md both updated and pushed
+08-skills now included in my/org-roam-extra-roots
+
+Remaining small items (non-blocking)
+
+Restart Emacs (or re-evaluate the defvar + org-roam-db-sync) so the new extra-root is fully active in the running session
+A few Tier-2/3 skills still on the Skill System Improvement checklist (IngestHighProteinSource, SkillRefinementLoop, etc.)
+Tarot Today still waiting on OpenRouter credits
+
+Overall
+The knowledge base is in a clean, coherent, and significantly more automated state than it was at the start of the evening. The core meta-skill loop is working.
+Good stopping point.
 
 ## 5. Next Actions (suggested)
 
