@@ -44,7 +44,7 @@ On a normal call:
 Signals an error if the keywords are missing or the buffer is not Org."
   (interactive "P")
   (unless (derived-mode-p 'org-mode)
-    (user-error "Buffer is not in Org mode"))
+    (org-mode"))
 
   (let* ((proposed-path (my/--extract-keyword "PROPOSED_PATH"))
          (commit-msg    (my/--extract-keyword "COMMIT_MSG"))
@@ -94,13 +94,14 @@ Signals an error if the keywords are missing or the buffer is not Org."
       (goto-char (point-min))
       (org-id-get-create)
       (save-buffer)
-
-
       
       ;; Update roam DB
       (if (fboundp 'org-roam-db-update-file)
           (org-roam-db-update-file)
         (org-roam-db-sync))
+
+      ;; Optional extra safety (especially useful on first creation of a new node):
+      (org-roam-db-sync)
 
       ;; Stage + commit
       (let ((default-directory my/forgrok-repo-root))
