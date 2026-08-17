@@ -1,0 +1,114 @@
+:PROPERTIES:
+:ID:       28cbcf8f-9874-4349-bfe6-265d32fc9545
+:END:
+#+AUTHOR: George Taylor + Grok
+#+CATEGORY: project
+#+CREATED: [2026-08-16 Sun]
+#+LAST_MODIFIED: [2026-08-16 Sun]
+#+TITLE: Tarot Today — Project Update 2026-08-16 (Entrepreneurial Review)
+#+NODE-NAME: TarotTodayProjectUpdate20260816
+#+FILETAGS: :project:tarot:status:pricing:roadmap:
+#+DESCRIPTION: Consolidated status and product decisions from the 2026-08-16 session covering image validation, reading layer design, monetization, custom decks, and mobile distribution.
+
+* Baseline (still current)
+
+Live prototype remains the static Hugging Face Space:
+https://huggingface.co/spaces/gptix/tarot-today
+
+- Pure identification only (Rider-Waite names + upright/reversed).
+- Single-card and medium spreads (up to ~7 cards) reliable.
+- Celtic Cross still fails with empty response on free models.
+- 51 real-world test photographs collected 2026-08-10 and organized into 33 scenario categories.
+- Batch-testing script (~/bin/tarot-batch-test.py) exists; free vision models are rate-limited; paid models blocked pending OpenRouter credits.
+
+Source of truth for current behavior: [[id:20260808-tarot-today-current-state][TarotTodayCurrentState]]
+
+* Additional image problems identified (2026-08-14 session)
+
+Beyond the existing checks (no cards, non-tarot cards, wrong count, duplicates), the following should be detected:
+
+- Card orientation / inversion (critical for meaning).
+- Partial occlusion or cropping.
+- Extreme perspective / camera tilt.
+- Reflections, glare, or plastic sleeves.
+- Mixed or non-standard decks.
+- Table clutter / overlapping cards.
+- Strong lighting gradients or color casts.
+- Low resolution / heavy compression.
+- Multiple spreads in one image.
+
+Recommended pipeline: quality gate → instance detection + classification → orientation → consistency checks → confidence scoring. Fail gracefully with specific feedback.
+
+* Reading layer design
+
+Once a spread is validated, support:
+
+- Multiple lengths: Quick, Standard, Deep, Journal-style.
+- Multiple schools: Rider-Waite traditional, Marseille, Thoth, Psychological/Jungian, Modern therapeutic, Personal (user-history tuned).
+- Formats: plain text, structured markdown/HTML, audio (TTS), shareable image/PDF, later short video.
+- Attractive related images (public-domain RWS, style-transferred user cards, atmospheric backgrounds).
+
+* Feature prioritization
+
+High leverage (near-term):
+- Multiple reading lengths + 1–2 distinct interpretive voices.
+- Local (or optional cloud) save of spreads + readings.
+- Simple personal pattern analysis.
+
+Medium-term:
+- Private-deck fine-tuning / few-shot adaptation.
+- Group/family pattern views (opt-in).
+- Custom deck design helper.
+
+Later / monetization:
+- Premium visual packs.
+- Full custom-deck → print pipeline.
+
+* Custom decks
+
+Printing partners (2026):
+- MakePlayingCards (MPC) — best for prototypes (MOQ 1).
+- Shuffled Ink — US-based, small runs.
+- Acelion, PrintNinja, WJPC — larger commercial runs.
+
+Maker/DIY routes: home print + laminate, blank card stock + adhesive, local digital press, POD single decks, then offset at 200–500 units.
+
+* Mobile distribution
+
+Apple: $99/year Developer Program; iOS 26 SDK required; typical review 24–48 h (longer for novel AI features). Emphasize computer-vision + reflection journal angle to reduce “fortune-telling” scrutiny.
+
+Android: $25 one-time; AAB required; new personal accounts need 14-day closed test with ≥12 testers before production access. First submissions often 7–14 days.
+
+Practical path: high-quality PWA first, then native shells (Capacitor / Flutter / React Native) once recognition + reading quality are strong.
+
+* Acceptable price points (2026 market)
+
+Subscription (primary):
+- Monthly: $7.99 – $9.99
+- Yearly: $39.99 – $59.99 (recommended $49.99)
+
+One-time / Lifetime unlock: $49.99 – $69.99 (recommended $59.99)
+
+One-time upgrades:
+- Extra reading schools/depths: $4.99 – $9.99
+- Private deck training: $19.99 – $24.99
+- Visual packs: $2.99 – $7.99
+
+Extras / credits: $1.99 – $4.99 per deep reading; credit packs $4.99 / $9.99 / $17.99
+
+Free tier must remain useful enough to form a habit (limited short readings + local history).
+
+* Suggested next actions
+
+1. Wait for OpenRouter credits → re-test single-card and medium spreads with stronger vision model (Gemini 2.5 Flash preferred).
+2. Harden image-quality + orientation detection.
+3. Ship 2–3 reading lengths + one alternative interpretive voice on the HF Space.
+4. Add local save of valid spreads + readings.
+5. Decide production path (continue static + OpenRouter vs light backend) and begin PWA / native wrapper planning.
+
+* Related nodes
+
+- [[id:20260808-tarot-today-current-state][TarotTodayCurrentState]]
+- [[id:20260808-tarot-today-project-overview][TarotTodayProjectOverview]]
+- [[id:c5e878f1-59c6-4731-ba1f-bbaf4baf52ec][TarotReadingApp]]
+- TarotTestImageScenarioRoster
