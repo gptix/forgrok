@@ -1,0 +1,56 @@
+:PROPERTIES:
+:ID:       beff996b-ec2f-47f6-a112-c042f7a02368
+:END:
+#+AUTHOR: George Taylor
+#+CATEGORY: Hardware
+#+CREATED: [2026-08-19]
+#+LAST_MODIFIED: [2026-08-19]
+#+TITLE: X230 Audio Silence After Reboot – Diagnosis, WirePlumber Fix, and Upgrade Notes
+#+NODE-NAME: X230AudioFixAndUpgradeNotes
+#+FILETAGS: :thinkpad:x230:audio:pipewire:wireplumber:hardware:repair:
+#+DESCRIPTION: Full resolution of post-reboot silence on Ubuntu 22.04 X230, confirmation of left-speaker hardware failure, and notes on low-cost T480 replacement.
+
+* Problem
+After a reboot the X230 (Ubuntu 22.04) had no sound. GNOME Settings → Sound showed a completely blank Output Device dropdown. System volume and Over-Amplification were fine.
+
+* Diagnosis
+- ALSA correctly detected the hardware: HDA Intel PCH + Realtek ALC269VC Analog.
+- =pactl list short sinks= showed only the null sink.
+- Default sink was the placeholder =@DEFAULT_SINK@=.
+- Session manager in use was the deprecated =pipewire-media-session= (PipeWire 0.3.48).
+- =pw-cli ls Device= and =pw-cli ls Node= showed only the camera and the null sink — no ALSA audio devices at all.
+- Journal for media-session was silent (no probing errors, just start/stop messages).
+
+* Resolution
+1. Installed WirePlumber:
+   #+begin_src bash
+   sudo apt install wireplumber
+   #+end_src
+2. Removed leftover symlink and switched session managers:
+   #+begin_src bash
+   sudo rm -f /etc/systemd/user/pipewire-session-manager.service
+   systemctl --user daemon-reload
+   systemctl --user disable --now pipewire-media-session
+   systemctl --user enable --now wireplumber
+   systemctl --user restart pipewire pipewire-pulse
+   #+end_src
+3. Result: =alsa_output.pci-0000_00_1b.0.analog-stereo= appeared immediately. GNOME Settings now correctly shows “Speakers – Built-in Audio” / “Analog Stereo Output”.
+
+* Current Audio State (2026-08-19)
+- Software path is healthy.
+- Right internal speaker works.
+- Left internal speaker is dead (confirmed: headphones produce correct stereo; ALSA mixer shows both channels at 100 % and unmuted).
+- Almost certainly a failed left speaker or its ribbon cable (common on aging X230s).
+- Random instantaneous full shutdowns also occur; may be related to the same cable/ribbon area under the palmrest.
+
+* Hardware Next Steps
+- Replacement speaker set (genuine 04W1412 left+right) costs $10–17.
+- Opening the machine to reseat the speaker cable + keyboard/palmrest ribbons is recommended (also may help the random shutdowns).
+
+* Upgrade Interest
+Considering a low-cost used replacement. Primary candidate is the ThinkPad T480:
+- 8th-gen Intel, dual-battery hot-swap, dual storage, up to 32 GB RAM, still highly repairable.
+- Current used prices (mid-2026): roughly $150–280 for solid i5/16 GB configurations.
+- Natural next step from the X230 while keeping classic ThinkPad repairability and Linux friendliness.
+
+Other cheap options noted: T470, X280, T490.
