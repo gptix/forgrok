@@ -1,0 +1,67 @@
+:PROPERTIES:
+:ID:       490c6355-de76-40ea-8b22-c95aff8988e7
+:END:
+
+#+ -- THIS FILE HAS NOT YET BEEN CONVERTED INTO AN ORG-ROAM NODE.
+# Next Steps:
+#+ [ ] paste into a clean Emacs buffer
+#+ [ ] make any changes, such as path at which to place file (default is usually great) or text of commit message, or general file content
+#+ [ ] Run C-c n F
+This text will be saved to the proposed path, a Roam ID will be generated, the file will be staged for pushing to github, then committed with the proposed message.
+This text will be deleted from the file during the 'C-c n F' function.
+Then, manually push to github. This is usually done by opening magit-status and executing 'P p'
+This should push the file (and others committed) to Tsuioku on github.
+############ THIS LINE AND ALL ABOVE WILL BE DELETED, WITH NEW :PROPERTIES: DRAWER STARTING AT VERY BEGINNING OF FILE ###################
+#+AUTHOR: Joji Teira, Marietta GA, @joji_teira
+#+CATEGORY: session
+#+CREATED: 2026-08-20
+#+LAST_MODIFIED: 2026-08-20
+#+TITLE: VK Summary – 2026-08-20 Video Transcript Pipeline & Tooling
+#+NODE-NAME: VK20260820VideoTranscriptPipelineAndTooling
+#+FILETAGS: :vk:session:transcript:pipeline:org-roam:skill:
+#+DESCRIPTION: Voight-Kampff summary node for the 2026-08-20 session covering the full video-to-transcript pipeline, analysis of Chris Koerner’s live stream, org-roam template improvements, and the update to the VK Session Close skill.
+#+EXECUTIVE_SUMMARY: Completed a full high-speed YouTube audio capture → transcription pipeline, analyzed Chris Koerner’s vibe-coding session (Replit + Claude + Stripe), established new org-roam node conventions including EXECUTIVE_SUMMARY, and updated the Voight-Kampff Session Close skill to emit durable summary nodes.
+
+* Session Identifier
+- Date: 2026-08-20
+- Trigger: Explicit “Voight-Kampff” at end of long working session
+- Machines involved: ThinkPad X230 + Raspberry Pi 5 (Hermes)
+
+* High-level Findings
+
+** Integrity
+- No contradiction with core operating principles (Emacs-only, local-first, near-airgapped Hermes/Withnail).
+- Large media files (.wav) correctly kept outside Tsuioku; only text transcripts are candidates for ingestion.
+
+** New Durable Capabilities
+- Repeatable Linux pipeline: high-speed browser playback → virtual sink isolation → ffmpeg record → atempo speed restore → faster-whisper transcription with word timestamps.
+- Clear storage policy: transcripts yes, raw audio no.
+- Updated org-roam generation template (instructional block + #+EXECUTIVE_SUMMARY:).
+- Voight-Kampff Session Close skill now requires emission of a summary node (Step 10).
+
+** Friction Observed
+- Python venv activation remains brittle when pyenv is active.
+- Long-running transcriptions on older hardware need better progress feedback and background handling.
+- The actual code change to =forgrok-org-helpers.el= for EXECUTIVE_SUMMARY support was designed but not yet applied on disk.
+
+* Concrete Actions Taken
+- Built, tested, and documented the full video → transcript pipeline on both X230 and Pi 5.
+- Produced and partially analyzed a multi-hour timestamped transcript of Chris Koerner’s live vibe-coding stream.
+- Extracted key tools: Replit, Claude/Claude Code, Stripe, tkopod.com.
+- Established preferred Tsuioku node template.
+- Updated and pushed =08-skills/VoightKampffSessionClose.org= (added Step 10, updated LAST_MODIFIED).
+
+* Recommendations Carried Forward
+1. Apply the EXECUTIVE_SUMMARY changes to =02-infrastructure/emacs/forgrok-org-helpers.el=.
+2. Decide retention policy for nodes under =07-sessions/vk/=.
+3. Consider a thin wrapper script for the most common capture + transcribe path.
+4. (Optional) Perform a tighter second pass on the Chris Koerner transcript focused on prompts and product decisions.
+
+* Related Nodes / Files
+- [[08-skills/VoightKampffSessionClose.org]]
+- [[02-infrastructure/emacs/forgrok-org-helpers.el]]
+- Pipeline documentation created earlier in the session
+- Chris Koerner transcript (external to repo for now)
+
+* Status at Close
+Knowledge base left in a clean, improved state. New conventions are documented and the VK skill itself was strengthened. Ready for the next cycle.
