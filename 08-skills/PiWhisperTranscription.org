@@ -1,0 +1,80 @@
+:PROPERTIES:
+:ID:       f1cb2bd2-226c-4c12-a721-83b66d086252
+:END:
+
+#+TITLE: Pi Whisper Transcription
+#+NODE-NAME: PiWhisperTranscription
+#+FILETAGS: :skill:pi5:whisper:transcription:media:local-first:
+#+ROAM_TAGS: skill pi hermes-pi whisper faster-whisper tmux
+#+DATE: 2026-08-20
+#+AUTHOR: George Taylor + Grok
+#+LAST_MODIFIED: [2026-08-20 Thu]
+#+CATEGORY: skill
+#+DESCRIPTION: Reusable skill to off-load long audio transcription jobs from the X230 to the Raspberry Pi 5 (hermes-pi) using faster-whisper, a logged Python script, and tmux so the job survives disconnects.
+#+EXECUTIVE_SUMMARY: Transfer audio → ensure venv + faster-whisper on Pi → run logged transcription under named tmux session → monitor / retrieve result. Designed for multi-GB files that thrash the X230 disk.
+
+* Purpose / When to use
+
+Use this skill whenever a long or large audio file (especially YouTube captures or multi-hour recordings) needs Whisper transcription and would overload the X230’s disk or CPU.
+
+The job runs entirely on hermes-pi. The X230 can be shut down or disconnected once the tmux session is started.
+
+* Preconditions
+
+- Tailscale is up and =hermes-pi= resolves.
+- You can SSH as =gt-hermes@hermes-pi=.
+- Audio file exists on the X230 (commonly under =~/Videos/=).
+- Preferred model size decided (default: =small=).
+
+* One-time setup (Pi)
+
+Only needed the first time or after a clean rebuild of the transcription environment.
+
+#+begin_src shell
+ssh gt-hermes@hermes-pi
+mkdir -p ~/transcription
+cd ~/transcription
+python3 -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
+pip install faster-whisper
+# optional: sudo apt install -y ffmpeg   # if not already present
+#+end_src
+
+* Standard workflow
+
+** 1. Transfer the audio (from X230)
+
+#+begin_src shell
+# Adjust source path and filename as needed
+scp /path/to/audio.wav gt-hermes@hermes-pi:~/transcription/
+#+end_src
+
+** 2. Create or update the runner script (on Pi)
+
+SSH in, then:
+
+#+begin_src shell
+cd ~/transcription
+source venv/bin/activate
+#+end_src
+
+Paste the following (edit =AUDIO= and =MODEL_SIZE= if needed):
+
+#+begin_src python
+#!/usr/bin/env python3
+"""Logged faster-whisper transcription for hermes-pi."""
+
+from faster_whisper import WhisperModel
+from datetime import datetime
+from pathlib import Path
+import time
+import sys
+
+AUDIO = Path("chris-vibe-coding-1x.wav")   # ← change per job
+MODEL_SIZE = "small"                       # tiny | base | small
+LOG = Path("transcription.log")
+OUT = Path("transcript.txt")               # or a more specific name
+
+def log(msg: str) -> None:
+    line = f"{datetime.now():%Y-%
