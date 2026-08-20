@@ -4,7 +4,7 @@
 #+AUTHOR: George Taylor + Grok
 #+CATEGORY: skill
 #+CREATED: [2026-08-17 Mon]
-#+LAST_MODIFIED: [2026-08-17 Mon]
+#+LAST_MODIFIED: [2026-08-20 Wed]
 #+TITLE: Voight-Kampff Session Close
 #+NODE-NAME: VoightKampffSessionClose
 #+FILETAGS: :skill:protocol:vk:session:quality:tsuioku:
@@ -71,7 +71,18 @@ It performs a living-knowledge health check and turns the session’s concrete w
    - Deliver clean, copy-paste-ready blocks for Emacs
    - Leave the knowledge base in a known-good, well-linked state
 
-* Inputs / Outputs
+10. **Emit VK Summary Node** (new, required for significant sessions)
+    After the hand-off blocks are ready, generate a short org-roam node that captures:
+    - Date and session identifier
+    - High-level findings (integrity, drift, friction)
+    - Concrete actions taken or recommended
+    - Any STATUS.md / BOOT.md changes proposed
+    - Links to related nodes
+
+    The node should use the current Tsuioku template (including #+EXECUTIVE_SUMMARY:)
+    and be ready for the operator to run C-c n F.
+
+    Default proposed path: 07-sessions/vk/VK-YYYY-MM-DD-<short-slug>.org* Inputs / Outputs
 
 - **Input**: Current session context + living knowledge base
 - **Output**:
@@ -93,3 +104,4 @@ It performs a living-knowledge health check and turns the session’s concrete w
 - Skipping the Session Action Review reduces the value of the protocol for continuous skill improvement.
 - Always prefer small, focused commits when applying the resulting updates.
 - The skill itself should be refined via the Skill System Improvement learning cycle.
+  - Skipping the final VK Summary Node step loses the long-term audit trail that makes future Voight-Kampff runs more powerful.
