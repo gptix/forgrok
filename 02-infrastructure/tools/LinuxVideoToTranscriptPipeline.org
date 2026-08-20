@@ -1,0 +1,183 @@
+:PROPERTIES:
+:ID:       20d830bb-3763-4796-959e-a699a7c028bc
+:END:
+
+#+AUTHOR: Joji Teira, Marietta GA, @joji_teira
+#+CATEGORY: Infrastructure
+#+CREATED: 2026-08-20
+#+LAST_MODIFIED: 2026-08-20
+#+TITLE: Linux Video → Audio Capture → Timestamped Transcript Pipeline
+#+NODE-NAME: LinuxVideoToTranscriptPipeline
+#+FILETAGS: :infrastructure:audio:transcription:workflow:pi5:x230:
+#+DESCRIPTION: Complete, reusable process to turn any modern Linux distribution into a machine capable of the same “play video at high speed → isolate audio via virtual sink → record → restore speed → transcribe with faster-whisper → deliver clean text to Grok” cycle that was proven on the Pi 5 and X230.
+
+* Purpose
+
+This node documents everything required to make a Linux machine (Ubuntu 22.04/24.04, Debian, or similar) perform the full cycle:
+
+1. Play a video (YouTube or local) at high speed
+2. Isolate only that application’s audio with a virtual sink
+3. Record high-quality audio
+4. Restore normal speed
+5. Produce a clean, timestamped transcript with faster-whisper
+6. Move the transcript to the X230 (or another analysis machine)
+7. Hand it to Grok for structured analysis
+
+The workflow was first proven on the Raspberry Pi 5 (Hermes) and the ThinkPad X230.
+
+* Target Capability
+
+A Linux box that can reliably execute:
+
+Visit video URL → high-speed playback → virtual-sink isolation → record → speed restore → transcribe → deliver .txt to X230 → prompt Grok.
+
+* Required Packages
+
+** Core audio & recording
+- pulseaudio-utils (or pipewire-pulse)
+- pavucontrol
+- ffmpeg
+- alsa-utils (optional but useful)
+
+** Python / transcription
+- python3
+- python3-venv
+- python3-pip
+- (faster-whisper will be installed inside a venv)
+
+** Optional but recommended
+- tmux or screen (for long-running transcription)
+- yt-dlp (fallback when browser capture is inconvenient)
+
+* Browser Extensions (Firefox recommended for isolation)
+
+- Video Speed Controller (or “Play Faster”)
+  - Allows speeds well above the native 2× limit
+  - Useful for reducing wall-clock recording time
+
+* Inventory Current State
+
+Run these on the target machine:
+
+#+BEGIN_SRC shell
+# Audio stack
+pactl info | grep "Server Name"
+systemctl --user status pipewire pipewire-pulse pulseaudio --no-pager
+
+# Key packages
+dpkg -l | grep -E "ffmpeg|pavucontrol|pulseaudio|pipewire|python3-venv"
+
+# Python
+python3 --version
+which python3
+#+END_SRC
+
+* Upgrade & Install
+
+** Ubuntu / Debian family
+
+#+BEGIN_SRC shell
+sudo apt update
+sudo apt install -y pavucontrol ffmpeg pulseaudio-utils python3-venv python3-pip tmux
+#+END_SRC
+
+** Create the transcription virtual environment (do this once)
+
+#+BEGIN_SRC shell
+python3 -m venv ~/whisper-venv
+~/whisper-venv/bin/pip install --upgrade pip
+~/whisper-venv/bin/pip install faster-whisper
+#+END_SRC
+
+* End-to-End Task List
+
+** 1. Preparation
+- [ ] Confirm video URL is playable
+- [ ] Open Firefox (keep other browsers for normal use)
+- [ ] Install / enable high-speed extension if needed
+
+** 2. Create virtual sink
+#+BEGIN_SRC shell
+pactl load-module module-null-sink \
+  sink_name=YT_Only \
+  sink_properties=device.description="YouTube_Firefox_Only"
+#+END_SRC
+
+- [ ] (Optional) Add loopback so you can still hear the audio:
+#+BEGIN_SRC shell
+pactl load-module module-loopback source=YT_Only.monitor sink=@DEFAULT_SINK@
+#+END_SRC
+
+** 3. Play & isolate
+- [ ] Open the video in Firefox
+- [ ] Set highest practical playback speed (2×–4×)
+- [ ] In pavucontrol → Playback tab, move **only Firefox** to “YouTube_Firefox_Only”
+
+** 4. Record
+#+BEGIN_SRC shell
+ffmpeg -f pulse -i YT_Only.monitor -ac 2 -ar 44100 ~/Videos/video-capture-Nx.wav
+#+END_SRC
+
+- [ ] Stop with `q` when finished
+
+** 5. Restore normal speed
+(Example for 3× recording)
+#+BEGIN_SRC shell
+ffmpeg -i ~/Videos/video-capture-3x.wav -filter:a "atempo=0.5,atempo=0.6667" ~/Videos/video-capture-1x.wav
+#+END_SRC
+
+** 6. Transcribe
+#+BEGIN_SRC shell
+~/whisper-venv/bin/python -c '
+from faster_whisper import WhisperModel
+model = WhisperModel("small", device="cpu", compute_type="int8")  # or "medium"
+segments, info = model.transcribe(
+    "/home/'"$USER"'/Videos/video-capture-1x.wav",
+    beam_size=5,
+    word_timestamps=True,
+    vad_filter=True
+)
+with open("/home/'"$USER"'/Videos/video-capture-transcript.txt", "w") as f:
+    f.write(f"Language: {info.language}  Probability: {info.language_probability:.2f}\n\n")
+    for segment in segments:
+        f.write(f"[{segment.start:7.2f} → {segment.end:7.2f}] {segment.text.strip()}\n")
+        if segment.words:
+            for w in segment.words:
+                f.write(f"    {w.start:7.2f}-{w.end:7.2f}  {w.word}\n")
+print("Done → transcript written")
+'
+#+END_SRC
+
+** 7. Move transcript to X230
+#+BEGIN_SRC shell
+scp user@remote-host:~/Videos/video-capture-transcript.txt ~/Videos/
+# or use Tailscale / rsync / USB as preferred
+#+END_SRC
+
+** 8. Hand to Grok
+- [ ] Open the transcript in Emacs on the X230
+- [ ] Prompt Grok with a clear request, e.g.:
+  - “Extract chronological work steps”
+  - “List every tool, service, website and library mentioned with timestamps”
+  - “Summarize the customer-finding attempts”
+
+** 9. Cleanup
+#+BEGIN_SRC shell
+pactl list short modules | grep -E 'null-sink|loopback'
+# then: pactl unload-module <id>
+#+END_SRC
+
+* Notes & Lessons from Pi 5 / X230 Runs
+
+- Prefer Firefox for clean application-level isolation in pavucontrol.
+- Recording at 3× and restoring with chained atempo filters works well.
+- On older hardware (X230) start with the “small” Whisper model; move to “medium” only if quality is insufficient.
+- Always run long transcriptions inside tmux/screen on remote machines.
+- Keep the virtual sink name consistent (“YT_Only”) so scripts stay simple.
+
+* Future Improvements
+
+- Script the entire capture + restore + transcribe sequence
+- Add a simple wrapper that accepts a YouTube URL and speed factor
+- Explore pure PipeWire native loopback for newer distributions
+- Consider whisper.cpp as a lighter alternative on very constrained machines
