@@ -158,6 +158,15 @@ Overall
 The knowledge base is in a clean, coherent, and significantly more automated state than it was at the start of the evening. The core meta-skill loop is working.
 Good stopping point.
 
+## Voight-Kampff — 2026-08-20
+- Session-Close skill executed (remote).
+- Status: PASS (preference integrity + project vector alignment confirmed).
+- Major work: Off-loaded 2.7 GB Whisper transcription to Pi 5 under tmux; job independent of X230.
+- New durable pattern: ~/transcription + faster-whisper + logged script + named tmux session.
+- Secondary: Explored client-side X “Account based in” filter; multiple public extensions already exist; pure hide is low–moderate ToS risk.
+- Next local: Retrieve transcript when finished; consider formalizing Pi transcription skill.
+
+
 ## 5. Next Actions (suggested)
 
 - Continue sequential Roemmele essays (008+)
