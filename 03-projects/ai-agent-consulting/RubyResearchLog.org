@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       826d0fa5-55c4-4b43-8b7a-c0c0db461439
+:END:
+
+#+AUTHOR: George Taylor + Grok
+#+CATEGORY: Projects
+#+CREATED: [2026-08-20]
+#+LAST_MODIFIED: [2026-08-20]
+#+TITLE: Ruby Research Log — Private AI Agent Consulting
+#+NODE-NAME: RubyResearchLog
+#+FILETAGS: :project:research:ruby:ai-agent-consulting:revenue:
+#+DESCRIPTION: Living research log for the agentic customer-discovery and offer-design loop targeting local-first / private AI agent implementation services.
+
+* Goal
+Identify and rank the strongest customer segments (Atlanta metro + Southeast + Japan-related professional services) that have both high need and willingness to pay for local-first / private AI agent implementations. For the top segments, extract competitor pricing signals, high-value product/service offers we can credibly deliver, and concrete first-outreach approaches. Produce a shortlist of 15–20 specific firm types or named targets ready for further qualification.
+
+* Current Status
+Log initialized 2026-08-20. First research iteration about to begin.
+
+* Iteration Log
