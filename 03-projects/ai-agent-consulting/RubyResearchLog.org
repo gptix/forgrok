@@ -18,3 +18,7 @@ Identify and rank the strongest customer segments (Atlanta metro + Southeast + J
 Log initialized 2026-08-20. First research iteration about to begin.
 
 * Iteration Log
+**Iteration 1 — 2026-08-20**
+Task: Landscape scan of segments, competitors, and offer signals.
+Key findings: Legal (esp. real estate/business) in Atlanta metro is strongest near-term segment. Setup fees from ~$2.5k. Strong privilege/ROI framing already exists. Japan-related track is secondary but differentiated.
+Updated hypotheses: A (legal small/mid) high confidence; B (real estate sub-niche) medium; C (Japan-related) exploratory.
