@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       2ce776b1-fad8-4973-b364-19b35a8693af
+:END:
+
+#+TITLE: VK 2026-08-20 – Pi Transcription Offload & Session Close
+#+NODE-NAME: VK20260820PiTranscriptionAndSessionClose
+#+FILETAGS: :vk:session:pi5:whisper:transcription:tsuioku:
+#+ROAM_TAGS: voight-kampff session-close pi transcription
+#+DATE: 2026-08-20
+#+AUTHOR: George Taylor + Grok
+#+LAST_MODIFIED: [2026-08-20 Thu]
+#+DESCRIPTION: Session close covering successful offload of large Whisper job to hermes-pi and research into client-side X country filtering.
+#+EXECUTIVE_SUMMARY: Off-loaded 2.7 GB YouTube audio transcription to Pi 5 under tmux; established reusable local pattern. Also assessed ToS risk of “Account based in” browser filters (low–moderate for pure client-side hide).
