@@ -1,17 +1,6 @@
 :PROPERTIES:
 :ID:       490c6355-de76-40ea-8b22-c95aff8988e7
 :END:
-
-#+ -- THIS FILE HAS NOT YET BEEN CONVERTED INTO AN ORG-ROAM NODE.
-# Next Steps:
-#+ [ ] paste into a clean Emacs buffer
-#+ [ ] make any changes, such as path at which to place file (default is usually great) or text of commit message, or general file content
-#+ [ ] Run C-c n F
-This text will be saved to the proposed path, a Roam ID will be generated, the file will be staged for pushing to github, then committed with the proposed message.
-This text will be deleted from the file during the 'C-c n F' function.
-Then, manually push to github. This is usually done by opening magit-status and executing 'P p'
-This should push the file (and others committed) to Tsuioku on github.
-############ THIS LINE AND ALL ABOVE WILL BE DELETED, WITH NEW :PROPERTIES: DRAWER STARTING AT VERY BEGINNING OF FILE ###################
 #+AUTHOR: Joji Teira, Marietta GA, @joji_teira
 #+CATEGORY: session
 #+CREATED: 2026-08-20
