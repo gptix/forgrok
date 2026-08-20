@@ -7,16 +7,21 @@ Expects these keywords near the top of the buffer:
   #+COMMIT_MSG: Short commit message
   #+EXECUTIVE_SUMMARY: One-paragraph summary of the node (recommended)
 
+Also expects the standard instructional block ending with the sentinel line:
+
+  ############ THIS LINE AND ALL ABOVE WILL BE DELETED, WITH NEW :PROPERTIES: DRAWER STARTING AT VERY BEGINNING OF FILE ###################
+
 With a prefix argument (C-u) perform a dry-run only: show what would
 happen and leave the buffer untouched.
 
 On a normal call:
-1. Extract the temporary keywords (PROPOSED_PATH and COMMIT_MSG are removed).
+1. Extract the temporary keywords.
 2. Show a confirmation dialog with path, commit message, and executive summary.
-3. Ensure the target directory exists and write/move the file.
-4. Ensure a file-level :ID: exists.
-5. Save and update the org-roam DB for this file.
-6. Stage and commit (does NOT push).
+3. Delete the temporary headers + entire instructional block (up to and including the sentinel).
+4. Ensure the target directory exists and write/move the file.
+5. Ensure a file-level :ID: exists.
+6. Save and update the org-roam DB for this file.
+7. Stage and commit (does NOT push).
 
 Signals an error if the required keywords are missing or the buffer is not Org."
   (interactive "P")
@@ -42,15 +47,21 @@ Signals an error if the required keywords are missing or the buffer is not Org."
         (message "DRY-RUN\n  Would place at: %s\n  Commit msg: %s\n  Executive summary: %s\n  (buffer left unchanged)"
                  full-path commit-msg (or exec-summary "(none)"))
 
-      ;; Confirmation – now includes executive summary
+      ;; Confirmation – includes executive summary
       (unless (yes-or-no-p
                (format "Finalize and commit?\n  Path: %s\n  Msg:  %s\n  Summary: %s\n"
                        full-path commit-msg (or exec-summary "(none)")))
         (user-error "Aborted by user"))
 
-      ;; Remove only the temporary keywords
-      (my/--extract-keyword "PROPOSED_PATH" t)
-      (my/--extract-keyword "COMMIT_MSG" t)
+      ;; ---------------------------------------------------------------
+      ;; Delete temporary headers + entire instructional block
+      ;; Everything from point-min up to and including the sentinel line
+      ;; ---------------------------------------------------------------
+      (goto-char (point-min))
+      (when (re-search-forward
+             "^############ THIS LINE AND ALL ABOVE WILL BE DELETED.*$"
+             nil t)
+        (delete-region (point-min) (min (point-max) (1+ (line-end-position)))))
 
       ;; Ensure parent directory
       (make-directory (file-name-directory full-path) t)
@@ -65,7 +76,7 @@ Signals an error if the required keywords are missing or the buffer is not Org."
          (t
           (save-buffer))))
 
-      ;; Guarantee file-level ID
+      ;; Guarantee file-level ID (must be at the very top of the file)
       (goto-char (point-min))
       (org-id-get-create)
       (save-buffer)
