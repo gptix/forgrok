@@ -1,0 +1,91 @@
+:PROPERTIES:
+:ID:       ff912323-691d-40c4-9963-7a6f2bc4687a
+:END:
+
+#+AUTHOR: Joji Teira, Marietta GA, @joji_teira
+#+CATEGORY: Knowledge
+#+CREATED: 2026-08-20
+#+LAST_MODIFIED: 2026-08-20
+#+TITLE: Learnings from Chris Koerner “Vibe coding an app and finding customers LIVE” Transcript
+#+NODE-NAME: ChrisKoernerVibeCodingLiveLearnings
+#+FILETAGS: :transcript:vibe-coding:replit:stripe:workflow:analysis:
+#+DESCRIPTION: Summary of what was learned from the full timestamped transcript of Chris Koerner’s live vibe-coding session, plus decisions on what to store in Tsuioku and how future transcripts should be prepared.
+
+* STATUS
+
+NOT YET FULLY PROCESSED
+
+Next steps:
+- [ ] Decide whether deeper extraction (full prompt log, exact feature list, customer-finding attempts) is still wanted
+- [ ] Consider turning the best sections into standalone actionable nodes
+- [ ] Update the transcription Python script so future runs emit ready-to-ingest org-roam nodes
+
+* Core Learnings
+
+** What Chris actually did
+- Live-streamed simultaneously to X, Facebook, and YouTube.
+- Used a ~$20/month vibe-coding environment (primarily Replit, with heavy Claude / Claude Code usage).
+- Goal: build a real app *and* find paying customers in the same session without leveraging his existing audience.
+- Integrated Stripe for payments.
+- Ended by pushing people hard to tkopod.com for email capture so the experiment could continue in a later live session.
+
+** Technical stack observed
+- Primary environment: Replit
+- Model / agent layer: Claude (Anthropic)
+- Payments: Stripe
+- Other tools mentioned: Typeform, Zapier
+- No strong evidence of a separate managed Postgres or heavy external hosting; much of the work stayed inside Replit’s environment.
+
+** Process observations
+- High-speed (3×) browser recording + virtual sink isolation + speed restoration + faster-whisper produced a usable, timestamped transcript.
+- The pipeline is repeatable on both the Pi 5 and the X230.
+- Long transcriptions should always be run inside tmux/screen on remote machines.
+
+* Decisions on Storage in Tsuioku
+
+** What should be stored
+- The **transcript text** (or, better, a cleaned org-mode version of it) → Yes.
+- The raw .wav audio file → No.
+
+Rationale:
+- Transcripts are high-protein, searchable, and compound over time.
+- Large media files bloat the knowledge base, are hard to diff, and belong in a separate media store (or stay on the machine that produced them).
+
+Recommendation: Keep the .wav on the machine that recorded it (or a dedicated media location). Ingest only the text (preferably already turned into a proper org node).
+
+* Should the Python transcription script emit an org-roam-ready node?
+
+Yes.
+
+Ideal future behaviour:
+- The script should optionally write a file that already contains:
+  - The two temporary headers (`#+PROPOSED_PATH:` and `#+COMMIT_MSG:`)
+  - Standard org-roam keywords
+  - A clear STATUS / “NOT YET PROCESSED” block at the top
+  - Cleaned segment timestamps
+  - The full transcript body
+
+This would let `C-c n F` (or the existing finalize function) pick it up with almost no manual editing.
+
+* Recommended visible instruction for future transcripts
+
+Every raw transcript node (or the top of the generated file) should begin with a highly visible block such as:
+
+#+BEGIN_QUOTE
+NOT YET PROCESSED
+
+Next steps:
+- [ ] Skim for key tools, decisions, and outcomes
+- [ ] Extract chronological work steps if valuable
+- [ ] Pull concrete tools/services/websites with timestamps
+- [ ] Decide whether deeper analysis or a summary node is warranted
+- [ ] Update LAST_MODIFIED and remove this block when done
+#+END_QUOTE
+
+This makes the state obvious to both humans and agents.
+
+* Open Questions / Possible Follow-ups
+
+- Do we want a second, deeper pass that reconstructs the actual sequence of prompts Chris used?
+- Should we create a lightweight “vibe-coding session template” org node for future live experiments?
+- Is it worth teaching the transcription script to also emit a short executive summary automatically?
