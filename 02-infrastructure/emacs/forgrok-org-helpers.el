@@ -1,3 +1,42 @@
+;;; forgrok-org-helpers.el --- Helpers for finalizing org-roam nodes in the forgrok knowledge base -*- lexical-binding: t; -*-
+
+;;; Commentary:
+;; Provides my/org-roam-finalize-place-id-commit and supporting helpers.
+;; Used to turn temporary draft nodes (with #+PROPOSED_PATH / #+COMMIT_MSG)
+;; into permanent org-roam files with IDs, correct location, and a git commit.
+
+;;; Code:
+
+(defun my/--extract-keyword (keyword)
+  "Extract the value of #+KEYWORD: from the current buffer.
+
+KEYWORD should be the name without the leading '#+' (e.g. \"PROPOSED_PATH\").
+
+Handles:
+- Leading/trailing whitespace
+- Case-insensitive matching of the keyword
+- Values that continue on subsequent lines (until the next #+KEYWORD or blank line)
+- Returns nil if the keyword is not found
+
+The search is limited to the first 200 lines of the buffer for safety."
+  (save-excursion
+    (goto-char (point-min))
+    (let ((case-fold-search t)          ; case-insensitive
+          (limit (save-excursion
+                   (forward-line 200)
+                   (point)))
+          (re (format "^#\\+%s:[ \t]*\\(.*\\)$" (regexp-quote keyword))))
+      (when (re-search-forward re limit t)
+        (let ((value (match-string-no-properties 1))
+              (start (match-end 0)))
+          ;; Collect continuation lines (non-blank, non-keyword lines)
+          (goto-char start)
+          (while (and (not (eobp))
+                      (looking-at-p "^[ \t]*\\([^#[:space:]].*\\)$"))
+            (setq value (concat value " " (match-string-no-properties 1)))
+            (forward-line 1))
+          (string-trim value))))))
+
 (defun my/org-roam-finalize-place-id-commit (&optional dry-run)
   "Finalize the current Org buffer for the forgrok knowledge base.
 
@@ -99,3 +138,6 @@ Signals an error if the required keywords are missing or the buffer is not Org."
 
       (message "Finalized → %s | ID ready | DB updated | committed (push manually)"
                proposed-path))))
+
+(provide 'forgrok-org-helpers)
+;;; forgrok-org-helpers.el ends here
