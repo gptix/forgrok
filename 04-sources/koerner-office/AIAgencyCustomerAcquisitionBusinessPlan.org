@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       4dc51185-5785-4f0b-bfef-5dbd542aade9
+:END:
+#+PROPOSED_PATH: 04-sources/koerner-office/AIAgencyCustomerAcquisitionBusinessPlan.org
+#+COMMIT_MSG: Ingest AI Agency Customer Acquisition plan for go-to-market tactics relevant to Atlanta professional services
+
+#+AUTHOR: The Koerner Office (John Cheney / Jennipi episode)
+#+CATEGORY: Sources
+#+CREATED: [2026-08-21]
+#+LAST_MODIFIED: [2026-08-21]
+#+TITLE: AI Agency Customer Acquisition Business Plan
+#+NODE-NAME: AIAgencyCustomerAcquisitionBusinessPlan
+#+FILETAGS: :source:ai:consulting:koerner:acquisition:marketing:
+#+DESCRIPTION: Practical customer acquisition channels and tactics (local media, partnerships, cold outreach, building in public) useful for reaching Atlanta small law firms and related professional groups.
