@@ -1,8 +1,8 @@
 :PROPERTIES:
-:ID:       628a421a-5be4-48eb-abde-a22bdee1b9bb
+:ID:       4789d01e-08e1-4969-a0f0-bfcaf17ed65a
 :END:
 #+PROPOSED_PATH: 04-sources/free-ai-curriculum/FreeAiMlCoursesIndex.org
-#+COMMIT_MSG: Add FreeAiMlCoursesIndex – master index for ShikamaruTsai free AI/ML course collection
+#+COMMIT_MSG: Add FreeAiMlCoursesIndex with landmark course links – ShikamaruTsai free AI/ML collection
 #+AUTHOR: George Taylor
 #+CATEGORY: sources
 #+CREATED: [2026-08-21 Fri]
@@ -10,13 +10,13 @@
 #+TITLE: Free AI/ML Courses Index
 #+NODE-NAME: FreeAiMlCoursesIndex
 #+FILETAGS: :high-protein:education:ai-curriculum:free:source:
-#+DESCRIPTION: Master index for the large curated collection of free university-level AI and machine learning courses compiled by @shikamarutsai (2026-08-16). High-protein educational source material.
+#+DESCRIPTION: Master index for the large curated collection of free university-level AI and machine learning courses compiled by @shikamarutsai (2026-08-16). Includes direct links to the strongest landmark courses.
 
 * Overview
 
 This node is the entry point for a high-value collection of free, publicly available university courses and lecture series in artificial intelligence and machine learning.
 
-The material was compiled by @shikamarutsai and published on X on 2026-08-16 (post ID 2088918066310652358). The author stated the motivation clearly: frustration with fragmented YouTube playlists, dead links, paywalled university content, and expensive commercial bootcamps. The result is a dense, well-organized catalog of primary academic sources.
+The material was compiled by @shikamarutsai and published on X on 2026-08-16 (post ID 2088918066310652358). The author was motivated by frustration with fragmented YouTube playlists, dead links, paywalled content, and expensive commercial bootcamps. The result is a dense catalog of primary academic sources.
 
 This is classic High Protein Content.
 
@@ -28,11 +28,44 @@ This is classic High Protein Content.
 - URL           : https://x.com/shikamarutsai/status/2088918066310652358
 - Capture date  : 2026-08-21
 
-* Collection Structure
+* Landmark Courses (Direct Links)
 
-The original list is organized into the following major categories. Each will eventually have its own dedicated node for detailed entries (course name, year, instructor, institution, links).
+These are the highest-signal courses from the collection. Prefer these when starting deep work.
 
-** Planned Category Nodes
+** Deep Learning
+
+- *CS231n: Deep Learning for Computer Vision* (Stanford)  
+  https://cs231n.github.io/
+
+- *MIT 6.S191: Introduction to Deep Learning* (Alexander Amini et al.)  
+  https://introtodeeplearning.com/
+
+- *NYU Deep Learning* (Yann LeCun & Alfredo Canziani)  
+  https://atcold.github.io/NYU-DLSP20/
+
+- *CS230: Deep Learning* (Andrew Ng, Stanford)  
+  https://web.stanford.edu/class/cs230
+
+** Natural Language Processing
+
+- *CS224n: Natural Language Processing with Deep Learning* (Stanford)  
+  http://web.stanford.edu/class/cs224n/
+
+** Reinforcement Learning
+
+- *David Silver – Reinforcement Learning* (UCL / DeepMind)  
+  Classic lecture series (YouTube playlist starting with Lecture 1):  
+  https://www.youtube.com/watch?v=2pWv7GOvuf0  
+  Slides historically at: http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html (archived)
+
+- *CS 285: Deep Reinforcement Learning* (Sergey Levine, UC Berkeley)  
+  https://rail.eecs.berkeley.edu/deeprlcourse
+
+** Other High-Value Entries (from original list)
+
+Many additional strong courses exist in the full catalog (Optimization, Graph Neural Networks, Bayesian Deep Learning, Medical Imaging, etc.). These will be expanded into dedicated category nodes.
+
+* Planned Category Nodes
 
 | Category                          | Planned Node Name                        | Priority |
 |-----------------------------------|------------------------------------------|----------|
@@ -51,35 +84,32 @@ The original list is organized into the following major categories. Each will ev
 | Boot Camps / Summer Schools       | AiBootcampsAndSummerSchools              | Low      |
 | Bird's Eye View of AGI            | BirdEyeViewOfAgi                         | Medium   |
 
-* Key Characteristics of the Collection
+* Key Characteristics
 
 - Almost everything is free and publicly accessible
-- Heavy emphasis on top-tier institutions (Stanford, MIT, CMU, Berkeley, Oxford, DeepMind, NYU, etc.)
-- Many landmark courses (CS231n, CS224n, David Silver RL, Andrew Ng courses, Hinton, LeCun, Abbeel, Levine, etc.)
-- Time span roughly 2011–2022
-- Mix of full semester courses, summer schools, and focused lecture series
+- Heavy emphasis on top-tier institutions and researchers
+- Time span roughly 2011–2022 (with some later material)
 - Video lectures available for the large majority of entries
 
 * Usage Notes
 
-- Prefer the category nodes over this index for detailed work.
-- When expanding a category, keep individual course entries relatively uniform (Year – Instructor – Institution – Links).
-- Cross-link important courses to relevant concept or project nodes in the knowledge base.
-- A curated subset of the strongest modern courses (especially RL, modern DL, and agent-relevant material) should eventually be considered for selective exposure to Withnail.
+- Start with the Landmark Courses section above for immediate high-value study.
+- Prefer the future category nodes for complete listings.
+- Cross-link important courses to relevant concept or project nodes.
+- A curated subset (especially modern RL + agent-relevant material) should eventually be considered for selective exposure to Withnail.
 
 * Related Nodes
 
 - [[HighProteinContent]]
 - [[ZeroHumanOrganizationIntent]]
-- (Future category nodes will be linked here as they are created)
 
 * Next Actions
 
-1. Create the directory =04-sources/free-ai-curriculum/=
-2. Capture the raw source material (tweet text + any expanded version) as mechanical files
-3. Begin with the highest-priority category nodes (Deep Learning, Reinforcement Learning, NLP, General ML)
-4. After several category nodes exist, revisit this index and tighten the overview
+1. Create directory =04-sources/free-ai-curriculum/=
+2. Capture the raw source material as mechanical files
+3. Begin highest-priority category nodes (Deep Learning, Reinforcement Learning, NLP)
+4. Expand the Landmark Courses section over time as more verified links are confirmed
 
 * Capture Notes
 
-Captured during session starting from BOOT.md on 2026-08-21. The original post is extremely long; this index deliberately stays high-level so that detailed course lists live in focused category nodes.
+Captured 2026-08-21. The original post is extremely long; this index prioritizes usability by elevating the strongest courses with working direct links while keeping the full catalog structure ready for expansion.
