@@ -7,6 +7,11 @@
 
 ;;; Code:
 
+(defvar my/forgrok-repo-root
+  (expand-file-name "~/local-side/")
+  "Absolute path to the root of the forgrok / Tsuioku repository.
+Adjust this if your canonical working copy lives elsewhere.")
+
 (defun my/--extract-keyword (keyword)
   "Extract the value of #+KEYWORD: from the current buffer.
 
