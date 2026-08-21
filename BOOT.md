@@ -5,7 +5,7 @@ This file is the single entry point for a new chat session.
 
 When the operator says “Hello Grok! Please visit https://github.com/gptix/forgrok/blob/main/BOOT.md”, Grok should read this file and the files it points to before doing substantial work.
 
-**Last updated**: 2026-08-07
+**Last updated**: 2026-08-21
 
 ---
 
@@ -29,46 +29,49 @@ High-level map:
 |------|---------|
 | `01-core/` | Stable knowledge, memory protocols, ZHO doctrine, agent identity |
 | `02-infrastructure/` | Hermes-pi, hardware, tools, procedures, scripts |
-| `03-projects/` | Active projects (Withnail, etc.) |
-| `04-sources/` | Curated high-protein external content (Roemmele, Wilhelm, …) |
+| `03-projects/` | Active projects (Withnail, AI Agent Consulting, Tarot, etc.) |
+| `04-sources/` | Curated high-protein external content (Roemmele, Koerner Office, …) |
 | `05-wiki/` | Wikified concepts, graphs, indexes |
 | `06-raw/` | Unprocessed material |
-| `07-sessions/` | Selected session exports |
-| 08-skills/ | Reusable skill nodes (how-to processes for KB management and projects) |
+| `07-sessions/` | Selected session exports and VK summaries |
+| `08-skills/` | Reusable skill nodes (how-to processes for KB management and projects) |
 | `99-archive/` | Superseded material |
 
 Working copy lives on the X230. All structural changes are made there, committed in small logical units, and pushed to GitHub.
 
 ---
+
 ## 3. Current project state
 
 **Detailed living snapshot:** **STATUS.md**
 
-High-level summary (2026-08-17):
+High-level summary (2026-08-21):
 
 - Withnail / Hermes on hermes-pi operational (local model + persistent SOUL working)
 - Knowledge base reorganization complete; STRUCTURE.md is authoritative
-- **Skill System** now active under `08-skills/`
-  - Live skills: CaptureLessonLearned, CreateNewSkill, GenerateTsuiokuNodeText, SkillsIndex, UpdateProjectStatus, VoightKampffSessionClose
-  - Learning cycle (Capture → Refine → Promote) has executable entry points
-- Voight-Kampff Protocol updated to **v4.1** (Session Action Review is now mandatory)
-- Selective knowledge exposure to Withnail continues
+- **Skill System** active under `08-skills/`
+  - Live skills include: CaptureLessonLearned, CreateNewSkill, GenerateTsuiokuNodeText, SkillsIndex, UpdateProjectStatus, VoightKampffSessionClose, RubyResearchLoop
+- Voight-Kampff Protocol is at **v4.1+**; the executable skill is the source of truth
+- Private AI Agent Consulting project underway (Atlanta law-firm focus, Tiered packaging defined)
+- `forgrok-org-helpers.el` updated with robust keyword extraction and `my/forgrok-repo-root`
 
 See **STATUS.md** for the full operational dashboard and open items.
 
+---
+
 ## 4. Key files to load when deeper context is needed
 
-| Need                              | File                                      |
-|-----------------------------------|-------------------------------------------|
-| Living operational snapshot       | STATUS.md                                 |
-| Full structure                    | STRUCTURE.md                              |
-| Voight-Kampff protocol (v4.1)     | `01-core/memory/voight-kampff-protocol.org` |
-| Executable V-K skill              | `08-skills/VoightKampffSessionClose.org`  |
-| Skills index                      | `08-skills/SkillsIndex.org`               |
-| Skill System project              | `03-projects/skill-system-improvement/`   |
-| Master memory mirror              | `01-core/memory/joji-grok-project-memory.org` |
-| Org-roam NODE-NAME convention     | `01-core/principles/org-roam-node-name-convention.org` |
-| Finalize helper                   | `02-infrastructure/emacs/forgrok-org-helpers.el` |
+| Need | File |
+|------|------|
+| Living operational snapshot | STATUS.md |
+| Full structure | STRUCTURE.md |
+| Voight-Kampff protocol | `01-core/memory/voight-kampff-protocol.org` |
+| **Executable V-K skill (source of truth)** | `08-skills/VoightKampffSessionClose.org` |
+| Skills index | `08-skills/SkillsIndex.org` |
+| Skill System project | `03-projects/skill-system-improvement/` |
+| Master memory mirror | `01-core/memory/joji-grok-project-memory.org` |
+| Org-roam NODE-NAME convention | `01-core/principles/org-roam-node-name-convention.org` |
+| Finalize helper | `02-infrastructure/emacs/forgrok-org-helpers.el` |
 
 ---
 
@@ -81,20 +84,28 @@ See **STATUS.md** for the full operational dashboard and open items.
 - Never commit secrets, API keys, or large binary backups.
 - Prefer local / air-gapped solutions; treat external calls as exceptional.
 - When giving shell commands, clearly state which machine they are for (X230 vs hermes-pi).
-- Skills for knowledge-base and project tasks live under 08-skills/ and should be preferred over re-deriving processes from scratch.
+- Skills for knowledge-base and project tasks live under `08-skills/` and should be preferred over re-deriving processes from scratch.
+
 ---
 
-## 6. Session close — Voight-Kampff (summary)
+## 6. Session close — Voight-Kampff
 
-Full protocol: `01-core/memory/voight-kampff-protocol.org`
+**Source of truth**: `08-skills/VoightKampffSessionClose.org`
 
-At session end (or when the operator says “Voight-Kampff”):
+When the operator says “Voight-Kampff”, “V-K”, or at the end of a significant session, follow the skill. Do **not** invent a shorter process.
 
-1. **Synthesize** current state from the knowledge base.
-2. **Propose** concrete next actions.
-3. **Log** a short pulse / entry (or prepare text the operator can append).
-4. **Check** for broken links, stale inventory, or preference drift if time allows.
-5. Offer a clean hand-off so the next session can start from a known good state.
+The skill currently includes (among other steps):
+
+- Discover Current State
+- Integrity & Drift Scan
+- Session Action Review (mandatory)
+- Cross-linking & Metadata Pass
+- Synthesis + Recommendations
+- Protected Rules Check
+- Clean hand-off
+- Emission of a VK Summary Node under `07-sessions/vk/`
+
+Full protocol background: `01-core/memory/voight-kampff-protocol.org`
 
 The living knowledge base is the source of truth; this BOOT file is only the on-ramp.
 
