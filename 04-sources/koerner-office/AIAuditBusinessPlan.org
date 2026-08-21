@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       bf07c0e9-b276-4134-8d3b-02d4e8edee2d
+:END:
+#+PROPOSED_PATH: 04-sources/koerner-office/AIAuditBusinessPlan.org
+#+COMMIT_MSG: Ingest Koerner Office AI Audit Business Plan as high-protein reference for Tier 1 assessment design
+
+#+AUTHOR: The Koerner Office (based on Corey / Return My Time)
+#+CATEGORY: Sources
+#+CREATED: [2026-08-21]
+#+LAST_MODIFIED: [2026-08-21]
+#+TITLE: AI Audit Business Plan – How to Charge $1,000 for an AI Readiness Assessment
+#+NODE-NAME: AIAuditBusinessPlan
+#+FILETAGS: :source:ai:consulting:koerner:audit:assessment:
+#+DESCRIPTION: Complete playbook for a $1,000 AI assessment product, including process, report structure, pricing logic, customer acquisition, and upsell path into implementation work. Primary reference for refining the Privilege Risk & Opportunity Assessment (Tier 1).
