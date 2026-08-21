@@ -1,0 +1,85 @@
+:PROPERTIES:
+:ID:       628a421a-5be4-48eb-abde-a22bdee1b9bb
+:END:
+#+PROPOSED_PATH: 04-sources/free-ai-curriculum/FreeAiMlCoursesIndex.org
+#+COMMIT_MSG: Add FreeAiMlCoursesIndex – master index for ShikamaruTsai free AI/ML course collection
+#+AUTHOR: George Taylor
+#+CATEGORY: sources
+#+CREATED: [2026-08-21 Fri]
+#+LAST_MODIFIED: [2026-08-21 Fri]
+#+TITLE: Free AI/ML Courses Index
+#+NODE-NAME: FreeAiMlCoursesIndex
+#+FILETAGS: :high-protein:education:ai-curriculum:free:source:
+#+DESCRIPTION: Master index for the large curated collection of free university-level AI and machine learning courses compiled by @shikamarutsai (2026-08-16). High-protein educational source material.
+
+* Overview
+
+This node is the entry point for a high-value collection of free, publicly available university courses and lecture series in artificial intelligence and machine learning.
+
+The material was compiled by @shikamarutsai and published on X on 2026-08-16 (post ID 2088918066310652358). The author stated the motivation clearly: frustration with fragmented YouTube playlists, dead links, paywalled university content, and expensive commercial bootcamps. The result is a dense, well-organized catalog of primary academic sources.
+
+This is classic High Protein Content.
+
+* Provenance
+
+- Source        : X post by @shikamarutsai
+- Date          : 2026-08-16
+- Post ID       : 2088918066310652358
+- URL           : https://x.com/shikamarutsai/status/2088918066310652358
+- Capture date  : 2026-08-21
+
+* Collection Structure
+
+The original list is organized into the following major categories. Each will eventually have its own dedicated node for detailed entries (course name, year, instructor, institution, links).
+
+** Planned Category Nodes
+
+| Category                          | Planned Node Name                        | Priority |
+|-----------------------------------|------------------------------------------|----------|
+| Deep Learning                     | DeepLearningFreeCourses                  | High     |
+| Machine Learning Fundamentals     | MachineLearningFundamentalsFreeCourses   | High     |
+| Optimization for Machine Learning | OptimizationForMachineLearningFreeCourses| Medium   |
+| General Machine Learning          | GeneralMachineLearningFreeCourses        | High     |
+| Reinforcement Learning            | ReinforcementLearningFreeCourses         | High     |
+| Probabilistic Graphical Models    | ProbabilisticGraphicalModelsFreeCourses  | Medium   |
+| Bayesian Deep Learning            | BayesianDeepLearningFreeCourses          | Medium   |
+| Medical Imaging                   | MedicalImagingFreeCourses                | Low      |
+| Graph Neural Networks             | GraphNeuralNetworksFreeCourses           | Medium   |
+| Natural Language Processing       | NaturalLanguageProcessingFreeCourses     | High     |
+| Automatic Speech Recognition      | AutomaticSpeechRecognitionFreeCourses    | Low      |
+| Modern Computer Vision            | ModernComputerVisionFreeCourses          | Medium   |
+| Boot Camps / Summer Schools       | AiBootcampsAndSummerSchools              | Low      |
+| Bird's Eye View of AGI            | BirdEyeViewOfAgi                         | Medium   |
+
+* Key Characteristics of the Collection
+
+- Almost everything is free and publicly accessible
+- Heavy emphasis on top-tier institutions (Stanford, MIT, CMU, Berkeley, Oxford, DeepMind, NYU, etc.)
+- Many landmark courses (CS231n, CS224n, David Silver RL, Andrew Ng courses, Hinton, LeCun, Abbeel, Levine, etc.)
+- Time span roughly 2011–2022
+- Mix of full semester courses, summer schools, and focused lecture series
+- Video lectures available for the large majority of entries
+
+* Usage Notes
+
+- Prefer the category nodes over this index for detailed work.
+- When expanding a category, keep individual course entries relatively uniform (Year – Instructor – Institution – Links).
+- Cross-link important courses to relevant concept or project nodes in the knowledge base.
+- A curated subset of the strongest modern courses (especially RL, modern DL, and agent-relevant material) should eventually be considered for selective exposure to Withnail.
+
+* Related Nodes
+
+- [[HighProteinContent]]
+- [[ZeroHumanOrganizationIntent]]
+- (Future category nodes will be linked here as they are created)
+
+* Next Actions
+
+1. Create the directory =04-sources/free-ai-curriculum/=
+2. Capture the raw source material (tweet text + any expanded version) as mechanical files
+3. Begin with the highest-priority category nodes (Deep Learning, Reinforcement Learning, NLP, General ML)
+4. After several category nodes exist, revisit this index and tighten the overview
+
+* Capture Notes
+
+Captured during session starting from BOOT.md on 2026-08-21. The original post is extremely long; this index deliberately stays high-level so that detailed course lists live in focused category nodes.
