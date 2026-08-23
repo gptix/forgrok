@@ -14,16 +14,19 @@
 
 Single place to see every skill that currently exists in Tsuioku, with a one-line purpose and pointer to the full skill node.
 
-* Current Skills (2026-08-17)
+* Current Skills (2026-08-23)
 
-| Skill                        | Purpose                                                                 | Status   |
-|------------------------------|-------------------------------------------------------------------------|----------|
-| CaptureLessonLearned         | Extract reusable patterns and friction from sessions                    | Live     |
-| CreateNewSkill               | Process for creating new reusable skill nodes                           | Live     |
-| GenerateTsuiokuNodeText      | Produce properly formatted text for new Tsuioku org-roam nodes          | Live     |
-| SkillsIndex                  | This index                                                              | Live     |
-| UpdateProjectStatus          | Keep STATUS.md and project nodes current after sessions                 | Live     |
-| VoightKampffSessionClose     | Formal session-end protocol with Session Action Review                  | Live     |
+| Skill                    | Purpose                                                                 | Status |
+|--------------------------+-------------------------------------------------------------------------+--------|
+| CaptureLessonLearned     | Extract reusable patterns and friction from sessions                    | Live   |
+| CreateNewSkill           | Process for creating new reusable skill nodes                           | Live   |
+| GenerateTsuiokuNodeText  | Produce properly formatted text for new Tsuioku org-roam nodes          | Live   |
+| PiWhisperTranscription   | Offload audio to timestamped transcripts via faster-whisper + tmux on hermes-pi | Live |
+| RubyResearchLoop         | SuperGrok-as-Ruby iterative outward research toward a living goal/log   | Live   |
+| SkillsIndex              | This index                                                              | Live   |
+| UpdateProjectStatus      | Keep STATUS.md and project nodes current after sessions                 | Live   |
+| VoightKampffSessionClose | Formal session-end protocol with Session Action Review                  | Live   |
+
 
 * How to maintain
 
