@@ -1,0 +1,49 @@
+:PROPERTIES:
+:ID:       ec2e8349-8126-440d-b9ae-de1a9421e8a7
+:END:
+#+PROPOSED_PATH: 07-sessions/vk/VK-2026-08-23-AiConsultingSegmentsAndTarotIap.org
+#+COMMIT_MSG: Add VK 2026-08-23 session close – consulting segments, course index, Tarot IAP
+#+AUTHOR: George Taylor + Grok
+#+CATEGORY: sessions
+#+CREATED: [2026-08-23 Sun]
+#+LAST_MODIFIED: [2026-08-23 Sun]
+#+TITLE: Voight-Kampff 2026-08-23
+#+NODE-NAME: Vk20260823AiConsultingSegmentsAndTarotIap
+#+FILETAGS: :session:voight-kampff:ai-agent-consulting:tarot-today:
+#+DESCRIPTION: V-K v4.1 close for the 2026-08-21 to 2026-08-23 session.
+#+EXECUTIVE_SUMMARY: Session produced a free-AI-course index draft, four professional-segment analyses (law, accounting, dental, architecture) with Withnail-fit notes, a Claude-vs-Grok finding, and a Tarot Today Apple-subscription video path. Ingest and STATUS/BOOT updates remain operator-side.
+
+* Findings
+
+- Integrity: preference rules held. STATUS.md (2026-08-17) and BOOT §3 are stale relative to this work.
+- Drift: none on Emacs-only or air-gapped CEO posture.
+- Friction: huge source list truncated; Atlanta priced cases thin; five nodes drafted but ingest not confirmed.
+
+* Actions this session
+
+- [[FreeAiMlCoursesIndex]] drafted for =04-sources/free-ai-curriculum/=
+- Segment nodes drafted:
+  - [[AiAndWithnailApplicabilityLawFirms]]
+  - [[AiAndWithnailApplicabilityAccountingFirms]]
+  - [[AiAndWithnailApplicabilityDentalPractices]]
+  - [[AiAndWithnailApplicabilityArchitectureFirms]]
+- Durable finding: Claude mentions in case studies are market timing, not a capability lockout vs Grok for these workflows.
+- Tarot Today: Apple subscriptions require a native app; start with https://www.youtube.com/watch?v=PNiVCdExtkw (RevenueCat Paywalls). Backup pair: StoreKit 2 paywall then RC migration (Noah Does Coding, 2026).
+
+* Proposed record updates
+
+- STATUS.md last-updated → 2026-08-23 plus session note.
+- BOOT.md §3 one-line bump only if desired.
+- No BOOT preference edits.
+
+* Recommended next
+
+1. =C-c n F= the five drafted nodes after creating directories as needed.
+2. Update STATUS.md from this pulse.
+3. Record Tarot IAP stack choice on the Tarot current-state node.
+4. Optional: one consulting lunch script from the strongest vertical (dental phone capture or legal intake).
+
+* Related
+
+- [[VoightKampffSessionClose]]
+- [[HighProteinContent]]
