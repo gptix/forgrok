@@ -1,0 +1,77 @@
+:PROPERTIES:
+:ID:       fe95da83-1d48-46d8-baeb-89a10aa88f13
+:END:
+#+PROPOSED_PATH: 08-skills/InspectGitHubState.org
+#+COMMIT_MSG: Add InspectGitHubState skill to prevent false-absent GitHub reads
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 08-skills
+#+CREATED: [2026-08-24 Mon 12:09]
+#+LAST_MODIFIED: [2026-08-24 Mon 12:09]
+#+TITLE: Inspect GitHub State
+#+NODE-NAME: InspectGitHubState
+#+FILETAGS: :skill:github:verification:tsuioku:habit:
+#+DESCRIPTION: How to read gptix/forgrok (or any GitHub repo) without treating a single tree-page listing as proof that a path does not exist.
+#+EXECUTIVE_SUMMARY: Prefer Contents API + raw URLs + exact-path probes. Never conclude "not on GitHub" from one omitted folder name. If STATUS or the operator names a path, fetch that path directly.
+
+* Purpose / When to use
+Use this skill *every time* GitHub is examined as the remote mirror of Tsuioku — especially at session boot, when comparing STATUS.md to the repo, or when deciding whether a project directory "exists on GitHub."
+
+This is both a skill and a standing habit: incomplete listings are expected; false absence is not acceptable.
+
+* Preconditions
+- The question is about what is on GitHub =main= (or a named ref), not about the X230 working copy at =~/local-side/=.
+- A path, project name, or STATUS claim is in play.
+- Network access to =github.com= / =raw.githubusercontent.com= / =api.github.com= is available.
+
+* Standing rule
+Never say a path is missing from GitHub unless an *exact-path* fetch has been tried.
+
+A directory listing that simply does not mention the name is insufficient.
+
+* Steps
+1. Decide the claim.
+   - Example: "Does =03-projects/emacs-obsidian-skin/= exist on =main=?"
+   - Source of the claim may be STATUS.md, BOOT.md, the operator, or a prior session note.
+2. Probe the exact path first (mandatory if the claim names a path).
+   - API: =https://api.github.com/repos/gptix/forgrok/contents/<path>=
+   - Raw file: =https://raw.githubusercontent.com/gptix/forgrok/main/<path>=
+   - HTML fallback: =https://github.com/gptix/forgrok/tree/main/<path>= or =/blob/main/<path>=
+3. If the exact-path probe 404s, *then* check history before declaring absence.
+   - =https://api.github.com/repos/gptix/forgrok/commits?path=<path>&per_page=5=
+   - HTML: =https://github.com/gptix/forgrok/commits/main/<path>=
+   - Distinguish: never pushed / pushed then moved / wrong branch / typo.
+4. Use a tree listing only as a map, not as a negative proof.
+   - =https://api.github.com/repos/gptix/forgrok/contents/<parent-dir>= is preferred over the rendered GitHub tree page.
+   - The rendered tree page and any LLM summary of it may omit entries.
+5. If freshness matters, pin to a commit SHA from the operator or from the commits API.
+   - Raw pin: =https://raw.githubusercontent.com/gptix/forgrok/<sha>/<path>=
+   - Optional CDN bust on raw URLs: append =?t=<unix-time>=.
+6. Report honestly.
+   - "Exact-path fetch succeeded; files are: …"
+   - "Tree listing omitted it; exact-path fetch found it."
+   - "Exact-path fetch 404; commits API shows last touch at …" or "no commits for that path."
+7. Do not upgrade uncertainty to a structural claim.
+   - Wrong: "Not visible on GitHub; maybe not pushed."
+   - Right: "First tree listing omitted it; verifying exact path now."
+
+* Inputs / Outputs
+- *Input*: A repo (default =gptix/forgrok=), a ref (default =main=), and one or more paths or STATUS claims.
+- *Output*: A verified presence/absence statement, the method used (API / raw / commits), and file names when present.
+
+* Related scripts or files
+- =BOOT.md= (session start; GitHub is the on-ramp, X230 is canonical)
+- =STATUS.md= (living claims that must be probed, not trusted as a file listing)
+- =STRUCTURE.md=
+- =08-skills/SkillsIndex.org=
+- =08-skills/CaptureLessonLearned.org= (origin: 2026-08-24 EmacsObsidianSkin false-absent)
+
+* Failure modes / Notes
+- Treating a summarized GitHub *tree page* as a complete inventory.
+- Confusing "I did not see it in the listing" with "it is not in the repo."
+- Declaring cache problems when the real failure was an incomplete scrape.
+- Checking only HTML UI; it can lag. API + raw are the live-enough pair.
+- Checking GitHub when the question is actually about =~/local-side/= on the X230. Those are different copies.
+- After this skill exists, a boot summary may still say "STATUS mentions X" without implying X is absent from GitHub.
+
+* Last verified
+2026-08-24 — EmacsObsidianSkin was on =main= for ~12 hours (commits 8fe3d90, 5bec2dc, f29e3c7 at 03:29–03:37 UTC) while a session tree listing omitted =03-projects/emacs-obsidian-skin/=. Exact-path + Contents API confirmed the three nodes.
