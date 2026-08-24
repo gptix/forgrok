@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       bff5c080-4ecc-4c5a-ab17-75964cf3d7d9
+:END:
+#+PROPOSED_PATH: 03-projects/emacs-obsidian-skin/EmacsObsidianSkinResearch.org
+#+COMMIT_MSG: Add EmacsObsidianSkin research findings
+#+AUTHOR: George Taylor + Grok
+#+CATEGORY: projects
+#+CREATED: [2026-08-23 Sun]
+#+LAST_MODIFIED: [2026-08-23 Sun]
+#+TITLE: Emacs Obsidian Skin – Research
+#+NODE-NAME: EmacsObsidianSkinResearch
+#+FILETAGS: :project:emacs:pkm:research:
+#+DESCRIPTION: Research findings on existing work related to making Emacs feel like Obsidian, and identification of the best building blocks for the skin.
+
+* Key Conclusion
+
+No polished, ready-made “Obsidian skin” for Emacs currently exists. This is a genuine opportunity.
+
+Most existing work is either “just use org-roam (it’s better)” (high onboarding barrier) or technical bridges in the opposite direction. A deliberate, familiarity-first skin is differentiated.
+
+* Strongest Building Blocks
+
+| Component              | Package / Project     | Notes                                      | Priority   |
+|------------------------|-----------------------|--------------------------------------------|------------|
+| Graph view             | org-roam-ui           | Best-in-class interactive graph            | Essential  |
+| Visual polish for Org  | org-modern            | Modern headlines, tags, blocks             | High       |
+| Markdown + Org in one DB | md-roam (nobiot)    | Supports pure .md while keeping org-roam power | High (later) |
+| Modern completion UI   | Vertico + Consult + Embark + Orderless + Marginalia | Command-palette / quick-switcher feel     | Essential  |
+| Performance alternative| org-node (meedstrom)  | Faster for large collections               | Medium     |
+| Faster pure-file system| orgrr                 | Containers concept similar to vaults       | Medium     |
+
+* Useful Opposite-Direction / Bridge Work
+
+- obsidian.el — Emacs as frontend for an Obsidian vault (excellent source of expected UX patterns: backlinks panel, quick jump, capture).
+- org-roam-canvas — Renders org-roam nodes inside Obsidian Canvas.
+- Various one-way converters (org-roam → Markdown).
+
+* Strategic Implication
+
+The highest-value path is an opinionated configuration + minor mode(s) that prioritize Obsidian-like look, layout, and basic interactions first, then progressively reveal Org-mode / Elisp / agent power.

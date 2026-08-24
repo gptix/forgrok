@@ -1,0 +1,33 @@
+I suppose we should test tarot-today in a gradual way.
+
+We could start with interpreting one card.  Results:
+1. filename: <file uploaded>
+
+2. Recognition
+   - no discernable card
+   - single card, but not recognizable as tarot card
+   - multiple cards - not trying to interpret this yet
+   - valid single card - recognizable as tarot card, looks like cardx upright or cardx reversed
+
+If we can't devise a way to run a loop on X230 feeding cards one by one to tarot-today, I guess I could run the samples through the interface by hand, and record the output from trot-today.
+
+| filename   | tarot-today output                          |
+|------------+---------------------------------------------|
+| blah.jpg   | No discernable card                         |
+| squaw.jpg  | Multiple cards                              |
+| ma.jpg     | Single card, not recognizable as Tarot card |
+| jaw.jpg    | Three of Pentacles                          |
+| guffaw.jpg | Hangman inverted                            |
+|            |                                             |
+
+3. Then we can add one rule at a time
+   - invalid number of cards
+   - valid number of cards, but not all Tarot cards
+   - duplicate Tarot cards
+   - valid number of Tarot cards, but bad layout (only applies to Celtic cross)
+   - too dark
+   - too bright
+   - image too cluttered
+   - cards not sufficiently visible
+   - image too skewed
+Is there some tool I could use to loop through a list of images, pass those one image at a time to tarto-today, then capture the response?
