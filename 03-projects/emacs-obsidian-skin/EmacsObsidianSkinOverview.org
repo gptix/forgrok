@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       1ba4b753-3fd2-4736-adc3-975950eafc7c
+:END:
+#+PROPOSED_PATH: 03-projects/emacs-obsidian-skin/EmacsObsidianSkinOverview.org
+#+COMMIT_MSG: Create EmacsObsidianSkin project overview
+#+AUTHOR: George Taylor
+#+CATEGORY: projects
+#+CREATED: [2026-08-23 Sun]
+#+LAST_MODIFIED: [2026-08-23 Sun]
+#+TITLE: Emacs Obsidian Skin – Overview
+#+NODE-NAME: EmacsObsidianSkinOverview
+#+FILETAGS: :project:emacs:pkm:onboarding:
+#+DESCRIPTION: Curated Emacs configuration and supporting packages that give an Obsidian-like look, feel, and keybinding experience to ease onboarding of Markdown/wiki users into a more powerful Org-roam + local AI agent system.
+
+* Purpose
+
+Create a deliberate "skin" for Emacs so that people currently using Obsidian (especially those following Karpathy-style LLM-maintained Markdown wikis) can adopt a superior local-first Emacs + Org-roam + AI-agent stack with significantly lower friction.
+
+Emacs remains the real system. The skin prioritizes familiarity of look, layout, navigation, and basic interactions first; power features are revealed progressively.
+
+* High-level Goals
+
+- Reduce the activation energy for Obsidian users
+- Preserve (and eventually expose) the full power of Org-mode, org-roam, Elisp, and local agents
+- Support a clean path from pure Markdown workflows toward Org
+- Keep everything local-first and auditable
+
+* Status
+
+Project initiated 2026-08-23. Research phase underway.
