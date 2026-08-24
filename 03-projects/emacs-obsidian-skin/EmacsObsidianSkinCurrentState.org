@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       c090bad6-69ce-496c-b56f-5c544ee27fec
+:END:
+#+PROPOSED_PATH: 03-projects/emacs-obsidian-skin/EmacsObsidianSkinCurrentState.org
+#+COMMIT_MSG: Create EmacsObsidianSkin current state
+#+AUTHOR: George Taylor
+#+CATEGORY: projects
+#+CREATED: [2026-08-23 Sun]
+#+LAST_MODIFIED: [2026-08-23 Sun]
+#+TITLE: Emacs Obsidian Skin – Current State
+#+NODE-NAME: EmacsObsidianSkinCurrentState
+#+FILETAGS: :project:emacs:status:
+#+DESCRIPTION: Living status of the EmacsObsidianSkin project.
+
+* Current State (2026-08-23)
+
+- Project formally started
+- Initial research completed (see EmacsObsidianSkinResearch)
+- No configuration code or package yet written
+- Primary format decision still open (Org-first recommended)
+
+* Open Decisions
+
+- Primary file format: Org (recommended) vs pure Markdown with md-roam
+- Project name finalization (currently EmacsObsidianSkin)
+- Whether to ship as a reusable package, a curated Doom/vanilla config, or both
