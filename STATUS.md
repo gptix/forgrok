@@ -115,6 +115,15 @@
 - Confirmed permanent X230 working-copy location: ~/local-side/
 - Unrelated Ammo Can Keith material received and discarded from project scope.
 
+### 2026-08-23 — EmacsObsidianSkin project initiated
+
+- New project: 03-projects/emacs-obsidian-skin/
+- Goal: curated Emacs “skin” approximating Obsidian look/feel/keybindings to lower onboarding friction for Markdown/wiki users into Org-roam + local AI agents
+- Primary format locked: **Org-first**
+- Nodes created: EmacsObsidianSkinOverview, EmacsObsidianSkinCurrentState, EmacsObsidianSkinResearch
+- Research confirms genuine gap; strongest building blocks identified (org-roam-ui, org-modern, modern completion stack, md-roam as later option)
+- Next: minimal viable skin configuration (theme + layout + keybinding map + org-roam-ui)
+
 ### 2026-08-10 / 2026-08-11 — Tarot test corpus + file-transfer skill + LLC guidance
 
 **Infrastructure / Tools**
