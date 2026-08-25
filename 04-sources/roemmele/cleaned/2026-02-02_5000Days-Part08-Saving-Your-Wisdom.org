@@ -1,0 +1,73 @@
+:PROPERTIES:
+:ID:       9d598595-20cb-45c4-bc57-0df2dee56910
+:END:
+#+PROPOSED_PATH: 04-sources/roemmele/cleaned/2026-02-02_5000Days-Part08-Saving-Your-Wisdom.org
+#+COMMIT_MSG: org node + inventory: 5000Days Part 8 Saving Your Wisdom
+#+TITLE: You Have 5000 Days: Navigating the End of Work as We Know It. Part 8: Saving Your Wisdom.
+#+NODE-NAME: 2026-02-02_5000Days-Part08-Saving-Your-Wisdom
+#+DATE: 2026-02-02
+#+SOURCE: https://readmultiplex.com/2026/02/02/you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-8-saving-your-wisdom/
+#+AUTHOR: Brian Roemmele
+#+CREATED: [2026-08-25 Tue 12:29]
+#+LAST_MODIFIED: [2026-08-25 Tue 12:29]
+#+FILETAGS: :roemmele:essay:5000-days:save-wisdom:narrative-therapy:local-ai:zho:
+#+DESCRIPTION: Part 8 of the 5000 Days series: SaveWisdom.org as the Hero’s Journey elixir — offline 1000-question voice capture, local models that “know” you, and narrative therapy as the live side-effect.
+#+EXECUTIVE_SUMMARY: Roemmele places SaveWisdom.org at the “Return with the Elixir” stage of the 5000 Days / Campbell arc. Wisdom, not jobs, is the durable currency of the Abundance Interregnum. Capture is offline voice answers to ~1000 questions; STT plus a local model that knows the speaker is the technical path; the larger claimed effect is re-authoring one’s life story now.
+
+* Summary
+
+Part 8 (2 Feb 2026) is the series’ first full treatment of [[SaveYourWisdom]]. After recapping Parts 1–7 as a Joseph Campbell monomyth (Call through Resurrection), Roemmele names SaveWisdom.org as the elixir the hero brings home: preserve experiential judgment before wage-work dissolves, then encode it so a *local* AI can amplify it.
+
+The public method: answer up to 1000 curated questions on a cheap offline recorder; keep audio; transcribe; build a private model that “knows” you. He contrasts knowledge (what machines already do) with wisdom (ethical residue of a life). The Noosphere / omega-point talk is the optional later sharing layer, only with permission.
+
+A long middle section argues that the *act of answering* is narrative therapy (White & Epston): externalize problems, thicken preferred stories, find unique outcomes. He calls that side-effect possibly larger than the future “wisdom keeper” model. The 1000 questions are then mapped onto the monomyth itself (Ordinary World → Return).
+
+Member-only close on this capture is a placeholder, not a second essay.
+
+* Key Claims
+
+- In the 5000-day interregnum the scarce good is wisdom, not labor.
+- SaveWisdom.org is the series’ “elixir”: capture → transcript → local model that knows the person.
+- Questions are a scaffold, not a sacrament; voice and emotion are part of the data.
+- AI fed only facts stays an efficiency engine; AI fed lived judgment becomes an “Intelligence Amplifier.”
+- Civilizational amnesia (Alexandria, lost oral traditions) is the warning analog for a digital dark age.
+- Narrative therapy is an intended-or-at-least-welcomed side-effect and may be the bigger gift *now*.
+- Private hoard plus optional shared noosphere: he is explicit that those who keep a private wisdom store will fare better than those who only consume homogenized AI output.
+- Cost bar is a ~$30 recorder; no subscription required for capture.
+- Technical how-to for the model is pointed at, not specified in this part (matches savewisdom.org “forthcoming articles”).
+
+* Major Sections
+
+** Series recap as monomyth
+Parts 1–7 mapped: Call (Abundance Interregnum), Refusal, Player Piano / deskilling, mentor reframing, inmost cave, Dark Night, Consider Phlebas / resurrection. Part 8 = Road Back / Elixir.
+
+** Why SaveWisdom.org now
+“Who will we be?” not “What will we do?” Offline 1000-question voice archive as anchor while agents write code and run logistics. Wisdom as the human differentiator against the player-piano fate.
+
+** Capture → local model
+Voice recordings become written testimonies via transcription, then “secure, local AI models that know you.” Family heirloom (Grandma’s voice) and optional collective noosphere are both named. Not silicon immortality — legacy.
+
+** Narrative therapy overlay
+Cites *Narrative Means to Therapeutic Ends*. Answering aloud re-authors the life, externalizes problems, surfaces exceptions. He ranks this present-tense shift above the later model.
+
+** 1000 questions as personal monomyth
+Origins / family = Ordinary World; decisions = Call; regrets = Refusal; hardships = Trials; teachers = Mentor; grief = Ordeal; triumphs = Reward; legacy = Return. Speaking it makes it usable as model training text.
+
+** Closing charge
+Start recording; build the companion; next public series beat pointed at Part 10 (books on machine–human partnership). Part 9 (Artisan’s Awakening) is the chronological next essay.
+
+* Relevance to ZHO / Withnail / local work
+
+- Direct source text for the [[SaveYourWisdom]] pillar.
+- Aligns with airgapped capture (offline recorder, local STT). =PiWhisperTranscription= is the X230/hermes-pi implementation of the Whisper path he names elsewhere.
+- Distinguishes *life-wisdom corpus* from HPC public corpora and from Withnail’s SOUL/operating identity. A wisdom-keeper model is a *person-specific* adapter or slice, not the CEO agent.
+- Supports selective exposure: raw family audio stays off GitHub; this node is the public doctrine, not the answers.
+- Inventory / ingest: mechanical files already on =main= as =4b7ae48=. This node is the missing =cleaned/*.org= plus inventory status → =pushed=.
+
+* Notes
+
+- Source file: =04-sources/roemmele/cleaned/2026-02-02_5000Days-Part08-Saving-Your-Wisdom.md=
+- HTML + images committed in the same hash.
+- Do not commit =*.raw.md=.
+- Member-only block in this SingleFile capture is empty of extra argument.
+- Cross-links to add when touching inventory: [[SaveYourWisdom]] [[HighProteinContent]] [[2026-07-06_5000Days-Part33-Player-of-Games]]
