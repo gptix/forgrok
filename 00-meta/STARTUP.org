@@ -5,7 +5,7 @@
 #+NODE-NAME: TsuiokuStartup
 #+FILETAGS: :tsuioku:infrastructure:workflow:org-roam:automation:meta:
 #+DATE-CREATED: 2026-08-13
-#+LATEST-UPDATE: 2026-08-13
+#+LATEST-UPDATE: 2026-08-31
 #+AUTHOR: George Taylor + Grok
 
 * Purpose of This File
@@ -32,8 +32,8 @@ Every new file intended for the automated push workflow **must** begin with at l
 #+TITLE: <Normal English Title With Spaces And Capitalization>
 #+NODE-NAME: <PascalCaseNoSpacesCloselyRelatedToTitle>
 #+FILETAGS: <:tag1:tag2:tag3:>
-#+DATE-CREATED: YYYY-MM-DD
-#+LATEST-UPDATE: YYYY-MM-DD
+#+CREATED: YYYY-MM-DD
+#+LAST-MODIFIED: YYYY-MM-DD
 #+AUTHOR: George Taylor + Grok
 #+end_example
 
@@ -62,9 +62,6 @@ If the result is satisfactory, the human pushes the commit to the GitHub reposit
 
 Dry-run mode (if implemented) should perform all steps except the actual git commit / push.
 
-* High-Level Directory Guidance (Living)
-
-#+begin_src org
 * High-Level Directory Guidance (Living)
 
 The authoritative directory map is =STRUCTURE.md= at the repository root.
@@ -112,3 +109,11 @@ Preferred delivery medium for that presentation: self-contained static website o
 * Change Log
 
 - 2026-08-13: Initial version of this STARTUP.md created. Formalized metadata requirements for the automated workflow and the name Tsuioku.
+
+- 2026-08-31: Directory guidance now defers to STRUCTURE.md. Retired the
+  advisory 01-concepts / 04-agents sketch that conflicted with the live tree.
+  Also did:
+  - unwrap the src block into real Org,
+  - bump the date,
+  -  make the metadata example match GenerateTsuiokuNodeText,
+  - add a 2026-08-31 changelog line.
