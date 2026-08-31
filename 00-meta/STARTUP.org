@@ -5,7 +5,7 @@
 #+NODE-NAME: TsuiokuStartup
 #+FILETAGS: :tsuioku:infrastructure:workflow:org-roam:automation:meta:
 #+CREATED: 2026-08-13
-#+LAST-MODIFIED: 2026-08-31
+#+LAST_MODIFIED: 2026-08-31
 #+AUTHOR: George Taylor + Grok
 
 * Purpose of This File

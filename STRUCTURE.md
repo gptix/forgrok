@@ -68,7 +68,6 @@ Active or significant:
 Also present on `main` (keep or park explicitly; do not pretend they are gone):
 
 - `ai-services`, `arrest-demographics`, `local-ai-agents`, `rental`, `sources`, `test-grok-build`
-- `tarot-app` — leftover after the 2026-08-08 rename; still contains `TarotTodayUserInstructions.org`
 
 ## Design principles
 
