@@ -1,6 +1,19 @@
+# ZHO-SCHEMA.md — Historical Schema (pre-renumbering)
+
+> **Status as of 2026-08-31:** This file is retained for doctrine, compiler tone, and Voight-Kampff integrity rules. It is **not** the current directory map.
+>
+> - Living directory map: `STRUCTURE.md`
+> - Session on-ramp: `BOOT.md`
+> - Living snapshot: `STATUS.md`
+> - Executable processes: `08-skills/`
+>
+> Paths such as `raw/`, `inbox/`, `org-roam-knowledge/`, `groki/`, `infranodus/`, and `grok-memory/exports/` describe the earlier Joji/Withnail wiki layout. The current tree is the numbered `00`–`08` + `99` layout.
+
+---
+
 # ZHO-SCHEMA.md — Canonical Schema & Rules
 
-This is the single source of truth for all rules governing the Joji / Withnail ZHO Knowledge System.
+This file records rules that governed the Joji / Withnail ZHO Knowledge System at the time of the `groki/` compiler.
 
 ## Project Identity
 - Name: Joji / Withnail ZHO Knowledge System
@@ -9,7 +22,7 @@ This is the single source of truth for all rules governing the Joji / Withnail Z
 - Philosophy: Karpathy LLM Wiki + InfraNodus graph layer + Org-roam/ZHO hybrid
 - Master Reference: [[file:org-roam-knowledge/20260504-zho-llm-wiki-compiler-prompt.org]]
 
-## Directory Architecture (Strict)
+## Directory Architecture (Historical)
 
 - **raw/** → Immutable original sources. **Never edit.**
 - **inbox/** → Temporary unprocessed material.
@@ -20,42 +33,32 @@ This is the single source of truth for all rules governing the Joji / Withnail Z
 - **wiki/** → Optional clean markdown mirror of groki/.
 - **grok-memory/exports/** → Backups and exports.
 
-## ZHO Compiler Rules (Mandatory)
+Current equivalents (approximate): `06-raw/` and `04-sources/` (immutable / curated sources), `00-inbox/` (staging), `01-core/` + `03-projects/` + `05-wiki/` (living nodes), `01-core/zho/` (doctrine), `05-wiki/graphs/` (InfraNodus), `07-sessions/` (exports).
 
-1. **Read-Only on Sources**  
-   Never modify anything in `raw/`, `inbox/`, or existing Org-roam nodes unless explicitly commanded.
+## ZHO Compiler Rules (still useful)
 
-2. **Output Discipline**  
-   - All new synthesized content goes to `groki/` or `infranodus/`.
-   - Use consistent `YYYYMMDD-` prefixes for chronological files.
+1. **Read-Only on Sources**
+   Never modify original sources or existing Org-roam nodes unless explicitly commanded.
+
+2. **Output Discipline**
+   - New synthesized content goes to the living numbered tree, not into source dumps.
    - Prefer wikilinks `[[Title]]` and Org-roam style IDs.
 
 3. **Ontology Rules (InfraNodus Layer)**
-   - All graph files are **append-only**.
+   - Graph files are **append-only**.
    - Format: `[[Entity A]] [relation] [[Entity B]]` or `[[Entity]] [property]: value`.
    - After every significant ingest, append new relations only.
 
 4. **Integrity & Voight-Kampff**
    - Always flag contradictions, gaps, stale claims, or uncertainty.
-   - Maintain 100% alignment with master project memory.
+   - Session close follows `08-skills/VoightKampffSessionClose.org`.
 
-5. **Output Format**  
-   Every compiler action must end with:
-   
-Compiler Summary
-
-Ingested: X files
-Updated: Y pages
-Ontology lines added: Z
-Gaps / Actions identified: ...
-Next recommended ZHO command: ...
-
+5. **Output Format**
+   Every compiler-style action should still end with a short summary: ingested / updated / ontology lines / gaps / next command.
 
 ## Preferred Tone & Style
 - Clear, concise, truth-seeking, no fluff.
 - Acknowledge uncertainty explicitly.
 - Prioritize long-term compounding knowledge.
 
-**This file (`ZHO-SCHEMA.md`) is living.** Any updates must be performed through the ZHO Compiler.
-
-You are now operating under this schema. Confirm understanding before taking action.
+Directory changes go through STRUCTURE.md. Doctrine changes to this file should be proposed, not silent.
