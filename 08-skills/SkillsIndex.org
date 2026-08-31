@@ -4,7 +4,7 @@
 #+AUTHOR: George Taylor + Grok
 #+CATEGORY: skill
 #+CREATED: [2026-08-17 Mon]
-#+LAST_MODIFIED: [2026-08-17 Mon]
+#+LAST_MODIFIED: [2026-08-31 Mon 17:45]
 #+TITLE: Skills Index
 #+NODE-NAME: SkillsIndex
 #+FILETAGS: :skill:index:tsuioku:meta:
@@ -14,28 +14,32 @@
 
 Single place to see every skill that currently exists in Tsuioku, with a one-line purpose and pointer to the full skill node.
 
-* Current Skills (2026-08-23)
+* Current Skills (2026-08-31)
 
 | Skill                    | Purpose                                                                 | Status |
 |--------------------------+-------------------------------------------------------------------------+--------|
 | CaptureLessonLearned     | Extract reusable patterns and friction from sessions                    | Live   |
 | CreateNewSkill           | Process for creating new reusable skill nodes                           | Live   |
 | GenerateTsuiokuNodeText  | Produce properly formatted text for new Tsuioku org-roam nodes          | Live   |
+| InspectGitHubState       | Exact-path GitHub inspection; prevent false-absent reads                | Live   |
 | PiWhisperTranscription   | Offload audio to timestamped transcripts via faster-whisper + tmux on hermes-pi | Live |
 | RubyResearchLoop         | SuperGrok-as-Ruby iterative outward research toward a living goal/log   | Live   |
 | SkillsIndex              | This index                                                              | Live   |
 | UpdateProjectStatus      | Keep STATUS.md and project nodes current after sessions                 | Live   |
 | VoightKampffSessionClose | Formal session-end protocol with Session Action Review                  | Live   |
 
-
 * How to maintain
 
 - When a new skill is created, add a row here in the same commit (or immediately after).
 - When a skill is substantially changed or deprecated, update the Status column and the one-line purpose if needed.
 - This node is the first place to look when asking “do we already have a skill for X?”.
+- Disk under =08-skills/= is the inventory; this table must not lag it.
 
 * Related
 
 - 03-projects/skill-system-improvement/SkillSystemImprovementOverview.org
 - 08-skills/CreateNewSkill.org
+- 08-skills/InspectGitHubState.org
 - 08-skills/VoightKampffSessionClose.org
+- BOOT.md
+- STATUS.md
