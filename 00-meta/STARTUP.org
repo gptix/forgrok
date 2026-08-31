@@ -92,7 +92,7 @@ Top-level areas in current use (see STRUCTURE.md for the full tree):
 - =07-sessions/= — session exports and VK summaries
 - =08-skills/= — reusable skills
 - =99-archive/= — superseded material
-#+end_src
+
 * Presentation Project
 
 A dedicated project exists under the Tsuioku umbrella whose goal is to produce portable presentation materials explaining the knowledge base itself (Brian Roemmele ideas, AI memory systems, Karpathy LLM Wiki pattern, and the current state of Tsuioku).
