@@ -64,18 +64,38 @@ Dry-run mode (if implemented) should perform all steps except the actual git com
 
 * High-Level Directory Guidance (Living)
 
-Suggested top-level areas (adjust as the knowledge base evolves):
+#+begin_src org
+* High-Level Directory Guidance (Living)
 
-- =00-meta/= — startup, conventions, STATUS, Voight-Kampff, this file
-- =01-concepts/= or equivalent for core ideas (Roemmele, Karpathy, memory systems, etc.)
-- =02-infrastructure/= — tools, Emacs config notes, workflows, automation
-- =03-projects/= — active projects (including =TsuiokuPresentation/=)
-- =04-agents/= or similar for Hermes / Withnail related material
-- =raw/= or source-ingest areas if following a Karpathy-style split
-- =wiki/= or derived views if maintaining a compiled layer
+The authoritative directory map is =STRUCTURE.md= at the repository root.
+Do not invent a parallel tree here.
 
-Exact layout should be kept consistent with existing practice; this list is advisory.
+Session on-ramp: =BOOT.md=
+Living snapshot: =STATUS.md=
+Executable processes: =08-skills/=
 
+New-node metadata dialect is defined by
+=08-skills/GenerateTsuiokuNodeText.org= and the finalize helper
+=my/org-roam-finalize-place-id-commit= (=C-c n F=). That dialect wins
+over any older field names in this file (=#+CREATED= / =#+LAST_MODIFIED=
+rather than =#+DATE-CREATED= / =#+LATEST-UPDATE=; =#+PROPOSED_PATH:= and
+=#+COMMIT_MSG:= as the first two lines of new ingest text).
+
+Top-level areas in current use (see STRUCTURE.md for the full tree):
+
+- =00-inbox/= — temporary staging
+- =00-meta/= — this file and related conventions
+- =01-core/= — memory, principles, ZHO doctrine
+- =02-infrastructure/= — hermes-pi, Emacs helpers, tools, procedures
+- =03-knowledge/= — non-project slices (transcripts)
+- =03-projects/= — active projects, including =TsuiokuPresentation/=
+- =04-sources/= — curated high-protein external content
+- =05-wiki/= — wikified views and graphs
+- =06-raw/= — unprocessed material
+- =07-sessions/= — session exports and VK summaries
+- =08-skills/= — reusable skills
+- =99-archive/= — superseded material
+#+end_src
 * Presentation Project
 
 A dedicated project exists under the Tsuioku umbrella whose goal is to produce portable presentation materials explaining the knowledge base itself (Brian Roemmele ideas, AI memory systems, Karpathy LLM Wiki pattern, and the current state of Tsuioku).
