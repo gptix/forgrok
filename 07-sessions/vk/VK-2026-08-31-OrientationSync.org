@@ -1,5 +1,5 @@
 :PROPERTIES:
-:ID:       44810cb8-d394-4f28-bcd2-26c018fbcac1
+:ID:       b7b91219-1fbf-427b-aa83-1d3b27cc4fce
 :END:
 #+PROPOSED_PATH: 07-sessions/vk/VK-2026-08-31-OrientationSync.org
 #+COMMIT_MSG: VK 2026-08-31 orientation-sync session close
@@ -11,71 +11,3 @@
 #+TITLE: VK 2026-08-31 – Orientation Sync
 #+NODE-NAME: VK20260831OrientationSync
 #+FILETAGS: :vk:session:summary:tsuioku:meta:
-#+DESCRIPTION: Voight-Kampff close for the 2026-08-31 Tsuioku orientation synchronization, X230 GitHub auth repair, and follow-up cleanup.
-
-* Session Identifier
-2026-08-31 – orientation synchronization (first V-K mid-evening, second V-K after cleanup commits)
-
-* Session Context
-Operator booted from BOOT.md and asked to bring guide files up to date. Packet produced and pushed. HTTPS push on the X230 was broken (uncompiled libsecret helper); restored via ~/bin/git-credential-libsecret + gh auth. First V-K recorded remaining punch-list items. Operator then applied those items and requested a second V-K.
-
-* Integrity & Drift Findings
-- Guide-layer integrity: PASS.
-- Follow-up punch list: PASS on disk (exact-path).
-  - STARTUP.org: real Org directory map (no begin_src wrapper); header #+CREATED / #+LAST-MODIFIED; example matches that dialect.
-  - Root scratch a, b.org, c.org, chatWithGab.org: absent from repo root.
-  - 03-projects/tarot-app/: 404. TarotTodayUserInstructions.org lives under 03-projects/tarot-today/.
-  - Inventory slug 2026-07-25_Soviet-Brain-Energy-Part1 matches cleaned/ files.
-- Living-record lag (the remaining drift):
-  - STATUS.md open items 6–8 still describe the leftovers as undecided.
-  - STRUCTURE.md still lists tarot-app as a leftover directory that exists.
-  - First V-K node was never finalized onto main (07-sessions/vk/ has nothing dated 2026-08-31).
-- Small dialect nit: STARTUP.org uses #+LAST-MODIFIED (hyphen). GenerateTsuiokuNodeText uses #+LAST_MODIFIED (underscore). Helper does not consume that field. Optional polish only.
-- Preference integrity: PASS (Emacs-only, local-first ~/local-side/, near-airgapped Withnail unchanged).
-
-* Session Action Review
-** Concrete actions (full day)
-- Orientation packet authored and pushed: STRUCTURE, BOOT, STATUS, README, SkillsIndex, ZHO-SCHEMA banner, GROK-SCHEMA banner, first STARTUP pass.
-- X230 GitHub HTTPS repaired; first push cd057c5..53fb49f.
-- Follow-up commits verified on main:
-  - 3baf949 updated STARTUP.md (file is STARTUP.org)
-  - f5a21cf removed cruft
-  - b29619b moved TarotTodayUserInstructions.org, deleted 03-projects/tarot-app/
-  - 5ee375e removed unneeded end-src
-  - 3021b9c Fix Roemmele inventory slug Soviet-Brain-Energy-Part1
-- Second exact-path survey after those commits.
-
-** Friction
-- First V-K hand-off (STATUS pulse + VK node) was not applied before the cleanup wave, so STATUS/STRUCTURE went stale relative to the tree.
-- Commit message said STARTUP.md for an .org file.
-- C-c n F vs Magit confusion earlier in the day.
-
-** Automation / skill gaps (carry forward, not blockers)
-- CaptureLessonLearned: X230 GitHub auth = HTTPS + ~/bin/git-credential-libsecret + gh; do not point helper at /usr/share/doc.
-- GenerateTsuiokuNodeText: state explicitly that C-c n F is new-node ingest only.
-- Optional: STATUS/STRUCTURE open-item close should be part of the same commit as the cleanup it describes (UpdateProjectStatus).
-
-* Recommendations
-1. Apply the STATUS.md and STRUCTURE.md patches below (close items 6–8; drop tarot-app leftover line).
-2. Finalize this VK node with C-c n F and push (the audit node from the first V-K never landed).
-3. Optional: rename STARTUP #+LAST-MODIFIED to #+LAST_MODIFIED for dialect match.
-4. Park: 01-core/soul/ decision; Roemmele hook hardening; essays 009+; Tarot credits; EmacsObsidianSkin MVP.
-5. File the GitHub-auth lesson when convenient (02-infrastructure or CaptureLessonLearned).
-
-* Protected Rules Check
-- Near-airgapped Withnail/Hermes: not opened.
-- Emacs-only: held.
-- Local-first: ~/local-side/ remains canonical; GitHub is the mirror.
-- Named durable achievements: not contradicted.
-
-* Cross-Links
-- [[file:../../BOOT.md][BOOT.md]]
-- [[file:../../STATUS.md][STATUS.md]]
-- [[file:../../STRUCTURE.md][STRUCTURE.md]]
-- [[file:../../00-meta/STARTUP.org][TsuiokuStartup]]
-- [[file:../../08-skills/VoightKampffSessionClose.org][VoightKampffSessionClose]]
-- [[file:../../08-skills/InspectGitHubState.org][InspectGitHubState]]
-- [[file:../../08-skills/UpdateProjectStatus.org][UpdateProjectStatus]]
-- [[file:../../03-projects/tarot-today/TarotTodayUserInstructions.org][TarotTodayUserInstructions]]
-- [[file:../../04-sources/roemmele/roemmele-essays-inventory.org][Roemmele essays inventory]]
-- [[file:../../03-projects/skill-system-improvement/SkillSystemImprovementOverview.org][SkillSystemImprovementOverview]]
