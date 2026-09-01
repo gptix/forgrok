@@ -8,7 +8,7 @@ When the operator says “Hello Grok! Please visit https://github.com/gptix/forg
 
 Use `08-skills/InspectGitHubState.org` for any later claim about what is or is not on GitHub. Exact-path fetch only; never treat a summarized tree as proof of absence.
 
-**Last updated:** 2026-08-31
+**Last updated:** 2026-09-01
 
 ---
 
