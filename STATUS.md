@@ -67,14 +67,20 @@ Live skills under `08-skills/` (disk + this STATUS; SkillsIndex must match):
 3. Further harden Roemmele git hooks
 4. Final placement of remaining grok-memory/exports material
 5. Document SOUL persistence mechanism in more detail (operational, lightly documented)
-6. Decide fate of leftover `03-projects/tarot-app/` (file remains: `TarotTodayUserInstructions.org`)
-7. Decide fate of root scratch files on `main`: `a`, `b.org`, `c.org`, `chatWithGab.org`
-8. Reconcile `00-meta/STARTUP.org` metadata dialect with `GenerateTsuiokuNodeText` (finalize-helper dialect wins)
+6. (closed 2026-08-31) tarot-app/ removed; TarotTodayUserInstructions.org lives under tarot-today/
+7. (closed 2026-08-31) root scratch a / b.org / c.org / chatWithGab.org removed
+8. (closed 2026-08-31) STARTUP.org directory guidance and metadata example aligned with finalize-helper dialect
 9. Optional: create `01-core/soul/` or stop referring to it
 10. Tarot Today: OpenRouter credits → re-run vision tests with a stronger model
 11. EmacsObsidianSkin: minimal viable skin (theme + layout + keybinding map + org-roam-ui)
 
 ## 4. Recent Session Notes
+
+**2026-08-31 evening — Voight-Kampff (close)**
+- Second V-K. Tree punch list PASS. Guide-layer PASS.
+- STARTUP.org, root scratch, tarot-app leftover, Roemmele Energy-Part1 slug verified on main.
+- X230 HTTPS push: ~/bin/git-credential-libsecret + gh auth (gptix).
+- This VK node still needed on 07-sessions/vk/ (first draft was never finalized).
 
 **2026-08-31 — Orientation-file synchronization**
 
