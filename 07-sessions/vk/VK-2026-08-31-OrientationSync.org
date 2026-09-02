@@ -1,5 +1,5 @@
 :PROPERTIES:
-:ID:       9232dbfd-9ecf-4f3d-9e31-75a1cfce42c3
+:ID:       af0dbedb-c9b1-4d49-b112-a38fe2e35760
 :END:
 #+PROPOSED_PATH: 07-sessions/vk/VK-2026-08-31-OrientationSync.org
 #+COMMIT_MSG: VK 2026-08-31 orientation-sync session close
