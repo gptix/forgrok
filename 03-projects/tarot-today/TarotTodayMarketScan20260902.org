@@ -1,0 +1,154 @@
+:PROPERTIES:
+:ID:       273d76bb-afef-4518-8034-20d69e714a48
+:END:
+#+PROPOSED_PATH: 03-projects/tarot-today/TarotTodayMarketScan20260902.org
+#+COMMIT_MSG: Add Tarot Today market scan from 2026-09-02 session
+#+AUTHOR: George Taylor + Grok
+#+CATEGORY: project
+#+CREATED: [2026-09-02 Wed]
+#+LAST_MODIFIED: [2026-09-02 Wed]
+#+TITLE: Tarot Today — Market Scan of Similar Reading Services (2026-09-02)
+#+NODE-NAME: TarotTodayMarketScan20260902
+#+FILETAGS: :project:tarot:market:competitors:research:
+#+DESCRIPTION: Session summary of the 2026-09-02 Tarot Today review plus named web and phone-app competitors, split into photo-of-physical-spread products versus successful digital-draw incumbents.
+
+* Context
+
+Session date: 2026-09-02.
+
+Trigger was a revisit of the Tarot Today project after BOOT.md / STATUS.md / STRUCTURE.md were loaded. Request: name successful online (web or phone app) services that provide *similar* tarot reading. Follow-up clarified whether any of the named apps actually accept an uploaded image of the user's own spread.
+
+Live prototype remains:
+
+https://huggingface.co/spaces/gptix/tarot-today
+
+Source-of-truth nodes reviewed this session:
+
+- [[TarotTodayCurrentState]]
+- [[TarotTodayProjectOverview]]
+- [[TarotReadingApp]]
+- [[TarotTodayUserInstructions]]
+- [[TarotTodayProjectUpdate20260816]]
+
+* Project state as reviewed
+
+Frozen current-state node is still dated 2026-08-08. STATUS.md (2026-08-31) still lists OpenRouter credits as the blocker for a paid-vision retest.
+
+What the live Space actually does:
+
+- Static Hugging Face Space (=sdk: static=)
+- User supplies an OpenRouter key (localStorage)
+- Upload a photo of physical cards
+- Model ="openrouter/free"=
+- Output is *identification only* (Rider-Waite names + upright/reversed when detectable)
+- No question field, no structured JSON, no layout parser, no stored history, no full reading
+
+Proven identification from a real photo: Ace of Swords, Wheel of Fortune, King of Wands.
+
+Known limits from later pulses (2026-08-10 through 2026-08-16):
+
+- 51 real-world test photographs, 33 scenario categories
+- Single-card and medium spreads (~7 cards) are the reliable range
+- Celtic Cross often returns an empty response on free models
+- Batch script exists at ~/bin/tarot-batch-test.py on the X230
+- Image-quality problems already catalogued: occlusion, tilt, glare/sleeves, mixed decks, clutter, color cast, low resolution, multiple spreads in one frame
+
+Long-term product (unchanged): photograph a physical spread → identify cards + orientation + layout → coherent written interpretation. Web first (PWA already works in phone browsers), then store apps. Local-first / on-device vision remains the longer alignment.
+
+* How the market actually splits
+
+Two different products share the phrase "tarot reading app." They barely overlap.
+
+1. *Photo of the user's physical spread* → identify → interpret.
+   This is Tarot Today's mechanic. Several 2025–2026 apps claim it. None of them is a category-scale success yet.
+2. *Digital draw inside the app or site* (RNG or a daily hand-shuffled order) → canned or AI prose.
+   This is what made Labyrinthos, Trusted Tarot, Biddy Tarot, Galaxy Tarot, and similar properties successful.
+
+Accurate one-line finding from the follow-up: image-of-your-spread *does* exist. It is not what built the large incumbents.
+
+* Tier 1 — same mechanic as Tarot Today (camera or upload)
+
+These accept a photograph or live camera view of physical cards.
+
+| Name | Platform | Mechanic | Scale / caveat |
+|------+----------+----------+----------------|
+| Taroter | iOS | Multi-card camera scan; RWS only; meanings for the spread | Oldest dedicated scanner still live. ~4.7★ / ~268 ratings. https://apps.apple.com/us/app/taroter-tarot-cards-scanner/id1597650532 |
+| Tarot Line | iOS | Snap a photo of physical cards; RWS or Thoth; AI Q&A | Claims "first to auto-recognize physical cards" and 19K+ users. Unverified scale. https://spark.mwm.ai/us/apps/tarot-line/6444258152 |
+| Lantern Arcana | iOS (new, ~Aug 2026) | Photograph a laid-out spread; claims any standard 78-card deck; optional custom-deck photos (up to 3, on-device); AR draw if no cards; journal | Closest published feature set to Tarot Today's roadmap. Too new for proof. https://apps.apple.com/us/app/lantern-arcana-tarot/id6760352452 |
+| Taroculus | Android | Camera *or library upload* → instant interpretation; save sessions | Tiny listing (~100+ installs). Same loop as the HF prototype. https://play.google.com/store/apps/details?id=com.diodoe.taroculus |
+| Tarot Camera | Android | Photograph the spread; also digital draws + AI chat + dictionary | Tiny listing (~100+ installs). Updated 2026-01. https://play.google.com/store/apps/details?id=kr.review.tarotcamera |
+| AI Leela Tarot | iOS + Android | Scan *their* physical deck; AR overlays + booklet; no random draws | Deck-locked companion, not a general RWS reader. |
+| YouCam Perfect (AI Agent) | iOS + Android | Photo-editor app; AI agent can take a photo of a physical card and interpret | Not a tarot product. Useful only as distribution evidence that "snap the card" is leaking into camera apps. |
+| A.E. Waite iCards (Cartamundi / Königsfurt-Urania) | iOS + Android | Scan a printed marker on *their* physical iCards | Hardware lock-in. Reviews report camera focus failures. Cautionary case. |
+| ChatGPT GPTs (e.g. Insightful Tarot Reader) | Web | "Upload a photo of your spread" | Same idea as the HF Space; no product polish. |
+
+Watch weekly: Lantern Arcana, Tarot Line, Taroter.
+
+* Near-miss — physical cards, but no computer vision
+
+| Name | Mechanic | Why it matters |
+|------+----------+----------------|
+| Tarotify.ai (https://www.tarotify.ai/) | User lays cards at home, then *manually taps* names + reversals; AI interprets. Also does digital draws. | Closest *web* workflow to "my physical spread + machine reading" without taking on CV risk. |
+
+* Tier 2 — successful digital-draw services (not image upload)
+
+These are the properties people already use. They do not identify a photo of an arbitrary physical spread.
+
+**Learning / journal**
+
+- Labyrinthos — https://labyrinthos.co/ plus iOS and Android. Category leader for learning. Android 1M+ downloads, ~4.7★ / 40k+ reviews; iOS ~4.9★ / 22k ratings. Lessons, quizzes, journals, multiple decks, optional AI-reading credits. Some users log *physical* draws in the journal by hand. Tina Gong / Labyrinthos LLC.
+- Golden Thread Tarot — sister app from the same shop. Minimal, free, no ads. Aesthetic journal.
+- Biddy Tarot — https://biddytarot.com/. Education business (Brigit Esselmont). Card-meaning encyclopedia that ranks for many card-name searches; courses and certification. Claims on the order of 15M annual visitors. Readings exist; the asset is the school and library.
+
+**Free or cheap instant draws**
+
+- Trusted Tarot — https://www.trustedtarot.com/. Long-running free web reader. Founder shuffles a physical deck daily (not a per-user RNG). On the order of 1.4M visits in Jan 2026. Site claims ~4.9★ / 66k+ reviews. Also has iOS/Android.
+- Galaxy Tarot — Android staple. Historically huge review count. Later ads/subscription backlash. Still a reference app many readers keep.
+- Tarot (Vázquez Software) — Android volume play. ~5.5M downloads, ~4.8★ / 65k reviews. Simple daily draws plus ads.
+
+**Mass-market / AI-native 2025–2026**
+
+- Tarot.com (Keen / Astrology.com family) — high traffic, astrology bundled, paid deep readings.
+- Taro's Tarot — https://tarostarot.com/. AI web reader that writes to the question.
+- CHATAROT.AI — https://chatarot.ai/en/ai-tarot-reading. 3D table, multiple AI "readers," follow-up chat.
+- Tarotap, Overchat AI, Nummi, Raka, Sanctuary — subscription AI readers. Treat "best of 2026" listicles as marketing. Shared pattern: question field + adaptive prose + monthly fee.
+
+**Live human marketplaces (adjacent search intent, different business)**
+
+- Keen, Kasamba, Purple Garden, California Psychics. Per-minute chat / phone / video. This is where a lot of "I want a tarot reading" traffic lands. Price ceiling and App Store review risk ("fortune-telling"), not a product twin.
+
+* Implications for Tarot Today
+
+The open slot is still: *I already shuffled my own deck on the table.* Labyrinthos, Trusted Tarot, and Biddy do not fill it. The 2025–2026 scan apps are trying to, but they are small, deck-locked, or unproven.
+
+Differentiation if identification becomes reliable:
+
+1. Physical cards stay primary. The ritual is the product, not a virtual shuffle.
+2. Vision → structured card list → interpretation. Not RNG dressed as mystery.
+3. Later local-first / on-device or self-hosted vision. None of the named incumbents offer that.
+
+Gaps already visible in successful apps, matching the 2026-08-16 entrepreneurial review:
+
+- Optional question / intention field. Every AI reader that feels "personal" has one.
+- Journal of *this physical spread* (Labyrinthos already lets people log manual draws).
+- Explicit "not fortune-telling / reflection journal" framing for store review.
+- Fail with a *specific* reason when the photo is bad (glare, crop, mixed deck, tilt). The iCards app shows what happens when scan fails silently.
+
+Pricing context from the 2026-08-16 node is still the working band: subscription about $7.99–$9.99/mo or ~$49.99/yr; lifetime around $59.99; free tier useful enough to form a habit.
+
+* Suggested next actions (unchanged in substance)
+
+1. OpenRouter credits → re-test identification with a stronger vision model (Gemini 2.5 Flash was the preferred candidate on 2026-08-16).
+2. Harden image-quality + orientation detection before adding more reading prose.
+3. Add a short reading layer (2–3 lengths, one alternate voice) only after identification is stable.
+4. Add optional question field and local save of valid spreads.
+5. Keep watching Lantern Arcana, Tarot Line, and Taroter; use Labyrinthos (journal + learn) and Trusted Tarot (low-friction reading) as UX references, not as mechanic copies.
+
+* Related
+
+- [[TarotTodayCurrentState]]
+- [[TarotTodayProjectOverview]]
+- [[TarotReadingApp]]
+- [[TarotTodayUserInstructions]]
+- [[TarotTodayProjectUpdate20260816]]
+- [[TarotTestImageScenarioRoster]]
