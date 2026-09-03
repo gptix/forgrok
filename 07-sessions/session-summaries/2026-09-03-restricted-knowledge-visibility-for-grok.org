@@ -1,0 +1,165 @@
+:PROPERTIES:
+:ID:       e7403094-6ec4-4aad-9d26-2095a3b17bfb
+:END:
+#+PROPOSED_PATH: 07-sessions/session-summaries/2026-09-03-restricted-knowledge-visibility-for-grok.org
+#+COMMIT_MSG: Add session summary on Grok-visible vs public Tsuioku knowledge
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 07-sessions
+#+CREATED: [2026-09-03 Thu 13:08]
+#+LAST_MODIFIED: [2026-09-03 Thu 13:08]
+#+TITLE: Restricted Knowledge Visibility for Grok (2026-09-03 session)
+#+NODE-NAME: RestrictedKnowledgeVisibilityForGrok
+#+FILETAGS: :session:tsuioku:github:visibility:rights:grok:selective-knowledge:
+#+DESCRIPTION: Session record of the 2026-09-03 Grok chat: BOOT load, why a single GitHub repo cannot be half-private, and the agreed pattern for giving Grok subscriber/paywalled sources without publishing them.
+
+* Context
+
+This node records a Grok chat on 2026-09-03 (Thursday, Marietta / ET). Operator opened with the standing BOOT phrase, then asked how Tsuioku can be visible to Grok in chat without making subscriber-only material (e.g. Readmultiplex / Roemmele essays) visible to the public.
+
+Canonical working copy remains =~/local-side/= on the X230. GitHub =gptix/forgrok= is the public remote mirror. Grok cannot SSH or otherwise reach the X230; any file Grok uses in this product must arrive via a public URL, a chat/Project attach, or an authorized connector.
+
+Related standing ideas (names only; verify paths with InspectGitHubState before claiming location on =main=):
+
+- [[SelectiveKnowledgeExposure]]
+- [[AirgappedCEOPattern]]
+- [[InspectGitHubState]]
+- [[GenerateTsuiokuNodeText]]
+- [[OrgRoamNodeNameConvention]]
+- BOOT.md, STATUS.md, STRUCTURE.md
+
+* Session arc
+
+** BOOT
+
+Operator: "Hello Grok! Please visit https://github.com/gptix/forgrok/blob/main/BOOT.md"
+
+Grok fetched BOOT.md, then STATUS.md and STRUCTURE.md.
+
+Loaded orientation (as of those files):
+
+- Operator: George Taylor; KB Tsuioku; public mirror gptix/forgrok; working copy X230 =~/local-side/=
+- Local agent: Withnail on hermes-pi (Hermes last documented 0.19.0 / qwen2.5-3b-64k / Telegram @WithnailRobot; runtime not re-verified)
+- Emacs only; org-roam NODE-NAME PascalCase; new nodes start with =#+PROPOSED_PATH:= and =#+COMMIT_MSG:=; no leading =:PROPERTIES:= drawer
+- InspectGitHubState: exact-path fetch required; tree summaries are not proof of absence
+- Skills listed in STATUS as live: CaptureLessonLearned, CreateNewSkill, GenerateTsuiokuNodeText, InspectGitHubState, PiWhisperTranscription, RubyResearchLoop, SkillsIndex, UpdateProjectStatus, VoightKampffSessionClose
+- Roemmele essays 001–008 ingested on public GitHub; 009+ still open
+
+No substantial project work was done after BOOT beyond the visibility questions.
+
+** Question 1 — Can part of forgrok be private (only operator + Grok)?
+
+Answer recorded:
+
+- GitHub visibility is *whole-repository*: public, private, or (enterprise) internal. No folder- or file-level public/private mix inside one repo.
+- Collaborators are GitHub *users*. Grok-in-chat is not a GitHub account that can be invited.
+- Unauthenticated Grok tools only read *public* exact-path URLs. That is why BOOT/InspectGitHubState work today.
+- Making =forgrok= private would hide it from the public *and* from the current BOOT fetch path, unless a GitHub connector is authorized in Grok or files are pasted/attached.
+
+Workarounds named (not implemented this session):
+
+1. Leave sensitive material off GitHub (X230 only).
+2. Two remotes / two repos (public forgrok + private sibling).
+3. Generate a public subset (e.g. gitexporter) from a private monorepo.
+
+=.gitignore= does not un-publish history already pushed. Public forks stay public if visibility later changes.
+
+Recommendation given: keep =gptix/forgrok= public so the Grok on-ramp keeps working; put "only us" material in the working copy and/or a separate private store.
+
+** Question 2 — How can Grok use paywalled / subscriber sources without publishing them?
+
+Operator model (accepted as correct):
+
+- Tsuioku is a structured, wiki-like KB in the Karpathy LLM-wiki sense (raw sources compiled into a maintained wiki).
+- For Grok-in-chat to use a slice, that slice must be visible to Grok.
+- Grok cannot manipulate the X230; the operator (or software *on* that machine) must push/attach.
+- Public GitHub is useful because Grok can view it, not because Grok can edit it.
+
+Rights framing recorded:
+
+- Operator having a Readmultiplex (or similar) subscription is a personal right to *read* those essays.
+- Using a private copy as a source for personal notes and a private assistant is the intended pattern.
+- Putting *verbatim paywalled text* on public =forgrok= is the failure mode.
+- Public layer should hold citation, date, inventory, and operator/Grok synthesis that does not reproduce the paywalled work wholesale.
+
+Visibility table recorded:
+
+| Channel | Operator controls | Grok can read | Public can read |
+| Public gptix/forgrok | yes | yes (BOOT path) | yes |
+| Private GitHub, no connector | yes | no | no |
+| Private GitHub + GitHub connector | yes | yes | no |
+| Grok Project Sources / chat attach | yes | yes in that project/thread | no |
+| Drive / Notion / Box + connector | yes | yes | no if doc is private |
+| Unlisted gist / secret raw URL | weak | often yes | anyone with the link |
+| X230 or withnail-kb only | yes | no | no |
+
+Connectors available to *connect* on this Grok account (not connected at session time except Voice and Automations): Gmail, Google Calendar, Google Drive, Outlook, Outlook Calendar, *GitHub*, Box, Notion, and others. GitHub was *not* connected.
+
+Two privacy layers distinguished:
+
+- Not on the public web (private repo / Project / Drive).
+- Not leaving the operator's machines (Withnail / Emacs only). Anything Grok reads in chat is processed in the Grok session. That is appropriate for this conversation path; it is not the air-gapped CEO path.
+
+** Recommended architecture (proposed, not applied on disk this session)
+
+Keep the Karpathy split (immutable raw vs compiled wiki) and split *visibility* the same way.
+
+1. *Public mirror* =gptix/forgrok=
+   - BOOT, STRUCTURE, STATUS, skills, public HPC, indexes.
+   - For a restricted work: stub node with title, source, rights note, pointer to private raw. No full text.
+
+2. *Restricted store* (choose one primary later)
+   - Private GitHub sibling (best git/Emacs fit), e.g. =gptix/tsuioku-restricted=. Second remote or second tree from the X230. After GitHub connector auth, Grok can exact-path fetch.
+   - Grok Project Sources (best "this Grok account only" fit). Projection for chat, not the git record of record.
+   - Drive/Notion + connector (weaker fit for org-roam + small commits).
+
+3. *Air-gapped slice*
+   - =~/withnail-kb/= on hermes-pi remains a third, smaller exposure for Withnail. It does not make content visible to cloud Grok.
+
+4. Do *not* treat secret URLs as the rights boundary.
+
+Standing rule proposed:
+
+- Canonical: X230 =~/local-side/=
+- Public GitHub: only what may be shown to the world
+- Restricted GitHub or Project Sources: subscriber raw + nodes that quote it
+- Withnail slice: whatever the local CEO is allowed to see
+- This chat: public forgrok by default; restricted stores only after connector or attach
+
+Grok offered to start the GitHub connect card only if the operator asked. Operator did not ask in this session; next message requested this summary instead.
+
+* Decisions
+
+- [X] Public vs private is a whole-repo GitHub property; do not design as if forgrok folders can be ACL'd per reader.
+- [X] Grok-in-chat is not a GitHub collaborator identity.
+- [X] Current BOOT/InspectGitHubState path depends on *public* exact-path fetches.
+- [X] Subscriber/paywalled verbatim text must not go on public forgrok.
+- [X] Preferred long-term pattern: public stubs + private sibling store (git) and/or Grok Project Sources for chat grounding.
+- [ ] Create private repo =gptix/tsuioku-restricted= (or chosen name) — not done.
+- [ ] Connect GitHub connector in Grok — not done.
+- [ ] Partition STRUCTURE paths into public vs restricted — not done.
+- [ ] Write stub-node template for restricted sources — not done.
+- [ ] Update STATUS.md / STRUCTURE.md after any split — not done.
+
+* What was *not* done
+
+- No Voight-Kampff close.
+- No STATUS.md or STRUCTURE.md edit.
+- No files pushed to GitHub.
+- No connector authorization.
+- No movement of Roemmele/Readmultiplex raw files.
+- Hermes-pi runtime not probed.
+- SelectiveKnowledgeExposure exact path on =main= was probed once at =05-wiki/concepts/SelectiveKnowledgeExposure.org= and 404'd; do not treat that path as proven. Use InspectGitHubState before asserting location.
+
+* Operator intent for this node
+
+Save into Tsuioku for later use. Operator stated other issues need attention today; this file is the hand-off so the visibility/rights design is not lost.
+
+Paste into a new Emacs buffer, confirm org-mode, then =C-c n F= (or =C-u C-c n F=) so =my/org-roam-finalize-place-id-commit= can drop the temporary path/commit lines, create the file-level ID, place the file, and commit locally. Push only when ready. Do not commit secrets.
+
+* Suggested next actions (when returning)
+
+1. Decide private-store name and whether it is a second repo or a second remote.
+2. List STRUCTURE paths that must stay off public =main= (start with subscriber raw under 04-sources/roemmele or equivalent).
+3. If Grok-in-chat must read the private store, connect the GitHub connector and re-test one exact-path fetch.
+4. Add a short pointer in STATUS.md section 2 or 3 once the store exists.
+5. Optionally run Voight-Kampff on the session that implements the split, not on this summary-only chat.
