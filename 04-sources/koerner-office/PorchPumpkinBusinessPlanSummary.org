@@ -1,0 +1,134 @@
+:PROPERTIES:
+:ID:       87949827-2b16-42fb-a617-583f77716d19
+:END:
+#+PROPOSED_PATH: 04-sources/koerner-office/PorchPumpkinBusinessPlanSummary.org
+#+COMMIT_MSG: Ingest porch pumpkin Koerner plan summary for Atlanta autumn decoration sourcing
+#+AUTHOR: Joji Teira / Grok (summary of Koerner Office interview plan)
+#+CATEGORY: Sources
+#+CREATED: [2026-09-02]
+#+LAST_MODIFIED: [2026-09-02]
+#+TITLE: Porch Pumpkin Business Plan Summary (Heather / DFW)
+#+NODE-NAME: PorchPumpkinBusinessPlanSummary
+#+FILETAGS: :source:koerner:pumpkin:seasonal:atlanta:wholesale:
+#+DESCRIPTION: Detailed summary of the Koerner Office porch-pumpkin plan (Heather, Dallas-Fort Worth): packages, four-tier sourcing, route unit economics, costs, launch calendar. Maps to Atlanta / Marietta decoration work.
+
+* Source
+
+- Raw capture: ~[[file:~/local-side/06-raw/Porch-Pumpkin-Business-Plan.md][06-raw/Porch-Pumpkin-Business-Plan.md]]
+- Origin: Koerner Office interview with *Heather*, founder of a Dallas-Fort Worth porch-pumpkin install business. Plan text also points at tkopod.com.
+- Status of raw file: Google-Doc export with a large embedded PNG. Do not ingest the raw file as a Tsuioku node. This summary is the node.
+- Numbers below are *Heather's reported figures*, not Atlanta quotes. Confirm current farm prices and insurance before spending.
+
+* What the business is
+
+Design, deliver, and install a *fixed menu* of fall pumpkin displays on residential porches. Full payment up front (Venmo in year one). Season is about two months of hard physical work, then pickup.
+
+Heather's path:
+
+- Inspired by Dallas Arboretum Pumpkin Village; decorated her own porch; neighbors asked.
+- Season 1 goal: 30 orders for Christmas money. Hit 30 in *four days*. Finished at *250 homes, $100k revenue, ~50% margin*, no website.
+- Season 6: ~*1,300 orders/year*, peak-season profit *>$100k per month*, margin 50–55%, ~20 farm-direct 18-wheeler loads.
+
+Honest constraint in the plan: margins are earned in a deadline sprint, not passive income.
+
+* Why the model works (plan's claims)
+
+- Upfront pay → almost no collections risk.
+- Short season + high visual shareability → word of mouth and organic social do most of the selling.
+- Fixed packages beat custom quoting (restaurant-menu analogy).
+- More local competitors *increase* demand (neighborhoods learn the category exists). Atlanta already has Praise Pumpkins and Spillers Pots; that is category education, not a reason to skip sourcing.
+
+* Package menu (Heather, DFW — not Atlanta retail)
+
+| Package | Price | Notes |
+| Package One | $1,350 | Largest; design included |
+| Package Two | $800 | Design included |
+| Oh My Gourd | $750 | Neutral / non-orange colorway; design included |
+| Package Three | $525 | Design +$75 (~95% take it); pickup +$100 (~90%) → typical ticket ~$700 |
+| Package Four | $325 | Smallest; same add-ons |
+| Custom | $3,500+ | Floor set high so custom does not eat the menu |
+
+Sales move: offer *two* options after a short read of the house / event, not the whole menu.
+
+Atlanta comps already in this session: Praise Pumpkins packages ~$375–$1,350 serving Marietta / Vinings / East Cobb; Spillers Pots porch packages from ~$500–$750+. Same shape, different brand.
+
+* Four-tier sourcing (the useful part for Atlanta)
+
+| Tier | Source | Trade-off |
+| 1 | Grocery displays | Easy, 3–4 varieties, not scalable, worst margin |
+| 2 | Nursery / garden center | Better fruit, still marked up |
+| 3 | Broker / produce distributor | Convenient; pay the middleman. Heather *started here*. |
+| 4 | Direct farm | Best price and mix; real minimums. Heather now: 20 truckloads. |
+
+Named farm in the plan: *Pumpkin Pyle* (West Texas) — quality, ordering system, communication. That is a DFW freight relationship, not a default for Cobb.
+
+Atlanta mapping from this session (not in the Koerner text):
+
+- Tier 3 local: Atlanta State Farmers Market, Forest Park (Hammond's, Pumpkin Master historically; Harvest Moon can source). Walk the sheds.
+- Tier 4 on the Marietta→Clayton / GA-365 corridor: *Jaemor Farms* (Alto) — Georgia Grown lists pumpkins wholesale *and* retail; ~200 acres historically; call weekday, do not treat the maze gate as wholesale.
+- Tier 4 south GA with 2026 dates: Herrington Farms, Vienna — mixed/custom color bins, delivery quotes, ready week of 7 Sep 2026.
+- Near Athens, not on the Clayton road: Lord of the Harvest / Hollisaja, Good Hope — bins and trailers; order window historically through ~10 Sep.
+
+Plan guidance for a first season: start at nursery or broker volume. Do not buy a farm-minimum trailer until bookings justify the buffer.
+
+* Unit economics (one real route)
+
+Six Package Three stops on one flatbed:
+
+- ~$700 typical ticket × 6 ≈ *$3,600* route revenue
+- ~2.5–3 hours
+- ~30 pumpkins on the trailer
+- Example $600 job (no hay, stairs): ~$300 profit (~50%)
+- Heather designs in ~10 minutes/house — design speed is a capacity lever
+
+Think in *routes*, not only orders, once volume exists.
+
+* Team and costs
+
+- Hire drivers and designers from *customers* who already like the work.
+- Drivers bring their own truck/trailer (including dump trailer for pickup). Fuel is on them.
+- Designers: piece rate.
+- Scale-only costs: umbrella liability, forklift rental, warehouse, owned trailers, optional paid social boosts.
+- First season can be a personal vehicle or one borrowed trailer. Outdoor covered storage is enough at small volume.
+
+Legal note in the plan: carry general liability. Confirm GA requirements separately.
+
+* Marketing and booking
+
+Year one: word of mouth + organic photos + Venmo. No site.
+Follow-up discipline is treated as the real conversion engine (interest ≠ paid order).
+Over-order inventory vs booked demand; hold a waitlist to soak surplus.
+Pickup at season end is a paid add-on, not a favor.
+
+* 30–60–90 (compressed to the pumpkin calendar)
+
+- *Early summer:* freeze 3–5 packages; line up nursery/broker; do not launch custom-only.
+- *Late summer → first bookings:* take money up front; watch color trends (white / heirloom vs all-orange); stay on the menu.
+- *Delivery season:* route by geography; hire from the book; sell pickup; log actual demand so next year's tier (broker vs farm) is a number, not a hope.
+
+* Financial snapshots from the plan
+
+| Scenario | Revenue | Profit |
+| Conservative new operator, S1 | $30–40k | $15–20k |
+| Heather actual S1 | $100k | ~$50k |
+| Heather S6 peak month | not given as annual | $100k+/month in season |
+
+Do not treat DFW $100k S1 as an Atlanta promise. Use $30–40k as the plan's own "focused first season" target.
+
+* Risks the plan names
+
+Demand explosion (30 → 250) overwhelming a solo founder; weather; fruit quality; under-pricing custom work; skipping follow-up.
+
+* Atlanta / this session — what to do with it
+
+This document is a *playbook*, not a supplier list. For decoration this autumn:
+
+1. Decide whether you are *buying fruit* (wholesale bins) or *selling installs* (Heather's business).
+2. If buying fruit: Jaemor weekday call + Forest Park walk + Herrington quote. That is tiers 3–4 locally.
+3. If selling installs: copy the menu/add-on structure, not the DFW prices, and treat Praise Pumpkins / Spillers as proof of local demand.
+4. Do not start at 20 truckloads.
+
+* Related
+
+- Session notes: Marietta↔Clayton growers (Jaemor, Hillside Orchard, Kinsey, Holland Produce).
+- Raw file remains in 06-raw/. Do not commit the embedded PNG as knowledge.
