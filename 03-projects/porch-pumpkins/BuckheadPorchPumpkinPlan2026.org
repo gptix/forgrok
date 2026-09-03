@@ -1,0 +1,168 @@
+:PROPERTIES:
+:ID:       e1480ba6-7cc1-4e24-a28f-e118df93ce6e
+:END:
+#+PROPOSED_PATH: 03-projects/porch-pumpkins/BuckheadPorchPumpkinPlan2026.org
+#+COMMIT_MSG: Add 2026 Buckhead/North Atlanta porch pumpkin season-one plan
+#+AUTHOR: Joji Teira / Grok
+#+CATEGORY: Projects
+#+CREATED: [2026-09-02]
+#+LAST_MODIFIED: [2026-09-02]
+#+TITLE: Buckhead and North Atlanta Porch Pumpkin Plan 2026
+#+NODE-NAME: BuckheadPorchPumpkinPlan2026
+#+FILETAGS: :project:pumpkin:atlanta:buckhead:seasonal:
+#+DESCRIPTION: Season-one plan for four porch packages in Buckhead and North Atlanta. Sell prepaid, then buy fruit. Grounded in 2026 competitor menus and known bin prices.
+
+* Premise
+
+Copy Heather's DFW structure (fixed menu, money first, short delivery window) onto *Buckhead / Brookhaven / Sandy Springs / Dunwoody / Vinings / Garden Hills / West Paces*. Do not copy DFW prices blindly. Atlanta already has two live installers at those exact prices.
+
+Halloween 2026 is Saturday 31 October. Today is 2 September. Competitors are already taking money.
+
+Related: [[PorchPumpkinBusinessPlanSummary]]
+
+* Competitors in the same streets (2026, live sites)
+
+**Praise Pumpkins** (praisepumpkins.com) — faith-branded, serves Buckhead explicitly. Orders open now. Custom from $750.
+
+| Their package | Price |
+| Premium Praise | $1,350 |
+| Autumn Elegance | $775 |
+| Harvest Charm | $550 |
+| Designer Drop | $375 |
+
+Delivery included in most zones. Removal offered. 2025 season completed; 2026 waitlist mentioned in a City Lifestyle piece.
+
+**Spillers Pots** (spillerspots.com/pumpkins) — Atlanta porch install, customer picks a *delivery week*. Haul-away weekend **14–15 Nov 2026**.
+
+| Their package | Price | Stated fruit |
+| Wednesday Addams | from $375 | 10 heirloom + 4 carver + 4 white + pies |
+| Winifred Sanderson | from $550 | 12 heirloom + 6 carver + 6 white + pies/minis + 1 hay |
+| Casper (non-orange) | from $575 | 15 white/blue/green/grey + 1 hay |
+| Jack Skellington | from $795 | 18 heirloom + 8 carver + 10 white + pies/minis + 2 hay |
+
+They already occupy "basic / large / non-orange / very large." A new offer has to match *count and finish*, not undercut by $10 and look thin.
+
+* Four packages (proposed)
+
+Design included on all four. Hay is an add-on in Buckhead (stairs, brick, HOA). Pickup is an add-on.
+
+| Code | Name | Price | Target fruit | Position vs market |
+| B | Stoop | $395 | 12–16 pieces: 6–8 small/medium orange or mixed, 3–4 white or heirloom, 3–4 minis/pies | Sits $20 over Designer Drop / Wednesday. Looks finished, not a grocery dump. |
+| L | Landing | $595 | 22–28 pieces: 10–12 mixed, 6 white/heirloom, 6–8 minis/pies, optional 1 hay | Between Harvest Charm ($550) and Winifred ($550). Win on arrangement, not price. |
+| N | Ghost | $675 | 18–22 *non-orange only*: white, sage, blue-grey, blush, tan + 4–6 pale minis. No orange. | Above Casper ($575), below Oh My Gourd DFW ($750). Buckhead will pay for a controlled palette. |
+| XL | Portico | $1,175 | 40–50 pieces: 18–22 mixed/heirloom, 10–12 white, 8–10 carvers, minis, 2 hay | Under Praise $1,350; above Spillers $795. For deep porches / Tuxedo / West Paces. |
+
+Add-ons (do not bury in the base price):
+
+- Design already in. Do not sell "undsigned piles."
+- Extra hay bale $35 (Herrington lists straw $8 wholesale / min 10; retail hay in Atlanta is usually $12–20).
+- Haul-away $95 (Spillers treats this as optional; ~90% of Heather's customers bought pickup).
+- Stairs / no-driveway surcharge $40 if the crew cannot roll a cart to the stoop.
+
+Cap custom at $2,500+ or refuse it in season one.
+
+* Sell first, buy second
+
+This is the operating rule.
+
+1. Open a prepaid list *this week*. Square Invoice or Stripe Payment Link. No "hold my spot."
+2. Take *100%* before a date is reserved (Heather year one). If that feels stiff for Buckhead, take 60% now and 40% seven days before the install week — but do not buy fruit on the unpaid 40%.
+3. Hard cap season one at *36 paid installs* (six Saturday routes × six stops). Waitlist after 36.
+4. Do not place a farm or Vienna order until *12 paid packages* are in the account (enough to justify one mixed bin + one white/heirloom pull).
+5. Scout buy only: one Forest Park or Jaemor run after the first 5 paid jobs, to photograph real fruit for the listing. That is marketing inventory, not the season buy.
+
+If paid demand dies at 8 houses, you never touch wholesale. That is success of the rule, not failure.
+
+* 2026 calendar
+
+| Window | Action |
+| 2–10 Sep | Menu live. Collect prepaid. Call Herrington, Jaemor, Forest Park. Quote only — no PO. |
+| Week of 7 Sep | Herrington fruit *ready* (Vienna). Still do not buy until prepaid threshold. |
+| 13 Sep | Jaemor maze/u-pick listed open. Weekday office call for bins, not Saturday gate. |
+| 20–27 Sep | First install week (early decorators, before school photos). |
+| 27 Sep – 11 Oct | Main install weeks. Two routes/weekend + one weekday if needed. |
+| 18–24 Oct | Last installs. Do not promise 30–31 Oct (Halloween traffic, rotten early fruit). |
+| 31 Oct | Halloween. No new drops. |
+| 8–9 Nov or 14–15 Nov | Haul-away. Match Spillers' mid-Nov weekend if you want one dump run. |
+
+Praise / Spillers already selling *now*. Every day without a prepaid link is them booking the same porches.
+
+* Fruit cost (what is actually published)
+
+Do not treat these as Atlanta delivered quotes. They are planning bands.
+
+| Source | 2026 / late-2025 published | Implied |
+| Herrington mixed bin | $300 / ~60 fruit | ~$5 each. Product page also showed "sold out" — call 229-322-4311. Delivery extra, Vienna → Buckhead. |
+| Herrington mini bin | $500 / 800–1000 minis | cheap fillers. |
+| Herrington straw | $8 each, min 10 | |
+| Sugar Grove IL (not local) | 36" jack bin $165 (45–50 ct) | ~$3.30–$3.70 orange. Heirloom bins $269–$336 when they had them; *sold out* as of 27 Aug 2026. |
+| River City Produce (Sep 2025) | 40 medium / $225 | ~$5.60 each. |
+| US wholesale avg 2026 | ~$1.23/kg (~$0.56/lb) | a 15 lb jack ≈ $8 farm-gate *before* freight. Decorative heirlooms retail much higher. |
+
+Working COGS to use until a real Atlanta quote lands:
+
+| Package | Fruit $ | Labor+fuel+wrap | Target contribution |
+| Stoop $395 | $90–120 | $70–90 | $185–230 |
+| Landing $595 | $140–180 | $80–100 | $315–375 |
+| Ghost $675 | $180–240 (whites cost more / scarcer) | $80–100 | $335–415 |
+| Portico $1,175 | $280–380 | $120–150 | $645–775 |
+
+If Forest Park piece-price is all you can get, oranges $6–10 and whites $10–18 still clear the menu *if* you stay at 36 houses and you drive. Grocery-only fruit will not.
+
+Transport: utility trailer day-rate ~$50–80 + fuel Marietta↔Forest Park or Alto. Two-person crew. Do not price a box truck until week 3 volume exists.
+
+* Labor and setup
+
+- Two people, 25–40 minutes on a Stoop, 45–70 on a Portico.
+- Heather's 10-minute design is DFW muscle memory. Budget 20 minutes in season one.
+- Buckhead constraints: brick stairs, no hay on some stoops, HOA sightlines, narrow streets, no overnight trailer. Photograph the porch from the prepaid form (two phone pics) so the crew is not designing cold.
+- Customer need not be home (Spillers rule). Put that in the invoice.
+
+Insurance: general liability before the first drop. Do not skip this in Buckhead.
+
+* Geography
+
+Only these ZIPs / neighborhoods in season one:
+
+Buckhead, Brookhaven, Sandy Springs, Dunwoody, Vinings, Peachtree Hills / Battle, Garden Hills, Tuxedo Park, West Paces Ferry corridor.
+
+Refuse Marietta / East Cobb / Alpharetta this year even though Praise covers them. Distance kills the six-stop route.
+
+Cluster: Saturday A = south Buckhead + Vinings. Saturday B = Brookhaven + north Buckhead. Sunday = Sandy Springs + Dunwoody.
+
+* How this is not Praise / Spillers
+
+You will not beat them on Instagram this month. Differentiating moves that cost little:
+
+- Secular, design-led (no faith kit unless asked).
+- Ghost package as a *named* non-orange SKU, not a custom.
+- Prepaid weeks published (Spillers already does weeks; copy the mechanic).
+- Smaller book, faster replies, same-week photo proof after install.
+
+Do not race $375. Race *looks like $595 at $395* by keeping minis and two whites on the Stoop.
+
+* Season-one numbers (cap 36)
+
+Mix guess if the menu is live and you do not push XL: 14 Stoop, 12 Landing, 6 Ghost, 4 Portico.
+
+- Revenue ≈ (14×395) + (12×595) + (6×675) + (4×1175) = $5,530 + $7,140 + $4,050 + $4,700 = *$21,420*
+- Fruit+labor band ≈ $9k–$12k
+- Contribution ≈ $9k–$12k before insurance, trailer, ads, breakage
+- Haul-away if 70% take $95 ≈ +$2,400 revenue, one dump day
+
+This is *below* Heather's $30–40k "conservative first season" because the cap is 36 and the map is tight. Raise the cap only after the first 12 prepaid and one clean weekend.
+
+* This week's actions
+
+1. Freeze the four names and prices. No fifth SKU.
+2. Payment link + two photo fields + delivery-week picker (three weeks only).
+3. Text 15 Buckhead / Brookhaven people you actually know. That is the whole launch channel.
+4. Call Herrington (Kasey 229-322-4311), Jaemor (770-869-3999 weekday), Forest Park market desk (404-675-1782). Ask: mixed bin delivered vs pickup, white/heirloom availability week of 20 Sep, minimum.
+5. Do not sign a farm PO.
+
+* Open risks
+
+- Whites and heirlooms are the first thing farms sell out (Sugar Grove heirloom bins already gone). Ghost package may have to be limited-count.
+- Herrington mixed-bin page showed $300 and also "sold out." Treat as a phone quote, not inventory.
+- Two competitors already cover Buckhead. Category exists; leftover demand is finite.
+- Heat and rain in September rot cheap fruit. Buy closer to each install week, not one pile on 10 Sep.
