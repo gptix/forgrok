@@ -1,0 +1,92 @@
+:PROPERTIES:
+:ID:       b73afd13-6ac7-41a1-9c24-61cea02f8932
+:END:
+#+PROPOSED_PATH: 04-sources/koerner-office/WhiteLabelSaasBusinessPlanSummary.org
+#+COMMIT_MSG: Ingest white-label SaaS Koerner plan summary (GoHighLevel Diamond cases)
+#+AUTHOR: Joji Teira / Grok (summary of Koerner Office / tkopod episode plan)
+#+CATEGORY: Sources
+#+CREATED: [2026-09-02]
+#+LAST_MODIFIED: [2026-09-02]
+#+TITLE: White-Label SaaS Business Plan Summary (GoHighLevel model)
+#+NODE-NAME: WhiteLabelSaasBusinessPlanSummary
+#+FILETAGS: :source:koerner:saas:gohighlevel:whitelabel:pricing:
+#+DESCRIPTION: Summary of the Koerner white-label SaaS plan: GHL rebrand at $300-500/mo flat, Diamond Award = 1000+ MRR customers, seven case studies, two paths, monthly pricing, 30-day launch. Separate from the porch-pumpkin plan.
+
+* Source
+
+- Raw capture: ~[[file:~/local-side/06-raw/White-Label-SAAS-Business-Plan.md][06-raw/White-Label-SAAS-Business-Plan.md]]
+- Origin: Koerner Office episode plan (tkopod.com). Reverse-engineers seven GoHighLevel *Diamond Award* businesses.
+- Raw file is a Google-Doc export with a large embedded image. This summary is the node to ingest.
+- *Not* a pumpkin-sourcing document. Same 06-raw drop as the porch plan; different business.
+
+* Core model
+
+GoHighLevel (GHL) is an all-in-one agency CRM (pipelines, sites, calendars, automations, reputation, invoicing). List price to agencies/businesses: about *$97–$497/month*.
+
+White-label mode: pay GHL a *flat $300–$500/month* that *does not scale with customer count*. Rebrand it, pick a niche, set your price, sell it.
+
+Infrastructure = GHL. You supply niche, brand, and distribution.
+
+* Diamond Award (how the plan spots $100k+/month shops)
+
+Public GHL badge. Minimum: *1,000 paying monthly recurring customers*.
+
+At a conservative ~$100/month average that is *≥ $100k/month* recurring. Most winners are higher. Plan's other platform stats: 70,000+ agencies on GHL; SaaS marketplace ~229 apps; GHL's own non-WL CRM plan $97/month.
+
+* Seven businesses (plan numbering is 7 → 1)
+
+| # | Name | Niche | Pricing cited | Lesson |
+| 7 | Loan Signing System (Mark Wills) | Mobile notaries | $97/mo or $1,000/year | Founder-in-niche. Launched ~2024 per Wayback. |
+| 6 | Push Press | Gym / studio ops | $229/mo + $700 setup; upper plans $550–$600; host ~$200 avg | *Wedge*: start as the check-in app, expand to billing/CRM. G2 used to find wedges. |
+| 5 | Scale Tutor | Tutors (UK) | range similar, not specified | Rebrand GHL as "tutor CRM"; same engine, different costume. |
+| 4 | IUL Insiders | Indexed universal life agents | $500 / 90 days then $180/mo; mid $800/mo; expensive apply-now tier | Ecosystem lock-in: CRM + community + courses so canceling hurts. |
+| 3 | Zappy Chat | *Path B* — sell to GHL users | $200/mo per sub-account or $500/mo unlimited | Do not pick an industry; sell a missing feature into the existing GHL install base. |
+| 2 | Techmatics | Australia / clone-in-language | AUD $97–$149/mo | Same product, new country/language. Plan notes Diamond winners in Spanish, Portuguese, Italian, German, French. |
+| 1 | ClickSlow | cautionary | *$97 one-time* | Bankrupt. Trustpilot 2.4. Plan's exhibit that one-time pricing kills this model. |
+
+* Two paths
+
+- *Path A — niche white-label:* pick an industry you already know; wrap GHL; sell monthly to that trade.
+- *Path B — GHL add-on:* sell a tool *to people already on GHL* (Zappy Chat). Distribution is the GHL marketplace / user base, not cold industry outreach.
+
+* Pricing rule the plan will not bend
+
+Monthly recurring. ClickSlow is the negative proof. Setup fees are allowed (Push Press $700) as long as the spine is MRR.
+
+* Niche-finding pattern
+
+Every winner was *already inside* the trade. Pain points first, software second. Plan's line: the software is GHL; the unfair advantage is the job you already had (notary, gym desk, tutor, insurance).
+
+Example mapping table in the plan: notaries → calendar+CRM; gyms → check-in+billing; tutors → leads+scheduling; IUL → pipeline+docs+training; also sketched: dog groomers, wedding photographers.
+
+* Acquisition without an audience (plan)
+
+Partner with a creator or trainer *already trusted in the niche* (notary course, gym coach, insurance community). Copy-paste their distribution rather than growing a personal brand from zero.
+
+* Six reverse-engineering tools named
+
+SpyFu, Wappalyzer, publicwww.com, PredictLeads, Apollo.io, TheirStack.com.
+
+Use: see what a Diamond shop runs, what they bid on, what stack their customers show, then clone structure not trademark.
+
+* 30-day launch (plan's close)
+
+Pick one niche you already understand. Partner with one creator. Stand up the white-label. Sell monthly. Do not write software. Do not price one-time.
+
+Closing slogan in the source: "Pick a Niche. Partner With a Creator. Copy Paste."
+
+* Lock-in mechanic
+
+Get the customer to store *their* clients, list, calendar, and automations in your wrapper. Leaving means leaving their books. IUL Insiders is the extreme version (community + courses + CRM).
+
+* Relation to other 2026-09-02 work
+
+- Porch pumpkin plan is a *seasonal physical* business with upfront pay and a two-month sprint. This SaaS plan is *year-round MRR* on rented software.
+- Only weak overlap: if a porch-pumpkin operator later wanted a booking/CRM wrapper, GHL is one off-the-shelf option. Do not merge the two projects.
+- Existing sibling nodes in this folder: AIAgencyCustomerAcquisitionBusinessPlan, AIAuditBusinessPlan.
+
+* Caveats
+
+- Diamond math is a *floor at 1,000 customers × assumed ARPU*, not audited revenue.
+- GHL pricing and WL fee change; confirm on GHL's site before modeling.
+- White-label still requires support, niche copy, and payment processing. Flat $300–$500 is software rent, not total COGS.
