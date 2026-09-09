@@ -1,5 +1,5 @@
 :PROPERTIES:
-:ID:       99a9d325-6bc1-4414-8044-2c80e2b84fe3
+:ID:       b4dadd40-2e92-4fc5-b531-c6fb1df19ea7
 :END:
 #+PROPOSED_PATH: 03-projects/omarchy/OmarchyLearningNotes.org
 #+COMMIT_MSG: Add Omarchy 4.0.2 learning notes and video table for T470s
