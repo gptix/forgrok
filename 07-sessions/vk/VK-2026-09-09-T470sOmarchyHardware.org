@@ -1,0 +1,52 @@
+:PROPERTIES:
+:ID:       ff752592-0edd-4fda-8963-0ed94ab5b1cf
+:END:
+#+PROPOSED_PATH: 07-sessions/vk/VK-2026-09-09-T470sOmarchyHardware.org
+#+COMMIT_MSG: Add VK summary for T470s / Omarchy hardware session
+#+AUTHOR: George Taylor + Grok
+#+CATEGORY: 07-sessions
+#+CREATED: [2026-09-09 Wed 13:27]
+#+LAST_MODIFIED: [2026-09-09 Wed 13:27]
+#+TITLE: VK 2026-09-09 — T470s and Omarchy
+#+NODE-NAME: VK20260909T470sOmarchyHardware
+#+FILETAGS: :vk:session:t470s:omarchy:hardware:
+#+EXECUTIVE_SUMMARY: T470s 20HF-0066US is now a first-class fleet machine (Omarchy 4.0.2). Barcode FRUs ingested; Amazon cart batteries confirmed as the correct front+rear pair; Omarchy learning node is on main. STATUS header date and X230 inventory network line still drift. Canonical KB host remains X230.
+#+DESCRIPTION: Voight-Kampff close for the 2026-09-08/09 session that added the T470s hardware nodes, confirmed battery orders, and started the Omarchy project slice.
+
+* Session Identifier
+- Dates: [2026-09-08 Tue] evening through [2026-09-09 Wed 13:27]
+- Trigger: operator said Voight-Kampff
+- Protocol: v4.1+ / executable skill =VoightKampffSessionClose=
+
+* Session Context
+Incoming ThinkPad T470s (20HF-0066US) as gradual X230 replacement. Omarchy 4.0.2 + Emacs + Brave already installed. Session covered KB placement, SingleFile ingest, Amazon cart review, OS version correction, and Omarchy learning videos.
+
+* Integrity & Drift Findings
+- =01-core/soul/= still absent on =main=.
+- BOOT last-updated stamp still 2026-09-01; T470s lines are present.
+- STATUS last-updated stamp still 2026-09-02; item 12 is present.
+- Inventory T470s present; X230 network line not yet Ethernet-primary.
+- =OmarchyLearningNotes.org= on =main=.
+- Hardware nodes on =main=.
+- Withnail runtime not re-probed.
+- No private/ material written.
+
+* Session Action Review
+See the close text in this chat. Headline: barcode ingest, cart pair confirmed suitable, Omarchy learning node pushed, orientation files partly updated.
+
+* Recommendations
+1. Patch inventory X230 network line.
+2. Bump STATUS and BOOT dates; add STATUS §4 pulse.
+3. List =omarchy= in STRUCTURE.md projects.
+4. Install both batteries and speakers in one sitting after parts arrive.
+5. Record live Omarchy specs on-box.
+
+* Protected Rules Check
+Emacs-only, near-airgapped Withnail, local-first, no secrets, X230 remains KB host.
+
+* Cross-Links
+- [[file:../../02-infrastructure/hardware/ThinkpadT470s.org][ThinkpadT470s]]
+- [[file:../../02-infrastructure/hardware/ThinkpadT470sBatteriesAndSpeakers.org][ThinkpadT470sBatteriesAndSpeakers]]
+- [[file:../../03-projects/omarchy/OmarchyLearningNotes.org][OmarchyLearningNotes]]
+- [[file:../../02-infrastructure/hardware/joji-hardware-inventory.org][joji-hardware-inventory]]
+- [[file:VK-2026-08-31-OrientationSync.org][VK-2026-08-31-OrientationSync]]
