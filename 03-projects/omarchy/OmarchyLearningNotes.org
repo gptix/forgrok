@@ -1,0 +1,102 @@
+:PROPERTIES:
+:ID:       99a9d325-6bc1-4414-8044-2c80e2b84fe3
+:END:
+#+PROPOSED_PATH: 03-projects/omarchy/OmarchyLearningNotes.org
+#+COMMIT_MSG: Add Omarchy 4.0.2 learning notes and video table for T470s
+#+AUTHOR: George Taylor + Grok
+#+CATEGORY: 03-projects
+#+CREATED: [2026-09-09 Wed 12:18]
+#+LAST_MODIFIED: [2026-09-09 Wed 12:18]
+#+TITLE: Omarchy Learning Notes (T470s)
+#+NODE-NAME: OmarchyLearningNotes
+#+FILETAGS: :omarchy:t470s:linux:hyprland:learning:
+#+DESCRIPTION: Session notes on Omarchy 4.0.2 on the ThinkPad T470s, with a ranked video list for learning the desktop after install.
+
+* Context
+
+ThinkPad T470s (machine type 20HF-0066US) is the incoming daily-driver replacement for the X230. Omarchy was installed first, then Emacs and Brave via Omarchy's own mechanisms.
+
+Canonical Tsuioku working copy remains X230 =~/local-side/= until cutover is explicit.
+
+Related hardware nodes (create/finalize if not already on disk):
+
+- [[file:../../02-infrastructure/hardware/ThinkpadT470s.org][ThinkpadT470s]]
+- [[file:../../02-infrastructure/hardware/ThinkpadT470sBatteriesAndSpeakers.org][ThinkpadT470sBatteriesAndSpeakers]]
+
+* Version string (authoritative)
+
+Use *Omarchy 4.0.2*.
+
+Correction trail from this session, do not reuse the earlier strings:
+
+| Said at the time | Status |
+|------------------|--------|
+| Omarchy 3.0.2    | Wrong; first report |
+| Omarchy 0.4.2    | Wrong; mis-parse of 4.0.2 |
+| Omarchy 4.0.2    | Corrected 2026-09-08 |
+
+Current ISO line on omarchy.org was already at 4.0.3 when these notes were written. The T470s install is 4.0.2. Learn the *4.x / Quattro* desktop (Quickshell), not the 2025 Waybar-era shell.
+
+* What "learning Omarchy" means here
+
+The T470s already has Omarchy installed. Priority is daily use:
+
+- One menu (~=Super + Space= or the bar hotkey)
+- Workspaces and tiling
+- Themes
+- Install / update path
+- Built-in manual
+- Battery, audio, and network panels (two internal packs; Ethernet + occasional Wi-Fi like the X230 pattern)
+
+Do not start with hybrid CachyOS ISOs or "what is Omarchy 3.0" review videos.
+
+On the machine: open the *Omarchy Manual* web app from the menu. That copy tracks the installed release. Public mirror: https://omarchy.org/manual
+
+* Watch order
+
+1. DHH — Omarchy Quattro (official 4.x intro)
+2. NetworkChuck — 50 features after install
+3. Dan Wahlin — 30-ish minutes on an old Intel laptop
+4. LinuxBTW — Omarchy 4 tour (battery / audio / network chapters)
+5. NetworkChuck — tiling mental model (skip the install hype)
+6. typecraft — tiling for people who still reach for the mouse
+7. DHH — unified menu (idea carries; chrome has moved)
+8. DHH — Omarchy 3 45-minute tutorial (workflow only)
+
+* Videos
+
+| Video | Comments |
+|-------+----------|
+| [[https://www.youtube.com/watch?v=F7fe9pa8OeE][Omarchy Quattro — DHH (81 min)]] | Official 4.x / Quattro introduction. Version family on this T470s. Watch first. Quickshell shell, not the old Waybar stack. |
+| [[https://www.youtube.com/watch?v=2IDjteRQgMQ][Omarchy Can Do WHAT?! 50 Features You're Missing — NetworkChuck (36 min, 2026-09-05)]] | Best after-install tour: keybindings, one menu, workspaces, install vs AUR caution, web apps, updates, Btrfs snapshots, dictation, themes, agents. |
+| [[https://www.youtube.com/watch?v=8YUVn1TFt6g][Omarchy in 30-ish Minutes — Dan Wahlin (29 min)]] | Quattro on a 2019 Intel MacBook. Closer hardware class to the T470s than dual-GPU demos. Launcher, tiling, workspaces, top bar, theme-from-wallpaper, agents, plugins. |
+| [[https://www.youtube.com/watch?v=qBKMe8AatY0][I Didn't Expect Omarchy 4 to Be This Good — LinuxBTW (26 min)]] | 4.x feature map. Use the chapters on networking/Tailscale and audio/battery; both matter on this chassis. |
+| [[https://www.youtube.com/watch?v=9SDkU5VDQEQ][You need to switch to Linux RIGHT NOW!! — NetworkChuck (34 min)]] | Tiling / Hyprland / Quickshell mental model. Skip "why switch" and the 60-second install framing; the middle chapters are the useful part. |
+| [[https://www.youtube.com/watch?v=6YJImMYKefk][You NEED to try this Linux Setup! (Omarchy for Newbs) — typecraft (14 min)]] | Short tiling intro. Older than 4.x; treat keybinds as conceptual. |
+| [[https://www.youtube.com/watch?v=Cft6mZDzIng][Omarchy: The Unified Menu System — DHH (20 min)]] | How one menu drives install, theme, setup, and docs. Menu layout has moved since this video; the idea has not. |
+| [[https://x.com/dhh/status/1986415192780230665][Omarchy 3 tutorial — DHH on X (45 min)]] | First-party walkthrough of workspaces, menu, and theme. 3.x chrome differs from 4.x; hotkey habits mostly carry. |
+| [[https://www.youtube.com/watch?v=8P9qqnso5Ro][What Happened to Omarchy in Two Weeks? — LinuxBTW (18 min)]] | Optional. Plugins marketplace, AirPods, multi-monitor, AUR caution. Watch after you can move around the desktop. |
+| [[https://www.youtube.com/watch?v=Nj_d9asrqKc][Omarchy 4 Quattro is awesome! — The Linux IT Guy (15 min)]] | Optional. Bar, themes, extras. Also posted a keybind printout on X. |
+| [[https://www.youtube.com/watch?v=NYFGCESmikA][Lex Fridman #501 — DHH]] | Optional philosophy, not a how-to. Omarchy chapter ~37:00; Linux-desktop chapter ~3:38. |
+
+* Written references (not videos)
+
+| Link | Comments |
+|------+----------|
+| [[https://omarchy.org/][omarchy.org]] | Project home. ISO downloads. |
+| [[https://omarchy.org/manual][The Omarchy Manual]] | Source of truth for hotkeys and features on 4.x. Prefer the in-desktop Manual web app when on the T470s. |
+| [[https://github.com/basecamp/omarchy][github.com/basecamp/omarchy]] | Upstream. Manual source tree lives in the repo. Confirm org/repo name if it has moved to omacom/omarchy. |
+| [[https://wiki.hypr.land/Getting-Started/Master-Tutorial/][Hyprland Master Tutorial]] | Underlying compositor. Use when Omarchy's wrapper is not enough. Do not rebuild Hyprland from scratch on this machine. |
+
+* Skip as primary learning
+
+- Brodie Robertson "What The Hell Is Omarchy Linux 3.0" — review of an older release
+- Omarchy + CachyOS hybrid ISO videos — different install path than the stock 4.0.2 on this T470s
+- Anything that still treats Waybar as the desktop shell
+
+* Open follow-ups
+
+- Emacs on Omarchy/Hyprland: keybind sheet for this T470s (not yet written)
+- Live on-box inventory still missing: CPU, RAM, SSD, hostname, MAC, BIOS, battery readings
+- Repair queue remains: dual internal batteries + speaker assembly 00JT988
+- When this project grows past learning notes, add a hub node such as =OmarchyOnT470s= and keep this file as the video/curriculum slice
