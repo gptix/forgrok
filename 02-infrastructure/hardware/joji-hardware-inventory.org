@@ -10,26 +10,28 @@ Locked under GROK-SCHEMA v2.0. This node eliminates all future repetitive discus
 
 **Hardware Table**
 
-| Feature                  | Lenovo ThinkPad X230 (Laptop)                  | HP ENVY 4520 (Printer)                          |
-|--------------------------|------------------------------------------------|-------------------------------------------------|
-| Model                    | Lenovo ThinkPad X230 (2012)                    | HP ENVY 4520 All-in-One                         |
-| Operating System         | Ubuntu 22.04 LTS                               | Embedded firmware (no full OS)                  |
-| Current IP Address       | Not shown (dynamic on 2WIRE342-24)             | 192.168.1.68                                    |
-| Network Connection       | Wi-Fi (2WIRE342-24)                            | Wireless – 2WIRE342-24 (2.4 GHz)                |
-| MAC Address              | Not collected yet                              | c8:d3:ff:07:82:2e                               |
-| Hostname                 | gt-ThinkPad-X230                               | HP07822E                                        |
-| Processor                | Intel Core i5 / i7 (3rd gen Ivy Bridge)        | N/A (embedded processor)                        |
-| RAM                      | 4–16 GB DDR3 (user-dependent)                  | N/A                                             |
-| Storage                  | HDD or SSD (user-dependent)                    | N/A                                             |
-| Display                  | 12.5" (1366×768 typical)                       | N/A                                             |
-| Print Technology         | N/A                                            | Thermal Inkjet (color + black)                  |
-| Print Speed (approx.)    | N/A                                            | ~9 ppm black, ~6.5 ppm color                    |
-| Scanner                  | N/A                                            | Flatbed scanner (included)                      |
-| Wireless Standard        | Wi-Fi (802.11 b/g/n)                           | 802.11 b/g/n                                    |
-| Connection Type Used     | Wi-Fi                                          | Wi-Fi (IPP protocol)                            |
-| Driver on Ubuntu         | N/A                                            | HPLIP + IPP Everywhere (now working)            |
-| Firmware / Revision      | BIOS (user-dependent)                          | TH69S4001TV0660                                 |
-| Current Status           | Working normally                               | Connected & printing successfully               |
+| Feature               | Lenovo ThinkPad X230 (Laptop)           | HP ENVY 4520 (Printer)               | ThinkPad T470s                                               |
+|-----------------------+-----------------------------------------+--------------------------------------+--------------------------------------------------------------|
+| Model                 | Lenovo ThinkPad X230 (2012)             | HP ENVY 4520 All-in-One              | Lenovo ThinkPad T470s (20HF-0066US)                          |
+| Operating System      | Ubuntu 22.04 LTS                        | Embedded firmware (no full OS)       | Omarchy 4.0.2                                                |
+| Current IP Address    | Not shown (dynamic on 2WIRE342-24)      | 192.168.1.68                         |                                                              |
+| Network Connection    | Wi-Fi (2WIRE342-24)                     | Wireless – 2WIRE342-24 (2.4 GHz)     | Home LAN 2WIRE342-24                                         |
+| MAC Address           | Not collected yet                       | c8:d3:ff:07:82:2e                    |                                                              |
+| Hostname              | gt-ThinkPad-X230                        | HP07822E                             | not collected yet                                            |
+| Processor             | Intel Core i5 / i7 (3rd gen Ivy Bridge) | N/A (embedded processor)             |                                                              |
+| RAM                   | 4–16 GB DDR3 (user-dependent)           | N/A                                  |                                                              |
+| Storage               | HDD or SSD (user-dependent)             | N/A                                  |                                                              |
+| Display               | 12.5" (1366×768 typical)                | N/A                                  |                                                              |
+| Print Technology      | N/A                                     | Thermal Inkjet (color + black)       |                                                              |
+| Print Speed (approx.) | N/A                                     | ~9 ppm black, ~6.5 ppm color         |                                                              |
+| Scanner               | N/A                                     | Flatbed scanner (included)           |                                                              |
+| Wireless Standard     | Wi-Fi (802.11 b/g/n)                    | 802.11 b/g/n                         |                                                              |
+| Connection Type Used  | LAN (usually Ehternet, else WiFi        | Wi-Fi (IPP protocol)                 |                                                              |
+| Driver on Ubuntu      | N/A                                     | HPLIP + IPP Everywhere (now working) |                                                              |
+| Firmware / Revision   | BIOS (user-dependent)                   | TH69S4001TV0660                      |                                                              |
+| Current Status        | Working normally                        | Connected & printing successfully    | OS + Emacs + Brave installed; batteries and speakers pending |
+| Role                  | Daily Driver                            |                                      | Incoming daily driver; KB canonical copy still X230          |
+| Parts Node            |                                         |                                      | ThinkpadT470sBatteriesAndSpeakers                            |
 
 **Update Rule**  
 Any future hardware changes (RAM upgrade, SSD swap, firmware flash, new device, etc.) will be appended here with a new timestamped subheading. This node is now cross-linked from groki-index.org and all equipment-related scaffolding.

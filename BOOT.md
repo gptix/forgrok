@@ -19,6 +19,7 @@ Use `08-skills/InspectGitHubState.org` for any later claim about what is or is n
 - Local agent: **Withnail** (CEO/COO) running on hermes-pi (Raspberry Pi 5 8GB) via Hermes Agent + Telegram
 - Primary editor: **Emacs** (never suggest nano or vi)
 - Preference: local-first / near-airgapped operation; Telegram is the main external channel
+- Daily-driver transition: ThinkPad T470s 20HF-0066US (Omarchy 4.0.2, Emacs, Brave) acquired 2026-09-08; not yet the KB host
 
 ---
 
@@ -63,6 +64,7 @@ High-level summary (2026-08-31):
 - Private AI Agent Consulting underway (Atlanta professional-services segments drafted 2026-08-22)
 - EmacsObsidianSkin project initiated 2026-08-23
 - Tarot Today identification MVP lives on Hugging Face; paid-vision retest still blocked on OpenRouter credits as of last STATUS pulse
+- ThinkPad T470s 20HF-0066US acquired as X230 successor; batteries (dual internal) and speakers 00JT988 pending; see 02-infrastructure/hardware/
 
 See **STATUS.md** for the full operational dashboard and open items.
 
@@ -70,21 +72,21 @@ See **STATUS.md** for the full operational dashboard and open items.
 
 ## 4. Key files to load when deeper context is needed
 
-| Need | File |
-| --- | --- |
-| Living operational snapshot | STATUS.md |
-| Full structure | STRUCTURE.md |
-| GitHub inspection without false-absence | 08-skills/InspectGitHubState.org |
-| Voight-Kampff protocol (background) | 01-core/memory/voight-kampff-protocol.org |
-| **Executable V-K skill (source of truth)** | 08-skills/VoightKampffSessionClose.org |
-| Skills index | 08-skills/SkillsIndex.org |
-| Status-update skill | 08-skills/UpdateProjectStatus.org |
-| New-node text format | 08-skills/GenerateTsuiokuNodeText.org |
-| Skill System project | 03-projects/skill-system-improvement/ |
-| Master memory mirror | 01-core/memory/joji-grok-project-memory.org |
-| Org-roam NODE-NAME convention | 01-core/principles/org-roam-node-name-convention.org |
-| Finalize helper | 02-infrastructure/emacs/forgrok-org-helpers.el |
-| Naming / workflow conventions | 00-meta/STARTUP.org |
+| Need                                       | File                                                 |
+|--------------------------------------------|------------------------------------------------------|
+| Living operational snapshot                | STATUS.md                                            |
+| Full structure                             | STRUCTURE.md                                         |
+| GitHub inspection without false-absence    | 08-skills/InspectGitHubState.org                     |
+| Voight-Kampff protocol (background)        | 01-core/memory/voight-kampff-protocol.org            |
+| **Executable V-K skill (source of truth)** | 08-skills/VoightKampffSessionClose.org               |
+| Skills index                               | 08-skills/SkillsIndex.org                            |
+| Status-update skill                        | 08-skills/UpdateProjectStatus.org                    |
+| New-node text format                       | 08-skills/GenerateTsuiokuNodeText.org                |
+| Skill System project                       | 03-projects/skill-system-improvement/                |
+| Master memory mirror                       | 01-core/memory/joji-grok-project-memory.org          |
+| Org-roam NODE-NAME convention              | 01-core/principles/org-roam-node-name-convention.org |
+| Finalize helper                            | 02-infrastructure/emacs/forgrok-org-helpers.el       |
+| Naming / workflow conventions              | 00-meta/STARTUP.org                                  |
 
 ---
 
