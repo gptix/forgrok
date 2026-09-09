@@ -73,6 +73,7 @@ Live skills under `08-skills/` (disk + this STATUS; SkillsIndex must match):
 9. Optional: create `01-core/soul/` or stop referring to it
 10. Tarot Today: OpenRouter credits → re-run vision tests with a stronger model
 11. EmacsObsidianSkin: minimal viable skin (theme + layout + keybinding map + org-roam-ui)
+12. T470s 20HF-0066US: ingest complete for barcode FRUs; physical battery + speaker replacement still open; live specs not yet inventoried on Omarchy
 
 ## 4. Recent Session Notes
 
