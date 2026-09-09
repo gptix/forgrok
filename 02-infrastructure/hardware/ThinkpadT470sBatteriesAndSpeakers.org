@@ -11,7 +11,7 @@
 #+NODE-NAME: ThinkpadT470sBatteriesAndSpeakers
 #+FILETAGS: :hardware:thinkpad:t470s:battery:speakers:repair:
 #+DESCRIPTION: Barcode-derived battery and speaker FRUs for ThinkPad T470s 20HF-0066US, ingested from 06-raw/T470s-barcode-and-speakers.html.
-
+ 
 * Source
 - Raw capture: [[file:../../06-raw/T470s-barcode-and-speakers.html][06-raw/T470s-barcode-and-speakers.html]]
 - Capture title: Barcode-derived T470s laptop battery specs and variants - Grok
