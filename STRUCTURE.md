@@ -64,6 +64,7 @@ Active or significant:
 - `tarot-today` — Tarot recognition + reading app (canonical project dir)
 - `TsuiokuPresentation`
 - `withnail`
+- `omarchy` — Omarchy 4.x on the T470s (learning notes first)
 
 Also present on `main` (keep or park explicitly; do not pretend they are gone):
 

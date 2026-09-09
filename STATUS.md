@@ -1,6 +1,6 @@
 # STATUS.md — Living Operational Snapshot
 
-**Last updated:** 2026-09-02
+**Last updated:** 2026-09-09
 **Maintainer:** George Taylor + Grok
 **Companion files:** BOOT.md, STRUCTURE.md, README.md, 01-core/memory/joji-grok-project-memory.org, 01-core/memory/voight-kampff-protocol.org, 08-skills/UpdateProjectStatus.org
 
@@ -76,6 +76,13 @@ Live skills under `08-skills/` (disk + this STATUS; SkillsIndex must match):
 12. T470s 20HF-0066US: ingest complete for barcode FRUs; physical battery + speaker replacement still open; live specs not yet inventoried on Omarchy
 
 ## 4. Recent Session Notes
+
+**2026-09-09 — Voight-Kampff (close)**
+- T470s 20HF-0066US hub + batteries/speakers nodes on main.
+- Amazon cart 2026-09-08: front 00HW022-class + rear 01AV406-class confirmed suitable; speakers 00JT988 in same cart.
+- Omarchy 4.0.2 learning node at 03-projects/omarchy/OmarchyLearningNotes.org.
+- KB canonical copy still X230 ~/local-side/.
+- Remaining drift: inventory X230 network line; STRUCTURE projects list; this file’s previous last-updated stamp.
 
 **2026-08-31 evening — Voight-Kampff (close)**
 - Second V-K. Tree punch list PASS. Guide-layer PASS.
