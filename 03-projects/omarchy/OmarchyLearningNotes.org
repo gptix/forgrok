@@ -18,7 +18,7 @@ ThinkPad T470s (machine type 20HF-0066US) is the incoming daily-driver replaceme
 
 Canonical Tsuioku working copy remains X230 =~/local-side/= until cutover is explicit.
 
-Related hardware nodes (create/finalize if not already on disk):
+Related hardware nodes (create/finalize if not already on disk): 
 
 - [[file:../../02-infrastructure/hardware/ThinkpadT470s.org][ThinkpadT470s]]
 - [[file:../../02-infrastructure/hardware/ThinkpadT470sBatteriesAndSpeakers.org][ThinkpadT470sBatteriesAndSpeakers]]
