@@ -1,0 +1,292 @@
+:PROPERTIES:
+:ID:       cd26f5bd-7575-4944-9acf-bcb713cdf4c2
+:END:
+#+PROPOSED_PATH: 02-infrastructure/hardware/ThinkpadT470sBatteriesAndSpeakers.org
+#+COMMIT_MSG: Ingest T470s barcode battery and speaker FRUs from SingleFile capture
+#+AUTHOR: George Taylor + Grok
+#+CATEGORY: 02-infrastructure
+#+CREATED: [2026-09-08 Tue 20:45]
+#+LAST_MODIFIED: [2026-09-08 Tue 20:45]
+#+TITLE: ThinkPad T470s Batteries and Speakers
+#+NODE-NAME: ThinkpadT470sBatteriesAndSpeakers
+#+FILETAGS: :hardware:thinkpad:t470s:battery:speakers:repair:
+#+DESCRIPTION: Barcode-derived battery and speaker FRUs for ThinkPad T470s 20HF-0066US, ingested from 06-raw/T470s-barcode-and-speakers.html.
+
+* Source
+- Raw capture: [[file:../../06-raw/T470s-barcode-and-speakers.html][06-raw/T470s-barcode-and-speakers.html]]
+- Capture title: Barcode-derived T470s laptop battery specs and variants - Grok
+- Saved: [2026-09-08 Tue 20:21] EDT (SingleFile)
+- Origin conversation: https://grok.com/c/ebe418ae-cf8e-4eae-8d33-d5aa6d7197d8
+- Barcode photo was attached in that conversation as =t470sbarcode.jpeg=; it is embedded in the HTML and is not a separate file on GitHub =main=.
+- Hub: [[file:ThinkpadT470s.org][ThinkpadT470s]]
+
+This node records the *as-identified-from-barcode* parts map. Confirm printed FRUs on the packs after the bottom cover is off before ordering if the labels disagree.
+
+* Machine identity
+| Field | Value |
+|-------+-------|
+| Model | ThinkPad T470s |
+| Machine type | 20HF-0066US |
+| Family | 20HF / 20HG |
+| Build note from source chat | Feb 2018-era machine; both packs typically worn |
+
+Chassis uses *two internal non-removable 3-cell packs*. Combined capacity about 50–51 Wh. Shapes and connectors differ; packs are *not* interchangeable.
+
+* Batteries
+| Location | iFixit name | Role | Capacity / voltage | Official FRUs (substitutes) | Common ASM / model |
+|----------|-------------|------|--------------------|-----------------------------|--------------------|
+| Front (under trackpad) | Battery 1 | Larger pack | 24 Wh, 11.25–11.4 V, 3-cell Li-ion | 00HW022 (Panasonic), 00HW023 (SMP/Simplo) | SB10F46460, SB10F46461 (later lists also 00HW036 / 00HW037) |
+| Rear (near display hinge) | Battery 2 | Smaller pack | 26 Wh (later 26.1 Wh), 11.4 V, 3-cell Li-ion | 01AV405 / 01AV406, later 01AV462 | L16M3P73, SB10J79002, SB10J79003, 01AV407 / 01AV408 |
+
+- Front slot only: 00HW022 or 00HW023 (and listed later equivalents).
+- Rear slot only: 01AV405, 01AV406, or 01AV462 (and listed later equivalents).
+- Do not put a 24 Wh front pack in the rear bay or a 26 Wh rear pack in the front bay.
+- Replacing only one pack is electrically possible; remaining aged pack still drags runtime and charge behavior. Usual service advice: replace both together.
+- Aftermarket listings often say "T470s 20HF / 20HF0066US". Match *shape of the pack you pull*, not only the model string.
+
+**Buy list for this MT:** one front pack from the 00HW022/00HW023 family *and* one rear pack from the 01AV405/01AV406/01AV462 family.
+
+* Speakers
+| Field | Value |
+|-------+-------|
+| Official FRU | 00JT988 |
+| Also marked on drivers | PK23000N2Y0 / PK23000N2N0 |
+| Form | One assembly, left + right together |
+| Electrical | 2 W / 4 Ω thin-chassis |
+| Shared with | T460s 20F9 / 20FA |
+| Does *not* fit | Regular T460 or T470 (avoid 01AV902 / "T470 speakers") |
+| HMM procedure | 1120 |
+| Fasteners | Six bronze M2 × 5 mm screws |
+| Connector | 4-pin, 4-wire |
+
+Access is bottom cover + both internal batteries first. Route the cable as in the HMM or it pinches under a battery.
+
+Purchase order:
+1. Genuine 00JT988 at a sane authorized-parts price.
+2. New aftermarket that prints *both* 00JT988 and PK23000N2Y0, with photos of the actual pair and 4-pin plug.
+3. Avoid T470/T470p speaker SKUs.
+
+Do batteries and speakers in the same sitting.
+
+* Service notes (do not treat as a how-to beyond the HMM)
+- Disable built-in batteries in BIOS before opening the bottom cover.
+- Phillips #000.
+- iFixit / HMM alignment in the source chat: 5 bottom-cover screws, then 2 on the front pack and 3 on the rear pack.
+- Lenovo parts lookup still lists genuine FRUs if the full serial is entered.
+
+* Follow-ups
+- Record the FRUs printed on the *removed* packs.
+- Add live Omarchy specs (CPU, RAM, SSD, hostname) to the hub node after first inventory on the T470s.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FieldValueBrandSamsungModel / model codeUN50TU7000FXZAVersionA803 — UTU7000 / UTU7000K-U507K1Serial09MU3CVNA00509WPowerAC 110–120 V, 60 Hz, 115 WOriginMexico (Samsung Electronics America)
+UN50 = 50-inch US set. TU7000 = Crystal UHD 4K, Tizen smart TV. FXZA = North America.
+Ports on that edge of the jack pack
+
+HDMI 1
+HDMI 2 (eARC)
+LAN
+ANT IN (coax)
+USB (5 V / 0.5 A)
+Digital audio out (optical)
+
+Typical for this series: 2 HDMI, 1 USB, optical, Ethernet, RF. 4K/60 Hz, HDR10/HDR10+/HLG, no Dolby Vision, no HDMI 2.1 / 120 Hz.
+The QR on the label is Samsung’s product/support code for that serial, not a shipping barcode. For manuals or firmware, search Samsung support for UN50TU7000FXZA.I need to remove all recorded content, and all accounts, from this machine.On this UN50TU7000FXZA (2020 Tizen), wipe the set in two places. Smart Hub holds accounts and apps. Factory Reset holds picture, sound, and channel data. A USB used for recording is not erased by either step.
+Default PIN is 0000 unless someone changed it
+
+(Settings → General → System Manager → Change PIN).
+1. Sign out first (optional but cleaner)
+Leave apps and go to live TV or an HDMI input.
+Settings → General → System Manager → Samsung Account
+
+Focus the profile → Sign Out / Remove Account.
+That only drops the Samsung login from this TV. It does not delete the Samsung.com account.
+2. Reset Smart Hub (accounts + apps)
+Still on live TV or HDMI, not inside an app:
+Settings → Support → Device Care → Self Diagnosis → Reset Smart Hub
+If Device Care is missing on this set:
+Settings → Support → Self Diagnosis → Reset Smart Hub
+Enter the PIN. Confirm.
+That removes Samsung Account, Netflix / Prime / YouTube logins on the TV, downloaded apps, Smart Hub agreements, and Hub settings. Stock apps come back empty.
+3. Factory reset the TV
+Settings → Support → Self Diagnosis → Reset
+or, if you see it:
+Settings → General → Reset
+PIN → confirm. Wait until it reboots into first-time setup. Do not pull power.
+That clears picture/sound, channel list, and most personal settings. On many Samsungs of this year, Wi‑Fi names/passwords can survive. After reboot, skip network or forget the network in Settings → General → Network if you are handing the set off.
+When setup asks for a Samsung account, Skip.
+4. Recorded shows (USB)
+This model records to a USB drive. Resetting the TV does not format that stick.
+
+Unplug the USB.
+On a computer: delete the recording folders, or format the drive.
+Or plug it back in after reset: Settings → General → External Device Manager (or Source on the USB) and format/delete recordings there.
+
+If you never used USB recording, there is nothing extra to wipe on the TV.
+What is gone vs what is not
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Gone from the TVNot goneApp logins on this setYour Samsung.com / Netflix accounts on the internetDownloaded apps, Hub historyFiles on a USB recorder until you format itPicture, sound, channel listPhysical TV + serialSmart Hub profiles
+After both resets, the first-run wizard should be the test: no named profile, no apps signed in, no recorded titles in the TV’s own menu.provide org-roam text detailing the last two rounds of this chat.text#+PROPOSED_PATH: 03-projects/household/SamsungUn50Tu7000Wipe.org
+#+COMMIT_MSG: Record UN50TU7000 identification and account/content wipe steps
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-projects
+#+CREATED: [2026-08-28 Fri 14:40]
+#+LAST_MODIFIED: [2026-08-28 Fri 14:40]
+#+TITLE: Samsung UN50TU7000 Identification and Factory Wipe
+#+NODE-NAME: SamsungUn50Tu7000Wipe
+#+FILETAGS: :household:samsung:tv:tizen:factory-reset:marietta:
+#+DESCRIPTION: Rear-label readout of the household Samsung 50-inch TU7000 and the two-step Tizen wipe (Smart Hub + factory reset) plus USB recording caveat.
+
+Context
+
+Two consecutive turns on 2026-08-28: identify a Samsung set from a rear-label photo, then wipe recorded content and all accounts on that set.
+
+Identification (photo of rear service label)
+
+Label read from the jack-pack side of the chassis:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FieldValueBrandSamsungModel / model codeUN50TU7000FXZAVersionA803 — UTU7000 / UTU7000K-U507K1Serial09MU3CVNA00509WPowerAC 110–120 V, 60 Hz, 115 WOriginMexico / Samsung Electronics America
+Decoding: =UN50= = 50-inch US set; =TU7000= = 2020 Crystal UHD 4K Tizen; =FXZA= = North America.
+Visible ports on that edge: HDMI 1, HDMI 2 (eARC), LAN, ANT IN, USB (5 V / 0.5 A), digital optical audio out. Series typical I/O is 2 HDMI, 1 USB, optical, Ethernet, RF. 4K/60 Hz; HDR10 / HDR10+ / HLG; no Dolby Vision; no HDMI 2.1 / 120 Hz.
+Support lookup key: UN50TU7000FXZA.
+
+Wipe: recorded content and accounts
+
+Goal: empty the TV before reuse or handoff. Two TV-side resets plus a separate USB step. Default PIN is 0000 unless changed under Settings → General → System Manager → Change PIN.
+1. Optional sign-out
+Leave apps. Live TV or HDMI.
+Settings → General → System Manager → Samsung Account → Sign Out / Remove Account.
+Removes the Samsung login from this TV only. Does not delete the samsung.com account.
+2. Reset Smart Hub (accounts + apps)
+Still on live TV or HDMI, not inside an app.
+Settings → Support → Device Care → Self Diagnosis → Reset Smart Hub
+If Device Care is absent on this 2020 set:
+Settings → Support → Self Diagnosis → Reset Smart Hub
+PIN → confirm.
+Clears Samsung Account on-device, streaming-app logins, downloaded apps, Hub agreements and Hub settings. Stock apps return unsigned-in.
+3. Factory reset
+Settings → Support → Self Diagnosis → Reset
+or Settings → General → Reset
+PIN → confirm. Wait for first-time setup. Do not pull power.
+Clears picture/sound, channel list, and most personal settings. On this generation, Wi-Fi credentials can survive. After reboot, skip network or forget the network under Settings → General → Network if the set is leaving the house. Skip Samsung account on the setup wizard.
+4. USB recordings
+TU7000 records to USB. Neither reset formats the stick.
+Unplug USB; delete recording folders or format the drive on a computer. Or after reset: Settings → General → External Device Manager (or Source on the USB) and format there.
+If USB recording was never used, nothing extra to wipe.
+
+What the resets do and do not do
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Removed from the TVNot removedApp logins stored on this setSamsung.com / Netflix / etc. accounts on the internetDownloaded apps, Hub historyFiles on a USB recorder until formattedPicture, sound, channel listThe physical set and serial
+Done when first-run setup shows no named profile, no signed-in apps, and no titles in the TV’s own recording menu.
+
+Notes
+
+
+Do not use service-menu Factory Reset unless a tech is replacing a board; wrong option bytes brick the set.
+This node is household procedure, not a Tsuioku ingest of a Roemmele essay.
+Path is a proposal; move if household devices live under a different numbered tree.
