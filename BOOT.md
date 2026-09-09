@@ -54,7 +54,7 @@ Working copy lives on the X230. All structural changes are made there, committed
 
 **Detailed living snapshot:** **STATUS.md**
 
-High-level summary (2026-08-31):
+High-level summary (2026-09-09):
 
 - Withnail / Hermes on hermes-pi last documented as operational (Hermes 0.19.0, local `qwen2.5-3b-64k`, persistent SOUL, Telegram `@WithnailRobot`). Runtime not re-verified this session.
 - Numbered knowledge-base layout is authoritative in STRUCTURE.md; orientation files synchronized 2026-08-31
