@@ -1,0 +1,67 @@
+:PROPERTIES:
+:ID:       2d5851ab-85f2-42cf-9b34-2fced528c6f4
+:END:
+
+#+AUTHOR: George Taylor
+#+CATEGORY: 03-projects
+#+CREATED: 2026-09-17
+#+LAST_MODIFIED: 2026-09-17
+#+TITLE: T470s Emacs on Omarchy — Magit and C-c n F
+#+NODE-NAME: T470sEmacsOmarchySetup
+#+FILETAGS: :emacs:t470s:omarchy:tsuioku:magit:org-roam:
+#+DESCRIPTION: How Emacs on the T470s (Omarchy) was brought far enough to finalize org-roam nodes into ~/local-side and commit them locally.
+
+* Purpose
+Make Emacs on the ThinkPad T470s (hostname omarchy, user gptix) useful for Tsuioku the same way it is on the X230: Magit for the local-side repo, and C-c n F to place a draft node, attach a file-level ID, update org-roam, and commit without pushing.
+
+X230 remains the canonical knowledge-base host. The T470s holds a working copy at ~/local-side (first rsync 2026-09-14). This node records the Emacs slice of that cutover, not a claim that the T470s is now authoritative.
+
+* What we found on the T470s
+- Live init file: /home/gptix/.config/emacs/init.el (XDG). No ~/.emacs or ~/.emacs.d/init.el shadowing it.
+- ~/.config/emacs/omarchy.el is only a shim that loads /usr/share/omarchy-emacs/config/omarchy.el. Left untouched.
+- Magit was already in init.el, bound to C-c m.
+- ~/local-side existed and was a git repo. Helper already on disk: ~/local-side/02-infrastructure/emacs/forgrok-org-helpers.el
+- Git identity on this copy: Jud Taylor / jud.taylor@protonmail.com
+- Remote: github-side → https://github.com/gptix/forgrok.git
+- Branch at session time: main tracking github-side/main
+- Personal vault dir created: ~/RoamNotes/dailies
+- Untracked rental notice files under 03-projects/rental/ were present and were left alone
+
+emacs --batch reports user-init-file=nil because --batch implies -q. That is not evidence of a missing init file.
+
+* What we changed in init.el
+Kept the Omarchy load, package archives, use-package, and existing Magit block.
+
+Added:
+- org-roam with org-roam-directory = ~/RoamNotes
+- extra roam roots: 01-core, 02-infrastructure, 03-projects, 05-wiki, 08-skills under ~/local-side
+- load-path + (require 'forgrok-org-helpers)
+- global key C-c n F → my/org-roam-finalize-place-id-commit
+
+Did not copy from the X230 init: SLY/SBCL startup window layout, gptel/Grok buffer, DarkOrange4 theme override, recentf block, joji-grok-export.el, or joji-run-vk-protocol (that function still points at the pre-renumbering groki/ paths).
+
+* Verification
+C-c n F on a throwaway draft produced:
+
+- ~/local-side/07-sessions/T470sEmacsInitParityCheck.org
+- commit 7c95930272ec0d2bf9a377874d0975ee9cf38c2f
+- only that one file in the commit
+- main ahead 1 of github-side/main
+- rental docs still untracked
+
+That commit was a smoke test only. It was reset and the file removed before this node was finalized, so GitHub never saw it.
+
+* Draft format that C-c n F expects
+The helper deletes from the top of the buffer through the sentinel line.
+
+- Above the sentinel: only #+PROPOSED_PATH, #+COMMIT_MSG, and any throwaway instructions
+- Below the sentinel: #+AUTHOR, #+TITLE, #+NODE-NAME, dates, tags, description, and body
+
+#+NODE-NAME must be PascalCase with no spaces, hyphens, or underscores. C-c n f on this setup does not accept spaces in node names.
+
+C-c n F commits locally and does not push. Push is a separate Magit step.
+
+* Open
+- Decide when the T470s copy becomes canonical; until then pull on X230 before overlapping edits
+- Port remaining X230 init slices only as needed (gptel, theme, recentf, SLY)
+- Do not treat this node as a STATUS.md replacement; pulse STATUS when the high-level dashboard should change
