@@ -1,0 +1,65 @@
+:PROPERTIES:
+:ID:       cc0a0cf9-4f9b-43c9-9435-6e08e11b80cf
+:END:
+
+#+AUTHOR: George Taylor
+#+CATEGORY: 02-infrastructure
+#+CREATED: 2026-09-17
+#+LAST_MODIFIED: 2026-09-17
+#+TITLE: Tsuioku Two-Machine Sync
+#+NODE-NAME: TsuiokuTwoMachineSync
+#+FILETAGS: :tsuioku:git:t470s:x230:magit:procedure:
+#+DESCRIPTION: How the T470s, X230, and GitHub github-side remote stay in sync after the 2026-09-17 canonical cutover.
+
+* Roles as of 2026-09-17
+- Canonical working copy: T470s (hostname omarchy, user gptix) ~/local-side
+- Sync hub and Grok-visible mirror: GitHub gptix/forgrok main, git remote name github-side
+- Second working copy: X230 (gt-thinkpad-x230, user gt) ~/local-side
+- hermes-pi is not a Tsuioku git working copy
+
+C-c n F writes whatever ~/local-side belongs to the Emacs that is running it. Prefer finalize on the T470s.
+
+See also: [[file:~/local-side/03-projects/omarchy/Emacs-to-Omarchy/T470sEmacsOmarchySetup.org][T470sEmacsOmarchySetup]]
+
+* Do not rsync local-side any more
+The 2026-09-14 rsync was the one-time clone from X230 → T470s. Both trees are git repos now. Two-way rsync plus commits will overwrite history. Use github-side only.
+
+* Session protocol (either laptop)
+1. Open Magit on ~/local-side (C-c m) or:
+   git -C ~/local-side fetch github-side
+   git -C ~/local-side status -sb
+2. If the branch is behind, pull:
+   git -C ~/local-side pull github-side main
+3. Then edit, C-c n F, or Magit commit.
+4. Push:
+   git -C ~/local-side push github-side main
+5. After a pull, M-x org-roam-db-sync on that machine. Each laptop has its own org-roam.db; it is not the source of truth.
+6. Leave machine-local junk untracked (T470s rental notice binaries, stray touch files).
+
+* X230-specific
+X230 Emacs and Magit stay in use. Push from the X230 is allowed only after a pull.
+
+First X230 session after this cutover:
+
+#+begin_src bash
+git -C ~/local-side fetch github-side
+git -C ~/local-side log --oneline -5
+git -C ~/local-side pull github-side main
+#+end_src
+
+Expect to receive at least dba3b9e (T470sEmacsOmarchySetup) and whatever orientation commits follow it. Then org-roam-db-sync.
+
+If Magit shows both unpulled and unpushed commits, do not force-push. Pull (rebase onto github-side/main if you want a straight line). If the conflict is unclear, stop and finish it on the T470s.
+
+* T470s-specific
+- Init: /home/gptix/.config/emacs/init.el
+- Magit: C-c m
+- Finalize: C-c n F via 02-infrastructure/emacs/forgrok-org-helpers.el
+- GitHub auth: gh as gptix, HTTPS, keyring (configured 2026-09-17)
+- Remote: github-side → https://github.com/gptix/forgrok.git
+
+* Divergence rule
+github-side/main is the shared tip. The T470s is where divergence gets resolved. Do not rewrite published main.
+
+* Orientation files
+BOOT.md and STATUS.md record this cutover. STRUCTURE.md is deferred to the next Voight-Kampff unless a top-level directory is added.
