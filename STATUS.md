@@ -1,8 +1,8 @@
 # STATUS.md — Living Operational Snapshot
 
-**Last updated:** 2026-09-09
+**Last updated:** 2026-09-17
 **Maintainer:** George Taylor + Grok
-**Companion files:** BOOT.md, STRUCTURE.md, README.md, 01-core/memory/joji-grok-project-memory.org, 01-core/memory/voight-kampff-protocol.org, 08-skills/UpdateProjectStatus.org
+**Companion files:** BOOT.md, STRUCTURE.md, README.md, 01-core/memory/joji-grok-project-memory.org, 01-core/memory/voight-kampff-protocol.org, 08-skills/UpdateProjectStatus.org, 02-infrastructure/procedures/TsuiokuTwoMachineSync.org
 
 ---
 
@@ -22,8 +22,13 @@ Last documented state (not re-verified 2026-08-31):
 
 ## 2. Knowledge Base
 
-- Numbered structure is authoritative in **STRUCTURE.md** (realigned 2026-08-31 to GitHub `main`)
-- Orientation layer synchronized this session: BOOT.md, STATUS.md, STRUCTURE.md, README.md
+- **Canonical working copy is the T470s** `~/local-side` (hostname `omarchy`, user `gptix`) as of 2026-09-17
+- X230 `~/local-side` is a second working copy; pull `github-side` before editing
+- Sync hub: GitHub `gptix/forgrok` `main`, remote name `github-side`. Do not rsync `local-side` between laptops
+- Procedure: `02-infrastructure/procedures/TsuiokuTwoMachineSync.org`
+- T470s Emacs cutover: `03-projects/omarchy/Emacs-to-Omarchy/T470sEmacsOmarchySetup.org` (commit `dba3b9e`)
+- Numbered structure is authoritative in **STRUCTURE.md** (realigned 2026-08-31 to GitHub `main`; project-list drift deferred to next V-K)
+- Orientation layer: BOOT.md + STATUS.md cutover pulse 2026-09-17
 - **Roemmele essay ingest pipeline mature**
   - Preferred flow: mechanical files (HTML + md + images) pushed first → Grok writes full org-roam node → human reviews → push org + inventory
   - Essays fully processed and marked **pushed**: **001–008**
@@ -34,7 +39,7 @@ Last documented state (not re-verified 2026-08-31):
   - `PublicArresteeData`
 - **Voight-Kampff Protocol v4.1+**; executable source of truth is `08-skills/VoightKampffSessionClose.org`
 - **Org-roam NODE-NAME convention** formalized (`OrgRoamNodeNameConvention`)
-- Finalize helper `my/org-roam-finalize-place-id-commit` (`C-c n F`) lives in `02-infrastructure/emacs/forgrok-org-helpers.el`
+- Finalize helper `my/org-roam-finalize-place-id-commit` (`C-c n F`) lives in `02-infrastructure/emacs/forgrok-org-helpers.el` and is live on the T470s
 - `01-core/soul/` is documented as intended in older text but **does not exist on GitHub `main`**
 - `03-knowledge/transcripts/` exists outside the previously published STRUCTURE map; now recorded
 - Historical schemas (`ZHO-SCHEMA.md`, `GROK-SCHEMA.md`) describe the pre-renumbering `groki/` tree and are not the live directory map
@@ -73,15 +78,27 @@ Live skills under `08-skills/` (disk + this STATUS; SkillsIndex must match):
 9. Optional: create `01-core/soul/` or stop referring to it
 10. Tarot Today: OpenRouter credits → re-run vision tests with a stronger model
 11. EmacsObsidianSkin: minimal viable skin (theme + layout + keybinding map + org-roam-ui)
-12. T470s 20HF-0066US: ingest complete for barcode FRUs; physical battery + speaker replacement still open; live specs not yet inventoried on Omarchy
+12. (closed 2026-09-14) T470s dual batteries and speakers 00JT988 replaced
+13. First X230 pull of post-cutover `main` (must include `dba3b9e` + orientation commits)
+14. Next V-K: STRUCTURE.md project list (`Emacs-to-Omarchy/`, two-machine procedure), README one-liner if needed
+15. T470s: decide fate of untracked `03-projects/rental/` notice binaries and local deletion of `03-projects/omarchy/touch`
 
 ## 4. Recent Session Notes
+
+**2026-09-17 — T470s canonical cutover (V-K not yet run)**
+- T470s Emacs XDG init gained org-roam extra roots + `C-c n F`. Magit already present.
+- Smoke-test commit `7c95930` reset; never pushed.
+- Node `T470sEmacsOmarchySetup` pushed as `dba3b9e` (`06f2ec0..dba3b9e`).
+- `gh auth login` as `gptix` on the T470s (HTTPS + keyring).
+- Operator declared T470s canonical. Sync protocol written as `TsuiokuTwoMachineSync`.
+- BOOT.md + STATUS.md orientation pulse in the same session. STRUCTURE.md held for V-K.
+- Physical battery/speaker replacement already done 2026-09-14.
 
 **2026-09-09 — Voight-Kampff (close)**
 - T470s 20HF-0066US hub + batteries/speakers nodes on main.
 - Amazon cart 2026-09-08: front 00HW022-class + rear 01AV406-class confirmed suitable; speakers 00JT988 in same cart.
 - Omarchy 4.0.2 learning node at 03-projects/omarchy/OmarchyLearningNotes.org.
-- KB canonical copy still X230 ~/local-side/.
+- KB canonical copy still X230 ~/local-side/ *(superseded 2026-09-17)*.
 - Remaining drift: inventory X230 network line; STRUCTURE projects list; this file’s previous last-updated stamp.
 
 **2026-08-31 evening — Voight-Kampff (close)**
@@ -177,11 +194,9 @@ Live skills under `08-skills/` (disk + this STATUS; SkillsIndex must match):
 
 ## 5. Next Actions (suggested)
 
-- Apply the 2026-08-31 orientation patches on X230 `~/local-side/` in small commits, then push
-- Add InspectGitHubState to SkillsIndex in the same wave
-- Banner (do not rewrite) ZHO-SCHEMA.md and GROK-SCHEMA.md as historical directory maps
-- Point STARTUP.org directory guidance at STRUCTURE.md
-- Park or merge leftover `tarot-app/` and root scratch files
+- Push tonight’s T470s commits (`TsuiokuTwoMachineSync`, BOOT.md, STATUS.md)
+- On the X230: `git -C ~/local-side pull github-side main` before any Tsuioku edit
+- Next V-K: STRUCTURE.md project list + README one-liner; do not invent a short V-K
 - Continue sequential Roemmele essays (009+)
 - Give Withnail grounded planning tasks against the current knowledge slice
 - (Tarot) credits → stronger vision model, then interpretation layer vs mobile UX
