@@ -1,0 +1,130 @@
+#+PROPOSED_PATH: 04-sessions/2026-09-23-AdventureLogisticsCollateral.org
+#+COMMIT_MSG: Add 2026-09-23 session summary: driveaway circuit, OBC/Japan, Russia travel, md clippers, porch photo law, pumpkin marketing, Vinings warehouse, 29 Palms imagery
+#+AUTHOR: Joji Teira
+#+CATEGORY: Sessions
+#+CREATED: 2026-09-23
+#+LAST_MODIFIED: 2026-09-23
+#+TITLE: Session summary 2026-09-23 adventure logistics and collateral
+#+NODE-NAME: SessionSummary20260923
+#+FILETAGS: :session:draft:travel:marketing:logistics:
+#+DESCRIPTION: Inbox node for a multi-thread Grok session spanning paid driveaways, onboard courier, Russia entry, Markdown clippers, house-photo law, pumpkin porch marketing, Vinings short-term warehouse, and 72122 Sunnyvale imagery. Not yet placed in Tsuioku.
+#+STATUS: DRAFT
+#+SOURCE: Grok SuperGrok chat 2026-09-19 through 2026-09-23
+
+* Purpose
+Capture this chat so a later session can ingest into Tsuioku without re-deriving the thread. Companion node: [[file:PumpkinPorchMarketing.org][PumpkinPorchMarketing]].
+
+Do not treat this file as legal advice, a booked itinerary, or a signed lease.
+
+* Session span
+- Started ~2026-09-19 (driveaway adventure).
+- Continued 2026-09-20 (OBC, Russia, Markdown browsers, porch-photo law, pumpkin composite).
+- Continued 2026-09-21 (Vinings warehouse; 72122 Sunnyvale imagery).
+- Closed for capture 2026-09-23 with request for two org-roam drafts.
+
+* Threads (index)
+** Paid driveaway / car delivery adventure
+Intent: compensated travel starting near Atlanta, west toward Austin or Denver (later SLC, then SF planned in reverse), return by another delivery or a cheap flight.
+
+Key findings recalled from the thread:
+- Casual passenger driveaway is often deposit + gas stipend, not high CPM.
+- Commercial / CDL relocation pays more (rough band cited earlier ~$0.53–$1.45/mi with fuel card on some lanes).
+- Atlanta and SLC have Auto Driveaway-class offices; Dallas is the practical hub for an ATL–Austin circuit.
+- ATL–AUS ~950 mi; ATL–SLC ~1,875 mi / 3–4 days; SF–ATL ~2,470 mi / 4–5 days; Dallas–SF ~1,730 mi.
+- Corridors: I-20, I-35, I-40, I-70, I-80 (I-80 preferred for Rockies weather).
+- Snowbird peak Sep–Nov toward Phoenix.
+- Companies named across the thread: Auto Driveaway, Transfercar, Imoova; rental one-ways as a weak cousin.
+- SF inbound volume/pay: look at Dallas, Denver, Phoenix, LA, RV/factory niches (e.g. Elkhart).
+- SF→ATL direct or chained: usually not "profit" on casual cars after fuel, hotels, deadhead; CDL CPM can beat a one-way flight; flying SFO–ATL often cheaper than driving empty.
+- Practical circuit sketch: ATL → Dallas hub → Austin visit → Dallas or Denver connector → west; hunt eastbound from the destination the same day rather than pre-booking a perfect loop.
+
+Open: no booking made; availability is lumpy; user asked for research, not tickets.
+
+** Onboard courier (OBC) / hand-carry
+Question evolved from "paid to fly internationally to accompany goods through customs" to *legit logistics only*, then *to Japan*.
+
+Legal industry that still exists:
+- Onboard courier / merchandise-in-baggage. Passenger flies with *declared* commercial goods. Company files customs. Not a mule pitch.
+- Firms: Chapman Freeborn OBC (public courier portal; JFK→NRT case study), time:matters, medical OBC (e.g. Ontime / stem-cell runs).
+- Pay: ticket + modest fee, not driveaway-truck money. Short notice, clean record, passport, credit card.
+- Japan: US citizens are *not* on a casual e-visa-for-work path; OBC enters as passenger with a staged commercial file. Japan Customs allows commercial goods as accompanied baggage / entrusted goods (託送品) with C-5360 / invoice; simplified path around ¥300,000; above that formal clearance and often an ACP/IOR for non-residents.
+- Reject: undeclared suitcase, "say it is gifts", WhatsApp recruiter.
+
+Open: user did not register on an OBC portal in-session.
+
+** Russia travel (US citizen)
+- No US *ban* on citizen travel. State Department *Level 4 Do Not Travel* (war, wrongful detention, arbitrary enforcement, thin embassy).
+- Russia still issues *consular tourist visas* to Americans. United States is *not* on the unified e-visa list (64 other countries as of 2026 expansion).
+- Apply via invitation/voucher + MFA form + Russian posts still open in the US (Washington, New York, Houston). SF consulate long closed. Fee on the order of $185 standard.
+- No direct US–Russia flights. US cards generally do not work. Cash and prepaid hotels.
+- Advisory is not a criminal prohibition; it is not a normal tourist trip.
+
+** Simple browser → Markdown
+- No dedicated popular "Markdown browser."
+- Practical: Brave (already installed) + MarkSnip or official Obsidian Web Clipper (download .md without requiring Obsidian).
+- Original MarkDownload is stale / off Chrome Web Store; MarkSnip is the living fork.
+- Zero-extension: prefix =https://r.jina.ai/= + URL.
+- Emacs path available later: eww + pandoc, or org-web-tools if the ingest target is Org not Md.
+- Preference reminder: user uses Emacs, not nano; org-roam node names have no spaces.
+
+** Photographing a house from the public street for marketing
+- Taking the photo from a public street of what is visible is generally lawful in the US.
+- 17 USC 120(a): constructed building visible from a public place may be photographed, distributed, and publicly displayed without the architect's permission.
+- Photographer owns copyright in *their* photograph.
+- Georgia appropriation / publicity is about a *person's* name and likeness for financial gain, not a typical facade.
+- Marketing risk is implied endorsement, false advertising, identifiable people, murals/artwork as separate copyright, GREC rules if advertising a property *for sale* as a licensee.
+- Safer: no people, no claim you worked there, no readable address if avoidable.
+
+** Pumpkin project
+See companion node [[file:PumpkinPorchMarketing.org][PumpkinPorchMarketing]].
+This thread defined *photo rules*. Standing memory already names the business: West Paces Pumpkins, Atlanta porch-pumpkin concierge, target Buckhead–Dunwoody map, packages Stoop $395 / Landing $595 / Ghost $675 / Portico $1,175. Mocks (partner demo, Chattahoochee clubhouse 3712) exist from 2026-09-21–23 and are not yet in Tsuioku.
+Photo one-line: street-porch photo → strip identifiers → composite pumpkins → collateral with *no* work/testimonial claim; implied-placement risk remains if the house is locally recognizable.
+
+** Short-term warehouse / light industrial near Vinings
+Vinings itself is office/retail/residential. Workable inventory:
+- Saltbox Upper Westside, 1345 Seaboard Industrial Blvd NW, Atlanta 30318 — month-to-month suites, ~15–20 min.
+- Saltbox Westside Park, 1314 Chattahoochee Ave NW, Atlanta 30318.
+- WareSpace Upper West Side, 1650–1700 Marietta Blvd NW — 200–2,000 SF, often 6–12 month all-in.
+- WareSpace Norcross, 4084 Presidential Pkwy — farther.
+- Conventional Smyrna bays: 2870 Plant Atkinson Rd SE (10,256 SF now); Olympic Industrial / S Cobb / Collins Springs listings; 2990 Olympic Industrial sublease through Feb 2027.
+- Storage-only in Vinings: Linder, 2690 Mt Wilkinson Pkwy; Midgard, 2909 Log Cabin Dr SE.
+
+Traditional industrial is 3–5 year NNN; short-term almost always means co-warehouse or self-storage.
+
+Relationship to pumpkin project: *not stated*. Park as a possible ops question in the pumpkin file, not as a decided warehouse.
+
+** 72122 Sunnyvale Drive, Twentynine Palms, CA 92277
+- Off-market 2bd/1ba, 900 sf, lot ~8,668–8,680 sf, built 1952, APN 0618-062-37-0-000, Tract 3145 Lot 121.
+- Last recorded sale 1992 ($23,000). Zestimate / Redfin est. ~$194k as of the lookup window.
+- No current MLS gallery. Public "recent image" = Google Satellite / Street View if the block was driven, plus San Bernardino County historical aerials 2008–2023.
+- Links captured:
+  - https://www.google.com/maps/search/?api=1&query=72122+Sunnyvale+Dr,+Twentynine+Palms,+CA+92277
+  - https://www.zillow.com/homedetails/72122-Sunnyvale-Dr-Twentynine-Palms-CA-92277/17504325_zpid/
+  - https://www.redfin.com/CA/Twentynine-Palms/72122-Sunnyvale-Dr-92277/home/3846915
+  - County Map Viewer: https://experience.arcgis.com/experience/8c4f806654654ba689fa7ab842d57352
+- Same-week ground photo: ask local agent Mike Carey. Do not use photos of 72222 / 72183 / 73078 Sunnyvale.
+- Already in long-term memory as the 29 Palms rental; agent Mike Carey; phone (404) 351-8830 is stored as a contact in memory (verify before use).
+
+* Decisions made in-session
+- Logistics inquiry only for OBC (no mule content).
+- Pumpkin collateral will not claim work performed or references received.
+- Tsuioku update deferred to a later chat; these two files are inbox drafts.
+
+* Decisions not made
+- No driveaway booked.
+- No OBC registration.
+- No Russia trip planned.
+- No warehouse leased.
+- No pumpkin product SKU, LLC, or ad campaign approved.
+- No photo of 72122 obtained.
+
+* Follow-ups for the next Tsuioku session
+- Place these two files via =my/org-roam-finalize-place-id-commit= after path review.
+- Decide whether warehouse hunt belongs under pumpkin ops or a separate CobbFlexSpace node.
+- Decide whether driveaway research deserves its own standing node vs staying in this session dump.
+- If pumpkin proceeds: own-porch or 3D set vs stranger stoop; disclaimer text; asset rights for pumpkin models.
+
+* See also
+- Standing ingest rules: first two lines =PROPOSED_PATH= and =COMMIT_MSG=; no leading :PROPERTIES: drawer; =#+NODE-NAME:= PascalCase, no spaces/hyphens/underscores.
+- Helper: =02-infrastructure/emacs/forgrok-org-helpers.el=.
+- Companion: [[file:PumpkinPorchMarketing.org][PumpkinPorchMarketing]].
