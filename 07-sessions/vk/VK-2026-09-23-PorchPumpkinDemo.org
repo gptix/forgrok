@@ -1,0 +1,43 @@
+:PROPERTIES:
+:ID:       61da5522-6d04-4002-9723-f215fc879554
+:END:
+#+PROPOSED_PATH: 07-sessions/vk/VK-2026-09-23-PorchPumpkinDemo.org
+#+COMMIT_MSG: Add VK summary for porch-pumpkin demo and clubhouse mocks
+#+AUTHOR: George Taylor + Grok
+#+CATEGORY: 07-sessions
+#+CREATED: [2026-09-23 Wed 14:49]
+#+LAST_MODIFIED: [2026-09-23 Wed 14:49]
+#+TITLE: VK 2026-09-23 — Porch pumpkin demo
+#+NODE-NAME: VK20260923PorchPumpkinDemo
+#+FILETAGS: :vk:session:pumpkin:atlanta:buckhead:demo:
+#+EXECUTIVE_SUMMARY: Session 2026-09-21–23 identified Koerner's guest as Porch Pumpkins / Heather Torres, built a West Paces Pumpkins static partner demo from BuckheadPorchPumpkinPlan2026, and produced clubhouse mocks for 3712 (stairs + tree-centered island and street tree). Artifacts are not yet on the T470s or GitHub. STATUS still dated 2026-09-17.
+#+DESCRIPTION: Voight-Kampff close for the porch-pumpkin research, domain list, static demo site, and Chattahoochee clubhouse photomontage session.
+
+* Session identifier
+Dates: [2026-09-21 Mon 18:00] through [2026-09-23 Wed 14:49]
+Trigger: operator said Voight-Kampff
+Protocol: v4.1+ / executable skill [[file:../../08-skills/VoightKampffSessionClose.org][VoightKampffSessionClose]]
+
+* Integrity
+- Canonical KB host remains the T470s.
+- BOOT.md and STATUS.md on GitHub main last pulsed 2026-09-17.
+- =01-core/soul/= still absent on main.
+- Withnail runtime not re-verified.
+- No =private/= material written.
+
+* Actions
+- Named the Koerner business correctly (Porch Pumpkins, not Pumpkin Patio).
+- Domain list for Buckhead / Vinings positioning.
+- Static demo: West Paces Pumpkins, four SKUs, add-ons, season-one map.
+- Clubhouse 3712 mocks; approach and side recentered on trees.
+- Files left in chat artifacts only.
+
+* Open
+- Ingest demo to T470s, scrub gallery stock, do not push binaries.
+- STATUS date + §4 pulse.
+- STRUCTURE project-list drift still parked from 2026-09-17.
+
+* Links
+- [[file:../../03-projects/porch-pumpkins/BuckheadPorchPumpkinPlan2026.org][BuckheadPorchPumpkinPlan2026]]
+- [[file:VK-2026-09-17-T470sCutover.org][VK-2026-09-17]] (if present after finalize; else 2026-09-17 STATUS pulse)
+- [[file:../../08-skills/VoightKampffSessionClose.org][VoightKampffSessionClose]]
