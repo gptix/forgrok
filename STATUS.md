@@ -1,6 +1,6 @@
 # STATUS.md — Living Operational Snapshot
 
-**Last updated:** 2026-09-17
+**Last updated:** 2026-09-23xs
 **Maintainer:** George Taylor + Grok
 **Companion files:** BOOT.md, STRUCTURE.md, README.md, 01-core/memory/joji-grok-project-memory.org, 01-core/memory/voight-kampff-protocol.org, 08-skills/UpdateProjectStatus.org, 02-infrastructure/procedures/TsuiokuTwoMachineSync.org
 
@@ -84,6 +84,13 @@ Live skills under `08-skills/` (disk + this STATUS; SkillsIndex must match):
 15. T470s: decide fate of untracked `03-projects/rental/` notice binaries and local deletion of `03-projects/omarchy/touch`
 
 ## 4. Recent Session Notes
+
+**2026-09-23 — Porch pumpkin partner demo (V-K)**
+- Koerner source business: Porch Pumpkins / Heather Torres / porchpumpkins.com
+- Working brand on the demo: West Paces Pumpkins
+- SKUs unchanged from BuckheadPorchPumpkinPlan2026
+- Static site + 3712 clubhouse mocks exist in Grok artifacts; not on GitHub
+- Next: copy to T470s 03-projects/porch-pumpkins/, strip third-party gallery stills
 
 **2026-09-17 — T470s canonical cutover (V-K not yet run)**
 - T470s Emacs XDG init gained org-roam extra roots + `C-c n F`. Magit already present.
