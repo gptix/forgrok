@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       4afac39e-6831-42a2-b428-9a7ef3a2c3b4
 :END:
-#+PROPOSED_PATH: 03-projects/pumpkin-porch-marketing/PumpkinPorchMarketing.org
+#+PROPOSED_PATH: 03-projects/porch-pumpkins/PumpkinPorchMarketing.org
 #+COMMIT_MSG: Add detailed inbox node for pumpkin porch composite marketing project
 #+AUTHOR: Joji Teira
 #+CATEGORY: Projects
