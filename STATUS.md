@@ -89,8 +89,9 @@ Live skills under `08-skills/` (disk + this STATUS; SkillsIndex must match):
 - Koerner source business: Porch Pumpkins / Heather Torres / porchpumpkins.com
 - Working brand on the demo: West Paces Pumpkins
 - SKUs unchanged from BuckheadPorchPumpkinPlan2026
-- Static site + 3712 clubhouse mocks exist in Grok artifacts; not on GitHub
-- Next: copy to T470s 03-projects/porch-pumpkins/, strip third-party gallery stills
+- GitHub: 03-projects/porch-pumpkins/ only (plan + marketing org)
+- Demo zip + unpacked site: T470s 03-projects/porch-pumpkins/local-only/ (gitignored)
+- Raw 06-raw pumpkin duplicates removed from github-side
 
 **2026-09-17 — T470s canonical cutover (V-K not yet run)**
 - T470s Emacs XDG init gained org-roam extra roots + `C-c n F`. Magit already present.
