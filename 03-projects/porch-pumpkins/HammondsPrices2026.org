@@ -1,0 +1,64 @@
+:PROPERTIES:
+:ID:       374a1dd1-c356-4ad7-8373-8cca6d4d40e9
+:END:
+#+PROPOSED_PATH: 03-projects/porch-pumpkins/HammondsPrices2026.org
+#+COMMIT_MSG: Add Hammonds 2026 pumpkin price extract
+#+TITLE: Hammonds Produce prices 2026
+#+AUTHOR: George Taylor
+#+DATE: [2026-09-24]
+#+SOURCE_SCAN: 03-projects/porch-pumpkins/local-only/vendors/2026-09-24-hammonds-produce.pdf
+
+* Vendor
+
+- Name: Hammonds Produce
+- Grower / source: Keith Hammonds
+- Phone: 404-362-0491
+- Email: hammondspumpkins@gmail.com
+- Note on sheet: Prices are subject to change based on availability and market conditions.
+- Captured: ENVY 4520 scan, T470s, 2026-09-24
+- Edited: George Taylor 2026-09-24 15:21
+
+* Pumpkins
+
+| Description                  | Count       | Pack    |         Price | Notes |
+|------------------------------+-------------+---------+---------------+-------|
+| Gladiator Ex Large           | 20–25 ct    | 36" bin |           210 |       |
+| Gladia  tor Large            | 30–35 ct    | 36" bin |           215 |       |
+| Gladiator Medium             | 40–45 ct    | 36" bin |           220 |       |
+| Gladiator Small              | 50–55 ct    | 36" bin |           225 |       |
+| Gladiator Petite             | 80–85 ct    | 36" bin |           230 |       |
+| Field Pack — Full Truck Load | 56 bins     | 36" bin |           210 |       |
+| Gladiator                    | 35 ct       | 36" bin |           220 |       |
+| Cronus Big Stem Ex Large     | 30–50 ct    | 36" bin |           220 |       |
+| Sweet Baby Jane              | 30–35 ct    | 36" bin |           220 |       |
+| Warty Goblin                 | 35 ct       | 24" bin |           235 |       |
+| Prize Winner                 | 80–200 lb   | 1 ea    |            40 |       |
+| Atlantic Dill                | 300–900 lb  | 1 ea    | Not Available |       |
+| Polar Bear                   | Volume Fill | 36" bin |           270 |       |
+| Polar Bear                   | 1 ea        | 1 ea    |            28 |       |
+|                              |             |         |               |       |
+
+* Pie pumpkins
+
+| Description  | Count      | Pack    | Price | Notes |
+|--------------+------------+---------+-------+-------|
+| Field Trip   | 130–175 ct | 24" bin |   275 |       |
+| White Blanco | 130–175 ct | 24" bin |   275 |       |
+| Little Giant | 180–200 ct | 24" bin |   280 |       |
+| Snow Ball    |            | 24" bin |   325 |       |
+|              |            |         |       |       |
+
+* Mini pumpkins
+
+| Description    | Count      | Pack          | Price | Notes |
+|----------------+------------+---------------+-------+-------|
+| Jack-Be-Little | 700–900 ct | 24" bin       |   475 |       |
+| Jack-Be-Little | 85–100 ct  | 1 1/9 bushel  |    30 |       |
+| Pump-Ke-Mon    | 600–700 ct | 24" bin       |   375 |       |
+| Pump-Ke-Mon    |            | 1 1/9 bushel  |    25 |       |
+| Blaze of Glory | 300–375 ct | 24" bin       |   300 |       |
+| Casperia       | 500–600 ct | 24" bin       |   300 |       |
+| Casperia       |            | 1  1/9 bushel |    25 |       |
+| Phantomita     | 12–15 ct   | Case          |    20 |       |
+| Wee-Be-Little  |            | 1 1/9 bushel  |    25 |       |
+|                |            |               |       |       |
