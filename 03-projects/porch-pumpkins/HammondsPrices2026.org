@@ -1,12 +1,13 @@
 :PROPERTIES:
-:ID:       374a1dd1-c356-4ad7-8373-8cca6d4d40e9
+:ID:       727b5757-42df-4c5b-b15f-c8555a56fe74
 :END:
 #+PROPOSED_PATH: 03-projects/porch-pumpkins/HammondsPrices2026.org
 #+COMMIT_MSG: Add Hammonds 2026 pumpkin price extract
+#+NODE-NAME: HammondsPrices2026
 #+TITLE: Hammonds Produce prices 2026
 #+AUTHOR: George Taylor
 #+DATE: [2026-09-24]
-#+SOURCE_SCAN: 03-projects/porch-pumpkins/local-only/vendors/2026-09-24-hammonds-produce.pdf
+#+SOURCE_SCAN: 03-projects/porch-pumpkinsn/local-only/vendors/2026-09-24-hammonds-produce.pdf
 
 * Vendor
 
