@@ -1,0 +1,138 @@
+:PROPERTIES:
+:ID:       a1c4df0b-3b72-4817-b1da-68d1a683dff3
+:END:
+#+PROPOSED_PATH: 03-projects/porch-pumpkins/varietal-minisite/PumpkinVarietalMinisite.org
+#+COMMIT_MSG: Add porch-pumpkins varietal minisite sub-project spec
+#+NODE-NAME: PumpkinVarietalMinisite
+
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-projects
+#+CREATED: [2026-09-25 Fri 14:30]
+#+LAST_MODIFIED: [2026-09-25 Fri 14:30]
+#+TITLE: Pumpkin Varietal Minisite
+#+NODE-NAME: PumpkinVarietalMinisite
+#+FILETAGS: :project:pumpkin:porch:varietal:minisite:westpaces:
+#+DESCRIPTION: Sub-project of porch-pumpkins: static varietal catalog, quoting worksheet, and Emacs delivery-order function.
+
+* Decision
+
+This is a *sub-project* of =03-projects/porch-pumpkins/=, not a sibling project.
+
+Reason: same brand (West Paces Pumpkins), same vendors (Hammonds, Appalachian, Lakewood scout), same SKUs, same T470s =local-only= rule. A separate top-level project would split cost sheets from the catalog that uses them.
+
+Related nodes: [[BuckheadPorchPumpkinPlan2026]], [[PorchPumpkinCostSheets2026]], [[HammondsPrices2026]], [[AppalachianFarmsPrices2026]], [[LakewoodMarketPhotos20260924]], [[PumpkinPorchMarketing]]
+
+* Goal
+
+Build a static minisite that answers, for each fruit or prop we might put on a porch:
+
+- What is it called on our sheets?
+- What does it cost on the current price list (each and/or bin)?
+- Which vendor sells it to us?
+- Where will the local photograph live?
+- How do we turn a scenario table + customer row into a printable delivery order?
+
+Public marketing site is out of scope for this node. This desk is operator-facing.
+
+* Directory plan
+
+On the T470s canonical copy:
+
+#+begin_example
+03-projects/porch-pumpkins/
+  varietal-minisite/
+    PumpkinVarietalMinisite.org   ; this spec
+    site/                         ; static files (pushable: html/css/js/json)
+      index.html
+      worksheet.html
+      css/
+      js/
+      data/varietals.json
+      images/                     ; empty or licensed only
+      varietals/{slug}.html
+    local-only/                   ; gitignored; already the pattern for the demo zip
+      images/{slug}.jpg           ; retrieved photographs
+      orders/                     ; processed worksheets + delivery md
+#+end_example
+
+Draft produced 2026-09-25 lives in the Grok artifacts tree as =pumpkin-varietal-minisite/= until copied onto the T470s and finalized with =C-c n F=.
+
+* Pages
+
+** index.html
+
+- Search field over name, alias, kind, vendor note
+- Kind chips: jack / heirloom / white / novelty / mini / pie / prop
+- Table columns: Varietal name | URL on web | URL on local site | cost per unit | price-list note | vendors
+- Local name is a link to =./varietals/{slug}.html=
+- Notes: Lakewood 40 keepers; Hammonds contact; competitor sites
+- Link to worksheet
+
+** worksheet.html
+
+- Sample org worksheet with dollar formatting and =#+TBLFM= for line totals and scenario total
+- Click-to-copy of that org block
+- Spec of =wpp/process-pumpkin-worksheet=
+- Sample markdown delivery order, also click-to-copy
+
+** One page per varietal
+
+Stub pages already generated from =varietals.json=. After the list is locked, retrieve images into =local-only/images/=, then fill the stubs.
+
+* Catalog sources (this draft)
+
+Priority order used 2026-09-25:
+
+1. =AppalachianFarmsPrices2026.org= novelty each list + Fireballs bin
+2. =HammondsPrices2026.org= Gladiator / pie / mini bins
+3. =PorchPumpkinCostSheets2026.org= bin-average each
+4. Sample worksheet names that are *not* on those sheets (Cat Head) marked =unconfirmed=
+5. Competitor sites for *palette language only* (heirloom / white ghost / carver / hay). None of the Atlanta competitors publish a named varietal menu.
+
+porchpumpkins.com (Heather Torres) still does not list named varieties. Use it as the operating model, not a produce catalog.
+
+Atlanta-area porch installers checked: Spillers Pots, Praise Pumpkins, Pumpkinful, Project Porch ATL, Trees for Tuition. All sell packages, not SKUs.
+
+* Open catalog questions
+
+- [ ] Name the Lakewood 40 keepers and merge any extra names into =varietals.json=
+- [ ] Confirm whether *Cat Head* is a Lakewood nickname, a misspoken Cinderella/Prince Charming, or drop it
+- [ ] Count the Fireball 24in bin so $275 becomes a real each
+- [ ] Count Snow Ball and Fort Knox bins
+- [ ] Decide working each for Gladiator sizes (cost sheet already uses $4.89 mid-small)
+- [ ] Lock image license policy before any bulk download (prefer our own Lakewood / install photos)
+
+* Emacs function
+
+Name: =wpp/process-pumpkin-worksheet=
+
+Input: current org buffer containing a Project Components table and a Customer table.
+
+Behavior:
+
+1. Read customer name and delivery date from the Customer table
+2. Slug the name (spaces to hyphens, drop punctuation)
+3. Proposed path:
+   =03-projects/porch-pumpkins/local-only/orders/YYYY-MM-DDThhmm-<Customer-Name>-pumpkins.org=
+4. Write a markdown delivery sheet beside it:
+   =…-delivery.md=
+   with heading *Pumpkin delivery*, customer email / address+ZIP / date, and Varietal | Count
+5. Save both files. Do not push. Do not stage. Customer PII stays local-only.
+
+Implementation lives later under =02-infrastructure/emacs/= or a porch-pumpkins Elisp snippet. Do not invent a second finalize helper; this function only writes order artifacts.
+
+* Image retrieval (after list lock)
+
+Programmatic pass, not this session:
+
+1. Working temp dir: =/tmp/wpp-varietal-images/= or T470s =local-only/images/_inbox/=
+2. Save as ={slug}.jpg= using the JSON slug, never the marketing nickname alone
+3. Human review against the fruit
+4. Promote into =local-only/images/= and optionally =site/images/=
+5. Then fill each varietal page with name, vendor list, each vs bin vs bushel pricing
+
+Do not scrape porchpumpkins.com or competitor package photos for the catalog. Those are styled installs, not variety IDs.
+
+* Status
+
+Draft desk exists. Varietal list is *sheet-complete* for Hammonds + Appalachian, *photo-incomplete*, and *Lakewood-unnamed*. Next operator move: copy the artifacts tree onto the T470s under =03-projects/porch-pumpkins/varietal-minisite/=, finalize this node with =C-c n F=, gitignore =local-only/=.
