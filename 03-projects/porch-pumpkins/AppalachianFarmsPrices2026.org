@@ -1,0 +1,131 @@
+:PROPERTIES:
+:ID:       bba5211b-13f6-41cf-866f-1e2743b84242
+:END:
+#+PROPOSED_PATH: 03-projects/porch-pumpkins/AppalachianFarmsPrices2026.org
+#+COMMIT_MSG: Add Appalachian Farms 2026 pumpkin price extract
+#+TITLE: Appalachian Farms of Cranberry prices 2026
+#+AUTHOR: George Taylor
+#+DATE: [2026-09-24]
+#+SOURCE_SCAN: 03-projects/porch-pumpkins/local-only/vendors/2026-09-24-appalachian-farms-1.pdf
+#+SOURCE_SCAN_2: 03-projects/porch-pumpkins/local-only/vendors/2026-09-24-appalachian-farms-2.pdf
+#+NODE-NAME: AppalachianFarmsPrices2026
+
+* Vendor
+
+- Name: Appalachian Farms of Cranberry, LLC
+- Address: PO Box 686, Elk Park, NC 28622
+- Text: (828) 387-1501
+- Email: GSTREES1@gmail.com
+- Year on sheet: 2026
+- Bulk: 5% off any single purchase of 10 bins or more
+- Note: Prices are subject to change based on availability and market conditions.
+- Captured: ENVY 4520 scans, T470s, 2026-09-24
+- Two sheets: printed wholesale list (page 2) and heirloom/novelty / decorative / squash list (page 1)
+- Edited: George Taylor 2026-09-24 15:54
+
+* Jack o' lantern (36" bins)
+
+From the printed wholesale sheet.
+
+| Count    | Pack    | Price | Notes |
+|----------+---------+-------+-------|
+| 20–25 ct | 36" bin |   210 |       |
+| 30–40 ct | 36" bin |   215 |       |
+| 40–50 ct | 36" bin |   220 |       |
+| 50–60 ct | 36" bin |   220 |       |
+| 60–70 ct | 36" bin |   225 |       |
+
+* Heirloom / specialty bins (wholesale sheet)
+
+| Description             | Pack    | Price | Notes                                                   |
+|-------------------------+---------+-------+---------------------------------------------------------|
+| Heirloom mixed variety  | 24" bin |   250 | also listed as 40 ct / 24–30" bin $250 on novelty sheet |
+| Heirloom single variety | 24" bin |   250 |                                                         |
+| Fort Knox Pie           | 24" bin |   275 |                                                         |
+| Field Trip pie          | 24" bin |   275 |                                                         |
+| White pie               | 24" bin |   275 |                                                         |
+| Gourds                  | 24" bin |   450 | matches mixed gourds 500–600 ct on novelty sheet        |
+| Mini orange             | 24" bin |   485 |                                                         |
+| Mini white              | 24" bin |   485 |                                                         |
+| Mini tiger stripe       | 24" bin |   485 |                                                         |
+| Mini mixed              | 24" bin |   515 |                                                         |
+| Polar Bear white        | 36" bin |   200 |                                                         |
+| Polar Bear white        | 1 ea    |    28 |                                                         |
+| Prizewinners            | 1 ea    |    35 |                                                         |
+| Fireballs               | 24" bin |   275 |                                                         |
+
+* Heirloom / novelty — each (novelty sheet)
+
+Pack column on the paper is written "1ea". Mixed bin is the first row.
+
+| Description                  | Count | Pack       | Price | Notes |
+|------------------------------+-------+------------+-------+-------|
+| Heirloom / Novelty Mixed     | 40 ct | 24–30" bin |   250 |       |
+| Apple Gourd                  |       | 1 ea       |  3.50 |       |
+| Autumn Buckskin              |       | 1 ea       |  5.50 |       |
+| Blue Hubbard                 |       | 1 ea       |  5.50 |       |
+| Corn Cobb                    |       | 1 ea       |  4.00 |       |
+| Cushaw Autumn Ylw Striped    |       | 1 ea       |  5.00 |       |
+| Cushaw Green Striped         |       | 1 ea       |  5.00 |       |
+| Dragon Fire                  |       | 1 ea       |  4.75 |       |
+| Fairy Tale                   |       | 1 ea       |  9.00 |       |
+| Firebug                      |       | 1 ea       |  4.00 |       |
+| Flat White Stacker           |       | 1 ea       |  9.00 |       |
+| Flat White Boer              |       | 1 ea       |  5.75 |       |
+| Grizzly Bear                 |       | 1 ea       |  4.25 |       |
+| Hogarth                      |       | 1 ea       |  3.50 |       |
+| Hot Chocolate                |       | 1 ea       |  4.00 |       |
+| Jarrahdale                   |       | 1 ea       |  6.50 |       |
+| Long Island Cheese           |       | 1 ea       |  6.50 |       |
+| Madonna                      |       | 1 ea       |  5.50 |       |
+| Marina Di Chioggia           |       | 1 ea       |  5.50 |       |
+| Mellow Yellow                |       | 1 ea       |  4.50 |       |
+| Mini Warty                   |       | 1 ea       |  3.75 |       |
+| Moon Light                   |       | 1 ea       |  6.25 |       |
+| Moon Whisper                 |       | 1 ea       |  5.75 |       |
+| Neverland Okra Stalk         |       | 1 ea       |  5.75 |       |
+| One-Two-Many                 |       | 1 ea       |  9.00 |       |
+| Peanut Squash                |       | 1 ea       |  5.00 |       |
+| Pink Banana                  |       | 1 ea       |  6.50 |       |
+| Popcorn                      |       | 1 ea       |  9.00 |       |
+| Porcelain Doll               |       | 1 ea       |  5.00 |       |
+| Prince Charming (Cinderella) |       | 1 ea       |  7.50 |       |
+| Red Warty                    |       | 1 ea       |  5.00 |       |
+| Speckled Swan                |       | 1 ea       |  5.50 |       |
+| Starfish                     |       | 1 ea       |  4.00 |       |
+| Turks Turban                 |       | 1 ea       |  3.00 |       |
+| Warty Goblin                 |       | 1 ea       |  6.25 |       |
+| Warty Sunset                 |       | 1 ea       |  6.25 |       |
+| White Delight                |       | 1 ea       |  5.25 |       |
+| White Spector                |       | 1 ea       |  6.25 |       |
+
+* Decorative
+
+| Description            | Count     | Pack   |  Price | Notes |
+|------------------------+-----------+--------+--------+-------|
+| Indian Corn            | 12 / 3 ct | Case   |  36.00 |       |
+| Mini Indian Corn       | 15 / 3 ct | Case   |  37.50 |       |
+| Strawberry Indian Corn | 15 / 3 ct | Case   |  37.50 |       |
+| Wheat Straw            | 1 ea      | Each   |   7.75 |       |
+| Wheat Straw Pallet     | 15 ea     | Pallet | 112.50 |       |
+| Corn Stalks            | 8 ct      | Bundle |   8.50 |       |
+| Corn Stalks Pallet     | 40 ct     | Pallet | 320.00 |       |
+
+* Winter squash
+
+| Description  | Count       | Pack         | Price | Notes |
+|--------------+-------------+--------------+-------+-------|
+| Butternut    | Volume Fill | 24" bin      |   330 |       |
+| Butternut    | Volume Fill | 1 1/9 bushel |    25 |       |
+| Acorn Green  | Volume Fill | 1 1/9 bushel |    25 |       |
+| Spaghetti    | Volume Fill | 1 1/9 bushel |    25 |       |
+| Spaghetti    | Volume Fill | 24" bin      |   330 |       |
+| Delicata     | Volume Fill | 1 1/9 bushel |    28 |       |
+| Carnival     | Volume Fill | 1 1/9 bushel |    25 |       |
+
+* Gourds (novelty sheet)
+
+| Description  | Count      | Pack         | Price | Notes                      |
+|--------------+------------+--------------+-------+----------------------------|
+| Mixed Gourds | 60 ct      | 1 1/9 bushel |    30 | mix of daisy, wing, granny |
+| Mixed Gourds | 500–600 ct | 24" bin      |   450 | same $ as wholesale gourd bin |
