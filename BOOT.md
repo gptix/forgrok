@@ -41,7 +41,6 @@ High-level map:
 | 03-knowledge/ | Non-project slices (currently transcripts) |
 | 03-projects/ | Active projects (Withnail, consulting, Tarot Today, Omarchy, etc.) |
 | 04-sources/ | Curated high-protein external content |
-| 05-wiki/ | Wikified concepts, graphs, indexes | -- NOT ON 'main'
 | 06-raw/ | Unprocessed material |
 | 07-sessions/ | Session exports and VK summaries |
 | 08-skills/ | Reusable skill nodes |
