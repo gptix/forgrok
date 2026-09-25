@@ -1,0 +1,60 @@
+:PROPERTIES:
+:ID:       759c7757-4c59-447e-813e-862a3c4a531d
+:END:
+#+PROPOSED_PATH: 07-sessions/vk/VK-2026-09-24-porch-pumpkins-vendors-capture.org
+#+COMMIT_MSG: VK 2026-09-24 porch pumpkin vendor capture and photo ingest
+#+TITLE: VK 2026-09-24 porch pumpkins vendors and Lakewood photos
+#+NODE-NAME: VK20260924PorchPumpkinsVendorsCapture
+#+AUTHOR: George Taylor + Grok
+#+DATE: [2026-09-24]
+#+FILETAGS: :vk:session:porch-pumpkins:
+#+EXECUTIVE_SUMMARY: Session closed T470s vendor-price capture (Hammonds, Appalachian Farms), package cost sheets, Lakewood A10e photo pull, and GitHub ingest of those nodes. Binaries stayed local-only. STATUS.md is still dated 2026-09-23 and needs a 2026-09-24 pulse.
+
+* Findings
+
+- Integrity: T470s remains canonical. New nodes have IDs and NODE-NAME. JPEGs and vendor PDFs were not pushed.
+- Drift: STATUS.md last pulse 2026-09-23. STRUCTURE.md project list not re-checked this session. Helper left #+PROPOSED_PATH / #+COMMIT_MSG on Lakewood and cost-sheet nodes (price sheets cleaned on second push).
+- Friction: A10e off Tailscale (used LAN 192.168.1.78:8022). Termux =ip= permission denied; =ls= on DCIM is Function not implemented; host-side rsync still works. ENVY first scan was 180° rotated. Ingest of a Documents/(1).org copy missed the two required header lines. C-c n F did not strip temporary keywords on every file.
+
+* Actions this session
+
+- ENVY 4520 discovered on T470s as airscan/escl/hpaio at 192.168.1.68; 300 dpi PDF scans of Hammonds and Appalachian sheets.
+- Edited price nodes ingested:
+  - HammondsPrices2026.org ID 727b5757-42df-4c5b-b15f-c8555a56fe74
+  - AppalachianFarmsPrices2026.org ID bba5211b-13f6-41cf-866f-1e2743b84242
+- PorchPumpkinCostSheets2026.org ID a32e73ba-546a-4d59-86d6-65d0b0533aeb (Stoop/Landing/Ghost/Portico fruit vs plan bands; custom worksheet; mini avg $0.60).
+- A10e market photos: 58 files rsynced, culled to 40 keepers under local-only/market-2026-09-24/keepers/.
+- LakewoodMarketPhotos20260924.org ID 11197bce-16ee-40f0-b39a-697ec18567c6 (What/Use still empty).
+- Termux SSH key path documented (pub only; Proton mail of .pub is acceptable).
+- Street-still capture advice (ffmpeg + used X3 or GoPro pair) — no node yet.
+- Off-project: AWS SES mail to jud.taylor@protonmail.com authenticated; not pumpkin work.
+
+* Proposed STATUS.md pulse (2026-09-24)
+
+Replace or append the 2026-09-23 porch-pumpkin bullet:
+
+- 2026-09-24: West Paces Pumpkins vendor capture. Hammonds Produce and Appalachian Farms of Cranberry 2026 sheets scanned on ENVY 4520 → org nodes on main. Cost sheets for Stoop $395 / Landing $595 / Ghost $675 / Portico $1175 using bin-avg and eaches. Lakewood market 40 keeper stills local-only; index node on main. A10e transfer: LAN 192.168.1.78 port 8022, user u0_a122, not currently on Tailscale. Domain still pending sister. GHL still the checkout path.
+
+* Recommendations
+
+1. Fill Lakewood What/Use; strip leftover ingest keywords on Lakewood + cost sheet.
+2. Count one Polar Bear 36" fill bin; $28 each is a guess until then.
+3. Decide capture kit (used X3 vs two GoPros) before a Buckhead loop.
+4. Teach C-c n F to always delete #+PROPOSED_PATH / #+COMMIT_MSG after place (skill/helper bug).
+5. Rejoin A10e to Tailscale (gptix@) so off-LAN pulls work; keep LAN recipe in A10eTermuxTailscaleSshFileTransfer.
+
+* Protected rules
+
+- Emacs-only editing: held (Termux nano only for authorized_keys on the phone).
+- Local-first: vendor PDFs and JPEGs in local-only/; github-side is org only.
+- Withnail airgap: untouched this session.
+- T470s canonical: all ingest and rsync on omarchy.
+
+* Related
+
+- [[file:~/local-side/03-projects/porch-pumpkins/BuckheadPorchPumpkinPlan2026.org][BuckheadPorchPumpkinPlan2026]]
+- [[file:~/local-side/03-projects/porch-pumpkins/HammondsPrices2026.org][HammondsPrices2026]]
+- [[file:~/local-side/03-projects/porch-pumpkins/AppalachianFarmsPrices2026.org][AppalachianFarmsPrices2026]]
+- [[file:~/local-side/03-projects/porch-pumpkins/PorchPumpkinCostSheets2026.org][PorchPumpkinCostSheets2026]]
+- [[file:~/local-side/03-projects/porch-pumpkins/LakewoodMarketPhotos20260924.org][LakewoodMarketPhotos20260924]]
+- [[file:~/local-side/02-infrastructure/tools/A10eTermuxTailscaleSshFileTransfer.org][A10eTermuxTailscaleSshFileTransfer]]
