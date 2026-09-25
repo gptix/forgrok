@@ -1,8 +1,6 @@
 :PROPERTIES:
 :ID:       bba5211b-13f6-41cf-866f-1e2743b84242
 :END:
-#+PROPOSED_PATH: 03-projects/porch-pumpkins/AppalachianFarmsPrices2026.org
-#+COMMIT_MSG: Add Appalachian Farms 2026 pumpkin price extract
 #+TITLE: Appalachian Farms of Cranberry prices 2026
 #+AUTHOR: George Taylor
 #+DATE: [2026-09-24]
