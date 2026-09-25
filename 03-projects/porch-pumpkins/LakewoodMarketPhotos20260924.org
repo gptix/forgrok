@@ -1,0 +1,76 @@
+:PROPERTIES:
+:ID:       11197bce-16ee-40f0-b39a-697ec18567c6
+:END:
+#+TITLE: Lakewood Farmers Market pumpkin photos 2026-09-24
+#+AUTHOR: George Taylor
+#+DATE: [2026-09-24]
+#+FILETAGS: :porch-pumpkins:photos:
+#+DESCRIPTION: Index of keeper stills from Lakewood visit; binaries stay local-only.
+
+#+PROPOSED_PATH: 03-projects/porch-pumpkins/LakewoodMarketPhotos20260924.org
+#+COMMIT_MSG: Index Lakewood 2026-09-24 market pumpkin photos
+
+* Capture
+
+- Place: Lakewood Farmers Market
+- Date: 2026-09-24 ~10:06–10:26
+- Camera: Galaxy A10e
+- Pull: T470s rsync via Termux sshd, 192.168.1.78:8022
+- Originals: ~local-side/03-projects/porch-pumpkins/local-only/market-2026-09-24/keepers/
+- Do not commit the JPEGs
+
+* Keepers
+
+Fill What / Use while viewing =keepers/=. Use is stoop mock, variety ID, vendor stall, bin shot, discard later, etc.
+
+| File | Time | What | Use |
+|------+------+------+-----|
+| 20260924_100648.jpg | 10:06 | | |
+| 20260924_100657.jpg | 10:06 | | |
+| 20260924_100702.jpg | 10:07 | | |
+| 20260924_100818.jpg | 10:08 | | |
+| 20260924_100827.jpg | 10:08 | | |
+| 20260924_100841.jpg | 10:08 | | |
+| 20260924_100847.jpg | 10:08 | | |
+| 20260924_100914.jpg | 10:09 | | |
+| 20260924_100924.jpg | 10:09 | | |
+| 20260924_100930.jpg | 10:09 | | |
+| 20260924_101012.jpg | 10:10 | | |
+| 20260924_101025.jpg | 10:10 | | |
+| 20260924_101030.jpg | 10:10 | | |
+| 20260924_101042.jpg | 10:10 | | |
+| 20260924_101056.jpg | 10:10 | | |
+| 20260924_101108.jpg | 10:11 | | |
+| 20260924_101121.jpg | 10:11 | | |
+| 20260924_101148.jpg | 10:11 | | |
+| 20260924_101200.jpg | 10:12 | | |
+| 20260924_101209.jpg | 10:12 | | |
+| 20260924_101223.jpg | 10:12 | | |
+| 20260924_101258.jpg | 10:12 | | |
+| 20260924_101333.jpg | 10:13 | | |
+| 20260924_101351.jpg | 10:13 | | |
+| 20260924_101400.jpg | 10:14 | | |
+| 20260924_101420.jpg | 10:14 | | |
+| 20260924_102024.jpg | 10:20 | | |
+| 20260924_102031.jpg | 10:20 | | |
+| 20260924_102042.jpg | 10:20 | | |
+| 20260924_102051.jpg | 10:20 | | |
+| 20260924_102101.jpg | 10:21 | | |
+| 20260924_102110.jpg | 10:21 | | |
+| 20260924_102117.jpg | 10:21 | | |
+| 20260924_102126.jpg | 10:21 | | |
+| 20260924_102133.jpg | 10:21 | | |
+| 20260924_102417.jpg | 10:24 | | |
+| 20260924_102427.jpg | 10:24 | | |
+| 20260924_102436.jpg | 10:24 | | |
+| 20260924_102523.jpg | 10:25 | | |
+| 20260924_102637.jpg | 10:26 | | |
+
+Count: 40
+
+* View on T470s
+
+#+BEGIN_SRC text
+C-x C-f ~/local-side/03-projects/porch-pumpkins/local-only/market-2026-09-24/keepers
+M-x image-dired
+#+END_SRC
