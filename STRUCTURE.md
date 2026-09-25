@@ -1,3 +1,5 @@
+
+
 # forgrok Repository Structure
 
 This document is the authoritative map of the knowledge base on disk.
@@ -11,7 +13,7 @@ Companion files:
 
 Historical schemas that describe the *pre-renumbering* layout (`raw/`, `groki/`, `org-roam-knowledge/`) live at `ZHO-SCHEMA.md` and `01-core/principles/GROK-SCHEMA.md`. They are not the directory map.
 
-**Last aligned:** 2026-08-31 (GitHub `main` exact-path survey)
+**Last aligned:** 2026-09-25 (GitHub `main` exact-path survey)
 
 ## Top-level layout
 
@@ -37,10 +39,6 @@ forgrok/
 │   ├── roemmele/              # Brian Roemmele / 5000 Days material
 │   ├── savewisdom/            # Save-Your-Wisdom source material
 │   └── wilhelm/               # Scalar / longitudinal wave material
-├── 05-wiki/                   # Wikified / interlinked knowledge
-│   ├── concepts/
-│   ├── graphs/                # Including Infranodus exports
-│   └── indexes/
 ├── 06-raw/                    # Unprocessed or semi-processed material
 ├── 07-sessions/               # Selected conversation / session exports
 │   ├── grok-workflow/
@@ -52,23 +50,26 @@ forgrok/
 
 `01-core/soul/` is named in older BOOT/STRUCTURE text as the home for agent identity. It is **not present** on GitHub `main` as of 2026-08-31. Withnail/SOUL material currently lives under `03-projects/withnail/` and on hermes-pi. Do not claim `01-core/soul/` exists until the directory is created and pushed.
 
-## Projects under `03-projects/` (as of 2026-08-31)
+## Projects under `03-projects/` (as of 2026-09-25)
 
 Active or significant:
 
-- `ai-agent-consulting` — private local-first agents for Atlanta professional services
-- `emacs-obsidian-skin` — Org-first Emacs skin approximating Obsidian UX
-- `gov-contracting` — low-touch government-contracting model
+- `ai-agent-consulting`
+- `emacs-obsidian-skin`
+- `gov-contracting`
+- `omarchy` — Omarchy 4.x; `Emacs-to-Omarchy/` + learning notes
+- `porch-pumpkins` — West Paces Pumpkins (sheets + `varietal-minisite/`; keepers/demo local-only)
 - `save-your-wisdom-nonprofit`
 - `skill-system-improvement`
-- `tarot-today` — Tarot recognition + reading app (canonical project dir)
+- `tarot-today`
 - `TsuiokuPresentation`
 - `withnail`
-- `omarchy` — Omarchy 4.x on the T470s (learning notes first)
 
-Also present on `main` (keep or park explicitly; do not pretend they are gone):
+Also present on `main` (keep or park explicitly):
 
 - `ai-services`, `arrest-demographics`, `local-ai-agents`, `sources`, `test-grok-build`
+
+Removed from `main` (do not list as live): `rental`, `05-wiki/`.
 
 ## Design principles
 
@@ -92,3 +93,4 @@ Also present on `main` (keep or park explicitly; do not pretend they are gone):
 - Inspect GitHub with `08-skills/InspectGitHubState.org` (exact-path fetch). Do not treat a summarized tree page as a complete inventory.
 - `04-sources/roemmele/` uses a mechanical-first ingest loop (HTML → md + images → Grok org node). Skeleton `.org` generation was removed 2026-07-31.
 - `03-knowledge/` is a real top-level directory (transcripts). Future cleanup may fold it into `07-sessions/`; until then it is documented, not invisible.
+- '06-raw/' is empty except for .gitkeep

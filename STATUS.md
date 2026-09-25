@@ -1,6 +1,6 @@
 # STATUS.md — Living Operational Snapshot
 
-**Last updated:** 2026-09-23xs
+**Last updated:** 2026-09-25
 **Maintainer:** George Taylor + Grok
 **Companion files:** BOOT.md, STRUCTURE.md, README.md, 01-core/memory/joji-grok-project-memory.org, 01-core/memory/voight-kampff-protocol.org, 08-skills/UpdateProjectStatus.org, 02-infrastructure/procedures/TsuiokuTwoMachineSync.org
 
@@ -81,7 +81,6 @@ Live skills under `08-skills/` (disk + this STATUS; SkillsIndex must match):
 12. (closed 2026-09-14) T470s dual batteries and speakers 00JT988 replaced
 13. First X230 pull of post-cutover `main` (must include `dba3b9e` + orientation commits)
 14. Next V-K: STRUCTURE.md project list (`Emacs-to-Omarchy/`, two-machine procedure), README one-liner if needed
-15. T470s: decide fate of untracked `03-projects/rental/` notice binaries and local deletion of `03-projects/omarchy/touch`
 
 ## 4. Recent Session Notes
 
