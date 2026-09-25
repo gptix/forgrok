@@ -1,8 +1,3 @@
-:PROPERTIES:
-:ID:       759c7757-4c59-447e-813e-862a3c4a531d
-:END:
-#+PROPOSED_PATH: 07-sessions/vk/VK-2026-09-24-porch-pumpkins-vendors-capture.org
-#+COMMIT_MSG: VK 2026-09-24 porch pumpkin vendor capture and photo ingest
 #+TITLE: VK 2026-09-24 porch pumpkins vendors and Lakewood photos
 #+NODE-NAME: VK20260924PorchPumpkinsVendorsCapture
 #+AUTHOR: George Taylor + Grok
