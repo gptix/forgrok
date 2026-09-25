@@ -5,7 +5,7 @@
 #+TITLE: Hammonds Produce prices 2026
 #+AUTHOR: George Taylor
 #+DATE: [2026-09-24]
-#+SOURCE_SCAN: 03-projects/porch-pumpkinsn/local-only/vendors/2026-09-24-hammonds-produce.pdf
+#+SOURCE_SCAN: 03-projects/porch-pumpkins/local-only/vendors/2026-09-24-hammonds-produce.pdf
 
 * Vendor
 
@@ -22,7 +22,7 @@
 | Description                  | Count       | Pack    |         Price | Notes |
 |------------------------------+-------------+---------+---------------+-------|
 | Gladiator Ex Large           | 20–25 ct    | 36" bin |           210 |       |
-| Gladia  tor Large            | 30–35 ct    | 36" bin |           215 |       |
+| Gladiator Large              | 30–35 ct    | 36" bin |           215 |       |
 | Gladiator Medium             | 40–45 ct    | 36" bin |           220 |       |
 | Gladiator Small              | 50–55 ct    | 36" bin |           225 |       |
 | Gladiator Petite             | 80–85 ct    | 36" bin |           230 |       |
@@ -35,7 +35,6 @@
 | Atlantic Dill                | 300–900 lb  | 1 ea    | Not Available |       |
 | Polar Bear                   | Volume Fill | 36" bin |           270 |       |
 | Polar Bear                   | 1 ea        | 1 ea    |            28 |       |
-|                              |             |         |               |       |
 
 * Pie pumpkins
 
@@ -45,7 +44,6 @@
 | White Blanco | 130–175 ct | 24" bin |   275 |       |
 | Little Giant | 180–200 ct | 24" bin |   280 |       |
 | Snow Ball    |            | 24" bin |   325 |       |
-|              |            |         |       |       |
 
 * Mini pumpkins
 
@@ -57,7 +55,6 @@
 | Pump-Ke-Mon    |            | 1 1/9 bushel  |    25 |       |
 | Blaze of Glory | 300–375 ct | 24" bin       |   300 |       |
 | Casperia       | 500–600 ct | 24" bin       |   300 |       |
-| Casperia       |            | 1  1/9 bushel |    25 |       |
+| Casperia       |            | 1 1/9 bushel  |    25 |       |
 | Phantomita     | 12–15 ct   | Case          |    20 |       |
 | Wee-Be-Little  |            | 1 1/9 bushel  |    25 |       |
-|                |            |               |       |       |
