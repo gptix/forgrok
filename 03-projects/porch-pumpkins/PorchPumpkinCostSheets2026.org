@@ -1,0 +1,198 @@
+:PROPERTIES:
+:ID:       a32e73ba-546a-4d59-86d6-65d0b0533aeb
+:END:
+#+TITLE: Porch pumpkin cost sheets 2026
+#+AUTHOR: George Taylor
+#+DATE: [2026-09-24]
+#+FILETAGS: :porch-pumpkins:costing:
+#+DESCRIPTION: Fruit cost for Stoop / Landing / Ghost / Portico from Hammonds and Appalachian Farms sheets, plus a custom-order worksheet.
+
+#+PROPOSED_PATH: 03-projects/porch-pumpkins/PorchPumpkinCostSheets2026.org
+#+COMMIT_MSG: Add package fruit-cost sheets from Hammonds and Appalachian 2026 quotes
+
+* Assumptions
+
+- Packages and piece ranges from BuckheadPorchPumpkinPlan2026.
+- Vendor prices from edited 2026-09-24 sheets (Hammonds, Appalachian Farms).
+- Mid-count used whenever a bin lists a range (example: 40–45 ct → 42.5).
+- =Each= means a printed 1-ea price, or bin price ÷ mid-count when no each exists.
+- =Bin avg= always means bin price ÷ mid-count.
+- Appalachian 5% off applies only if that order is 10+ bins from them in one purchase.
+- Fruit only in the package tables. Labor / fuel / wrap stay in the loaded block underneath, copied from the plan bands.
+- Hay is not on these two sheets. Plan still uses Herrington straw ~$8 wholesale, $35 retail add-on.
+- Do not treat Polar Bear 36" volume-fill $200–$270 as a cheap white: each price is $28. Ghost / Portico whites should mix pies, Casperia, novelty eaches, and only a few Polar Bears.
+
+**Mini average (locked for the custom sheet)**
+
+| Source                         | Mid ct | Bin $ | $/pc |
+|--------------------------------+--------+-------+------|
+| Hammonds Jack-Be-Little 24"    |    800 |   475 | 0.59 |
+| Hammonds Pump-Ke-Mon 24"       |    650 |   375 | 0.58 |
+| Hammonds Casperia 24"          |    550 |   300 | 0.55 |
+| Hammonds Blaze of Glory 24"    |    338 |   300 | 0.89 |
+| Appalachian mini orange/white  |    800 |   485 | 0.61 |
+| Appalachian mini mixed         |    800 |   515 | 0.64 |
+| Working mini average (no Blaze)|        |       | 0.60 |
+| Working mini average (w/ Blaze)|        |       | 0.64 |
+
+Use *$0.60* as the custom-order mini unit unless the client asks for Blaze / specialty stripes.
+
+* Unit library (edit if a quote changes)
+
+| SKU                         | Vendor       | Pack         | Mid ct | Bin $ | Bin avg | Each printed | Use $ |
+|-----------------------------+--------------+--------------+--------+-------+---------+--------------+-------|
+| Jack / Gladiator large      | both         | 36" 20–25    |     22 |   210 |    9.55 |              |  9.55 |
+| Jack / Gladiator medium     | both         | 36" 30–40    |     35 |   215 |    6.14 |              |  6.14 |
+| Jack / Gladiator mid-small  | both         | 36" 40–50    |     45 |   220 |    4.89 |              |  4.89 |
+| Jack / Gladiator small      | App / Ham    | 36" 50–60    |     55 |   220 |    4.00 |              |  4.00 |
+| Jack petite                 | Hammonds     | 36" 80–85    |     82 |   230 |    2.80 |              |  2.80 |
+| Heirloom mixed/single       | Appalachian  | 24" ~40      |     40 |   250 |    6.25 |              |  6.25 |
+| Warty Goblin                | Hammonds     | 24" 35 ct    |     35 |   235 |    6.71 |              |  6.71 |
+| White / Field Trip pie      | both         | 24" ~150     |    152 |   275 |    1.81 |              |  1.81 |
+| Little Giant pie            | Hammonds     | 24" ~190     |    190 |   280 |    1.47 |              |  1.47 |
+| Snow Ball                   | Hammonds     | 24"          |        |   325 |         |              |       |
+| Polar Bear                  | both         | 1 ea         |      1 |       |         |           28 | 28.00 |
+| Polar Bear fill             | App / Ham    | 36" fill     |        | 200/270 |       |           28 | 28.00 |
+| Prize Winner                | Ham / App    | 1 ea         |      1 |       |         |        40/35 | 35.00 |
+| Novelty pale heirloom       | Appalachian  | 1 ea         |      1 |       |         |        5–9   |  6.50 |
+| Mini (working avg)          | blend        | 24"          |        |       |    0.60 |              |  0.60 |
+| Casperia / white mini       | Hammonds     | 24" ~550     |    550 |   300 |    0.55 |              |  0.55 |
+| Gourd mix                   | Appalachian  | 24" 550      |    550 |   450 |    0.82 |              |  0.82 |
+| Hay bale                    | plan         | 1 ea         |      1 |     8 |         |           35 |  8.00 |
+
+Polar Bear fill bins have no count on either sheet. Cost Polar Bears at *$28 each* until you count a bin.
+
+* Package fruit — working mixes
+
+Piece counts are the midpoint of the plan range. Swap rows; keep the piece total inside the range.
+
+**How to read the two cost columns**
+
+- *Bin-avg mix* — buy from bins, cost every jack/heirloom/mini at the library Use $.
+- *Each-heavy mix* — same piece counts, but whites that have a printed each (Polar Bear, novelty) use that each. This is the “showy stoop” number.
+
+**Stoop — $395 list · 12–16 pieces · plan fruit $90–120**
+
+Working mix = 14 pieces: 7 jack mid-small, 3 heirloom, 2 white pie, 2 minis.
+
+| Line              | Qty | Bin-avg $ | Bin line | Each $ | Each line |
+|-------------------+-----+-----------+----------+--------+-----------|
+| Jack mid-small    |   7 |      4.89 |    34.23 |   4.89 |     34.23 |
+| Heirloom 24"      |   3 |      6.25 |    18.75 |   6.25 |     18.75 |
+| White pie         |   2 |      1.81 |     3.62 |   1.81 |      3.62 |
+| Mini avg          |   2 |      0.60 |     1.20 |   0.60 |      1.20 |
+| Fruit total       |  14 |           |    57.80 |        |     57.80 |
+| Showy alt: 1 PB   |   1 |     28.00 |    28.00 |  28.00 |     28.00 |
+| Showy fruit w/ PB |  14 |           |    82.18 |        |     82.18 |
+
+Replace one heirloom with one Polar Bear for the showy row (still 14 pieces). Lean mix is *under* the $90–120 band. One Polar Bear puts it near the floor.
+
+**Landing — $595 list · 22–28 pieces · plan fruit $140–180**
+
+Working mix = 25 pieces: 11 jack mid-small, 6 heirloom/white, 2 pies, 6 minis.
+
+| Line           | Qty | Bin-avg $ | Bin line | Each $ | Each line |
+|----------------+-----+-----------+----------+--------+-----------|
+| Jack mid-small |  11 |      4.89 |    53.79 |   4.89 |     53.79 |
+| Heirloom 24"   |   4 |      6.25 |    25.00 |   6.25 |     25.00 |
+| White pie      |   2 |      1.81 |     3.62 |   1.81 |      3.62 |
+| Mini avg       |   6 |      0.60 |     3.60 |   0.60 |      3.60 |
+| Polar Bear     |   2 |     28.00 |    56.00 |  28.00 |     56.00 |
+| Fruit total    |  25 |           |   142.01 |        |    142.01 |
+
+Hits the plan floor if you put two Polar Bears in. Zero Polar Bears → fruit ≈ $86 (too lean for a $595 porch).
+
+**Ghost — $675 list · 18–22 non-orange + 4–6 pale minis · plan fruit $180–240**
+
+Working mix = 20 feature + 5 minis. No orange.
+
+| Line                | Qty | Bin-avg $ | Bin line | Each $ | Each line |
+|---------------------+-----+-----------+----------+--------+-----------|
+| Novelty pale each   |   8 |      6.50 |    52.00 |   6.50 |     52.00 |
+| White pie           |   5 |      1.81 |     9.05 |   1.81 |      9.05 |
+| Casperia / white mini | 5 |      0.55 |     2.75 |   0.55 |      2.75 |
+| Polar Bear          |   4 |     28.00 |   112.00 |  28.00 |    112.00 |
+| Heirloom pale bin   |   3 |      6.25 |    18.75 |   6.25 |     18.75 |
+| Fruit total         |  25 |           |   194.55 |        |    194.55 |
+
+This is the package where eaches matter. Four Polar Bears + novelty is what gets you inside the $180–240 band. All pies and Casperia would land around $50 fruit and look cheap.
+
+**Portico — $1,175 list · 40–50 pieces · plan fruit $280–380**
+
+Working mix = 45 pieces: 12 jack medium, 8 jack mid-small, 6 heirloom, 6 white pie, 4 Polar Bear, 8 minis, 1 prize winner. Hay is an add-on, not fruit.
+
+| Line            | Qty | Bin-avg $ | Bin line | Each $ | Each line |
+|-----------------+-----+-----------+----------+--------+-----------|
+| Jack medium     |  12 |      6.14 |    73.68 |   6.14 |     73.68 |
+| Jack mid-small  |   8 |      4.89 |    39.12 |   4.89 |     39.12 |
+| Heirloom 24"    |   6 |      6.25 |    37.50 |   6.25 |     37.50 |
+| White pie       |   6 |      1.81 |    10.86 |   1.81 |     10.86 |
+| Polar Bear      |   4 |     28.00 |   112.00 |  28.00 |    112.00 |
+| Mini avg        |   8 |      0.60 |     4.80 |   0.60 |      4.80 |
+| Prize Winner    |   1 |     35.00 |    35.00 |  35.00 |     35.00 |
+| Fruit total     |  45 |           |   312.96 |        |    312.96 |
+
+Inside the $280–380 band.
+
+* Loaded cost vs list (plan labor bands)
+
+Fruit from the working mixes above. Labor+fuel+wrap from the plan, not from these vendors.
+
+| Package | List | Fruit working | Labor+fuel+wrap | Loaded | Contribution | Plan contribution |
+|---------+------+---------------+-----------------+--------+--------------+-------------------|
+| Stoop   |  395 |         82.18 |           80    | 162.18 |       232.82 | 185–230           |
+| Landing |  595 |        142.01 |           90    | 232.01 |       362.99 | 315–375           |
+| Ghost   |  675 |        194.55 |           90    | 284.55 |       390.45 | 335–415           |
+| Portico | 1175 |        312.96 |          135    | 447.96 |       727.04 | 645–775           |
+
+Add-ons stay outside: hay +$35 list / ~$8 cost; haul-away +$95 list; stairs +$40.
+
+* Custom order worksheet
+
+Copy this table into a new heading per job. Edit only Qty and any override in Use $. Mini unit stays *0.60* unless you change the locked average above.
+
+Client:
+Address:
+Date:
+Nearest stock package:
+
+| Line                         | Qty | Use $ | Line $ | Notes |
+|------------------------------+-----+-------+--------+-------|
+| Jack large (~22 ct bin)      |   0 |  9.55 |   0.00 |       |
+| Jack medium (~35 ct bin)     |   0 |  6.14 |   0.00 |       |
+| Jack mid-small (~45 ct bin)  |   0 |  4.89 |   0.00 |       |
+| Jack small (~55 ct bin)      |   0 |  4.00 |   0.00 |       |
+| Heirloom / novelty each      |   0 |  6.50 |   0.00 |       |
+| Heirloom bin fruit           |   0 |  6.25 |   0.00 |       |
+| White / Field Trip pie       |   0 |  1.81 |   0.00 |       |
+| Polar Bear                   |   0 | 28.00 |   0.00 |       |
+| Prize Winner                 |   0 | 35.00 |   0.00 |       |
+| Mini (locked avg)            |   0 |  0.60 |   0.00 |       |
+| Casperia / white mini        |   0 |  0.55 |   0.00 |       |
+| Gourd                        |   0 |  0.82 |   0.00 |       |
+| Other                        |   0 |  0.00 |   0.00 |       |
+| Hay wholesale                |   0 |  8.00 |   0.00 | retail add-on $35 |
+| Fruit + hay cost             |     |       |   0.00 |       |
+
+Org formula once the Qty column is filled (point in table, =C-c *= or =C-c C-c=):
+
+: #+TBLFM: $4=$2*$3;%.2f::@16$4=vsum(@2$4..@15$4);%.2f
+
+Quote block (fill by hand):
+
+|                     | Amount | Notes |
+|---------------------+--------+-------|
+| Fruit + hay cost    |        | from table |
+| Labor+fuel+wrap     |        | Stoop 80 / Landing 90 / Ghost 90 / Portico 135 / custom interpolate |
+| Loaded cost         |        |       |
+| Quote (list)        |        | cap custom at $2,500 season one |
+| Contribution        |        | quote − loaded |
+| Contribution %      |        | aim ≥ stock-package % |
+
+* Buy notes
+
+- Jack bins from either vendor are close enough to share one library row.
+- Polar Bear fill: Appalachian $200 / Hammonds $270 — still cost the *fruit* at $28 each until a bin is counted.
+- Appalachian 10-bin 5% is real money on Portico-scale buys (jack + heirloom + pie + mini).
+- Minis are cheap per piece. They do not carry a package; whites and Polar Bears do.
+- Lakewood market visit 2026-09-24: these two sheets are the live quotes until the next reprint.
