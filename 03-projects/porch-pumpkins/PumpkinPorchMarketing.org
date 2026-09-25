@@ -6,7 +6,7 @@
 #+AUTHOR: Joji Teira
 #+CATEGORY: Projects
 #+CREATED: 2026-09-23
-#+LAST_MODIFIED: 2026-09-23
+#+LAST_MODIFIED: 2026-09-25 Fri 15:31
 #+TITLE: Pumpkin porch marketing project
 #+NODE-NAME: PumpkinPorchMarketing
 #+FILETAGS: :project:marketing:pumpkin:legal:draft:georgia:
@@ -34,19 +34,18 @@ Prior turn in the same session asked the general question: if a photo of someone
 - Not a decision to photograph a *named* address.
 - Not permission to imply "we decorated this porch."
 - Not legal advice. Georgia / federal framing from the chat only.
-- Not tied, on the record, to the Twentynine Palms rental at 72122 Sunnyvale Dr. That property was a separate imagery request.
 
 * Intent and constraints the user set
-| Constraint | Status |
-|---+---|
-| Public-street vantage only | Required |
-| Strip address numbers | Required |
-| Strip faces | Required |
+| Constraint                                                        | Status   |
+|-------------------------------------------------------------------+----------|
+| Public-street vantage only                                        | Required |
+| Strip address numbers                                             | Required |
+| Strip faces                                                       | Required |
 | Strip "and so forth" (plates, mail names, readable house numbers) | Required |
-| Add pumpkin displays in the image | Required |
-| Use as marketing collateral | Required |
-| No claim of work performed | Required |
-| No references / testimonials from that house | Required |
+| Add pumpkin displays in the image                                 | Required |
+| Use as marketing collateral                                       | Required |
+| No claim of work performed                                        | Required |
+| No references / testimonials from that house                      | Required |
 
 Unstated, therefore still open: product sold (styling service vs physical pumpkins vs BrandCo seasonal line), geography of the ads, volume, whether the porch is a *local recognizable* house.
 
@@ -57,10 +56,10 @@ These were already recorded as a current project. Confirm against =BuckheadPorch
 - Model: Atlanta porch-pumpkin concierge, season one.
 - Target map: Buckhead / Vinings / West Paces / Garden Hills / Brookhaven / Sandy Springs / Dunwoody.
 - Packages recorded from BuckheadPorchPumpkinPlan2026:
-  | Package | Price |
-  | Stoop | $395 |
-  | Landing | $595 |
-  | Ghost | $675 |
+  | Package | Price  |
+  | Stoop   | $395   |
+  | Landing | $595   |
+  | Ghost   | $675   |
   | Portico | $1,175 |
 - Partner demo site and Chattahoochee clubhouse (3712) mocks produced 2026-09-21–23; those artifacts were *not* ingested to Tsuioku as of the memory note.
 - This session's new work is the *street-photo composite* rule set, not a price change.
@@ -160,7 +159,6 @@ If the porch is recognizable *and* the product is porch displays, get a lawyer t
 - [ ] Disclaimer line locked for web, print, and social.
 - [ ] Decision: generic stoop vs controlled set vs 3D.
 - [ ] Decision: local geo targeting on or off.
-- [ ] No 29 Palms rental photos mixed into Atlanta pumpkin ads unless that is a conscious, separate choice.
 
 * Possible operations (unconfirmed link)
 On 2026-09-21 the same user asked for short-term warehouse or light industrial space near Vinings. That may be unrelated, or it may be seasonal inventory (pumpkins, props, bags).
@@ -180,7 +178,6 @@ See session dump [[file:SessionSummary20260923.org][SessionSummary20260923]] for
 * Related nodes and people
 - Session dump: [[file:SessionSummary20260923.org][SessionSummary20260923]]
 - Standing BrandCo / Georgia venture notes already in Tsuioku (do not duplicate here until ingest).
-- Local 29 Palms agent Mike Carey is *not* a pumpkin-project vendor; he is the 72122 Sunnyvale contact.
 
 * Open questions for the next session
 1. Is the product physical pumpkins, install labor, or brand imagery only?
