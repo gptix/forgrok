@@ -1,3 +1,4 @@
+
 # STATUS.md — Living Operational Snapshot
 
 **Last updated:** 2026-09-25
@@ -27,7 +28,7 @@ Last documented state (not re-verified 2026-08-31):
 - Sync hub: GitHub `gptix/forgrok` `main`, remote name `github-side`. Do not rsync `local-side` between laptops
 - Procedure: `02-infrastructure/procedures/TsuiokuTwoMachineSync.org`
 - T470s Emacs cutover: `03-projects/omarchy/Emacs-to-Omarchy/T470sEmacsOmarchySetup.org` (commit `dba3b9e`)
-- Numbered structure is authoritative in **STRUCTURE.md** (realigned 2026-08-31 to GitHub `main`; project-list drift deferred to next V-K)
+- Numbered structure is authoritative in **STRUCTURE.md** STRUCTURE aligned 2026-09-25.)
 - Orientation layer: BOOT.md + STATUS.md cutover pulse 2026-09-17
 - **Roemmele essay ingest pipeline mature**
   - Preferred flow: mechanical files (HTML + md + images) pushed first → Grok writes full org-roam node → human reviews → push org + inventory
@@ -80,7 +81,6 @@ Live skills under `08-skills/` (disk + this STATUS; SkillsIndex must match):
 11. EmacsObsidianSkin: minimal viable skin (theme + layout + keybinding map + org-roam-ui)
 12. (closed 2026-09-14) T470s dual batteries and speakers 00JT988 replaced
 13. First X230 pull of post-cutover `main` (must include `dba3b9e` + orientation commits)
-14. Next V-K: STRUCTURE.md project list (`Emacs-to-Omarchy/`, two-machine procedure), README one-liner if needed
 
 ## 4. Recent Session Notes
 

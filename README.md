@@ -24,7 +24,6 @@ The knowledge base is called **Tsuioku** (追憶 — recollection). This GitHub 
 | `03-knowledge/` | Non-project slices (transcripts) |
 | `03-projects/` | Active projects (Withnail, AI Agent Consulting, Tarot Today, …) |
 | `04-sources/` | Curated high-protein external content |
-| `05-wiki/` | Wikified concepts, graphs, indexes |
 | `06-raw/` | Unprocessed material |
 | `07-sessions/` | Session exports and VK summaries |
 | `08-skills/` | Reusable skill nodes |
