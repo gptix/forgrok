@@ -6,7 +6,7 @@
 #+DATE: [2026-09-24]
 #+FILETAGS: :porch-pumpkins:photos:
 #+DESCRIPTION: Index of keeper stills from Lakewood visit; binaries stay local-only.
-
+#+NODE-NAME: LakewoodMarketPhotos20260924
 #+PROPOSED_PATH: 03-projects/porch-pumpkins/LakewoodMarketPhotos20260924.org
 #+COMMIT_MSG: Index Lakewood 2026-09-24 market pumpkin photos
 
