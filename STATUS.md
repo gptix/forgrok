@@ -85,6 +85,10 @@ Live skills under `08-skills/` (disk + this STATUS; SkillsIndex must match):
 
 ## 4. Recent Session Notes
 
+- 2026-09-24: West Paces Pumpkins vendor capture. Hammonds + Appalachian Farms 2026 sheets → org on main. Cost sheets for Stoop $395 / Landing $595 / Ghost $675 / Portico $1175. Lakewood 40 keepers local-only; index on main. A10e: 192.168.1.78:8022 u0_a122; not on Tailscale. Domain pending sister. GHL still checkout path.
+
+k
+
 **2026-09-23 — Porch pumpkin partner demo (V-K)**
 - Koerner source business: Porch Pumpkins / Heather Torres / porchpumpkins.com
 - Working brand on the demo: West Paces Pumpkins
