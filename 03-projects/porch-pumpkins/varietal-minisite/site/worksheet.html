@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Worksheet — West Paces Pumpkins</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">West Paces <span>Pumpkins</span></div>
+    <nav>
+      <a href="./index.html">Varietals</a>
+      <a href="./worksheet.html">Worksheet</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Scenario worksheet</h1>
+    <p class="lede">Copy the org block into Emacs. Line totals and the pre-tax total use org-mode formulas. After the list and customer fields are real, run <code>wpp/process-pumpkin-worksheet</code>.</p>
+
+    <p><button class="copy" type="button" onclick="WPP.copyText('worksheet-org')">Copy labeled org worksheet</button></p>
+    <pre id="worksheet-org">#+TITLE: Pumpkin porch scenario
+#+CUSTOMER:
+#+FUNCTION: wpp/process-pumpkin-worksheet
+
+* SAMPLE worksheet
+** Project Components
+| Varietal               | thumbnail image | cost | qty | line total |
+|------------------------+-----------------+------+-----+------------|
+| fireball               |                 | 3.50 |   3 |       10.50 |
+| cat head               |                 | 4.00 |   1 |        4.00 |
+| hay bale               |                 | 7.50 |   2 |       15.00 |
+|------------------------+-----------------+------+-----+------------|
+| scenario pre-tax total |                 |      |     |       29.50 |
+#+TBLFM: $5=$3*$4;%.2f::@5$5=vsum(@2$5..@4$5);%.2f
+
+** Customer
+| Name       | Phone        | Email         | Street          | ZIP   | Delivery Date |
+| Bob Marley | 404-555-1212 | bob@music.com | 123 Happy Drive | 30327 | 10 October    |
+</pre>
+
+    <section class="panel">
+      <h2>What the Emacs function does</h2>
+      <ol>
+        <li>Name: <code>wpp/process-pumpkin-worksheet</code></li>
+        <li>Compute a proposed path: <code>03-projects/porch-pumpkins/local-only/orders/YYYY-MM-DDThhmm-&lt;Customer-Name&gt;-pumpkins.org</code></li>
+        <li>Write a markdown delivery order (print-friendly) next to it as <code>…-delivery.md</code></li>
+        <li>Save both under the local-only orders directory (gitignored; customer PII never goes to GitHub)</li>
+      </ol>
+    </section>
+
+    <h2>Delivery order (markdown target)</h2>
+    <p><button class="copy" type="button" onclick="WPP.copyText('delivery-md')">Copy sample delivery markdown</button></p>
+    <pre id="delivery-md"># Pumpkin delivery
+
+## Customer Name
+Bob Marley
+
+- customer email: bob@music.com
+- customer address with ZIP: 123 Happy Drive, 30327
+- delivery date: 10 October
+
+## Items to deliver
+
+| Varietal | Count |
+|----------|------:|
+| Fireball |     3 |
+| Cat head |     1 |
+| Hay bale |     2 |
+</pre>
+    <p><a href="./index.html">← Back to varietal list</a></p>
+  </main>
+  <div class="toast"></div>
+  <script src="./js/app.js"></script>
+</body>
+</html>

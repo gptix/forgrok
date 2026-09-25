@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Varietals — West Paces Pumpkins</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">West Paces <span>Pumpkins</span></div>
+    <nav>
+      <a href="./index.html">Varietals</a>
+      <a href="./worksheet.html">Worksheet</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Pumpkin varietal desk</h1>
+    <p class="lede">Internal static catalog for season-one quoting. Costs are wholesale list from Hammonds Produce and Appalachian Farms 2026 sheets, plus bin-average each from the porch cost sheets. Not a public storefront.</p>
+
+    <div class="toolbar">
+      <input id="q" type="search" placeholder="Search varietal, alias, vendor note…" />
+      <div class="chips">
+        <button data-kind="" class="on">All</button>
+        <button data-kind="jack">Jack</button>
+        <button data-kind="heirloom">Heirloom</button>
+        <button data-kind="white">White</button>
+        <button data-kind="novelty">Novelty</button>
+        <button data-kind="mini">Mini</button>
+        <button data-kind="pie">Pie</button>
+        <button data-kind="prop">Props</button>
+      </div>
+      <span id="count" class="kind"></span>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Varietal</th>
+          <th>URL on web</th>
+          <th>URL on local site</th>
+          <th>Cost / unit</th>
+          <th>Price-list note</th>
+          <th>Vendors</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+
+    <div class="grid-2">
+      <section class="notes">
+        <h2>Lakewood notes</h2>
+        <p>2026-09-24 scout produced 40 keeper photos. Index lives on GitHub as <code>LakewoodMarketPhotos20260924.org</code>; the image binaries stay T470s <code>local-only</code>.</p>
+        <p>Names on those keepers have not been typed into this catalog yet. <strong>Cat Head</strong> appears only in the sample worksheet — it is not on the Hammonds or Appalachian sheets. Treat it as unconfirmed until a Lakewood keeper is labeled.</p>
+        <p>Hammonds Produce (Keith Hammonds, 404-362-0491, hammondspumpkins@gmail.com) is the Gladiator / pie / mini bin source. Appalachian Farms is the novelty-each and Fireball bin source.</p>
+      </section>
+      <section class="notes">
+        <h2>Similar websites</h2>
+        <ul>
+          <li><a href="https://porchpumpkins.com/">porchpumpkins.com</a> — Heather Torres / Porch Pumpkins (DFW, Houston, Austin 2026). Model to copy operationally, not a Georgia vendor. Site does not publish a named varietal menu.</li>
+          <li><a href="https://www.spillerspots.com/pumpkins">Spillers Pots</a> — Atlanta porch install. Packages named, fruit described as heirloom / carver / white ghost / pies / hay. No SKU-level variety list.</li>
+          <li><a href="https://praisepumpkins.com/">Praise Pumpkins</a> — Buckhead-explicit competitor.</li>
+          <li><a href="https://pumpkinful.com/">Pumpkinful</a> — North Atlanta artist-led installs.</li>
+          <li><a href="https://projectporchatl.com/">Project Porch ATL</a> — metro delivery.</li>
+          <li><a href="https://treesfortuition.com/product/porch-pumpkins-delivery-package1/">Trees for Tuition</a> — jack / heirloom / mini counts, no names.</li>
+          <li><a href="https://mountainpumpkins.com/guides/types-of-pumpkins-for-porches">Mountain Pumpkins porch guide</a> — useful keeper notes (Cinderella, Jarrahdale, Fairytale, Polar Bear).</li>
+        </ul>
+      </section>
+    </div>
+    <p><a href="./worksheet.html">Open the quoting worksheet →</a></p>
+  </main>
+  <footer>West Paces Pumpkins · varietal desk · costs change with the sheets · do not commit customer PII or raw image dumps to GitHub</footer>
+  <script src="./js/app.js"></script>
+  <script>WPP.bootIndex();</script>
+</body>
+</html>

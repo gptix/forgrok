@@ -68,7 +68,7 @@ Active or significant:
 
 Also present on `main` (keep or park explicitly; do not pretend they are gone):
 
-- `ai-services`, `arrest-demographics`, `local-ai-agents`, `rental`, `sources`, `test-grok-build`
+- `ai-services`, `arrest-demographics`, `local-ai-agents`, `sources`, `test-grok-build`
 
 ## Design principles
 
