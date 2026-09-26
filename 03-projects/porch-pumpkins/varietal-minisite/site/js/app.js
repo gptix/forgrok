@@ -1,4 +1,5 @@
-const money = (n) => (n == null ? "—" : new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(n));
+const money = (n) =>
+  n == null ? "—" : new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(n);
 
 function vendorLabel(id, vendors) {
   return vendors[id]?.name || id;
@@ -7,6 +8,22 @@ function vendorLabel(id, vendors) {
 async function loadCatalog() {
   const res = await fetch("./data/varietals.json");
   return res.json();
+}
+
+function hasLocalPhoto(it) {
+  const st = it.image && it.image.status;
+  return st === "own-photo" || st === "chosen";
+}
+
+function thumbCell(it) {
+  const src = it.local_image || "";
+  if (hasLocalPhoto(it) && src) {
+    return `<a class="thumb-link" href="${it.page}">
+      <img class="thumb" src="${src}" alt="${it.name}" loading="lazy"
+           onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'kind',textContent:'missing file'}))">
+    </a>`;
+  }
+  return `<span class="kind">no photo</span>`;
 }
 
 function renderRows(items, vendors, q, kind) {
@@ -25,11 +42,12 @@ function renderRows(items, vendors, q, kind) {
         : "<span class='kind'>pending</span>";
       const v = (it.vendors || []).map((id) => vendorLabel(id, vendors)).join(", ") || "—";
       return `<tr class="status-${it.status}">
+        <td class="thumb-cell">${thumbCell(it)}</td>
         <td>${it.name}<div class="kind">${it.kind} · ${it.status}</div></td>
         <td>${web}</td>
-        <td>${local}<div class="kind">${it.local_image}</div></td>
+        <td>${local}<div class="kind">${it.local_image || ""}</div></td>
         <td class="money">${money(it.cost_each)}</td>
-        <td>${it.cost_note}</td>
+        <td>${it.cost_note || ""}</td>
         <td>${v}</td>
       </tr>`;
     })
