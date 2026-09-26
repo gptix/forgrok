@@ -290,14 +290,14 @@
       "local_image": "./images/little-giant.jpg",
       "page": "./varietals/little-giant.html",
       "status": "listed",
-      "image": {
-        "status": "pending",
-        "src_page": "",
-        "src_url": "",
-        "license": "unknown",
-        "ugly_filename": "",
-        "pretty_filename": "little-giant.jpg",
-        "local_path": "../../../local-only/images/little-giant.jpg"
+	"image": {
+            "status": "chosen",
+            "src_page": "",
+            "src_url": "",
+	    "license": "unknown-seed-catalog-internal-desk-only"
+            "ugly_filename": "/little-giant.jpg",
+            "pretty_filename": "little-giant.jpg",
+            "local_path": "../../../local-only/images/little-giant.jpg"
       }
     },
     {
@@ -319,10 +319,10 @@
       "page": "./varietals/snow-ball.html",
       "status": "listed",
       "image": {
-        "status": "pending",
+        "status": "chosen",
         "src_page": "",
         "src_url": "",
-        "license": "unknown",
+        "license": "unknown-seed-catalog-internal-desk-only",
         "ugly_filename": "",
         "pretty_filename": "snow-ball.jpg",
         "local_path": "../../../local-only/images/snow-ball.jpg"
@@ -399,10 +399,10 @@
       "page": "./varietals/wee-be-little.html",
       "status": "listed",
       "image": {
-        "status": "pending",
+        "status": "chosen",
         "src_page": "",
         "src_url": "",
-        "license": "unknown",
+        "license": "unknown-seed-catalog-internal-desk-only",
         "ugly_filename": "",
         "pretty_filename": "wee-be-little.jpg",
         "local_path": "../../../local-only/images/wee-be-little.jpg"
@@ -425,10 +425,10 @@
       "page": "./varietals/pump-ke-mon.html",
       "status": "listed",
       "image": {
-        "status": "pending",
+        "status": "chosen",
         "src_page": "",
         "src_url": "",
-        "license": "unknown",
+        "license": "unknown-seed-catalog-internal-desk-only",
         "ugly_filename": "",
         "pretty_filename": "pump-ke-mon.jpg",
         "local_path": "../../../local-only/images/pump-ke-mon.jpg"
