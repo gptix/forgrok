@@ -120,11 +120,11 @@
       "page": "./varietals/warty-goblin.html",
       "status": "core",
       "image": {
-        "status": "pending",
-        "src_page": "",
-        "src_url": "",
-        "license": "unknown",
-        "ugly_filename": "",
+        "status": "chosen",
+          "src_page": "",
+        "src_url": "https://w5t5y4q4.delivery.rocketcdn.me/app/uploads/2019/05/WartyGoblin1692-10.jpg",
+        "license": "unknown-seed-catalog-internal-desk-only",
+        "ugly_filename": "seedway-warty-goblin.jpg",
         "pretty_filename": "warty-goblin.jpg",
         "local_path": "../../../local-only/images/warty-goblin.jpg"
       }
@@ -149,11 +149,11 @@
       "page": "./varietals/prize-winner.html",
       "status": "showy",
       "image": {
-        "status": "pending",
-        "src_page": "",
-        "src_url": "",
-        "license": "unknown",
-        "ugly_filename": "",
+        "status": "chosen",
+        "src_page": "https://www.seedway.com/product/prizewinner-pumpkin-seed-farmore/",
+        "src_url": "https://w5t5y4q4.delivery.rocketcdn.me/app/uploads/2019/05/PrizewinnerLeola.jpg",
+        "license": "unknown-seed-catalog-internal-desk-only",
+        "ugly_filename": "seedway-prizewinner.jpg",
         "pretty_filename": "prize-winner.jpg",
         "local_path": "../../../local-only/images/prize-winner.jpg"
       }
@@ -206,11 +206,11 @@
       "page": "./varietals/polar-bear.html",
       "status": "core",
       "image": {
-        "status": "pending",
-        "src_page": "",
-        "src_url": "",
-        "license": "unknown",
-        "ugly_filename": "",
+        "status": "chosen",
+        "src_page": "https://www.ruppseeds.com/vegetables/products/pumpkins/white/polar-bear",
+        "src_url": "https://www.ruppseeds.com/Admin/Public/GetImage.ashx?Image=/Files/Images/Products/Vegetables/Pumpkins/Polar-Bear.jpg",
+        "license": "unknown-seed-catalog-internal-desk-only",
+        "ugly_filename": "rupp-polar-bear.jpg",
         "pretty_filename": "polar-bear.jpg",
         "local_path": "../../../local-only/images/polar-bear.jpg"
       }
