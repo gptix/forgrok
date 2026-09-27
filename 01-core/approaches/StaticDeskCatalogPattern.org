@@ -1,0 +1,104 @@
+:PROPERTIES:
+:ID:       bba81d1d-e301-495f-8389-1eba7506a4d3
+:END:
+#+PROPOSED_PATH: 01-core/approaches/StaticDeskCatalogPattern.org
+#+COMMIT_MSG: approaches: static desk catalog pattern generalized from porch-pumpkins
+#+AUTHOR: Joji Teira
+#+CATEGORY: approaches
+#+CREATED: 2026-09-26
+#+LAST_MODIFIED: 2026-09-26
+#+TITLE: Static Desk Catalog Pattern
+#+NODE-NAME: StaticDeskCatalogPattern
+#+FILETAGS: :approach:implementation-pattern:static-site:quoting-desk:
+#+DESCRIPTION: How to stand up a local static catalog-and-quote desk for a small physical-goods business without a database or public storefront.
+
+* When to use this
+
+A business of porch-pumpkin scale: a few dozen SKUs, two or three vendors, prices that change by season, photos that are either your own or borrowed for internal use, and a human who quotes by line item then delivers. You need a desk, not a Shopify.
+
+Worked example: [[file:../../03-projects/porch-pumpkins/PorchPumpkinMinisiteApproach.org][PorchPumpkinMinisiteApproach]].
+
+* Pattern
+
+Four files and two directories are enough:
+
+#+begin_example
+site/
+  index.html       searchable catalog
+  worksheet.html   quote form
+  css/style.css
+  js/app.js        fetch JSON, render, compute, emit text
+  data/catalog.json
+  images/          pretty-named local copies
+local-only/        gitignored: raw photos, inbox, customer orders
+#+end_example
+
+Serve with ~python3 -m http.server~ bound to localhost. No application server, no database, no accounts.
+
+* Split the truths
+
+| Layer | Lives | Role |
+|-------+-------+------|
+| Vendor sheets / price lists | project Org or PDF under the project, or local-only | what you can buy and what it costs |
+| Your own photos | local-only raw + pretty copies in site/images | ground truth for what you actually saw |
+| Third-party stills | local-only inbox, then pretty name | desk illustration only; record license and URL |
+| Machine catalog | ~data/catalog.json~ on GitHub | the one document the pages read |
+| Customer quotes | local-only/orders | PII never reaches the public remote |
+
+If a fact can disagree with the JSON, the JSON is wrong. Do not let HTML contain a second price list.
+
+* Record shape
+
+Every SKU needs a stable ~slug~, a display ~name~, aliases the staff will type, a unit cost, a vendor list, and an optional image object:
+
+- ~status~: own-photo / chosen / candidate / pending
+- ~src_page~, ~src_url~, ~license~
+- ~ugly_filename~ (as downloaded) and ~pretty_filename~ (slug.jpg)
+- ~local_path~ back to the local-only original
+
+Pretty filenames are the public contract of the desk. Ugly names and URLs are provenance so you can replace a still without guessing.
+
+* Build order
+
+1. Write the catalog from the price lists. Empty image objects are fine.
+2. Attach your own photos first. Rename on copy; do not rename the raw keepers.
+3. Fill remaining SKUs from one labeled vendor page at a time. Patch JSON with a script that ~json.loads~ / ~json.dumps~. Do not hand-edit commas in a 1,600-line file.
+4. Render a table that can search name, alias, and note.
+5. Add the quote form last. It only reads ~cost_each~ and ~name~.
+6. Emit the artifact the operator already files (Org table, markdown delivery sheet, CSV — pick one). Do not invent a new system of record in the browser.
+
+* Input and output
+
+The HTML form is for speed: choose SKU, type quantity, see line total and grand total, fill customer fields.
+
+The export is for memory: a text block the operator pastes into Emacs (or writes to ~local-only/orders/~). An Emacs function can later compute a dated filename and a print sheet. The browser copies; it does not save.
+
+* What not to add at this scale
+
+- A login, a cart, or tax/shipping engines
+- A CMS
+- Per-SKU pages until a SKU actually needs a paragraph
+- Committing photographs or customer names
+- Opening the desk as ~file://~ (the catalog fetch will fail)
+- Treating a sample row in a worksheet as a real SKU
+
+* Generalizing to another trade
+
+Swap the noun. The same desk works for:
+
+- a florist's weekend install list
+- a produce wholesaler's bin card
+- a hardware tinker's kit BOM
+- a one-person rental of props or costumes
+
+Change ~kind~ chips, vendor ids, and the unit (each, bunch, bale, hour). Keep slug-stable JSON, pretty image names, localhost static serve, and local-only for binaries and PII.
+
+* Git hygiene
+
+Commit: HTML, CSS, JS, JSON, Org notes.
+Ignore: ~local-only/~ , editor backups, inbox zips, SingleFile dumps of the running desk.
+One catalog commit per binding batch is enough; do not mix jpg binaries into that commit.
+
+* Done test
+
+An operator who was not at the market can open localhost, find a SKU by the name a vendor used, see a picture or an honest "no photo", quote three lines, and copy a text order a second person could pick from.
