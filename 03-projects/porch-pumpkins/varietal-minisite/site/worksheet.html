@@ -16,61 +16,69 @@
   </header>
   <main>
     <h1>Scenario worksheet</h1>
-    <p class="lede">Copy the org block into Emacs. Line totals and the pre-tax total use org-mode formulas. After the list and customer fields are real, run <code>wpp/process-pumpkin-worksheet</code>.</p>
+    <p class="lede">Pick varietals and quantities here. Unit price comes from <code>varietals.json</code>. Copy the generated Org block into Emacs when the quote is real. Customer fields stay on this machine — do not commit them.</p>
 
-    <p><button class="copy" type="button" onclick="WPP.copyText('worksheet-org')">Copy labeled org worksheet</button></p>
-    <pre id="worksheet-org">#+TITLE: Pumpkin porch scenario
-#+CUSTOMER:
-#+FUNCTION: wpp/process-pumpkin-worksheet
+    <section class="panel">
+      <h2>Quote lines</h2>
+      <table class="quote">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Varietal</th>
+            <th>Unit</th>
+            <th>Qty</th>
+            <th>Line total</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="quote-rows"></tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">Scenario pre-tax total</td>
+            <td class="money" id="grand">$0.00</td>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
+      <p class="toolbar">
+        <button class="copy" type="button" id="add-row">Add line</button>
+      </p>
+      <datalist id="varietal-list"></datalist>
+    </section>
 
-* SAMPLE worksheet
-** Project Components
-| Varietal               | thumbnail image | cost | qty | line total |
-|------------------------+-----------------+------+-----+------------|
-| fireball               |                 | 3.50 |   3 |       10.50 |
-| cat head               |                 | 4.00 |   1 |        4.00 |
-| hay bale               |                 | 7.50 |   2 |       15.00 |
-|------------------------+-----------------+------+-----+------------|
-| scenario pre-tax total |                 |      |     |       29.50 |
-#+TBLFM: $5=$3*$4;%.2f::@5$5=vsum(@2$5..@4$5);%.2f
+    <section class="panel">
+      <h2>Customer</h2>
+      <div class="cust-grid">
+        <label>Name <input id="c-name" type="text" autocomplete="name" /></label>
+        <label>Phone <input id="c-phone" type="tel" /></label>
+        <label>Email <input id="c-email" type="email" /></label>
+        <label>Street <input id="c-street" type="text" /></label>
+        <label>ZIP <input id="c-zip" type="text" inputmode="numeric" /></label>
+        <label>Delivery date <input id="c-date" type="text" placeholder="10 October" /></label>
+      </div>
+    </section>
 
-** Customer
-| Name       | Phone        | Email         | Street          | ZIP   | Delivery Date |
-| Bob Marley | 404-555-1212 | bob@music.com | 123 Happy Drive | 30327 | 10 October    |
-</pre>
+    <p>
+      <button class="copy" type="button" onclick="WPP.copyText('worksheet-org')">Copy labeled org worksheet</button>
+      <button class="copy" type="button" onclick="WPP.copyText('delivery-md')">Copy delivery markdown</button>
+    </p>
+    <pre id="worksheet-org"></pre>
+    <h2>Delivery order (markdown)</h2>
+    <pre id="delivery-md"></pre>
 
     <section class="panel">
       <h2>What the Emacs function does</h2>
       <ol>
         <li>Name: <code>wpp/process-pumpkin-worksheet</code></li>
-        <li>Compute a proposed path: <code>03-projects/porch-pumpkins/local-only/orders/YYYY-MM-DDThhmm-&lt;Customer-Name&gt;-pumpkins.org</code></li>
-        <li>Write a markdown delivery order (print-friendly) next to it as <code>…-delivery.md</code></li>
-        <li>Save both under the local-only orders directory (gitignored; customer PII never goes to GitHub)</li>
+        <li>Proposed path: <code>03-projects/porch-pumpkins/local-only/orders/YYYY-MM-DDThhmm-&lt;Customer-Name&gt;-pumpkins.org</code></li>
+        <li>Markdown delivery sheet beside it as <code>…-delivery.md</code></li>
+        <li>Both stay under gitignored <code>local-only/orders/</code></li>
       </ol>
     </section>
-
-    <h2>Delivery order (markdown target)</h2>
-    <p><button class="copy" type="button" onclick="WPP.copyText('delivery-md')">Copy sample delivery markdown</button></p>
-    <pre id="delivery-md"># Pumpkin delivery
-
-## Customer Name
-Bob Marley
-
-- customer email: bob@music.com
-- customer address with ZIP: 123 Happy Drive, 30327
-- delivery date: 10 October
-
-## Items to deliver
-
-| Varietal | Count |
-|----------|------:|
-| Fireball |     3 |
-| Cat head |     1 |
-| Hay bale |     2 |
-</pre>
     <p><a href="./index.html">← Back to varietal list</a></p>
   </main>
   <div class="toast"></div>
   <script src="./js/app.js"></script>
+  <script>WPP.bootWorksheet();</script>
 </body>
 </html>
