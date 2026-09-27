@@ -1,0 +1,118 @@
+:PROPERTIES:
+:ID:       d9a57216-3b11-4895-84ee-4a7fbb22e854
+:END:
+#+PROPOSED_PATH: 03-projects/porch-pumpkins/PorchPumpkinMinisiteApproach.org
+#+COMMIT_MSG: porch-pumpkins: approach note for varietal desk and quote tools
+#+AUTHOR: Joji Teira
+#+CATEGORY: porch-pumpkins
+#+CREATED: 2026-09-26
+#+LAST_MODIFIED: 2026-09-26
+#+TITLE: Porch Pumpkin Minisite Approach
+#+NODE-NAME: PorchPumpkinMinisiteApproach
+#+FILETAGS: :approach:porch-pumpkins:west-paces:static-site:
+#+DESCRIPTION: How the West Paces Pumpkins varietal desk, image catalog, and quote worksheet were built as a local static site with Org export.
+
+* Intent
+
+Build an internal quoting desk for West Paces Pumpkins (season one, Atlanta porch installs). The desk had to name fruit the way the wholesale sheets name it, show a picture when we had one, hold a unit cost, and emit an Org worksheet plus a print-friendly delivery list. It is not a public storefront.
+
+Companion pattern (reuse on other desks): [[id:PLACEHOLDER][StaticDeskCatalogPattern]]. Replace the PLACEHOLDER id after that node is ingested.
+
+* Sources of truth
+
+Four layers, kept separate on purpose:
+
+1. Wholesale sheets (Hammonds Produce, Appalachian Farms 2026) and porch cost sheets — what exists and what it costs.
+2. Lakewood Farmers Market scout (2026-09-24) — 40 keeper photographs, binaries only on the T470s under ~local-only/market-2026-09-24/keepers~.
+3. Seed-catalog pages (Harris, Johnny's, Seedway) — named photographs for slugs with no Lakewood keeper, desk-only, license recorded as unknown-seed-catalog-internal-desk-only.
+4. ~varietals.json~ — the only machine catalog the site reads.
+
+GitHub holds text: Org sheets, the minisite HTML/CSS/JS, and the JSON. Image binaries and customer orders stay under ~03-projects/porch-pumpkins/local-only/~ (gitignored).
+
+* Site shape
+
+Static tree served locally:
+
+#+begin_example
+varietal-minisite/site/
+  index.html          catalog table
+  worksheet.html      live quote form
+  css/style.css
+  js/app.js
+  data/varietals.json
+  images/             pretty-named jpg copies for the desk
+  varietals/          optional per-slug pages (stubbed)
+#+end_example
+
+Serve with:
+
+#+begin_src sh
+cd ~/local-side/03-projects/porch-pumpkins/varietal-minisite/site
+python3 -m http.server 8765 --bind 127.0.0.1
+#+end_src
+
+Open only ~http://127.0.0.1:8765/~. ~file://~ cannot fetch the JSON.
+
+* Catalog record
+
+Each item in ~varietals.json~ has:
+
+- identity: ~slug~, ~name~, ~kind~, ~aliases~
+- commerce: ~vendors~, ~unit~, ~cost_each~, ~cost_note~, ~bin~
+- pointers: ~web_image~, ~local_image~, ~page~, ~status~
+- image object when a photo is bound:
+
+#+begin_src json
+"image": {
+  "status": "own-photo | chosen | candidate | pending",
+  "src_page": "",
+  "src_url": "",
+  "license": "",
+  "ugly_filename": "",
+  "pretty_filename": "",
+  "local_path": ""
+}
+#+end_src
+
+~own-photo~ means a Lakewood keeper copied to a pretty name. ~chosen~ means a catalog still used at the desk. Five odd trade or bin names were left pending on purpose (apple-gourd, dragon-fire, firebug, neverland-okra-stalk, heirloom-mixed). Dummy sample names that were not on the sheets were dropped from the catalog.
+
+* Image pipeline
+
+1. Score Lakewood keepers against slugs. Twelve slugs got an own-photo.
+2. Copy keeper → ~local-only/images/<pretty>.jpg~ and ~site/images/<pretty>.jpg~ (Elisp helper ~porch-pumpkins-promote-lakewood-images.el~, dry-run first).
+3. For remaining slugs, take one labeled vendor product photo at a time, land it in ~local-only/images/_inbox/~, rename pretty, copy into ~site/images/~, patch only the matching JSON object with a small Python ~json.dumps~ writer.
+4. Commit JSON (and later HTML/JS). Never commit jpgs.
+
+Pretty names match slugs (~fireball.jpg~, ~jarrahdale.jpg~). Ugly names and source URLs stay inside the image object so a later swap does not lose provenance.
+
+* Quote tools
+
+~worksheet.html~ is the input surface:
+
+- typeahead over catalog names and aliases
+- quantity → unit price from ~cost_each~ → line total
+- footer sums line totals
+- customer stub (name, phone, email, street, ZIP, delivery date)
+- live Org block and markdown delivery sheet
+- copy buttons
+
+Org is the record the human files. Planned Emacs function ~wpp/process-pumpkin-worksheet~ will:
+
+1. propose ~local-only/orders/YYYY-MM-DDThhmm-<Customer>-pumpkins.org~
+2. write a sibling ~…-delivery.md~
+3. leave both under the gitignored orders directory
+
+The browser never writes files and never sends PII off-machine.
+
+* Operating rules that mattered
+
+- One catalog file. Pages do not invent prices.
+- Text on GitHub, binaries and PII local-only.
+- Bind images in small batches with a machine-written JSON patch, not hand-edited commas.
+- Serve over localhost so ~fetch~ works.
+- Desk copy is enough; per-varietal pages can wait until a slug needs a longer note.
+- Sample worksheet fiction (made-up variety names, demo customer) is not catalog data.
+
+* What "done" meant for season-one desk
+
+60 items load. Twelve have Lakewood photos. Forty-three have catalog stills. Five names wait for a later scout. The worksheet emits Org a human can file. Costs still change when the sheets change — edit JSON, reload the desk.
