@@ -22,6 +22,7 @@ forgrok/
 ├── 00-inbox/                  # Temporary staging only (keep empty)
 ├── 00-meta/                   # Startup / naming conventions (STARTUP.org)
 ├── 01-core/                   # Stable, high-value knowledge
+│   ├── approaches/            # More general than SKILLs, used to guide projects
 │   ├── memory/                # Master memory, Voight-Kampff protocol
 │   ├── principles/            # Enduring schemas (NODE-NAME, workflows, historical GROK-SCHEMA)
 │   └── zho/                   # Zero-Human Organization doctrine and pillar nodes

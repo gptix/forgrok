@@ -1,7 +1,7 @@
 
 # STATUS.md — Living Operational Snapshot
 
-**Last updated:** 2026-09-25
+**Last updated:** 2026-09-26
 **Maintainer:** George Taylor + Grok
 **Companion files:** BOOT.md, STRUCTURE.md, README.md, 01-core/memory/joji-grok-project-memory.org, 01-core/memory/voight-kampff-protocol.org, 08-skills/UpdateProjectStatus.org, 02-infrastructure/procedures/TsuiokuTwoMachineSync.org
 
@@ -84,7 +84,7 @@ Live skills under `08-skills/` (disk + this STATUS; SkillsIndex must match):
 
 ## 4. Recent Session Notes
 
-- 2026-09-24: West Paces Pumpkins vendor capture. Hammonds + Appalachian Farms 2026 sheets → org on main. Cost sheets for Stoop $395 / Landing $595 / Ghost $675 / Portico $1175. Lakewood 40 keepers local-only; index on main. A10e: 192.168.1.78:8022 u0_a122; not on Tailscale. Domain pending sister. GHL still checkout path.
+- 2026-09-25: West Paces Pumpkins vendor capture. Hammonds + Appalachian Farms 2026 sheets → org on main. Cost sheets for Stoop $395 / Landing $595 / Ghost $675 / Portico $1175. Lakewood 40 keepers local-only; index on main. A10e: 192.168.1.78:8022 u0_a122; not on Tailscale. Domain pending sister. GHL still checkout path.
 
 - 2026-09-26: West Paces varietal desk live at http://127.0.0.1:8765/. 60 SKUs; 12 Lakewood own-photo, 43 catalog chosen, 5 pending. Worksheet emits Org. Approaches: PorchPumpkinMinisiteApproach, StaticDeskCatalogPattern (01-core/approaches/, not 08-skills). Binaries and orders local-only.
 
