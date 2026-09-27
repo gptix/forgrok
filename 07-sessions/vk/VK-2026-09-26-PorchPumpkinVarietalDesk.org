@@ -1,0 +1,72 @@
+:PROPERTIES:
+:ID:       f4bfc2c6-d251-4dfe-b22d-5c6e128b4583
+:END:
+#+PROPOSED_PATH: 07-sessions/vk/VK-2026-09-26-PorchPumpkinVarietalDesk.org
+#+COMMIT_MSG: vk: 2026-09-26 porch-pumpkin varietal desk close
+#+AUTHOR: George Taylor + Grok
+#+CATEGORY: vk
+#+CREATED: 2026-09-26
+#+LAST_MODIFIED: 2026-09-26
+#+DATE: [2026-09-26]
+#+TITLE: VK 2026-09-26 porch pumpkin varietal desk
+#+NODE-NAME: VK20260926PorchPumpkinVarietalDesk
+#+FILETAGS: :vk:session:porch-pumpkins:approaches:
+#+EXECUTIVE_SUMMARY: Varietal desk is live on localhost:8765 with 60 SKUs, 12 Lakewood own-photos, 43 catalog stills, a quote form that emits Org, and two approach nodes. GitHub holds text only. STATUS and STRUCTURE are a day behind that fact.
+
+* Findings
+
+- Integrity: T470s remains canonical. Rental/Sunnyvale material is off the public tree. Catalog JSON at HEAD ~50a9bbb~ plus later worksheet/approach commits. JPEGs and customer fields were not pushed.
+- Drift: ~STATUS.md~ last pulse 2026-09-25 still describes porch-pumpkins as vendor capture (2026-09-24). ~STRUCTURE.md~ last aligned 2026-09-25 lists ~01-core/~ as memory / principles / zho only; ~01-core/approaches/~ now exists on main and is not named.
+- Friction: JSON was hand-edited once and broke parse (comma). Thereafter patches used ~json.dumps~. ~file://~ cannot load the catalog; localhost http.server is required. Cat Head lingered in sample Org and in an index note after it was removed from JSON.
+- Image desk: 12 own-photo, 43 chosen, 5 open (apple-gourd candidate; dragon-fire, firebug, neverland-okra-stalk, heirloom-mixed pending).
+
+* Actions this session
+
+- Bound Lakewood keepers to twelve slugs; copied pretty names into ~local-only/images/~ and ~site/images/~.
+- Web-hunted catalog stills in batches; patched ~varietals.json~ with image objects (~status~, ~src_page~, ~src_url~, ~license~, ugly/pretty names).
+- Dropped dummy Cat Head from the catalog.
+- Shipped live quote form: ~worksheet.html~ + ~js/app.js~ + ~css/style.css~ (typeahead, qty, unit, line, grand total, Org + delivery markdown copy).
+- Wrote approach nodes (not skills):
+  - [[file:~/local-side/03-projects/porch-pumpkins/PorchPumpkinMinisiteApproach.org][PorchPumpkinMinisiteApproach]]
+  - [[file:~/local-side/01-core/approaches/StaticDeskCatalogPattern.org][StaticDeskCatalogPattern]]
+- Partner-demo composites for Stoop $395 and Landing $595 on a client stoop photo; mat and ADT sign removed. Binaries stay local.
+
+* Proposed STATUS.md pulse (2026-09-26)
+
+Replace the porch-pumpkins recent-project line and append:
+
+- 2026-09-26: West Paces varietal desk live. ~varietal-minisite/site/~ served at ~http://127.0.0.1:8765/~. 60 SKUs in ~data/varietals.json~. Images: 12 Lakewood own-photo, 43 catalog chosen, 5 pending. Worksheet emits Org + delivery markdown. Approach nodes: PorchPumpkinMinisiteApproach, StaticDeskCatalogPattern (under ~01-core/approaches/~, not 08-skills). Keepers, inbox jpgs, and orders remain local-only.
+
+* Proposed STRUCTURE.md tweak
+
+Under ~01-core/~ add:
+
+#+begin_example
+│   ├── approaches/            # Implementation patterns (not skills)
+#+end_example
+
+One sentence in Design principles: approaches are reusable build patterns; skills stay in ~08-skills/~.
+
+* Recommendations
+
+1. Operator: finalize the two approach nodes and this VK node (~C-c n F~); replace the PLACEHOLDER id link.
+2. Patch ~STATUS.md~ and ~STRUCTURE.md~ with the pulses above.
+3. Leave the five open slugs pending until a named Lakewood keeper exists.
+4. Implement ~wpp/process-pumpkin-worksheet~ when the first real customer quote is copied out of the desk.
+5. Do not commit stoop composites, SingleFile dumps, or ~_inbox/~ zips.
+
+* Protected rules
+
+- Emacs-only editing: held.
+- Local-first: jpgs and PII under ~local-only/~; github-side is org/html/js/json.
+- Withnail airgap: untouched.
+- T470s canonical: all desk files and commits from omarchy.
+
+* Related
+
+- [[file:~/local-side/03-projects/porch-pumpkins/PorchPumpkinMinisiteApproach.org][PorchPumpkinMinisiteApproach]]
+- [[file:~/local-side/01-core/approaches/StaticDeskCatalogPattern.org][StaticDeskCatalogPattern]]
+- [[file:~/local-side/03-projects/porch-pumpkins/BuckheadPorchPumpkinPlan2026.org][BuckheadPorchPumpkinPlan2026]]
+- [[file:~/local-side/03-projects/porch-pumpkins/LakewoodMarketPhotos20260924.org][LakewoodMarketPhotos20260924]]
+- [[file:~/local-side/07-sessions/vk/VK-2026-09-24-porch-pumpkins-vendors-capture.org][VK20260924PorchPumpkinsVendorsCapture]]
+- [[file:~/local-side/07-sessions/vk/VK-2026-09-23-PorchPumpkinDemo.org][VK20260923PorchPumpkinDemo]]
