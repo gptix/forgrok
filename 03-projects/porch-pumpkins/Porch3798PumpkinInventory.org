@@ -1,0 +1,103 @@
+:PROPERTIES:
+:ID:       9cb49c6e-8706-485a-a1f3-3d669bed61ba
+:END:
+#+PROPOSED_PATH: 03-projects/porch-pumpkins/Porch3798PumpkinInventory.org
+#+COMMIT_MSG: Inventory and costing for 3798 two-stack Landing display
+#+AUTHOR: George Taylor
+#+CATEGORY: porch-pumpkins
+#+CREATED: <2026-09-28 Mon>
+#+LAST_MODIFIED: <2026-09-28 Mon>
+#+TITLE: Porch 3798 pumpkin inventory and costing
+#+NODE-NAME: Porch3798PumpkinInventory
+#+FILETAGS: :porch-pumpkins:costing:inventory:
+#+DESCRIPTION: Piece inventory and 2026 vendor costing for the two-stack display at house 3798.
+#+OPTIONS: toc:nil num:nil tags:nil
+
+* Source
+
+- Photo: mike-punkins.jpeg (house number 3798)
+- Packages: BuckheadPorchPumpkinPlan2026
+- Unit costs: PorchPumpkinCostSheets2026 (Hammonds + Appalachian Farms sheets 2026-09-24)
+- Hay: plan wholesale $8 / retail add-on $35
+
+Closest stock package: *Landing ($595)* plus *one extra hay ($35)* → quote *$630*.
+
+Not Ghost (orange is present). Not Portico (too few pieces, no Prize Winner).
+
+* Inventory by stack
+
+Counts are visible fruit. A few minis on the bales may be hidden.
+
+** Left stack (viewer left)
+
+- [ ] 1 white / cream medium (White Delight or similar stacker)
+- [ ] 1 white flatter mid
+- [ ] 2 blush / pink medium (Porcelain Doll)
+- [ ] 3 sage / blue-grey (Jarrahdale type)
+- [ ] 2 orange jack mid-small (Gladiator)
+- [ ] 3 mini (Jack-Be-Little / Pump-Ke-Mon / pale mini)
+- [ ] 1 hay bale
+
+Left fruit: *12* visible (likely 13 with one hidden mini)
+
+** Right stack (viewer right)
+
+- [ ] 2 orange jack mid-small (Gladiator), including the top and the front-right
+- [ ] 2 blush / pink medium (Porcelain Doll)
+- [ ] 2 sage / blue-grey (Jarrahdale type)
+- [ ] 3 white / cream medium
+- [ ] 5 mini (orange and pale, on and in front of the bale)
+- [ ] 1 hay bale
+
+Right fruit: *14* visible
+
+** Totals
+
+- Fruit visible: *26*
+- Fruit working count (add 2–4 occluded minis): *28–30*
+- Hay bales: *2*
+- Polar Bear: *none*
+- Prize Winner: *none*
+
+* Costing (wholesale library)
+
+Use $ from PorchPumpkinCostSheets2026 unit library.
+
+| Line                                      | Qty | Use $ | Line $ | Notes                          |
+|-------------------------------------------+-----+-------+--------+--------------------------------|
+| Novelty / pale heirloom each              |  15 |  6.50 |  97.50 | pink, sage, showy cream        |
+| Jack / Gladiator mid-small                |   4 |  4.89 |  19.56 | orange                         |
+| Mini (locked avg)                         |   9 |  0.60 |   5.40 | 7 visible + 2 hidden           |
+| Hay wholesale                             |   2 |  8.00 |  16.00 | retail add-on $35 each         |
+| Fruit + hay cost                          |     |       | 138.46 |                                |
+#+TBLFM: $4=$2*$3;%.2f::@5$4=vsum(@2$4..@4$4);%.2f
+
+If four of the smaller whites are Field Trip / Blanco pies at $1.81 instead of $6.50 eaches, subtract $18.76 → materials *~$120*.
+
+Materials band: *$120–150*.
+
+* Loaded cost and quote
+
+| Item                 | Amount | Notes                                      |
+|----------------------+--------+--------------------------------------------|
+| Fruit + hay cost     |    138 | mid of $120–150 band                       |
+| Labor + fuel + wrap  |     90 | Landing band                               |
+| Loaded cost          |    228 |                                            |
+| Stock quote          |    630 | Landing $595 + extra hay $35               |
+| Two-Stoop alt        |    790 | 2 × $395; high for this piece count        |
+| Contribution @ $630  |    402 | Landing plan target $315–375               |
+
+* Package fit
+
+| Package    | List  | Piece range | Hay     | Fit                              |
+|------------+-------+-------------+---------+----------------------------------|
+| Stoop      |   395 | 12–16       | 0       | One stack only                   |
+| Landing    |   595 | 22–28       | 0–1     | *Best match; add second hay*     |
+| Ghost      |   675 | 18–22 pale  | 0       | No — orange is in the photo      |
+| Portico    |  1175 | 40–50       | 2       | No — half the fruit, no prize    |
+
+* Print
+
+1. Save this buffer on the T470s under the proposed path (or a temp file).
+2. =C-c C-e l o= → PDF, or =C-c C-e h o= → HTML.
+3. Check boxes above are for a walk-around recount on site.
