@@ -1,106 +1,135 @@
-#+NODE-NAME: RoemmeleEssayIngestWorkflow
 #+TITLE: Roemmele Essay Ingest Workflow
+#+NODE-NAME: RoemmeleEssayIngestWorkflow
+#+LAST_MODIFIED: [2026-10-05 Mon 14:15]
+#+FILETAGS: :roemmele:workflow:sources:procedure:
 
 * Purpose
 
-Repeatable, low-friction workflow for turning a full Brian Roemmele essay from readmultiplex.com into durable knowledge-base artifacts.
+Repeatable path from a readmultiplex.com essay to a pushed org-roam node, then to ingested.
 
-Refined during processing of Essays 002–007 (2026-07-29 → 2026-07-31).
-Higher-level driver script introduced 2026-07-30.
-Org-roam node population moved entirely to Grok (after mechanical files are pushed) on 2026-07-30.
-Skeleton .org generation removed from the driver script on 2026-07-31.
+Refined 2026-07-29 through 2026-07-31 (essays 002–007). Driver no longer writes a skeleton =.org= (2026-07-31).
+Smoothed 2026-10-05 from essay 039 (=HireGrokBotZhcExperience=): sentinel, explicit =git add=, no capture-as-link, inventory status kept in step with the commits.
 
-* Status Progression
+* Status progression
 
-| Status     | Meaning                                              |
-|------------|------------------------------------------------------|
-| listed     | URL + metadata recorded                              |
-| downloaded | SingleFile HTML present in html/                     |
-| cleaned    | Clean Markdown + images exist                        |
-| pushed     | HTML + md + images + fully populated org node committed |
-| ingested   | Summary + cross-links + further processing complete  |
+| Status     | Meaning                                                                 |
+|------------+-------------------------------------------------------------------------|
+| listed     | URL and metadata recorded. No files.                                    |
+| downloaded | SingleFile HTML in =html/=.                                             |
+| cleaned    | Cleaned markdown and images exist. Not an inventory claim of knowledge. |
+| pushed     | HTML, md, images, and the populated org node are on =github-side/main=. |
+| ingested   | Cross-links exist, and the inventory row says so.                       |
 
-* Naming Rule (permanent)
+The inventory cell is the status that counts. =#+STATUS:= inside the node should match it after each commit. =cleaned= on the node means "built from the cleaned markdown," not "inventory is still cleaned."
 
-All essays use the pattern:
+* Naming rule
 
-YYYY-MM-DD_Short-Hyphenated-Slug
+=YYYY-MM-DD_Short-Hyphenated-Slug=
 
-- Date = publication date of the essay
-- Slug = concise, hyphenated form of the title (no spaces, no special characters)
+Date is the publication date. Same stem for the HTML, markdown, image directory, and org file.
+Node name is PascalCase with no spaces, hyphens, or underscores (=HireGrokBotZhcExperience=).
 
-This name is used for the HTML, Markdown, images directory, and the final .org file.
+* Preferred workflow (2026-10-05)
 
-* Preferred Workflow (2026-07-31 onward)
+** 1. Select or add the inventory row
+Open =roemmele-essays-inventory.org=. Use the next free id. Record URL, date, title, =reasonable_filename=, status =listed=.
+Do not capture an org node yet.
 
-** 1. Select the essay
-Open =roemmele-essays-inventory.org= and choose the next =listed= essay.
-Note its =reasonable_filename=.
+** 2. SingleFile — human, logged in
+Brave, logged in to https://readmultiplex.com. Open the URL. Scroll to the bottom.
+SingleFile. Rename to =<reasonable_filename>.html=. Place in =04-sources/roemmele/html/=.
+A fetch from outside the operator's browser is not a capture. readmultiplex often stops on a check page.
 
-** 2. Capture while logged in (SingleFile) — human
-1. Browser + SingleFile extension
-2. Log in to https://readmultiplex.com
-3. Open the essay URL and wait for full load
-4. Run SingleFile
-5. Rename to =<reasonable_filename>.html=
-6. Place in =html/=
-
-** 3. Run the driver script
+** 3. Driver — T470s
 #+begin_src bash
 cd ~/local-side/04-sources/roemmele
 ./scripts/ingest-roemmele-essay.sh <reasonable_filename>
 #+end_src
 
-This produces:
-- cleaned Markdown
-- images directory and extracted images
+Produces =cleaned/<name>.md=, =cleaned/<name>.raw.md=, and =images/<name>/=.
+Does not write an =.org=.
 
-It does *not* create any .org file.
+** 4. Push mechanical files only
+Stage explicit paths. Do not =git add -u= and do not commit a dirty tree. Essay 039's mechanical commit also appended a stray =Z= to a porch-pumpkin file.
 
-** 4. Push the mechanical files only
-Stage and push:
-- the HTML
-- the cleaned .md
-- the images directory
-
-Do *not* create or push any .org file yet.
-Update the inventory status if desired at this stage.
-
-** 5. Grok populates the org-roam node
-After the mechanical files are on GitHub, Grok reads the cleaned .md and produces a complete, high-quality org-roam node (Summary, Key Claims, Major Sections, Relevance, etc.).
-
-** 6. Human review of the org node
-In Emacs:
-=C-x C-f cleaned/<reasonable_filename>.org=
-
-Paste Grok’s content, review, edit as needed, then save.
-
-** 7. Commit the org node + final inventory update
 #+begin_src bash
 cd ~/local-side
-git add 04-sources/roemmele/cleaned/<reasonable_filename>.org
-git add 04-sources/roemmele/roemmele-essays-inventory.org
-git commit -m "org node + inventory: essay <id> (<short title>)"
-git push
+git add 04-sources/roemmele/html/<name>.html
+git add 04-sources/roemmele/cleaned/<name>.md
+git add 04-sources/roemmele/cleaned/<name>.raw.md
+git add 04-sources/roemmele/images/<name>/
+git status
+git commit -m "mechanical: essay <id> (<short title>)"
+git push github-side main
 #+end_src
 
-* Success Checklist
+=git status= before commit must not list unrelated files. Inventory may move to =cleaned= in this commit. Do not add an =.org=.
+
+** 5. Grok writes the node
+After those files are on =github-side/main=, Grok reads the cleaned markdown and returns one paste block per =GenerateTsuiokuNodeText=.
+
+The block must start:
+
+#+begin_example
+#+PROPOSED_PATH: 04-sources/roemmele/cleaned/<name>.org
+#+COMMIT_MSG: org node: essay <id> <short title>
+############ THIS LINE AND ALL ABOVE WILL BE DELETED, WITH NEW :PROPERTIES: DRAWER STARTING AT VERY BEGINNING OF FILE ###################
+#+end_example
+
+Lasting keywords and the body go below the sentinel. Sections: Summary, Key Claims, Major Sections, Relevance, Notes, Related.
+Author headcount and similar operating claims stay marked as the author's claims.
+If a cross-link target already has an =:ID:=, put =[[id:UUID][NodeName]]= in Related now. If it does not, write "listed, no node yet" and a file link. Do not invent a capture.
+
+** 6. Finalize — T470s, not a capture
+Paste into a *new* buffer. =M-x org-mode=.
+=C-u C-c n F= dry-run. =C-c n F= confirm.
+
+The helper deletes through the sentinel, writes the file, adds =:ID:=, updates the org-roam DB, and commits that file only. It does not push.
+
+If a capture buffer opens (=CAPTURE-…= in the mode line), =C-c C-k=, then yes to delete the capture file. Do not =C-c C-c=.
+
+Check the top: =:PROPERTIES:= / =:ID:=, then =#+AUTHOR:=. Set =#+STATUS: pushed=.
+
+** 7. Inventory to pushed, then push
+#+begin_src bash
+cd ~/local-side
+git add 04-sources/roemmele/roemmele-essays-inventory.org
+git commit -m "inventory: essay <id> pushed"
+git push github-side main
+#+end_src
+
+Magit "Unmerged into github-side/main" means the commit is still local.
+
+** 8. Cross-link, then ingested
+Edit the existing node. =C-x C-f= the cleaned org file. Do not =C-c n f= if that offers to create.
+
+- Existing node: paste =[[id:UUID][NodeName]]=, or =C-c n i= only if completion shows the existing node.
+- Capture buffer: abort, delete the file.
+- Listed essay with no file: file link plus "no node yet". Do not ingest it in this commit.
+
+Commit the link edit. Then set the inventory row to =ingested= in its own commit and push.
+
+* Success checklist
 
 - [ ] HTML in =html/=
-- [ ] Cleaned .md in =cleaned/=
-- [ ] Images under =images/<reasonable_filename>/=
-- [ ] Fully populated org-roam node with valid =#+NODE-NAME:= (no spaces)
-- [ ] Inventory status = =pushed=
-- [ ] Everything on =github-side/main=
+- [ ] Cleaned markdown and images on =github-side= before any =.org=
+- [ ] Mechanical commit has no unrelated paths
+- [ ] Node text included the sentinel
+- [ ] After =C-c n F=, no =PROPOSED_PATH= or =COMMIT_MSG= in the file
+- [ ] No capture file committed
+- [ ] Inventory =pushed= only after the org node is on =main=
+- [ ] Inventory =ingested= only after the cross-links are on =main=
+- [ ] =#+STATUS:= matches the inventory cell
 
-* Script Locations
+* Script locations
 
 - Driver: =04-sources/roemmele/scripts/ingest-roemmele-essay.sh=
 - Cleaner: =04-sources/roemmele/scripts/clean-roemmele-essay.sh=
-- Git hooks: =04-sources/roemmele/scripts/git-hooks/=
+- Finalize: =02-infrastructure/emacs/forgrok-org-helpers.el= (=C-c n F=)
+- Node template: =GenerateTsuiokuNodeText=
 
 * Related
 
-- [[roemmele-essays-inventory]]
-- [[master-roemmele-ingest]]
-- high-protein-data
+- [[file:roemmele-essays-inventory.org][roemmele-essays-inventory]]
+- [[id:9607f564-a170-42f4-8d6e-cb2b074c1079][GenerateTsuiokuNodeText]]
+- Essay 039, =HireGrokBotZhcExperience=, is the 2026-10-05 verification case.

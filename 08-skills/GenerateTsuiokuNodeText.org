@@ -4,37 +4,41 @@
 #+AUTHOR: George P. Taylor IX
 #+CATEGORY: 08-skills
 #+CREATED: [2026-08-13 Thu 20:48]
-#+LAST_MODIFIED: [2026-08-13 Thu 20:48]
+#+LAST_MODIFIED: [2026-10-05 Mon 14:15]
 #+TITLE: Generate Tsuioku Node Text
 #+NODE-NAME: GenerateTsuiokuNodeText
 #+FILETAGS: :skill:tsuioku:org-roam:ingestion:process:
-#+DESCRIPTION: Complete, concise process for generating text that is ready to be pasted into Emacs, finalized with C-c n F (or C-u C-c n F), and pushed to the forgrok knowledge base (Tsuioku).
+#+DESCRIPTION: Produce paste-ready text for a new Tsuioku org-roam node, including the finalize sentinel, so C-c n F strips the temporary keywords.
+#+SOURCE_REVISION: 2026-10-05 essay 039 session. Sentinel was missing; C-c n F would have committed #+PROPOSED_PATH and #+COMMIT_MSG.
 
 * Purpose / When to use
-Use this skill whenever the operator asks for (or you decide to provide) text for a **new** Tsuioku / org-roam node.
+Use this skill whenever the operator asks for (or you decide to provide) text for a *new* Tsuioku / org-roam node.
 
 Typical trigger phrases:
-- “Please provide text for a new Tsuioku node about …”
-- “Make a new node for …”
+- "Please provide text for a new Tsuioku node about …"
+- "Make a new node for …"
 - Any request that should result in a durable knowledge-base entry.
 
-The output must be immediately usable: paste into a new buffer → ensure org-mode → run the finalize command.
+The output must be immediately usable: paste into a new buffer, ensure org-mode, dry-run, then finalize.
+
+This skill is for a new file. A revision of a file already on =github-side= is an edit of that buffer. Do not wrap a revision in =#+PROPOSED_PATH:=. That would make =C-c n F= place a second file.
 
 * Preconditions
-- You know (or can reasonably choose) a good PascalCase =NODE-NAME=.
-- You know the correct relative path under the knowledge-base root (consult =STRUCTURE.md=).
-- The content itself has been drafted or is ready to be written.
-- For brand-new top-level directories (e.g. the first time =08-skills/= is used), note that =STRUCTURE.md= and possibly =BOOT.md= will also need updating.
+- A PascalCase =NODE-NAME= with no spaces, hyphens, or underscores.
+- A relative path under the knowledge-base root (=STRUCTURE.md=). Path must end in =.org=.
+- The content is drafted.
+- A brand-new top-level directory also needs =STRUCTURE.md= and possibly =BOOT.md=.
 
 * Steps
-1. Determine the relative path (example: =08-skills/GenerateTsuiokuNodeText.org= or =03-projects/rental/SomeNode.org=).
-2. Choose a pure PascalCase =NODE-NAME= (no spaces, hyphens, or underscores).
-3. Write a short, accurate =COMMIT_MSG=.
-4. Produce the complete text block with **exactly** this structure and order:
+1. Determine the relative path (example: =08-skills/GenerateTsuiokuNodeText.org=).
+2. Choose the =NODE-NAME=.
+3. Write a short =COMMIT_MSG=.
+4. Produce one text block in this order. Line 3 is the sentinel. It is not optional.
 
-```
+#+begin_example
 #+PROPOSED_PATH: <relative-path-from-repo-root>
 #+COMMIT_MSG: <short commit message>
+############ THIS LINE AND ALL ABOVE WILL BE DELETED, WITH NEW :PROPERTIES: DRAWER STARTING AT VERY BEGINNING OF FILE ###################
 #+AUTHOR: George P. Taylor IX
 #+CATEGORY: <appropriate category, e.g. 08-skills or 03-projects>
 #+CREATED: [YYYY-MM-DD Day HH:MM]
@@ -42,40 +46,54 @@ The output must be immediately usable: paste into a new buffer → ensure org-mo
 #+TITLE: Human-readable title
 #+NODE-NAME: PascalCaseNodeName
 #+FILETAGS: :tag1:tag2:tag3:
-#+DESCRIPTION: One- or two-sentence summary of the node’s purpose.
-```
+#+DESCRIPTION: One- or two-sentence summary of the node's purpose.
+#+end_example
 
-5. **Critical rules** (enforced by =my/org-roam-finalize-place-id-commit=):
-- The very first line of the text block must be =#+PROPOSED_PATH:= (no blank line or other text before it).
-- The second line must be =#+COMMIT_MSG:=.
-- Do **not** include a leading =:PROPERTIES:= drawer. The finalize function itself calls =org-id-get-create= and places the ID at the top.
-- =NODE-NAME= must be PascalCase with no spaces/hyphens/underscores.
-- Path must end in =.org=.
+5. Critical rules, enforced by =my/org-roam-finalize-place-id-commit= in =02-infrastructure/emacs/forgrok-org-helpers.el=:
+- Line 1 is =#+PROPOSED_PATH:=. No blank line and no other text before it.
+- Line 2 is =#+COMMIT_MSG:=.
+- Line 3 is the sentinel, exactly as shown. The helper deletes from point-min through that line only when the sentinel matches. Without it, the two keywords survive into the commit.
+- Do not include a leading =:PROPERTIES:= drawer. The helper calls =org-id-get-create=.
+- =NODE-NAME= is PascalCase. No spaces, hyphens, or underscores.
+- Path ends in =.org=.
+- Lasting keywords and the body go below the sentinel.
 
-6. Hand the complete block to the operator.
-7. Operator workflow (for reference):
-- Paste into a brand-new Emacs buffer.
-- =M-x org-mode= (if the buffer is not already in org-mode).
-- Optionally =C-u C-c n F= for a dry-run.
-- =C-c n F= (or the bound command that calls =my/org-roam-finalize-place-id-commit=) to place, ID, update DB, stage and commit.
-- Review and =git push= if desired.
+6. Hand the block to the operator. Say that =C-c n F= commits that one file and does not push.
+
+7. Operator, on the T470s:
+- Paste into a brand-new buffer. Not an existing file. Not an org-capture buffer.
+- =M-x org-mode= if needed.
+- =C-u C-c n F= dry-run. It must name the intended path and commit message, and leave the buffer unchanged.
+- =C-c n F=. Confirm. The helper writes the file, puts =:ID:= at the top, updates the org-roam DB, stages that file, and commits. It does not push. It does not stage the inventory or any other file.
+- Check the top of the buffer. =:PROPERTIES:= / =:ID:=, then =#+AUTHOR:=. No =PROPOSED_PATH=, no =COMMIT_MSG=, no sentinel.
+- Other files (inventory, status) are a second commit, or an amend before the push. Then =git push github-side main=.
+
+* Cross-links
+Do not create a node in order to link to it.
+
+- If the target already has an =:ID:=, paste =[[id:UUID][NodeName]]=. Look the UUID up in the target file. Do not run =C-c n f= on that name.
+- =C-c n i= is safe only when the completion list shows the existing node. If a capture buffer opens, =C-c C-k=, then answer yes to "Delete file for aborted capture?". A capture ID is a new node.
+- A listed essay with no org file gets a file link and a note. Example: inventory 025. Do not capture it in the same commit.
 
 * Inputs / Outputs
-- **Input**: Topic / content description + (optional) suggested path or NODE-NAME.
-- **Output**: A single, self-contained text block that is ready to paste and finalize.
+- Input: topic, optional path, optional =NODE-NAME=.
+- Output: one paste block whose third line is the sentinel.
 
 * Related scripts or files
-- =02-infrastructure/emacs/forgrok-org-helpers.el= — defines =my/org-roam-finalize-place-id-commit= and the keyword extraction logic.
-- =STRUCTURE.md= — authoritative map of where nodes should live.
-- =01-core/principles/org-roam-node-name-convention.org= — NODE-NAME rules.
-- Skill =CreateNewSkill= — the meta-process used to create this skill.
+- =02-infrastructure/emacs/forgrok-org-helpers.el= — =my/org-roam-finalize-place-id-commit=. Deletes through the sentinel. Then adds =:ID:=, stages, commits, does not push.
+- =STRUCTURE.md=
+- =01-core/principles/org-roam-node-name-convention.org=
+- =CreateNewSkill=
+- =RoemmeleEssayIngestWorkflow= — essay path that uses this template.
 
 * Failure modes / Notes
-- Missing or incorrectly named =#+PROPOSED_PATH:= or =#+COMMIT_MSG:= → finalize function signals an error.
-- Leading =:PROPERTIES:= drawer supplied by Grok → conflicts with the function’s ID placement.
-- NODE-NAME containing spaces or hyphens → org-roam find / capture problems on the current Emacs setup.
-- Forgetting to update =STRUCTURE.md= when introducing a new top-level directory (such as =08-skills/=).
-- Always prefer the exact keyword names =PROPOSED_PATH= and =COMMIT_MSG= (case as shown).
+- Sentinel missing: =C-c n F= commits =#+PROPOSED_PATH:= and =#+COMMIT_MSG:=. Essay 039, 2026-10-05, before the line was inserted by hand.
+- Leading =:PROPERTIES:= drawer conflicts with the helper's ID placement.
+- =NODE-NAME= with spaces or hyphens breaks =C-c n f= on this Emacs.
+- Finishing a capture buffer (=C-c C-c=) creates a second node. Abort with =C-c C-k=.
+- =C-c n F= does not update the inventory. A "pushed" claim that skips that file is wrong.
+- Magit "Unmerged into github-side/main (1)" means the commit is local. Push it.
+- Revisions of an existing file: edit in place, update =#+LAST_MODIFIED=, do not use this template.
 
 * Last verified
-2026-08-13 — process refined and tested end-to-end during the SunnyvaleDriveRentalAgreement ingestion and the creation of the skills system itself.
+2026-10-05 — essay 039 (=HireGrokBotZhcExperience=). Sentinel added before =C-c n F=. Helper stripped the keywords and committed =312ffeb=. Inventory was a separate commit. Capture buffers for the same names were aborted.
