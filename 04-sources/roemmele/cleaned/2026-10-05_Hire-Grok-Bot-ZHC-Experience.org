@@ -14,7 +14,7 @@
 #+SOURCE: https://readmultiplex.com/2026/10/05/how-to-hire-a-grok-bot-experience-from-the-first-zero-human-company/
 #+CAPTURE_METHOD: SingleFile (member login) + ingest-roemmele-essay.sh
 #+MECHANICAL_COMMIT: 1ad4f0a
-#+STATUS: cleaned
+#+STATUS: pushed
 #+INVENTORY_ID: 039
 
 * Summary
@@ -91,5 +91,6 @@ Brian Roemmele argues that a Grok Bot is hired, not built. A chatbot answers and
 - [[RoemmeleEssayIngestWorkflow]]
 - [[roemmele-essays-inventory]]
 - Zero-Human Company @ Home (inventory 025, not yet an org node)
-- HighProteinContent
-- SaveYourWisdom
+- [[id:b622af12-faaa-4b6f-95bc-aa909d0cfc8f][HighProteinContent]]
+- [[id:b72a8d1b-04b8-4783-9c56-96b9a17f57f3][SaveYourWisdom]]
+- Inventory 025, still listed, no node yet: [[file:../roemmele-essays-inventory.org][roemmele-essays-inventory]] — =2026-02-27_Zero-Human-Company-At-Home=
