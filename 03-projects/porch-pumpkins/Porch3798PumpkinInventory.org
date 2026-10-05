@@ -1,3 +1,4 @@
+
 :PROPERTIES:
 :ID:       9cb49c6e-8706-485a-a1f3-3d669bed61ba
 :END:
@@ -101,4 +102,3 @@ Materials band: *$120–150*.
 1. Save this buffer on the T470s under the proposed path (or a temp file).
 2. =C-c C-e l o= → PDF, or =C-c C-e h o= → HTML.
 3. Check boxes above are for a walk-around recount on site.
-Z
