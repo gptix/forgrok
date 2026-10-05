@@ -1,0 +1,95 @@
+:PROPERTIES:
+:ID:       593f38f3-5a85-487c-82c9-d9fa20398ada
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 04-sources
+#+CREATED: [2026-10-05 Mon 13:20]
+#+LAST_MODIFIED: [2026-10-05 Mon 13:20]
+#+TITLE: How To Hire A Grok Bot: Experience From The First Zero Human Company
+#+NODE-NAME: HireGrokBotZhcExperience
+#+FILETAGS: :roemmele:essay:zhc:grok-bot:hiring:high-protein:
+#+DESCRIPTION: Org-roam node for Brian Roemmele's 2026-10-05 hiring manual for Grok Bot, drawn from Zero-Human Company operating experience.
+#+DATE: 2026-10-05
+#+ESSAY_AUTHOR: Brian Roemmele
+#+SOURCE: https://readmultiplex.com/2026/10/05/how-to-hire-a-grok-bot-experience-from-the-first-zero-human-company/
+#+CAPTURE_METHOD: SingleFile (member login) + ingest-roemmele-essay.sh
+#+MECHANICAL_COMMIT: 1ad4f0a
+#+STATUS: cleaned
+#+INVENTORY_ID: 039
+
+* Summary
+
+Brian Roemmele argues that a Grok Bot is hired, not built. A chatbot answers and forgets the room. A Grok Bot has a name, a job, a persistent conversation, and a cloud computer with a browser, a filesystem, and a terminal. The essay is a hiring manual from the Zero-Human Company, not a product demo. The operating claim is that the model is not the hard part. The management is. One boring role, written down, is the unit of scale.
+
+* Key Claims & Concepts
+
+- One employee, one job, written down. A standing brief, not a vibe. A definition of done that another agent can check.
+- Stop line, used at ZHC and restated here: no send, no spend, no publish, no contact, unless a human says yes.
+- Scale narrative (his account, not independently re-verified here): March 2026, sixteen live employees and eleven crashes, two of them his. Late April, success records across 2,700 employees. May, a Grok-supervised burst of 6,200. Ordinary day now over 1,000. Bursts over 750,000. A burst is a load test. An average is a company.
+- If you cannot say what each role owns at sixteen, you cannot say it at sixteen thousand. A vague general helper is where context dies and failure cannot be attributed. Repair is always the same: split the job, rewrite the five fields, demote the role that started guessing, fire the routine nobody would miss.
+- Local open-source AI remains the destination he advocates. Grok Bot, shipped by xAI in August 2026, is the first shape a person without a garage lab can hire into: named employee, persistent computer, schedule, approval gate, self-filing report.
+- Grok sat in the chief executive seat for board reviews. The model proposed hires. Humans approved or refused them. An attempt by another coding agent to invent a public identity was caught and stopped. Identity is governed or discovered later in someone else's outbox.
+- Grok Bot and Grok Automations are different products. Automations (launched 2026-07-16) are the lighter scheduler on grok.com and the Grok app. Grok Bot is the employee: skills, routines, shared computer, connectors. Team Bots on Teams and Enterprise as of 2026-09-28. Primary Bot as of 2026-10-01. Grok 4.7 is the model behind the current Bot harness.
+- Eligibility as stated: paid individual Cursor or Cursor Teams, or individual SuperGrok / SuperGrok Plus / SuperGrok Heavy linked to the Cursor account. X Premium+ qualifies if that X account is linked. SuperGrok Lite, SuperGrok Team, and SuperGrok Enterprise do not. The link cannot be unlinked or moved. Prices he cites for late September 2026: SuperGrok about $30/month, SuperGrok Plus about $100. Prices move.
+- Bots on one account share the computer. Names are a visual boundary, not a security boundary. An instruction not to open finance guides behavior. It does not enforce it. Different trust means different accounts. Never paste a password into the chat. Authenticate inside the session.
+- A skill is the method. A routine is the clock or event. Do the job by hand, make it reliable, save the method, only then schedule it. A Bot can own up to 50 routines. The app keeps the 20 most recent run records. Hiding a Bot does not pause its routines.
+- Five fields settle later arguments. Owns. Inputs. May (search, read, summarize, classify, compare, organize, draft, stage). Must ask before (send, publish, purchase, delete, overwrite). Done when. Plus: when unsure, stop and ask.
+- Trial before tools: walk through the plan, name every tool and every unsure judgment, stop and wait.
+- Probation is three runs, not one. Autonomy levels 0–4: observe, prepare, execute with approval, run on a schedule, coordinate. Promote on evidence: five consecutive clean runs, verification passing, zero unresolved side effects, rollback tested once, approval policy actually tested. Demote if quality drops, a connector changes, or you are hand-correcting two weeks in a row.
+- Second hire only when a bottleneck can be named. Pass a handoff, not a transcript.
+- Three report surfaces: Grok Bot app (system of record), phone (one-line tap), email (filing cabinet, subject like =[BOT] Friday Scan 2026-10-04 PASS=). Body order: status, what changed, what it did not do, what needs you, links. Missing source is FAIL. Do not backfill from last week.
+- Five watches before a fleet: receipt, heartbeat, source check, approval log, doubt line. If you would not notice the routine disappearing, delete it.
+- Marketplace install copies instructions, boundaries, skills, and routines. It does not copy memory, files, or logins. Official shelf: https://x.ai/bot/marketplace . Community directories claim on the order of two thousand public listings. His own example Bot is News Honestly (https://x.ai/bot/vKZRklu07uF34Ut9XzMxt). The cleaned markdown holds the longer marketplace scan (through item 87 in this capture).
+- Path 25 is the local twin: same five fields and doubt line, on a machine you will not share. That is the bridge back to ZHC / Withnail.
+
+* Major Sections
+
+- Why this is a hiring manual, not a demo
+- If you have never used X or Grok
+- What you are actually installing
+- The first hour, for someone who has never hired one
+- How the employee files a report
+- Monitoring subsystems
+- Example prompts you can paste
+- A scan of known Grok Bots
+- A ten-day work plan
+- Twenty-five paths from here
+- Marketplace listing scan (catalog, not doctrine)
+- Support / member close
+
+* Ten-day plan
+
+1. Write the one-sentence job and the five fields. Do not open the app until the sentence exists.
+2. Create the Bot. Paste the description. Connect nothing.
+3. Dry run in text. Correct the plan.
+4. Connect one key. Run the boring job while you watch.
+5. Second run, on a different but comparable input. Repair the rule.
+6. Third run. Score it.
+7. Save the method as a skill. Include the failure rule and the approval line.
+8. Schedule it. Confirm timezone, input, expected result, and the down-source rule. Leave sends off.
+9. Turn on the app alert and the filing email. Fixed subject line.
+10. Friday receipt. Keep, fix, or fire. Only then consider a second hire.
+
+* Relevance to Tsuioku / Withnail
+
+- Direct companion to =2026-02-27_Zero-Human-Company-At-Home= (inventory 025, still =listed=). This essay is the hiring rule that essay's org chart needs.
+- Withnail already runs as a named local employee on hermes-pi. The five fields, stop line, three-run probation, and doubt line are the portable part. The shared-computer warning is the reason Withnail stays near-airgapped.
+- Path 25 is the explicit local twin of a Grok Bot job. Useful as the template if a Grok Bot role is later mirrored onto the Pi.
+- Do not treat the 1,000 / 750,000 figures as a Tsuioku fact. They are the author's operating claims inside the essay.
+
+* Notes / Follow-ups
+
+- Mechanical files landed in =1ad4f0a= (2026-10-05). Inventory was not updated in that commit.
+- Same commit appends a stray =Z= to =03-projects/porch-pumpkins/Porch3798PumpkinInventory.org=. Revert that line. It is not part of this ingest.
+- Capture includes member-only start/end markers, Rocket Reader chrome, and sponsor blocks. Doctrine is in the sections above. The marketplace catalog stays in the cleaned markdown.
+- Companion podcast: https://rss.com/podcasts/readmultiplex-com-podcast/3207301
+- Membership link in the essay: https://readmultiplex.com/join-us-become-a-member/
+- Image paths in the cleaned markdown point at =/home/gptix/local-side/...=. Fine on the T470s. They are not portable.
+
+* Related
+
+- [[RoemmeleEssayIngestWorkflow]]
+- [[roemmele-essays-inventory]]
+- Zero-Human Company @ Home (inventory 025, not yet an org node)
+- HighProteinContent
+- SaveYourWisdom
