@@ -1,0 +1,52 @@
+#+PROPOSED_PATH: 07-sessions/vk/VK-2026-10-06-Essay039AndSunnyvalePlat.org
+#+COMMIT_MSG: vk: 2026-10-06 essay 039 and Sunnyvale plat
+############ THIS LINE AND ALL ABOVE WILL BE DELETED, WITH NEW :PROPERTIES: DRAWER STARTING AT VERY BEGINNING OF FILE ###################
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 07-sessions
+#+CREATED: [2026-10-06 Tue 12:44]
+#+LAST_MODIFIED: [2026-10-06 Tue 12:44]
+#+TITLE: Voight-Kampff 2026-10-06 Essay 039 and Sunnyvale Plat
+#+NODE-NAME: Vk20261006Essay039AndSunnyvalePlat
+#+FILETAGS: :vk:session:roemmele:rental:tsuioku:
+#+DESCRIPTION: Session close for the Hire-a-Grok-Bot ingest, the sentinel fix, and the 72122 Sunnyvale plat lookup.
+#+EXECUTIVE_SUMMARY: Essay 039 is ingested on github-side/main at 789c929. The node template now requires the finalize sentinel. 72122 Sunnyvale is Tract 3145 Lot 121; the east parcel is APN 0618-062-36 and its owner is redacted. STATUS.md is still dated 2026-09-26.
+#+DATE: 2026-10-06
+#+SESSION: 2026-10-05 through 2026-10-06
+#+HEAD_AT_CLOSE: 789c929
+
+* Findings
+
+- Integrity: essay 039 path matches the 2026-10-05 workflow. Inventory row 039 is =ingested=. Node =HireGrokBotZhcExperience= is =593f38f3-5a85-487c-82c9-d9fa20398ada=. Links point at existing =HighProteinContent= and =SaveYourWisdom=. Inventory 025 is still listed and has no node.
+- Drift: =STATUS.md= last updated 2026-09-26. =BOOT.md= last updated 2026-09-17. Neither mentions essay 039, the sentinel rule, or =789c929=.
+- Friction: node text omitted the sentinel; =C-c n F= only strips through that line. Mechanical commit =1ad4f0a= carried a stray =Z= into a porch file. Org-roam capture opened for names that already existed. Inventory status lagged the org commit until a separate push.
+- Protected rules held: Emacs only, no Withnail external exposure, local-first. County owner name stayed redacted under CA Gov Code 7928.205.
+
+* Actions
+
+- Boot from =BOOT.md= and =STATUS.md=.
+- No mother's-car record on =github-side/main= at =4261015= (744 files). Only hit: Mom's house task in =2026-05-11-zho-task-list.org=.
+- Essay 039 mechanical files: =1ad4f0a=. Stray =Z= reverted: =b6bdf41=. Org node: =312ffeb=. Inventory pushed: =303ed07=. Id links: =3765f05=. Inventory ingested: =4329692=.
+- Skill and workflow revised: =789c929=. Sentinel is line 3 of =GenerateTsuiokuNodeText=. =RoemmeleEssayIngestWorkflow= now requires explicit =git add= and forbids capture-as-link.
+- 72122 Sunnyvale Drive, Twentynine Palms: Tract 3145 Lot 121, APN 0618-062-37. Immediate east parcel: APN 0618-062-36, vacant, about 0.19 acre. Owner field redacted. Not in the knowledge base.
+
+* Proposed living-record updates
+
+- =STATUS.md=: set last updated to 2026-10-06. Note essay 039 ingested and the sentinel rule. Do not change the Withnail block; it was not re-verified.
+- =BOOT.md=: no structural change. Optional one-line note that new node text must include the sentinel. Not required for the next boot.
+- =CreateNewSkill=: still stops after =#+COMMIT_MSG:=. Add the sentinel line when that file is next touched.
+
+* Recommendations
+
+1. Finalize this VK node with =C-u C-c n F=, then =C-c n F=, then push.
+2. Paste the STATUS pulse. One commit.
+3. Add the sentinel line to =CreateNewSkill= in that same small commit or the next one.
+4. Owner of 0618-062-36: assessor map, then recorder. Do not treat Mike Carey as the owner.
+5. Inventory 025 remains the next Roemmele ingest. Do not capture it until SingleFile is on =main=.
+
+* Related
+
+- [[id:593f38f3-5a85-487c-82c9-d9fa20398ada][HireGrokBotZhcExperience]]
+- [[id:9607f564-a170-42f4-8d6e-cb2b074c1079][GenerateTsuiokuNodeText]]
+- [[id:b622af12-faaa-4b6f-95bc-aa909d0cfc8f][HighProteinContent]]
+- [[id:b72a8d1b-04b8-4783-9c56-96b9a17f57f3][SaveYourWisdom]]
+- [[file:../../04-sources/roemmele/roemmele-essay-ingest-workflow.org][RoemmeleEssayIngestWorkflow]]

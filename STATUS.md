@@ -1,10 +1,11 @@
 
 # STATUS.md — Living Operational Snapshot
 
-**Last updated:** 2026-09-26
+**Last updated:** 2026-10-06
 **Maintainer:** George Taylor + Grok
 **Companion files:** BOOT.md, STRUCTURE.md, README.md, 01-core/memory/joji-grok-project-memory.org, 01-core/memory/voight-kampff-protocol.org, 08-skills/UpdateProjectStatus.org, 02-infrastructure/procedures/TsuiokuTwoMachineSync.org
 
+- 2026-10-06: Essay 039 ingested (HireGrokBotZhcExperience). Mechanical 1ad4f0a, stray Z reverted b6bdf41, org 312ffeb, links 3765f05, inventory ingested 4329692, skill and workflow 789c929. New node text must include the finalize sentinel. 72122 Sunnyvale is Tract 3145 Lot 121; east parcel APN 0618-062-36, owner redacted.
 ---
 
 ## 1. Withnail / Hermes (hermes-pi)
