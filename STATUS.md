@@ -1,7 +1,7 @@
 
 # STATUS.md — Living Operational Snapshot
 
-**Last updated:** 2026-10-06
+**Last updated:** 2026-10-15
 **Maintainer:** George Taylor + Grok
 **Companion files:** BOOT.md, STRUCTURE.md, README.md, 01-core/memory/joji-grok-project-memory.org, 01-core/memory/voight-kampff-protocol.org, 08-skills/UpdateProjectStatus.org, 02-infrastructure/procedures/TsuiokuTwoMachineSync.org
 
@@ -84,6 +84,14 @@ Live skills under `08-skills/` (disk + this STATUS; SkillsIndex must match):
 13. First X230 pull of post-cutover `main` (must include `dba3b9e` + orientation commits)
 
 ## 4. Recent Session Notes
+
+**2026-10-09 — Grok Bot inbox claim (V-K, re-closed 2026-10-14)**
+- Cursor account ~jud.taylor@protonmail.com~ is the Grok Bot identity. Login email immutable. SuperGrok linked. Link cannot be moved.
+- Inbox ~gptix@mail.grokbot.com~ claimed. Unique, never reissued, shared by all bots on the account.
+- First bot: Gregorio. No standing brief yet. Withnail remains the near-airgapped CEO on hermes-pi.
+- T470s as-built: i5-7300U, 15 GiB RAM, 477 GB encrypted NVMe, BIOS N1WET54W 1.33, Omarchy kernel 7.2.3-arch1-3.
+- Hermes agent plus ~qwen2.5:3b~ at 64k is feasible on the T470s. Do not move the always-on gateway off hermes-pi.
+- Linux note: Grok Bot AppImage needs ~fuse2~. Deep link needs the browser always-allow checkbox.
 
 - 2026-09-25: West Paces Pumpkins vendor capture. Hammonds + Appalachian Farms 2026 sheets → org on main. Cost sheets for Stoop $395 / Landing $595 / Ghost $675 / Portico $1175. Lakewood 40 keepers local-only; index on main. A10e: 192.168.1.78:8022 u0_a122; not on Tailscale. Domain pending sister. GHL still checkout path.
 
