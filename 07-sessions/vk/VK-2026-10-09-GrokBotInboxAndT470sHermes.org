@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       02511f8c-6af3-4971-ab1a-33ad72b9f9ab
+:END:
+#+AUTHOR: George Taylor + Grok
+#+CATEGORY: 07-sessions
+#+CREATED: [2026-10-09 Fri 22:15]
+#+LAST_MODIFIED: [2026-10-14 Wed 20:47]
+#+TITLE: VK 2026-10-09 — Grok Bot Inbox and T470s Hermes
+#+NODE-NAME: VK20261009GrokBotInboxAndT470sHermes
+#+FILETAGS: :vk:session:grok-bot:t470s:hermes:
+#+DESCRIPTION: Session close for the Grok Bot claim of gptix@mail.grokbot.com and the measured Hermes fit on the T470s. Re-closed 2026-10-14. Prior hand-off was not applied.
+#+EXECUTIVE_SUMMARY: Claimed gptix@mail.grokbot.com on Cursor account jud.taylor@protonmail.com after linking SuperGrok. First bot is Gregorio. T470s can run a local 3B Hermes. Withnail stays on hermes-pi. Re-closed 2026-10-14 with no new actions.
+
+* Findings
+
+- Identity join is by email. Login with X is unsafe unless the X account email is exactly the Cursor email.
+- ~cursor.com/agents~ is not the Grok Bot plan screen. Link SuperGrok lives in the app under Settings → Usage & Billing.
+- Omarchy needs ~fuse2~ for the AppImage. The browser deep link fails without the always-allow checkbox.
+- Address is account-scoped, immutable, and never reissued. Cursor login email cannot be changed. SuperGrok link cannot be moved.
+- 2026-10-14 re-close: STATUS.md still dated 2026-09-26. This node was not on main.
+
+* Actions
+
+- Claimed ~gptix@mail.grokbot.com~.
+- Named first bot Gregorio.
+- Measured T470s: i5-7300U, 15 GiB, 477 GB NVMe, BIOS N1WET54W 1.33.
+
+* Proposed record changes
+
+- Append the 2026-10-09 pulse to STATUS.md.
+- Write as-built specs into ThinkpadT470s.org.
+- Optional BOOT.md line: Grok Bot identity is the Cursor account, not ~cursor.com/agents~.
+
+* Related
+
+- [[id:VoightKampffSessionClose]]
+- [[id:ThinkpadT470s]]
+- [[id:TsuiokuTwoMachineSync]]
