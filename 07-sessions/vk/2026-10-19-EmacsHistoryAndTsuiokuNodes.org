@@ -1,0 +1,65 @@
+:PROPERTIES:
+:ID:       ea47968f-9bda-45ab-9f6c-b9a8f91a5d00
+:END:
+#+PROPOSED_PATH: 07-sessions/vk/2026-10-19-EmacsHistoryAndTsuiokuNodes.org
+#+COMMIT_MSG: Add VK summary for Emacs history persistence and Tsuioku agent/ontology nodes
+#+AUTHOR: Joji Teira
+#+CATEGORY: sessions
+#+CREATED: 2026-10-19
+#+LAST_MODIFIED: 2026-10-19
+#+TITLE: VK Summary 2026-10-19: Emacs History Persistence and Tsuioku Agent/Ontology Nodes
+#+NODE-NAME: Vk20261019EmacsHistoryAndTsuiokuNodes
+#+FILETAGS: :session:vk:emacs:tsuioku:hardware:
+#+DESCRIPTION: Voight-Kampff session close covering recentf/savehist for Omarchy Emacs and generation of two summary nodes (Ford Escape headlamp, Tsuioku agents/ontology)
+
+* Discover Current State
+Session focused on two deliverables:
+- Persistent file history (recentf) and M-x / minibuffer history (savehist) for the Omarchy-shipped Emacs on the T470s.
+- Two ready-to-ingest org-roam summary nodes covering (1) the 2013 Escape Titanium driver-side low-beam intermittent issue and (2) options for agents, Grok Bot, local agents, and lightweight ontology within Tsuioku.
+
+No structural changes were committed. Canonical working copy remains the T470s at ~/local-side/.
+
+* Integrity & Drift Scan
+- Emacs-only preference and existing org-roam conventions respected.
+- Node format matched the standing requirement (#+PROPOSED_PATH: and #+COMMIT_MSG: first, PascalCase #+NODE-NAME:, no leading PROPERTIES drawer).
+- Headlamp notes stayed within previously established diagnostic and parts information; no new unsupported claims.
+- Agent/ontology discussion stayed consistent with earlier alignment of Tsuioku to the Karpathy LLM Wiki pattern.
+
+* Session Action Review
+** Completed
+- Exact init-file path confirmed (~/.config/emacs/init.el) and a minimal, ready-to-paste block for recentf-mode + savehist-mode provided.
+- Two detailed org-roam nodes generated and formatted for immediate ingestion via C-c n F:
+  - FordEscape2013HeadlampLowBeamIntermittent
+  - TsuiokuAgentOntologyAndKnowledgeOptions
+
+** Not completed (deferred)
+- Actual evaluation of the Emacs forms or verification of history persistence after restart.
+- Ingestion of the two new nodes into Tsuioku.
+- Formal update of STRUCTURE.md or creation of a dedicated “LLM Wiki alignment” principles node.
+
+* Cross-linking & Metadata Pass
+Suggested links once the nodes are ingested:
+- Headlamp node → any existing or future vehicle / hardware notes under 02-infrastructure/hardware/.
+- Agent/ontology node → BOOT.md, STRUCTURE.md, 08-skills/GenerateTsuiokuNodeText.org, and 08-skills/VoightKampffSessionClose.org.
+- Both nodes can reference the 2026-10-17 VK summary if one was previously filed.
+
+* Synthesis + Recommendations
+1. Evaluate the recentf / savehist block in init.el, restart Emacs, and confirm both histories survive a clean quit/restart.
+2. Ingest the two provided nodes with C-c n F so the headlamp diagnosis and the agent/ontology options become durable Tsuioku content.
+3. Highest-leverage follow-up remains a short “LLM Wiki alignment” principles node that explicitly maps the three layers and codifies “extend, don’t create” plus a lightweight page-type convention.
+
+* Protected Rules Check
+- Emacs only.
+- Org-roam node naming (PascalCase, no spaces/hyphens/underscores).
+- New nodes begin with #+PROPOSED_PATH: and #+COMMIT_MSG:.
+- No secrets.
+- Small, focused commits preferred.
+- Local-first preference maintained.
+
+* Clean hand-off
+Session closed. Two nodes are ready for ingestion. Emacs history persistence is ready for a one-time test. No open technical blockers.
+
+* Related
+- 08-skills/VoightKampffSessionClose.org
+- 02-infrastructure/hardware/FordEscape2013HeadlampLowBeamIntermittent.org (once ingested)
+- 01-core/principles/TsuiokuAgentOntologyAndKnowledgeOptions.org (once ingested)
