@@ -1,0 +1,55 @@
+:PROPERTIES:
+:ID:       864c33ad-8d2f-457c-841f-324ac91ed7c8
+:END:
+#+PROPOSED_PATH: 02-infrastructure/hardware/FordEscape2013HeadlampLowBeamIntermittent.org
+#+COMMIT_MSG: Add detailed notes on 2013 Escape Titanium driver-side low-beam intermittent issue
+#+AUTHOR: Joji Teira
+#+CATEGORY: hardware
+#+CREATED: 2026-10-19
+#+LAST_MODIFIED: 2026-10-19
+#+TITLE: 2013 Ford Escape Titanium Driver-Side Low-Beam Intermittent Issue
+#+NODE-NAME: FordEscape2013HeadlampLowBeamIntermittent
+#+FILETAGS: :hardware:vehicle:ford:escape:headlamp:hid:
+#+DESCRIPTION: Diagnostic notes and parts options for intermittent driver-side low beam on 2013 Escape Titanium (VIN 1FMCU9J90DUA70448)
+
+* Context
+- Vehicle: 2013 Ford Escape Titanium AWD, 2.0L EcoBoost
+- VIN: 1FMCU9J90DUA70448
+- Symptom: Driver-side low-beam lamp works intermittently
+- System: Factory HID (xenon), not halogen. Low beams use D3S bulbs + ballasts
+
+* Diagnostic approach recommended
+1. Perform a side-to-side bulb swap test first.
+   - Move the known-good passenger D3S bulb to the driver side.
+   - If the fault follows the bulb → replace the bulb.
+   - If the fault stays on the driver side → suspect ballast, connector, wiring, or (less commonly) the Body Control Module.
+2. While the headlight assembly is accessible, inspect the ballast connector and wiring for corrosion, heat damage, or loose pins.
+3. Multimeter continuity / voltage checks on the ballast input side can be done once the assembly is out.
+
+* Access notes
+- Ballast mounts on the underside of the headlight assembly.
+- Full access typically requires removing the front bumper / nose.
+- Many owners replace both D3S bulbs and both ballasts while the nose is off, plus cornering / fog / marker bulbs.
+
+* Parts information
+** OEM ballast examples
+- BL7Z-13C170-A
+- DL3Z-13C170-A
+- 8A5Z-13C170-A
+- Dealer pricing commonly $350–$570+
+
+** Aftermarket ballast options (approximate, mid-2026)
+- Budget direct-fit units claiming compatibility with the above Ford numbers: $45–$80 each
+- Established-brand aftermarket (Dorman, Standard Motor Products, etc.): $200–$320 each
+- Ballast + D3S bulb kits marketed for the Escape: often $50–$90 for one side
+
+Prefer units explicitly listed as replacements for 8A5Z-13C170-A / BL7Z-13C170-A / DL3Z-13C170-A.
+
+* Practical recommendations
+- Confirm with the bulb swap before buying a ballast.
+- If a ballast is needed, the $50–$80 direct-fit range is the usual practical choice for most owners.
+- Consider doing both sides while the bumper is off.
+- Intermittent behavior on these cars has also been linked to BCM issues in some cases; the swap test helps isolate the fault.
+
+* Related
+- See also any future notes on Escape hardware or vehicle maintenance.
