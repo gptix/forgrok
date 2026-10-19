@@ -1,0 +1,84 @@
+:PROPERTIES:
+:ID:       fc1e6968-7ae1-451b-a3c8-b6478e8f9dba
+:END:
+#+PROPOSED_PATH: 01-core/principles/TsuiokuAgentOntologyAndKnowledgeOptions.org
+#+COMMIT_MSG: Summarize options for Grok, Grok Bot, local agents, and ontology in Tsuioku
+#+AUTHOR: Joji Teira
+#+CATEGORY: principles
+#+CREATED: 2026-10-19
+#+LAST_MODIFIED: 2026-10-19
+#+TITLE: Tsuioku Options for Agents, Grok Bot, and Ontology-Based Knowledge Management
+#+NODE-NAME: TsuiokuAgentOntologyAndKnowledgeOptions
+#+FILETAGS: :tsuioku:knowledge:agents:ontology:grok:llm-wiki:
+#+DESCRIPTION: Summary of discussions on aligning Tsuioku with Karpathy LLM Wiki practices, agent ownership of maintenance, private content, and lightweight ontology
+
+* Background
+Tsuioku is structured as a persistent, compounding knowledge base in the spirit of Andrej Karpathy’s LLM Wiki pattern (raw sources → LLM-maintained interlinked pages → schema). The canonical working copy lives on the T470s at ~/local-side/. Org-roam provides the graph layer.
+
+* Alignment with Karpathy LLM Wiki pattern
+** Strengths of current Tsuioku
+- Clear raw vs. compiled separation (06-raw/, 04-sources/ vs. topical trees)
+- Schema encoded in BOOT.md, STRUCTURE.md, skills, and the C-c n F helper
+- Voight-Kampff close as a structured review / lint step
+- Git history + InspectGitHubState as an audit trail
+
+** Gaps relative to stronger implementations
+- No single agent-first index.md-style catalog
+- “Extend, don’t create” and explicit contradiction flagging not fully codified as lint checks
+- Page typing and relation vocabulary could be made more explicit
+
+* Org-roam suitability
+Org-roam is a strong fit:
+- Stable IDs + bidirectional links give the desired graph
+- Keywords and drawers support metadata
+- Existing GenerateTsuiokuNodeText skill and C-c n F workflow already enforce node format
+- Several community implementations of Karpathy-style wikis sit on org-roam
+
+* Lightweight ontology options
+Earlier heavier ontology layers added maintenance cost. A lighter approach that stays inside org-roam:
+- Simple page types (entity, concept, source-summary, comparison, contradiction, synthesis) via keyword or property
+- Explicit relation notes on pages (supports, contradicts, supersedes, derived-from)
+- Short ontology section in the schema that agents must follow
+- Periodic lint for near-duplicates and missing type tags
+
+This can be added without a separate triple store unless a high-value domain later requires one.
+
+* Private and membership-based content
+** Personal / private notes
+- Keep fully private material in a local-only directory or a private GitHub repo that is never pushed to the public Tsuioku tree
+- Public / shared Tsuioku receives only redacted summaries or cross-links
+- Local agents on the T470s (or X230) can see both layers
+
+** Membership sources (e.g. full ReadMultiplex essays)
+- Store full texts only in a private archive (local or private remote)
+- Ingest detailed, citable summaries + key excerpts into Tsuioku with clear provenance
+- Cross-link the summaries heavily; never place the full paid text in the public tree
+
+* Agent ownership of maintenance
+** Recommended division of labor
+| Task                        | Human | Agent (Grok Bot or local) |
+|----------------------------+-------+---------------------------|
+| Choose sources, emphasis   | Primary | Suggest                   |
+| Draft nodes with metadata  | Review  | Generate                  |
+| Lint / contradiction check | Trigger | Perform & report          |
+| Routine STATUS / STRUCTURE | Review  | Propose diffs             |
+| Commit / push              | Approve | Stage, commit, push (or PR) |
+| Voight-Kampff close        | Trigger | Execute checklist         |
+
+** Practical agent options
+- Cloud Grok Bot: higher-level synthesis, cross-session memory, draft generation
+- Local agent on T470s (Hermes-style or lighter): file-system and git operations, generation of properly formatted org-roam nodes, communication via gptix@mail.grokbot.com or file drop
+- Standing duties should be defined in a skill or agent charter so the agent reads BOOT.md + STRUCTURE.md + relevant skills on startup
+
+* Suggested next steps
+1. Add a short “LLM Wiki alignment” principles node (or section in STRUCTURE.md) that explicitly maps the three layers and the ingest/query/lint cycle.
+2. Codify a lightweight page-type convention and “extend, don’t create” rule.
+3. Document the private-content boundary.
+4. Outline standing duties for a Tsuioku-maintenance agent or Grok Bot.
+
+* Related
+- BOOT.md
+- STRUCTURE.md
+- 08-skills/GenerateTsuiokuNodeText.org
+- 08-skills/VoightKampffSessionClose.org
+- Karpathy LLM Wiki gist discussions
