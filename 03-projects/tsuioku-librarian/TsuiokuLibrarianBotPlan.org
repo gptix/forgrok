@@ -1,0 +1,92 @@
+:PROPERTIES:
+:ID:       b4bd498c-2c12-42da-8d85-533dca1bbc1e
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-projects
+#+CREATED: [2026-10-26 Mon 18:10]
+#+LAST_MODIFIED: [2026-10-26 Mon 18:20]
+#+TITLE: Tsuioku Librarian Bot Plan
+#+NODE-NAME: TsuiokuLibrarianBotPlan
+#+FILETAGS: :project:tsuioku:librarian:agents:grokbot:memory:
+#+DESCRIPTION: Plan for a dedicated Tsuioku Librarian bot that audits standing instructions across George's agents and promotes durable rules into Tsuioku nodes, adapted from Brian Roemmele's Librarian Bot (Oct 2026).
+
+* Purpose
+A dedicated bot that keeps George's standing instructions ("always", "never", "from now on") from silently slipping across his Grok Bots and local agents (Withnail). It keeps Tsuioku, not bot memory, as the single canonical home for those rules.
+
+* Source: Roemmele's Librarian Bot
+- Post (2026-10-25 07:32 ET): https://x.com/BrianRoemmele/status/2114319267105808456
+- Bot template page: https://x.ai/bot/HKZR4k_DCSzy2PSnkkE8v
+- Related X Article (2026-10-18), "The Paper Search Engine: A Forgotten 1896 Card Index, And The AI Librarian That Files Your Knowledge": https://x.com/BrianRoemmele/status/2111863918801060139. It returned 404 to the bot, so it was read from text George supplied.
+- Paper discussed in the article: Singh, Zhang, Lee, Nair, Kumar and Finn, "Librarian Agents: Training LLMs to Curate Long-Context Workspaces that Anticipate Future Queries," arXiv:2610.22273, 2026-10-15: https://arxiv.org/abs/2610.22273
+- Project site: https://librarian-agents.github.io/
+- Code (MIT License): https://github.com/teresaz05/librarian-agents
+- Otlet background (Rayward, "Visions of Xanadu"): https://www.monoskop.org/images/f/f8/Rayward_W_Boyd_1998_Visions_of_Xanadu_Paul_Otlet_1968-1944_and_Hypertext.pdf
+- Claims, quoted from the post:
+  - It runs a weekly "Bot Interview and Discovery".
+  - It "reads every conversation I have had with every Grok Bot, finds each standing instruction".
+  - It checks whether each bot "keeps it in mind on every turn".
+  - It "shows me exactly what I said and when".
+  - It "adds the fix only after I approve it".
+- Reported first run: 381 kept, 72 partly kept, 90 forgotten. One request had been made in 47 bots and saved as a rule in none. Output is a heat map plus an HTML/PDF report.
+- These figures are his own and have not been independently verified. The internals of his bot are not published.
+
+* Ideas adopted
+1. *Weekly audit.* Scan agent transcripts for standing instructions. Cite each one with its exact quote and its date and time (ET).
+2. *Promote repeated rules.* A rule repeated across agents becomes one canonical node (08-skills or 01-core) via GenerateTsuiokuNodeText. Each agent then points to that node instead of keeping its own copy.
+3. *Rule-status ledger.* Track each rule's status in an org table (below), not in a PDF.
+4. *Gap finding.* Flag missing failure alerts, overlapping agents, and rules that one agent follows but the others should share.
+5. *Approval gate.* Nothing changes without George's approval.
+
+* Rule-status ledger (format)
+| Rule (short) | Canonical node   | Agents expected   | Status   | Evidence (quote, date ET) | Proposed action             |
+|--------------+------------------+-------------------+----------+---------------------------+-----------------------------|
+| Emacs only   | (BOOT.md §1)     | all               | kept     |                           | none                        |
+| <rule>       | <NodeName or —>  | <agent list>      | partial  |                           | link node in agent memory   |
+| <rule>       | —                | <agent list>      | forgotten|                           | propose new node            |
+| <rule>       | <NodeName>       | <agent list>      | conflict |                           | supersede; old to 99-archive|
+
+Status values: kept, partial, forgotten, conflict, superseded.
+
+* Second meaning of "librarian": anticipatory curation
+Roemmele's article joins Paul Otlet's card index (from 1895) and the 2026 Librarian Agents paper. The idea is to file knowledge into small, addressed, sourced units /before/ questions arrive ("anticipatory directed curation"), instead of searching raw documents afresh for every query.
+
+| Idea (Otlet / paper / article)             | Tsuioku mapping                                                                                            |
+|--------------------------------------------+------------------------------------------------------------------------------------------------------------|
+| Monographic principle (one unit per card)  | org-roam atomic nodes; split only where a unit is reused or linked                                          |
+| Four unit kinds: fact, interpretation,     | optional =#+UNIT_KIND:= keyword or tag (:fact: :interpretation: :statistic: :source:)                      |
+| statistic, source                          |                                                                                                            |
+| 00_INDEX / 00_GUIDE files                  | BOOT.md and STRUCTURE.md at the top; per-folder index nodes listing each node and the questions it answers |
+| SOURCE LINE on every unit                  | provenance keywords (=#+SOURCE:=, =#+SOURCE_REVISION:=) and links to originals in 04-sources/06-raw, or in  |
+|                                            | the private repo's document/scan folders, by reference only                                                |
+| raw_docs never edited                      | originals in 06-raw, 04-sources and the private repo's document/scan folders stay unedited; nodes cite them |
+| Frozen test questions, incl. needles       | a fixed question set (with expected node paths) kept apart from the librarian; rerun after big refiles     |
+| Build date, staleness                      | LAST_MODIFIED plus a librarian check that flags nodes older than their sources                             |
+| Query traffic drives refiling              | log questions agents could not answer from the KB; propose new or refiled nodes from them                  |
+
+* Critiques of the anticipatory-curation material
+- *Benchmarks unchecked by us.* The benchmark numbers (for example 0.75 vs 0.42 on BrowseComp-Plus) are the paper's, as reported by Roemmele. We have not checked them.
+- *Prompt is not the trained builder.* The paper's builder is a 4B model trained with reinforcement learning, with a larger model writing file contents. A prompt (his "SuperPrompt") only imitates it, untested, as he says himself.
+- *Over-atomizing.* Strict one-fact-per-file may fragment org-roam beyond usefulness. Atomic should mean one idea per node, not one sentence.
+- *Profit and x402 data sales.* These do not apply to a personal KB. They are a privacy risk for anything derived from private material.
+- *"Plain text files".* His framing misses that org-roam IDs and backlinks already provide addresses and links. There is no need for a separate classification scheme.
+- *Synthetic files need approval.* Any LLM-written summary or merge node enters the KB only as a proposal George approves (mode A), never by direct write.
+
+* Where Roemmele's approach does not fit Tsuioku
+- *Canonical store.* His rules live in each bot's opaque, unversioned memory. In Tsuioku, rules live in org files in the canonical T470s =~/local-side= copy, synced through GitHub. Bot memory holds only pointers.
+- *Fix path.* "Adds the fix after approval" leaves no audit trail. Here a fix is a node proposal, which George dry-runs with =C-u C-c n F=, finalizes with =C-c n F= and pushes with Magit. Mode B (the bot commits) is used only after explicit approval.
+- *Report format.* HTML/PDF heat maps do not suit an Emacs, local-first workflow. Org tables and a dated 07-sessions summary node do.
+- *Public/private split.* "Read every conversation" ignores the split. A private repository exists and must stay fully separate. The librarian must never quote or derive public rules from private material.
+- *Contradictions.* He does not address conflicting or superseded rules. Tsuioku has 99-archive and SOURCE_REVISION for this.
+- *Local agents.* Withnail on hermes-pi is outside Grok Bot, so its instructions have to be gathered from its own logs or Telegram exports.
+- *Access.* It is unverified whether one Grok Bot can read every other bot's transcripts. That depends on cross-conversation transcript permissions.
+
+* Plan
+1. Create the librarian bot with fine-grained GitHub access to the two Tsuioku repos only, read-only by default.
+2. Pilot it manually on a few agents. Fill the ledger and review it with George.
+3. Make it a weekly routine whose output is a draft 07-sessions summary node and ledger updates, proposed in mode A.
+4. Promote the top repeated rules into canonical nodes, one approved commit each.
+5. Revisit after four weekly runs.
+
+* Open questions
+- Can transcripts from every agent be read with the permissions available?
+- Should the ledger live in this node or in its own node?
