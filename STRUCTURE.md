@@ -64,6 +64,7 @@ Active or significant:
 - `skill-system-improvement`
 - `tarot-today`
 - `TsuiokuPresentation`
+- `tsuioku-librarian` — Lisbet Librarian plan (`TsuiokuLibrarianBotPlan.org`)
 - `withnail`
 
 Also present on `main` (keep or park explicitly):
