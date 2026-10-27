@@ -44,7 +44,7 @@ Last documented state (not re-verified 2026-08-31):
 - **Voight-Kampff Protocol v4.1+**; executable source of truth is `08-skills/VoightKampffSessionClose.org`
 - **Org-roam NODE-NAME convention** formalized (`OrgRoamNodeNameConvention`)
 - Finalize helper `my/org-roam-finalize-place-id-commit` (`C-c n F`) lives in `02-infrastructure/emacs/forgrok-org-helpers.el` and is live on the T470s
-- `01-core/soul/` is documented as intended in older text but **does not exist on GitHub `main`**
+- `01-core/soul/` exists as of 2026-10-27 (README.org placeholder)
 - `03-knowledge/transcripts/` exists outside the previously published STRUCTURE map; now recorded
 - Historical schemas (`ZHO-SCHEMA.md`, `GROK-SCHEMA.md`) describe the pre-renumbering `groki/` tree and are not the live directory map
 
@@ -79,7 +79,7 @@ Live skills under `08-skills/` (disk + this STATUS; SkillsIndex must match):
 6. (closed 2026-08-31) tarot-app/ removed; TarotTodayUserInstructions.org lives under tarot-today/
 7. (closed 2026-08-31) root scratch a / b.org / c.org / chatWithGab.org removed
 8. (closed 2026-08-31) STARTUP.org directory guidance and metadata example aligned with finalize-helper dialect
-9. Optional: create `01-core/soul/` or stop referring to it
+9. (resolved 2026-10-27) `01-core/soul/` created with README.org
 10. Tarot Today: OpenRouter credits → re-run vision tests with a stronger model
 11. EmacsObsidianSkin: minimal viable skin (theme + layout + keybinding map + org-roam-ui)
 12. (closed 2026-09-14) T470s dual batteries and speakers 00JT988 replaced
