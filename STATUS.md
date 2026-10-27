@@ -192,7 +192,7 @@ Live skills under `08-skills/` (disk + this STATUS; SkillsIndex must match):
 
 **2026-08-08**
 
-- Tarot documentation freeze: renamed `03-projects/tarot-app` → `tarot-today`. Leftover `tarot-app/` still on `main` as of 2026-08-31.
+- Tarot documentation freeze: renamed `03-projects/tarot-app` → `tarot-today`. (Leftover `tarot-app/` removed; item 6 closed 2026-08-31.)
 
 **2026-08-07**
 
