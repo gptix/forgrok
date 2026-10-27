@@ -12,7 +12,7 @@
 
 ## 1. Withnail / Hermes (hermes-pi)
 
-Last documented state (not re-verified 2026-08-31):
+Last documented state (stale: not re-verified since 2026-08-31; flagged 2026-10-27):
 
 - Hermes Agent 0.19.0 running
 - Local model path working: **qwen2.5-3b-64k** (64k context)
