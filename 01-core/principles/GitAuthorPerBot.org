@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       747f93df-39a4-4c48-8699-9496888623cc
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: principles
+#+CREATED: [2026-10-27 Tue 12:50]
+#+LAST_MODIFIED: [2026-10-27 Tue 12:50]
+#+TITLE: Git Author Per Bot
+#+NODE-NAME: GitAuthorPerBot
+#+FILETAGS: :tsuioku:git:agents:
+#+DESCRIPTION: Every bot that commits or pushes uses the git author '<BOT_NAME> (for gptix)'; push permission is granted bot by bot.
+
+* Rule
+- Any bot that commits or pushes via git uses the author name =<BOT_NAME> (for gptix)=, e.g. =Lisbet (for gptix)=.
+- The bots share one computer and its global git author, so each bot sets its own author per command:
+  =git -c user.name='<BOT_NAME> (for gptix)' -c user.email=gptix@mail.grokbot.com commit ...=
+- Push permission is not team-wide. George grants it bot by bot, and ApprovalBeforeCommit still applies to every change.
+
+* Why
+Commits made with the shared global author were credited to the wrong bot. A per-bot author keeps the history honest about who made each change.
+
+* Sources
+- George, 2026-10-27 12:46 PM ET, in Lisbet's chat: "any Bot on the team that pushes via git (permission to do this is NOT team-wide, but will be, for now, on a Bot by Bot basis) will use the git author of the form '<BOT_NAME> (for gptix)'"
+- [[id:ApprovalBeforeCommit][ApprovalBeforeCommit]] (draft)
