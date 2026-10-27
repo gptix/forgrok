@@ -1,0 +1,202 @@
+:PROPERTIES:
+:ID:       3062f504-e8af-4693-992b-82dd19c457ec
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-projects
+#+CREATED: [2026-10-27 Tue 17:45]
+#+LAST_MODIFIED: [2026-10-27 Tue 17:45]
+#+TITLE: SaveWisdom-style Service: Research Brief
+#+NODE-NAME: SaveWisdomServiceResearchBrief
+#+FILETAGS: :project:save-wisdom:research:lessons-learned:market:agents:roemmele:
+#+DESCRIPTION: Research brief (2026-10-27) for reviving a SaveWisdom-style wisdom-capture service. Covers Tsuioku holdings, Roemmele's writing, SaveWisdom method/status/license, military and government Lessons Learned programs, competing businesses, and recommended skills and agents.
+#+SOURCE_REVISION: Grok Bot research session 2026-10-27 (ET). Also published as a Grok Bot Page. Sources were read that session.
+
+* Notes on sources
+- Prepared Tue 2026-10-27 (ET) for George Taylor (gptix), Marietta GA.
+- [unverified] marks figures that came from search snippets or third parties and could not be confirmed on the vendor's own page.
+- Links were checked 2026-10-27. Links marked "bot-blocked" returned 403 to automated checks (.mil and similar sites), but their content was read through the fetch tool or search. The NLLIS article timed out on the check.
+- Dropped links: osv.llc/blog/save-wisdom (404), exbrain.ai (404), raineymedia.com (406).
+- Nothing from tsuioku-private is quoted. A content search of that repo found no savewisdom or Roemmele hits.
+
+* Related nodes
+- [[id:b72a8d1b-04b8-4783-9c56-96b9a17f57f3][SaveYourWisdom]] (ZHO pillar)
+- [[id:20260730-zero-human-organization-intent][ZeroHumanOrganizationIntent]]
+- [[id:2026-05-13-1000-save-wisdom-questions][1000 Save Wisdom Questions v7.0]]
+- [[id:df683dd2-ce34-4ecd-8460-698dffce4a02][SaveYourWisdomNonprofitOverview]]
+- [[id:a8498c64-2a4b-441f-a516-b6f342d020a5][SaveYourWisdomNonprofitCurrentState]]
+- [[id:b4bd498c-2c12-42da-8d85-533dca1bbc1e][TsuiokuLibrarianBotPlan]]
+- [[id:593f38f3-5a85-487c-82c9-d9fa20398ada][HireGrokBotZhcExperience]]
+- [[file:../../04-sources/savewisdom/][04-sources/savewisdom/]]
+
+* Summary of findings
+1. SaveWisdom (Brian Roemmele, launched 2023-06-24) is a free, open method, not a paid service. A person records spoken answers to up to 1,000 questions (v7.0, 2025-02-08) on an OFFLINE voice recorder. The audio is transcribed locally (iFLYTEK offline or Whisper), and a private "Wisdom Keeper" AI comes later. No public toolkit for the AI step has shipped, and ReadMultiplex forum members were still asking about its status.
+2. *Licensing constraint.* The question PDF says the questions "can not be used in whole or in part in a publication or list that is in whole or part of a commercial work that is being sold directly or as a subscription." A paid service needs its own question set, Brian's written permission, or a design in which the client uses the free list directly.
+3. Tsuioku already holds the core material: the 1,000 questions (PDF, XLSX, TXT and a cleaned org node), the forum thread, the Save-Your-Wisdom ZHO pillar node (2026-08-07) and the Librarian Bot plan adapted from Roemmele (2026-10-26).
+4. Lessons Learned programs (CALL, MCCLL, NLLIS, JLLP/JLLIS, NASA LLIS, DOE) supply the rigor that SaveWisdom lacks: observation, then insight, then validated lesson, then dissemination and evaluation. They capture institutional, actionable knowledge. SaveWisdom captures personal, tacit, emotional knowledge. The Army is now putting AI on top of its lessons (Quick-Fire/Vantage, and VICTOR in Aug 2026).
+5. *Market.* Consumer services are cheap and cloud-hosted: StoryWorth from $59, Remento $99/yr, StoryCorps free. The AI-persona category is unstable. A competitor reports that HereAfter AI posted a shutdown notice in July 2026, and eternos.life now redirects to Uare.ai. Legacy video costs about $1,750 to $8,000 (Telloom). Enterprise expert capture is a separate, pricier niche.
+6. *The opening for George.* A local-first, client-owned, validated service: offline recorder, local transcription, org-roam or plain-text output that the family keeps, and a lessons-learned-style validation pass. This is the reverse of the subscription lock-in that failed HereAfter customers.
+
+* 1. What Tsuioku already holds
+Public repo gptix/forgrok, pulled 2026-10-27.
+
+| Node / file | What it contains |
+|-------------+------------------|
+| 01-core/zho/nodes/save-your-wisdom.org | Save-Your-Wisdom is the second ZHO mission pillar, beside HighProteinContent and PublicArresteeData. It is framed as non-coercive, local-first capture (Withnail/Hermes). Created 2026-08-07. |
+| 01-core/zho/nodes/2026-05-13-1000-save-wisdom-questions.org | The cleaned v7.0 question set, with the purpose statement and the 5-step process: record alone, state the question, pause, answer at length, keep the emotion. |
+| 04-sources/savewisdom/ | The original PDF, XLSX and TXT of the questions, plus a 2026-09-01 capture of the ReadMultiplex forum thread (15 posts). Members asked about the AI toolkit status and about using the questions with elders in assisted living. |
+| 03-projects/tsuioku-librarian/TsuiokuLibrarianBotPlan.org | Adapts Roemmele's Librarian Bot (post 2026-10-25), his Otlet "Paper Search Engine" X Article (2026-10-18) and arXiv:2610.22273 "Librarian Agents". It adopts a weekly audit, a rule ledger in org and an approval gate. It rejects HTML/PDF heat maps, opaque bot memory and mixing private with public material. |
+| 04-sources/roemmele/cleaned/2026-10-05_Hire-Grok-Bot-ZHC-Experience | Roemmele: "You do not build a Grok Bot. You hire one." His method is one boring role, a job description, a text trial and three runs, ending in a report. |
+| 04-sources/roemmele/5000-days/ | The 5000 Days series. Part 8 is "Saving Your Wisdom". |
+
+* 2. Brian Roemmele's writing
+| Source | Takeaway |
+|--------+----------|
+| [[https://readmultiplex.com/2020/11/17/what-is-the-intelligence-amplifier-and-your-wisdom-keeper/][ReadMultiplex: What Is The Intelligence Amplifier and Your Wisdom Keeper?]] (2020-11-17) | Where the concept starts. AI amplifies human intelligence, and "everyone has Wisdom to be placed in a Wisdom Keeper." The detailed build is in a member-only Executive article. |
+| [[https://readmultiplex.com/2026/02/02/you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-8-saving-your-wisdom/][ReadMultiplex: You Have 5000 Days, Part 8: Saving Your Wisdom]] (2026-02-02) | SaveWisdom is the "Elixir" of the Hero's Journey, and wisdom is "our eternal currency" after work ends. The Noosphere framing appears again. The public portion is readable. |
+| [[https://readmultiplex.com/forums/topic/introducing-the-save-wisdom-project-at-savewisdom-org/][ReadMultiplex forum: Introducing The Save Wisdom Project]] (2023-06-24) | Members asked for a Wisdom Keeper rollout schedule, a sign of unmet demand for the AI step. |
+| X (@BrianRoemmele) | API searches for savewisdom, "save wisdom" and "wisdom keeper" returned only the 2026-10-18 Article [[https://x.com/BrianRoemmele/status/2111863918801060139][The Paper Search Engine]] (an Otlet card index plus an AI Librarian). The search appears to cover recent posts only, so older SaveWisdom posts are probably missing from the index, not absent from X. [gap] |
+| Paywall | Most Executive essays are not public. Re-run 02-infrastructure/procedures/RoemmeleEssayCaptureWorkflow.org once George's subscription is restored. |
+
+* 3. SaveWisdom: what, how, status, tech
+Sources: [[https://savewisdom.org/][SaveWisdom.org]], [[https://savewisdom.org/the-1000-word-save-wisdom-questions/][The 1000 Save Wisdom Questions]], [[https://savewisdom.org/wp-content/uploads/2025/02/SaveWisdomQuestions-NEW-1.pdf][1000 Questions PDF v7.0]].
+
+| Aspect | Finding (savewisdom.org) |
+|--------+--------------------------|
+| What | A mission to preserve every person's wisdom "for you, your family or the world." With permission, it aims at a Teilhard de Chardin "Noosphere". |
+| Method | Up to 1,000 questions in categories (Category 1: Childhood, Family & Parenting, Q1-100, and so on). Record alone, for example in a car or a closet. State the question, pause, then answer at length. Emotion counts as data. |
+| Hardware | Any offline voice memo device ("many are below $50"). The site favors an iFLYTEK fully offline recorder with transcription (about $200 on sale, per the site) and urges never storing recordings on a cloud-linked device. Device links are Amazon affiliate links. |
+| AI step | SD-card audio goes to local speech-to-text, which feeds a private local model. A voice model is optional. Step-by-step "forthcoming articles" are promised. No public toolkit found. [status: not shipped, as far as public sources show] |
+| License | Free for personal use. Not allowed in commercial works sold directly or by subscription. |
+| Collaborators | OSV (osv.llc) reported a collaboration in its "Wisdom Unleashed" newsletter. Its blog page now returns 404. |
+
+* 4. Lessons Learned programs
+| Program | Essentials |
+|---------+------------|
+| Center for Army Lessons Learned (CALL) | Uses the OIL model: Observations (conditions), Insights (issues), Lessons (solutions). OIL "do not constitute lessons learned" until they change behavior or DOTMLPF. Collection is active (embedded teams, AARs) and passive (submissions). The Quick-Fire/Vantage platform adds generative-AI search and summaries. 2025 guidance on CamoGPT and NIPR GPT stresses SME validation. |
+| Marine Corps Center for Lessons Learned (MCCLL) / MCLLS | Governed by MCO 3504.1. Runs an annual Collection Campaign Plan (FY25: MARADMIN 424/24) with embedded analysts, and each collection ends in a final report. The 1990s MCLLS software was the baseline for JLLIS. |
+| Navy Lessons Learned Information System (NLLIS) | The Navy's instance of JLLIS, in classified and unclassified versions. CAC holders self-register. |
+| Joint Lessons Learned Program (JLLP) / JLLIS | Five phases: discovery, validation, resolution, evaluation, dissemination. Governed by CJCSI 3150.25H (2021, Change 1 2024) and CJCSM 3150.25C (2023). JLLIS is the shared system across the services. [Air Force-specific details not verified] |
+| NASA LLIS + APPEL Knowledge Management | An agency-wide reviewed repository (collect, record, disseminate, apply). The NASA OIG (IG-12-012) found it underused. A 2025 Knowledge Continuity guide covers departing experts: interviews, video capture, shadowing and continuity books. |
+| DOE Lessons Learned (DOE-HDBK-7502-95) | Site-level programs linked into DOE-wide electronic sharing, with lessons fed into work planning. |
+| CDC | No specific CDC program page was verified this session (cdc.gov blocked automated checks). [unverified] |
+| AI era: Army VICTOR (2026-08-05) | A mobile-first AI platform from Combined Arms Command that connects doctrine and lessons-learned silos into synthesized answers. An initial cohort began in Aug 2026, with a force-wide launch targeted for fall 2026. |
+
+** Similarities and differences with personal wisdom capture
+| Dimension | Lessons Learned | SaveWisdom-style | What to borrow |
+|-----------+-----------------+------------------+----------------|
+| Unit of capture | An observation tied to an event (AAR) | An answer to a life question | Tag each answer as an observation with date, context and narrator |
+| Tacit knowledge | Embedded collectors interview people | The narrator talks alone, unprompted | Add an optional interviewer follow-up pass for experts |
+| Validation | SMEs validate before anything becomes a lesson | None. The narrator's truth is the point. | Verify facts (dates, names), keep opinions verbatim, and have the narrator review the transcript (OHA practice) |
+| Purpose | Change doctrine and training | Legacy, family, personal AI | An "expert edition" for retiring professionals that produces actionable lessons |
+| Dissemination | Controlled, often classified | Private, then family, then public only with consent | Tiered release with executor rules, mirroring Tsuioku's public/private split |
+| Known failure | Lessons observed but not learned (NASA OIG) | Recordings never transcribed, toolkit never shipped | Close the loop: every session yields an org node plus a reviewed summary |
+
+* 5. Businesses and services
+| Service | Offering | Pricing | Note |
+|---------+----------+---------+------|
+| [[https://www.storyworth.com/][StoryWorth]] | Weekly questions by email or text. Answers by email, phone or web. Hardcover book. 500+ question library. | "Starting at $59" (vendor page). $59-$199/yr tiers per third parties [unverified] | Cloud. A book, no AI. |
+| [[https://www.remento.co/][Remento]] | Weekly prompts with no app. "Speech-to-Story" AI turns answers into chapters. Hardcover with QR codes that play the audio. | $99 for year one plus a book. Renewal $99/yr or $12/mo. Extra books $69. | Recordings downloadable anytime. Shark Tank deal (Mark Cuban). |
+| [[https://support.storycorps.org/help-center/does-it-cost-anything-to-participate][StoryCorps]] | Free app and facilitated interviews, archived at the Library of Congress American Folklife Center | Free, with a suggested $50 donation. Organizational services, price not listed. | The model for consent and archiving |
+| [[https://www.afterlife.ai/hereafter-ai-pricing][HereAfter AI]] | AI interviewer with playback in the narrator's own voice | Was $3.99-$7.99/mo | Shutdown notice July 2026, per competitor Afterlife.ai (a biased source). MP3 export was Unlimited-tier only. |
+| [[https://eternos.life/][Eternos, now Uare.ai]] | "Human Life Model" individual AI built from voice, documents and conversation | $25 / $49 / custom per month [unverified] | eternos.life redirects to Uare.ai, which suggests a pivot |
+| Afterlife AI | Conversational persona with "Executor Lock" | Free build, then $14.99 or $29.99/mo (its own page) | HereAfter competitor. Claims are self-reported. |
+| [[https://www.telloom.co/services][Telloom]] | Professional family video interviews, remote or in person | $1,750 / $2,500 / $5,500 launch prices (standard $3,500 / $4,500 / $8,000), then $99/yr access | Legacy-video model |
+| [[https://familytreevideo.com/video-biography/][Family Tree Video]] | Video biographies | $875 for a raw Zoom interview, up to $8,400-$9,800 edited [unverified] | |
+| [[https://oralhistory.org/best-practices/][Oral History Association]] | Standards for consent, interview guides, preservation and narrator review | Free guidance. NPS cites human transcription at about $150-$200 per audio hour [unverified] | Quality benchmark |
+| [[https://hubbardconsulting.ai/][Hubbard Consulting]] | "Critical Role Capture" and tribal knowledge transfer | From about $4,500 per role [unverified] | Enterprise |
+| [[https://www.senaica.com/][Senaica]] | Expert knowledge to legacy | $5,000-$15,000 per expert [unverified] | Enterprise |
+| [[https://ks-agents.com/offboarding/][KS-Agents]] | AI exit interviews and offboarding knowledge extraction | €45 pilot, €175 for 5 sessions [unverified] | Enterprise, low end |
+| [[https://xboarding.ai/][Xboarding]] | Captures know-how before staff leave | $9 / $29 per month [unverified] | SaaS |
+
+*Positioning gap:* no service found combines offline capture, client-owned plain-text or org output, structured validation and an optional local AI. That combination is the SaveWisdom vision, and nobody has built the paid toolkit for it.
+
+* 6. Recommended Skills and Agents
+Influences:
+- Roemmele's "hire, don't build" and his Librarian Bot ([[https://x.ai/bot/HKZR4k_DCSzy2PSnkkE8v][template]]).
+- poteto's [[https://github.com/cursor/plugins/blob/main/pstack/README.md][pstack]], which favors skills over sprawl: /interrogate, /reflect, /correct, /recall.
+- xAI's Grok Bot templates.
+
+Rule of thumb: create a new bot only for a distinct job with its own permissions and data. Otherwise write a skill.
+
+** Skills
+These are cheap, versioned in 08-skills, and usable by any bot.
+
+| Skill | What it does | Pros | Cons |
+|-------+--------------+------+------|
+| wisdom-question-set | Maintains George's own license-clean question bank, with expert-edition variants. Records which SaveWisdom question inspired each item, without copying it. | Solves the license problem and can be reused | Real writing effort. Must avoid near-copies. |
+| wisdom-session-intake | Takes an SD-card dump, runs local Whisper on the T470s and writes one org-roam node per answer (question ID, date, narrator, audio link, verbatim text) | Local-first and Emacs-native. Extends tsuioku-file-intake. | Whisper is slow on the T470s CPU. Keep audio out of git (git-annex or external storage). |
+| oil-validation-pass | Separates facts to verify from opinions kept verbatim. Extracts observation, insight and lesson for the expert edition. Queues narrator review. | The rigor that differentiates the service | Can sanitize the narrator's voice, so keep it opt-in |
+| consent-and-release | Consent form, release tiers (private, family, public) and an executor clause, modeled on OHA and StoryCorps | Builds trust | Needs legal review. This brief is not legal advice. |
+| wisdom-keeper-build | Packages the corpus for local RAG (Withnail/hermes-pi). Voice cloning only with documented consent. | Delivers the Wisdom Keeper that Brian promised | Voice-clone fraud risk (FraudFighter angle). Fast-moving tech. |
+| export-and-exit | Always hands the client audio, transcripts and org/markdown/PDF on a USB drive | The direct lesson from HereAfter | No lock-in revenue. That is the point. |
+
+** Agents (bots)
+| Option | Role | Pros | Cons |
+|--------+------+------+------|
+| Lisbet Librarian (existing) plus the skills | Files wisdom nodes and runs the weekly Librarian audit | No new hire. Already scoped to Tsuioku. | Mixes client corpora with George's KB unless the repos are separate |
+| NEW Wisdom Interviewer bot | Sends weekly prompts, asks follow-ups and logs sessions | Matches what Remento and StoryWorth do. Own scoped permissions. | A cloud bot works against the offline ethos. Elders need a very simple channel, such as phone or SMS. |
+| NEW Wisdom Archivist (local, on Withnail) | Offline transcription, indexing and RAG on hermes-pi | Truest to SaveWisdom and George's local-first values | Hardware limits. More maintenance. |
+| Roberto the Record Ranger (existing) | Organizes the photos and documents that go with recordings | Already fits | Scope creep |
+| Gregorio (existing) | Market research, pricing and launch | A generalist already doing this work | None significant |
+| FraudFighter (existing) | Guards against voice-clone and elder-fraud risks and reviews consent | Natural fit for an elder audience | Needs a clear scope |
+| Librarian Bot (Roemmele template) | Audits standing rules across the bot team | Already planned in TsuiokuLibrarianBotPlan | Whether one bot can read the others' transcripts is unverified |
+
+** Recommendation
+1. Start with skills only.
+2. Pilot on George first, then on one elder. Use wisdom-question-set, wisdom-session-intake and export-and-exit, run by Lisbet and Gregorio.
+3. Hire a dedicated Wisdom Interviewer bot only when there is a second client.
+4. Keep client corpora in separate private repos, never in forgrok.
+5. Before charging anyone, ask Brian about licensing or collaboration through ReadMultiplex once the subscription is restored.
+
+* Links for deeper research
+Checked 2026-10-27. "bot-blocked" means the site returned 403 to automated checks, but its content was read through the fetch tool or search.
+
+** SaveWisdom and Roemmele
+- [[https://savewisdom.org/][SaveWisdom.org]]
+- [[https://savewisdom.org/the-1000-word-save-wisdom-questions/][The 1000 Save Wisdom Questions (page)]]
+- [[https://savewisdom.org/wp-content/uploads/2025/02/SaveWisdomQuestions-NEW-1.pdf][1000 Questions PDF v7.0]]
+- [[https://readmultiplex.com/2020/11/17/what-is-the-intelligence-amplifier-and-your-wisdom-keeper/][Intelligence Amplifier and Your Wisdom Keeper (2020)]]
+- [[https://readmultiplex.com/2026/02/02/you-have-5000-days-navigating-the-end-of-work-as-we-know-it-part-8-saving-your-wisdom/][5000 Days Part 8: Saving Your Wisdom]]
+- [[https://readmultiplex.com/forums/topic/introducing-the-save-wisdom-project-at-savewisdom-org/][Forum: Introducing The Save Wisdom Project]] (members)
+- [[https://x.com/BrianRoemmele/status/2111863918801060139][X Article: The Paper Search Engine (2026-10-18)]]
+
+** Agents, librarians and skills
+- [[https://x.ai/bot/HKZR4k_DCSzy2PSnkkE8v][Roemmele Librarian Bot template]]
+- [[https://arxiv.org/abs/2610.22273][Librarian Agents paper (arXiv 2610.22273)]]
+- [[https://librarian-agents.github.io/][Librarian Agents project site]]
+- [[https://github.com/cursor/plugins/blob/main/pstack/README.md][poteto pstack README]]
+- [[https://www.grokdir.com/articles/pstack-for-grok-bot][pstack for Grok Bot]]
+
+** Lessons Learned programs
+- [[https://www.globalsecurity.org/military/library/report/call/call_09-22-ch04.htm][CALL Handbook 09-22 (OIL process)]]
+- [[https://www.army.mil/CALL][Center for Army Lessons Learned]] (bot-blocked)
+- [[https://www.army.mil/article/294423/us_army_combined_arms_command_advances_ai_powered_knowledge_platform_victor][Army VICTOR AI knowledge platform]] (bot-blocked)
+- [[https://www.army.mil/article/273050/transforming_lessons_learned_quick_fires_role_in_the_armys_digital_ecosystem][Quick-Fire: Transforming Lessons Learned]] (bot-blocked)
+- [[https://www.army.mil/article/283601/enhancing_military_operational_effectiveness_through_the_integration_of_camo_and_nipr_gpt][CAMO and NIPR GPT integration]] (bot-blocked)
+- [[https://www.jcs.mil/Doctrine/Joint-Lessons-Learned/][Joint Lessons Learned Program]] (bot-blocked)
+- [[https://www.jcs.mil/Portals/36/Documents/Doctrine/jlld/cjcsm3150_25.pdf][CJCSM 3150.25A]] (bot-blocked)
+- [[https://www.marines.mil/News/Messages/Messages-Display/Article/3911528/fiscal-year-2025-marine-corps-lessons-learned-collection-campaign-plan-and-coll/][MCCLL FY25 Collection Campaign Plan]] (bot-blocked)
+- [[https://apps.dtic.mil/sti/html/tr/ADA576006/index.html][MCLLS User's Guide]] (bot-blocked)
+- [[https://ndupress.ndu.edu/Joint-Force-Quarterly/Joint-Force-Quarterly-79/Article/621147/lessons-about-lessons-growing-the-joint-lessons-learned-program/][JFQ 79: Lessons about Lessons]] (bot-blocked)
+- [[https://www.doncio.navy.mil/chips/ArticleDetails.aspx?ID=5022][CHIPS: Navy Lessons Learned Information System]] (timed out on check)
+- [[https://www.nasa.gov/learning-resources/for-professionals/appel-lessons-learned/][NASA Lessons Learned]]
+- [[https://www.nasa.gov/learning-resources/for-professionals/appel-knowledge-management/][NASA Knowledge Management]]
+- [[https://oig.nasa.gov/wp-content/uploads/2024/02/IG-12-012.pdf][NASA OIG review of LLIS (IG-12-012)]]
+- [[https://www.energy.gov/documents/doe-hdbk-7502-95-v1pdf][DOE-HDBK-7502-95 Lessons Learned]]
+- [[https://oralhistory.org/best-practices/][Oral History Association Best Practices]]
+
+** Businesses
+- [[https://www.storyworth.com/][StoryWorth]]
+- [[https://www.remento.co/][Remento]]
+- [[https://support.storycorps.org/help-center/does-it-cost-anything-to-participate][StoryCorps: does it cost anything?]]
+- [[https://www.afterlife.ai/hereafter-ai-pricing][HereAfter AI pricing and wind-down (competitor source)]]
+- [[https://eternos.life/][Eternos (redirects to Uare.ai)]]
+- [[https://www.telloom.co/services][Telloom services and pricing]]
+- [[https://familytreevideo.com/video-biography/][Family Tree Video: video biography]]
+- [[https://hubbardconsulting.ai/][Hubbard Consulting: Critical Role Capture]]
+- [[https://www.senaica.com/][Senaica]]
+- [[https://ks-agents.com/offboarding/][KS-Agents offboarding]]
+- [[https://xboarding.ai/][Xboarding]]
+
+** Tsuioku
+- [[https://github.com/gptix/forgrok][gptix/forgrok (Tsuioku public)]]
