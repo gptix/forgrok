@@ -21,4 +21,4 @@ Commits made with the shared global author were credited to the wrong bot. A per
 
 * Sources
 - George, 2026-10-27 12:46 PM ET, in Lisbet's chat: "any Bot on the team that pushes via git (permission to do this is NOT team-wide, but will be, for now, on a Bot by Bot basis) will use the git author of the form '<BOT_NAME> (for gptix)'"
-- [[id:ApprovalBeforeCommit][ApprovalBeforeCommit]] (draft)
+[[id:0d4bb96a-d26a-459c-8f80-d2ff513ea225][ApprovalBeforeCommit]]
