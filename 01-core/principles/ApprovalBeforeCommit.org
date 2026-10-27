@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       0d4bb96a-d26a-459c-8f80-d2ff513ea225
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: principles
+#+CREATED: [2026-10-27 Tue 08:00]
+#+LAST_MODIFIED: [2026-10-27 Tue 13:40]
+#+TITLE: Approval Before Commit
+#+NODE-NAME: ApprovalBeforeCommit
+#+FILETAGS: :tsuioku:git:agents:approval:
+#+DESCRIPTION: No agent commits or pushes to either Tsuioku repo without George's explicit approval of path, name, text, and push.
+
+* Rule
+- Default mode A: the agent drafts; George dry-runs with =C-u C-c n F=, finalizes with =C-c n F= (commits, no push), then pushes from Magit (=magit-status=, =P p=).
+- Mode B (agent commits) only after George approves path, NODE-NAME, and text. A push needs a separate approval.
+- Push permission is granted bot by bot, not team-wide; a one-time permission covers only the change it names.
+- Agents that commit use their own author name ([[id:747f93df-39a4-4c48-8699-9496888623cc][GitAuthorPerBot]]).
+- Review batches may go on a review branch, one commit per change; George accepts or rejects each in Magit before merging to main.
+- Agents only drop files in 00-inbox; Lisbet files them after George approves each batch.
+- Approvals come from George until he confirms a handoff.
+- Audits are read-only.
+
+* Why
+On 2026-10-26 an agent committed and pushed to a Tsuioku repo without being asked. This rule makes the gate explicit for every agent.
+
+* Sources
+- 08-skills/GenerateTsuiokuNodeText.org
+- 03-projects/tsuioku-librarian/TsuiokuLibrarianBotPlan.org ("Approval gate")
+- George, 2026-10-27, Lisbet's chat (push permission bot by bot; approval stays with George for now)
