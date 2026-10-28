@@ -1,0 +1,52 @@
+:PROPERTIES:
+:ID:       eaf33112-83b4-4d01-9486-1276c32b9fa1
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-projects
+#+CREATED: [2026-10-27 Tue 21:15]
+#+LAST_MODIFIED: [2026-10-27 Tue 21:15]
+#+TITLE: Improve Mom's Phones
+#+NODE-NAME: ImproveMomsPhones
+#+FILETAGS: :project:family:phone:landline:voip:
+#+DESCRIPTION: Project to give Mom (84, Atlanta) reliable home phone service that works indoors and during power outages.
+
+* Goal
+Give Mom a reliable home phone that works indoors despite poor cell reception, and keeps working during power outages.
+
+* Situation (as of 2026-10-27)
+- Mom: 84, Atlanta, retired public school teacher; USAA and AAA member.
+- Cell reception inside the house is terrible.
+- Has internet and TV, believed to be Comcast/Xfinity.
+- Uses an iPhone; its bill is believed bundled with the TV/internet bill (likely Xfinity Mobile — confirm).
+
+* Options investigated
+** 1. iPhone Wi-Fi Calling (first step, likely free)
+- Settings > Phone > Wi-Fi Calling. Calls route over home internet; full indoor coverage.
+- Xfinity Mobile supports it. Depends on internet and Wi-Fi being up.
+** 2. VoIP home line: Ooma Telo
+- Base plugs into the router; standard corded or multi-handset cordless phones plug into it.
+- Roughly $6–9/month in taxes and fees on the free tier.
+- Multi-handset DECT cordless set covers several rooms without extra wiring.
+** 3. Powerline adapters (e.g., Asoka PlugLink) — optional
+- Carry network over house wiring; useful only if the phone base must sit far from the router.
+- Not needed for extensions if a multi-handset cordless set is used.
+** 4. Cell signal booster (weBoost, Cel-Fi)
+- About $300–600 whole-home; needs usable signal outside the house.
+- Fallback if Wi-Fi Calling is unsatisfactory.
+** Age/affiliation discounts
+- Checked age, retired-teacher, USAA, and AAA angles; no decisive landline discount found. Revisit if pursuing a traditional carrier line.
+
+* Power-outage resilience
+- Put modem, router, and phone base on a small UPS (battery backup).
+- Keep one corded phone, or a cordless set whose base has battery backup.
+
+* Recommended plan
+1. Turn on Wi-Fi Calling on her iPhone; confirm carrier on the bill.
+2. Add Ooma Telo with a multi-handset cordless set (plus one corded phone).
+3. Put modem, router, and Ooma on a UPS.
+4. Consider a booster only if the above falls short.
+
+* Open items
+- [ ] Confirm the mobile carrier and bundle on Mom's bill.
+- [ ] Test Wi-Fi Calling.
+- [ ] Choose specific UPS, Ooma setup, and phones.
