@@ -8,7 +8,9 @@ When the operator says “Hello Grok! Please visit https://github.com/gptix/forg
 
 Use `08-skills/InspectGitHubState.org` for any later claim about what is or is not on GitHub. Exact-path fetch only; never treat a summarized tree as proof of absence.
 
-**Last updated:** 2026-09-17
+**Read first, update after.** Every agent (a plain Grok chat or a Grok Bot) reads this file and **STATUS.md** before working, and proposes a STATUS.md update after significant work (Tsuioku's version of pinned project pages). Everything needed is in this public repo; no access to any bot's computer is assumed.
+
+**Last updated:** 2026-11-02
 
 ---
 
@@ -19,7 +21,9 @@ Use `08-skills/InspectGitHubState.org` for any later claim about what is or is n
 - **Canonical working copy:** ThinkPad T470s 20HF-0066US (hostname `omarchy`, user `gptix`, Omarchy 4.0.3) at `~/local-side/`
 - **Second working copy:** ThinkPad X230 (`gt-thinkpad-x230`, user `gt`) at `~/local-side/` — pull from `github-side` before editing
 - Sync hub: GitHub `main` via remote name `github-side` (`https://github.com/gptix/forgrok.git`)
-- Local agent: **Withnail** (CEO/COO) running on hermes-pi (Raspberry Pi 5 8GB) via Hermes Agent + Telegram
+- Grok Bot team: **Gregorio** (CEO, coordinates the team); **Lisbet the Librarian** (daily audit, files Tsuioku material after approval); Dora (document filing), Della (deadlines), Quinn (open-question queue), Penny (payments tracking), Milo (forwarded mail), Felix (fraud watch), Eva (case management), Roberto (public-records research); Fafnir (vehicle repair project), Alice (auto insurance claims), Velma (VA benefits paperwork). Roster: `03-projects/tsuioku-librarian/TsuiokuLibrarianBotPlan.org`
+- Local agent: **Withnail** on hermes-pi (Raspberry Pi 5 8GB) via Hermes Agent + Telegram, outside Grok Bot. Runtime: status unverified as of 2026-11-02
+- Private companion repo: `tsuioku-private` (separate; never copy, quote, or summarize its content here)
 - Primary editor: **Emacs** (never suggest nano or vi)
 - Preference: local-first / near-airgapped operation; Telegram is the main external channel
 - Two-machine protocol: `02-infrastructure/procedures/TsuiokuTwoMachineSync.org`
@@ -56,15 +60,16 @@ Structural changes are made on the T470s canonical copy, committed in small logi
 
 **Detailed living snapshot:** **STATUS.md**
 
-High-level summary (2026-09-17):
+High-level summary (2026-11-02):
 
-- **Canonical KB host is the T470s.** X230 is a second working copy. Sync is git via `github-side` only.
+- **Canonical KB host is the T470s.** X230 is a second working copy. Sync is git via `github-side` only. `main` was rewritten 2026-10-29 (source cleanup); re-sync older clones before committing (see STATUS.md).
 - T470s Emacs (`~/.config/emacs/init.el`) has Magit (`C-c m`) and `C-c n F` via `forgrok-org-helpers.el`. `gh` auth as `gptix` works on the T470s. Cutover note: `03-projects/omarchy/Emacs-to-Omarchy/T470sEmacsOmarchySetup.org`
-- Withnail / Hermes on hermes-pi last documented as operational (Hermes 0.19.0, local `qwen2.5-3b-64k`, persistent SOUL, Telegram `@WithnailRobot`). Runtime not re-verified this session.
-- Numbered knowledge-base layout is authoritative in STRUCTURE.md; orientation files synchronized 2026-08-31; BOOT/STATUS cutover pulse 2026-09-17
-- **Skill System** active under `08-skills/`. Live skills: CaptureLessonLearned, CreateNewSkill, GenerateTsuiokuNodeText, InspectGitHubState, PiWhisperTranscription, RubyResearchLoop, SkillsIndex, UpdateProjectStatus, VoightKampffSessionClose
+- **Grok Bot team** (since 2026-10-09) led by Gregorio; Lisbet runs a daily standing-instruction and public-versus-private audit (`TsuiokuLibrarianBotPlan`).
+- Withnail / Hermes on hermes-pi: status unverified as of 2026-11-02 (last documented operational 2026-08-31; newest baseline in repo 2026-07-28, Hermes 0.19.0).
+- Numbered knowledge-base layout is authoritative in STRUCTURE.md
+- **Skill System** under `08-skills/`. Live skills: CaptureLessonLearned, CreateNewSkill, GenerateTsuiokuNodeText, InspectGitHubState, PiWhisperTranscription, RubyResearchLoop, SkillsIndex, UpdateProjectStatus, VoightKampffSessionClose. Grok Bot team workflow skills (outside the repo): tsuioku-node-proposal (draft nodes in finalize-helper format), tsuioku-file-intake (place and dedupe `00-inbox` drops), tsuioku-two-machine-sync-checklist (Magit sync checklist)
 - Voight-Kampff Protocol is at **v4.1+**; the executable skill is the source of truth
-- Roemmele / 5000 Days essays **001–008** ingested on GitHub (`008` = Saving Your Wisdom, 2026-08-25)
+- **Read Multiplex / Roemmele summaries:** this public repo holds only our own summaries, indexes, and links. Full copyrighted essays are never committed here (cleanup 2026-10-29). Essays 001–008 processed; 009+ continue as summaries plus links
 - Private AI Agent Consulting underway (Atlanta professional-services segments drafted 2026-08-22)
 - EmacsObsidianSkin project initiated 2026-08-23
 - Tarot Today identification MVP lives on Hugging Face; paid-vision retest still blocked on OpenRouter credits as of last STATUS pulse
@@ -87,6 +92,9 @@ See **STATUS.md** for the full operational dashboard and open items.
 | **Executable V-K skill (source of truth)** | 08-skills/VoightKampffSessionClose.org |
 | Skills index | 08-skills/SkillsIndex.org |
 | Status-update skill | 08-skills/UpdateProjectStatus.org |
+| Approval gate for agents | 01-core/principles/ApprovalBeforeCommit.org |
+| Per-bot git author | 01-core/principles/GitAuthorPerBot.org |
+| Bot team, roster, daily audit | 03-projects/tsuioku-librarian/TsuiokuLibrarianBotPlan.org |
 | New-node text format | 08-skills/GenerateTsuiokuNodeText.org |
 | Skill System project | 03-projects/skill-system-improvement/ |
 | Master memory mirror | 01-core/memory/joji-grok-project-memory.org |
@@ -108,6 +116,13 @@ See **STATUS.md** for the full operational dashboard and open items.
 - When giving shell commands, label the machine: **T470s**, **X230**, or **hermes-pi**.
 - Prefer `C-c n F` on the T470s. X230 finalize is allowed only after a pull from `github-side`.
 - Skills for knowledge-base and project tasks live under `08-skills/` and should be preferred over re-deriving processes from scratch.
+
+**Agent rules (all agents, short form):**
+
+- **Approval before commit/push.** Default: the agent drafts; George finalizes with `C-c n F` and pushes from Magit. An agent commits only after George approves path, NODE-NAME, and text; a push needs its own approval, granted bot by bot.
+- **Per-bot git author:** `<BOT_NAME> (for gptix)`, set per command.
+- **Agents drop files only in `00-inbox/`.** Lisbet files them after George approves.
+- **Public vs private.** Nothing personal, legal, financial, medical, or copyrighted full text goes in this repo; such material belongs in `tsuioku-private`.
 
 ---
 
@@ -143,3 +158,4 @@ Keep `BOOT.md` short.
 - When the top-level structure changes, update STRUCTURE.md and point here
 - Two-machine mechanics live in `TsuiokuTwoMachineSync`, not here
 - Do not put secrets or long logs in this file
+- Read first, update after: agents read BOOT + STATUS at session start and propose a dated STATUS.md line after significant work (approval rules above apply)
