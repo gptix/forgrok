@@ -1,0 +1,57 @@
+:PROPERTIES:
+:ID: b686b7fd-53f3-46ef-ac63-9187c1be5eeb
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-projects
+#+CREATED: [2026-11-06 Fri 09:30]
+#+LAST_MODIFIED: [2026-11-06 Fri 09:30]
+#+TITLE: Roemmele X 2026-11-05: John Nosta tribute: obituary, Borrowed Mind lecture, TEDx
+#+NODE-NAME: RoemmeleX20261105JohnNostaTribute
+#+FILETAGS: :roemmele:x_posts:summary:memorial:biography:medicine:ai:
+#+DESCRIPTION: Private summary of Brian Roemmele's X posts of 2026-11-05 on his tribute to John Nosta (aortic aneurysm), career notes he states, The Borrowed Mind lecture link, a TEDx link, and a reply to @joelcomm. Do not publish.
+
+* Sources
+- Author: Brian Roemmele (@BrianRoemmele)
+- Date: 2026-11-05
+- Posts:
+  - [[https://x.com/BrianRoemmele/status/2118541216036057176][10:09 PM EST, My dear friend John Nosta has passed away. This…]] (obituary, long post)
+  - [[https://x.com/BrianRoemmele/status/2118547809481949277][10:35 PM EST, One of John Nosta’s great lectures on his new…]] (Borrowed Mind lecture)
+  - [[https://x.com/BrianRoemmele/status/2118551466466316726][10:50 PM EST, John Nosta’s TEDx talk. It was brilliant.]] (TEDx talk)
+  - [[https://x.com/BrianRoemmele/status/2118555343437574643][11:05 PM EST, reply @joelcomm: "Joel, that you. He was such a brilliant mind…"]] (reply @joelcomm)
+- How read: full text via the X API, including note_tweet full text on the obituary; lecture/TEDx videos, images and t.co destinations were not opened.
+
+* Summary
+A personal tribute: he says his dear friend John Nosta has died following an
+aortic aneurysm, and offers prayers for Amy and children Katie, Annabel, Jack,
+and the wider family. The long post sketches a path he says he knew from their
+talks and the public record: university work at sixteen (advanced Harvard summer
+program; father an electrical engineer in Perth Amboy who wanted a doctor);
+service as president of the Perth Amboy First Aid Squad and paramedic training
+among Spanish-speaking neighbors; a self-designed biophysics concentration at
+Boston University; a research-associate year at Harvard Medical School on cell
+volume, infarction, arrhythmias and sudden cardiac death under mentors including
+Thomas Smith; undergraduate-era papers in American Journal of Physiology,
+Circulation, and the American Journal of Cardiology around 1981; declining an
+MD/PhD path to finish the BU degree and move into writing and translating science.
+He says Nosta wrote more than a thousand pieces on technology, medicine, and the
+mind, and that The Borrowed Mind carried the same insistence that human thought
+stays the author's even when tools grow fluent. He calls him a national-treasure
+genius and closes with rest in peace.
+
+Follow-ups link one of Nosta's lectures on The Borrowed Mind and a TEDx talk
+("brilliant"); neither media was opened here. A reply to @joelcomm restates that
+he was a brilliant mind and a good friend.
+
+* Key claims
+- Cause of death: aortic aneurysm (as stated in the post).
+- Career milestones above are as he recounts them; not independently verified here.
+- "More than a thousand" published pieces (his figure).
+
+* Practical takeaways
+- None operational. File as a memorial node only; do not invent further biography.
+- If George later wants a public mention of Nosta via Brian's posts, use only what
+  this node already states and keep it private until George asks otherwise.
+
+* Caution
+- Respectful secondhand memorial; lecture and TEDx links not watched.
+- Biography beyond the post was not researched.

@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID: e8aa68fc-9c63-42cf-a68a-b4e1fbb33578
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-projects
+#+CREATED: [2026-11-06 Fri 09:30]
+#+LAST_MODIFIED: [2026-11-06 Fri 09:30]
+#+TITLE: Roemmele X 2026-11-05: Laya now on all his major Grok Bots; how-to article soon
+#+NODE-NAME: RoemmeleX20261105LayaOnAllMajorBots
+#+FILETAGS: :roemmele:x_posts:summary:ai:grok_bot:laya:tokens:self_promotion:
+#+DESCRIPTION: Private summary of Brian Roemmele's X posts of 2026-11-05 claiming he now runs Laya on all major Grok Bots with significant savings, teasing a how-to article, plus a confirming reply. Do not publish.
+
+* Sources
+- Author: Brian Roemmele (@BrianRoemmele)
+- Date: 2026-11-05
+- Posts:
+  - [[https://x.com/BrianRoemmele/status/2118401836868915431][12:55 PM EST, I now use Laya on all my major Grok…]] (Laya on all major bots)
+  - [[https://x.com/BrianRoemmele/status/2118469677643153905][5:25 PM EST, reply @fergusonJC: "Correct. Thank you."]] (reply @fergusonJC: Correct)
+- How read: full text via the X API; the quoted post, article teaser link and any media were not opened.
+
+* Summary
+He says he now uses Laya on all his major Grok Bots, that the savings are "rather
+significant," and that an ultimate how-to article for Laya + Grok Bot is coming
+soon as a Read Multiplex piece. A reply to @fergusonJC simply confirms "Correct."
+
+* Key claims
+- Laya deployed across his major bots with significant token/cost savings (his
+  assertion; no numbers here).
+- How-to article not yet published in this day's posts.
+
+* Practical takeaways
+- Continues the Nov 3 Laya local-decision-layer thread: still promotional until
+  George sees a concrete how-to and any local/hermes-pi fit.
+- Useful reminder to watch CheckSubscriptionUsage; do not adopt Laya blind from
+  this teaser alone.
+
+* Caution
+- Promotional teaser; savings magnitude unverified; article body not present.

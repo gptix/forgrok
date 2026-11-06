@@ -1,0 +1,52 @@
+:PROPERTIES:
+:ID: 7697d201-176d-461e-b48b-914b36ed4aa8
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-projects
+#+CREATED: [2026-11-06 Fri 09:30]
+#+LAST_MODIFIED: [2026-11-06 Fri 09:30]
+#+TITLE: Roemmele X 2026-11-05: NEW GROK BOT: Zoom / Meet / Teams meeting companion
+#+NODE-NAME: RoemmeleX20261105ZoomMeetingCompanionBot
+#+FILETAGS: :roemmele:x_posts:summary:ai:grok_bot:meetings:templates:self_promotion:
+#+DESCRIPTION: Private summary of Brian Roemmele's X posts of 2026-11-05 announcing a Zoom/Google Meet/Teams companion Grok Bot that listens, notes, tracks decisions, and replies in text only (no speak yet). Do not publish.
+
+* Sources
+- Author: Brian Roemmele (@BrianRoemmele)
+- Date: 2026-11-05
+- Posts:
+  - [[https://x.com/BrianRoemmele/status/2118524832568713655][9:04 PM EST, NEW GROK BOT! Grok Bot Can Zoom Now! Grok…]] (long launch post)
+- How read: full text via the X API, including note_tweet full text; the template link, any demo media and t.co destinations were not opened.
+
+* Summary
+He announces that Grok Bot can join Zoom, Google Meet, and Microsoft Teams as a
+participant that listens, records structure, and responds only in text—"far more
+than a transcriber," an active companion. His showcase bot: schedules one-time or
+recurring attendance; takes notes; tracks decisions and action items; answers
+questions in its own chat thread; can post into meeting chat if told; shows an
+avatar on the camera tile by default and does not speak (listen-only or camera-off
+on request). He says he sends the Zoom link to a dedicated Zoom Meeting Companion
+bot for standing product reviews, keeps its chat on a second screen to flag items
+without owners, and gets a structured end-of-call summary (notes by topic,
+decisions, next-steps table with owners/deadlines) that stays in the bot library
+for later questions without reopening the recording. Once calendar-connected, it
+can pull Zoom URLs itself for recurring or one-off meetings. He stresses that the
+bot cannot speak yet, so spoken answers still fall to him, and claims meeting-flow
+context helps the bot guide him better afterward.
+
+* Key claims
+- Joins Zoom / Meet / Teams; text-only replies; no spoken voice yet (his description).
+- Calendar-aware join and structured post-meeting summaries (advertised; template not opened).
+- Meeting-context claim is his product pitch, not measured here.
+
+* Practical takeaways
+- Relevant to George's fleet if he wants meeting notes without a human scribe:
+  keep drafts-only / no-send into meeting chat unless he explicitly approves;
+  disclosure that a bot is on the call; Felix-style vet of any imported template.
+- Useful pattern for Alice/Velma/Fafnir project syncs only if George wants it;
+  hermes-pi / local-first habits still prefer human review of action items.
+- Nothing to import today.
+
+* Caution
+- Heavily promotional; capabilities as advertised, not tested here.
+- Joining others' meetings raises consent and disclosure issues not spelled out.
+- "No speak yet" is explicit; do not assume voice participation.

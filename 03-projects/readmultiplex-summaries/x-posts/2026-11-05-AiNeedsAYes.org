@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID: 89d47daa-46b0-4cd7-aa5d-8b6a6b9db994
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-projects
+#+CREATED: [2026-11-06 Fri 09:30]
+#+LAST_MODIFIED: [2026-11-06 Fri 09:30]
+#+TITLE: Roemmele X 2026-11-05: AI already knows the next step; it just needs a yes
+#+NODE-NAME: RoemmeleX20261105AiNeedsAYes
+#+FILETAGS: :roemmele:x_posts:summary:ai:ux:agency:opinion:
+#+DESCRIPTION: Private summary of Brian Roemmele's X posts of 2026-11-05 quote-post arguing AI already books/lights/texts and the product game is making the user's yes easy. Do not publish.
+
+* Sources
+- Author: Brian Roemmele (@BrianRoemmele)
+- Date: 2026-11-05
+- Posts:
+  - [[https://x.com/BrianRoemmele/status/2118400836686753948][12:51 PM EST, In 1876 the telephone rang and you had to…]] (quote post)
+- How read: full text via the X API; the quoted @lazyapprove post was not opened.
+
+* Summary
+He contrasts 1876 (walk to the ringing telephone) with AI that already knows the
+next step—Uber booked, lights on, text sent—and says it just needs a yes;
+"Making that yes easy is the whole game." Quoted from @lazyapprove.
+
+* Key claims
+- Product/UX opinion; no new capability announced.
+
+* Practical takeaways
+- Aligns with George's existing drafts-only / explicit-approval rules for bots
+  (Felix, Penny, mail sends): keep the yes human-gated even when the next step
+  is obvious.
+- Nothing to build today.
+
+* Caution
+- Secondhand quote-post; quoted source not opened.

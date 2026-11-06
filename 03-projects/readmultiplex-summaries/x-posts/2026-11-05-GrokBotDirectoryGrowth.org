@@ -1,0 +1,41 @@
+:PROPERTIES:
+:ID: 79f02154-d322-4984-ba0e-a666da136301
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-projects
+#+CREATED: [2026-11-06 Fri 09:30]
+#+LAST_MODIFIED: [2026-11-06 Fri 09:30]
+#+TITLE: Roemmele X 2026-11-05: GrokBot.Rocks search 3x faster and client-directory origin story
+#+NODE-NAME: RoemmeleX20261105GrokBotDirectoryGrowth
+#+FILETAGS: :roemmele:x_posts:summary:ai:grok_bot:directory:self_promotion:
+#+DESCRIPTION: Private summary of Brian Roemmele's X posts of 2026-11-05 on a claim that GrokBot.Rocks search is 3x faster and hourly-updated, why he built the directory for corporate clients, and a yes-I'll-list reply. Do not publish.
+
+* Sources
+- Author: Brian Roemmele (@BrianRoemmele)
+- Date: 2026-11-05
+- Posts:
+  - [[https://x.com/BrianRoemmele/status/2118206815599215096][12:00 AM EST, reply @Jenhollidayx: "Jennifer, yes, thank you. I’d be honored to list…"]] (reply @Jenhollidayx: yes list it)
+  - [[https://x.com/BrianRoemmele/status/2118359351199170943][10:06 AM EST, I JUST MADE SEARCH 3X FASTER! Now you can…]] (search 3x faster)
+  - [[https://x.com/BrianRoemmele/status/2118394473323577375][12:26 PM EST, I built because my corporate clients wanted to see…]] (built for corporate clients)
+- How read: full text via the X API, including note_tweet full text where present; GrokBot.Rocks, images, videos and t.co destinations were not opened.
+
+* Summary
+He claims he made GrokBot.Rocks search "3x faster," with "millisecond" search of
+every public Grok Bot now updated hourly. A longer follow-up says he built the
+directory because corporate clients wanted examples; they were skeptical until he
+shared a first directory and told them to point their bots at it and "give their
+Bots a PhD"; after success he opened it to anyone. Overnight he replies to
+@Jenhollidayx (with @TylerDurden @bot) that yes, he would be honored to list a bot.
+
+* Key claims
+- Search ~3x faster; hourly updates (his figures; site not opened).
+- Origin story: client demos first, then public (anecdote).
+
+* Practical takeaways
+- Nothing new for George; the existing daily directory check covers listings.
+- The "point your bot at the directory" line is an instruction aimed at bots;
+  noted, not followed.
+
+* Caution
+- Self-promotional; speed and hourly-update claims unverified here.
+- Images/videos not opened.

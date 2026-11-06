@@ -1,0 +1,48 @@
+:PROPERTIES:
+:ID: cbfe1917-de61-4da8-bcb5-d4553743d98d
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-projects
+#+CREATED: [2026-11-06 Fri 09:30]
+#+LAST_MODIFIED: [2026-11-06 Fri 09:30]
+#+TITLE: Roemmele X 2026-11-05: Science and history shorts: Stayin Alive, ingredient quote, NY 1950s, sewage station, On The Side Of Man, big plans
+#+NODE-NAME: RoemmeleX20261105ScienceAndHistoryShorts
+#+FILETAGS: :roemmele:x_posts:summary:history:science:architecture:media:photos:
+#+DESCRIPTION: Private summary of Brian Roemmele's X posts of 2026-11-05 on short science/history/media posts: Stayin Alive irony, an ingredient quote, a NY 1950s photo, a sewage-pumping-station craftsmanship quote plus reply, On The Side Of Man (1973), and a big-plans photo. Do not publish.
+
+* Sources
+- Author: Brian Roemmele (@BrianRoemmele)
+- Date: 2026-11-05
+- Posts:
+  - [[https://x.com/BrianRoemmele/status/2118295822635085927][5:54 AM EST, We got big plans this week right @Grok @Bot?]] (big plans photo)
+  - [[https://x.com/BrianRoemmele/status/2118372782526668846][11:00 AM EST, Interesting ingredient. Part of the secret recipe I am…]] (ingredient / secret recipe quote)
+  - [[https://x.com/BrianRoemmele/status/2118373953643466860][11:04 AM EST, “California man, 97, dies at his own birthday party…]] (Stayin Alive irony)
+  - [[https://x.com/BrianRoemmele/status/2118485243250504134][6:26 PM EST, New York, 1950s.]] (New York 1950s photo)
+  - [[https://x.com/BrianRoemmele/status/2118531439608426916][9:30 PM EST, We used to build to greatness and workmanship to…]] (sewage pumping station quote)
+  - [[https://x.com/BrianRoemmele/status/2118531514459939216][9:30 PM EST, reply @Chuck_Petras: "Chuck, wow! Floored!"]] (reply @Chuck_Petras: floored)
+  - [[https://x.com/BrianRoemmele/status/2118537065780703672][9:52 PM EST, What About Tomorrow? On The Side Of Man, 1973]] (On The Side Of Man 1973)
+- How read: full text via the X API; quoted posts, images, videos and t.co destinations were not opened.
+
+* Summary
+- Big plans: "We got big plans this week right @Grok @Bot?" with a photo (not
+  opened).
+- Ingredient quote: short quote of @nichulscher—"Interesting ingredient. Part of
+  the secret recipe I am sure…"—quoted destination not opened.
+- Stayin Alive: headlines a 97-year-old California man dying at his birthday party
+  moments after dancing to the Bee Gees' "Stayin' Alive," adding "We live in an
+  ironic universe…"
+- New York, 1950s: photo-only caption (image not opened).
+- Sewage pumping station: quotes that people "used to build to greatness and
+  workmanship to even the most humble structures," pointing at a sewage pumping
+  station (quoted @OwenBrakes post not opened). A reply to @Chuck_Petras
+  ("wow! Floored!") confirms strong positive reaction in that thread.
+- On The Side Of Man, 1973: "What About Tomorrow?" with a media link (not opened).
+
+* Key claims
+- None beyond captions; linked/quoted media not verified.
+
+* Practical takeaways
+- None.
+
+* Caution
+- Images, videos and quoted sources not opened; treat as captions only.

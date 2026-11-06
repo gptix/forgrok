@@ -1,0 +1,68 @@
+:PROPERTIES:
+:ID: 9d0db4c1-5699-442f-8172-c97384690f74
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-projects
+#+CREATED: [2026-11-06 Fri 09:30]
+#+LAST_MODIFIED: [2026-11-06 Fri 09:30]
+#+TITLE: Roemmele X 2026-11-05: Oulu study: vibration + nitric oxide and brain protein efflux (X article)
+#+NODE-NAME: RoemmeleX20261105OuluVibrationNitricOxide
+#+FILETAGS: :roemmele:x_posts:summary:science:medicine:brain:research:not_medical_advice:
+#+DESCRIPTION: Private summary of Brian Roemmele's X posts of 2026-11-05 on his X article summarizing the University of Oulu Nature Communications paper on vasomechanic treatment (nitroglycerin + whole-body vibration) and two promo quotes. Do not publish.
+
+* Sources
+- Author: Brian Roemmele (@BrianRoemmele)
+- Date: 2026-11-05
+- Posts:
+  - [[https://x.com/BrianRoemmele/status/2118354777210040768][9:48 AM EST, Vibration, Nitric Oxide, and Brain Fluid Clearance: What the…]] (X article)
+  - [[https://x.com/BrianRoemmele/status/2118354984823906323][9:49 AM EST, New brain research: Vibration, Nitric Oxide, and Brain Fluid…]] (promo quote Magic Fingers)
+  - [[https://x.com/BrianRoemmele/status/2118356092086521943][9:53 AM EST, NEW RESEARCH: Alzheimer's breakthrough that used vibration beds and…]] (promo quote Alzheimer's breakthrough framing)
+- How read: full X-article body via article.plain_text on the API post (also saved at oulu-article.txt); promo posts via the X API; images and primary Nature/New Scientist pages were not opened beyond his article text.
+
+* Summary
+His X article "Vibration, Nitric Oxide, and Brain Fluid Clearance: What the New
+Oulu Study Actually Shows" opens with a 1965 Magic Fingers motel vignette, then
+immediately warns: research coverage only, not medical advice; sublingual
+nitroglycerin can sharply lower blood pressure and must not be used outside
+clinical supervision; neither vibrating mattresses, nitric oxide donors, nor
+light-and-sound devices are shown here to treat, prevent, or reverse Alzheimer's.
+
+He summarizes a 3 Nov 2026 open-access Nature Communications paper (Tuunanen et
+al., senior author Vesa Kiviniemi): randomized crossover in 29 healthy adults
+(mean age ~44). Arms included combined sublingual glyceryl trinitrate (0.5 mg)
+plus Piezo1-targeted whole-body vibration (~37–40 min, Neurosonic mattress,
+~22–50 Hz), vibration alone, and a nitric-oxide-only subset. After hemodilution
+correction, combined-session blood rises included Aβ40, Aβ42 (~35% mean rise as
+press coverage framed it), and GFAP; larger proteins (NfL, p-tau181) did not
+change significantly. BP fell ~15%; the drop size correlated with protein rises;
+older volunteers showed stronger signals. T2 dark-fluid MRI showed whole-brain
+signal intensity down ~4.6%, extracerebral CSF volume up ~6.5 ml, and posterior
+venous-sinus signal changes correlating with circulating Aβ—read by the authors
+as consistent with transient redistribution of soluble brain proteins toward
+venous blood, not as disease modification. Combination affected a wider imaging
+volume than either stimulus alone; a sham rest cohort did not match the pattern.
+Mild headaches/nausea occurred; one discontinuation after vomiting; no serious
+adverse events under hospital conditions. Limits he stresses: no placebo pill;
+healthy volunteers only; no cognition, plaque, or prevention endpoints; DIY
+explicitly unsafe (Kiviniemi warning on hypotension).
+
+Two short promo posts quote the article—one with the Magic Fingers joke, one
+headlined "Alzheimer's breakthrough"—which is harsher marketing than the article's
+own careful bottom line.
+
+* Key claims
+- Acute biomarker/MRI signals in healthy adults under supervision (as the paper
+  and his article frame them); not proof of Alzheimer's treatment or prevention.
+- Combined NO + vibration > either alone on spatial MRI extent (per his summary).
+- Primary paper, New Scientist, Oulu/Newswise, and Neurosonic pages cited in the
+  article were not independently opened here.
+
+* Practical takeaways
+- None clinical. Do not experiment with nitroglycerin or vibration protocols.
+- Useful only as a carefully hedged research note next to his prior LED/
+  entrainment writing; keep the medical disclaimer if ever referenced.
+
+* Caution
+- Not medical advice (his disclaimer and ours).
+- Promo posts oversell "Alzheimer's breakthrough"; prefer the article body.
+- Figures are as his article reports them; primary paper not re-read here.

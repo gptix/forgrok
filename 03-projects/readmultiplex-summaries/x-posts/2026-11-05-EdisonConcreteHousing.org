@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID: 2489bd70-2ad3-471d-b77c-d5acfbd153c4
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-projects
+#+CREATED: [2026-11-06 Fri 09:30]
+#+LAST_MODIFIED: [2026-11-06 Fri 09:30]
+#+TITLE: Roemmele X 2026-11-05: Edison's 1907 cast-concrete housing plan and why it failed
+#+NODE-NAME: RoemmeleX20261105EdisonConcreteHousing
+#+FILETAGS: :roemmele:x_posts:summary:history:housing:technology:edison:
+#+DESCRIPTION: Private summary of Brian Roemmele's X posts of 2026-11-05 on his long post about Edison's single-pour concrete homes, mold cost, and public rejection. Do not publish.
+
+* Sources
+- Author: Brian Roemmele (@BrianRoemmele)
+- Date: 2026-11-05
+- Posts:
+  - [[https://x.com/BrianRoemmele/status/2118299974806942059][6:10 AM EST, Thomas Edison Solved Housing But The Works Was Not…]] (long post)
+- How read: full text via the X API, including note_tweet full text; images were not opened.
+
+* Summary
+He retells Thomas Edison's early-1900s plan for affordable housing: reusable
+cast-iron molds to pour complete concrete homes (including bathtubs) in about six
+hours via the Edison Portland Cement Company, pitched against crowded, fire-prone
+tenements. As he frames it, the mold for one design used more than 2,300
+interlocking nickel-plated iron pieces; contractors needed roughly $175,000 in
+equipment (1907 dollars); setup/teardown needed large crews; the pour demanded
+concrete that flowed from the roof without voids; and the public branded the
+houses as slum/uniform boxes before many were built. Only a few dozen went up
+(mainly Union, NJ and Gary, IN), and Edison took a multimillion-dollar loss.
+
+* Key claims
+- Historical narrative as he tells it; mold-piece count, $175k figure, and loss
+  size not independently checked here.
+
+* Practical takeaways
+- None. Mild interest only as a history short; no link to George's housing/
+  eviction work beyond the general "tech ahead of social acceptance" theme.
+
+* Caution
+- Popular-history retelling; image not opened; figures unverified here.

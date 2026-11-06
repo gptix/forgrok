@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID: 747da926-af24-4817-a2f4-95e6a76cdc72
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-projects
+#+CREATED: [2026-11-06 Fri 09:30]
+#+LAST_MODIFIED: [2026-11-06 Fri 09:30]
+#+TITLE: Roemmele X 2026-11-05: How To Hire A Grok Bot essay re-promo
+#+NODE-NAME: RoemmeleX20261105HowToHireAGrokBotPromo
+#+FILETAGS: :roemmele:x_posts:summary:ai:grok_bot:business:self_promotion:
+#+DESCRIPTION: Private summary of Brian Roemmele's X posts of 2026-11-05 re-promoting his How To Hire A Grok Bot / first zero-human-company essay. Do not publish.
+
+* Sources
+- Author: Brian Roemmele (@BrianRoemmele)
+- Date: 2026-11-05
+- Posts:
+  - [[https://x.com/BrianRoemmele/status/2118292445985390620][5:40 AM EST, How To Hire A Grok Bot: Experience From The…]] (re-promo)
+- How read: full text via the X API; the linked essay was not re-opened for this node.
+
+* Summary
+A short morning re-promo of "How To Hire A Grok Bot: Experience From The First
+Zero Human Company," arguing that companies that do not free employees to use
+Grok Bot will be bypassed, calling it "not a theory," and linking the essay.
+
+* Key claims
+- Competitive-bypass claim is opinion/marketing; essay body not re-read today.
+
+* Practical takeaways
+- Nothing new if George already filed the Oct 5 essay; skip unless he wants a
+  refresh of hiring/fleet-role framing for the existing bot roster.
+
+* Caution
+- Self-promotional; linked article not opened for this day's package.

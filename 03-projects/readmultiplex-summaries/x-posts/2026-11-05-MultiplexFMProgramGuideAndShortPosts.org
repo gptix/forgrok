@@ -1,0 +1,47 @@
+:PROPERTIES:
+:ID: c56e5db1-675c-4b33-8fff-1e85dd25383a
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-projects
+#+CREATED: [2026-11-06 Fri 09:30]
+#+LAST_MODIFIED: [2026-11-06 Fri 09:30]
+#+TITLE: Roemmele X 2026-11-05: Multiplex FM Wheels and Wings / Rectangle on Mars guides and short posts
+#+NODE-NAME: RoemmeleX20261105MultiplexFMProgramGuideAndShortPosts
+#+FILETAGS: :roemmele:x_posts:summary:multiplex_fm:radio:media:photos:
+#+DESCRIPTION: Private summary of Brian Roemmele's X posts of 2026-11-05 on Thursday Nov 5 Multiplex FM day (Wheels and Wings) and night (Rectangle on Mars) program guides, a new broadcast-day notice, X Subscriber Night Nov 12, and two short replies. Do not publish.
+
+* Sources
+- Author: Brian Roemmele (@BrianRoemmele)
+- Date: 2026-11-05
+- Posts:
+  - [[https://x.com/BrianRoemmele/status/2118372330502336887][10:58 AM EST, 📺 PROGRAM GUIDE: Thursday Nov 5, 2026 (PT) 🚗✈️…]] (day guide Wheels and Wings)
+  - [[https://x.com/BrianRoemmele/status/2118462499700060346][4:56 PM EST, The first X Subscriber Night is Thu Nov 12,…]] (X Subscriber Night Nov 12)
+  - [[https://x.com/BrianRoemmele/status/2118477848365449465][5:57 PM EST, reply @Caligularised: "Stefan, love it!"]] (reply @Caligularised: love it)
+  - [[https://x.com/BrianRoemmele/status/2118553323317899608][10:57 PM EST, A new broadcast day for my X live stream.…]] (new broadcast day)
+  - [[https://x.com/BrianRoemmele/status/2118553669474160796][10:58 PM EST, 📺 PROGRAM GUIDE: Thursday Nov 5, 2026, radio night…]] (night guide Rectangle on Mars)
+  - [[https://x.com/BrianRoemmele/status/2118561607387353412][11:30 PM EST, reply @SunWeatherMan: "Thank you sir. So kind. I can’t wait to…"]] (reply @SunWeatherMan)
+- How read: full text via the X API, including note_tweet full text for both program guides; streams, images and t.co destinations were not opened.
+
+* Summary
+Day program guide (PT): "Wheels and Wings" themed to Nov 5 anniversaries (Selden
+1895 road-engine patent; Cal Rodgers / Vin Fiz 1911 coast-to-coast landing),
+with a long slate of auto/aviation films, AI Signal editions, and a podcast/
+interview block, then radio night handoff. Evening: "A new broadcast day" for his
+X live stream of rare films, plus the night guide "The Rectangle on Mars"
+(Mariner 3 anniversary framing)—NASA Mars films, Bradbury/Dimension X, Space
+Patrol Planet X saga, Elon Hour, New Thought/Kybalion at 4 AM, Tom Corbett toward
+mornings. Separately he announces the first Multiplex X Subscriber Night for Thu
+Nov 12, 8 PM–8 AM PT, asking for old-time radio show/episode requests
+(ReadMultiplex members first pick). Short replies: "Stefan, love it!" to
+@Caligularised; thanks to @SunWeatherMan with encouragement on what they build.
+
+* Key claims
+- Programming and Subscriber Night schedule as posted; streams not listened to.
+
+* Practical takeaways
+- None required. Optional calendar note only if George wants Subscriber Night
+  Nov 12 PT on the dial.
+
+* Caution
+- Promotional station CTA (membership, tips, shirts, bots directory).
+- Streams and images not opened.

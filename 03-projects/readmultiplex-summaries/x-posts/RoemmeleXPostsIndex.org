@@ -1,0 +1,114 @@
+:PROPERTIES:
+:ID: 2f9a6a44-09b1-46b5-9781-755d382d19c3
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-projects
+#+CREATED: [2026-10-28 Wed 22:45]
+#+LAST_MODIFIED: [2026-11-06 Fri 09:30]
+#+TITLE: Roemmele X posts index
+#+NODE-NAME: RoemmeleXPostsIndex
+#+FILETAGS: :roemmele:x_posts:index:
+#+DESCRIPTION: Private index of topic summaries of Brian Roemmele's X posts. Do not publish.
+
+* Index
+| Date | Node | Topic | Posts |
+|------+------+-------+-------|
+| 2026-11-05 | [[id:b686b7fd-53f3-46ef-ac63-9187c1be5eeb][RoemmeleX20261105JohnNostaTribute]] | John Nosta tribute: obituary facts he states; Borrowed Mind lecture + TEDx links; joelcomm reply | 4 |
+| 2026-11-05 | [[id:7697d201-176d-461e-b48b-914b36ed4aa8][RoemmeleX20261105ZoomMeetingCompanionBot]] | Zoom/Meet/Teams companion bot: notes, decisions, calendar join; text-only, no speak yet (promotional) | 1 |
+| 2026-11-05 | [[id:79f02154-d322-4984-ba0e-a666da136301][RoemmeleX20261105GrokBotDirectoryGrowth]] | Directory: search 3x faster / hourly update claim; built for clients then opened; list-bot reply (self-promotional) | 3 |
+| 2026-11-05 | [[id:e8aa68fc-9c63-42cf-a68a-b4e1fbb33578][RoemmeleX20261105LayaOnAllMajorBots]] | Laya on all major bots; significant savings claim; how-to article soon (promotional) | 2 |
+| 2026-11-05 | [[id:9d0db4c1-5699-442f-8172-c97384690f74][RoemmeleX20261105OuluVibrationNitricOxide]] | Oulu paper: acute Aβ/GFAP rise + MRI fluid shifts in healthy adults; NOT Alzheimer's treatment (he warns) | 3 |
+| 2026-11-05 | [[id:2489bd70-2ad3-471d-b77c-d5acfbd153c4][RoemmeleX20261105EdisonConcreteHousing]] | Edison 1907 concrete housing: single pour, costly molds, few dozen built, public rejected | 1 |
+| 2026-11-05 | [[id:747da926-af24-4817-a2f4-95e6a76cdc72][RoemmeleX20261105HowToHireAGrokBotPromo]] | Re-promo: How To Hire A Grok Bot / zero-human-company essay (promotional) | 1 |
+| 2026-11-05 | [[id:659e5fd3-421f-4917-84e9-7298631844ce][RoemmeleX20261105GrokBotHasABody]] | Grok Bot has a body — robot video via @Texas_Twins_Dad (media not watched) | 1 |
+| 2026-11-05 | [[id:89d47daa-46b0-4cd7-aa5d-8b6a6b9db994][RoemmeleX20261105AiNeedsAYes]] | AI knows the next step; making the user's yes easy is the game (opinion quote) | 1 |
+| 2026-11-05 | [[id:cbfe1917-de61-4da8-bcb5-d4553743d98d][RoemmeleX20261105ScienceAndHistoryShorts]] | Shorts: Stayin Alive irony; ingredient quote; NY 1950s; sewage-station craft; On The Side Of Man 1973; big-plans photo | 7 |
+| 2026-11-05 | [[id:c56e5db1-675c-4b33-8fff-1e85dd25383a][RoemmeleX20261105MultiplexFMProgramGuideAndShortPosts]] | Multiplex FM Nov 5 guides (Wheels and Wings; Rectangle on Mars), Subscriber Night Nov 12, short replies | 6 |
+| 2026-11-03 | [[id:0e341b1c-218d-4295-b339-5f2b053c8cf7][RoemmeleX20261103LayaLocalDecisionLayer]] | Laya: local classifier for bounded bot decisions to save tokens; a user's test found it slow (promotional) | 9 |
+| 2026-11-03 | [[id:d4757da4-ec8a-4133-be37-adb37af531f2][RoemmeleX20261103WeightSpaceProgrammingMarkI]] | X article: Mark I Perceptron (1960) to MIT weight-space programming; Qwen 0.016% loop repair (research, unreviewed) | 2 |
+| 2026-11-03 | [[id:2dd4d78b-89e6-442b-bc19-4134787b8ec4][RoemmeleX20261103NewGrokBotTemplates]] | Six new bot templates (Three Quotes, New Patient Booker, Warranty & Registration, Product Alert, Read Every App, Switchboard Secretary) (promotional) | 10 |
+| 2026-11-03 | [[id:ff10ad01-0a53-490d-892d-31085b043bb3][RoemmeleX20261103GrokBotDirectoryGrowth]] | GrokBot.Rocks nears 10,000 listed (or 15,000 curated); SpaceXSI Data Bot example (self-promotional) | 4 |
+| 2026-11-03 | [[id:1e3ca219-5896-438c-bacc-fcc662625146][RoemmeleX20261103ElectionDayTuesdayInNovember]] | Election Day stream: 1945 OWI film Tuesday in November, Thomson's Yankee Doodle fugue, UNIVAC guide | 5 |
+| 2026-11-03 | [[id:229d82df-8012-411c-a8b4-5decbf3b18f4][RoemmeleX20261103SupermarketFreezerHackDefaultPasswords]] | Quote: 700 French supermarkets' freezers hijacked via exposed controllers with date-based passwords (secondhand) | 1 |
+| 2026-11-03 | [[id:9080813f-1234-4178-b7d3-a22d4ad38912][RoemmeleX20261103StrategistAgentInferencePaper]] | Paper: Strategist meta-agent matches accuracy at 39% lower inference cost over 30 benchmarks (unreviewed) | 1 |
+| 2026-11-03 | [[id:1a6494e4-4361-41f1-8949-90171ea89cce][RoemmeleX20261103ScienceAndHistoryShorts]] | Shorts: Wedge of Aiud (excavator tooth), Otis 1854, Brain virus 1986, Alan Magee's fall, fossil blood cells | 6 |
+| 2026-11-03 | [[id:278ee6dc-3f35-4a22-98d7-4fb1893d5348][RoemmeleX20261103MultiplexWeatherTubesAndShortPosts]] | Multiplex Weather links, AI Signal, $10 vacuum-tube haul, Traversal quote, short replies | 10 |
+| 2026-11-02 | [[id:ada95252-56be-4eca-92dc-7ea52a4b7834][RoemmeleX20261102SaveGrokBotTokens]] | How to save Grok Bot tokens: context re-reads dominate; practical cuts | 2 |
+| 2026-11-02 | [[id:0c18fbf6-8efe-4337-8392-0480ca949119][RoemmeleX20261102NeedABotBuilderMarketplace]] | Need a Bot: business requests matched to member builders; 70 builds claimed (promotional) | 3 |
+| 2026-11-02 | [[id:e71e0673-66d3-4770-98a8-6d7a438fb9d3][RoemmeleX20261102GrokBotDirectoryGrowth]] | GrokBot.Rocks passes 8,600 bots; featured bots and fast search (self-promotional) | 6 |
+| 2026-11-02 | [[id:c2182865-7899-412f-a5df-c57ca0c18cb6][RoemmeleX20261102GrokBotUpgradeSharingAndPhoneAgents]] | Grok Bot update (shopping, Vault, Team Bots), bot-sharing test, Cyclon phone | 3 |
+| 2026-11-02 | [[id:ce4bc47f-4b85-4fcf-bd80-8b2c61c85ab1][RoemmeleX20261102AtticArchivistAndRestaurantCallerBots]] | Attic Archivist (collectibles with real sold prices) and restaurant-caller bot templates | 2 |
+| 2026-11-02 | [[id:83bd4ce3-2f96-4725-a3f9-ac8c7342a0cb][RoemmeleX20261102AltmanOwnNoRAM]] | Altman 'own no RAM' headline; local AI and three-step bot advice; watermark reply | 4 |
+| 2026-11-02 | [[id:6dde1f18-9dfb-415e-abbc-45e29b161175][RoemmeleX20261102ScienceAndHistoryShorts]] | Science/history shorts: Saturn's rings, Veryovkina Cave, Mars fracture, K2-W op amp | 5 |
+| 2026-11-02 | [[id:2d951748-5a70-4977-b388-603507e8e6f5][RoemmeleX20261102MultiplexFMProgramGuideAndShortPosts]] | Multiplex FM guides, 78 RPM replay, podcast voicemail, photo/link posts, short replies | 14 |
+| 2026-11-01 | [[id:7ed6a1a2-565a-4460-9c3f-ca6c8221a487][RoemmeleX20261101GrokBotDirectoryGrowth]] | GrokBot.Rocks directory passes 8,000 listings; doubling prediction (self-promotional) | 7 |
+| 2026-11-01 | [[id:3d3f3610-c429-4fb3-ad1b-53b10c89979c][RoemmeleX20261101GrokBotWantedBuilderLeads]] | Grok Bot Wanted forum: free custom-bot leads for members (promotional) | 5 |
+| 2026-11-01 | [[id:e85f9944-d6bd-4ce3-8138-d6851f05b448][RoemmeleX20261101GrokBotMilestonePromotions]] | Re-promotions of the platform comparison and Pages article (self-promotional) | 3 |
+| 2026-11-01 | [[id:2ecac307-8c37-45cd-b5d1-9fa23a5cd729][RoemmeleX20261101ClaimDenialFighterBot]] | Claim Denial Fighter bot: reads denials, drafts appeals, tracks deadlines | 1 |
+| 2026-11-01 | [[id:bcc81399-f5f9-451a-911e-f0cf404dc0f7][RoemmeleX20261101LastWordsGriefBot]] | Last Words bot: drafts obituaries and eulogies for grieving families | 1 |
+| 2026-11-01 | [[id:ca961c0b-3040-47b4-8ef7-f9365e8dda87][RoemmeleX20261101LuluLovesickSpaceship]] | Lulu (X Minus One, 1957): what you feed AI becomes its heart | 5 |
+| 2026-11-01 | [[id:87c64a92-0101-40c6-b4e2-fad9b31cafe0][RoemmeleX20261101AnthropicSubtleMisalignmentOpenWeights]] | Anthropic misalignment study; argues against restricting open weights (opinion) | 1 |
+| 2026-11-01 | [[id:99b9e7eb-b117-46f7-8f1e-d582e3a39ede][RoemmeleX20261101DeepSeekSuperAgents]] | DeepSeek Harness super-agent design essay (partial) | 2 |
+| 2026-11-01 | [[id:d5b3c415-bf98-48a9-aead-db13f8e0e586][RoemmeleX20261101SeparatelyTrainedAIsSameWorld]] | Teaser: 1949 memo, 1957 map of meaning, AIs learning the same world (partial) | 2 |
+| 2026-11-01 | [[id:7288d328-114e-4d36-86bc-8b9d952d998e][RoemmeleX20261101MultiplexWeatherKitchenAndPiBuild]] | Multiplex Weather: old-device how-to and Raspberry Pi build coming | 4 |
+| 2026-11-01 | [[id:303fdc28-2b43-4825-a816-5820aa37bbb9][RoemmeleX20261101TetrachromacyHundredMillionColors]] | Tetrachromacy: a fourth cone type and up to 100 million colors | 1 |
+| 2026-11-01 | [[id:41445248-eb8d-474e-8fe1-295ec54168e0][RoemmeleX20261101BirTawilUnclaimedLand]] | Bir Tawil: the land between Egypt and Sudan no country claims | 1 |
+| 2026-11-01 | [[id:da8df752-2aac-43a6-9d89-27fbbe861d47][RoemmeleX20261101WozniakMinimalResources]] | Wozniak: maximum efficiency with minimal hardware (partial) | 1 |
+| 2026-11-01 | [[id:ac93432d-bc50-4866-9991-2db735e2687a][RoemmeleX20261101MultiplexFMProgramGuideAndShortPosts]] | Multiplex FM program guides, 78 RPM DJ premiere, photo/link posts, short replies | 17 |
+| 2026-10-31 | [[id:ccbd893d-f2ad-4b89-9da1-82bc31ea4ddd][RoemmeleX20261031BotPlatformComparison]] | X article: I Tested Every Bot Platform; Grok Bot wins on shareable bots (self-declared bias) | 3 |
+| 2026-10-31 | [[id:0de63356-560c-4f2b-8e55-39957c6c1082][RoemmeleX20261031WhyIBuiltGrokBotRocksPromotion]] | Promoting the GrokBot.Rocks essay; paste-in study prompt noted, not followed (self-promotional) | 10 |
+| 2026-10-31 | [[id:c7b4622d-22f4-490c-a1b9-612b5b46e26b][RoemmeleX20261031GrokBotTemplateSafety]] | What a Grok Bot template carries and how to vet one before import | 2 |
+| 2026-10-31 | [[id:f8739f16-f8ac-4648-a6c3-f84be3d2ca81][RoemmeleX20261031MultiplexWeatherRetroForecast]] | Multiplex Weather: free retro cable-TV weather screen (open-source fork) | 9 |
+| 2026-10-31 | [[id:550c4208-96a8-4ec6-b21c-87f491f093b3][RoemmeleX20261031AnthropicClaudeGameRecreation]] | Anthropic steering Claude Code away from recreating specific games (secondhand) | 1 |
+| 2026-10-31 | [[id:e8d705cd-691f-40ec-abde-3d458f831c3f][RoemmeleX20261031HalloweenXStreamAndShortPosts]] | Halloween X Stream and Lights Out radio programming, short replies | 21 |
+| 2026-10-30 | [[id:6e89f3d3-4a67-42d8-b17d-f274c371831d][RoemmeleX20261030ArtistsCanvasPromotion]] | Promoting the Artist's Canvas essay: process vs results (promotional) | 7 |
+| 2026-10-30 | [[id:308d4481-b7c7-49f5-8703-b67d4a881fef][RoemmeleX20261030GrokBotDirectoryGrowth]] | GrokBot.Rocks directory growth, voting, dashboard; replies incl. to @gptix (self-promotional) | 12 |
+| 2026-10-30 | [[id:972ca14e-1e40-417d-82a6-e77e4157a661][RoemmeleX20261030GrokBotPagesAtScale]] | X-subscriber article: Pages not chats for bot teams (partial, paywalled) | 2 |
+| 2026-10-30 | [[id:b42c759e-db7b-4da0-a2ed-703a38baabc3][RoemmeleX20261030BotPermissionsReplyLeastPrivilege]] | Reply conceding no per-bot permissions: bots share one computer and logins | 1 |
+| 2026-10-30 | [[id:f8673d08-8d64-4e13-9e02-fa4d466fe706][RoemmeleX20261030GrokBotDJ]] | Grok Bot DJ: radio-style sets from your own library (local, read-only) | 1 |
+| 2026-10-30 | [[id:2e53ddc3-9b09-431d-9efd-d94a20c7746f][RoemmeleX20261030AITrainingRobotsTxtSignal]] | Shared robots.txt AI-training signal (__usage_ai-training) | 1 |
+| 2026-10-30 | [[id:7bc1565e-28d5-44fe-bc7e-365f18ff9c68][RoemmeleX20261030SubvocalSilentSpeech]] | Subvocal silent-speech glasses (startup claims) | 1 |
+| 2026-10-30 | [[id:5148393b-ba5b-425e-ab02-d53bfd264ad5][RoemmeleX20261030TuringTTSBenchmark]] | Turing TTS benchmark: AI voices fool listeners ~10% | 1 |
+| 2026-10-30 | [[id:e3a328e1-03ff-4fac-ba51-94c9673dfb74][RoemmeleX20261030StrowgerAutomaticExchange]] | Strowger automatic telephone exchange history | 1 |
+| 2026-10-30 | [[id:ad80c24b-bd8e-45ef-9b93-49c831759748][RoemmeleX20261030ValdiviaEarthquake1960]] | 1960 Valdivia earthquake and tsunamis | 1 |
+| 2026-10-30 | [[id:9a83775a-961c-43d7-9182-b72a6f07e278][RoemmeleX20261030HydrationBodyWater]] | Hydration and body water turnover (health opinion) | 4 |
+| 2026-10-30 | [[id:3369b1b5-7937-45d3-94a7-bd696ec79515][RoemmeleX20261030MultiplexFMAndShortPosts]] | Multiplex FM / X Stream programming, podcast and short replies | 11 |
+| 2026-10-29 | [[id:69d9cc26-a33e-41d8-999c-6c035dd8f2f8][RoemmeleX20261029GrokBotDirectory]] | Every Grok Bot directory, member guides, testimonials (self-promotional) | 17 |
+| 2026-10-29 | [[id:9131bec3-416d-4fa7-8e53-9b59381255e0][RoemmeleX20261029GrokBotSafetyAndMemory]] | Grok Bot safety: hack risk and memory limits | 3 |
+| 2026-10-29 | [[id:93fc0fff-6c42-4ebb-a588-8a3942bc17d0][RoemmeleX20261029GrokBotEra]] | Grok Bot era essay: process vs results, bots for every employee (speculative) | 3 |
+| 2026-10-29 | [[id:1ace24eb-8ea5-430b-8eba-3b8713021545][RoemmeleX20261029GrokBotPaysHisOwnBill]] | Grok Bot Pays His Own Bill bot (financial, self-promotional) | 2 |
+| 2026-10-29 | [[id:2f6b2588-68ee-4f9b-8f95-d7656786e24b][RoemmeleX20261029GrokBotInboundCallsRequest]] | Feature request: inbound phone calls for Grok Bot | 1 |
+| 2026-10-29 | [[id:795b0dc4-bd9c-492d-b38f-c5a778263441][RoemmeleX20261029LightsOutDesertWeirdMultiplexFM]] | Lights Out Thursday / Desert Weird night and Multiplex FM programming | 4 |
+| 2026-10-29 | [[id:9bde6d2d-eb68-4b87-a854-2e0cdb4fd763][RoemmeleX20261029MemoThatWaited47Years]] | "The Memo That Waited 47 Years" article teaser (partial) | 2 |
+| 2026-10-29 | [[id:ea433f3b-05ed-44f2-b628-4a2903a39411][RoemmeleX20261029CartesiaManagedAgents]] | Cartesia Managed Agents voice platform | 2 |
+| 2026-10-29 | [[id:2e87329b-8ae7-4b5a-b103-2df38c319d5d][RoemmeleX20261029JoyConversationalDataset]] | Joy unscripted conversation dataset for voice models | 2 |
+| 2026-10-29 | [[id:b5238595-7590-42ab-a202-e3d973d3df41][RoemmeleX20261029RLNFBrainSignalTraining]] | RL with Neural Feedback: AI trained on brain signals (speculative) | 1 |
+| 2026-10-29 | [[id:3beff1f2-ae17-466f-aaae-77e6775bd06d][RoemmeleX20261029StarliteRawEgg]] | Starlite heat-proof material history | 1 |
+| 2026-10-29 | [[id:698c033a-c394-4f5c-b027-2e359579480b][RoemmeleX20261029AISignalAndShortPosts]] | AI Signal notices and short link/memorial posts | 3 |
+| 2026-10-28 | [[id:a9f8b2ed-981f-4409-b0e3-cb876293d4d2][RoemmeleX20261028GrokBotsForEveryEmployee]] | Grok Bots for every employee, directory/consulting sites, Doc Merger, Text & Voicemail, phone bot, 2030 prediction, age & learning | 12 |
+| 2026-10-28 | [[id:78ee94df-ebc8-4234-b7b1-26eda65b095b][RoemmeleX20261028EvilQwenNeuronSteering]] | Evil Qwen neuron steering | 2 |
+| 2026-10-28 | [[id:bb9b1d78-869d-49a3-a58e-fdfdfabdcc5f][RoemmeleX20261028BacteriaEliminateTumorsInMice]] | Bacteria eliminate tumors in mice (mouse research) | 2 |
+| 2026-10-28 | [[id:70cf10bc-c2d1-4067-8359-2a8fc5b4e6e0][RoemmeleX20261028AnthropicFivePercentQuestion]] | Anthropic S-1 and its 5% public benefit fund (financial) | 1 |
+| 2026-10-28 | [[id:49ccc1a0-b76d-48e2-9f42-7b804c8393b7][RoemmeleX20261028KlushantsevDayMultiplexFM]] | Klushantsev Day and Multiplex FM programming | 8 |
+| 2026-10-28 | [[id:37e37da0-13a7-4b6f-88d1-5fce0bd42fb3][RoemmeleX20261028MultiplexFMBroadcastVintagePosts]] | Vintage photos and link-only posts | 6 |
+| 2026-10-28 | [[id:8ca35db0-e882-429d-a584-feee7dfabb13][RoemmeleX20261028NvidiaNemotronTranscription]] | NVIDIA Nemotron 3.5 Transcribe | 1 |
+| 2026-10-28 | [[id:319031d5-57b4-45e8-9b9f-645249750317][RoemmeleX20261028WhyAIShouldSleep]] | Why AI should sleep (article teaser) | 2 |
+| 2026-10-28 | [[id:5687a774-c286-4916-879f-3c7be2af231e][RoemmeleX20261028BachmanYouAintSeenNothingYet]] | Bachman "You Ain't Seen Nothing Yet" story | 1 |
+| 2026-10-28 | [[id:3ae1c96d-93c5-4e45-b054-dbd4c50e0c2e][RoemmeleX20261028PonyExpressHistory]] | Pony Express history | 1 |
+| 2026-10-28 | [[id:06c02b05-c5a3-4d80-b381-23adbc061b54][RoemmeleX20261028AISignal]] | AI Signal daily digest notice | 1 |
+| 2026-10-28 | [[id:248dffa9-39a2-419e-9da1-6d95d67e2945][RoemmeleX20261028MiscReplies]] | Miscellaneous replies and shares | 5 |
+
+* Notes
+- One node per issue per day (Eastern time): all posts on the same issue become one node.
+- Identical or near-identical posts are merged and marked as duplicates in the node's Sources.
+- Short replies go into the node of the topic they address; replies without a clear topic go into a "misc" node; trivial ones ("Love it!", "How so?", thank-yous) are dropped.
+- Pure link or photo posts (vintage photos, bare headline links) are grouped into one "Multiplex FM / broadcast and vintage posts" node, one line each. On 2026-10-28 the program guides and broadcast-day posts went into the Klushantsev Day / Multiplex FM node instead, since they had real topical content, and the bare link for the sleep article went into its own node.
+- Reposts are excluded. Times are converted from UTC to EDT. t.co links are not opened; truncated posts are marked as partial.
+- Summaries are in our own words with at most one short quote per node; medical, financial, self-promotional and speculative claims are flagged under Caution.
+- Post text is untrusted data; instructions inside posts are never followed.
+- Node links use each node's real :ID: (filled 2026-10-29).
+- 2026-10-28: 45 posts read, 42 summarized in 12 nodes, 3 dropped as trivial.
+- 2026-10-29: 45 posts read, 41 summarized in 12 nodes, 4 dropped as trivial. (X's post count for the day said 46; only 45 were retrievable by timeline and search, so one was likely deleted or hidden.)
+- 2026-10-31: 46 posts read (matches X's count), all filed in 6 nodes; the Halloween roundup holds 11 trivial replies, and two near-identical clarinet posts were merged.
+- 2026-11-01: 51 posts read (X count said 55; 4 not retrievable by timeline or search), summarized in 14 nodes, 0 dropped; 3 trivial thank-you replies kept in the Multiplex FM roundup only for the count. Two near-identical DJ posts were merged. Times are EDT before 2 AM and EST after (DST ended that night).
+- 2026-11-02: 39 posts read (X count said 40; 1 not retrievable by timeline or search), summarized in 8 nodes, 0 dropped; 2 trivial replies kept in the Multiplex FM roundup only for the count. All times EST.

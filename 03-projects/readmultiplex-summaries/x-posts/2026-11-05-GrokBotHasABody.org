@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID: 659e5fd3-421f-4917-84e9-7298631844ce
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-projects
+#+CREATED: [2026-11-06 Fri 09:30]
+#+LAST_MODIFIED: [2026-11-06 Fri 09:30]
+#+TITLE: Roemmele X 2026-11-05: Now Grok Bot has a body (robot video via @Texas_Twins_Dad)
+#+NODE-NAME: RoemmeleX20261105GrokBotHasABody
+#+FILETAGS: :roemmele:x_posts:summary:ai:grok_bot:robots:media:self_promotion:
+#+DESCRIPTION: Private summary of Brian Roemmele's X posts of 2026-11-05 short post claiming Grok Bot now has a body, crediting a robot video via @Texas_Twins_Dad. Do not publish.
+
+* Sources
+- Author: Brian Roemmele (@BrianRoemmele)
+- Date: 2026-11-05
+- Posts:
+  - [[https://x.com/BrianRoemmele/status/2118355518326739094][9:51 AM EST, Now Grok Bot has a body! (via @Texas_Twins_Dad)]] (robot video promo)
+- How read: full text via the X API; the video and t.co destination were not opened.
+
+* Summary
+A two-line post: "Now Grok Bot has a body!" credited via @Texas_Twins_Dad, with a
+media link. No further detail in the text.
+
+* Key claims
+- None beyond the caption; the video was not watched, so embodiment claims are
+  unknown.
+
+* Practical takeaways
+- None. Curiosity only; no action for hermes-pi or the fleet.
+
+* Caution
+- Promotional media post; video not opened.
