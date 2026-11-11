@@ -39,6 +39,7 @@ Do not capture an org node yet.
 Brave, logged in to https://readmultiplex.com. Open the URL. Scroll to the bottom.
 SingleFile. Rename to =<reasonable_filename>.html=. Place in =04-sources/roemmele/html/=.
 A fetch from outside the operator's browser is not a capture. readmultiplex often stops on a check page.
+Rocket Reader and the ResponsiveVoice player each embed a hidden, script-only copy of the essay. That copy is scrubbed during ingestion and is not part of the capture. Do not wait for either to load or finish before saving.
 
 ** 3. Driver — T470s
 #+begin_src bash
