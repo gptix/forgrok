@@ -10,11 +10,11 @@
 #+TITLE: 2013 Ford Escape Titanium Driver-Side Low-Beam Intermittent Issue
 #+NODE-NAME: FordEscape2013HeadlampLowBeamIntermittent
 #+FILETAGS: :hardware:vehicle:ford:escape:headlamp:hid:
-#+DESCRIPTION: Diagnostic notes and parts options for intermittent driver-side low beam on 2013 Escape Titanium (VIN 1FMCU9J90DUA70448)
+#+DESCRIPTION: Diagnostic notes and parts options for intermittent driver-side low beam on 2013 Escape Titanium (VIN kept in private records)
 
 * Context
 - Vehicle: 2013 Ford Escape Titanium AWD, 2.0L EcoBoost
-- VIN: 1FMCU9J90DUA70448
+- VIN: [VIN kept in private records]
 - Symptom: Driver-side low-beam lamp works intermittently
 - System: Factory HID (xenon), not halogen. Low beams use D3S bulbs + ballasts
 
