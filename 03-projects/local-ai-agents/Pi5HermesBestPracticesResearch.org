@@ -1,0 +1,115 @@
+:PROPERTIES:
+:ID:       31459a34-86bc-4da9-929c-449b0813b944
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-projects
+#+CREATED: [2026-11-12 Thu 11:55]
+#+LAST_MODIFIED: [2026-11-12 Thu 11:55]
+#+TITLE: Pi 5 (4GB) Hermes Agent Best-Practices Research
+#+NODE-NAME: Pi5HermesBestPracticesResearch
+#+FILETAGS: :local-ai-agents:hermes:raspberry-pi:tailscale:research:doanything:
+#+DESCRIPTION: Research prompt for DoAnything on running a small Hermes agent on a 4GB Raspberry Pi 5 reachable by the Grok Bot team, kept separate from the air-gapped Withnail. The response goes here when it comes back.
+
+* Context
+- Goal: a second, networked local agent on a spare Raspberry Pi 5 (4GB) that the Grok Bot team (Gregorio and the others) can send small, low-stakes jobs to. That saves Grok Bot usage and keeps the work local-first.
+- Withnail stays on hermes-pi (Pi 5, 8GB, Hermes Agent), separate and basically air-gapped. George doesn't interact with him often, and a meatier job for him is a separate question.
+- Where the research is done: DoAnything (paid through 2026-12-08), so it doesn't use Grok Bot usage. George pastes the prompt below, then brings the response back.
+- Before anything gets installed, Felix (fraud and security) and Mytis (methods) review the response. Nothing is installed until George says go.
+- Open point: =02-infrastructure/hermes-pi/UpdatedTailscaleAutoStartWithnailPi5-2026-07-15.org= suggests hermes-pi had Tailscale set to start automatically as of July 2026. To keep Withnail air-gapped, check whether hermes-pi is still on the tailnet.
+
+* Prompt for DoAnything
+Paste everything between the BEGIN and END lines.
+
+#+begin_example
+BEGIN PROMPT
+
+I want a practical, well-sourced research brief. Please don't sign up for, buy, install, or contact anything. Research only.
+
+My situation:
+- I have a Raspberry Pi 5 with 4 GB of RAM, currently powered off. I can add an NVMe or SSD drive, active cooling, and the official power supply if needed.
+- I want to run a small, always-on local AI agent on it, ideally Nous Research's Hermes Agent with a small Hermes-family model, or the closest sensible alternative.
+- It should handle small, low-stakes jobs handed to it by cloud-hosted AI assistants (Grok Bot). Examples: sort or tag short text items, answer yes/no triage questions, route a request to the right category, summarize a short document, and flag stale notes in an Emacs Org-roam knowledge base kept in a git repo.
+- The cloud assistants would reach it either over my local Ethernet or over Tailscale.
+- I already run a separate Hermes agent ("Withnail") on a different Pi 5 (8 GB) that I want to keep isolated and effectively air-gapped. The new Pi must not be able to reach it, and vice versa.
+- I prefer local-first, open-source tools, and I use Emacs.
+
+Please answer each of these:
+
+1. Hermes Agent on a 4 GB Pi 5: What is the current version, and what are its minimum and recommended requirements? Can it run its own model on the Pi, or does it expect a separate model server? Give a link and date for each claim.
+
+2. Model choice: Which small models (Hermes-family first, then alternatives) realistically fit and run in 4 GB with room for the OS and agent? For each, give the parameter count, the recommended quantization (for example a Q4 GGUF), its approximate RAM use, and reported tokens per second on a Pi 5. Say which numbers come from real Pi 5 benchmarks and which are estimates. Recommend one primary model and one fallback.
+
+3. Runtime: Compare llama.cpp, Ollama, and any other reasonable option on a Pi 5 for speed, memory use, ease of setup, and how well each works as a local API (for example an OpenAI-compatible endpoint). Recommend one.
+
+4. Hardware and OS: Which OS do you recommend (Raspberry Pi OS Lite 64-bit or another)? Does NVMe or USB SSD versus microSD matter, and are cooling and throttling a concern under sustained load? What about swap or zram settings, power supply, and expected power draw?
+
+5. Receiving work from cloud assistants: What are the simplest robust patterns for passing small jobs to the Pi and getting results back? Compare (a) an HTTP API exposed only on the tailnet, (b) a shared git repository the Pi polls, and (c) a message queue or webhook. Weigh reliability, security, and how little setup each needs. Recommend one.
+
+6. Tailscale and isolation: How do I put the new Pi on my tailnet while making sure it cannot reach the air-gapped Pi, and nothing on the tailnet can reach the air-gapped Pi? Cover Tailscale ACLs or grants, tags, disabling key expiry for a headless node, Tailscale SSH, and firewall rules on the Pi itself. Explain how to confirm the air-gapped Pi isn't on the tailnet at all.
+
+7. Security hardening: Cover prompt injection when the agent processes untrusted text, limiting what the agent can execute (no shell, a sandbox, a dedicated user), automatic security updates, secrets handling, and logging. Note any known Hermes Agent vulnerabilities or advisories, with dates.
+
+8. Realistic limits: Which jobs is a 4 GB Pi 5 model good at, and which should stay with the cloud assistants? What latency should I expect for a typical 200-word input?
+
+9. Setup checklist: A concise, ordered checklist from a blank SD card or SSD to a working agent reachable over Tailscale, with the exact commands where they're stable and well documented.
+
+Format:
+- Start with a 5-line summary of your recommendations.
+- Then answer the sections numbered 1 to 9.
+- Cite every factual claim with a link and its publication or update date. Prefer official docs, GitHub READMEs and release notes, and reputable benchmarks. Mark anything unverified as UNVERIFIED.
+- Keep a clear line between what sources say and your own recommendations.
+- End with a list of open questions or risks I should check before installing.
+
+END PROMPT
+#+end_example
+
+* DoAnything response
+
+** Web interface response
+
+Agent
+12:05:01 PM
+I've written a thorough research brief in research-brief.md — it's long (about 42 KB) so here's what it covers at a glance:
+
+Five-line summary of recommendations:
+
+Run Hermes Agent v0.23.1 on Raspberry Pi OS Lite 64-bit, pointing at a manually built llama.cpp server as an OpenAI-compatible provider — best control and memory efficiency for 4 GB.
+Use Qwen2.5 1.5B Instruct Q4_K_M (primary) or Llama 3.2 1B Instruct Q4_K_M (fallback) as the model — both fit in 4 GB with OS/agent room, both have real Pi 5 benchmarks published, and both are well-suited to classification/triage.
+Add an NVMe SSD via official M.2 HAT+ (enable PCIe Gen 3 for ~800 MB/s) and active cooling — these two upgrades matter more than anything else for making the system responsive and reliable.
+Expose the model as a plain HTTP API on the tailnet with an API key — cloud assistant calls POST /v1/chat/completions, gets a JSON response back in ~15-30 seconds. No polling, no git, no message queue.
+Don't put the air-gapped Pi on the tailnet at all — keep Tailscale off it. If you need to SSH into it separately, use a Tailscale ACL policy that denies all traffic between the two Pis plus UFW on Withnail as defense-in-depth.
+The brief has nine sections:
+
+Section 1 covers Hermes Agent's current version (v0.23.1, 9 Nov 2026), its min/recommended specs, and how it can either use a separate model server or its built-in managed llama.cpp runtime (since v0.22, Oct 2026). I recommend the separate-server approach for your Pi.
+
+Section 2 has a model comparison table with file sizes, estimated RAM use, measured tok/s figures from published benchmarks, and sources for each number. I note where data is from 8 GB/16 GB boards vs. unverified for 4 GB specifically.
+
+Section 3 compares llama.cpp vs. Ollama vs. Llamafile across speed, memory, setup, and API features, with published sources.
+
+Section 4 covers OS choice, storage speed hierarchy (NVMe at 800 MB/s vs. USB SSD at 350 MB/s vs. microSD at 85 MB/s), cooling requirements (throttling at 85°C), power supply, and zram/swap configuration with the Curtis CM5 benchmark results.
+
+Section 5 compares HTTP API vs. shared git repo vs. message queue — HTTP API wins for your use case.
+
+Section 6 covers Tailscale isolation in detail: ACL policy syntax, tags, key expiry, Tailscale SSH, UFW on the isolated Pi, and the exact commands to confirm Withnail isn't on the tailnet.
+
+Section 7 covers prompt injection (with the guardrails approach), the three CVEs fixed in v0.15.0 (CVE-2026-9353, CVE-2026-9366, CVE-2026-10223), the unmerged PR #146952, the critical unauthenticated RCE bug from April 2026, and hardening steps.
+
+Section 8 is a task-type feasibility table with expected latency calculations — a 200-word classification should take ~6-9 seconds.
+
+Section 9 is a 12-phase ordered checklist from blank storage to working agent, with exact commands where they're stable and documented.
+
+The brief ends with 10 open questions and risks you should verify before installing — including whether to use Hermes Agent at all vs. a simpler script, the 4 GB vs. 8 GB tradeoff, ACL complexity, and NVMe Gen 3 stability.
+
+
+** markdown file response
+
+file do-anything-Pi5-hermes-research-brief-1794503087656.md uploaded for handling by Gregorio.
+
+
+* Review notes
+- Felix (security): /pending/
+- Mytis (methods): /pending/
+- Gregorio (summary and recommendation): /pending/
+
+* Decision
+/pending George's go-ahead. Nothing gets installed until he approves./
