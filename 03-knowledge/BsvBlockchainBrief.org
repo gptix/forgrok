@@ -1,0 +1,95 @@
+:PROPERTIES:
+:ID:       35af5ab3-3916-44d9-83a7-5a925655039f
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-knowledge
+#+CREATED: [2026-11-17 Tue 17:52]
+#+LAST_MODIFIED: [2026-11-17 Tue 17:54]
+#+TITLE: BSV Blockchain Brief
+#+NODE-NAME: BsvBlockchainBrief
+#+FILETAGS: :bsv:bitcoin:blockchain:brief:
+#+DESCRIPTION: A public-safe briefing on the BSV blockchain: what it is, how the official stack works, practical uses, exchange status, and the main risks and caveats.
+
+* What it is
+BSV (Bitcoin SV, "Satoshi Vision") is a proof-of-work cryptocurrency that uses Bitcoin's unspent-transaction-output (UTXO) model. It shares the Bitcoin ledger from 2009, follows the August 2017 Bitcoin Cash split, and became its own chain on 15 November 2018 after a contentious fork of Bitcoin Cash.
+
+Official developer docs present BSV as a restored, large-block Bitcoin protocol, meant to stay stable and to carry both value and data on one chain. The BSV Association, a Swiss non-profit, supports the network and publishes Network Access Rules for node operators. The coin supply follows Bitcoin's issuance schedule (about 21 million coins). 100,000,000 satoshis equal 1 BSV. This is a briefing, not financial, legal, or tax advice, and not a recommendation to buy, sell, or hold BSV.
+
+* How it works
+** Transactions and Script
+Ownership is a set of unspent outputs, not an account balance. A transaction spends earlier outputs in full and creates new ones. Each output has an amount and a locking script; the input that spends it carries an unlocking script. Both are written in Script, a small stack language. The usual payment script is Pay to Public Key Hash (P2PKH). Mainnet P2PKH addresses start with =1=, like Bitcoin addresses; testnet addresses start with =m= or =n=. Data can be stored in an output, including with =OP_RETURN=. A signed transaction cannot be reversed.
+
+** SPV, BEEF, and BUMP
+Simplified Payment Verification (SPV) lets an app check that a transaction is in a block without downloading the whole chain, using block headers plus a Merkle path. On BSV that proof is usually packaged as BEEF (Background Evaluation Extended Format, BRC-62). The compact Merkle path is a BUMP (BSV Unified Merkle Path, BRC-74). A BEEF can show that a transaction spends outputs that exist in a block and that its scripts pass. It does not prove that nobody spent those same outputs elsewhere. Official docs describe the format as intended for micropayments, where that risk is lower.
+
+** Overlays
+An overlay tracks the transactions of one app or protocol so the app can look them up later without indexing every block. A topic manager decides which outputs to admit; a lookup service answers queries. Apps submit and receive BEEF, which they can verify. If no public host runs a given topic, the app can run its own overlay.
+
+** Wallets and keys (BRC-100)
+The official model is that the wallet holds private keys and signs, and the app asks for actions and verifies results. BRC-100 is the standard app-to-wallet interface. =createAction= is how an app asks for a transaction; the wallet selects coins, sets the fee, signs, and usually broadcasts. Official Association wallets are BSV Desktop (macOS, Windows, Linux) and BSV Browser (iOS and Android). BRC-42 derives a separate key for each counterparty and purpose; a wallet identity key can authenticate a user without a traditional account. A new Desktop wallet opens on mainnet; testnet coins are free and have no value. Never put a recovery phrase or private key in chat, email, or this knowledge base.
+
+** Fees
+The fee is not a field in the transaction. It is the satoshis left when outputs are subtracted from inputs, and it goes to the miner. In the official TypeScript SDK, the fee is size in bytes divided by 1,000, times a rate in satoshis per kilobyte, rounded up. Fees grow with transaction size, not with the payment amount. BSV Desktop's documented default rate is 250 satoshis per kilobyte. Broadcast endpoints also publish a minimum rate.
+
+* Tools and SDKs
+Official SDKs exist for TypeScript (=@bsv/sdk=, plus =@bsv/simple= and =@bsv/wallet-toolbox=), Go (=go-sdk=), and Python (=bsv-sdk=). A Rust SDK is in development and, as of this writing, has no release. Code lives under the =bsv-blockchain= GitHub organization. BSV Broadcaster is the Association's current transaction broadcaster; official docs say it replaces ARC and the older Merchant API. SV Node is the traditional monolithic full node. Teranode is newer, horizontally scaled node software. Official networks are mainnet (real BSV), testnet, and teratestnet. Several packages default to mainnet if the network is omitted.
+
+* Practical uses
+Official docs emphasize payments (including per-request charges over HTTP 402), tokens tracked by an overlay, wallet-based identity, data integrity (a hash in a transaction, later checked with a Merkle path), hash-addressed file storage, and messaging between identities. The Skills Center treats tokenization and data integrity as the two fundamentals. Those jobs fit the official stack on paper. Whether a given business should use BSV also depends on counterparty acceptance, exchange access, legal exposure, and the need to run or trust overlay and wallet infrastructure.
+
+* Ecosystem status
+The official developer path is relatively complete: docs, SDKs, wallets, broadcasters, and node software. Official docs tell builders to buy mainnet BSV at buybsv.com. Current docs showcase apps such as P2P Medical, Time Anchor, and Beef Inspector. The Association also maintains a case-study library.
+
+The trading picture is narrower. Kraken announced a BSV delisting on 16 April 2019. Binance delisted BSV in mid-April 2019. Coinbase ended support on 9 January 2024 and later liquidated remaining balances. US residents in particular should not assume a major regulated exchange will list BSV. Listing status changes; check the venue itself. This node does not recommend any exchange. Mainnet BSV addresses that start with =1= look like Bitcoin addresses, so sending the wrong asset is a common and often irreversible mistake.
+
+* Risks and caveats
+- Volatility and thin liquidity, made worse by major-exchange delistings.
+- Scams and address confusion. Use official wallet download pages. Never share a seed phrase or private key.
+- Network security history: in July and August 2021 the BSV network suffered block-withholding and reorganization attacks, including a widely reported August reorg that replaced a run of recent blocks.
+- SPV limits: a BEEF proof is not, by itself, proof against a double-spend.
+- Protocol-level confiscation and node rules. Since 11 November 2022 the consensus rules include a confiscation-transaction class that can skip script verification for whitelisted, consensus-frozen inputs. The Association's Network Access Rules bind nodes and contemplate legal and technical responses to what the Association calls unlawful or dishonest behavior. That is a different governance model from Bitcoin Core's.
+- Legal and reputational context. Craig Wright was a leading public backer of the 2018 split and claimed to be Satoshi Nakamoto. In /COPA v Wright/ [2024] EWHC 1198 (Ch), the English High Court found that he is not Satoshi and not the author of the Bitcoin white paper. Permission to appeal was refused on 29 November 2024 as totally without merit. Related litigation contributed to exchange delistings, whatever one thinks of the technology.
+- US tax treatment. The IRS treats convertible virtual currency as property for federal income tax purposes. Selling it, exchanging it, or being paid in it can be a taxable event. Frequent micropayments can also create a messy tax-lot record. This is not tax advice; a taxpayer should check current IRS guidance and, if needed, a qualified advisor.
+- Operational foot-guns: several official packages default to mainnet; coins do not move across networks; do not rebuild a transaction from the same inputs to "retry" a broadcast.
+
+* Opinion / hype / unverified
+"Implements the original Bitcoin protocol" and "Satoshi Vision" are project branding. Bitcoin, Bitcoin Cash, and BSV each claim fidelity to some version of the 2008--2009 design; the chains diverged, and BSV has kept changing consensus rules, including Genesis (2020), confiscation transactions (2022), and Chronicle (specified to activate on mainnet at height 943,816, target 7 April 2026). Teranode's "over 1 million transactions per second" figure, and claims that SPV Wallet is "100x cheaper than a full node," are published design or marketing comparisons, not measurements independently verified here.
+
+Some historically visible BSV apps have changed, stalled, or closed. Do not treat an old demo or case study as proof a product still runs. For most people the binding constraints are not Script or fees. They are liquidity, counterparties, legal history, and whether one accepts a chain whose node rules include confiscation mechanics and an association-run access framework. The court findings about Wright are about authorship and evidence; they do not, by themselves, decide whether a particular BSV app is well engineered.
+
+* Sources
+- Official developer docs: https://bsvblockchain.com/docs/
+- Docs index (llms.txt): https://bsvblockchain.com/docs/llms.txt
+- What is the BSV blockchain: https://bsvblockchain.com/docs/learn/what-is-bsv/
+- Transactions and fees: https://bsvblockchain.com/docs/concepts/transactions/
+- Script: https://bsvblockchain.com/docs/concepts/script/
+- BEEF / SPV: https://bsvblockchain.com/docs/concepts/spv/
+- Overlays: https://bsvblockchain.com/docs/concepts/overlays/
+- Keys and identity: https://bsvblockchain.com/docs/concepts/keys-identity/
+- BRC-100 wallet interface: https://bsvblockchain.com/docs/concepts/wallet-model/
+- Wallets: https://bsvblockchain.com/docs/wallets/
+- BSV Desktop: https://bsvblockchain.com/docs/wallets/bsv-desktop/
+- SDKs: https://bsvblockchain.com/docs/sdk/
+- BSV Broadcaster: https://bsvblockchain.com/docs/guides/services/broadcasting/
+- HTTP 402 payments: https://bsvblockchain.com/docs/guides/payments/
+- Go-to-mainnet (buybsv.com): https://bsvblockchain.com/docs/guides/go-to-mainnet/
+- Teranode: https://bsvblockchain.com/docs/nodes/teranode/
+- SV Node: https://bsvblockchain.com/docs/nodes/sv-node/
+- BSV Skills Center: https://docs.bsvblockchain.org/
+- Skills Center, what you can do: https://docs.bsvblockchain.org/intro/what-can-i-do.md
+- Protocol upgrade history: https://protocol.bsvblockchain.org/specification/upgrade-history
+- Chronicle release notes: https://docs.bsvblockchain.org/network-topology/nodes/sv-node/chronicle-release
+- BRC standards: https://bsv.brc.dev/
+- BRC-100 site: https://brc100.org/
+- Network Access Rules, background: https://nar.bsvblockchain.org/network-access-rules/background-to-the-rules.md
+- Official GitHub org: https://github.com/bsv-blockchain
+- BSV Association: https://bsvassociation.org/
+- Case-study library: https://bsv-case-studies.bsvblockchain.org/
+- 2018 nChain BSV node announcement: https://bsvblockchain.org/bsv-full-node-implementation-launched-to-fully-restore-original-bitcoin-protocol/
+- Kraken delisting: https://blog.kraken.com/product/kraken-is-delisting-bsv
+- Coinbase BSV deprecation: https://help.coinbase.com/en/coinbase/getting-started/crypto-education/bsv-deprecation
+- COPA v Wright judgment: https://www.judiciary.uk/wp-content/uploads/2024/05/COPA-v-Wright-Judgment.pdf
+- IRS Notice 2014-21: https://www.irs.gov/pub/irs-drop/n-14-21.pdf
+- IRS virtual currency FAQs: https://www.irs.gov/individuals/international-taxpayers/frequently-asked-questions-on-virtual-currency-transactions
+- July 2021 BSV reorg FAQs (CoinGeek): https://coingeek.com/faqs-july-2021-block-withholding-re-organisation-attack-on-the-bsv-network/
+- August 2021 BSV reorg statement (CoinGeek): https://coingeek.com/statement-on-august-2021-block-re-organisation-attack-on-the-bitcoin-sv-network/
