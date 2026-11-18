@@ -1,0 +1,88 @@
+:PROPERTIES:
+:ID:       28d4b164-0dd1-4b28-9766-d50820342889
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-knowledge
+#+CREATED: [2026-11-17 Tue 20:25]
+#+LAST_MODIFIED: [2026-11-17 Tue 20:25]
+#+TITLE: Graphs, Loops, and Reverse Engineering: Build Your Own AI Team
+#+NODE-NAME: GraphsLoopsReverseEngineeringAiTeam
+#+FILETAGS: :ai:multi-model:orchestration:sources:x:
+#+DESCRIPTION: Public summary of BuBBliK's (@k1rallik) Nov 16, 2026 X Article on coordinating Grok Bot, Claude, and ChatGPT with reverse engineering, a task graph, and a correction loop.
+
+* Provenance
+This node summarizes a public X Article by BuBBliK (@k1rallik, user id 3431572810), posted Monday, Nov 16, 2026, at 10:46 AM ET.
+
+- Post: [[https://x.com/k1rallik/status/2122355711414038533][x.com/k1rallik/status/2122355711414038533]]
+- Article: [[https://x.com/i/article/2122104994509758464][Graphs, Loops & Reverse Engineering: Build Your Own AI Team (Full Guide)]]
+- Short URL in the post: https://t.co/tLbbLalStB
+- Fetched Tuesday, Nov 17, 2026, about 8:21 PM ET, with the X API. The article body came from the post's =article.plain_text= field. The public HTML page was not downloaded: WebFetch returned 403, and curl was redirected to an X login page. The API also recorded HTTP 404 when unwinding the article URL, even though the article body was present on the post object.
+- There was no parent reply and no quoted post. The conversation id matches the post id.
+
+Local archive (on the box only; not proposed for this repository):
+
+- =/workspace/x-docs/2026-11-17/k1rallik-2122355711414038533/post.md=
+- =/workspace/x-docs/2026-11-17/k1rallik-2122355711414038533/article.md= (full article text)
+- =cover-HXQYl_ebQAAySpj.jpg= (article cover)
+- =figure-HXM7hPkXsAA0iw_.png= (workflow diagram)
+- =video-2122106165785923585-1200x1600.mp4= and preview JPEG (card 03/08, "Draw the graph before the tasks")
+- =video-2122106259310518272-1200x1600.mp4= and preview JPEG (card 05/08, "Build a loop that can reject work")
+- =video-2122106340256411648-1200x1600.mp4= and preview JPEG (card 06/08, "Return only the failed unit")
+
+The three videos are 12-second explanatory diagrams, each footnoted "Original explanatory diagram. Not a recorded model run." Their preview stills already show the card text. The full article and the media are not proposed for filing in forgrok: the article is someone else's copyrighted text, and the videos are binaries.
+
+* Summary
+The post argues that moving work by hand among Grok Bot, Claude, and ChatGPT leaves the user as the unpaid intern: the person who carries context, catches mistakes, and decides what happens next. The article's remedy is a process, not a new subscription.
+
+Three ideas do the work. Reverse engineering turns an existing product into observable, testable requirements. A graph makes tasks and dependencies explicit, including what artifact passes across each edge. A loop checks a result against a contract and can send a failed unit back for a scoped repair, with a retry or spending limit.
+
+The running example is a tool that turns articles into social-media cards: paste text, edit cards, export images. The author recommends testing the process with shared files first, then automating handoffs only after they are repeatable, and comparing the coordinated setup with a single-model attempt on time, cost, remaining defects, and how often a human has to intervene.
+
+* Key points
+** 1. Reverse engineer observable behavior
+A screenshot shows layout, not edge cases (a title that is too long, an empty input, an export of ten cards). Investigate the user journey first. Reconstruct inputs, actions, outputs, and error states; separate observations from assumptions and unknowns; propose a minimal version with an acceptance check for each feature. A working interface does not reveal the original source, prompts, or architecture.
+
+** 2. Give each model a bounded job
+The author's starting allocation for this example, which the article itself calls proposed roles rather than a universal ranking:
+
+| Participant | Job | Deliverable |
+|-------------+-----+-------------|
+| Grok Bot with search access | Investigate public discussions and complaints | Findings with sources |
+| Claude | Analyze workflows and write the specification | Requirements and acceptance criteria |
+| ChatGPT with development tools | Implement the agreed scope | Code and check results |
+
+A chat that can suggest code cannot necessarily run it. A model without search cannot independently gather current discussions. Research should inform scope, not automatically expand it.
+
+** 3. Draw the graph before running the tasks
+Audience research and interface analysis can run in parallel from the same reference materials. Implementation waits on an agreed specification and checks. Validation then either accepts the work or returns it for repair. Name the artifact on each edge (requirements, source findings, code, or a failure report). Watch for shared-resource conflicts, such as two tasks editing the same file. For a small job, one worker and a check may be enough.
+
+** 4. Define what "done" means
+Write a compact contract before implementation: inputs, outputs, acceptance checks, and scope limits. In the export example, the checks are file count, export order, image dimensions, and the presence of card text, with a scope rule not to change text generation or editor behavior. Passing checks only establishes what those checks cover. A successful export test says nothing about whether the cards preserve the article's meaning.
+
+** 5. Build a loop that can reject work
+The loop is Produce -> Check -> Correct -> Check again. Vague feedback ("make it look better") is not enough. A useful failure report names the component, conditions, failure, expected behavior, repair scope, and recheck. Use code for exact checks (counts, dimensions, required fields). For meaning or visual quality, use human review or a separate model with explicit criteria and evidence. Agreement between models is not proof.
+
+** 6. Return only the failed unit
+If export breaks and the editor still works, send only export back. Regenerating the whole application creates unnecessary changes and more work to verify. After a local fix, run the relevant integration checks. Set a retry or spending limit (the article offers three correction attempts as a starting setting). Repeated failure does not automatically mean the plan is wrong; the environment, requirements, or checker may be at fault. When the limit is reached, preserve the attempts and escalate.
+
+** 7. Save lessons with evidence
+After a fix, store a reusable rule with evidence and a stated scope (for example: include long titles in narrow-screen layout checks, because this case exposed overflow, and it applies to card templates with editable titles). Do not keep an entire chat history as the lesson; extract confirmed points, record their scope, and allow them to be revised.
+
+** 8. Automate the handoffs last
+Test the process manually with shared files before building an orchestrator. Keep reference materials, the specification, check results, and accepted decisions together. Only once the handoffs are repeatable should a coordinating program call model APIs, transfer results, run checks, and enforce limits. Subscriptions to separate chat products do not create that integration automatically.
+
+Keep human judgment on scope, unresolved requirements, and approval for consequential actions. Reversible local changes can have different permissions from publishing or changing production data. If coordination adds more work than it removes, simplify the graph. Every time someone has to type "continue," restate a requirement, or explain an avoidable failure, record why and use it to tighten the next run.
+
+* Notable claims and caveats
+- UNVERIFIED as a general ranking: assigning research to Grok Bot, specification to Claude, and implementation to ChatGPT is the author's starting suggestion for this example. The article says to change the allocation based on results and available tools.
+- UNVERIFIED as measured results: the article does not report a timed or costed comparison of this process against a single-model attempt. It recommends doing that comparison; it does not provide the data.
+- The workflow diagrams and video cards are original explanatory graphics, not recordings of an actual multi-model run. The cards themselves say so.
+- "Agreement between models is not proof" is the author's own caution, and it is a sound one. Sources still need verification, and executable work needs to be run.
+- "Subscriptions to separate chat products do not create this integration automatically" is a reasonable operational claim, not a product review of any one vendor.
+- The author is a public X account (about 26k followers at fetch, profile "open to collabs"). This is a how-to article, not a formal study.
+- The running example (a social-card generator) is illustrative. The process may or may not pay for itself on a smaller job; the article says as much.
+
+* Links
+- [[https://x.com/k1rallik/status/2122355711414038533][The Nov 16, 2026 post]]
+- [[https://x.com/i/article/2122104994509758464][The X Article]]
+- [[https://x.com/k1rallik][@k1rallik]]
