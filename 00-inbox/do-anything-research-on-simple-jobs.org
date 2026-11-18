@@ -1,0 +1,346 @@
+#+TITLE: Low-Upfront-Cost Business Research for Jud Taylor
+#+DATE: [2026-11-17]
+#+AUTHOR: Eli Anderson, Do Anything
+#+OPTIONS: toc:2
+
+* Summary
+
+- ~Recommendation:~ Focus on ~AI Automation Services~ (Make.com / n8n + AI). It fits all constraints: startup under $100 (free tiers), zero phone calls, runs entirely from a PC, and can hit $500+/month within 90 days with one retainer client.
+- ~Second:~ ~Freelance AI Copywriting / Content Services~. Zero startup cost, no phone calls, runs from a PC. Reachable $500/month by month 3 with retainer clients; best fit if you enjoy writing.
+- ~Third:~ ~Online Flipping (eBay / FB Marketplace)~. Low startup (~$100 inventory), no phone calls, minimal local travel for sourcing. Steady and reliable path to $500/month in 60-90 days.
+- ~Runner-up:~ ~VA (Virtual Assistant)~ is viable but pays less initially and competes with offshore labor. ~SEO consulting~ takes 3-6 months too long for the 90-day target.
+- ~All recommendations avoid live phone calls~ -- communication is email/chat only.
+- ~Cobb County requirements~: Occupation Tax Certificate (business license) from Cobb County required. Sole proprietorship needs no state registration. File a trade name (aka "doing business as") if using a name other than your legal name. No sales tax on services (only tangible goods). Basic general liability insurance advisable but optional.
+- ~Total startup budget:~ $0-$200 for the AI services paths; ~$150 for flipping.
+- ~Key risk:~ First clients take longer than expected. Mitigate by starting sales outreach on Day 1, not after building a perfect website.
+
+* Top 3 Recommendations
+
+** 1. AI Automation Services (Make.com / n8n + AI)
+
+*** What It Is
+Offer fixed-price automation packages to small businesses: connect apps, automate repetitive workflows, add AI to processes (email filing, CRM updates, invoice processing, lead intake, social scheduling). Deliver as a productized service with monthly retainer after setup.
+
+*** Startup Costs (Itemized)
+
+| Item | Cost | Notes |
+|------+------+-------|
+| Make.com free plan | $0 | 1,000 ops/month free, enough to start |
+| n8n self-hosted | $0 | Free tier / Docker on your PC |
+| ChatGPT Plus (optional) | $0-$20/mo | Only if building AI workflows |
+| Domain + basic landing page | $0-$12/yr | Use Carrd ($0) or GitHub Pages ($0) |
+| Register sole prop + Cobb license | $0-$75 | Cobb County tax cert fee varies UNVERIFIED |
+| General liability insurance | $0-$25/mo | Skip initially, add later |
+
+Total out-of-pocket at launch: ~$0. With basic professional setup: ~$50-75.
+
+*** Time to First Dollar
+~Weeks 2-4~ from start. Can land first client by doing one free pilot for a local business, converting to paid retainer. Upwork/Fiverr: $300-800 by month 2. [Source: BetOnAI 2026 survey, [[https://betonai.net/how-to-build-3k-15k-month-ai-automation-business-2026-n8n-make-zapier-fiverr-upwork-retainers/][betonai.net]]]
+
+*** Realistic Monthly Income Range
+- ~$500-$1,500/month~ by month 3 (one retainer client at $500-$1,000/mo + project work).
+- Month 6+: ~$2,000-$4,000/month~ with 2-3 retainer clients.
+- High end: ~$15k/month reported by experienced operators. [Source: [[https://betonai.net/n8n-vs-make-vs-zapier-2026-which-automation-platform-actually-earns-freelancers-the-most-money-real-income-data-from-81-operators/][BetOnAI n8n vs Make income data]]]
+
+*** Required Skills/Tools
+- ~Mid-level comfort with computers.~ No coding required. Drag-and-drop workflow builders.
+- Learn Make.com or n8n (free tutorials on YouTube). ~2-3 days~ to learn basics.
+- Understanding of common business tools: Gmail, Google Sheets, Slack, Notion, CRMs.
+- ~Contrary to hype:~ You do NOT need to learn Python or API coding. Make.com/n8n handle everything visually.
+
+*** How to Find First Customers (No Cold Calls)
+- ~Warm outreach:~ Ask 10 people you know (past colleagues, local business owners). Offer a free 30-minute audit of one repetitive task they do.
+- ~Local FB groups:~ Vinings/Marietta community pages. Post: "I help small businesses automate tedious tasks. Free audit for first 3 takers."
+- ~Upwork/Fiverr:~ Create a profile offering "AI Automation Workflow Setup." Bid on small projects ($50-200) for portfolio and reviews.
+- ~Networking:~ Rotary Coffee in Vinings-Cumberland, WIN ATL virtual meetups [[https://www.meetup.com/win-atl-business-connections/][Meetup said:]].
+
+*** Georgia / Cobb County Licensing, Registration, Tax, Insurance
+- ~Cobb County:~ Must obtain Occupation Tax Certificate before operating. Apply at [[https://www.cobbcounty.gov/community-development/business-license/obtain-business-license][cobbcounty.gov]]. Fee based on gross receipts.
+- ~Sole Proprietorship:~ No state registration needed. If using a business name other than "Jud Taylor," register a trade name (DBA) with Cobb County Superior Court. ~Cost: $10-25 UNVERIFIED.~
+- ~Sales Tax:~ None. Georgia does not tax services (only tangible goods). No sales tax registration needed.
+- ~State Income Tax:~ Report business income on Form 500 (personal return). No separate filing.
+- ~Insurance:~ General liability ~$21-47/mo [[https://comparesmallbusinessinsurance.com/blog/consultant-insurance-cost/][Source]]. Can defer until first paying client.
+
+*** Main Risks and Failure Modes
+- ~No first client within 60 days.~ Mitigation: start outreach Day 1, do free pilot.
+- ~Underpricing.~ Solution: charge $500 minimum for setup + $100-300/mo retainer.
+- ~Scope creep from clients.~ Solution: fixed-price packages with clear deliverables.
+- ~Too general / no niche.~ Solution: pick one vertical (real estate agents, dentists, e-commerce sellers) and focus.
+
+*** Sources
+- [[https://betonai.net/how-to-build-3k-15k-month-ai-automation-business-2026-n8n-make-zapier-fiverr-upwork-retainers/][BetOnAI: 90-Day Plan to First Retainers]]
+- [[https://betonai.net/n8n-vs-make-vs-zapier-2026-which-automation-platform-actually-earns-freelancers-the-most-money-real-income-data-from-81-operators/][BetOnAI: n8n vs Make income data]]
+- [[https://thomas.partners/guides/how-to-price-n8n-make-automation-work][Thomas Partners: Pricing Guide]]
+- [[https://www.agenthustles.com/h/make-com-automation-freelancing/][Agent Hustles: Make.com freelancing guide]]
+- [[https://ciela.ai/blogs/is-ai-automation-agency-good-business-2026][Ciela AI: Is an AI Automation Agency a Good Business?]]
+- [[https://outlierkit.com/resources/how-to-start-an-ai-automation-agency/][OutlierKit: Step-by-Step Guide]]
+
+*** 30-Day Launch Plan
+
+**** Week 1: Learn and Set Up Foundation
+- Days 1-3: Complete Make.com free tutorials (or n8n). Build 2 sample workflows (e.g., "auto-save Gmail attachments to Google Drive" and "auto-email Slack notifications to a sheet").
+- Days 4-5: Set up Carrd landing page (free) with 3 packaged offers: "Email Automation $200," "CRM Sync $350," "Custom Workflow $500."
+- Day 6-7: Create Upwork/Fiverr profile. List 3 gigs at $50-150 starting price.
+- ~Cost this week:~ $0.
+
+**** Week 2: First Outreach and Free Pilot
+- Days 8-10: Message 10 warm contacts (friends, former colleagues, local FB group). Offer: "I'll automate one tedious task for you for free. Takes me 30 minutes."
+- Days 11-12: Do free pilots for 2-3 people. Record a 60-second video of each result.
+- Day 13-14: Post in Vinings/Marietta FB groups: "Local guy helping small businesses save hours/week on data entry. Free audit."
+- ~Cost this week:~ $0.
+
+**** Week 3: Convert Pilots and Bid on Upwork
+- Days 15-17: Convert 1 free pilot into paid retainer ($100-300/mo). Propose ongoing maintenance.
+- Days 18-21: Submit 10 proposals on Upwork ($50-200 projects). Focus on quick-turn "connect Google Sheets to X" jobs.
+- ~Cost this week:~ $0.
+
+**** Week 4: First Revenue and Build Up
+- Days 22-24: Collect payment from first retainer client. Invoice via PayPal or Stripe.
+- Days 25-28: Apply for Cobb County Occupation Tax Certificate if not done (retroactively fine; start earning first).
+- Day 29-30: Write case study from first client. Post on LinkedIn and FB community.
+- ~Cash in:~ ~$100-500~ first month.
+- ~Cost this week:~ $0-75 (license fee).
+
+** 2. Freelance AI Copywriting / Content Services
+
+*** What It Is
+Write blog posts, email sequences, social media content, and website copy for small businesses -- using AI tools (ChatGPT, Claude) for drafting, but you provide strategy, editing, brand voice, and human oversight. Package as monthly retainers.
+
+*** Startup Costs (Itemized)
+
+| Item | Cost | Notes |
+|------+------+-------|
+| ChatGPT Plus (optional) | $20/mo | Free tier works to start |
+| Google Docs / Drive | $0 | Free with Gmail |
+| Medium or LinkedIn portfolio | $0 | Free publishing |
+| Domain + website | $0-$12/yr | Optional; can use portfolio link |
+| Total out-of-pocket | $0-32 | |
+
+*** Time to First Dollar
+~Weeks 2-3~. Can land first client by offering a low-priced "audit and sample post" to a local business. Upwork: $100-300 by week 3-4. [Sources: [[https://gigwithai.com/guides/ai-copywriting-services][GigWithAI Guide]], [[https://www.myaihustle.com/2026/10/sell-ai-copywriting-services-in-2026.html][My AI Hustle]]]
+
+*** Realistic Monthly Income Range
+- Month 1-2: ~$200-500/month (one-off or small retainer).
+- Month 3-4: ~$500-1,200/month (2-3 retainer clients at $200-400/mo each).
+- Month 6+: ~$1,500-3,000/month (full schedule).
+[Source: [[https://www.earngenix.com/blog/what-a-beginner-can-realistically-earn-with-ai-in-30-days][EarnGenix: Beginner Realistic Earnings]]]
+
+*** Required Skills/Tools
+- ~Strong writing and editing skills.~ You don't need to be a pro writer, but you must edit AI output well.
+- ChatGPT, Claude, or similar (free tiers available).
+- Understanding of blog structures, email marketing basics.
+- Ability to mimic a brand's voice. ~Practice with 3-5 samples before pitching.~
+
+*** How to Find First Customers (No Cold Calls)
+- ~Local businesses:~ Visit websites of 20 Marietta/Vinings businesses. If they have outdated blogs, email them: "I can write 2 blog posts for your site for $100 as a trial."
+- ~Upwork:~ Pitch on "blog writer" jobs with AI-assisted angle. Undercut on price to get first 3 reviews.
+- ~FB Groups:~ Vinings and Marietta community pages. Offer "free blog audit" -- review their existing content for free.
+- ~Local networking:~ Metro Atlanta Business Association [[http://maba.clubexpress.com/][MABA website]].
+
+*** Georgia / Cobb County Licensing, Registration, Tax, Insurance
+- ~Same as #1 above.~
+- Cobb County Occupation Tax Certificate required.
+- ~No sales tax.~ Services not taxed in Georgia.
+- Trade name (DBA) registration if operating under a business name.
+- ~No insurance needed~ for this type of solo service (no physical liability risk). Professional liability optional.
+
+*** Main Risks and Failure Modes
+- ~Commodity pricing.~ AI writing is getting cheaper. Solution: niche into specific industries (real estate, legal, HVAC, dental).
+- ~Hard to differentiate.~ Solution: offer strategy + editorial quality, not just AI-generated text.
+- ~Clients don't value writing.~ Solution: sell "more website traffic" or "better email open rates," not "writing."
+
+*** Sources
+- [[https://gigwithai.com/guides/ai-copywriting-services][GigWithAI: AI Copywriting Guide]]
+- [[https://www.myaihustle.com/2026/10/sell-ai-copywriting-services-in-2026.html][My AI Hustle: Selling AI Copywriting]]
+- [[https://www.earngenix.com/blog/what-a-beginner-can-realistically-earn-with-ai-in-30-days][EarnGenix: First 30 Days Earnings]]
+- [[https://businessboardroom.org/ai/how-to-start-an-ai-business-with-no-money/][Business Boardroom: No-Money AI Business]]
+- [[https://goodmorninggwinnett.com/the-business-blueprint-starting-a-freelance-writing-business-for-500-or-less/][Good Morning Gwinnett: Writing Business for Under $500]]
+
+*** 30-Day Launch Plan
+
+**** Week 1: Setup and Samples
+- Days 1-2: Write 3 AI-assisted writing samples in a niche (e.g., "real estate blog posts" or "HVAC company website copy").
+- Days 3-5: Create a simple portfolio (Medium or Google Doc). Set up Upwork/Fiverr profile with samples.
+- Days 6-7: Define 3 packages: "Single Blog Post $75," "Weekly Blog (4/mo) $250/mo," "Email Sequence (5 emails) $200."
+- ~Cost:~ $0.
+
+**** Week 2: Prospecting
+- Days 8-10: Browse websites of 30 local businesses (Vinings, Marietta). Note 10 with weak content.
+- Days 11-14: Email those 10 businesses: "I noticed your blog hasn't been updated since [date]. I'll write a sample post for you at no charge so you can see the quality."
+- ~Cost:~ $0.
+
+**** Week 3: Convert and Deliver
+- Days 15-17: Write free sample posts for 2-3 businesses. Follow up proposing $250/mo retainer for 4 posts/mo.
+- Days 18-21: Submit 15 proposals on Upwork for blog writing jobs.
+- ~Cost:~ $0.
+
+**** Week 4: First Payments
+- Days 22-25: Collect first payments from 1-2 retainer clients.
+- Days 26-28: Ask satisfied clients for a testimonial and referral.
+- Days 29-30: Apply for Cobb County license. Re-invest $20 toward ChatGPT Plus if you have clients.
+- ~Cash in:~ ~$250-500~ by end of month.
+
+** 3. Online Flipping (eBay / Facebook Marketplace)
+
+*** What It Is
+Buy used items at low prices (thrift stores, garage sales, Facebook Marketplace) and resell them online at a markup. Focus on categories with high sell-through: electronics, brand-name clothing, tools, vintage items, collectibles.
+
+*** Startup Costs (Itemized)
+
+| Item | Cost | Notes |
+|------+------+-------|
+| Initial inventory (3-5 items) | $50-100 | Start small |
+| Shipping supplies | $15-30 | Poly mailers, tape, scale from Amazon |
+| eBay fees (listing + final value) | ~15% of sales | Included in pricing; not upfront |
+| PayPal/Stripe fees | ~3% | Included in pricing |
+| Camera phone | $0 | Already have a smartphone |
+| Cobb County license | $0-75 | Required if doing as a business |
+| Total out-of-pocket | ~$65-175 | |
+
+*** Time to First Dollar
+~Week 1~. You can photograph items you already own and list them on Day 1. First sale within 3-7 days.
+
+*** Realistic Monthly Income Range
+- Month 1: ~$100-300/month (starting with items from around the house + small thrift runs).
+- Month 2-3: ~$300-600/month (with reinvestment of profits into more inventory).
+- Month 6+: ~$600-1,500/month (part-time, consistent sourcing routine).
+[Sources: [[https://powersellingmom.com/how-much-money-can-you-really-make-reselling-on-ebay/][Power Selling Mom]], [[https://www.sharetown.com/blog/how-much-money-you-can-realistically-make-flipping-items-part-time][ShareTown]]]
+
+*** Required Skills/Tools
+- ~Eye for value.~ Knowing what sells. Start by researching "sold" listings on eBay for items you recognize.
+- ~Smartphone camera.~ Good lighting and clear photos are 80% of the sale.
+- ~Basic shipping.~ Print labels at home, drop at USPS. No trips needed beyond that.
+- ~Time:~ ~30-40 minutes per item~ for sourcing, listing, packing, shipping.
+
+*** How to Find First Customers (No Cold Calls)
+- ~eBay / Facebook Marketplace:~ These are self-serve platforms. Customers find you via search.
+- ~Local FB groups:~ "Vinings Buy Nothing" or "Marietta Yard Sales" for sourcing cheap/ free items.
+- ~Tip:~ Start by selling items you already own (clothes, electronics, books). Zero cost and teaches the platform.
+
+*** Georgia / Cobb County Licensing, Registration, Tax, Insurance
+- ~Cobb County:~ Occupation Tax Certificate required if selling as a business (versus occasional casual sales).
+- ~Georgia Sales Tax:~ Required if selling tangible goods in GA OR to GA residents. You need a Georgia Sales and Use Tax Registration from DOR [[https://dor.georgia.gov/taxes/register-new-business-georgia][georgia.gov]]. Collect 8% (Cobb County rate) on in-state sales. Out-of-state sales via eBay may have eBay collecting marketplace facilitator tax.
+- ~Trade name:~ DBA if using a business name.
+- ~Insurance:~ Not needed for flipping at this scale.
+
+*** Main Risks and Failure Modes
+- ~Paying too much for inventory.~ Solution: Use eBay "sold items" filter to check actual sale prices before buying anything.
+- ~Slow shipping / bad feedback.~ Solution: Ship within 24 hours. Use tracking always.
+- ~Items don't sell.~ Solution: List on multiple platforms (eBay + FB Marketplace). Price at 90% of comps.
+- ~Storage clutter.~ Solution: limit inventory to 10-15 items at a time. Sell before buying more.
+- ~Sales tax complexity.~ Solution: eBay handles most tax collection automatically for their platform.
+
+*** Sources
+- [[https://powersellingmom.com/how-much-money-can-you-really-make-reselling-on-ebay/][Power Selling Mom: eBay Reselling Income]]
+- [[https://www.sharetown.com/blog/how-much-money-you-can-realistically-make-flipping-items-part-time][ShareTown: Flipping Part-Time Income]]
+- [[https://aboutearning.com/online-earning/reselling-for-profit/][About Earning: Reselling for Profit]]
+- [[https://greathustles.com/hustles/thrift-reselling/][Great Hustles: Thrift Reselling Reality]]
+- [[https://30daypivot.com/ebayphoneflip_roadmap][30-Day Pivot: eBay Flipping Roadmap]]
+- [[https://reselliq.ai/blog/how-to-start-reselling-business-2025][ResellIQ: Starting a Reselling Business]]
+
+*** 30-Day Launch Plan
+
+**** Week 1: List What You Have
+- Days 1-2: Gather 5-10 items from your home you don't need. Research sold prices on eBay.
+- Days 3-5: Take good photos (daylight, clean background). List on eBay and Facebook Marketplace.
+- Days 6-7: Source $50-75 of inventory from local thrift stores or FB Marketplace deals.
+- ~Cost:~ ~$50-75 (inventory).
+
+**** Week 2: First Sales and Reinvest
+- Days 8-10: Package and ship first sales. Reinvest 50% of proceeds into more inventory.
+- Days 11-14: Make 2-3 sourcing trips (Goodwill, FB Marketplace pickups). List 5-10 new items.
+- ~Cost:~ $0 (reinvesting sales proceeds).
+
+**** Week 3: Scale Listings
+- Days 15-17: List any remaining items. Aim for 15-20 active listings total.
+- Days 18-21: Research trending categories (e.g., vintage electronics, brand-name sneakers).
+- ~Cost:~ $0 (operating profit).
+
+**** Week 4: Systematize
+- Days 22-25: Set up shipping station. Buy bulk mailers ($15-20). Set up scale.
+- Days 26-28: Register Cobb County license if volume warrants. Register for GA sales tax if selling in-state.
+- Days 29-30: Review profit. Scale sourcing to $100-150/week.
+- ~Cash in:~ ~$150-400~ gross revenue first month. ~$80-250~ net profit.
+
+* All Candidates Compared
+
+| Business | Startup $ | Hours/wk | Time to first $ | Monthly $ range (mo 3) | Calls needed? | Score /10 |
+|----------+----------+----------+-----------------+------------------------+--------------+-----------|
+| AI Automation Services | $0-75 | 10-15 | 2-4 weeks | $500-1,500 | No | 9 |
+| Freelance AI Copywriting | $0-32 | 10-15 | 2-3 weeks | $500-1,200 | No | 8 |
+| Online Flipping | $65-175 | 10-12 | 3-7 days | $300-600 | No | 7 |
+| Virtual Assistant | $0-50 | 10-20 | 2-4 weeks | $300-800 | Chat only | 6 |
+| Prompt Engineering Consulting | $20-60 | 10-15 | 3-5 weeks | $400-1,000 | No | 7 |
+| Print on Demand | $50-150 | 10-15 | 4-8 weeks | $100-300 | No | 4 |
+| SEO Consulting | $5-50 | 10-15 | 6-12 weeks | $500-1,500 | No | 5 |
+| Affiliate Niche Site | $30-100 | 10-15 | 12-24 weeks | $0-200 | No | 3 |
+| Local Window Cleaning | $300-500 | 10-15 | 1-2 weeks | $400-800 | No (email) | 5 |
+| Newsletter (sponsor-based) | $0-50 | 8-12 | 12-24 weeks | $0-500 | No | 3 |
+
+~Scoring:~ ~Weighted on startup cost (low=good), speed to revenue, income potential, fit with no-call constraint, PC-only feasibility, and 90-day $500 target.~
+
+- ~Why Automation scored highest:~ Lowest cash barrier, fastest path to retainer income, perfectly matches AI/automation interest, zero phone calls, scales to $3-5k/mo.
+- ~Why Copywriting scored 8:~ Zero startup cost, fast first client, fits AI interest, but harder to differentiate long-term.
+- ~Why Flipping scored 7:~ Fastest to first dollar, low risk, but requires sourcing travel (minimal) and has sales tax complexity.
+- ~Why Print on Demand scored 4:~ Takes too long to reach $500/mo (3-6 months typical). Tight margins.
+- ~Why Affiliate/Newsletter scored 3:~ Takes 6+ months to build traffic. Cannot reliably hit $500 in 90 days.
+- ~Why SEO scored 5:~ Good income potential but 3-6 month ramp is too long for the 90-day target.
+- ~Why Window Cleaning scored 5:~ Good income, but equipment pushes budget limit, requires local travel carrying equipment, less aligned with AI/automation interest.
+
+* Georgia / Cobb Legal and Tax Notes
+
+** Business License (Occupation Tax Certificate)
+- Required for ALL businesses operating in Cobb County, including home-based and part-time. [[https://www.cobbcounty.gov/community-development/business-license/obtain-business-license][Cobb County site]].
+- Apply via email to businesslicense@cobbcounty.gov. They assess fee based on business type and projected gross receipts.
+- Home occupation businesses are exempt from Certificate of Occupancy requirement but still need the tax cert.
+- Home Occupation Permit may be required depending on zoning. Verify for Vinings / unincorporated Cobb. UNVERIFIED.
+
+** Business Structure
+- ~Sole Proprietorship:~ Simplest. No state registration. File personal taxes. Report income on Schedule C (GA Form 500).
+- ~LLC:~ $110 filing fee with GA Secretary of State [[https://gmcc.georgia.gov/register-llc][georgia.gov]]. Not needed at this stage. Can convert later.
+- ~Trade Name (DBA):~ If operating under any name other than "Jud Taylor," register at Cobb County Superior Court. Cost ~$10-25 UNVERIFIED.
+
+** Sales Tax
+- Georgia sales tax ~does NOT apply to services~ (professional consulting, copywriting, automation services). Only tangible personal property.
+- ~If flipping goods:~ You must register for GA Sales Tax if selling to GA residents. Visit [[https://dor.georgia.gov/taxes/register-new-business-georgia][GA DOR]]. Cobb County rate: ~8% (6% state + ~2% local). eBay collects and remits marketplace facilitator tax automatically for eBay sales -- confirm this reduces your burden. UNVERIFIED.
+
+** State Income Tax
+- Georgia flat rate: 5.39% (2026). Report business profit/loss on GA Form 500, Schedule 3.
+- No separate business tax return for sole proprietors.
+- Estimated quarterly payments required if expecting to owe >$500 in state tax.
+
+** Insurance
+- ~General Liability:~ $21-47/mo for consultants. [[https://comparesmallbusinessinsurance.com/blog/consultant-insurance-cost/][Source]].
+- ~Professional Liability:~ $45-110/mo.
+- For automation/copywriting services: low risk. Defer insurance until you have first client asking for it.
+- For flipping: general liability optional at this scale.
+
+** Zoning / Home Occupation
+- Cobb County allows home occupations. Restrictions: no visible business signage, no customer traffic, no noise/odors. [[https://www.cobbcounty.gov/community-development/business-license/obtain-business-license][Source]].
+- Automation and copywriting services are zero-footprint -- no zoning issue.
+
+* Sources
+
+- [[https://betonai.net/how-to-build-3k-15k-month-ai-automation-business-2026-n8n-make-zapier-fiverr-upwork-retainers/][BetOnAI: 90-Day Plan to First Retainers]] [2026-11-17]
+- [[https://betonai.net/n8n-vs-make-vs-zapier-2026-which-automation-platform-actually-earns-freelancers-the-most-money-real-income-data-from-81-operators/][BetOnAI: n8n vs Make Income Data]] [2026-11-17]
+- [[https://www.agenthustles.com/h/make-com-automation-freelancing/][Agent Hustles: Make.com Freelancing 2026 Guide]] [2026-11-17]
+- [[https://thomas.partners/guides/how-to-price-n8n-make-automation-work][Thomas Partners: Pricing Automation Work]] [2026-11-17]
+- [[https://thomas.partners/guides/first-automation-clients-without-upwork][Thomas Partners: First Clients Without Upwork]] [2026-11-17]
+- [[https://ciela.ai/blogs/is-ai-automation-agency-good-business-2026][Ciela AI: Is an AI Automation Agency Good?]] [2026-11-17]
+- [[https://outlierkit.com/resources/how-to-start-an-ai-automation-agency/][OutlierKit: Step-by-Step AI Agency]] [2026-11-17]
+- [[https://gigwithai.com/guides/ai-copywriting-services][GigWithAI: AI Copywriting Guide]] [2026-11-17]
+- [[https://www.myaihustle.com/2026/10/sell-ai-copywriting-services-in-2026.html][My AI Hustle: AI Copywriting Services]] [2026-11-17]
+- [[https://www.earngenix.com/blog/what-a-beginner-can-realistically-earn-with-ai-in-30-days][EarnGenix: Beginner Realistic First 30 Days]] [2026-11-17]
+- [[https://www.cobbcounty.gov/community-development/business-license/obtain-business-license][Cobb County: Business License Info]] [2026-11-17]
+- [[https://cobbcounty.gov/community-development/business-license/business-license-forms][Cobb County: Business License Forms]] [2026-11-17]
+- [[https://georgia.gov/starting-business-guide][Georgia: Starting a Business Guide]] [2026-11-17]
+- [[https://dor.georgia.gov/taxes/register-new-business-georgia][GA DOR: Register a New Business]] [2026-11-17]
+- [[https://gmcc.georgia.gov/register-llc][GA Secretary of State: Register LLC]] [2026-11-17]
+- [[https://powersellingmom.com/how-much-money-can-you-really-make-reselling-on-ebay/][Power Selling Mom: eBay Reselling Income]] [2026-11-17]
+- [[https://www.sharetown.com/blog/how-much-money-you-can-realistically-make-flipping-items-part-time][ShareTown: Realistic Flipping Income]] [2026-11-17]
+- [[https://greathustles.com/hustles/thrift-reselling/][Great Hustles: Thrift Reselling Reality]] [2026-11-17]
+- [[https://comparesmallbusinessinsurance.com/blog/consultant-insurance-cost/][Compare Small Biz Insurance: Consultant Costs]] [2026-11-17]
+- [[https://businessboardroom.org/ai/how-to-start-an-ai-business-with-no-money/][Business Boardroom: No-Money AI Business]] [2026-11-17]
+- [[https://goodmorninggwinnett.com/the-business-blueprint-starting-a-freelance-writing-business-for-500-or-less/][Good Morning Gwinnett: Writing Business for Under $500]] [2026-11-17]
+- [[https://www.meetup.com/win-atl-business-connections/][WIN ATL Business Connections - Meetup]] [2026-11-17]
+- [[http://maba.clubexpress.com/][Metro Atlanta Business Association]] [2026-11-17]
