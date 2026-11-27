@@ -21,5 +21,5 @@
 - Gregorio recorded the fact in shared memory the same afternoon. After George's 2:42 PM ET widget approval, the handover draft was marked "not adopted."
 
 * Notes
-- Proposed as LB-2026-11-15-1. Related unfiled nodes: DirectToSpecialistRouting (LB-2026-11-14-2) and RetireAndReplaceLongChatBots (LB-2026-11-14-4).
+- Proposed as LB-2026-11-15-1. Related filed nodes: [[id:56386081-ee7a-462c-b2a3-94624b572eb8][DirectToSpecialistRouting]] (LB-2026-11-14-2) and [[id:00a617e9-fd7b-40cf-b6bb-e21ce6ab5fba][RetireAndReplaceLongChatBots]] (LB-2026-11-14-4).
 - The 2:42 PM ET widget also asked for a draft-only Pi 5 Hermes update; that is a one-off, not part of this rule.

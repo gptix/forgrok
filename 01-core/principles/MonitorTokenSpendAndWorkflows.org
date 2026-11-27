@@ -24,4 +24,4 @@ This node records the standing rule. The exact weekly timetable (which job runs 
 
 * Notes
 - Gregorio saved the approach and set up routines the same day. Those routines are practice, not a substitute for this node, and the daily-full-audit instruction (rule 9 / rule 21) has not been explicitly superseded in George's own words.
-- Related: [[id:b4bd498c-2c12-42da-8d85-533dca1bbc1e][TsuiokuLibrarianBotPlan]] (audit cadence), and the still-unfiled TeamMethodsResearchGoal and MytisXCapabilityWatch drafts.
+- Related: [[id:b4bd498c-2c12-42da-8d85-533dca1bbc1e][TsuiokuLibrarianBotPlan]] (audit cadence), [[id:668eba7b-8245-47f5-8230-40f57e688811][TeamMethodsResearchGoal]], and [[id:2db8361f-233c-416f-b59a-81cfb7278b70][MyrtisXCapabilityWatch]].
