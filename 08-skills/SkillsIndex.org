@@ -21,6 +21,7 @@ Single place to see every skill that currently exists in Tsuioku, with a one-lin
 | CaptureLessonLearned     | Extract reusable patterns and friction from sessions                    | Live   |
 | CreateNewSkill           | Process for creating new reusable skill nodes                           | Live   |
 | GenerateTsuiokuNodeText  | Produce properly formatted text for new Tsuioku org-roam nodes          | Live   |
+| [[id:380cfd21-4477-4f1c-a80d-9edadc213898][GrokBotRocksLocalCatalog]] | Local SQLite catalog of GrokBot.Rocks for the Monday and Thursday new-bot check | Live   |
 | InspectGitHubState       | Exact-path GitHub inspection; prevent false-absent reads                | Live   |
 | PiWhisperTranscription   | Offload audio to timestamped transcripts via faster-whisper + tmux on hermes-pi | Live |
 | RubyResearchLoop         | SuperGrok-as-Ruby iterative outward research toward a living goal/log   | Live   |
