@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       f8321645-d1ca-441d-b0d5-4d9b9f8ce0b2
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 01-core
+#+CREATED: [2026-11-27 Fri 07:50]
+#+LAST_MODIFIED: [2026-11-27 Fri 11:36]
+#+TITLE: Public bot templates need Felix and George before they are shared
+#+NODE-NAME: PublicBotTemplatesNeedFelixAndGeorge
+#+FILETAGS: :principle:templates:security:team:
+#+DESCRIPTION: Standing rule (confirmed 2026-11-27): a public Grok Bot template is shared only after Felix reviews it and George says yes. George, 2026-11-27: "yes, both must approve; file it as a rule."
+
+* Rule
+On 2026-11-27, George confirmed the rule and said to file it, in his own words:
+
+"yes, both must approve; file it as a rule"
+
+Until George retracts or narrows this:
+
+- A public Grok Bot template is stripped of names, addresses, case facts, phone numbers, private links, and credentials.
+- Felix reviews it before it is shared.
+- The specialist builds or publishes it only after George says yes in that bot's own chat.
+
+* Source
+- George, 2026-11-27, Lisbet's chat (question card): "yes, both must approve; file it as a rule."
+- Background: On 2026-11-25, in Gregorio's chat, Gregorio had attributed a "guides decision" to George and later told Felix that both George and Felix must approve before a template is shared. Eva and Felix then used that practice for the eviction-helper template, after George told Eva "Please build it."
+
+* How it is kept today
+- This public node is the canonical home.
+- The same practice was used for the eviction-helper template after Felix's review and George's yes in Eva's chat.

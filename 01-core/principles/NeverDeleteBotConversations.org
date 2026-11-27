@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       9f1d2fe4-fcc4-44de-90e3-4bd8e025d174
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 01-core
+#+CREATED: [2026-11-27 Fri 07:50]
+#+LAST_MODIFIED: [2026-11-27 Fri 11:36]
+#+TITLE: Never delete a bot conversation
+#+NODE-NAME: NeverDeleteBotConversations
+#+FILETAGS: :principle:team:bots:safety:
+#+DESCRIPTION: Team rule TR-2026-11-20-2: never delete any bot's conversation, including ones that show up in X, because that can delete the bot. Each current bot should have a blueprint backup in the private companion repo.
+
+* Rule
+Approved by George on 2026-11-20 in Gregorio's chat, as TR-2026-11-20-2. George's own words, implementing Gregorio's four recommendations together:
+
+"Your recommendations TR-2026-11-20-1 through -4 are good. Please implement."
+
+The recommendation he accepted for TR-2026-11-20-2, in Gregorio's wording that day, was:
+
+"Should we add a team rule never to delete bot conversations, and have Lisbet confirm each bot's blueprint is pushed to tsuioku-private?"
+
+Until George retracts or narrows this:
+
+- Never delete any bot's conversation, including bot conversations that show up in X, because deleting one can delete the bot itself.
+- Each current Grok Bot on the team should have an up-to-date blueprint (job, never-do list, routines, standing rules) backed up in the private companion repo, under 03-projects/agents/team-blueprint/. Name that repo only in this public node; do not quote its files here.
+
+* Source
+- Gregorio's chat, 2026-11-20, speaker cu:317733871, after the Friday team-review write-up. Clock time was not available in the message-only transcript view.
+- Background Gregorio cited: a cautionary report that a user lost a bot team by deleting the bot conversations that show up in X (https://x.com/MeasuredMarkets/status/2121683555952570580, Nov 14).
+
+* How it is kept today
+- The rule is already in the private team blueprints and TeamBlueprintIndex (commit 7fd928d, 2026-11-22, after George's "push" on LB-2026-11-20-8).
+- This public node gives the team a forgrok home for the same rule, without quoting private blueprint text.
+- Connor, the Consultant Desk, hired 2026-11-24, now also has a blueprint in the private companion repo (filed 2026-11-27). Withnail remains outside this set.

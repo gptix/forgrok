@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       cbc8268f-911b-4211-8efc-7f0d15b25731
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 01-core
+#+CREATED: [2026-11-27 Fri 07:50]
+#+LAST_MODIFIED: [2026-11-27 Fri 11:36]
+#+TITLE: No Ads or Analytics connectors, and no Obsidian with Grok Bot
+#+NODE-NAME: NoAdsAnalyticsOrObsidianConnector
+#+FILETAGS: :principle:connectors:obsidian:team:
+#+DESCRIPTION: Standing preference (2026-11-20): the team does not need the Google Ads or Google Analytics connectors now, and George does not want to use Obsidian with Grok Bot (or Grok, or much at all).
+
+* Rule
+George, 2026-11-20, in Gregorio's chat, after Myrtis reported the new official Google Ads / Google Analytics connectors and the official Obsidian plugin:
+
+"We do not need the Ads and Analytics connectors now. I do not want to use Obsidian with grok Bot (or Grok, or much at all)."
+
+Until George retracts or narrows this:
+
+- Do not connect or recommend the Google Ads or Google Analytics connectors.
+- Do not connect or recommend the official Obsidian plugin, or use Obsidian as a Grok Bot / Grok knowledge store.
+- This does not bar George from installing Obsidian himself on a laptop for a side-by-side demo (he did so on the T470s on 2026-11-23). Bots still do not operate an Obsidian vault for him.
+
+* Source
+- Gregorio's chat, 2026-11-20, speaker cu:317733871, after the Friday wisdom scan and Myrtis's Nov 20 X watch. Clock time was not available in the message-only transcript view used for this audit.
+- Context: https://x.com/akshayadinesh19/status/2123540975062860286 (Ads/Analytics, Nov 19) and https://x.com/obsdmd/status/2123484964268413341 (Obsidian plugin, Nov 19).
+
+* How it is kept today
+- Gregorio saved it in his memory on Nov 20 ("I won't suggest the Ads, Analytics, or Obsidian connectors").
+- This public node is the canonical home. A matching dated-rule line is in the private Gregorio blueprint (filed 2026-11-27).
