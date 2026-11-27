@@ -4,7 +4,7 @@
 #+AUTHOR: George P. Taylor IX
 #+CATEGORY: 01-core
 #+CREATED: [2026-11-14 Sat 08:00]
-#+LAST_MODIFIED: [2026-11-27 Fri 11:43]
+#+LAST_MODIFIED: [2026-11-27 Fri 11:47]
 #+TITLE: Retire and Replace Long-Chat Bots
 #+NODE-NAME: RetireAndReplaceLongChatBots
 #+FILETAGS: :principle:bots:grokbot:handover:usage:
@@ -20,4 +20,4 @@
 - The proposal he approved was to try retire-and-replace on the costliest long-chat bot after checking usage By Bot, with the constraint above. Gregorio scheduled a one-off proposal routine for Saturday 14 Nov around 10:00 AM ET and told George: "No bot gets replaced until you say so."
 
 * Notes
-- The team blueprint in tsuioku-private (TR-2026-11-13-5 / Q-021; draft still awaiting path and file approval as LB-2026-11-13-1) is intended as the handover-note source.
+- The team blueprints in the private companion repo (TR-2026-11-13-5 / Q-021) have been filed, and are intended as the handover-note source.
