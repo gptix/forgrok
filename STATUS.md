@@ -1,7 +1,7 @@
 
 # STATUS.md — Living Operational Snapshot
 
-**Last updated:** 2026-11-02
+**Last updated:** 2026-11-27
 **Maintainer:** George Taylor + Grok
 **Companion files:** BOOT.md, STRUCTURE.md, README.md, 01-core/memory/joji-grok-project-memory.org, 01-core/memory/voight-kampff-protocol.org, 08-skills/UpdateProjectStatus.org, 02-infrastructure/procedures/TsuiokuTwoMachineSync.org
 
@@ -14,11 +14,36 @@
 - 2026-10-31: Bot-team upkeep: a daily GrokBot.Rocks check for new bots, plus a weekly web scan for bot-building advice and a team organization review (proposals only).
 - 2026-11-01: First daily GrokBot.Rocks check ran and saved a baseline list of listed bots; later runs report only new listings.
 - 2026-11-02: BOOT.md / STATUS.md orientation pulse. BOOT now names the Grok Bot team (Gregorio as CEO; roster in `TsuiokuLibrarianBotPlan`), the private companion repo `tsuioku-private` (name only), the Read Multiplex summaries-only rule, the agent rules (approval before commit/push, per-bot git author, 00-inbox drops only) and the read-first / update-after convention for BOOT and STATUS. Withnail runtime: status unverified as of 2026-11-02.
+- 2026-11-02: Librarian audit cadence reviewed and left daily; a formal daily-versus-weekly decision is still open.
+- 2026-11-02: First weekly bot-advice scan and team review ran (proposals only). The GrokBot.Rocks check reads the directory front page only.
+- 2026-11-02: One batched open-questions digest a day (9:30 AM ET, through the coordinator; skipped when nothing changed).
+- 2026-11-07: Mistakenly published private Read Multiplex summaries were removed from the current tree. History cleanup is still pending (George).
+- 2026-11-10: Capture note added to RoemmeleEssayIngestWorkflow step 2: Rocket Reader and the ResponsiveVoice player embed hidden script-only copies of an essay; those copies are scrubbed and are not part of the capture, so do not wait for them to load.
+- 2026-11-10: A methods-research bot was hired (proposals only), with a daily X watch for new Grok Bot capabilities and for Brian's new-bot notices around 11:00 AM ET. The remaining newsletter bot was renamed Emily the Email Empress (weekday morning review before 9:00 AM ET).
+- 2026-11-11: Grok Bot phone calls are available to the team. Each call requires George's approval on a card before it is placed.
+- 2026-11-12: Pi 5 (4GB) Hermes best-practices research node added at `03-projects/local-ai-agents/Pi5HermesBestPracticesResearch.org`. Withnail stays air-gapped on hermes-pi; a networked agent on the spare Pi 5 is a separate question. Nothing is installed until George says go.
+- 2026-11-12: Usage-aware maintenance timetable in practice: full librarian audit on Fridays, shorter change-checks on other days, weekly bot-tips scan on Fridays. Formal confirmation versus the earlier daily-full-audit instruction is still open.
+- 2026-11-13: Team rules adopted: dated rules (the newest wins and the old line is removed); single-area work goes straight to the specialist bot, with the coordinator handling only cross-area work and no bot-to-bot pleasantries; only the question queue uses plain Q-numbers, and other lists use a source prefix plus the date and a number (for example LB-2026-11-20-1).
+- 2026-11-14: The Karpathy llm-wiki discussion research (from DoAnything) was committed unedited to `00-inbox/`.
+- 2026-11-16: One baseline team rule replaced older per-bot lines: every bot drafts only, sends or buys nothing without George's OK, keeps private material in `tsuioku-private`, pushes only when George says push, and tells the coordinator only about cross-area matters. Two Tsuioku workflows are kept and labeled: (A) George finalizes his own nodes with `C-c n F` and pushes with Magit; (B) a bot commits and pushes an approved private batch after George says push.
+- 2026-11-17: Public nodes added: `03-knowledge/BsvBlockchainBrief.org` and `03-knowledge/GraphsLoopsReverseEngineeringAiTeam.org`. A BSV specialist bot joined the team (reports to the coordinator). DoAnything business research was committed unedited to `00-inbox/`.
+- 2026-11-17: Team-wide path rule: every `#+PROPOSED_PATH:` in a node proposal starts with `~/local-side/` (this repo) or `~/local-side-private/` (the private repo). `GenerateTsuiokuNodeText` and the finalize helper still describe repo-relative paths; see open item 17.
+- 2026-11-18: Goals restated: Gregorio is George's primary agent, Withnail stays air-gapped (Zero Human Organization practice), the T470s is the daily driver, and the X230s and the spare Pi 5 may take internet research and long-cycle jobs. Proposals only; machine names not yet chosen.
+- 2026-11-19: The methods-research bot was renamed from Mytis to Myrtis; historical records keep the old name. The GrokBot.Rocks new-bot check moved into her Monday and Thursday watch. Bot catalogs are read-only sources: nothing is adopted without a team discussion, and app catalogs such as GrokApps.Rocks are treated with caution.
+- 2026-11-20: `00-inbox/` holds three unfiled drops (Pi 5 Hermes brief, Karpathy discussion, DoAnything business research); summary nodes are proposed and await George's finalize. Plan-node roster still lacks Myrtis, Emily, Fafnir, Alice, Velma and the BSV bot.
+- 2026-11-20: Team preference: do not connect the Google Ads or Google Analytics connectors for now, and do not use Obsidian with Grok Bot (or Grok). A video-series task list was drafted (Grok Bot teams, Emacs/org-roam, local models, Omarchy); the node is still unfiled (see open item 18).
+- 2026-11-20: Team rule TR-2026-11-20-2: never delete a bot conversation, including ones that show up in X, because that can delete the bot. Per-bot blueprints are kept in the private companion repo (name only).
+- 2026-11-22: Per-bot team blueprints for the then-current roster were filed in the private companion repo.
+- 2026-11-23: An eviction-research memo was filed in the private companion repo (original kept unedited, plus an index node).
+- 2026-11-24: A consulting-desk bot (Connor) was hired for local-business practice work. An Atlanta AI consulting plan was filed in the private companion repo (planning draft only).
+- 2026-11-26: The Atlanta plan was linked from that repo's business-plan index. George reported running `hermes update`; the Withnail / Hermes state recorded in this file remains unverified since 2026-08-31.
+- 2026-11-27: Friday librarian audit, then a public filing batch. `AutomateAnythingWithGrokBot` (a public summary of lauren's @poteto X Article) was added, and its team-commentary section was later rewritten so it names no team internals. Public rule nodes were filed: `NoAdsAnalyticsOrObsidianConnector`, `NeverDeleteBotConversations` (TR-2026-11-20-2), and `PublicBotTemplatesNeedFelixAndGeorge`.
+- 2026-11-27: The three `00-inbox/` drops were filed as summary nodes (`KarpathyLlmWikiDiscussionOctNov2026`, `DoAnythingPi5HermesResearchBrief2026`, `DoAnythingLowUpfrontBusinessResearch2026`), with each unedited original moved out of `00-inbox/`. The video-series task list was filed at `03-projects/TsuiokuPresentation/VideoSeriesTasks.org`. The librarian test-question set was frozen at `00-meta/TsuiokuLibrarianTestQuestions.org`. Side branches `lisbet/status-2026-10-27` and `local-side` are unchanged (open item 14).
 ---
 
 ## 1. Withnail / Hermes (hermes-pi)
 
-Last documented state (stale: not re-verified since 2026-08-31; flagged 2026-10-27; status unverified as of 2026-11-02. Newest hermes-pi baseline in this repo: 2026-07-28, Hermes 0.19.0):
+Last documented state (stale: not re-verified since 2026-08-31; flagged 2026-10-27; status unverified as of 2026-11-02, and still unverified as of 2026-11-27 after George reported running `hermes update` on 2026-11-26. Newest hermes-pi baseline in this repo: 2026-07-28, Hermes 0.19.0):
 
 - Hermes Agent 0.19.0 running
 - Local model path working: **qwen2.5-3b-64k** (64k context)
@@ -51,7 +76,7 @@ Last documented state (stale: not re-verified since 2026-08-31; flagged 2026-10-
 - **Org-roam NODE-NAME convention** formalized (`OrgRoamNodeNameConvention`)
 - Finalize helper `my/org-roam-finalize-place-id-commit` (`C-c n F`) lives in `02-infrastructure/emacs/forgrok-org-helpers.el` and is live on the T470s
 - `01-core/soul/` exists as of 2026-10-27 (README.org placeholder)
-- `03-knowledge/transcripts/` exists outside the previously published STRUCTURE map; now recorded
+- `03-knowledge/transcripts/` exists outside the previously published STRUCTURE map; now recorded. As of 2026-11-17 `03-knowledge/` also holds standalone briefs (`BsvBlockchainBrief`, `GraphsLoopsReverseEngineeringAiTeam`); STRUCTURE.md still says "currently transcripts/"
 - Historical schemas (`ZHO-SCHEMA.md`, `GROK-SCHEMA.md`) describe the pre-renumbering `groki/` tree and are not the live directory map
 
 ### Skill System
@@ -77,7 +102,8 @@ Grok Bot team workflow skills (kept in the bots' own skill store, not in `08-ski
 ### Grok Bot team (since 2026-10-09)
 
 - Gregorio is the Grok Bot "CEO" and coordinates the team. Roster and general roles: `03-projects/tsuioku-librarian/TsuiokuLibrarianBotPlan.org`
-- Lisbet the Librarian runs the daily audit (7:30 AM ET) and files Tsuioku material after approval
+- Lisbet the Librarian runs a Friday full audit and, in current practice, a shorter change-check on other days (~7:30–7:45 AM ET), and files Tsuioku material after approval. Formal confirmation of that cadence is still open.
+- Team rules (2026-11-13 / 2026-11-16 / 2026-11-17): dated rules, direct-to-specialist routing, question numbering by source, the baseline draft-only / push-on-George's-say rule, and the `~/local-side/` path prefix. Canonical rule nodes are proposed and await George's finalize.
 - Rules for every agent: `01-core/principles/ApprovalBeforeCommit.org`, `01-core/principles/GitAuthorPerBot.org`
 - Private companion repo: `tsuioku-private` (separate; nothing from it is quoted or summarized here)
 
@@ -102,9 +128,14 @@ Grok Bot team workflow skills (kept in the bots' own skill store, not in `08-ski
 10. Tarot Today: OpenRouter credits → re-run vision tests with a stronger model
 11. EmacsObsidianSkin: minimal viable skin (theme + layout + keybinding map + org-roam-ui)
 12. (closed 2026-09-14) T470s dual batteries and speakers 00JT988 replaced
-13. First X230 pull of post-cutover `main` (must include `dba3b9e` + orientation commits). *Superseded 2026-10-29:* `main` was rewritten, so the X230 needs a fresh clone or a hard reset to `github-side/main` (rewritten at `b381d30`; `main` was `0bcb6f2` on 2026-11-02), not a plain pull
-14. (open 2026-10-29) Remote branches `lisbet/status-2026-10-27` and `local-side` predate the 2026-10-29 rewrite and still carry the removed files; delete or rewrite them (George)
+13. First X230 pull of post-cutover `main` (must include `dba3b9e` + orientation commits). *Superseded 2026-10-29:* `main` was rewritten, so the X230 needs a fresh clone or a hard reset to `github-side/main` (rewritten at `b381d30`), not a plain pull. On 2026-11-12 the T470s copy used for the Pi 5 node started from `b381d30` and was rebased onto then-current `main` before push; the X230 has not been re-checked.
+14. (open 2026-10-29) Remote branches `lisbet/status-2026-10-27` and `local-side` predate the 2026-10-29 rewrite and still carry the removed files; delete or rewrite them (George). Still present on 2026-11-20
 15. (open 2026-10-30) Remaining full-text Roemmele copies on `main` (`04-sources/roemmele/cleaned/`, `html/`, `raw/`, `images/`, `04-sources/savewisdom/` forum copy) and pre-rename paths in history; decide scope of a second cleanup (George)
+16. (closed 2026-11-27) The three `00-inbox/` drops were filed as summary nodes, with each unedited original moved out of `00-inbox/`.
+17. (open 2026-11-17) Align `GenerateTsuiokuNodeText` and `forgrok-org-helpers.el` with the `~/local-side/` path rule (the helper passes `#+PROPOSED_PATH:` straight to `git add`, which does not expand `~`). Still open 2026-11-27; diffs in `/workspace/audit-2026-11-20/proposed-nodes/`.
+18. (closed 2026-11-27) Video-series task list filed at `03-projects/TsuiokuPresentation/VideoSeriesTasks.org`. Hard rule in that node: the private companion repo never appears on screen; demos use a throwaway knowledge base.
+19. (open 2026-11-20) Update `TsuiokuLibrarianBotPlan` roster (still dated 2026-10-31): add Myrtis, Emily, Fafnir, Alice, Velma, Basil, and Connor; record the Friday-full plus weekday-short audit cadence if George confirms it (D82).
+20. (closed 2026-11-27) Librarian test-question set frozen at `00-meta/TsuiokuLibrarianTestQuestions.org` (22 questions, including TQ-22).
 
 ## 4. Recent Session Notes
 
@@ -238,9 +269,12 @@ Grok Bot team workflow skills (kept in the bots' own skill store, not in `08-ski
 ## 5. Next Actions (suggested)
 
 - Push tonight’s T470s commits (`TsuiokuTwoMachineSync`, BOOT.md, STATUS.md)
-- On the X230: re-sync to the rewritten `main` (fresh clone or hard reset to `github-side/main`; see open item 13) before any Tsuioku edit
+- On the X230 (and any clone that still predates 2026-10-29): re-sync to the rewritten `main` (fresh clone or hard reset to `github-side/main`; see open item 13) before any Tsuioku edit. A plain Magit pull (`F p`) on an old clone would merge the removed history back in
+- Finalize the still-pending Nov 20 public rule nodes (open from LB-2026-11-20-1) and the path-rule helper diffs (open item 17)
+- If the Emacs-Obsidian look is still wanted for the video series, revisit open item 11
 - Next V-K: STRUCTURE.md project list + README one-liner; do not invent a short V-K
 - Continue sequential Roemmele essays (009+), summaries and links only
+- Re-verify Withnail / Hermes after the 2026-11-26 `hermes update`, and record the new baseline here
 - Give Withnail grounded planning tasks against the current knowledge slice
 - (Tarot) credits → stronger vision model, then interpretation layer vs mobile UX
 - (EmacsObsidianSkin) minimal viable configuration
