@@ -1,0 +1,80 @@
+:PROPERTIES:
+:ID:       4dd84c2a-a2a8-428a-8119-b5301529e08e
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-knowledge
+#+CREATED: [2026-11-18 Wed 17:16]
+#+LAST_MODIFIED: [2026-11-18 Wed 17:16]
+#+TITLE: Automate Anything with Grok Bot
+#+NODE-NAME: AutomateAnythingWithGrokBot
+#+FILETAGS: :ai:automation:grok-bot:sources:x:poteto:
+#+DESCRIPTION: Public summary of lauren's (@poteto) Nov 18, 2026 X Article on approaching automation with Grok Bot: start with the goal, teach the process and tacit judgment, then add feedback loops and routines.
+
+* Provenance
+This node summarizes a public X Article by lauren (@poteto, user id 2832427459), who has a SpaceX Super Intelligence affiliation. The post went up Wednesday, Nov 18, 2026, at 4:00 PM ET.
+
+- Post: [[https://x.com/poteto/status/2123159537016533493][x.com/poteto/status/2123159537016533493]]
+- Article: [[https://x.com/i/article/2122921713864171520][Automate Anything with Grok Bot]]
+- Companion bot template named in the article: [[https://x.ai/bot/rJW52lmFLtCvy2tSHcIag][Dr Eggbot]]
+- Fetched Wednesday, Nov 18, 2026, about 5:13 PM ET, with the X API. The article body came from the post's =article.plain_text= field (API field =title=: "Automate Anything with Grok Bot"). The API recorded HTTP 404 when unwinding the article URL, even though the article body was present on the post object.
+- Public metrics at fetch: 303,113 impressions, 2,381 likes, 4,220 bookmarks, 196 reposts, 183 replies, and 59 quotes.
+- The post's own framing: people often are not using Grok Bot to its full potential because "knowing how to automate things is actually quite a difficult skill to learn."
+
+The full article text is not filed in this repository. This node is a summary in our own words, with only short quotations.
+
+Related public nodes:
+
+- [[id:28d4b164-0dd1-4b28-9766-d50820342889][GraphsLoopsReverseEngineeringAiTeam]] — another public X Article on coordinating bot work.
+- [[id:593f38f3-5a85-487c-82c9-d9fa20398ada][HireGrokBotZhcExperience]] — Brian Roemmele's hiring manual for a named Grok Bot with one written job.
+
+* Summary
+The article treats automation as a way of thinking anyone can learn, not a skill reserved for engineers. There are two parts: a goal (what you want at the end) and a process (how you get there). Everyday examples are baking an apple pie or changing a tire. Automation is the same split, plus a machine or a bot so you do not have to do the process yourself every time.
+
+A year or two ago, the author says, that extra part meant writing code or assembling machines. With Grok Bot, a person can describe the work in plain English and let the bot figure out steps, write code if needed, and use its own computer: a mouse and browser, installed apps, meetings and notes, and other ordinary computer tasks. Because so much of work and life already runs on computers, more of it can be handed over, freeing the person for other things.
+
+The method is to start with the goal, then teach the process, including the judgment calls that usually go unsaid, then give the bot a way to gather feedback and improve, and finally put the work on a routine so the human is no longer the bottleneck. The author offers a starter bot (nicknamed Potato until it names itself) and a pre-taught designer bot, Dr Eggbot.
+
+* Key principles
+- Automation has two parts: a goal and a process. The goal is the end result; the process is only a means to that end.
+- A common mistake is to confuse the process for the goal. Filling out a form or sending an email is usually a step, not the outcome.
+- Start with the goal, then describe it to the bot, before locking in today's procedure. The bot may find a more efficient path.
+- You do not need to write code first. Describe the work in plain English and refine it with the bot.
+- Confirm the plan before any execution. Have the bot restate the goal and the process in simple English, then correct it.
+- Teach tacit knowledge: what you watch for, how you decide, which source to trust when records disagree, and what "done" actually means.
+- Start with a few real examples, including cases that went wrong, rather than trying to list every situation in advance.
+- Equip the bot to collect its own feedback (email, reviews, logs) and to propose improvements. More available data, and consistent unique IDs across tools, make that feedback usable.
+- Without a routine, the bot only works when you ask. Triggers (a message, an email, or a schedule) are what make the work automatic.
+
+* Practical steps in the article
+1. Create a new Grok Bot. Any name is fine; the author uses Potato and then asks the bot to pick a name and picture from the goal.
+2. Decide the goal first. Ask what the current process is for, and where it fits the business (for example, increasing revenue or reducing cost). If that is unclear, ask a colleague or have the bot interview you until the goal is something you accept.
+3. Tell the bot the goal, then (if you want) have it name itself. A starter prompt in the article is: describe the goal, and ask it to pick a name and picture based on that goal. If you cannot phrase the goal yet, ask the bot to question you, one step at a time, until you are happy with the wording.
+4. Explain how you would do the work yourself. The author prefers a spoken brain-dump: the usual steps, what you watch for, the apps and tools, how you check that the work is right, where the information comes from, and where feedback arrives. Then ask the bot to take the work over completely, but only after it restates the goal and process for correction. Do not start executing yet.
+5. Review and correct that restatement a few times. When it is right, tell the bot to proceed and to connect the apps it needs. If you want, ask it to review the process against the original goal and suggest a better way.
+6. Teach the judgment that usually stays implicit. Examples in the article: which services take longer, when to leave extra time, which system to trust if an email and a booking calendar disagree, and that a booking is not finished merely because an email was sent. If details are still missing, have the bot keep track and resume later instead of creating a duplicate. Ask the bot to interview you about decisions, sources, checks, and when it should ask for help, then walk through a few examples before automating.
+7. Once the workflow is running, give the bot a way to improve itself. Let it watch the same feedback you would watch (email, social posts, or review sites), match that feedback to records, and propose process changes. The author also suggests asking the bot to build simple logging tools so wait times and other facts are actually recorded. Unique, consistent IDs (a customer email, an order number, a part number) let the bot cross-reference sources.
+8. Decide when the work should start: on an email, on a chat message, or on a schedule. In Grok Bot this is a routine. Without one, you remain the person who has to remember to ask.
+9. If you want help designing bots, the author points to Dr Eggbot, a bot-designer template taught with this method: [[https://x.ai/bot/rJW52lmFLtCvy2tSHcIag][x.ai/bot/rJW52lmFLtCvy2tSHcIag]].
+
+Starter goal ideas in the article include saving toward a large purchase, scheduling bookings, improving customer reviews, hiring, gathering product feedback, preparing weekly slides, and building product features. They are illustrations, not a required list.
+
+* Notable claims and caveats
+- "Bots really can do anything that you can do on a computer" is the author's encouragement to non-technical readers, not a guarantee about every site, login, or physical-world constraint. Permissions, connectors, and approval rules still matter.
+- The booking, review-site, and car-repair examples are illustrations of the method, not reports of measured deployments.
+- Dr Eggbot is the author's own template. Installing it copies whatever that listing currently contains; it should be read before use, like any third-party bot.
+- The SpaceX Super Intelligence affiliation is noted as given; this article is a how-to, not a formal study or an official product manual.
+
+* Applying to George's team (our commentary)
+This section is our commentary, not the author's.
+
+1. Put the goal, not only the process, in every specialist brief. "Push the Roemmele package" is a process. The goal is a durable, correctly placed summary that stays private-safe and is easy to find again. Gregorio already routes work by area; stating the end result lets a specialist suggest a better path, which is what the article recommends.
+2. The team's standing rules (draft only, push only on "push," Withnail kept air-gapped, no private material in public forgrok) are the tacit judgment the article says people forget to explain. Keep those rules explicit, and add a few short worked examples of when a step looked done but was not (for example, a package that omitted members-only material, or a commit that would have filed private files in the public repo).
+3. Confirm-before-execute is already team practice and matches the article's "restate the goal and process, and do not start yet." Apply that consistently to routines, not only to one-off chats: when a trigger fires, the routine should restate what it is about to do, especially for email-driven or long-cycle jobs on the spare machines.
+4. Keep using consistent IDs across tools (org-roam =:ID:= values, Quinn's Q-NNN numbers, and message ids such as t388u). Reports from Hermes or from overnight jobs should cite those IDs so Gregorio can stitch results without rereading a full transcript.
+5. Let routines gather their own feedback (a missed Read Multiplex post, index drift, a failed package check) and propose a process change, rather than silently repeating a weak step. Dr Eggbot can be reviewed as a bot-designer aid, but any new bot still needs one written goal and the same draft-only and approval rules.
+
+* Links
+- [[https://x.com/poteto/status/2123159537016533493][The Nov 18, 2026 post]]
+- [[https://x.com/i/article/2122921713864171520][The X Article]]
+- [[https://x.com/poteto][@poteto]]
+- [[https://x.ai/bot/rJW52lmFLtCvy2tSHcIag][Dr Eggbot template]]
