@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       9b53d828-0abc-478b-9ae7-62d8334996d4
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 01-core
+#+CREATED: [2026-11-06 Fri 08:00]
+#+LAST_MODIFIED: [2026-11-27 Fri 11:51]
+#+TITLE: Describe New Bots Before Announce
+#+NODE-NAME: DescribeNewBotsBeforeAnnounce
+#+FILETAGS: :principle:bots:grokbot:approval:x:
+#+DESCRIPTION: Standing gate: describe any new bot to George before announcing it to Brian Roemmele or posting about it on X.
+
+* Rule
+Before announcing a new bot to Brian Roemmele (on X or otherwise), describe that bot to George first and wait for his go-ahead on whether and how to announce it. Any X post still needs George's explicit approval of the exact text.
+
+* Source
+- George to Lisbet, [2026-11-05 Thu ~13:47] ET: "Please describe new bots to me before announcing to Brian."
+- Relayed to Gregorio the same afternoon; Gregorio confirmed he saved it.
+- Related open question: whether the Nov 4 "hire a Bot / eggbot / introduce via a post to Brian" route (D56) is standing or one-off. This node only covers the describe-before-announce gate.
+
+* How agents keep it
+- GrokBot.Rocks daily picks: describe useful new listings to George (via Gregorio); do not post an introduction on X unless George approves the exact text.
+- eggbot-designed bots: same gate before any public introduction.

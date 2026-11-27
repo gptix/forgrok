@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       668eba7b-8245-47f5-8230-40f57e688811
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-projects
+#+CREATED: [2026-11-08 Sun 07:53]
+#+LAST_MODIFIED: [2026-11-27 Fri 11:51]
+#+TITLE: Team Methods Research Goal
+#+NODE-NAME: TeamMethodsResearchGoal
+#+FILETAGS: :tsuioku:agents:research:workflow:
+#+DESCRIPTION: Keep abreast of advances in bot-team design and operation and propose evidence-backed improvements for approval.
+
+* Standing goal
+Stay abreast of improvements others make in the design and operation of teams of bots, including work by Brian Roemmele, Andrej Karpathy, Garry Tan and @poteto.
+
+* Source and exact instruction
+George, Gregorio chat t232u, November 7, 2026, 3:39 PM EST:
+#+begin_quote
+An ongoing goal of this Team should be to stay abreast of improvments that others (like Brian, and Karpathy, and Garry Tan, and @poteto) have made in the design and operation of Teams of Bots.
+#+end_quote
+Source article George linked: [[https://readmultiplex.com/2026/11/07/a-simple-way-to-make-grok-bot-run-faster-and-cost-less/][A Simple Way To Make Grok Bot Run Faster And Cost Less]]. The article is context, not the authority for George's instruction.
+Conversation provenance: Gregorio agent e061505d-4e4e-488d-a1d9-3490fb009afd, t232u. Exact instruction verified in transcript; no private case material included.
+
+* Scope and approval boundary
+George also asked whether a new bot should investigate advances and recommend hires or redefinition of existing members' goals, tools and practices. That question is not approval to create a bot.
+Research may support proposals; this goal grants no permission to install tools, change roles, spend money, publish announcements, create recurring work or commit changes. Obtain the relevant explicit approval before acting.
+
+* Related plan
+[[id:b4bd498c-2c12-42da-8d85-533dca1bbc1e][TsuiokuLibrarianBotPlan]]

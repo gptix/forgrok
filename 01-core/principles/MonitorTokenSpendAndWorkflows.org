@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       e2377b97-3ab2-4552-b67e-ea42d46ea2c5
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 01-core
+#+CREATED: [2026-11-13 Fri 08:00]
+#+LAST_MODIFIED: [2026-11-27 Fri 11:51]
+#+TITLE: Monitor Token Spend and Workflows
+#+NODE-NAME: MonitorTokenSpendAndWorkflows
+#+FILETAGS: :principle:bots:grokbot:usage:workflows:maintenance:
+#+DESCRIPTION: Standing usage rule: monitor token spend, encapsulate bot-to-bot work as short messages and stored procedures, review stored workflows so they do not go stale, and schedule maintenance toward the end of each token allowance with higher-priority work first.
+
+* Rule
+1. Monitor token spend. If the team is getting close to the weekly limit, reduce bot-to-bot messaging by encapsulating work that can be done with short messages and stored task procedures.
+2. Successful work can be stored as skills or as more specific workflows.
+3. Stored workflows must be reviewed periodically. They can become local minima, or go outdated as better workflows are learned. Reviews propose changes only; nothing is changed without approval.
+4. Schedule more maintenance reviews toward the end of a token allowance, and prioritize them so that if tokens are fully consumed, higher-priority work has already been done. If a maintenance run finds that more than about 85% of the week's allowance is already used, skip it, say so in one line, and wait until the next period.
+
+This node records the standing rule. The exact weekly timetable (which job runs on which day) still needs George's confirmation (audit D82 / D72).
+
+* Source
+- George to Gregorio, [2026-11-12 Thu] late morning ET, after Mytis's X watch (file mtime 11:17 AM ET) and before the 12:17 PM ET forgrok commit: "I think Matt Palmer's warning is valuable.  I think we should monitor token spend.  If we start getting close to running out, I think some thought about how to minimize Bot-to-Bot messaging by encapsulating work that can be done using short messages and stored task procedures will become valuable.  Successful work  can be stored as skills or more specific workflows.  Stored workflows stand a risk of being local minima solutions, or becoming outdated as new possible workflows are learned.  Perhaps some periodic review of stored workflows would be appropriate."
+- Same conversation, shortly afterward: "Also, perhaps more 'maintenance' reviews could be scheduled toward the end of a token allowance, and prioritized so that, in the unfortunate case that tokens are fully consumed, higher priority work will have been done."
+
+* Notes
+- Gregorio saved the approach and set up routines the same day. Those routines are practice, not a substitute for this node, and the daily-full-audit instruction (rule 9 / rule 21) has not been explicitly superseded in George's own words.
+- Related: [[id:b4bd498c-2c12-42da-8d85-533dca1bbc1e][TsuiokuLibrarianBotPlan]] (audit cadence), and the still-unfiled TeamMethodsResearchGoal and MytisXCapabilityWatch drafts.

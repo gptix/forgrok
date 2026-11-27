@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       56386081-ee7a-462c-b2a3-94624b572eb8
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 01-core
+#+CREATED: [2026-11-14 Sat 08:00]
+#+LAST_MODIFIED: [2026-11-27 Fri 11:51]
+#+TITLE: Direct-to-Specialist Routing
+#+NODE-NAME: DirectToSpecialistRouting
+#+FILETAGS: :principle:bots:grokbot:routing:team:
+#+DESCRIPTION: Standing rule: George takes single-area work straight to the specialist bot and tells Gregorio once afterward; Gregorio coordinates only cross-area work. Bots never send each other got-it, thanks, or okay messages.
+
+* Rule
+1. George takes single-area work straight to the specialist bot (for example Eva, Velma, Alice, or Fafnir) and tells Gregorio once afterward.
+2. Gregorio coordinates only work that spans more than one area.
+3. Bots never send each other "got it", "thanks", or "okay" messages.
+
+* Source
+- Approved as Q-019 (later renumbered TR-2026-11-13-3) in Gregorio's chat, Friday 13 Nov 2026, 10:32 AM ET (America/New_York), message t318u, from the T470s. George's words: "Q-017, 018, 019, 021 -- Approve"
+- The proposal, already in ~/Downloads/2026-11-13-team-review.org when he approved it: "George goes straight to Eva, Velma, Alice, Fafnir etc. for single-area work and tells Gregorio once when it's done; Gregorio only coordinates cross-area work. Team rule: no \"got it / thanks / okay\" messages between bots."
+- Gregorio saved the rule to shared memory the same morning so every bot can see it without a separate message.
+
+* Notes
+- This does not change who may commit or push (still only after George's explicit approval of that change).

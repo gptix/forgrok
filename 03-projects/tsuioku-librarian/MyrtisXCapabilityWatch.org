@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       2db8361f-233c-416f-b59a-81cfb7278b70
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-projects
+#+CREATED: [2026-11-11 Wed 07:50]
+#+LAST_MODIFIED: [2026-11-27 Fri 11:51]
+#+TITLE: Myrtis X Capability Watch
+#+NODE-NAME: MyrtisXCapabilityWatch
+#+FILETAGS: :project:tsuioku:librarian:agents:grokbot:methods:
+#+DESCRIPTION: Standing rule that Myrtis (formerly Mytis) checks X.com daily for new Grok Bot capabilities and for Brian Roemmele's notices about new bots, and reports useful findings to Gregorio and George.
+
+* Rule
+Myrtis the Methods Researcher keeps a standing watch on X.com for:
+- New Grok Bot capabilities (for example telephony and phone calls, new connectors, tools, limits, or app features), especially announcements from xAI and Grok Bot staff.
+- Brian Roemmele's frequent notices about new bots that let Grok Bot do interesting things.
+
+For each item she cites a link and a date, says what it enables, which teammate could use it, and any cost, privacy, legal, or security caveats. She only reads. She does not install, sign up for, or contact anything.
+
+The check runs daily around 11:00 AM ET, after the Roemmele watch (~9 AM), so already-found items can be skipped. Since 2026-11-19 the Monday and Thursday runs also include the GrokBot.Rocks new-bot check, read without signing in, reporting only bots not seen before. Nothing from a bot catalog is adopted without a team discussion, and app catalogs such as GrokApps.Rocks are not a source of apps to connect. Findings go to Gregorio first. George is messaged only when something is worth his attention.
+
+This watch does not hire a bot, announce a bot to Brian, or change the team. Rule 26 still applies: describe any new bot to George before announcing it to Brian.
+
+* Source
+- George, 2026-11-10 8:33 PM ET, Gregorio's chat: "I think Myrtis should make sure to check X.com for new capabilities of Grok Bot, like telephony, and Brian's frequent notices about new Bots that enable Grok Bot to do interesting things."
+- George, 2026-11-10 8:35 PM ET, Gregorio's chat: "yes, please schedule her daily checks as is most convenient for you any other Bots on the team."
+- Gregorio scheduled the routine "Mytis daily X capability watch" for around 11:00 AM ET, starting 2026-11-11, and added the watch to Mytis's instructions the same evening.
+- George, 2026-11-13 10:32 AM ET, Gregorio's chat: "Q-020 -- keep Myrtis checking daily."
+- George, 2026-11-19 4:15 PM ET, Gregorio's chat: "I agree with the approach for GrokApps.Rocks.  Caution is correct.  Please resume the GrokBot.Rocks checks.  Should this be handed to Myrtis, as it seems to fall within her wheelhouse?" Gregorio moved the check into her Monday and Thursday runs (first run Mon 2026-11-23).
+- George, 2026-11-19 4:16 PM ET, Gregorio's chat: "Let's rename Mytis to 'Myrtis'.  She is named after a neighbor from my childhood." Gregorio renamed the routine to "Myrtis daily X capability watch".
+
+* Notes
+George's Nov 10 message already spelled the name "Myrtis". The bot was hired as "Mytis" and renamed Myrtis on 2026-11-19. Older dated records that say "Mytis" are left as they are (George, 2026-11-19 4:18 PM ET: "Leave historical versions alone.").
