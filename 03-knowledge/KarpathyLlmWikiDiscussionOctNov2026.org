@@ -1,0 +1,60 @@
+:PROPERTIES:
+:ID:       bd723e3c-eee3-43d5-9099-53f7e8e2a6fa
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-knowledge
+#+CREATED: [2026-11-18 Wed 10:27]
+#+LAST_MODIFIED: [2026-11-18 Wed 10:27]
+#+TITLE: Karpathy llm-wiki Gist Discussion, October-November 2026
+#+NODE-NAME: KarpathyLlmWikiDiscussionOctNov2026
+#+FILETAGS: :llm-wiki:karpathy:sources:doanything:
+#+DESCRIPTION: Public summary of Eli Anderson's review of comments on Andrej Karpathy's llm-wiki gist from 13 October through 13 November 2026. The unedited original is filed beside this node.
+
+* Provenance
+This node summarizes a Do Anything research note by Eli Anderson on recent comments on Andrej Karpathy's llm-wiki gist. The unedited original is [[file:karpathy-llm-wiki-discussion-1794688155237.md][original]]. Line 1 of that file begins with a stray =z#= before the heading; leave the original unedited.
+
+- Date range covered: 13 October 2026 through 13 November 2026. See the original, header block after the heading.
+- Source gist: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+- Author of the review: Eli Anderson. See the original, header block.
+
+Karpathy's three-layer idea (raw / wiki / schema) is stated in the original, section =Summary=.
+
+* What the period showed
+The original, section =Summary=, reports a flood of open-source implementations of that three-layer wiki idea during the window, plus two clear dissenting views, a measured ingest-routing result, and several data-integrity approaches. The supporting comment table is in the original, section =Table (newest first)=, with contributor, point, comment link, and project URL where given.
+
+* Implementations mentioned
+All names and project links below come from the original, sections =Summary= and =Table (newest first)=.
+
+- Lucas Alvarez / LucasAlvarezS released =soou=: a SQLite-indexed, standard-library Python implementation, MIT licensed. https://github.com/LucasAlvarezS/soou
+- Chaves Liu released Second Brain Skill. https://github.com/ChavesLiu/second-brain-skill
+- liushengyu released MemexOS, described as a persistent wiki. https://github.com/liushengyu/memexos
+- ya2080 updated Eigma, a free app that adds spaced-repetition quizzing on top of the wiki. https://github.com/ya2080
+- lucaslimafons described a wiki built from a repo with citations (=llm-repo-wiki=). https://github.com/lucaslimafons/llm-repo-wiki
+- tuirk described a rules-plus-LLM hybrid wiki (=Kompl=). https://github.com/tuirk/Kompl
+- gavischneider posted a curated implementation list (=awesome-llm-wiki=). https://github.com/gavischneider/awesome-llm-wiki
+- suwonleee reported experimental results, in the original =Summary=, that wiki pages alone were not enough to carry decisions into later coding sessions; prompt excerpts and runtime rule gates were both needed for reliable knowledge transfer. Project: https://github.com/suwonleee/llmwiki
+- gowtham0992 described review-gated agent memory. https://github.com/gowtham0992
+- securityguy commented on multiple memory types (no project URL in the table).
+
+* Dissent and a measured routing result
+From the original, section =Summary= (comment links in the table):
+
+- hyunsoo36 reported that in practice the compiled wiki often lacked the detail needed to answer a question, so the agent still had to read the raw sources. The wiki then became an extra layer whose retrieval savings did not offset its ingest cost.
+- karlwirth argued that the wiki should be written for the human, not the agent. When several agents run at once, a richer wiki adds overhead rather than clarity; what is needed instead is a concise record of decisions, open questions, and status summaries.
+- sassarini-marco reported that 72% of LLM tokens during ingest went to routing decisions (which folder, whether to merge, what to link). Offloading those decisions to a small typed classifier cut ingest time in half and raised retrieval success from 62% to 89% on a 525-document corpus.
+
+* Data integrity
+From the original, section =Summary=:
+
+- NDOTO-G described hash-chain verification with health checks that flag when a wiki page silently diverges from its source.
+- frankchu91 (MindBase 0.4.6) added computed, not LLM-guessed, lint checks for broken citations and broken wikilinks.
+- francisdu53 replaced vector search with a Fuzzy Cognitive Map laid over the pages, reporting five weeks of daily production use. Project: https://github.com/francisdu53/exia-seed
+
+* What the review skipped
+From the original, section =Gaps=:
+
+- Eight comments were skipped as off-topic or spam: ALS herbal promotion (donaldalice6-pixel, two dates), a Polish-translation permission request (leszekszczepkowski), an unsubscribe request (felixhuangfei), a courthouse promotion (nancyoliver704-lgtm), and three product promotions from wsir78933-rgb.
+- One duplicate was skipped: Chaves Liu's 27 October 2026 repost (gistcomment-6446098) of the Second Brain Skill announcement; only the later 2 November entry is in the table.
+- The review states that the GitHub API returned all 1,166 comments across 12 pages; every comment in the filtered set of 27 was retrieved in full; and all comments in the 13 October-13 November range were opened, read, and dated. None were reported unreadable or truncated by the API.
+
+vvronskyFX appears in the table as "confusion about spam"; see that row in the original table.

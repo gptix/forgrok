@@ -1,0 +1,71 @@
+:PROPERTIES:
+:ID:       0258ff8c-2d33-47db-a8a0-ec9bf18c823e
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-knowledge
+#+CREATED: [2026-11-18 Wed 10:27]
+#+LAST_MODIFIED: [2026-11-18 Wed 10:27]
+#+TITLE: Low-Upfront-Cost Business Research, 2026 (Do Anything)
+#+NODE-NAME: DoAnythingLowUpfrontBusinessResearch2026
+#+FILETAGS: :business:research:doanything:
+#+DESCRIPTION: Public-safe summary of a 17 November 2026 Do Anything brief on low-upfront-cost service and resale businesses. The unedited original is filed beside this node.
+
+* Provenance
+This node summarizes a Do Anything research brief dated [2026-11-17], authored by Eli Anderson. The unedited original is [[file:do-anything-research-on-simple-jobs.org][original]]. Its title is "Low-Upfront-Cost Business Research for Jud Taylor."
+
+This summary stays public-safe. Locality-specific outreach and licensing, stated income targets, and personal operating constraints are left in the original; they are what the brief used to rank the options. Read the original, sections =Summary= and =All Candidates Compared=, before treating the ranking as general advice. This node is a research summary, not legal, tax, or business advice.
+
+* Top recommendations
+The original, section =Top 3 Recommendations=, ranks three options. Section =Summary= states the same order.
+
+** 1. AI automation services (Make.com / n8n + AI)
+From the original, heading =1. AI Automation Services (Make.com / n8n + AI)=:
+
+- Offer productized, fixed-price automation packages to small businesses: connect apps, automate repetitive workflows, and add AI to processes such as email filing, CRM updates, invoice processing, lead intake, and social scheduling, then move to a monthly retainer after setup.
+- Startup path described: Make.com free plan, self-hosted n8n, an optional paid LLM tier, and a free or low-cost landing page. The brief says no coding is required and that basics can be learned in a few days from free tutorials.
+- First-customer methods in the original (warm outreach, a free pilot, and freelance-platform gigs) are under =How to Find First Customers=. Local group and meetup suggestions stay in the original.
+- Main risks named there: slow first client, underpricing, scope creep, and being too general. Mitigations offered: start outreach immediately, use fixed-price packages, and pick one vertical.
+- A four-week launch plan is under =30-Day Launch Plan= in that same recommendation.
+
+** 2. Freelance AI copywriting / content services
+From the original, heading =2. Freelance AI Copywriting / Content Services=:
+
+- Write blog posts, email sequences, social content, and website copy for small businesses, using AI tools for drafting and a human for strategy, editing, brand voice, and oversight, packaged as retainers.
+- Startup path described: optional paid LLM tier, free docs and portfolio, optional domain. The brief stresses editing skill and a few practice samples before pitching.
+- First-customer methods (emailing businesses with weak existing content, freelance platforms, community groups, and a local association) are in that section; named local pages stay in the original.
+- Main risks named there: commodity pricing, weak differentiation, and clients who do not value writing as such. Mitigations offered: pick an industry niche, sell outcomes rather than "writing," and lead with strategy and editorial quality.
+- A four-week launch plan is under =30-Day Launch Plan= in that recommendation.
+
+** 3. Online flipping (eBay / Facebook Marketplace)
+From the original, heading =3. Online Flipping (eBay / Facebook Marketplace)=:
+
+- Buy and resell goods on eBay and Facebook Marketplace, starting with items already on hand, then reinvesting into small sourced inventory.
+- The brief says this can reach a first sale fastest of the three, but it involves sourcing, shipping, and sales-tax complexity that the service businesses largely avoid.
+- Main risks named there: overpaying for inventory, slow shipping and bad feedback, unsold items, storage clutter, and sales-tax bookkeeping. Mitigations offered: check sold comps before buying, ship promptly with tracking, list on more than one platform, cap inventory, and rely on marketplace facilitator tax collection where it applies.
+- A four-week launch plan is under =30-Day Launch Plan= in that recommendation.
+
+* Other candidates
+The original, section =All Candidates Compared=, also scores virtual assistant work, prompt-engineering consulting, print on demand, SEO consulting, an affiliate niche site, local window cleaning, and a sponsor-based newsletter.
+
+Qualitative reasons given in that section, without repeating the brief's numeric targets:
+
+- Virtual assistant work is treated as a viable runner-up that typically pays less at first and competes with offshore labor. See also the original, section =Summary=.
+- Prompt-engineering consulting is scored near flipping but is not in the top three.
+- Print on demand and affiliate or newsletter projects are scored low because of slow ramp and tight or uncertain early revenue.
+- SEO consulting is scored lower because of a long ramp, despite decent later income potential.
+- Window cleaning is scored lower because of equipment cost, local travel, and weaker fit with an AI or automation interest.
+
+* Georgia legal and tax notes
+The original has a full section, =Georgia / Cobb Legal and Tax Notes=, plus a shorter licensing subsection under each recommendation. Those pages include county-level license, zoning, and outreach detail that this summary does not repeat.
+
+State-level points the brief states, all in that legal section unless noted:
+
+- A sole proprietorship needs no Georgia state registration; income is reported on the personal return (GA Form 500 / Schedule C). An LLC can be formed later; the brief cites a $110 Secretary of State filing fee.
+- A trade name (DBA) is needed only if operating under a name other than the legal name. Where to file, and the fee, are in the original and marked UNVERIFIED as to cost.
+- The brief states that Georgia does not charge sales tax on professional services such as consulting, copywriting, and automation work, only on tangible goods.
+- If reselling goods, the brief says Georgia sales-and-use tax registration is required for in-state sales, and that eBay may collect marketplace facilitator tax on its platform (confirm; marked UNVERIFIED). The local combined rate quoted in the original stays there.
+- The brief cites a 5.39% Georgia flat income-tax rate for 2026, and mentions quarterly estimates if tax owed is expected to exceed a stated threshold (see the original).
+- General liability and professional liability are described as optional at the start, especially for desk-based services, with published monthly ranges in the original, section =Insurance=.
+
+* Sources
+The original, section =Sources=, lists the cited guides and official pages, including BetOnAI automation and income pieces, Thomas Partners pricing and client-acquisition guides, Agent Hustles, Ciela AI, EarnGenix, GigWithAI, My AI Hustle, eBay and flipping income articles, Georgia and county official pages, and a few local networking links. Prefer those links, and the in-section source lists under each recommendation, over this summary when checking a figure.

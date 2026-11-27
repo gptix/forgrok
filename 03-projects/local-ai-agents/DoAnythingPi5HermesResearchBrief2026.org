@@ -1,0 +1,94 @@
+:PROPERTIES:
+:ID:       1fb75680-0784-40f5-a06b-e4fec1663d49
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-projects
+#+CREATED: [2026-11-18 Wed 10:27]
+#+LAST_MODIFIED: [2026-11-18 Wed 10:27]
+#+TITLE: Hermes Agent on a 4 GB Raspberry Pi 5 (Do Anything Research Brief)
+#+NODE-NAME: DoAnythingPi5HermesResearchBrief2026
+#+FILETAGS: :local-ai-agents:hermes:raspberry-pi:tailscale:research:doanything:
+#+DESCRIPTION: Public summary of Eli Anderson's 12 November 2026 Do Anything brief on running Hermes Agent and a small local model on a 4 GB Raspberry Pi 5. The unedited original is filed beside this node.
+
+* Provenance
+This node summarizes a Do Anything research brief dated 12 November 2026, by Eli Anderson. The unedited original is [[file:do-anything-Pi5-hermes-research-brief-1794503087656.md][original]].
+
+The prompt that commissioned the brief, and the still-pending review and install decision, live in [[id:31459a34-86bc-4da9-929c-449b0813b944][Pi5HermesBestPracticesResearch]]. Isolation of the existing air-gapped agent is also discussed in [[id:2006fc22-e5cd-4b80-a02c-0dce2b0be11b][AirgappedCEOPattern]]. This summary does not replace those nodes, and it does not approve any install.
+
+* Recommendations
+The original, section =Executive Summary (Five-Line Recommendations)=, recommends:
+
+1. Run Hermes Agent (v0.23.1) on Raspberry Pi OS Lite 64-bit, pointing at a manually built =llama.cpp= server as an OpenAI-compatible provider, for control, lower memory overhead, and better tokens/sec on 4 GB.
+2. Primary model: Qwen2.5 1.5B Instruct Q4_K_M (about 2 GB RAM, about 12 tok/s). Fallback: Llama 3.2 1B Instruct Q4_K_M (about 1.5 GB RAM, about 14 tok/s). Both Apache 2.0 or commercially permitted, and both aimed at short-answer classification and triage.
+3. Add an NVMe SSD via the official M.2 HAT+ (enable PCIe Gen 3, about 800 MB/s) and active cooling, mainly to cut model load time and avoid thermal throttling.
+4. Expose the =llama.cpp= server as an HTTP API on the tailnet with an API key. A cloud assistant would call =POST /v1/chat/completions= and wait for a short JSON response, rather than polling git or using a message queue.
+5. Keep the air-gapped Pi off the tailnet by not installing Tailscale on it. Confirm with =tailscale status= and a direct ping that should fail as unreachable or time out, not merely as packet loss that could still imply a route.
+
+The brief is research only. The original, section =9. Setup Checklist=, says the checklist is not an install script and that versions and paths should be verified before anything is run. The prompt node still records Felix, Mytis, and Gregorio reviews, and George's go-ahead, as pending.
+
+* 1. Hermes Agent on a 4 GB Pi 5
+From the original, section =1. Hermes Agent on a 4 GB Pi 5=:
+
+- Current version cited: v0.23.1, released 9 November 2026 (GitHub Releases, confirmed 10 Nov 2026; versionPing, confirmed 12 Nov 2026).
+- Agent-only minimum, no local model: a third-party hardware guide quoting official Docker docs says 1 GB RAM, 1 CPU core, and 500 MB disk, with 2-4 GB and 2 cores recommended; browser tools need at least 2 GB. The brief says the agent itself fits on a 4 GB Pi 5; the tight constraint is the local model.
+- Two setup modes: a separate =llama-server= process, with Hermes configured as a generic OpenAI-compatible client (=OPENAI_BASE_URL= / =OPENAI_API_KEY= in =~/.hermes/.env=), or Hermes's built-in managed local-model runtime since v0.22.0 (October 2026). The brief recommends the separate server, because the managed runtime is aimed at the desktop app and may not behave well headless, and it adds supervision overhead.
+- Architecture point: Hermes is an HTTP client and should not load a second copy of the model. Approximate RAM budget in the brief: OS about 200 MB, Hermes about 200-400 MB, Qwen 1.5B Q4 weights about 2 GB, context buffer about 200 MB, which the author says fits in 4 GB.
+
+* 2. Model choice
+From the original, section =2. Model Choice=:
+
+- After OS Lite idle use (about 150-250 MB), the agent, and a modest context buffer, roughly 2-2.5 GB remains for weights. The file must fit in RAM; a cited 1 GB Pi 4 measurement showed speed collapsing to about 0.13 tok/s once the model paged.
+- Hard limit stated for a 4 GB Pi 5: roughly a 2.0 GB model file after overhead.
+- No official small Hermes-family model fits comfortably: Hermes 4 starts at 14B+; Hermes 3 3.2B Q4_K_M is about a 2.02 GB file and an estimated 3.3-3.8 GB RAM at 8K context, which the brief calls borderline and likely to swap under load.
+- A community Qwen1.5-1.8B-OpenHermes-2.5 GGUF (about 1.2 GB Q4_K_M) is the closest small Hermes-style option; the brief marks Pi 5 benchmarks for it UNVERIFIED.
+- Primary and fallback recommendations, and the comparison table (file size, estimated RAM, tok/s, source type, license), are in that same section. Measured Qwen2.5 1.5B figures cited there (11.9 tok/s out, 61.4 prompt) come from an ai-tier run on a Pi 5 16 GB, 27 October 2026, not from a 4 GB board. Llama 3.2 1B tok/s is described as extrapolated.
+
+* 3. Runtime
+From the original, section =3. Runtime: llama.cpp vs. Ollama vs. Others=:
+
+- The brief compares =llama.cpp= server, Ollama, and Llamafile on speed, memory overhead, setup, OpenAI-compatible API, API-key support, systemd, and ARM tuning.
+- Recommendation: build =llama-server= from source with ARM-native optimizations (=-DGGML_NATIVE=ON=). Reasons given: a roughly 10-15% tok/s edge in community tests, lower daemon overhead than Ollama (about 100-200 MB), full control of context and threads, and built-in =--api-key=. The acknowledged drawback is a roughly 30-minute first build versus a two-minute Ollama install.
+- Supporting comparisons (Omkar, 6 Jan 2026; Stratosphere Lab, 27 May 2025; ai-local-lab Ollama measurement of 10.6 tok/s for Qwen2.5 1.5B on Pi 5 8 GB, 16 Jun 2026; SpecPicks, updated 13 Sep 2026) are listed in that section.
+
+* 4. Hardware and OS
+From the original, section =4. Hardware and OS=:
+
+- OS: Raspberry Pi OS Lite 64-bit (Bookworm), no desktop. Ubuntu Server 24.04 LTS is the close alternative; Lite is preferred because most cited guides and benchmarks use it.
+- Storage hierarchy, with published read speeds: PCIe Gen 3 NVMe via M.2 HAT+ about 800 MB/s; Gen 2 NVMe about 450 MB/s; USB 3.0 NVMe about 350 MB/s; microSD (A2, V30) about 85 MB/s. Inference speed is unaffected once the model is in RAM; load time and swap, if needed, are not. microSD is called acceptable for testing but poor for always-on use.
+- Cooling: Cortex-A76 throttles at 85 C. The brief recommends the official Active Cooler so sustained LLM load does not cut tok/s by the 20-40% cited for a passively cooled board.
+- Power: official 27W USB-C supply; published full-load draw with NVMe and cooler about 8-12 W, idle about 3-5 W.
+- Memory: even the 1.5B model is expected to hit swap during context processing. The brief recommends zram (about 2 GB) plus a lower-priority 2 GB NVMe disk swap, and does not recommend disabling swap on an always-on box.
+
+* 5. Receiving work from cloud assistants
+From the original, sections =5. Receiving Work from Cloud Assistants= and its =Recommendation=:
+
+- Three patterns are compared: (a) HTTP API over Tailscale, (b) a shared git repo the Pi polls, and (c) a message queue or webhook. The brief ranks (a) first for this use case: high reliability, high security if the API is bound to the tailnet and keyed, and low setup.
+- Typical short-job round trip stated there: about 15-30 seconds. Git or a queue is reserved for cases where outbound HTTP is blocked, jobs are long-running, or a durable queue is required.
+
+* 6. Tailscale and isolation
+From the original, section =6. Tailscale and Isolation=:
+
+- Strongest guarantee stated: do not install Tailscale on the air-gapped Pi, so it never appears on the tailnet.
+- If that Pi must still be reachable separately, the brief describes tagging both nodes, a deny-both-ways Tailscale ACL, UFW on the air-gapped Pi as defense in depth, disabling key expiry on headless nodes, and optional Tailscale SSH. The example policy and confirmation commands stay in the original; the author marks the exact =tailscale status= outcome UNVERIFIED on this tailnet.
+- Related caution in =Open Questions and Risks to Check Before Installing=, item 10: a mistaken ACL can lock out the rest of the tailnet, so test in stages and keep a direct Ethernet or SSH fallback.
+
+* 7. Security hardening
+From the original, section =7. Security Hardening=:
+
+- Main threat: prompt injection in text forwarded by a cloud assistant.
+- Hermes mitigations cited for v0.23.1: Skills Guard (with a known bypass, PR #146952, not confirmed merged as of 12 Nov 2026, marked UNVERIFIED), dangerous-command approval (less useful when the "user" is another assistant), and container isolation.
+- The author's setup advice: do not grant shell, terminal, or write-file tools; use a tight system prompt and low temperature; cap =max_tokens=; sanitize outputs before any downstream action; run Hermes as a dedicated unprivileged user; bind =llama-server= to the Tailscale address with an API key; enable unattended security updates; restrict secret-file permissions; and use key-only SSH listening on the tailnet if SSH is enabled.
+- Section =7.2 Known Hermes Agent vulnerabilities= lists CVE-2026-9353, CVE-2026-9366, and CVE-2026-10223, all patched in v0.15.0, with v0.23.1 described as not affected, plus an April 2026 unauthenticated RCE in v0.8.0 (issue #6439, fixed) used as the reason to always set API keys. Advisory links are in that table.
+
+* 8. Realistic limits
+From the original, section =8. Realistic Limits=:
+
+- Good fit: yes/no triage, single-label classification, short tagging, and routing, typically in the 5-20 second range for short inputs.
+- Acceptable but slow: flagging stale notes, short summaries, and light multi-step extraction.
+- Poor fit on this hardware: inputs over about 1,000 tokens, long-form generation, multi-turn chat, anything needing live knowledge, math or code execution, tool-using work, and documents over about 2,000 words. Those stay with cloud assistants.
+- Calculated latency for a 200-word classification, based on published tok/s, not a measurement on this 4 GB board: about 6-9 seconds. The brief marks that figure UNVERIFIED for the actual hardware and load.
+
+* 9. Setup checklist and open questions
+Section =9. Setup Checklist= in the original is a 12-phase path from blank storage to a reachable agent (hardware, OS, optional NVMe Gen 3, llama.cpp build, model download, zram, systemd, Tailscale, Hermes, wiring the local server, end-to-end checks, unattended upgrades). Commands stay in the original and should be rechecked against current docs.
+
+Section =Open Questions and Risks to Check Before Installing= lists ten items, including: headless Hermes on Pi OS Lite may be rough, and a script that only calls =llama-server= may be enough for fixed classification jobs; 4 GB versus 8 GB is a real model-size constraint, and published tok/s numbers come from 8 GB or 16 GB boards; prompt injection is mitigated but not eliminated; PR #146952 was unmerged as of 12 Nov 2026; NVMe Gen 3 can be unstable on some drives (fall back to Gen 2); and Tailscale ACLs should be tested carefully.
