@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       c86c3444-7423-46e6-aa0a-e2cdb2f5fe55
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 01-core
+#+CREATED: [2026-11-14 Sat 08:00]
+#+LAST_MODIFIED: [2026-11-27 Fri 11:43]
+#+TITLE: Question Numbering by Source
+#+NODE-NAME: QuestionNumberingBySource
+#+FILETAGS: :principle:bots:grokbot:questions:numbering:
+#+DESCRIPTION: Standing rule: only Quinn's open-questions list uses plain Q-NNN numbers. Any other list of questions for George uses a source prefix plus the date and a sequence number (TR-, MY-, LB-). When a question moves onto Quinn's list, Quinn assigns a Q-number and keeps the original ID beside it.
+
+* Rule
+1. Only Quinn's open-questions list uses plain Q-NNN numbers (for example Q-047).
+2. Any other list of questions for George must use its source prefix, the date, and a sequence number, never a bare Q- number. Examples: TR-2026-11-13-1 for Gregorio's team reviews, MY-2026-12-04-1 for Mytis's reviews, LB-2026-11-14-1 for Lisbet's audits.
+3. When one of these questions is handed to Quinn, Quinn assigns it a Q-number and notes the original ID beside it.
+
+* Source
+- George to Gregorio, Friday 13 Nov 2026, 10:34 AM ET (America/New_York), message t319u, from the T470s, after Gregorio warned that Q-017 through Q-021 overlapped Quinn's Q-numbers: "OK. Set up a question numbering scheme that avoids such potential confusion."
+- The prefix-plus-date format (TR- / MY- / LB-) was designed by Gregorio in that same sitting, saved to shared memory, added to the Friday scan routine, and reported back to George in that chat. George authorized the scheme; he did not restate the exact prefixes in his own words.
+- Today's team-review questions were renamed TR-2026-11-13-1 through 5, and the copy at ~/Downloads/2026-11-13-team-review.org was updated to match.
+
+* Notes
+- Older audit items already labeled D- or Q- keep those historical IDs. New questions from Lisbet use LB-YYYY-MM-DD-N.

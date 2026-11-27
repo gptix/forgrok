@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       2a43a9b6-7a47-4543-b768-007966bfb62f
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 01-core
+#+CREATED: [2026-11-15 Sun 07:36]
+#+LAST_MODIFIED: [2026-11-27 Fri 11:43]
+#+TITLE: Keep One CEO-Level Agent
+#+NODE-NAME: KeepOneCeoAgent
+#+FILETAGS: :principle:bots:grokbot:ceo:handover:
+#+DESCRIPTION: Standing decision that the team has one CEO-level agent, Gregorio, and that George has no plan to replace him. Direct discussion with specialist teammates remains the rule for single-area work.
+
+* Rule
+1. The team has one CEO-level agent. That agent is Gregorio.
+2. George has no plan to replace Gregorio. A handover note may be kept for reference, but it is not a decision to replace, swap, or delete him.
+3. George takes single-area issues straight to the specialist teammate. This restates DirectToSpecialistRouting; it does not replace it.
+4. This does not withdraw RetireAndReplaceLongChatBots: no bot is replaced, swapped mid-job, or deleted unless George says so.
+
+* Source
+- George's own words in Gregorio's chat, Saturday 14 Nov 2026, 2:37 PM ET (America/New_York), message t323u, from the T470s: "I do not have any plan to replace you.  Best practice of people I respect seems to be to have one 'CEO' level agent. That is you.  The practice of discussing issues directly with Team members seems logical."
+- Gregorio recorded the fact in shared memory the same afternoon and, when filing the Nov 14 team-review records (tsuioku-private 64bbaae, after George's 2:42 PM ET widget approval), marked the handover draft "not adopted."
+
+* Notes
+- Proposed as LB-2026-11-15-1. Related unfiled nodes: DirectToSpecialistRouting (LB-2026-11-14-2) and RetireAndReplaceLongChatBots (LB-2026-11-14-4).
+- The 2:42 PM ET widget also asked for a draft-only Pi 5 Hermes update; that is a one-off, not part of this rule.

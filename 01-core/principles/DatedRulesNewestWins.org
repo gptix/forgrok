@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       018c5aac-7295-40e6-b962-7450790ea228
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 01-core
+#+CREATED: [2026-11-14 Sat 08:00]
+#+LAST_MODIFIED: [2026-11-27 Fri 11:43]
+#+TITLE: Dated Rules, Newest Wins
+#+NODE-NAME: DatedRulesNewestWins
+#+FILETAGS: :principle:bots:grokbot:memory:rules:
+#+DESCRIPTION: Standing rule: every standing rule in a bot's memory carries its date; when two conflict the newer wins and the old line is removed, not stacked. Memory cleanups are proposed first and done only after George approves.
+
+* Rule
+1. Every standing rule in a bot's memory carries its date.
+2. When two rules conflict, the newer one wins and the old line is removed, not kept alongside.
+3. Memory cleanups are proposed first and done only after George approves.
+
+* Source
+- Approved as Q-018 (later renumbered TR-2026-11-13-2) in Gregorio's chat, Friday 13 Nov 2026, 10:32 AM ET (America/New_York), message t318u, from the T470s. George's words: "Q-020 -- keep Myrtis checking daily." and "Q-017, 018, 019, 021 -- Approve"
+- The proposal, already in ~/Downloads/2026-11-13-team-review.org when he approved it: "Every standing rule in memory carries a date; when two conflict the newer wins and the old line is removed, not stacked. One-time cleanup pass on Gregorio's memory (80+ profile facts) and each bot's, proposed by Gregorio, approved by George."
+- Gregorio saved the rule to shared memory the same morning. A cleanup list was scheduled as a proposal only, for Saturday 14 Nov around 10:00 AM ET; nothing is removed until George approves the list.
+
+* Notes
+- This node records the standing rule. It does not authorize any deletion from memory by itself.
+- Related unfiled drafts: MonitorTokenSpendAndWorkflows (D83).
