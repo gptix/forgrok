@@ -132,7 +132,7 @@ Grok Bot team workflow skills (kept in the bots' own skill store, not in `08-ski
 14. (open 2026-10-29) Remote branches `lisbet/status-2026-10-27` and `local-side` predate the 2026-10-29 rewrite and still carry the removed files; delete or rewrite them (George). Still present on 2026-11-20
 15. (open 2026-10-30) Remaining full-text Roemmele copies on `main` (`04-sources/roemmele/cleaned/`, `html/`, `raw/`, `images/`, `04-sources/savewisdom/` forum copy) and pre-rename paths in history; decide scope of a second cleanup (George)
 16. (closed 2026-11-27) The three `00-inbox/` drops were filed as summary nodes, with each unedited original moved out of `00-inbox/`.
-17. (open 2026-11-17) Align `GenerateTsuiokuNodeText` and `forgrok-org-helpers.el` with the `~/local-side/` path rule (the helper passes `#+PROPOSED_PATH:` straight to `git add`, which does not expand `~`). Still open 2026-11-27; diffs in `/workspace/audit-2026-11-20/proposed-nodes/`.
+17. (closed 2026-11-27) `GenerateTsuiokuNodeText` and `forgrok-org-helpers.el` now follow the `~/local-side/` / `~/local-side-private/` path rule. The helper picks the repo from the prefix and stages a repo-relative path.
 18. (closed 2026-11-27) Video-series task list filed at `03-projects/TsuiokuPresentation/VideoSeriesTasks.org`. Hard rule in that node: the private companion repo never appears on screen; demos use a throwaway knowledge base.
 19. (open 2026-11-20) Update `TsuiokuLibrarianBotPlan` roster (still dated 2026-10-31): add Myrtis, Emily, Fafnir, Alice, Velma, Basil, and Connor; record the Friday-full plus weekday-short audit cadence if George confirms it (D82).
 20. (closed 2026-11-27) Librarian test-question set frozen at `00-meta/TsuiokuLibrarianTestQuestions.org` (22 questions, including TQ-22).
@@ -270,7 +270,7 @@ Grok Bot team workflow skills (kept in the bots' own skill store, not in `08-ski
 
 - Push tonight’s T470s commits (`TsuiokuTwoMachineSync`, BOOT.md, STATUS.md)
 - On the X230 (and any clone that still predates 2026-10-29): re-sync to the rewritten `main` (fresh clone or hard reset to `github-side/main`; see open item 13) before any Tsuioku edit. A plain Magit pull (`F p`) on an old clone would merge the removed history back in
-- Finalize the still-pending Nov 20 public rule nodes (open from LB-2026-11-20-1) and the path-rule helper diffs (open item 17)
+- Update `TsuiokuLibrarianBotPlan` roster (open item 19)
 - If the Emacs-Obsidian look is still wanted for the video series, revisit open item 11
 - Next V-K: STRUCTURE.md project list + README one-liner; do not invent a short V-K
 - Continue sequential Roemmele essays (009+), summaries and links only

@@ -4,7 +4,7 @@
 #+AUTHOR: George P. Taylor IX
 #+CATEGORY: 08-skills
 #+CREATED: [2026-08-13 Thu 20:48]
-#+LAST_MODIFIED: [2026-10-05 Mon 14:15]
+#+LAST_MODIFIED: [2026-11-20 Fri 07:45]
 #+TITLE: Generate Tsuioku Node Text
 #+NODE-NAME: GenerateTsuiokuNodeText
 #+FILETAGS: :skill:tsuioku:org-roam:ingestion:process:
@@ -25,18 +25,18 @@ This skill is for a new file. A revision of a file already on =github-side= is a
 
 * Preconditions
 - A PascalCase =NODE-NAME= with no spaces, hyphens, or underscores.
-- A relative path under the knowledge-base root (=STRUCTURE.md=). Path must end in =.org=.
+- A path that starts with =~/local-side/= (this repository) or =~/local-side-private/= (the private repository), then a folder from =STRUCTURE.md=. Path must end in =.org=. Team-wide rule since 2026-11-17 (ProposedPathLocalSidePrefix).
 - The content is drafted.
 - A brand-new top-level directory also needs =STRUCTURE.md= and possibly =BOOT.md=.
 
 * Steps
-1. Determine the relative path (example: =08-skills/GenerateTsuiokuNodeText.org=).
+1. Determine the path, with its repository prefix (example: =~/local-side/08-skills/GenerateTsuiokuNodeText.org=).
 2. Choose the =NODE-NAME=.
 3. Write a short =COMMIT_MSG=.
 4. Produce one text block in this order. Line 3 is the sentinel. It is not optional.
 
 #+begin_example
-#+PROPOSED_PATH: <relative-path-from-repo-root>
+#+PROPOSED_PATH: ~/local-side/<path-under-repo-root>.org
 #+COMMIT_MSG: <short commit message>
 ############ THIS LINE AND ALL ABOVE WILL BE DELETED, WITH NEW :PROPERTIES: DRAWER STARTING AT VERY BEGINNING OF FILE ###################
 #+AUTHOR: George P. Taylor IX
@@ -55,7 +55,7 @@ This skill is for a new file. A revision of a file already on =github-side= is a
 - Line 3 is the sentinel, exactly as shown. The helper deletes from point-min through that line only when the sentinel matches. Without it, the two keywords survive into the commit.
 - Do not include a leading =:PROPERTIES:= drawer. The helper calls =org-id-get-create=.
 - =NODE-NAME= is PascalCase. No spaces, hyphens, or underscores.
-- Path ends in =.org=.
+- Path starts with =~/local-side/= or =~/local-side-private/= and ends in =.org=.
 - Lasting keywords and the body go below the sentinel.
 
 6. Hand the block to the operator. Say that =C-c n F= commits that one file and does not push.

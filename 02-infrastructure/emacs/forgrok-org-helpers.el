@@ -75,9 +75,15 @@ Signals an error if the required keywords are missing or the buffer is not Org."
   (let* ((proposed-path (my/--extract-keyword "PROPOSED_PATH"))
          (commit-msg    (my/--extract-keyword "COMMIT_MSG"))
          (exec-summary  (my/--extract-keyword "EXECUTIVE_SUMMARY")) ; kept, not deleted
+         ;; 2026-11-17 rule: paths start with ~/local-side/ or ~/local-side-private/.
+         ;; Bare relative paths still resolve against the forgrok root.
+         (repo-root     (if (and proposed-path
+                                 (string-prefix-p "~/local-side-private/" proposed-path))
+                            (expand-file-name "~/local-side-private/")
+                          my/forgrok-repo-root))
          (full-path     (and proposed-path
-                             (expand-file-name proposed-path my/forgrok-repo-root)))
-         (rel-path      proposed-path))
+                             (expand-file-name proposed-path repo-root)))
+         (rel-path      (and full-path (file-relative-name full-path repo-root))))
 
     (unless proposed-path
       (user-error "Missing #+PROPOSED_PATH: keyword"))
@@ -85,6 +91,8 @@ Signals an error if the required keywords are missing or the buffer is not Org."
       (user-error "Missing #+COMMIT_MSG: keyword"))
     (unless (string-suffix-p ".org" proposed-path t)
       (user-error "PROPOSED_PATH must end in .org"))
+    (unless (string-prefix-p repo-root full-path)
+      (user-error "PROPOSED_PATH resolves outside %s" repo-root))
 
     ;; Dry-run path
     (if dry-run
@@ -132,7 +140,7 @@ Signals an error if the required keywords are missing or the buffer is not Org."
       (org-roam-db-sync)
 
       ;; Stage + commit
-      (let ((default-directory my/forgrok-repo-root))
+      (let ((default-directory repo-root))
         (cond
          ((fboundp 'magit-run-git)
           (magit-run-git "add" rel-path)
