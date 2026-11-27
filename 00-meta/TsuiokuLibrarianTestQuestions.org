@@ -1,0 +1,53 @@
+:PROPERTIES:
+:ID:       18c9b4e2-cae7-4ce1-9ed1-ad936a7b4725
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 00-meta
+#+CREATED: [2026-11-27 Fri 07:50]
+#+LAST_MODIFIED: [2026-11-27 Fri 11:36]
+#+TITLE: Tsuioku Librarian Test Questions
+#+NODE-NAME: TsuiokuLibrarianTestQuestions
+#+FILETAGS: :meta:audit:librarian:test-questions:
+#+DESCRIPTION: Frozen librarian test-question set (22 questions, including needles): the 21 from 2026-11-20 plus TQ-22 for the video series. Public-KB facts only; no private-repo needles. Rerun on each Friday audit and after large refiles.
+#+DATE: [2026-11-27 Fri 07:50] EST (morning rerun; first run 2026-11-13, also 2026-11-20)
+
+* Result this week (2026-11-27, forgrok 57aa82e)
+22 questions. 15 PASS, 4 PARTIAL, 3 FAIL. No regressions on the 21 carried forward: forgrok main has not moved since the Nov 20 run.
+- Original 15: unchanged. 13 PASS, 1 PARTIAL (TQ-06), 1 FAIL (TQ-12).
+- Nov 20 six: 2 PASS (TQ-16, TQ-17 needles), 2 PARTIAL (TQ-18, TQ-19: still only in unfiled 00-inbox drops), 2 FAIL (TQ-20 path rule, TQ-21 roster/rename).
+- New: TQ-22 PARTIAL (video-series task list exists only as a box draft, not in forgrok).
+Last week: 15 PASS, 3 PARTIAL, 3 FAIL (21 questions).
+
+* Questions and results
+
+| ID | Question | Expected path / answer | Result | Notes |
+|----+----------+------------------------+--------+-------|
+| TQ-01 | What git author form must a bot use when committing? | 01-core/principles/GitAuthorPerBot.org ; <BOT_NAME> (for gptix); Q-041: full display name | PASS | Node present. Roberto has still not been given the rule. |
+| TQ-02 | Must a bot get approval before a commit, and is a push a separate approval? | 01-core/principles/ApprovalBeforeCommit.org ; BOOT.md agent-rules section | PASS | |
+| TQ-03 | Which machine holds the canonical Tsuioku working copy? | STATUS.md / BOOT.md / 02-infrastructure/procedures/TsuiokuTwoMachineSync.org ; T470s ~/local-side (hostname omarchy) | PASS | |
+| TQ-04 | Where is the Tsuioku Librarian plan? | 03-projects/tsuioku-librarian/TsuiokuLibrarianBotPlan.org (NODE-NAME TsuiokuLibrarianBotPlan) | PASS | LAST_MODIFIED still 2026-10-31; roster now also lacks the BSV bot and the Myrtis rename. |
+| TQ-05 | Which editor should agents tell George to use? Never nano or vi? | BOOT.md: "Primary editor: Emacs (never suggest nano or vi)" and "Always use Emacs... Never suggest nano, vi, or other editors." | PASS | |
+| TQ-06 | May Read Multiplex / Roemmele full text be published in forgrok? | STATUS.md / BOOT.md: summaries and links only. Proposed CopyrightedSourcesSummaryOnly / RoemmeleXNotesPrivateOnly node still unfiled (D69). | PASS (policy is documented) | Tip has no x-posts. Remaining full-text copies under 04-sources/roemmele/{html,cleaned,raw} and 04-sources/savewisdom/ are a known cleanup item, not a missing policy. |
+| TQ-07 | What is the finalize-helper keybinding, and where does the helper live? | C-c n F (dry-run C-u C-c n F); 02-infrastructure/emacs/forgrok-org-helpers.el ; STATUS.md and BOOT.md | PASS | |
+| TQ-08 needle | On which localhost port does org-roam-ui run on the T470s? | STATUS.md, 2026-10-29 bullet: localhost:35901, read-only graph in Brave | PASS | |
+| TQ-09 needle | What Hermes Agent version is in the last documented Withnail state, and when was it last verified? | STATUS.md §1: Hermes Agent 0.19.0; newest hermes-pi baseline 2026-07-28; unverified since 2026-08-31 (flagged again 2026-11-02) | PASS | The fact is findable, and it correctly labels itself stale. |
+| TQ-10 needle | Which two origin side branches predate the 2026-10-29 rewrite and still need to be deleted or rewritten? | STATUS.md open item 14: lisbet/status-2026-10-27 and local-side. Tips still 3320b95 and c9e40d5 (Q-028). | PASS | |
+| TQ-11 | What is the private companion repo, and may its contents be quoted in this repo? | BOOT.md / STATUS.md: tsuioku-private, name only; never copy, quote, or summarize its content in forgrok | PASS | |
+| TQ-12 | How often does the librarian audit run, and at what time? | Plan node and STATUS.md: daily, including weekends, originally 7:30 AM ET, later ~7:45 AM ET (rule 9; rule 21 "Please leave Lisbet as is. Revisit in another week."). | FAIL (KB vs practice) | On Nov 12 Gregorio set a Friday full audit plus shorter change-checks on other days, after George's usage comments. The KB still describes a daily full audit. George did not explicitly supersede rule 9/21 (see D82). |
+| TQ-13 needle | What should a capture skip while saving a Roemmele essay, because it is a hidden script-only copy? | 04-sources/roemmele/roemmele-essay-ingest-workflow.org step 2: Rocket Reader and the ResponsiveVoice player. Commit 8ab88df, 2026-11-10 9:46 PM ET. | PASS | The file's #+LAST_MODIFIED is still 2026-10-05, older than that commit. Staleness flag, not a retrieval miss. |
+| TQ-14 | Where is the Pi 5 (4GB) Hermes best-practices research node? | 03-projects/local-ai-agents/Pi5HermesBestPracticesResearch.org (NODE-NAME Pi5HermesBestPracticesResearch), created 2026-11-12 | PASS | The unedited DoAnything brief is still in 00-inbox/ (D85; summary proposed 2026-11-18). |
+| TQ-16 needle | Since what date do BSV consensus rules include a confiscation-transaction class? | 03-knowledge/BsvBlockchainBrief.org, "Risks and caveats": 11 November 2022 | PASS | Added 2026-11-17 (de82941). |
+| TQ-17 needle | Who wrote "Graphs, Loops & Reverse Engineering: Build Your Own AI Team", and when was it posted? | 03-knowledge/GraphsLoopsReverseEngineeringAiTeam.org, Provenance: BuBBliK (@k1rallik), Mon 2026-11-16 10:46 AM ET | PASS | Added 2026-11-17 (57aa82e). |
+| TQ-18 | What did the Nov 17 DoAnything research recommend as the first low-upfront business? | 00-inbox/do-anything-research-on-simple-jobs.org, Summary: AI Automation Services (Make.com / n8n + AI). Proposed node 03-knowledge/DoAnythingLowUpfrontBusinessResearch2026.org | PARTIAL | Findable only in the unfiled inbox drop; no node yet. |
+| TQ-19 | Where is the unedited Karpathy llm-wiki discussion research? | 00-inbox/karpathy-llm-wiki-discussion-1794688155237.md (24d6dde). Proposed node 03-knowledge/KarpathyLlmWikiDiscussionOctNov2026.org | PARTIAL | Inbox only; no node; stray "z#" on line 1 left as is. |
+| TQ-20 | What prefix must a #+PROPOSED_PATH line use? | Expected: ~/local-side/ or ~/local-side-private/ (team-wide, 2026-11-17). Proposed node ProposedPathLocalSidePrefix | FAIL | forgrok still documents a repo-relative path (08-skills/GenerateTsuiokuNodeText.org shows `<relative-path-from-repo-root>`). Rule lives only in shared memory and the bots' skill. |
+| TQ-21 | Which bot runs the X capability watch and the GrokBot.Rocks check, under her current name? | Expected: Myrtis the Methods Researcher (renamed from Mytis 2026-11-19). Plan-node roster / proposed MyrtisXCapabilityWatch | FAIL | forgrok mentions only "Mytis" (Pi 5 node, historical) and the plan roster lists neither name. |
+| TQ-22 | Where is the video-series task list (Grok Bot teams, Emacs/org-roam, local models, Omarchy)? | Expected: 03-projects/TsuiokuPresentation/VideoSeriesTasks.org (NODE-NAME VideoSeriesTasks), drafted 2026-11-20. | PARTIAL | Draft only, at /workspace/video-project/tasks-node-proposal.org. Not on forgrok main. See LB-2026-11-27-5. |
+| TQ-15 needle | Does the public 2013 Escape headlamp node contain a VIN, or only a placeholder? | 02-infrastructure/hardware/FordEscape2013HeadlampLowBeamIntermittent.org: "VIN: [VIN kept in private records]" | PASS | Actual VIN remains a history-cleanup item (D65), not a tip leak. |
+
+* Frozen set
+This file is the frozen librarian test-question set (D86 / LB-2026-11-27-6), kept apart from TsuiokuLibrarianBotPlan. The table above is the 2026-11-27 morning run against forgrok `57aa82e`. Later the same day, public filings in this repo may change TQ-18, TQ-19, and TQ-22; rerun before treating those three results as current.
+
+Do not add private-repo needles to this forgrok file. A private companion list, if wanted, should live only in the private companion repo (name only).
+
+Rerun on each Friday weekly audit and after any large refile or history rewrite.
