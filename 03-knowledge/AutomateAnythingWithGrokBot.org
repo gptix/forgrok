@@ -4,7 +4,7 @@
 #+AUTHOR: George P. Taylor IX
 #+CATEGORY: 03-knowledge
 #+CREATED: [2026-11-18 Wed 17:16]
-#+LAST_MODIFIED: [2026-11-18 Wed 17:16]
+#+LAST_MODIFIED: [2026-11-27 Fri 11:02]
 #+TITLE: Automate Anything with Grok Bot
 #+NODE-NAME: AutomateAnythingWithGrokBot
 #+FILETAGS: :ai:automation:grok-bot:sources:x:poteto:
@@ -64,14 +64,10 @@ Starter goal ideas in the article include saving toward a large purchase, schedu
 - Dr Eggbot is the author's own template. Installing it copies whatever that listing currently contains; it should be read before use, like any third-party bot.
 - The SpaceX Super Intelligence affiliation is noted as given; this article is a how-to, not a formal study or an official product manual.
 
-* Applying to George's team (our commentary)
-This section is our commentary, not the author's.
+* Applying the ideas (commentary)
+This short note is commentary, not the author's.
 
-1. Put the goal, not only the process, in every specialist brief. "Push the Roemmele package" is a process. The goal is a durable, correctly placed summary that stays private-safe and is easy to find again. Gregorio already routes work by area; stating the end result lets a specialist suggest a better path, which is what the article recommends.
-2. The team's standing rules (draft only, push only on "push," Withnail kept air-gapped, no private material in public forgrok) are the tacit judgment the article says people forget to explain. Keep those rules explicit, and add a few short worked examples of when a step looked done but was not (for example, a package that omitted members-only material, or a commit that would have filed private files in the public repo).
-3. Confirm-before-execute is already team practice and matches the article's "restate the goal and process, and do not start yet." Apply that consistently to routines, not only to one-off chats: when a trigger fires, the routine should restate what it is about to do, especially for email-driven or long-cycle jobs on the spare machines.
-4. Keep using consistent IDs across tools (org-roam =:ID:= values, Quinn's Q-NNN numbers, and message ids such as t388u). Reports from Hermes or from overnight jobs should cite those IDs so Gregorio can stitch results without rereading a full transcript.
-5. Let routines gather their own feedback (a missed Read Multiplex post, index drift, a failed package check) and propose a process change, rather than silently repeating a weak step. Dr Eggbot can be reviewed as a bot-designer aid, but any new bot still needs one written goal and the same draft-only and approval rules.
+A person working alone can use the same split. Write the end result first, then the usual steps, including the judgment calls that usually go unsaid. Have the bot restate the goal and the process in simple English, and correct that restatement, before any of the work begins. Once a workflow is running, give the bot a way to notice when something went wrong and to propose a change, rather than only repeating the same steps. A routine (a message, an email, or a schedule) is what keeps you from having to remember to ask. If you install a third-party designer template, read it first, and still give the new bot one written goal and a confirm-before-execute rule.
 
 * Links
 - [[https://x.com/poteto/status/2123159537016533493][The Nov 18, 2026 post]]
