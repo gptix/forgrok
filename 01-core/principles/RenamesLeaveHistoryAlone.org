@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       fbe46a19-4657-43a0-b82f-5f75601c3d2c
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 01-core
+#+CREATED: [2026-11-20 Fri 07:45]
+#+LAST_MODIFIED: [2026-11-27 Fri 11:43]
+#+TITLE: Renames Leave History Alone
+#+NODE-NAME: RenamesLeaveHistoryAlone
+#+FILETAGS: :principles:agents:grokbot:naming:history:
+#+DESCRIPTION: Rule (2026-11-19) that when a bot is renamed, the new name is used from then on, while historical versions (dated notes, commits, earlier nodes) keep the name they had.
+
+* Rule (2026-11-19)
+- When George renames a bot, its profile, description, routines, and any live or current-state node use the new name from that date.
+- Historical versions are left alone: dated memory notes, commit messages, audit reports, and nodes that record what happened earlier keep the old name.
+- A new node about a current duty may mention the old name once, for findability (for example "Myrtis (formerly Mytis)").
+
+* First use
+On 2026-11-19 Mytis the Methods Researcher was renamed Myrtis the Methods Researcher (same agent). Older notes and nodes that say "Mytis", such as the 2026-11-12 Pi 5 Hermes research node, stay as they are.
+
+* Sources
+- George, 2026-11-19 4:16 PM ET, Gregorio's chat: "Let's rename Mytis to 'Myrtis'.  She is named after a neighbor from my childhood."
+- George, 2026-11-19 4:18 PM ET, Gregorio's chat: "Leave historical versions alone." (in reply to Gregorio's note that older dated notes still say "Mytis")
+- Kept today in shared team memory (journal, 2026-11-19: "Use 'Myrtis' from now on"). The "leave history alone" half is not in shared memory.

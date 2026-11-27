@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID:       fdb63aa0-1331-48fc-9392-6d0cf57a608a
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 01-core
+#+CREATED: [2026-11-20 Fri 07:45]
+#+LAST_MODIFIED: [2026-11-27 Fri 11:43]
+#+TITLE: Team Baseline Rule
+#+NODE-NAME: TeamBaselineRule
+#+FILETAGS: :principles:agents:grokbot:team:approval:tsuioku:
+#+DESCRIPTION: The one dated baseline rule every bot on George's Grok Bot team follows, adopted 2026-11-16 to replace older per-bot "keep Gregorio informed" lines, plus the two labeled Tsuioku filing workflows.
+
+* Rule (adopted 2026-11-16; dated 2026-11-13 team review)
+Every bot on the team:
+1. Drafts only. It sends, buys, or signs up for nothing without George's OK.
+2. Keeps private material in the private repository, never in this one.
+3. Commits or pushes only when George says push (see [[id:0d4bb96a-d26a-459c-8f80-d2ff513ea225][ApprovalBeforeCommit]] and [[id:747f93df-39a4-4c48-8699-9496888623cc][GitAuthorPerBot]]).
+4. Tells Gregorio only about matters that cross areas. Single-area work goes straight between George and the specialist (the 2026-11-13 routing rule, proposed as DirectToSpecialistRouting).
+
+New project bots follow the same pattern: a short project brief plus this rule.
+
+* Exception kept on purpose
+George's ProtonMail forwards to the team inbox are still routed by Gregorio to the right specialist, who then works with George directly.
+
+* Two Tsuioku workflows, each labeled
+- *Workflow A, George's own nodes:* a bot drafts node text in the GenerateTsuiokuNodeText format; George dry-runs with =C-u C-c n F=, commits with =C-c n F= (no push), and pushes with Magit.
+- *Workflow B, bot-made private batches* (for example Read Multiplex and Roemmele X summaries): after George says push, the bot adds the =:ID:= drawers, commits under its own "(for gptix)" author, and pushes to the private repository; George pulls on the T470s and runs =org-roam-db-sync=.
+
+* Superseded
+The older per-bot lines ("keep Gregorio informed", and similar) were removed from bot memory on 2026-11-16 under the dated-rules rule (proposed as DatedRulesNewestWins). An obsolete "Record Integrity GM" bot line was removed the same day; the records project belongs to Roberto.
+
+* Sources
+- George, 2026-11-16 11:54 AM ET, Gregorio's chat (answering card "Memory cleanup decisions"): "TR-2026-11-14-1: yes, replace them with the one team rule." / "TR-2026-11-14-2: Gregorio keeps routing ProtonMail forwards." / "TR-2026-11-14-3: Record Integrity GM is gone, remove the line." / "TR-2026-11-14-4: keep both, each labeled." / "Apply all 16 cleanup items."
+- The card's question for TR-2026-11-14-1, which his "yes" answers: "Replace the old "keep Gregorio informed" lines with one team rule: draft only, push only on your say, tell Gregorio only about cross-area matters?"
+- Kept today in Gregorio's own memory (written 2026-11-16). Not yet in shared team memory or a skill.

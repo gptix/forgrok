@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       b4fbffd1-3c31-4ac9-b2ef-bf5971c3b3b3
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-projects
+#+CREATED: [2026-11-20 Fri 07:45]
+#+LAST_MODIFIED: [2026-11-27 Fri 11:43]
+#+TITLE: Newsletter Review Quiet Message
+#+NODE-NAME: NewsletterReviewQuietMessage
+#+FILETAGS: :project:tsuioku:librarian:agents:grokbot:email:
+#+DESCRIPTION: Standing rule (2026-11-17) for the exact one-line message Emily the Email Empress sends when no newsletters or podcasts arrived.
+
+* Rule (2026-11-17)
+When the morning newsletter review finds no new newsletters or podcasts, Emily the Email Empress sends only this line, and nothing else:
+
+"No newsletters or podcasts today."
+
+On mornings with new items she sends the normal report (executive summary, per-item summaries, uniqueness ratings, HTML copy).
+
+This is the newsletter counterpart of Della's quiet deadline line (proposed as DeadlineCheckQuietMessage, 2026-11-10).
+
+* Sources
+- George, 2026-11-17 11:08 AM ET, Emily's chat: "Please simply report "No newsletters or podcasts today." Thanks."
+- Emily updated her "Morning email review" routine and her memory the same minute.
+- First use: 2026-11-19 morning report, which was exactly "No newsletters or podcasts today."

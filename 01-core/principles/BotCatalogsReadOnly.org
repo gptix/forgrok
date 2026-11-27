@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       36f3e22e-7278-4b4f-b99a-3e842da49286
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 01-core
+#+CREATED: [2026-11-20 Fri 07:45]
+#+LAST_MODIFIED: [2026-11-27 Fri 11:43]
+#+TITLE: Bot Catalogs Are Read-Only Sources
+#+NODE-NAME: BotCatalogsReadOnly
+#+FILETAGS: :principles:agents:grokbot:security:sources:
+#+DESCRIPTION: Rule (2026-11-19) that bot and app catalogs such as GrokBot.Rocks are read for ideas only; nothing from them is used without discussing it with Gregorio and the team, and app catalogs get extra caution.
+
+* Rule (2026-11-19)
+- GrokBot.Rocks and other curated bot catalogs are a read-only source of information about how people use and build bots.
+- No bot from a catalog is used or adopted without first discussing it with Gregorio and the team.
+- App catalogs (for example GrokApps.Rocks) get extra caution: an app reaches into a real account for every bot, so any app the team connects is chosen from Grok Bot's own Connect apps catalog after review, not from a community listing.
+- The GrokBot.Rocks new-bot check runs inside Myrtis's Monday and Thursday watch (moved 2026-11-19; first run 2026-11-23), read without signing in, reporting only new listings.
+
+* Related
+- The 2026-10-31 instruction to check the directory daily and scan the web weekly (rule 18 in the librarian ledger). The daily check was folded into a Monday/Thursday run on 2026-11-12 in practice; George asked on 2026-11-19 to "resume the GrokBot.Rocks checks" without naming a frequency, so the cadence is still open.
+- Describe new bots to George before announcing them (proposed as DescribeNewBotsBeforeAnnounce).
+
+* Sources
+- George, 2026-11-19 4:10 PM ET, Gregorio's chat: "I believe my membership to ReadMultiplex.com allows me (and therefor the team) to use GrokBot.Rocks.  I do not plan to use any bots from there without discussing with you and the Team.  I think that it can be a useful source of information about evolving use of Bots.  Perhaps there are other useful curated sets of Bot definitions."
+- George, 2026-11-19 4:15 PM ET, Gregorio's chat: "I agree with the approach for GrokApps.Rocks.  Caution is correct.  Please resume the GrokBot.Rocks checks.  Should this be handed to Myrtis, as it seems to fall within her wheelhouse?"
+- Gregorio's reply at 4:13 PM ET set out the app-catalog caution that George agreed with; Gregorio moved the check to Myrtis after 4:15 PM ET.
+- Kept today in Gregorio's own memory and in the Myrtis watch routine. Not in shared team memory.

@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       dd3f7d13-a30c-4df2-be88-baa538c87fbd
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 01-core
+#+CREATED: [2026-11-20 Fri 07:45]
+#+LAST_MODIFIED: [2026-11-27 Fri 11:43]
+#+TITLE: PROPOSED_PATH Starts With ~/local-side/ or ~/local-side-private/
+#+NODE-NAME: ProposedPathLocalSidePrefix
+#+FILETAGS: :principles:tsuioku:org-roam:finalize:agents:
+#+DESCRIPTION: Team-wide rule (2026-11-17) that every #+PROPOSED_PATH in a Tsuioku node proposal names its repository explicitly, so a file is never saved in the wrong place.
+
+* Rule (team-wide, 2026-11-17)
+Every =#+PROPOSED_PATH:= line in a node proposal starts with:
+- =~/local-side/= for this public repository, or
+- =~/local-side-private/= for the private repository,
+whichever applies. Example: =#+PROPOSED_PATH: ~/local-side/03-knowledge/BsvBlockchainBrief.org=. A bare repo-relative path is not used any more.
+
+* Why
+A bare path such as =03-knowledge/X.org= does not say which repository it belongs to, so a private file could be finalized into the public tree. The prefix makes the target visible in the dry run (=C-u C-c n F=).
+
+* Follow-ups this rule creates
+- [[id:9607f564-a170-42f4-8d6e-cb2b074c1079][GenerateTsuiokuNodeText]] still shows =#+PROPOSED_PATH: <relative-path-from-repo-root>= and needs an in-place edit.
+- =02-infrastructure/emacs/forgrok-org-helpers.el= (as committed, 2026-08-21) expands the path for writing the file but passes the raw =#+PROPOSED_PATH:= value to =git add= from the =~/local-side/= root. Git does not expand =~=, and a =~/local-side-private/= path would be staged from the wrong repository. Check the T470s copy and align it (see [[id:a51424e9-5982-4d42-80bb-d22443b0e5bb][OrgRoamFinalizePlaceIdCommit]]).
+- Proposals drafted before 2026-11-17 with bare paths should get the prefix before they are finalized.
+
+* Sources
+- George, 2026-11-17 6:29 PM ET, Basil's chat: "Please clarify with Gregorio that proposed paths should start with either '~/local-side/' or '~/local-side-private/' as appropriate, so that files do not get saved in the wrong location."
+- George, 2026-11-17 6:30 PM ET, Basil's chat (answering card BSV-2026-11-17-2): "Yes, make it a team-wide rule"
+- Kept today in shared team memory (2026-11-17) and in the bots' tsuioku-node-proposal skill.
