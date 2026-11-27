@@ -1,0 +1,139 @@
+:PROPERTIES:
+:ID:       a1c4a681-f2e7-4670-b778-80ac1edfc344
+:END:
+#+AUTHOR: George P. Taylor IX
+#+CATEGORY: 03-projects
+#+CREATED: [2026-11-20 Fri 13:15]
+#+LAST_MODIFIED: [2026-11-20 Fri 13:15]
+#+TITLE: Video Series Task List
+#+NODE-NAME: VideoSeriesTasks
+#+FILETAGS: :project:video:presentation:emacs:omarchy:grokbot:
+#+DESCRIPTION: Task list for a video series recommending Grok Bot, Emacs with org-roam, local models, Omarchy, and Emacs-on-Omarchy functions, including production steps and a demo knowledge base so private material never appears on screen.
+#+STARTUP: overview
+#+TODO: TODO(t) STARTED(s) WAITING(w) | DONE(d) CANCELLED(c)
+Rough order is the number in each heading. Work top to bottom within a phase; phases overlap a little.
+Hard rule for every recording: tsuioku-private never appears on screen. All demos use the demo knowledge base (task 3).
+
+* Message of the series
+Five recommendations:
+1. Use Grok Bot for teams you can build, email via mail.grokbot.com, telephony, routines, connectors.
+2. Use Emacs and org-roam to maintain knowledge bases.
+3. Use local machines with local models for routine work.
+4. Use Omarchy.
+5. Use Emacs on Omarchy to write specialized Elisp functions.
+
+* Phase 1: Foundations
+** STARTED 1. Obsidian-look Emacs config (first deliverable)
+- Draft files: obsidian-look.el and obsidian-look-README.org (draft)
+- [ ] Research how Emacs and themes work on Omarchy (init location, omarchy.el shim, theme switcher)
+- [ ] Write obsidian-look.el: one file, one-line load, M-x obsidian-look-mode toggle
+- [ ] Make every setting reversible (mode saves prior values, restores on disable)
+- [ ] Byte-compile / batch-load check on the box
+- [ ] George tries it in a test profile: =emacs --init-directory ~/emacs-obsidian-test= (Emacs 29+)
+- [ ] Fix whatever looks wrong on the T470s screen (font sizes, column width, fcitx5 input still works)
+- [ ] Confirm C-SPC is still set-mark with the mode on and off
+- [ ] Decide: load from main init, or keep as an opt-in toggle
+** TODO 2. Series outline and audience
+- [ ] Decide the audience (Obsidian users curious about Emacs; people new to AI bot teams)
+- [ ] Decide format: one long video or 5 short episodes (suggested episode list in section Phase 2)
+- [ ] Pick a running example (the Tsuioku public KB)
+- [ ] Decide length, style, voice-over or live narration
+** TODO 3. Demo knowledge base
+- [ ] Create a throwaway demo repo (for example ~/demo-kb) with 20 to 40 invented notes
+- [ ] Separate public-style and private-style demo folders, two Git repos, two org-roam databases
+- [ ] Use a copy of forgrok content only after reviewing it; never copy anything from tsuioku-private
+- [ ] Add a few fake "private" notes that clearly show the separation story
+- [ ] Prepare an emacs test profile that points only at the demo KB
+- [ ] Scan the screen layout for private paths (buffer names, recentf, Magit status, dired, shell history, browser tabs)
+- [ ] Remove or hide the Git remotes and email addresses that should not be shown
+
+* Phase 2: Episode content (each gets script, shots, demo)
+** TODO 4. Episode A: Emacs that feels like Obsidian
+- [ ] Script: why looks matter; what Obsidian users expect (sidebar, tabs, palette, backlinks, graph)
+- [ ] Demo obsidian-look-mode on and off, to show it is reversible
+- [ ] Show vertico, marginalia, consult as the command palette feel
+- [ ] Show org-modern, visual-fill-column, variable-pitch text
+- [ ] Show sidebar file tree and tab-bar
+- [ ] Keep keys under the C-c o prefix; mention nothing clobbers existing keys
+** TODO 5. Episode B: Org-mode as the Obsidian equivalent
+- [ ] Side by side table: Markdown vs Org (headings, links, tags, todos, tables, code blocks)
+- [ ] Org features Obsidian lacks: agenda, TODO states, babel, capture, properties
+- [ ] Live demo: capture a note, link it, tag it, tick a TODO
+** TODO 6. Episode C: org-roam amplifies a knowledge base
+- [ ] Node IDs, backlinks buffer, org-roam-ui graph, capture templates
+- [ ] Build the demo KB up in front of the viewer
+- [ ] Contrast: roam node IDs survive file renames
+** TODO 7. Episode D: Public and private knowledge bases kept strictly separate
+- [ ] Show two folders, two Git repos, two org-roam databases (demo versions only)
+- [ ] Explain that nothing links across unless you add it on purpose
+- [ ] Contrast with one Obsidian vault with a sync setting that can share by accident
+- [ ] Show Magit pushing each repo to its own remote (demo remotes or a dry run)
+- [ ] Show the finalize helper pattern: bots propose a node, George approves, C-c n F commits locally, then pushes
+** TODO 8. Episode E: Elisp functions make Emacs yours
+- [ ] Pick 2 small functions to explain (a finalize-helper-style function; a helper that inserts a dated daily note)
+- [ ] Walk through define, bind a key, test with M-x
+- [ ] Show how to ask a bot to draft Elisp and review it before loading
+- [ ] Say where the code lives (a separate file, loaded by one line)
+** TODO 9. Episode F: Grok Bot and the bot team
+- [ ] Explain the idea: one job per bot, own memory, own routines
+- [ ] Email through mail.grokbot.com (bot inboxes, plus-addressing, what it can and cannot send)
+- [ ] Telephony: calls and meetings (check current official docs before filming)
+- [ ] Routines and connectors; per-tool permissions (Always allow, Auto-review, Needs approval, Blocked)
+- [ ] Safety rules we use: nothing sent or committed without approval; no deleting bot conversations; blueprints backed up
+- [ ] How bots feed the KB: proposals in finalize-helper format, human approves
+- [ ] Use screenshots with names and numbers blurred
+** TODO 10. Episode G: Local machines with local models
+- [ ] List what the T470s and the Pi can run (see omarchy-ideas.org)
+- [ ] Demo a small local model doing routine work (summaries, tagging, draft titles)
+- [ ] Be honest about limits: speed, RAM, battery
+- [ ] Local-first story: what stays on the machine and why
+** TODO 11. Episode H: Omarchy
+- [ ] Why Omarchy (one-menu desktop, Hyprland tiling, themes, manual)
+- [ ] Workspaces and keybindings for an Emacs-centric day
+- [ ] Theme switching that carries over to Emacs
+- [ ] Omarchy menu, scripts, webapp launchers
+- [ ] Snapshots and backups
+** TODO 12. Episode I: Emacs on Omarchy for specialized functions
+- [ ] Show where Omarchy puts Emacs config (shim loads the Omarchy defaults; your init stays yours)
+- [ ] Functions that tie Emacs to the desktop: theme sync, screenshot or screenrecord helpers, launch webapps
+- [ ] Keep fcitx5 Japanese input working in every demo
+
+* Phase 3: Production
+** TODO 13. Script
+- [ ] Draft one script per episode (Lisbet can draft from Tsuioku; George edits)
+- [ ] Mark each paragraph with the matching shot
+- [ ] Read aloud for time; trim
+- [ ] Fact-check every product claim against official docs
+** TODO 14. Shot list
+- [ ] For each script section: screen, window layout, font size, what is on screen
+- [ ] Mark any shot that touches a bot account or email; check for private data
+- [ ] Prepare a single "clean desktop" Omarchy workspace layout for recording
+** TODO 15. Recording setup
+- [ ] Pick a screen recorder (Omarchy has a built-in screenrecord tool; test it on the T470s)
+- [ ] Test microphone level and noise; test a 2-minute clip end to end
+- [ ] Large Emacs font (about 18 to 20 pt) and a readable theme
+- [ ] Do not-disturb on; close mail, chat, and browser tabs
+- [ ] Hide the panel clock and notifications that show names
+** TODO 16. Recording
+- [ ] Record one take per section; keep a take log
+- [ ] Re-record any shot where a private path or name appears
+- [ ] Back up raw footage
+** TODO 17. Editing
+- [ ] Rough cut, then trim dead air
+- [ ] Add captions (and check them for typos)
+- [ ] Add on-screen keybinding labels
+- [ ] Blur or crop anything private; second review pass only for privacy
+** TODO 18. Review
+- [ ] George watches the full cut
+- [ ] Privacy check: no tsuioku-private, no emails, no tokens, no phone numbers
+- [ ] Accuracy check against official docs
+** TODO 19. Publishing
+- [ ] Choose the platform and title; write the description with links
+- [ ] Publish the obsidian-look.el config with its README in a public repo (after review)
+- [ ] Post only after George approves each public step
+- [ ] Add a "what's next" note and gather viewer questions
+
+* Parking lot
+- Voice-over by a bot or by George?
+- Whether the config becomes a small package (see EmacsObsidianSkin project nodes)
+- md-roam for people with Markdown notes
